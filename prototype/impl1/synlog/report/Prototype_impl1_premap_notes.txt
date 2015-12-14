@@ -1,3 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":166:1:166:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_2083s(verilog) because there are no references to its outputs 

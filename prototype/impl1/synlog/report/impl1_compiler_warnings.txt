@@ -1,2 +1,0 @@
-@W: CL156 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":161:37:161:44|*Input usart_rx to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
-

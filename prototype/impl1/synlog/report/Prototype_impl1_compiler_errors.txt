@@ -1,2 +1,0 @@
-@E: CG501 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":309:1:309:6|Expecting delimiter: , or ; or )
-

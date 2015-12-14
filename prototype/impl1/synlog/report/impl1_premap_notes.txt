@@ -1,3 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":88:1:88:6|Removing sequential instance drdy of view:PrimLib.sdffre(prim) in hierarchy view:work.UARTReceiver_2083s(verilog) because there are no references to its outputs 

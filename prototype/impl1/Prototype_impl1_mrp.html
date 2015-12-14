@@ -1,369 +1,0 @@
-<HTML>
-<HEAD><TITLE>Project Summary</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Mrp"></A>
-         Lattice Mapping Report File for Design Module 'UniboardTop'
-
-
-
-<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
-
-Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
-     Prototype_impl1.ngd -o Prototype_impl1_map.ncd -pr Prototype_impl1.prf -mp
-     Prototype_impl1.mrp -lpf
-     /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l -
-     OSURC Rover 2016/electrical/uniboard/software/verilog pin
-     tests/impl1/Prototype_impl1_synplify.lpf -lpf
-     /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l -
-     OSURC Rover 2016/electrical/uniboard/software/verilog pin
-     tests/Prototype.lpf -c 0 -gui 
-Target Vendor:  LATTICE
-Target Device:  LCMXO2-7000HETQFP144
-Target Performance:   5
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/02/15  18:32:58
-
-
-<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    102 out of  7209 (1%)
-      PFU registers:          100 out of  6864 (1%)
-      PIO registers:            2 out of   345 (1%)
-   Number of SLICEs:        83 out of  3432 (2%)
-      SLICEs as Logic/ROM:     83 out of  3432 (2%)
-      SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         34 out of  3432 (1%)
-   Number of LUT4s:        166 out of  6864 (2%)
-      Number of logic LUTs:       98
-      Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     34 (68 LUT4s)
-      Number of shift registers:   0
-   Number of PIO sites used: 59 + 4(JTAG) out of 115 (55%)
-   Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  No
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
-   Number of Power Controller:  0 out of 1 (0%)
-   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
-   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
-   Number of DCCA:  0 out of 8 (0%)
-   Number of DCMA:  0 out of 2 (0%)
-   Number of PLLs:  0 out of 2 (0%)
-   Number of DQSDLLs:  0 out of 2 (0%)
-   Number of CLKDIVC:  0 out of 4 (0%)
-   Number of ECLKSYNCA:  0 out of 4 (0%)
-   Number of ECLKBRIDGECS:  0 out of 2 (0%)
-   Notes:-
-      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
-     distributed RAMs) + 2*(Number of ripple logic)
-      2. Number of logic LUT4s does not include count of distributed RAM and
-     ripple logic.
-
-   Number of clocks:  1
-     Net clk_20MHz_c: 61 loads, 61 rising, 0 falling (Driver: PIO clk_20MHz )
-   Number of Clock Enables:  14
-     Net tdata_0_17_RNIC9C91: 1 loads, 0 LSLICEs
-     Net un1_state[0]23_1_0_a3: 1 loads, 0 LSLICEs
-     Net uart_output/clk_o_RNIN9721: 5 loads, 5 LSLICEs
-     Net uart_output/tdata_0_16_RNI57L71: 2 loads, 2 LSLICEs
-     Net uart_input/N_44: 1 loads, 1 LSLICEs
-     Net uart_input/N_29_i: 3 loads, 3 LSLICEs
-     Net uart_input/un1_state[0]23_2_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_3_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_8_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_7_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_4_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_5_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_6_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/state[0]19: 4 loads, 4 LSLICEs
-   Number of LSRs:  3
-     Net uart_output/baud_gen/count[0]2: 3 loads, 3 LSLICEs
-     Net drdy: 17 loads, 17 LSLICEs
-     Net uart_input/baud_gen/count[0]2: 2 loads, 2 LSLICEs
-   Number of nets driven by tri-state buffers:  0
-   Top 10 highest fanout non-clock nets:
-     Net drdy: 23 loads
-     Net uart_input/state[1]: 15 loads
-     Net uart_input/state[2]: 14 loads
-     Net uart_input/state[3]: 14 loads
-     Net uart_rx_c: 14 loads
-     Net uart_input/state[0]: 12 loads
-     Net uart_input/state[5]: 10 loads
-     Net uart_output/state[0]: 10 loads
-     Net uart_output/state[3]: 9 loads
-     Net uart_output/state[1]: 8 loads
-
-
-
-
-   Number of warnings:  0
-   Number of errors:    0
-     
-
-
-
-
-<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
-
-   No errors or warnings present.
-
-
-
-<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
-
-+---------------------+-----------+-----------+------------+
-| IO Name             | Direction | Levelmode | IO         |
-|                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| uart_tx             | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| uart_rx             | INPUT     | LVCMOS25  | IN         |
-
-+---------------------+-----------+-----------+------------+
-| pause               | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| motor_pwm_r         | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| motor_pwm_l         | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc8                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc7                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc4                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc3                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc2                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc1                 | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_li          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_lb          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_la          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_ri          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_rb          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_ra          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| signal_light        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| expansion5          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| expansion4          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| expansion3          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| expansion2          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| expansion1          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[3]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[2]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[1]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[0]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_nFault    | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_En        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_M2        | OUTPUT    | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| Stepper_A_M1        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_M0        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_Dir       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_Step      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_nFault    | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_En        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_M2        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_M1        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_M0        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_Dir       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Z_Step      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_nFault    | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_En        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_M2        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_M1        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_M0        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_Dir       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_Step      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_nFault    | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_En        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_M2        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_M1        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_M0        | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_Dir       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_X_Step      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| clk_20MHz           | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| status_led[2]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| status_led[1]       | OUTPUT    | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| status_led[0]       | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-
-
-
-<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
-
-Block VCC undriven or does not drive anything - clipped.
-Block GSR_INST undriven or does not drive anything - clipped.
-Block uart_input/VCC undriven or does not drive anything - clipped.
-Block uart_input/GND undriven or does not drive anything - clipped.
-Block uart_output/VCC undriven or does not drive anything - clipped.
-Block uart_output/GND undriven or does not drive anything - clipped.
-Signal uart_input/baud_gen/GND undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/GND undriven or does not drive anything - clipped.
-Signal VCC undriven or does not drive anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_s_31_0_S1_0 undriven or does not drive
-     anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_s_31_0_COUT_0 undriven or does not
-     drive anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_cry_0_0_S1_0 undriven or does not drive
-     anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_cry_0_0_S0_0 undriven or does not drive
-     anything - clipped.
-Signal uart_input/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_cry_0_0_S1 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_cry_0_0_S0 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_s_31_0_S1 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_s_31_0_COUT undriven or does not drive
-     anything - clipped.
-Block uart_input/baud_gen/GND was optimized away.
-Block uart_output/baud_gen/GND was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
-
-     
-
-
-
-<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
--------------------------
-
-   Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
-   Peak Memory Usage: 182 MB
-        
-
-
-
-
-
-
-
-
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-     Copyright (c) 1995 AT&T Corp.   All rights reserved.
-     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-     Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights
-     reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
