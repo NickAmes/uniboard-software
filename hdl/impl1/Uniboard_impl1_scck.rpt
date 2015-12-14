@@ -1,0 +1,29 @@
+# Synopsys Constraint Checker(syntax only), version map201409latrcp1, Build 005R, built Feb 11 2015
+# Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Sun Dec 13 05:11:33 2015
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "UniboardTop"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+**************
+
+Start                                         Requested     Requested     Clock                                    Clock              
+Clock                                         Frequency     Period        Type                                     Group              
+--------------------------------------------------------------------------------------------------------------------------------------
+ClockDividerP_2083s_1|clk_o_derived_clock     1.0 MHz       1000.000      derived (from UniboardTop|clk_20MHz)     Inferred_clkgroup_0
+UniboardTop|clk_20MHz                         1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
+======================================================================================================================================

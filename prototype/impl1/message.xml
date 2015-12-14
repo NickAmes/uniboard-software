@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>factor</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>factor</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>factor</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>baud_div</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>factor</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>baud_div</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>baud_div</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>baud_div</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_output/baud_gen/un129_count_1_s_31_0_COUT</Dynamic>
+            <Navigation>uart_output/baud_gen/un129_count_1_s_31_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_output/baud_gen/un129_count_1_s_31_0_S1</Dynamic>
+            <Navigation>uart_output/baud_gen/un129_count_1_s_31_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_output/baud_gen/un129_count_1_cry_0_0_S0</Dynamic>
+            <Navigation>uart_output/baud_gen/un129_count_1_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_output/baud_gen/un129_count_1_cry_0_0_S1</Dynamic>
+            <Navigation>uart_output/baud_gen/un129_count_1_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_input/baud_gen/un129_count_1_s_31_0_COUT_0</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_1_s_31_0_COUT_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_input/baud_gen/un129_count_1_s_31_0_S1_0</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_1_s_31_0_S1_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_input/baud_gen/un129_count_1_cry_0_0_S0_0</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_1_cry_0_0_S0_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_input/baud_gen/un129_count_1_cry_0_0_S1_0</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_1_cry_0_0_S1_0</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv&quot;:255:14:255:23|No assignment to status_led_1_</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv</Navigation>
+            <Navigation>255</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>255</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>No assignment to status_led_1_</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv&quot;:255:14:255:23|No assignment to status_led_2_</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv</Navigation>
+            <Navigation>255</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>255</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>No assignment to status_led_2_</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv&quot;:44:1:44:6|Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv&quot;:88:1:88:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock UniboardTop|clk_20MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_20MHz&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock UniboardTop|clk_20MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_20MHz&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

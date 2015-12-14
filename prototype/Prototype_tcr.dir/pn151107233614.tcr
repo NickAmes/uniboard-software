@@ -1,0 +1,10 @@
+#Start recording tcl command: 11/7/2015 22:45:58
+#Project Location: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog; Project name: Prototype
+prj_project open "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/Prototype.ldf"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Export -impl impl1 -task Jedecgen
+prj_impl new "test" -dir "test" -strategy "Area" -synthesis "synplify"
+prj_impl delete "test"
+#Stop recording: 11/7/2015 23:36:14

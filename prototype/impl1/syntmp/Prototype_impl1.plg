@@ -1,0 +1,28 @@
+@P:  Worst Slack : 992.560
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Estimated Frequency : NA
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Requested Frequency : 1.0 MHz
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Estimated Period : NA
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Requested Period : 1000.000
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Slack : NA
+@P:  UniboardTop|clk_20MHz - Estimated Frequency : 134.4 MHz
+@P:  UniboardTop|clk_20MHz - Requested Frequency : 1.0 MHz
+@P:  UniboardTop|clk_20MHz - Estimated Period : 7.440
+@P:  UniboardTop|clk_20MHz - Requested Period : 1000.000
+@P:  UniboardTop|clk_20MHz - Slack : 992.560
+@P:  Worst Slack(min analysis) : 0.366
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Estimated Period(min analysis) : NA
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Requested Period(min analysis) : 1000.000
+@P:  ClockDividerP_2083s_1|clk_o_derived_clock - Slack(min analysis) : NA
+@P:  UniboardTop|clk_20MHz - Estimated Frequency(min analysis) : 134.4 MHz
+@P:  UniboardTop|clk_20MHz - Requested Frequency(min analysis) : 1.0 MHz
+@P:  UniboardTop|clk_20MHz - Estimated Period(min analysis) : 7.440
+@P:  UniboardTop|clk_20MHz - Requested Period(min analysis) : 1000.000
+@P:  UniboardTop|clk_20MHz - Slack(min analysis) : 992.560
+@P:  Total Area : 97.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:01s

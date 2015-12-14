@@ -1,0 +1,180 @@
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/impl1" -path "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests"   "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/impl1/Prototype_impl1.edi" "Prototype_impl1.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.4.1.213
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+Writing the design to Prototype_impl1.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data"  -p "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/impl1" -p "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests"  "Prototype_impl1.ngo" "Prototype_impl1.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.4.1.213
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Prototype_impl1.ngo' ...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_1_s_31_0_COUT" arg2="uart_output/baud_gen/un129_count_1_s_31_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_1_s_31_0_S1" arg2="uart_output/baud_gen/un129_count_1_s_31_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_1_cry_0_0_S0" arg2="uart_output/baud_gen/un129_count_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_1_cry_0_0_S1" arg2="uart_output/baud_gen/un129_count_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_1_s_31_0_COUT_0" arg2="uart_input/baud_gen/un129_count_1_s_31_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_1_s_31_0_S1_0" arg2="uart_input/baud_gen/un129_count_1_s_31_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_1_cry_0_0_S0_0" arg2="uart_input/baud_gen/un129_count_1_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_1_cry_0_0_S1_0" arg2="uart_input/baud_gen/un129_count_1_cry_0_0_S1_0"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="8"  />
+
+Design Results:
+    306 blocks expanded
+Complete the first expansion.
+Writing 'Prototype_impl1.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial   "Prototype_impl1.ngd" -o "Prototype_impl1_map.ncd" -pr "Prototype_impl1.prf" -mp "Prototype_impl1.mrp" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/impl1/Prototype_impl1_synplify.lpf" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/Prototype.lpf" -c 0            
+map:  version Diamond (64-bit) 3.4.1.213
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Prototype_impl1.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 5.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+2 CCU2 constant inputs absorbed.
+
+
+
+
+Design Summary:
+   Number of registers:    102 out of  7209 (1%)
+      PFU registers:          100 out of  6864 (1%)
+      PIO registers:            2 out of   345 (1%)
+   Number of SLICEs:        83 out of  3432 (2%)
+      SLICEs as Logic/ROM:     83 out of  3432 (2%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         34 out of  3432 (1%)
+   Number of LUT4s:        166 out of  6864 (2%)
+      Number of logic LUTs:       98
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:     34 (68 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 59 + 4(JTAG) out of 115 (55%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_20MHz_c: 61 loads, 61 rising, 0 falling (Driver: PIO clk_20MHz )
+   Number of Clock Enables:  14
+     Net tdata_0_17_RNIC9C91: 1 loads, 0 LSLICEs
+     Net un1_state[0]23_1_0_a3: 1 loads, 0 LSLICEs
+     Net uart_output/clk_o_RNIN9721: 5 loads, 5 LSLICEs
+     Net uart_output/tdata_0_16_RNI57L71: 2 loads, 2 LSLICEs
+     Net uart_input/N_44: 1 loads, 1 LSLICEs
+     Net uart_input/N_29_i: 3 loads, 3 LSLICEs
+     Net uart_input/un1_state[0]23_2_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_3_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_8_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_7_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_4_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_5_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_6_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/state[0]19: 4 loads, 4 LSLICEs
+   Number of LSRs:  3
+     Net uart_output/baud_gen/count[0]2: 3 loads, 3 LSLICEs
+     Net drdy: 17 loads, 17 LSLICEs
+     Net uart_input/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net drdy: 23 loads
+     Net uart_input/state[1]: 15 loads
+     Net uart_input/state[2]: 14 loads
+     Net uart_input/state[3]: 14 loads
+     Net uart_rx_c: 14 loads
+     Net uart_input/state[0]: 12 loads
+     Net uart_input/state[5]: 10 loads
+     Net uart_output/state[0]: 10 loads
+     Net uart_output/state[3]: 9 loads
+     Net uart_output/state[1]: 8 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 182 MB
+
+Dumping design to file Prototype_impl1_map.ncd.
+
+ncd2vdb "Prototype_impl1_map.ncd" ".vdbs/Prototype_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.

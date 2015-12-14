@@ -1,0 +1,22 @@
+Selecting top level module UniboardTop
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":36:7:36:19|Synthesizing module ClockDividerP
+
+	factor=32'b00000000000000000000100000100011
+   Generated name = ClockDividerP_2083s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":68:7:68:18|Synthesizing module UARTReceiver
+
+	baud_div=32'b00000000000000000000100000100011
+   Generated name = UARTReceiver_2083s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":148:7:148:21|Synthesizing module UARTTransmitter
+
+	baud_div=32'b00000000000000000000100000100011
+   Generated name = UARTTransmitter_2083s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":252:7:252:17|Synthesizing module UniboardTop
+
+@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":255:14:255:23|No assignment to status_led_1_
+@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":255:14:255:23|No assignment to status_led_2_
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":255:14:255:23|*Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/verilog pin tests/uniboard.sv":255:14:255:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.

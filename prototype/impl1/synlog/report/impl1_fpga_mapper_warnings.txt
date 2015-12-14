@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock UniboardTop|clk_20MHz with period 5.48ns. Please declare a user-defined clock on object "p:clk_20MHz"

@@ -1,0 +1,66 @@
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+/usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 200: [: !=: argument expected
+Synopsys Verilog Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Running on host :nick-laptop
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/lucent/machxo2.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/lucent/pmi_def.v"
+/usr/local/diamond/3.4_x64/synpbase/bin/s2o: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/s2o: 200: [: !=: argument expected
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/umr_capim.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_objects.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module UniboardTop
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":36:7:36:19|Synthesizing module ClockDividerP
+
+	factor=32'b00000000000000000000100000100011
+   Generated name = ClockDividerP_2083s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":68:7:68:18|Synthesizing module UARTReceiver
+
+	baud_div=32'b00000000000000000000100000100011
+   Generated name = UARTReceiver_2083s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":151:7:151:17|Synthesizing module UniboardTop
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Oct 31 21:26:21 2015
+
+###########################################################]
+/usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 200: [: !=: argument expected
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/impl1/synwork/layer0.srs changed - recompiling
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":151:7:151:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/verilog/uniboard.sv":151:7:151:17|Selected library: work cell: UniboardTop view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Oct 31 21:26:21 2015
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Oct 31 21:26:21 2015
+
+###########################################################]

@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Nov  8 05:18:51 2015 *
+NOTE DESIGN NAME: UniboardTop *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS uart_tx : 74 : out *
+NOTE PINS uart_rx : 73 : in *
+NOTE PINS clk_20MHz : 27 : in *
+NOTE PINS status_led[7] : 107 : out *
+NOTE PINS status_led[6] : 106 : out *
+NOTE PINS status_led[5] : 105 : out *
+NOTE PINS status_led[4] : 104 : out *
+NOTE PINS status_led[3] : 100 : out *
+NOTE PINS status_led[2] : 99 : out *
+NOTE PINS status_led[1] : 98 : out *
+NOTE PINS status_led[0] : 97 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *
