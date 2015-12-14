@@ -107,48 +107,48 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:255:14:255:23|No assignment to status_led_1_</Dynamic>
+            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:8:14:8:23|No assignment to status_led_1_</Dynamic>
             <Navigation>CG133</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>255</Navigation>
+            <Navigation>8</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>255</Navigation>
+            <Navigation>8</Navigation>
             <Navigation>23</Navigation>
             <Navigation>No assignment to status_led_1_</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:255:14:255:23|No assignment to status_led_2_</Dynamic>
+            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:8:14:8:23|No assignment to status_led_2_</Dynamic>
             <Navigation>CG133</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>255</Navigation>
+            <Navigation>8</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>255</Navigation>
+            <Navigation>8</Navigation>
             <Navigation>23</Navigation>
             <Navigation>No assignment to status_led_2_</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:44:1:44:6|Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>44</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>14</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>44</Navigation>
+            <Navigation>14</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:88:1:88:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</Dynamic>
+            <Dynamic>BN132 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv&quot;:27:1:27:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv</Navigation>
+            <Navigation>27</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>88</Navigation>
+            <Navigation>27</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</Navigation>
         </Message>

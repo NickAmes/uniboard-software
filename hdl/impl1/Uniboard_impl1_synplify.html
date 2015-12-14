@@ -34,34 +34,37 @@ Running on host :nick-laptop
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh"
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 Verilog syntax check successful!
+Options changed - recompiling
 Selecting top level module UniboardTop
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":36:7:36:19|Synthesizing module ClockDividerP
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
 
 	factor=32'b00000000000000000000100000100011
    Generated name = ClockDividerP_2083s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":68:7:68:18|Synthesizing module UARTReceiver
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":7:7:7:18|Synthesizing module UARTReceiver
 
 	baud_div=32'b00000000000000000000100000100011
    Generated name = UARTReceiver_2083s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":148:7:148:21|Synthesizing module UARTTransmitter
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":87:7:87:21|Synthesizing module UARTTransmitter
 
 	baud_div=32'b00000000000000000000100000100011
    Generated name = UARTTransmitter_2083s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Synthesizing module UniboardTop
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Synthesizing module UniboardTop
 
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":255:14:255:23|No assignment to status_led_1_
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":255:14:255:23|No assignment to status_led_2_
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":255:14:255:23|*Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":255:14:255:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
+@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_1_
+@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_2_
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:31 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -69,13 +72,13 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 @N|Running in 64-bit mode
 File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/layer0.srs changed - recompiling
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:32 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 @END
@@ -83,19 +86,19 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:32 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 @N|Running in 64-bit mode
 File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs changed - recompiling
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:33 2015
+# Sun Dec 13 21:55:43 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -122,7 +125,7 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":166:1:166:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_2083s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_2083s(verilog) because there are no references to its outputs 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -142,14 +145,14 @@ ClockDividerP_2083s_1|clk_o_derived_clock     1.0 MHz       1000.000      derive
 UniboardTop|clk_20MHz                         1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
 ======================================================================================================================================
 
-@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":44:1:44:6|Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:33 2015
+# Sun Dec 13 21:55:43 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -185,7 +188,7 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
 
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":88:1:88:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
@@ -263,7 +266,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Dec 13 05:11:35 2015
+# Timing Report written on Sun Dec 13 21:55:44 2015
 #
 
 
@@ -447,7 +450,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 147MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:35 2015
+# Sun Dec 13 21:55:45 2015
 
 ###########################################################]
 

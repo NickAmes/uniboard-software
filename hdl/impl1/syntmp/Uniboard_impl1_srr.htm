@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1450012291>
+<!@TC:1450072541>
 #Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
 #install: /usr/local/diamond/3.4_x64/synpbase
 #OS: Linux 
@@ -8,13 +8,13 @@
 #Implementation: impl1
 
 <a name=compilerReport1>Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014</a>
-@N: : <!@TM:1450012292> | Running in 64-bit mode 
+@N: : <!@TM:1450072542> | Running in 64-bit mode 
 Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
 /usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 186: [: unexpected operator
 /usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 200: [: !=: argument expected
 <a name=compilerReport2>Synopsys Verilog Compiler, version comp201409rc, Build 144R, built Nov 10 2014</a>
-@N: : <!@TM:1450012292> | Running in 64-bit mode 
+@N: : <!@TM:1450072542> | Running in 64-bit mode 
 Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
 Running on host :nick-laptop
@@ -27,48 +27,51 @@ Running on host :nick-laptop
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh"
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 Verilog syntax check successful!
+Options changed - recompiling
 Selecting top level module UniboardTop
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:36:7:36:20:@N:CG364:@XP_MSG">uniboard.sv(36)</a><!@TM:1450012292> | Synthesizing module ClockDividerP
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv:6:7:6:20:@N:CG364:@XP_MSG">clk.sv(6)</a><!@TM:1450072542> | Synthesizing module ClockDividerP
 
 	factor=32'b00000000000000000000100000100011
    Generated name = ClockDividerP_2083s
 
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:68:7:68:19:@N:CG364:@XP_MSG">uniboard.sv(68)</a><!@TM:1450012292> | Synthesizing module UARTReceiver
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv:7:7:7:19:@N:CG364:@XP_MSG">uart.sv(7)</a><!@TM:1450072542> | Synthesizing module UARTReceiver
 
 	baud_div=32'b00000000000000000000100000100011
    Generated name = UARTReceiver_2083s
 
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:148:7:148:22:@N:CG364:@XP_MSG">uniboard.sv(148)</a><!@TM:1450012292> | Synthesizing module UARTTransmitter
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv:87:7:87:22:@N:CG364:@XP_MSG">uart.sv(87)</a><!@TM:1450072542> | Synthesizing module UARTTransmitter
 
 	baud_div=32'b00000000000000000000100000100011
    Generated name = UARTTransmitter_2083s
 
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:252:7:252:18:@N:CG364:@XP_MSG">uniboard.sv(252)</a><!@TM:1450012292> | Synthesizing module UniboardTop
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:5:7:5:18:@N:CG364:@XP_MSG">uniboard.sv(5)</a><!@TM:1450072542> | Synthesizing module UniboardTop
 
-<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:255:14:255:24:@W:CG133:@XP_MSG">uniboard.sv(255)</a><!@TM:1450012292> | No assignment to status_led_1_</font>
-<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:255:14:255:24:@W:CG133:@XP_MSG">uniboard.sv(255)</a><!@TM:1450012292> | No assignment to status_led_2_</font>
-@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:255:14:255:24:@A:CL153:@XP_MSG">uniboard.sv(255)</a><!@TM:1450012292> | *Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
-@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:255:14:255:24:@A:CL153:@XP_MSG">uniboard.sv(255)</a><!@TM:1450012292> | *Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
+<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:8:14:8:24:@W:CG133:@XP_MSG">uniboard.sv(8)</a><!@TM:1450072542> | No assignment to status_led_1_</font>
+<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:8:14:8:24:@W:CG133:@XP_MSG">uniboard.sv(8)</a><!@TM:1450072542> | No assignment to status_led_2_</font>
+@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:8:14:8:24:@A:CL153:@XP_MSG">uniboard.sv(8)</a><!@TM:1450072542> | *Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
+@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:8:14:8:24:@A:CL153:@XP_MSG">uniboard.sv(8)</a><!@TM:1450072542> | *Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:31 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 200: [: !=: argument expected
 <a name=compilerReport3>Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014</a>
-@N: : <!@TM:1450012292> | Running in 64-bit mode 
+@N: : <!@TM:1450072542> | Running in 64-bit mode 
 File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/layer0.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:252:7:252:18:@N:NF107:@XP_MSG">uniboard.sv(252)</a><!@TM:1450012292> | Selected library: work cell: UniboardTop view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:252:7:252:18:@N:NF107:@XP_MSG">uniboard.sv(252)</a><!@TM:1450012292> | Selected library: work cell: UniboardTop view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:5:7:5:18:@N:NF107:@XP_MSG">uniboard.sv(5)</a><!@TM:1450072542> | Selected library: work cell: UniboardTop view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:5:7:5:18:@N:NF107:@XP_MSG">uniboard.sv(5)</a><!@TM:1450072542> | Selected library: work cell: UniboardTop view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:32 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 @END
@@ -76,19 +79,19 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:32 2015
+# Sun Dec 13 21:55:41 2015
 
 ###########################################################]
 <a name=compilerReport4>Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014</a>
-@N: : <!@TM:1450012293> | Running in 64-bit mode 
+@N: : <!@TM:1450072543> | Running in 64-bit mode 
 File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:252:7:252:18:@N:NF107:@XP_MSG">uniboard.sv(252)</a><!@TM:1450012293> | Selected library: work cell: UniboardTop view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:252:7:252:18:@N:NF107:@XP_MSG">uniboard.sv(252)</a><!@TM:1450012293> | Selected library: work cell: UniboardTop view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:5:7:5:18:@N:NF107:@XP_MSG">uniboard.sv(5)</a><!@TM:1450072543> | Selected library: work cell: UniboardTop view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:5:7:5:18:@N:NF107:@XP_MSG">uniboard.sv(5)</a><!@TM:1450072543> | Selected library: work cell: UniboardTop view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:33 2015
+# Sun Dec 13 21:55:43 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -101,8 +104,8 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 
 Linked File: <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project:@XP_FILE">project</a>
 Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1_scck.rpt" file 
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1450012293> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1450012293> | Clock conversion enabled  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1450072543> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1450072543> | Clock conversion enabled  
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
@@ -115,7 +118,7 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:166:1:166:7:@N:BN362:@XP_MSG">uniboard.sv(166)</a><!@TM:1450012293> | Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_2083s(verilog) because there are no references to its outputs 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv:105:1:105:7:@N:BN362:@XP_MSG">uart.sv(105)</a><!@TM:1450072543> | Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_2083s(verilog) because there are no references to its outputs 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -135,14 +138,14 @@ ClockDividerP_2083s_1|clk_o_derived_clock     1.0 MHz       1000.000      derive
 UniboardTop|clk_20MHz                         1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
 ======================================================================================================================================
 
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:44:1:44:7:@W:MT529:@XP_MSG">uniboard.sv(44)</a><!@TM:1450012293> | Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv:14:1:14:7:@W:MT529:@XP_MSG">clk.sv(14)</a><!@TM:1450072543> | Found inferred clock UniboardTop|clk_20MHz which controls 90 sequential elements including uart_input.baud_gen.count\[11\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:33 2015
+# Sun Dec 13 21:55:43 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -153,8 +156,8 @@ Product Version J-2014.09L
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1450012295> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1450012295> | Clock conversion enabled  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1450072545> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1450072545> | Clock conversion enabled  
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
 
@@ -178,7 +181,7 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
 
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv:88:1:88:7:@W:BN132:@XP_MSG">uniboard.sv(88)</a><!@TM:1450012295> | Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv:27:1:27:7:@W:BN132:@XP_MSG">uart.sv(27)</a><!@TM:1450072545> | Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset</font>
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
@@ -212,7 +215,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
-@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1450012295> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1450072545> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
@@ -242,21 +245,21 @@ Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-pr
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
 
 Writing EDIF Netlist and constraint files
-<font color=#A52A2A>@W:<a href="@W:MT558:@XP_HELP">MT558</a> : <!@TM:1450012295> | Unable to locate source for clock ClockDividerP_2083s_1|clk_o_derived_clock. Clock will not be forward annotated</font> 
+<font color=#A52A2A>@W:<a href="@W:MT558:@XP_HELP">MT558</a> : <!@TM:1450072545> | Unable to locate source for clock ClockDividerP_2083s_1|clk_o_derived_clock. Clock will not be forward annotated</font> 
 J-2014.09L
-@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1450012295> | Synplicity Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1450072545> | Synplicity Constraint File capacitance units using default value of 1pF  
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 147MB)
 
-<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1450012295> | Found inferred clock UniboardTop|clk_20MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_20MHz"</font> 
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1450072545> | Found inferred clock UniboardTop|clk_20MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_20MHz"</font> 
 
 
 
 <a name=timingReport9>@S |##### START OF TIMING REPORT #####[</a>
-# Timing Report written on Sun Dec 13 05:11:35 2015
+# Timing Report written on Sun Dec 13 21:55:44 2015
 #
 
 
@@ -265,9 +268,9 @@ Requested Frequency:    1.0 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
-@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1450012295> | Timing report estimates place and route data. Please look at the place and route timing report for final timing. 
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1450072545> | Timing report estimates place and route data. Please look at the place and route timing report for final timing. 
 
-@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1450012295> | Clock constraints cover only FF-to-FF paths associated with the clock. 
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1450072545> | Clock constraints cover only FF-to-FF paths associated with the clock. 
 
 
 
@@ -283,7 +286,7 @@ Starting Clock                                Frequency     Frequency     Period
 ClockDividerP_2083s_1|clk_o_derived_clock     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_20MHz)     Inferred_clkgroup_0
 UniboardTop|clk_20MHz                         1.0 MHz       134.4 MHz     1000.000      7.440         992.560     inferred                                 Inferred_clkgroup_0
 ==============================================================================================================================================================================
-@N:<a href="@N:MT582:@XP_HELP">MT582</a> : <!@TM:1450012295> | Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack 
+@N:<a href="@N:MT582:@XP_HELP">MT582</a> : <!@TM:1450072545> | Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack 
 
 
 
@@ -358,7 +361,7 @@ uart_input.baud_gen.count\[30\]      UniboardTop|clk_20MHz     FD1S3IX      D   
 
 
 <a name=worstPaths16>Worst Path Information</a>
-<a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srr:srsf/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srs:fp:24153:26484:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srr:srsf/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srs:fp:24390:26721:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
@@ -441,7 +444,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 147MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 05:11:35 2015
+# Sun Dec 13 21:55:45 2015
 
 ###########################################################]
 

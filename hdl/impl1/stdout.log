@@ -1,12 +1,13 @@
 Running in Lattice mode
 
-Starting:    /usr/local/diamond/3.4_x64/synpbase/linux_a_64/mbin/synplify
+
+Starting:    /usr/local/diamond/3.4_x64/synpbase/linux_a_64/mbin/synbatch
 Install:     /usr/local/diamond/3.4_x64/synpbase
 Hostname:    nick-laptop
-Date:        Sun Dec 13 05:40:12 2015
+Date:        Sun Dec 13 21:55:41 2015
 Version:     J-2014.09L
 
-Arguments:   -product synplify_pro  -tcl /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/launch_synplify.tcl
+Arguments:   -product synplify_pro  -batch Uniboard_impl1_synplify.tcl
 ProductType: synplify_pro
 
 CDPL_LOGDIR: /home/nick/.synopsys/fpga/cdpllog
@@ -15,6 +16,83 @@ CDPL_LOGDIR: /home/nick/.synopsys/fpga/cdpllog
 
 
 
-No project opened.
-TCL script complete: "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/launch_synplify.tcl"
+log file: "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srr"
+
+
+
+Running proj_1|impl1
+
+
+Running: Compile on proj_1|impl1
+
+
+Running: Compile Process on proj_1|impl1
+
+
+Running: Compile Input on proj_1|impl1
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srs
+
+
+compiler Completed
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: Multi-srs Generator on proj_1|impl1
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_s.srs
+
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_mult.srs to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srs
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srr to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srf
+
+Complete: Compile Process on proj_1|impl1
+
+
+Running: Pre-mapping on proj_1|impl1
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.fse to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_s.fse
+
+
+premap Completed with warnings
+Return Code: 1
+Run Time:00h:00m:00s
+
+Complete: Compile on proj_1|impl1
+
+
+Running: Map on proj_1|impl1
+
+
+Running: Map & Optimize on proj_1|impl1
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_m.srm to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srm
+
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:00h:00m:02s
+
+Complete: Map on proj_1|impl1
+
+Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srr to /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srf
+
+Complete: Logic Synthesis on proj_1|impl1
+
+TCL script complete: "Uniboard_impl1_synplify.tcl"
+
 exit status=0
+
+exit status=0
+
+Save changes for project:
+/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/proj_1.prj
+
+batch mode default:no
+

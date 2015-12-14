@@ -1,10 +1,10 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":36:7:36:19|Synthesizing module ClockDividerP
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":68:7:68:18|Synthesizing module UARTReceiver
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":148:7:148:21|Synthesizing module UARTTransmitter
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Synthesizing module UniboardTop
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":7:7:7:18|Synthesizing module UARTReceiver
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":87:7:87:21|Synthesizing module UARTTransmitter
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Synthesizing module UniboardTop
 @N|Running in 64-bit mode
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
-@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
+@N: NF107 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Selected library: work cell: UniboardTop view verilog as top level
 

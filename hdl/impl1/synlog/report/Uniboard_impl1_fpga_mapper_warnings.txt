@@ -1,3 +1,3 @@
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":88:1:88:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset
 @W: MT558 :|Unable to locate source for clock ClockDividerP_2083s_1|clk_o_derived_clock. Clock will not be forward annotated
 @W: MT420 |Found inferred clock UniboardTop|clk_20MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_20MHz"
