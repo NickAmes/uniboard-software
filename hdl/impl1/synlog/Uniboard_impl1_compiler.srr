@@ -21,34 +21,44 @@ Running on host :nick-laptop
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 Verilog syntax check successful!
-Options changed - recompiling
+File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv changed - recompiling
 Selecting top level module UniboardTop
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
 
-	factor=32'b00000000000000000000100000100011
-   Generated name = ClockDividerP_2083s
+	factor=32'b00000000000000000000000000001100
+   Generated name = ClockDividerP_12s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
+
+	factor=32'b00000000000000000000000001111000
+   Generated name = ClockDividerP_120s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
+
+	factor=32'b00000000000000000000010010110000
+   Generated name = ClockDividerP_1200s
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":7:7:7:18|Synthesizing module UARTReceiver
 
-	baud_div=32'b00000000000000000000100000100011
-   Generated name = UARTReceiver_2083s
+	baud_div=32'b00000000000000000000000000001100
+   Generated name = UARTReceiver_12s
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":87:7:87:21|Synthesizing module UARTTransmitter
 
-	baud_div=32'b00000000000000000000100000100011
-   Generated name = UARTTransmitter_2083s
+	baud_div=32'b00000000000000000000000000001100
+   Generated name = UARTTransmitter_12s
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Synthesizing module UniboardTop
 
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_1_
 @W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_2_
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_1_ are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":100:21:100:24|Pruning instance DivA -- not in use ...
+
 @A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 21:55:41 2015
+# Sun Dec 20 06:43:44 2015
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -62,7 +72,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 21:55:41 2015
+# Sun Dec 20 06:43:44 2015
 
 ###########################################################]
 @END
@@ -70,6 +80,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 13 21:55:41 2015
+# Sun Dec 20 06:43:44 2015
 
 ###########################################################]

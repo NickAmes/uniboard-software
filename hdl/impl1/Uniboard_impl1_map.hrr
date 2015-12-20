@@ -3,56 +3,76 @@ Report for cell UniboardTop
    Instance path: UniboardTop
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      83.00        100.0
+                                  SLIC	     128.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	      98.00        100.0
+                                  LUT4	     118.00        100.0
                                  IOREG	          2        100.0
-                                 IOBUF	         59        100.0
-                                PFUREG	        100        100.0
-                                RIPPLE	         34        100.0
+                                 IOBUF	         68        100.0
+                                PFUREG	        166        100.0
+                                RIPPLE	         68        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 UARTTransmitter_2083s	          1        43.7
-                    UARTReceiver_2083s	          1        53.4
+                   UARTTransmitter_12s	          1        26.6
+                      UARTReceiver_12s	          1        30.8
+                   ClockDividerP_1200s	          1        20.2
+                    ClockDividerP_120s	          1        19.0
 ---------------------------------------------------
-Report for cell UARTTransmitter_2083s
+Report for cell UARTTransmitter_12s
    Instance path: UniboardTop/uart_output
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      36.25        43.7
-                                  LUT4	      37.00        37.8
-                                PFUREG	         45        45.0
-                                RIPPLE	         17        50.0
+                                  SLIC	      34.08        26.6
+                                  LUT4	      30.00        25.4
+                                PFUREG	         45        27.1
+                                RIPPLE	         17        25.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 ClockDividerP_2083s_1	          1        33.9
+                   ClockDividerP_12s_1	          1        19.8
 ---------------------------------------------------
-Report for cell ClockDividerP_2083s_1
+Report for cell ClockDividerP_12s_1
    Instance path: UniboardTop/uart_output/baud_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      28.17        33.9
-                                  LUT4	      23.00        23.5
-                                PFUREG	         33        33.0
-                                RIPPLE	         17        50.0
+                                  SLIC	      25.33        19.8
+                                  LUT4	      16.00        13.6
+                                PFUREG	         33        19.9
+                                RIPPLE	         17        25.0
 ---------------------------------------------------
-Report for cell UARTReceiver_2083s
+Report for cell UARTReceiver_12s
    Instance path: UniboardTop/uart_input
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      44.33        53.4
-                                  LUT4	      54.00        55.1
-                                PFUREG	         55        55.0
-                                RIPPLE	         17        50.0
+                                  SLIC	      39.42        30.8
+                                  LUT4	      45.00        38.1
+                                PFUREG	         55        33.1
+                                RIPPLE	         17        25.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 ClockDividerP_2083s_0	          1        35.5
+                   ClockDividerP_12s_0	          1        18.8
 ---------------------------------------------------
-Report for cell ClockDividerP_2083s_0
+Report for cell ClockDividerP_12s_0
    Instance path: UniboardTop/uart_input/baud_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      29.50        35.5
-                                  LUT4	      25.00        25.5
-                                PFUREG	         33        33.0
-                                RIPPLE	         17        50.0
+                                  SLIC	      24.00        18.8
+                                  LUT4	      15.00        12.7
+                                PFUREG	         33        19.9
+                                RIPPLE	         17        25.0
+---------------------------------------------------
+Report for cell ClockDividerP_1200s
+   Instance path: UniboardTop/DivC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.83        20.2
+                                  LUT4	      18.00        15.3
+                                PFUREG	         33        19.9
+                                RIPPLE	         17        25.0
+---------------------------------------------------
+Report for cell ClockDividerP_120s
+   Instance path: UniboardTop/DivB
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.33        19.0
+                                  LUT4	      15.00        12.7
+                                PFUREG	         33        19.9
+                                RIPPLE	         17        25.0

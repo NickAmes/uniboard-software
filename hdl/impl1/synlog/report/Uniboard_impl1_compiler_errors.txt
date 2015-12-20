@@ -1,5 +1,3 @@
-@E: CG855 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":36:7:36:19|Duplicate module/interface name ClockDividerP
-@E: CG855 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":68:7:68:18|Duplicate module/interface name UARTReceiver
-@E: CG855 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":148:7:148:21|Duplicate module/interface name UARTTransmitter
-@E: CG855 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:7:252:17|Duplicate module/interface name UniboardTop
+@E: CG308 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":101:22:101:25|Duplicate instance name DivA
+@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":155:0:155:8|Expecting endmodule
 

@@ -18,24 +18,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/13/15  21:55:48
+Mapped on:  12/20/15  06:43:49
 
 Design Summary
 --------------
 
-   Number of registers:    102 out of  7209 (1%)
-      PFU registers:          100 out of  6864 (1%)
+   Number of registers:    168 out of  7209 (2%)
+      PFU registers:          166 out of  6864 (2%)
       PIO registers:            2 out of   345 (1%)
-   Number of SLICEs:        83 out of  3432 (2%)
-      SLICEs as Logic/ROM:     83 out of  3432 (2%)
+   Number of SLICEs:       128 out of  3432 (4%)
+      SLICEs as Logic/ROM:    128 out of  3432 (4%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         34 out of  3432 (1%)
-   Number of LUT4s:        166 out of  6864 (2%)
-      Number of logic LUTs:       98
+      SLICEs as Carry:         68 out of  3432 (2%)
+   Number of LUT4s:        254 out of  6864 (4%)
+      Number of logic LUTs:      118
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     34 (68 LUT4s)
+      Number of ripple logic:     68 (136 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 59 + 4(JTAG) out of 115 (55%)
+   Number of PIO sites used: 68 + 4(JTAG) out of 115 (63%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -66,19 +66,19 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  12/13/15  21:55:48
+Design:  UniboardTop                                   Date:  12/20/15  06:43:49
 
 Design Summary (cont)
 ---------------------
    Number of clocks:  1
-     Net clk_20MHz_c: 61 loads, 61 rising, 0 falling (Driver: PIO clk_20MHz )
+     Net clk_12MHz_c: 101 loads, 101 rising, 0 falling (Driver: PIO clk_12MHz )
    Number of Clock Enables:  14
-     Net tdata_0_17_RNIC9C91: 1 loads, 0 LSLICEs
+     Net tdata_0_17_RNIQOECD: 1 loads, 0 LSLICEs
      Net un1_state[0]23_1_0_a3: 1 loads, 0 LSLICEs
-     Net uart_output/clk_o_RNIN9721: 5 loads, 5 LSLICEs
-     Net uart_output/tdata_0_16_RNI57L71: 2 loads, 2 LSLICEs
+     Net uart_output/clk_o_RNI5P95D: 4 loads, 4 LSLICEs
+     Net uart_output/tdata_0_16_RNIJMNAD: 2 loads, 2 LSLICEs
      Net uart_input/N_44: 1 loads, 1 LSLICEs
-     Net uart_input/N_29_i: 3 loads, 3 LSLICEs
+     Net uart_input/N_33_i: 3 loads, 3 LSLICEs
      Net uart_input/un1_state[0]23_2_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/un1_state[0]23_3_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/un1_state[0]23_8_0_a3: 1 loads, 1 LSLICEs
@@ -87,22 +87,23 @@ Design Summary (cont)
      Net uart_input/un1_state[0]23_5_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/un1_state[0]23_6_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/state[0]19: 4 loads, 4 LSLICEs
-   Number of LSRs:  3
-     Net uart_output/baud_gen/count[0]2: 3 loads, 3 LSLICEs
-     Net drdy: 17 loads, 17 LSLICEs
-     Net uart_input/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+   Number of LSRs:  4
+     Net uart_output/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+     Net debug_c[8]: 19 loads, 19 LSLICEs
+     Net DivC/count[0]2: 4 loads, 4 LSLICEs
+     Net DivB/count[0]2: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net drdy: 23 loads
+     Net debug_c[8]: 23 loads
      Net uart_input/state[1]: 15 loads
      Net uart_input/state[2]: 14 loads
      Net uart_input/state[3]: 14 loads
      Net uart_rx_c: 14 loads
+     Net Stepper_A_M2_c: 12 loads
      Net uart_input/state[0]: 12 loads
      Net uart_input/state[5]: 10 loads
      Net uart_output/state[0]: 10 loads
      Net uart_output/state[3]: 9 loads
-     Net uart_output/state[1]: 8 loads
 
 
 
@@ -125,17 +126,35 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | uart_tx             | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| uart_rx             | INPUT     | LVCMOS25  | IN         |
 
                                     Page 2
 
 
 
 
-Design:  UniboardTop                                   Date:  12/13/15  21:55:48
+Design:  UniboardTop                                   Date:  12/20/15  06:43:49
 
 IO (PIO) Attributes (cont)
 --------------------------
+| uart_rx             | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| debug[8]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[7]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[6]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[5]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[4]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[3]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[2]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| debug[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | pause               | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -143,17 +162,17 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | motor_pwm_l         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc8                 | INPUT     | LVCMOS25  |            |
+| rc_ch8              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc7                 | INPUT     | LVCMOS25  |            |
+| rc_ch7              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc4                 | INPUT     | LVCMOS25  |            |
+| rc_ch4              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc3                 | INPUT     | LVCMOS25  |            |
+| rc_ch3              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc2                 | INPUT     | LVCMOS25  |            |
+| rc_ch2              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| rc1                 | INPUT     | LVCMOS25  |            |
+| rc_ch1              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | encoder_li          | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -173,6 +192,16 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | expansion4          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  UniboardTop                                   Date:  12/20/15  06:43:49
+
+IO (PIO) Attributes (cont)
+--------------------------
 | expansion3          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | expansion2          | OUTPUT    | LVCMOS25  |            |
@@ -187,21 +216,11 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | limit[0]            | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| Stepper_A_nFault    | OUTPUT    | LVCMOS25  |            |
+| Stepper_A_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_A_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_A_M2        | OUTPUT    | LVCMOS25  |            |
-
-                                    Page 3
-
-
-
-
-Design:  UniboardTop                                   Date:  12/13/15  21:55:48
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | Stepper_A_M1        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -211,7 +230,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Stepper_A_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| Stepper_Z_nFault    | OUTPUT    | LVCMOS25  |            |
+| Stepper_Z_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Z_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -225,7 +244,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Stepper_Z_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| Stepper_Y_nFault    | OUTPUT    | LVCMOS25  |            |
+| Stepper_Y_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -239,7 +258,17 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| Stepper_X_nFault    | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 4
+
+
+
+
+Design:  UniboardTop                                   Date:  12/20/15  06:43:49
+
+IO (PIO) Attributes (cont)
+--------------------------
+| Stepper_X_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_X_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -253,21 +282,11 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Stepper_X_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| clk_20MHz           | INPUT     | LVCMOS25  |            |
+| clk_12MHz           | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | status_led[2]       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | status_led[1]       | OUTPUT    | LVCMOS25  |            |
-
-                                    Page 4
-
-
-
-
-Design:  UniboardTop                                   Date:  12/13/15  21:55:48
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | status_led[0]       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -281,27 +300,59 @@ Block uart_input/VCC undriven or does not drive anything - clipped.
 Block uart_input/GND undriven or does not drive anything - clipped.
 Block uart_output/VCC undriven or does not drive anything - clipped.
 Block uart_output/GND undriven or does not drive anything - clipped.
+Signal DivB/GND undriven or does not drive anything - clipped.
+Signal DivC/GND undriven or does not drive anything - clipped.
 Signal uart_input/baud_gen/GND undriven or does not drive anything - clipped.
 Signal uart_output/baud_gen/GND undriven or does not drive anything - clipped.
 Signal VCC undriven or does not drive anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_s_31_0_S1_0 undriven or does not drive
+Signal DivB/un294_count_s_31_0_S1 undriven or does not drive anything - clipped.
+     
+Signal DivB/un294_count_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal DivB/un294_count_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal DivB/un294_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal DivB/N_1 undriven or does not drive anything - clipped.
+Signal DivC/un459_count_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal DivC/un459_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal DivC/N_1 undriven or does not drive anything - clipped.
+Signal DivC/un459_count_s_31_0_S1 undriven or does not drive anything - clipped.
+     
+Signal DivC/un459_count_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal uart_input/baud_gen/un129_count_cry_0_0_S1_0 undriven or does not drive
+
+                                    Page 5
+
+
+
+
+Design:  UniboardTop                                   Date:  12/20/15  06:43:49
+
+Removed logic (cont)
+--------------------
      anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_s_31_0_COUT_0 undriven or does not
-     drive anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_cry_0_0_S1_0 undriven or does not drive
-     anything - clipped.
-Signal uart_input/baud_gen/un129_count_1_cry_0_0_S0_0 undriven or does not drive
+Signal uart_input/baud_gen/un129_count_cry_0_0_S0_0 undriven or does not drive
      anything - clipped.
 Signal uart_input/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_cry_0_0_S1 undriven or does not drive
+Signal uart_input/baud_gen/un129_count_s_31_0_S1_0 undriven or does not drive
      anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_cry_0_0_S0 undriven or does not drive
+Signal uart_input/baud_gen/un129_count_s_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal uart_output/baud_gen/un129_count_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal uart_output/baud_gen/un129_count_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal uart_output/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_s_31_0_S1 undriven or does not drive
+Signal uart_output/baud_gen/un129_count_s_31_0_S1 undriven or does not drive
      anything - clipped.
-Signal uart_output/baud_gen/un129_count_1_s_31_0_COUT undriven or does not drive
+Signal uart_output/baud_gen/un129_count_s_31_0_COUT undriven or does not drive
      anything - clipped.
+Block DivB/GND was optimized away.
+Block DivC/GND was optimized away.
 Block uart_input/baud_gen/GND was optimized away.
 Block uart_output/baud_gen/GND was optimized away.
 
@@ -316,7 +367,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 182 MB
+   Peak Memory Usage: 183 MB
         
 
 
@@ -325,7 +376,22 @@ Run Time and Memory Usage
 
 
 
-                                    Page 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

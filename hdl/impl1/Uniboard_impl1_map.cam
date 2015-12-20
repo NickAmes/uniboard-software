@@ -1,36 +1,57 @@
 [ START MERGED ]
 [ END MERGED ]
 [ START CLIPPED ]
+DivB/GND
+DivC/GND
 uart_input/baud_gen/GND
 uart_output/baud_gen/GND
 VCC
-uart_input/baud_gen/un129_count_1_s_31_0_S1_0
-uart_input/baud_gen/un129_count_1_s_31_0_COUT_0
-uart_input/baud_gen/un129_count_1_cry_0_0_S1_0
-uart_input/baud_gen/un129_count_1_cry_0_0_S0_0
+DivB/un294_count_s_31_0_S1
+DivB/un294_count_s_31_0_COUT
+DivB/un294_count_cry_0_0_S1
+DivB/un294_count_cry_0_0_S0
+DivB/N_1
+DivC/un459_count_cry_0_0_S1
+DivC/un459_count_cry_0_0_S0
+DivC/N_1
+DivC/un459_count_s_31_0_S1
+DivC/un459_count_s_31_0_COUT
+uart_input/baud_gen/un129_count_cry_0_0_S1_0
+uart_input/baud_gen/un129_count_cry_0_0_S0_0
 uart_input/baud_gen/N_1
-uart_output/baud_gen/un129_count_1_cry_0_0_S1
-uart_output/baud_gen/un129_count_1_cry_0_0_S0
+uart_input/baud_gen/un129_count_s_31_0_S1_0
+uart_input/baud_gen/un129_count_s_31_0_COUT_0
+uart_output/baud_gen/un129_count_cry_0_0_S1
+uart_output/baud_gen/un129_count_cry_0_0_S0
 uart_output/baud_gen/N_1
-uart_output/baud_gen/un129_count_1_s_31_0_S1
-uart_output/baud_gen/un129_count_1_s_31_0_COUT
+uart_output/baud_gen/un129_count_s_31_0_S1
+uart_output/baud_gen/un129_count_s_31_0_COUT
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sun Dec 13 21:55:49 2015
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sun Dec 20 06:43:49 2015
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;
 LOCATE COMP "uart_rx" SITE "133" ;
+LOCATE COMP "debug[8]" SITE "122" ;
+LOCATE COMP "debug[7]" SITE "121" ;
+LOCATE COMP "debug[6]" SITE "119" ;
+LOCATE COMP "debug[5]" SITE "117" ;
+LOCATE COMP "debug[4]" SITE "115" ;
+LOCATE COMP "debug[3]" SITE "114" ;
+LOCATE COMP "debug[2]" SITE "113" ;
+LOCATE COMP "debug[1]" SITE "112" ;
+LOCATE COMP "debug[0]" SITE "111" ;
 LOCATE COMP "pause" SITE "4" ;
 LOCATE COMP "motor_pwm_r" SITE "6" ;
 LOCATE COMP "motor_pwm_l" SITE "5" ;
-LOCATE COMP "rc8" SITE "41" ;
-LOCATE COMP "rc7" SITE "42" ;
-LOCATE COMP "rc4" SITE "43" ;
-LOCATE COMP "rc3" SITE "44" ;
-LOCATE COMP "rc2" SITE "45" ;
-LOCATE COMP "rc1" SITE "47" ;
+LOCATE COMP "rc_ch8" SITE "41" ;
+LOCATE COMP "rc_ch7" SITE "42" ;
+LOCATE COMP "rc_ch4" SITE "43" ;
+LOCATE COMP "rc_ch3" SITE "44" ;
+LOCATE COMP "rc_ch2" SITE "45" ;
+LOCATE COMP "rc_ch1" SITE "47" ;
 LOCATE COMP "encoder_li" SITE "48" ;
 LOCATE COMP "encoder_lb" SITE "49" ;
 LOCATE COMP "encoder_la" SITE "50" ;
@@ -75,7 +96,7 @@ LOCATE COMP "Stepper_X_M1" SITE "103" ;
 LOCATE COMP "Stepper_X_M0" SITE "104" ;
 LOCATE COMP "Stepper_X_Dir" SITE "98" ;
 LOCATE COMP "Stepper_X_Step" SITE "99" ;
-LOCATE COMP "clk_20MHz" SITE "128" ;
+LOCATE COMP "clk_12MHz" SITE "128" ;
 LOCATE COMP "status_led[2]" SITE "107" ;
 LOCATE COMP "status_led[1]" SITE "109" ;
 LOCATE COMP "status_led[0]" SITE "110" ;

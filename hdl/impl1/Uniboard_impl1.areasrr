@@ -1,90 +1,125 @@
 ----------------------------------------------------------------------
 Report for cell UniboardTop.verilog
 
-Register bits: 102 of 6864 (1%)
+Register bits: 168 of 6864 (2%)
 PIC Latch:       0
-I/O cells:       59
+I/O cells:       68
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       34       100.0
+                              CCU2D       68       100.0
                             FD1P3AX       34       100.0
-                            FD1S3AX       29       100.0
-                            FD1S3IX       37       100.0
+                            FD1S3AX       89       100.0
+                            FD1S3IX       43       100.0
                                 GSR        1       100.0
-                                 IB       19       100.0
+                                 IB       23       100.0
                            IFS1P3DX        1       100.0
+                                INV        8       100.0
                             L6MUX21        1       100.0
-                                 OB       40       100.0
+                                 OB       45       100.0
                            OFS1P3DX        1       100.0
-                           ORCALUT4       97       100.0
+                           ORCALUT4      109       100.0
                               PFUMX        2       100.0
                                 PUR        1       100.0
-                                VHI        5       100.0
-                                VLO        5       100.0
+                                VHI        7       100.0
+                                VLO        7       100.0
 SUB MODULES 
-              ClockDividerP_2083s_0        1       100.0
-              ClockDividerP_2083s_1        1       100.0
-                 UARTReceiver_2083s        1       100.0
-              UARTTransmitter_2083s        1       100.0
+                ClockDividerP_1200s        1       100.0
+                 ClockDividerP_120s        1       100.0
+                ClockDividerP_12s_0        1       100.0
+                ClockDividerP_12s_1        1       100.0
+                   UARTReceiver_12s        1       100.0
+                UARTTransmitter_12s        1       100.0
                             
-                         TOTAL           311           
+                         TOTAL           446           
 ----------------------------------------------------------------------
-Report for cell UARTTransmitter_2083s.netlist
+Report for cell UARTTransmitter_12s.netlist
      Instance path:  uart_output
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        50.0
+                              CCU2D       17        25.0
                             FD1P3AX       12        35.3
-                            FD1S3AX       29       100.0
-                            FD1S3IX        4        10.8
+                            FD1S3AX       31        34.8
+                            FD1S3IX        2         4.7
+                                INV        1        12.5
                             L6MUX21        1       100.0
-                           ORCALUT4       37        38.1
+                           ORCALUT4       29        26.6
                               PFUMX        2       100.0
-                                VHI        2        40.0
-                                VLO        2        40.0
+                                VHI        2        28.6
+                                VLO        2        28.6
 SUB MODULES 
-              ClockDividerP_2083s_1        1       100.0
+                ClockDividerP_12s_1        1       100.0
                             
-                         TOTAL           107           
+                         TOTAL           100           
 ----------------------------------------------------------------------
-Report for cell ClockDividerP_2083s_1.netlist
-  Original Cell name ClockDividerP_2083s
+Report for cell ClockDividerP_12s_1.netlist
+  Original Cell name ClockDividerP_12s
      Instance path:  uart_output.baud_gen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        50.0
-                            FD1S3AX       29       100.0
-                            FD1S3IX        4        10.8
-                           ORCALUT4       23        23.7
-                                VHI        1        20.0
-                                VLO        1        20.0
+                              CCU2D       17        25.0
+                            FD1S3AX       31        34.8
+                            FD1S3IX        2         4.7
+                                INV        1        12.5
+                           ORCALUT4       15        13.8
+                                VHI        1        14.3
+                                VLO        1        14.3
                             
-                         TOTAL            75           
+                         TOTAL            68           
 ----------------------------------------------------------------------
-Report for cell UARTReceiver_2083s.netlist
+Report for cell UARTReceiver_12s.netlist
      Instance path:  uart_input
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        50.0
+                              CCU2D       17        25.0
                             FD1P3AX       22        64.7
-                            FD1S3IX       33        89.2
-                           ORCALUT4       54        55.7
-                                VHI        2        40.0
-                                VLO        2        40.0
+                            FD1S3IX       33        76.7
+                                INV        2        25.0
+                           ORCALUT4       43        39.4
+                                VHI        2        28.6
+                                VLO        2        28.6
 SUB MODULES 
-              ClockDividerP_2083s_0        1       100.0
+                ClockDividerP_12s_0        1       100.0
                             
-                         TOTAL           131           
+                         TOTAL           122           
 ----------------------------------------------------------------------
-Report for cell ClockDividerP_2083s_0.netlist
-  Original Cell name ClockDividerP_2083s
+Report for cell ClockDividerP_12s_0.netlist
+  Original Cell name ClockDividerP_12s
      Instance path:  uart_input.baud_gen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        50.0
-                            FD1S3IX       33        89.2
-                           ORCALUT4       25        25.8
-                                VHI        1        20.0
-                                VLO        1        20.0
+                              CCU2D       17        25.0
+                            FD1S3IX       33        76.7
+                                INV        1        12.5
+                           ORCALUT4       14        12.8
+                                VHI        1        14.3
+                                VLO        1        14.3
                             
-                         TOTAL            77           
+                         TOTAL            67           
+----------------------------------------------------------------------
+Report for cell ClockDividerP_1200s.netlist
+     Instance path:  DivC
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        25.0
+                            FD1S3AX       29        32.6
+                            FD1S3IX        4         9.3
+                                INV        2        25.0
+                           ORCALUT4       16        14.7
+                                VHI        1        14.3
+                                VLO        1        14.3
+                            
+                         TOTAL            70           
+----------------------------------------------------------------------
+Report for cell ClockDividerP_120s.netlist
+     Instance path:  DivB
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        25.0
+                            FD1S3AX       29        32.6
+                            FD1S3IX        4         9.3
+                                INV        2        25.0
+                           ORCALUT4       13        11.9
+                                VHI        1        14.3
+                                VLO        1        14.3
+                            
+                         TOTAL            67           
