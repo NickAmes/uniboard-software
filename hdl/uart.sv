@@ -16,9 +16,9 @@ module UARTReceiver(
 							  * module clock. */
 							   
 	logic bclk; /* Clock at the baud rate. */
-	logic baud_reset; /* Baud clk generator reset. */
+	logic baud_reset = 1; /* Baud clk generator reset. */
 	logic rdata[7:0]; /* Data being received. */
-	logic state[5:0]; /* Current FSM state. */
+	logic state[5:0] = 0; /* Current FSM state. */
 	
 	ClockDividerP #(baud_div) baud_gen(.clk_i(clk),
 	                                   .clk_o(bclk),
@@ -97,7 +97,7 @@ module UARTTransmitter(
 	                          * module clock. */
 	logic bclk; /* Clock at the baud rate. */
 	logic tdata[7:0]; /* Data being transmitted. */
-	logic state[3:0]; /* Current FSM state. */
+	logic state[3:0] = 0; /* Current FSM state. */
 	
 	ClockDividerP #(baud_div) baud_gen(.clk_i(clk),
 	                                   .clk_o(bclk),

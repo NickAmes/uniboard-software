@@ -7,9 +7,97 @@
  
 /* Decodes a stream from a uart into data bytes, start commands (0x01),
    and end commands (0x17), taking care of escape characters (0x18). */
-   
+module CharacterDecoder(
+	input logic clk, /* High speed clock. */
+	input logic drdy_in, /* Rising-edge data ready from UARTRecevier */
+	input logic data_in[7:0], /* Data from UARTRecevier */
+	output logic drdy_out, /* Rising edge indicates character received; look to data_out, start, and end. */
+	output logic data_out[7:0],
+	output logic start_c, /* If high, a start character was received. Ignore data_out. */
+	output logic end_c, /* If high, an end character was received. Ignore data_out. */
+	input logic reset);
+	
+	logic state[2:0] = 0;
+	logic escape = 0; /* If 1, an escape character has been received, and the next character should be interpreted literally. */
+	
+	always @ (posedge clk)
+		begin
+			if(reset)
+				begin
+					state <= 0;
+					start_c <= 0;
+					end_c <= 0;
+					drdy_out <= 0;
+				end
+			else
+				begin
+					case(state)
+						/* Idle; waiting for drdy_in rising edge. */
+						2'b00:
+							begin
+								drdy_out <= 0;
+								if(drdy_in)
+									begin
+										if(escape)
+											begin
+												data_out <= data_in;
+												escape <= 0;
+												start_c <= 0;
+												end_c <= 0;
+												state <= 2'b01;
+											end
+										else
+											begin
+												case(data_in)
+													8'h1B: /* Escape character. */
+															begin
+																escape <= 1;
+																start_c <= 0;
+																end_c <= 0;
+																state <= 2'b11;
+															end
+													8'h01: /* Start character. */
+															begin
+																start_c <= 1;
+																end_c <= 0;
+																state <= 2'b01;
+															end
+													8'h17: /* End character. */
+															begin
+																end_c <= 1;
+																start_c <= 0;
+																state <= 2'b01;
+															end
+													default: /* Standard character. */
+														begin
+															data_out <= data_in;
+															start_c <= 0;
+															end_c <= 0;
+															state <= 2'b01;
+														end
+												endcase
+											end
+									end
+								end
+						2'b01: /* Raise drdy_out. This is delayed from setting the outputs to avoid conflicts. */
+							begin
+								drdy_out <= 1;
+								state <= 2'b11;
+							end
+						2'b11: /* Wait for drdy_in to go low. */
+							begin
+								if(!drdy_in)
+									state <= 2'b00;
+							end
+						default:
+							state <= 2'b00;	
+					endcase
+				end
+		end
+endmodule
+
 /* Transmits a character through a UART. If the escape signal is 1,
-   the character will be preceded by an escape character if necessary.
+   the character will be preceded by an escape character if necessary. */
  
 module UniboardTop(
 	input logic uart_rx, /* UART input from control computer. */
@@ -150,26 +238,43 @@ module UniboardTop(
 	logic drdy;
 	logic rs232_data[7:0];
 	
+	logic decoder_drdy;
+	logic start_c;
+	logic end_c;
+	logic decoder_data[7:0];
+	
 	assign debug[8] = drdy;
-	assign debug[3:0] = rs232_data[3:0];
+	assign debug[2:0] = decoder_data[2:0];
+	assign debug[3] = decoder_drdy;
 	assign debug[4] = uart_rx;
 	assign debug[5] = uart_tx;
-	assign debug[6] = 1;
-	assign debug[7] = 1;
+	assign debug[6] = start_c;
+	assign debug[7] = end_c;
 	
 	assign status_led[1] = ~drdy;
 	assign status_led[2] = 1;
 	
-	assign uart_tx = uart_rx;
 	
 	UARTReceiver #(12) uart_input(.rx(uart_rx),
 	                                .clk(clk_12MHz),
 				                    .data(rs232_data),
 									.drdy(drdy),
 				                    .reset(0));
-	UARTTransmitter #(12) uart_output(/*.tx(uart_tx), */
+	CharacterDecoder(.clk(clk_12MHz), 
+                     .drdy_in(drdy),
+                     .data_in(rs232_data), 
+                     .drdy_out(decoder_drdy),
+                     .data_out(decoder_data),
+                     .start_c(start_c), 
+                     .end_c(end_c), 
+                     .reset(0));
+	
+	logic do_transmit;
+	assign do_transmit = decoder_drdy & ~(start_c | end_c);
+	UARTTransmitter #(12) uart_output(.tx(uart_tx),
 	                                    .clk(clk_12MHz),
-	                                    .data(rs232_data),
-	                                    .send(drdy),
+	                                    .data(decoder_data),
+	                                    .send(do_transmit),
 	                                    .reset(0));
+	
 endmodule

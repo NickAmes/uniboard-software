@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Dec 21 20:19:24 2015
+# Timing Report written on Tue Dec 22 05:03:39 2015
 #
 
 
@@ -20,13 +20,15 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.366
+Worst slack in design: 0.363
 
-                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
-Starting Clock            Frequency     Frequency     Period        Period        Slack       Type         Group              
-------------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz     1.0 MHz       126.9 MHz     1000.000      7.881         992.119     inferred     Inferred_clkgroup_0
-==============================================================================================================================
+                                            Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
+Starting Clock                              Frequency     Frequency     Period        Period        Slack       Type                                     Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ClockDividerP_12s_1|clk_o_derived_clock     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
+UniboardTop|clk_12MHz                       1.0 MHz       126.9 MHz     1000.000      7.881         992.119     inferred                                 Inferred_clkgroup_0
+============================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
 
@@ -37,7 +39,7 @@ Clocks                                        |    rise  to  rise   |    fall  t
 ------------------------------------------------------------------------------------------------------------------------------------
 Starting               Ending                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  0.000       0.366  |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  0.000       0.363  |  No paths    -      |  No paths    -      |  No paths    -    
 ====================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -60,21 +62,21 @@ Detailed Report for Clock: UniboardTop|clk_12MHz
 Starting Points with Worst Slack
 ********************************
 
-                          Starting                                                               Arrival          
-Instance                  Reference                 Type         Pin     Net                     Time        Slack
-                          Clock                                                                                   
-------------------------------------------------------------------------------------------------------------------
-uart_input.baud_reset     UniboardTop|clk_12MHz     FD1P3AX      Q       debug_c[8]              0.928       0.366
-uart_input.rdata_1_       UniboardTop|clk_12MHz     FD1P3AX      Q       rdata_1_                0.680       0.606
-uart_input.rdata_2_       UniboardTop|clk_12MHz     FD1P3AX      Q       rdata_2_                0.680       0.606
-uart_input.rdata_3_       UniboardTop|clk_12MHz     FD1P3AX      Q       rdata_3_                0.680       0.606
-uart_input_rdata_0_io     UniboardTop|clk_12MHz     IFS1P3DX     Q       uart_input.rdata_0_     0.680       0.606
-uart_input.state\[5\]     UniboardTop|clk_12MHz     FD1P3AX      Q       state\[5\]              0.862       0.788
-uart_input.state\[1\]     UniboardTop|clk_12MHz     FD1P3AX      Q       state\[1\]              0.862       0.846
-uart_input.state\[2\]     UniboardTop|clk_12MHz     FD1P3AX      Q       state\[2\]              0.862       0.846
-uart_input.state\[3\]     UniboardTop|clk_12MHz     FD1P3AX      Q       state\[3\]              0.862       0.846
-uart_input.state\[0\]     UniboardTop|clk_12MHz     FD1P3AX      Q       state\[0\]              0.865       0.967
-==================================================================================================================
+                          Starting                                                          Arrival          
+Instance                  Reference                 Type        Pin     Net                 Time        Slack
+                          Clock                                                                              
+-------------------------------------------------------------------------------------------------------------
+uart_input.baud_reset     UniboardTop|clk_12MHz     FD1P3AY     Q       baud_reset          0.925       0.363
+II_4.state\[1\]           UniboardTop|clk_12MHz     FD1P3AX     Q       state\[1\]          0.843       0.513
+II_4.data_out\[3\]        UniboardTop|clk_12MHz     FD1P3AX     Q       data_out\[3\]_Q     0.680       0.606
+II_4.data_out\[4\]        UniboardTop|clk_12MHz     FD1P3AX     Q       data_out\[4\]_Q     0.680       0.606
+II_4.data_out\[5\]        UniboardTop|clk_12MHz     FD1P3AX     Q       data_out\[5\]_Q     0.680       0.606
+II_4.data_out\[6\]        UniboardTop|clk_12MHz     FD1P3AX     Q       data_out\[6\]_Q     0.680       0.606
+II_4.data_out\[7\]        UniboardTop|clk_12MHz     FD1P3AX     Q       data_out\[7\]_Q     0.680       0.606
+uart_input.rdata_1_       UniboardTop|clk_12MHz     FD1P3AX     Q       rdata_1_            0.680       0.606
+uart_input.rdata_2_       UniboardTop|clk_12MHz     FD1P3AX     Q       rdata_2_            0.680       0.606
+uart_input.rdata_3_       UniboardTop|clk_12MHz     FD1P3AX     Q       rdata_3_            0.680       0.606
+=============================================================================================================
 
 
 Ending Points with Worst Slack
@@ -84,16 +86,16 @@ Ending Points with Worst Slack
 Instance                           Reference                 Type        Pin     Net            Time         Slack
                                    Clock                                                                          
 ------------------------------------------------------------------------------------------------------------------
-uart_input.baud_gen.clk_o          UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[0\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[1\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[2\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[3\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[4\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[5\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[6\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[7\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
-uart_input.baud_gen.count\[8\]     UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[8]     0.562        0.366
+uart_input.baud_gen.clk_o          UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[0\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[1\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[2\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[3\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[4\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[5\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[6\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[7\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
+uart_input.baud_gen.count\[8\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.363
 ==================================================================================================================
 
 
@@ -103,12 +105,12 @@ Worst Path Information
 
 
 Path information for path number 1: 
-    Propagation time:                        0.928
+    Propagation time:                        0.925
     + Clock delay at starting point:         0.000 (ideal)
     - Requested Period:                      0.000
     - Hold time:                             0.562
     - Clock delay at ending point:           0.000 (ideal)
-    = Slack (critical) :                     0.366
+    = Slack (critical) :                     0.363
 
     Number of logic level(s):                0
     Starting point:                          uart_input.baud_reset / Q
@@ -119,9 +121,9 @@ Path information for path number 1:
 Instance / Net                            Pin      Pin               Arrival     No. of    
 Name                          Type        Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------
-uart_input.baud_reset         FD1P3AX     Q        Out     0.928     0.928       -         
-debug_c[8]                    Net         -        -       -         -           35        
-uart_input.baud_gen.clk_o     FD1S3IX     CD       In      0.000     0.928       -         
+uart_input.baud_reset         FD1P3AY     Q        Out     0.925     0.925       -         
+baud_reset                    Net         -        -       -         -           33        
+uart_input.baud_gen.clk_o     FD1S3IX     CD       In      0.000     0.925       -         
 ===========================================================================================
 
 

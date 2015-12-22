@@ -9,11 +9,15 @@ Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
     <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
 Writing the design to Uniboard_impl1.ngo...
 
@@ -39,10 +43,14 @@ Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl
 
 Running DRC...
 
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_s_31_0_COUT" arg2="uart_input/baud_gen/un129_count_s_31_0_COUT"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_s_31_0_S1" arg2="uart_input/baud_gen/un129_count_s_31_0_S1"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_cry_0_0_S0" arg2="uart_input/baud_gen/un129_count_cry_0_0_S0"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_cry_0_0_S1" arg2="uart_input/baud_gen/un129_count_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_s_31_0_COUT" arg2="uart_output/baud_gen/un129_count_s_31_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_s_31_0_S1" arg2="uart_output/baud_gen/un129_count_s_31_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_cry_0_0_S0" arg2="uart_output/baud_gen/un129_count_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_output/baud_gen/un129_count_cry_0_0_S1" arg2="uart_output/baud_gen/un129_count_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_s_31_0_COUT_0" arg2="uart_input/baud_gen/un129_count_s_31_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_s_31_0_S1_0" arg2="uart_input/baud_gen/un129_count_s_31_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_cry_0_0_S0_0" arg2="uart_input/baud_gen/un129_count_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="uart_input/baud_gen/un129_count_cry_0_0_S1_0" arg2="uart_input/baud_gen/un129_count_cry_0_0_S1_0"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="DivC/un459_count_s_31_0_COUT" arg2="DivC/un459_count_s_31_0_COUT"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="DivC/un459_count_s_31_0_S1" arg2="DivC/un459_count_s_31_0_S1"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="DivC/un459_count_cry_0_0_S0" arg2="DivC/un459_count_cry_0_0_S0"  />
@@ -72,10 +80,10 @@ Running DRC...
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch7" arg2="rc_ch7"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch8" arg2="rc_ch8"  />
     <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="pause" arg2="pause"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="33"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="37"  />
 
 Design Results:
-    298 blocks expanded
+    451 blocks expanded
 Complete the first expansion.
 Writing 'Uniboard_impl1.ngd' ...
 Total CPU Time: 0 secs  
@@ -113,7 +121,7 @@ Removing unused logic...
 
 Optimizing...
 
-3 CCU2 constant inputs absorbed.
+4 CCU2 constant inputs absorbed.
 
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_nFault"  />
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_Y_nFault"  />
@@ -140,17 +148,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    114 out of  7209 (2%)
-      PFU registers:          109 out of  6864 (2%)
-      PIO registers:            5 out of   345 (1%)
-   Number of SLICEs:        91 out of  3432 (3%)
-      SLICEs as Logic/ROM:     91 out of  3432 (3%)
+   Number of registers:    183 out of  7209 (3%)
+      PFU registers:          182 out of  6864 (3%)
+      PIO registers:            1 out of   345 (0%)
+   Number of SLICEs:       136 out of  3432 (4%)
+      SLICEs as Logic/ROM:    136 out of  3432 (4%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         51 out of  3432 (1%)
-   Number of LUT4s:        179 out of  6864 (3%)
-      Number of logic LUTs:       77
+      SLICEs as Carry:         68 out of  3432 (2%)
+   Number of LUT4s:        270 out of  6864 (4%)
+      Number of logic LUTs:      134
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     51 (102 LUT4s)
+      Number of ripple logic:     68 (136 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 47 + 4(JTAG) out of 115 (44%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -176,31 +184,43 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  1
-     Net clk_12MHz_c: 70 loads, 70 rising, 0 falling (Driver: PIO clk_12MHz )
-   Number of Clock Enables:  7
-     Net uart_input.state[0]19: 4 loads, 0 LSLICEs
-     Net un1_state[0]23_1_0_a3: 1 loads, 0 LSLICEs
-     Net uart_input/N_38: 1 loads, 1 LSLICEs
-     Net uart_input/N_12_i: 3 loads, 3 LSLICEs
-     Net uart_input/un1_state[0]23_4_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_5_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_6_0_a3: 1 loads, 1 LSLICEs
-   Number of LSRs:  3
-     Net debug_c[8]: 19 loads, 19 LSLICEs
+     Net clk_12MHz_c: 113 loads, 113 rising, 0 falling (Driver: PIO clk_12MHz )
+   Number of Clock Enables:  18
+     Net un1_state[0]23_1: 1 loads, 0 LSLICEs
+     Net uart_output/clk_o_RNI9B5LD: 2 loads, 2 LSLICEs
+     Net uart_output/tx_RNO: 1 loads, 1 LSLICEs
+     Net uart_output/tdata_0_5_RNIC4RDD: 4 loads, 4 LSLICEs
+     Net II_4/state[1]: 1 loads, 1 LSLICEs
+     Net II_4/N_17: 1 loads, 1 LSLICEs
+     Net II_4/N_16_i: 1 loads, 1 LSLICEs
+     Net II_4/N_12_i: 5 loads, 5 LSLICEs
+     Net uart_input/un1_state_2_i: 2 loads, 2 LSLICEs
+     Net uart_input/state[0]19: 4 loads, 4 LSLICEs
+     Net uart_input/un1_baud_reset_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net uart_input/un1_state[0]23_2: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_3: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_8: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_7: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_4: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_5: 1 loads, 1 LSLICEs
+     Net uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
+   Number of LSRs:  4
+     Net uart_output/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+     Net uart_input/baud_reset: 19 loads, 19 LSLICEs
      Net DivC/count[0]2: 4 loads, 4 LSLICEs
      Net DivB/count[0]2: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net debug_c[8]: 21 loads
-     Net uart_tx_c: 13 loads
+     Net uart_input/baud_reset: 19 loads
+     Net uart_input/state[1]: 15 loads
+     Net uart_input/state[3]: 15 loads
+     Net uart_input/state[2]: 14 loads
+     Net uart_rx_c: 14 loads
      Net Stepper_A_M2_c: 12 loads
-     Net uart_input/state[0]: 12 loads
-     Net uart_input/state[1]: 11 loads
-     Net uart_input/state[2]: 10 loads
-     Net uart_input/state[3]: 10 loads
-     Net uart_input/state[5]: 10 loads
-     Net Stepper_A_En_c: 6 loads
-     Net uart_input.state[0]19: 6 loads
+     Net uart_input/state[0]: 11 loads
+     Net uart_output/state[0]: 11 loads
+     Net uart_output/state[1]: 11 loads
+     Net debug_c[8]: 9 loads
  
 
    Number of warnings:  21
@@ -210,7 +230,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 182 MB
+Peak Memory Usage: 183 MB
 
 Dumping design to file Uniboard_impl1_map.ncd.
 
@@ -225,7 +245,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Uniboard_impl1_map.ncd"
-Mon Dec 21 20:19:29 2015
+Tue Dec 22 05:03:42 2015
 
 PAR: Place And Route Diamond (64-bit) 3.4.1.213.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Uniboard_impl1_map.ncd Uniboard_impl1.dir/5_1.ncd Uniboard_impl1.prf
@@ -251,38 +271,38 @@ Device utilization summary:
 
    PIO (prelim)   47+4(JTAG)/336     15% used
                   47+4(JTAG)/115     44% bonded
-   IOLOGIC            5/336           1% used
+   IOLOGIC            1/336          <1% used
 
-   SLICE             91/3432          2% used
+   SLICE            136/3432          3% used
 
 
 
-Number of Signals: 334
-Number of Connections: 668
+Number of Signals: 506
+Number of Connections: 1049
 
 Pin Constraint Summary:
    47 out of 47 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    clk_12MHz_c (driver: clk_12MHz, clk load #: 70)
+    clk_12MHz_c (driver: clk_12MHz, clk load #: 113)
 
 
 The following 1 signal is selected to use the secondary clock routing resources:
-    debug_c[8] (driver: SLICE_58, clk load #: 0, sr load #: 19, ce load #: 0)
+    uart_input/baud_reset (driver: uart_input/SLICE_162, clk load #: 0, sr load #: 19, ce load #: 0)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-......
+.........
 Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 ...................
-Placer score = 39563.
+Placer score = 54584.
 Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  39288
+Placer score =  53900
 Finished Placer Phase 2.  REAL time: 4 secs 
 
 
@@ -295,8 +315,8 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "clk_12MHz_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 70
-  SECONDARY "debug_c[8]" from Q0 on comp "SLICE_58" on site "R14C20C", clk load = 0, ce load = 0, sr load = 19
+  PRIMARY "clk_12MHz_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 113
+  SECONDARY "uart_input/baud_reset" from Q0 on comp "uart_input/SLICE_162" on site "R14C20D", clk load = 0, ce load = 0, sr load = 19
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 1 out of 8 (12%)
@@ -334,12 +354,12 @@ Dumping design to file Uniboard_impl1.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 668 unrouted.
+0 connections routed; 1049 unrouted.
 Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 5 secs 
 
-Start NBR router at Mon Dec 21 20:19:34 PST 2015
+Start NBR router at Tue Dec 22 05:03:47 PST 2015
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -354,32 +374,36 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Mon Dec 21 20:19:34 PST 2015
+Start NBR special constraint process at Tue Dec 22 05:03:47 PST 2015
 
-Start NBR section for initial routing at Mon Dec 21 20:19:34 PST 2015
+Start NBR section for initial routing at Tue Dec 22 05:03:47 PST 2015
 Level 4, iteration 1
-19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+36(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Mon Dec 21 20:19:34 PST 2015
+Start NBR section for normal routing at Tue Dec 22 05:03:47 PST 2015
 Level 4, iteration 1
-10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 2
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 3
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 5
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 7
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 
-Start NBR section for re-routing at Mon Dec 21 20:19:34 PST 2015
+Start NBR section for re-routing at Tue Dec 22 05:03:48 PST 2015
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 
-Start NBR section for post-routing at Mon Dec 21 20:19:34 PST 2015
+Start NBR section for post-routing at Tue Dec 22 05:03:48 PST 2015
 
 End NBR router with 0 unrouted connection
 
@@ -394,10 +418,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 4 secs 
-Total REAL time: 5 secs 
+Total CPU time 5 secs 
+Total REAL time: 6 secs 
 Completely routed.
-End of route.  668 routed (100.00%); 0 unrouted.
+End of route.  1049 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 

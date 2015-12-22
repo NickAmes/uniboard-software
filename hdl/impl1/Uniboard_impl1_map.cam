@@ -1,9 +1,11 @@
 [ START MERGED ]
+II_4/state[1]_i II_4/state[1]
 [ END MERGED ]
 [ START CLIPPED ]
 DivB/GND
 DivC/GND
 uart_input/baud_gen/GND
+uart_output/baud_gen/GND
 DivB/un294_count_s_31_0_S1
 DivB/un294_count_s_31_0_COUT
 DivB/un294_count_cry_0_0_S1
@@ -14,15 +16,20 @@ DivC/un459_count_cry_0_0_S0
 DivC/N_1
 DivC/un459_count_s_31_0_S1
 DivC/un459_count_s_31_0_COUT
-uart_input/baud_gen/un129_count_cry_0_0_S1
-uart_input/baud_gen/un129_count_cry_0_0_S0
+uart_input/baud_gen/un129_count_cry_0_0_S1_0
+uart_input/baud_gen/un129_count_cry_0_0_S0_0
 uart_input/baud_gen/N_1
-uart_input/baud_gen/un129_count_s_31_0_S1
-uart_input/baud_gen/un129_count_s_31_0_COUT
+uart_input/baud_gen/un129_count_s_31_0_S1_0
+uart_input/baud_gen/un129_count_s_31_0_COUT_0
+uart_output/baud_gen/un129_count_cry_0_0_S1
+uart_output/baud_gen/un129_count_cry_0_0_S0
+uart_output/baud_gen/N_1
+uart_output/baud_gen/un129_count_s_31_0_S1
+uart_output/baud_gen/un129_count_s_31_0_COUT
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Mon Dec 21 20:19:29 2015
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Tue Dec 22 05:03:42 2015
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;
