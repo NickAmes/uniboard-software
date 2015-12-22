@@ -26,7 +26,27 @@ Selecting top level module UniboardTop
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Synthesizing module UniboardTop
 
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_2_
+@W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":161:23:161:33|Pruning instance uart_output -- not in use ...
+
 @W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":100:21:100:24|Pruning instance DivA -- not in use ...
 
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL246 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":69:7:69:11|Input port bits 7 to 6 of debug[8:0] are unused
+
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":17:16:17:31|Input Stepper_X_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":25:16:25:31|Input Stepper_Y_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":33:16:33:31|Input Stepper_Z_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":41:16:41:31|Input Stepper_A_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":43:13:43:17|Input limit is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":51:13:51:22|Input encoder_ra is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":52:13:52:22|Input encoder_rb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":53:13:53:22|Input encoder_ri is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":54:13:54:22|Input encoder_la is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":55:13:55:22|Input encoder_lb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":56:13:56:22|Input encoder_li is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":58:13:58:18|Input rc_ch1 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":59:13:59:18|Input rc_ch2 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:13:60:18|Input rc_ch3 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":61:13:61:18|Input rc_ch4 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":62:13:62:18|Input rc_ch7 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":63:13:63:18|Input rc_ch8 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":67:13:67:17|Input pause is unused

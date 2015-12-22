@@ -1,0 +1,6 @@
+#Start recording tcl command: 12/21/2015 20:17:34
+#Project Location: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl; Project name: Uniboard
+prj_project open "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/Uniboard.ldf"
+prj_run Synthesis -impl impl1 -task Synplify_Synthesis
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 12/21/2015 20:19:43

@@ -57,15 +57,35 @@ Selecting top level module UniboardTop
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":5:7:5:17|Synthesizing module UniboardTop
 
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|No assignment to status_led_2_
+@W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":161:23:161:33|Pruning instance uart_output -- not in use ...
+
 @W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":100:21:100:24|Pruning instance DivA -- not in use ...
 
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":8:14:8:23|*Unassigned bits of status_led_2_ are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL246 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":69:7:69:11|Input port bits 7 to 6 of debug[8:0] are unused
+
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":17:16:17:31|Input Stepper_X_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":25:16:25:31|Input Stepper_Y_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":33:16:33:31|Input Stepper_Z_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":41:16:41:31|Input Stepper_A_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":43:13:43:17|Input limit is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":51:13:51:22|Input encoder_ra is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":52:13:52:22|Input encoder_rb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":53:13:53:22|Input encoder_ri is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":54:13:54:22|Input encoder_la is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":55:13:55:22|Input encoder_lb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":56:13:56:22|Input encoder_li is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":58:13:58:18|Input rc_ch1 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":59:13:59:18|Input rc_ch2 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:13:60:18|Input rc_ch3 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":61:13:61:18|Input rc_ch4 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":62:13:62:18|Input rc_ch7 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":63:13:63:18|Input rc_ch8 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":67:13:67:17|Input pause is unused
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:44 2015
+# Mon Dec 21 20:19:21 2015
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -79,7 +99,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:44 2015
+# Mon Dec 21 20:19:21 2015
 
 ###########################################################]
 @END
@@ -87,7 +107,7 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:44 2015
+# Mon Dec 21 20:19:21 2015
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
@@ -99,7 +119,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:45 2015
+# Mon Dec 21 20:19:23 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -126,7 +146,14 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[4\] of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[5\] of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[6\] of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[7\] of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_4_ of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_5_ of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_6_ of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_7_ of view:PrimLib.dffe(prim) in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -139,21 +166,20 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @S |Clock Summary
 ****************
 
-Start                                       Requested     Requested     Clock                                    Clock              
-Clock                                       Frequency     Period        Type                                     Group              
-------------------------------------------------------------------------------------------------------------------------------------
-ClockDividerP_12s_1|clk_o_derived_clock     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-UniboardTop|clk_12MHz                       1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
-====================================================================================================================================
+Start                     Requested     Requested     Clock        Clock              
+Clock                     Frequency     Period        Type         Group              
+--------------------------------------------------------------------------------------
+UniboardTop|clk_12MHz     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+======================================================================================
 
-@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 156 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 115 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 140MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 140MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:46 2015
+# Mon Dec 21 20:19:23 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -187,32 +213,32 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
 
 @W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing instance uart_input.drdy,  because it is equivalent to instance uart_input.baud_reset
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -221,53 +247,52 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 168 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 114 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-13 instances converted, 0 sequential instances remain driven by gated/generated clocks
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-============================== Non-Gated/Non-Generated Clocks ==============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance     
---------------------------------------------------------------------------------------------
-@K:CKID0001       clk_12MHz           port                   168        uart_output.state[0]
-============================================================================================
+============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance      
+---------------------------------------------------------------------------------------------
+@K:CKID0001       clk_12MHz           port                   114        uart_input.baud_reset
+=============================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 144MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 144MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
 
 Writing EDIF Netlist and constraint files
-@W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
 J-2014.09L
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 @W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_12MHz"
 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Dec 20 06:43:48 2015
+# Timing Report written on Mon Dec 21 20:19:24 2015
 #
 
 
@@ -288,13 +313,11 @@ Performance Summary
 
 Worst slack in design: 992.119
 
-                                            Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
-Starting Clock                              Frequency     Frequency     Period        Period        Slack       Type                                     Group              
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ClockDividerP_12s_1|clk_o_derived_clock     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-UniboardTop|clk_12MHz                       1.0 MHz       126.9 MHz     1000.000      7.881         992.119     inferred                                 Inferred_clkgroup_0
-============================================================================================================================================================================
-@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack       Type         Group              
+------------------------------------------------------------------------------------------------------------------------------
+UniboardTop|clk_12MHz     1.0 MHz       126.9 MHz     1000.000      7.881         992.119     inferred     Inferred_clkgroup_0
+==============================================================================================================================
 
 
 
@@ -330,41 +353,41 @@ Detailed Report for Clock: UniboardTop|clk_12MHz
 Starting Points with Worst Slack
 ********************************
 
-                                     Starting                                                      Arrival            
-Instance                             Reference                 Type        Pin     Net             Time        Slack  
-                                     Clock                                                                            
-----------------------------------------------------------------------------------------------------------------------
-DivC.count\[11\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[11\]     1.044       992.119
-DivC.count\[13\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       992.119
-DivC.count\[25\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[25\]     1.044       992.119
-DivC.count\[26\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[26\]     1.044       992.119
-DivC.count\[28\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[28\]     1.044       992.119
-DivC.count\[29\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[29\]     1.044       992.119
-DivC.count\[30\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[30\]     1.044       992.119
-DivC.count\[31\]                     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[31\]     1.044       992.119
-uart_output.baud_gen.count\[12\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[12\]     1.044       992.568
-uart_output.baud_gen.count\[13\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       992.568
-======================================================================================================================
+                     Starting                                                      Arrival            
+Instance             Reference                 Type        Pin     Net             Time        Slack  
+                     Clock                                                                            
+------------------------------------------------------------------------------------------------------
+DivC.count\[11\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[11\]     1.044       992.119
+DivC.count\[13\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       992.119
+DivC.count\[25\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[25\]     1.044       992.119
+DivC.count\[26\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[26\]     1.044       992.119
+DivC.count\[28\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[28\]     1.044       992.119
+DivC.count\[29\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[29\]     1.044       992.119
+DivC.count\[30\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[30\]     1.044       992.119
+DivC.count\[31\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[31\]     1.044       992.119
+DivC.count\[12\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[12\]     1.044       993.136
+DivC.count\[14\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[14\]     1.044       993.136
+======================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                    Starting                                                              Required            
-Instance                            Reference                 Type        Pin     Net                     Time         Slack  
-                                    Clock                                                                                     
-------------------------------------------------------------------------------------------------------------------------------
-DivC.clk_o                          UniboardTop|clk_12MHz     FD1S3AX     D       clk_o32_i               1000.089     992.119
-uart_output.state\[0\]              UniboardTop|clk_12MHz     FD1P3AX     SP      tdata_0_16_RNIJMNAD     999.528      992.568
-uart_output.state\[1\]              UniboardTop|clk_12MHz     FD1P3AX     SP      tdata_0_16_RNIJMNAD     999.528      992.568
-uart_output.state\[2\]              UniboardTop|clk_12MHz     FD1P3AX     SP      tdata_0_16_RNIJMNAD     999.528      992.568
-uart_output.state\[3\]              UniboardTop|clk_12MHz     FD1P3AX     SP      tdata_0_16_RNIJMNAD     999.528      992.568
-DivC.count\[4\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2             999.197      992.685
-DivC.count\[5\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2             999.197      992.685
-DivC.count\[7\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2             999.197      992.685
-DivC.count\[10\]                    UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2             999.197      992.685
-uart_output.baud_gen.count\[2\]     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2             999.197      992.861
-==============================================================================================================================
+                                    Starting                                                          Required            
+Instance                            Reference                 Type        Pin     Net                 Time         Slack  
+                                    Clock                                                                                 
+--------------------------------------------------------------------------------------------------------------------------
+DivC.clk_o                          UniboardTop|clk_12MHz     FD1S3AX     D       clk_o32_i           1000.089     992.119
+DivC.count\[4\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.685
+DivC.count\[5\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.685
+DivC.count\[7\]                     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.685
+DivC.count\[10\]                    UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.685
+uart_input.baud_gen.count\[31\]     UniboardTop|clk_12MHz     FD1S3IX     D       un129_count[31]     999.894      993.551
+DivC.count\[31\]                    UniboardTop|clk_12MHz     FD1S3AX     D       un459_count[31]     999.894      993.551
+DivB.count\[31\]                    UniboardTop|clk_12MHz     FD1S3AX     D       un294_count[31]     999.894      993.551
+DivC.count\[29\]                    UniboardTop|clk_12MHz     FD1S3AX     D       un459_count[29]     999.894      993.694
+DivB.count\[29\]                    UniboardTop|clk_12MHz     FD1S3AX     D       un294_count[29]     999.894      993.694
+==========================================================================================================================
 
 
 
@@ -407,11 +430,11 @@ DivC.count\[8\]_RNI4EE01     ORCALUT4     Z        Out     1.153     5.319      
 count\[8\]_RNI4EE01          Net          -        -       -         -           3         
 DivC.clk_o32_i_RNO_0         ORCALUT4     D        In      0.000     5.319       -         
 DivC.clk_o32_i_RNO_0         ORCALUT4     Z        Out     1.017     6.336       -         
-clk_o32_i_RNO_0              Net          -        -       -         -           1         
+N_33                         Net          -        -       -         -           1         
 DivC.clk_o32_i_RNO           ORCALUT4     D        In      0.000     6.336       -         
 DivC.clk_o32_i_RNO           ORCALUT4     Z        Out     1.017     7.353       -         
 clk_o32_i_RNO                Net          -        -       -         -           1         
-DivC.clk_o32_i               ORCALUT4     D        In      0.000     7.353       -         
+DivC.clk_o32_i               ORCALUT4     C        In      0.000     7.353       -         
 DivC.clk_o32_i               ORCALUT4     Z        Out     0.617     7.969       -         
 clk_o32_i                    Net          -        -       -         -           1         
 DivC.clk_o                   FD1S3AX      D        In      0.000     7.969       -         
@@ -422,39 +445,37 @@ DivC.clk_o                   FD1S3AX      D        In      0.000     7.969      
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 168 of 6864 (2%)
+Register bits: 114 of 6864 (2%)
 PIC Latch:       0
-I/O cells:       68
+I/O cells:       47
 
 
 Details:
-CCU2D:          68
-FD1P3AX:        34
-FD1S3AX:        89
-FD1S3IX:        43
+CCU2D:          51
+FD1P3AX:        10
+FD1S3AX:        58
+FD1S3IX:        41
 GSR:            1
-IB:             23
+IB:             2
 IFS1P3DX:       1
-INV:            8
-L6MUX21:        1
+INV:            7
 OB:             45
-OFS1P3DX:       1
-ORCALUT4:       109
-PFUMX:          2
+OFS1P3DX:       4
+ORCALUT4:       68
 PUR:            1
-VHI:            7
-VLO:            7
+VHI:            5
+VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 146MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 144MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Dec 20 06:43:48 2015
+# Mon Dec 21 20:19:24 2015
 
 ###########################################################]

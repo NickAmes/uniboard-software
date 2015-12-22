@@ -6,81 +6,60 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sun Dec 20 06:44:01 2015
+Mon Dec 21 20:19:33 2015
 
 Pinout by Port Name:
-+------------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| Port Name        | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
-+------------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| Stepper_A_Dir    | 75/1     | LVCMOS25_OUT | PR23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_En     | 69/2     | LVCMOS25_OUT | PB37B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_M0     | 70/2     | LVCMOS25_OUT | PB38A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_M1     | 71/2     | LVCMOS25_OUT | PB38B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_M2     | 73/1     | LVCMOS25_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_Step   | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_A_nFault | 76/1     | LVCMOS25_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| Stepper_X_Dir    | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_En     | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_M0     | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_M1     | 103/1    | LVCMOS25_OUT | PR4C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_M2     | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_Step   | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_X_nFault | 106/1    | LVCMOS25_IN  | PR2B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| Stepper_Y_Dir    | 86/1     | LVCMOS25_OUT | PR16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_En     | 96/1     | LVCMOS25_OUT | PR9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_M0     | 95/1     | LVCMOS25_OUT | PR9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_M1     | 94/1     | LVCMOS25_OUT | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_M2     | 93/1     | LVCMOS25_OUT | PR11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_Step   | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Y_nFault | 97/1     | LVCMOS25_IN  | PR7B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| Stepper_Z_Dir    | 84/1     | LVCMOS25_OUT | PR17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_En     | 77/1     | LVCMOS25_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_M0     | 78/1     | LVCMOS25_OUT | PR21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_M1     | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_M2     | 82/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_Step   | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| Stepper_Z_nFault | 85/1     | LVCMOS25_IN  | PR16B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| clk_12MHz        | 128/0    | LVCMOS25_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| debug[0]         | 111/0    | LVCMOS25_OUT | PT35B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[1]         | 112/0    | LVCMOS25_OUT | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[2]         | 113/0    | LVCMOS25_OUT | PT33B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[3]         | 114/0    | LVCMOS25_OUT | PT33A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[4]         | 115/0    | LVCMOS25_OUT | PT28B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[5]         | 117/0    | LVCMOS25_OUT | PT28A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[6]         | 119/0    | LVCMOS25_OUT | PT27D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[7]         | 121/0    | LVCMOS25_OUT | PT25B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| debug[8]         | 122/0    | LVCMOS25_OUT | PT25A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| encoder_la       | 50/2     | LVCMOS25_IN  | PB16B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| encoder_lb       | 49/2     | LVCMOS25_IN  | PB16A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| encoder_li       | 48/2     | LVCMOS25_IN  | PB13B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| encoder_ra       | 56/2     | LVCMOS25_IN  | PB23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| encoder_rb       | 55/2     | LVCMOS25_IN  | PB23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| encoder_ri       | 54/2     | LVCMOS25_IN  | PB18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| expansion1       | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| expansion2       | 59/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| expansion3       | 60/2     | LVCMOS25_OUT | PB29B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| expansion4       | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| expansion5       | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| limit[0]         | 68/2     | LVCMOS25_IN  | PB37A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| limit[1]         | 65/2     | LVCMOS25_IN  | PB35A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| limit[2]         | 67/2     | LVCMOS25_IN  | PB35B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| limit[3]         | 63/2     | LVCMOS25_IN  | PB31D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| motor_pwm_l      | 5/5      | LVCMOS25_OUT | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| motor_pwm_r      | 6/5      | LVCMOS25_OUT | PL6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| pause            | 4/5      | LVCMOS25_IN  | PL4B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch1           | 47/2     | LVCMOS25_IN  | PB13A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch2           | 45/2     | LVCMOS25_IN  | PB12B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch3           | 44/2     | LVCMOS25_IN  | PB12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch4           | 43/2     | LVCMOS25_IN  | PB9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch7           | 42/2     | LVCMOS25_IN  | PB9A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| rc_ch8           | 41/2     | LVCMOS25_IN  | PB6B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| signal_light     | 57/2     | LVCMOS25_OUT | PB26A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| status_led[0]    | 110/0    | LVCMOS25_OUT | PT36C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| status_led[1]    | 109/0    | LVCMOS25_OUT | PT36D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| status_led[2]    | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| uart_rx          | 133/0    | LVCMOS25_IN  | PT15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| uart_tx          | 132/0    | LVCMOS25_OUT | PT15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-+------------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| Port Name      | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| Stepper_A_Dir  | 75/1     | LVCMOS25_OUT | PR23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_En   | 69/2     | LVCMOS25_OUT | PB37B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_M0   | 70/2     | LVCMOS25_OUT | PB38A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_M1   | 71/2     | LVCMOS25_OUT | PB38B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_M2   | 73/1     | LVCMOS25_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_Step | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_Dir  | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_En   | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_M0   | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_M1   | 103/1    | LVCMOS25_OUT | PR4C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_M2   | 100/1    | LVCMOS25_OUT | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_X_Step | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_Dir  | 86/1     | LVCMOS25_OUT | PR16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_En   | 96/1     | LVCMOS25_OUT | PR9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_M0   | 95/1     | LVCMOS25_OUT | PR9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_M1   | 94/1     | LVCMOS25_OUT | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_M2   | 93/1     | LVCMOS25_OUT | PR11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_Step | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_Dir  | 84/1     | LVCMOS25_OUT | PR17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_En   | 77/1     | LVCMOS25_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_M0   | 78/1     | LVCMOS25_OUT | PR21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_M1   | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_M2   | 82/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_Step | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| clk_12MHz      | 128/0    | LVCMOS25_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| debug[0]       | 111/0    | LVCMOS25_OUT | PT35B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[1]       | 112/0    | LVCMOS25_OUT | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[2]       | 113/0    | LVCMOS25_OUT | PT33B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[3]       | 114/0    | LVCMOS25_OUT | PT33A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[4]       | 115/0    | LVCMOS25_OUT | PT28B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[5]       | 117/0    | LVCMOS25_OUT | PT28A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[6]       | 119/0    | LVCMOS25_OUT | PT27D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[7]       | 121/0    | LVCMOS25_OUT | PT25B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| debug[8]       | 122/0    | LVCMOS25_OUT | PT25A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| expansion1     | 58/2     | LVCMOS25_OUT | PB26B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| expansion2     | 59/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| expansion3     | 60/2     | LVCMOS25_OUT | PB29B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| expansion4     | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| expansion5     | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| motor_pwm_l    | 5/5      | LVCMOS25_OUT | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| motor_pwm_r    | 6/5      | LVCMOS25_OUT | PL6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| signal_light   | 57/2     | LVCMOS25_OUT | PB26A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| status_led[0]  | 110/0    | LVCMOS25_OUT | PT36C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| status_led[1]  | 109/0    | LVCMOS25_OUT | PT36D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| status_led[2]  | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| uart_rx        | 133/0    | LVCMOS25_IN  | PT15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| uart_tx        | 132/0    | LVCMOS25_OUT | PT15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
++----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -105,7 +84,7 @@ Pinout by Pin Number:
 | 1/5      |     unused, PULL:DOWN |            |              | PL3A  | L_GPLLT_FB     |           |           |
 | 2/5      |     unused, PULL:DOWN |            |              | PL3B  | L_GPLLC_FB     |           |           |
 | 3/5      |     unused, PULL:DOWN |            |              | PL4A  | L_GPLLT_IN     |           |           |
-| 4/5      | pause                 | LOCATED    | LVCMOS25_IN  | PL4B  | L_GPLLC_IN     |           |           |
+| 4/5      |     unused, PULL:DOWN |            |              | PL4B  | L_GPLLC_IN     |           |           |
 | 5/5      | motor_pwm_l           | LOCATED    | LVCMOS25_OUT | PL6A  | PCLKT5_0       |           |           |
 | 6/5      | motor_pwm_r           | LOCATED    | LVCMOS25_OUT | PL6B  | PCLKC5_0       |           |           |
 | 9/5      |     unused, PULL:DOWN |            |              | PL8A  |                |           |           |
@@ -134,43 +113,43 @@ Pinout by Pin Number:
 | 38/2     |     unused, PULL:DOWN |            |              | PB4A  |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |              | PB4B  |                |           |           |
 | 40/2     |     unused, PULL:DOWN |            |              | PB6A  | CSSPIN         |           |           |
-| 41/2     | rc_ch8                | LOCATED    | LVCMOS25_IN  | PB6B  |                |           |           |
-| 42/2     | rc_ch7                | LOCATED    | LVCMOS25_IN  | PB9A  |                |           |           |
-| 43/2     | rc_ch4                | LOCATED    | LVCMOS25_IN  | PB9B  |                |           |           |
-| 44/2     | rc_ch3                | LOCATED    | LVCMOS25_IN  | PB12A | MCLK/CCLK      |           |           |
-| 45/2     | rc_ch2                | LOCATED    | LVCMOS25_IN  | PB12B | SO/SPISO       |           |           |
-| 47/2     | rc_ch1                | LOCATED    | LVCMOS25_IN  | PB13A |                |           |           |
-| 48/2     | encoder_li            | LOCATED    | LVCMOS25_IN  | PB13B |                |           |           |
-| 49/2     | encoder_lb            | LOCATED    | LVCMOS25_IN  | PB16A | PCLKT2_0       |           |           |
-| 50/2     | encoder_la            | LOCATED    | LVCMOS25_IN  | PB16B | PCLKC2_0       |           |           |
+| 41/2     |     unused, PULL:DOWN |            |              | PB6B  |                |           |           |
+| 42/2     |     unused, PULL:DOWN |            |              | PB9A  |                |           |           |
+| 43/2     |     unused, PULL:DOWN |            |              | PB9B  |                |           |           |
+| 44/2     |     unused, PULL:DOWN |            |              | PB12A | MCLK/CCLK      |           |           |
+| 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
+| 47/2     |     unused, PULL:DOWN |            |              | PB13A |                |           |           |
+| 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
+| 49/2     |     unused, PULL:DOWN |            |              | PB16A | PCLKT2_0       |           |           |
+| 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
 | 52/2     |     unused, PULL:DOWN |            |              | PB18A |                |           |           |
-| 54/2     | encoder_ri            | LOCATED    | LVCMOS25_IN  | PB18B |                |           |           |
-| 55/2     | encoder_rb            | LOCATED    | LVCMOS25_IN  | PB23A | PCLKT2_1       |           |           |
-| 56/2     | encoder_ra            | LOCATED    | LVCMOS25_IN  | PB23B | PCLKC2_1       |           |           |
+| 54/2     |     unused, PULL:DOWN |            |              | PB18B |                |           |           |
+| 55/2     |     unused, PULL:DOWN |            |              | PB23A | PCLKT2_1       |           |           |
+| 56/2     |     unused, PULL:DOWN |            |              | PB23B | PCLKC2_1       |           |           |
 | 57/2     | signal_light          | LOCATED    | LVCMOS25_OUT | PB26A |                |           |           |
 | 58/2     | expansion1            | LOCATED    | LVCMOS25_OUT | PB26B |                |           |           |
 | 59/2     | expansion2            | LOCATED    | LVCMOS25_OUT | PB29A |                |           |           |
 | 60/2     | expansion3            | LOCATED    | LVCMOS25_OUT | PB29B |                |           |           |
 | 61/2     | expansion4            | LOCATED    | LVCMOS25_OUT | PB31A |                |           |           |
 | 62/2     | expansion5            | LOCATED    | LVCMOS25_OUT | PB31B |                |           |           |
-| 63/2     | limit[3]              | LOCATED    | LVCMOS25_IN  | PB31D |                |           |           |
-| 65/2     | limit[1]              | LOCATED    | LVCMOS25_IN  | PB35A |                |           |           |
-| 67/2     | limit[2]              | LOCATED    | LVCMOS25_IN  | PB35B |                |           |           |
-| 68/2     | limit[0]              | LOCATED    | LVCMOS25_IN  | PB37A |                |           |           |
+| 63/2     |     unused, PULL:DOWN |            |              | PB31D |                |           |           |
+| 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
+| 67/2     |     unused, PULL:DOWN |            |              | PB35B |                |           |           |
+| 68/2     |     unused, PULL:DOWN |            |              | PB37A |                |           |           |
 | 69/2     | Stepper_A_En          | LOCATED    | LVCMOS25_OUT | PB37B |                |           |           |
 | 70/2     | Stepper_A_M0          | LOCATED    | LVCMOS25_OUT | PB38A | SN             |           |           |
 | 71/2     | Stepper_A_M1          | LOCATED    | LVCMOS25_OUT | PB38B | SI/SISPI       |           |           |
 | 73/1     | Stepper_A_M2          | LOCATED    | LVCMOS25_OUT | PR24B | DQ1            |           |           |
 | 74/1     | Stepper_A_Step        | LOCATED    | LVCMOS25_OUT | PR24A | DQ1            |           |           |
 | 75/1     | Stepper_A_Dir         | LOCATED    | LVCMOS25_OUT | PR23B | DQ1            |           |           |
-| 76/1     | Stepper_A_nFault      | LOCATED    | LVCMOS25_IN  | PR23A | DQ1            |           |           |
+| 76/1     |     unused, PULL:DOWN |            |              | PR23A | DQ1            |           |           |
 | 77/1     | Stepper_Z_En          | LOCATED    | LVCMOS25_OUT | PR21B | DQ1            |           |           |
 | 78/1     | Stepper_Z_M0          | LOCATED    | LVCMOS25_OUT | PR21A | DQ1            |           |           |
 | 81/1     | Stepper_Z_M1          | LOCATED    | LVCMOS25_OUT | PR18B | DQ1            |           |           |
 | 82/1     | Stepper_Z_M2          | LOCATED    | LVCMOS25_OUT | PR18A | DQ1            |           |           |
 | 83/1     | Stepper_Z_Step        | LOCATED    | LVCMOS25_OUT | PR17B | DQ1            |           |           |
 | 84/1     | Stepper_Z_Dir         | LOCATED    | LVCMOS25_OUT | PR17A | DQ1            |           |           |
-| 85/1     | Stepper_Z_nFault      | LOCATED    | LVCMOS25_IN  | PR16B | DQS1N          |           |           |
+| 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
 | 86/1     | Stepper_Y_Dir         | LOCATED    | LVCMOS25_OUT | PR16A | DQS1           |           |           |
 | 87/1     | Stepper_Y_Step        | LOCATED    | LVCMOS25_OUT | PR15B |                |           |           |
 | 89/1     |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
@@ -180,14 +159,14 @@ Pinout by Pin Number:
 | 94/1     | Stepper_Y_M1          | LOCATED    | LVCMOS25_OUT | PR11A | DQS0           |           |           |
 | 95/1     | Stepper_Y_M0          | LOCATED    | LVCMOS25_OUT | PR9B  | DQ0            |           |           |
 | 96/1     | Stepper_Y_En          | LOCATED    | LVCMOS25_OUT | PR9A  | DQ0            |           |           |
-| 97/1     | Stepper_Y_nFault      | LOCATED    | LVCMOS25_IN  | PR7B  | DQ0            |           |           |
+| 97/1     |     unused, PULL:DOWN |            |              | PR7B  | DQ0            |           |           |
 | 98/1     | Stepper_X_Dir         | LOCATED    | LVCMOS25_OUT | PR7A  | DQ0            |           |           |
 | 99/1     | Stepper_X_Step        | LOCATED    | LVCMOS25_OUT | PR5B  | DQ0            |           |           |
 | 100/1    | Stepper_X_M2          | LOCATED    | LVCMOS25_OUT | PR5A  | DQ0            |           |           |
 | 103/1    | Stepper_X_M1          | LOCATED    | LVCMOS25_OUT | PR4C  |                |           |           |
 | 104/1    | Stepper_X_M0          | LOCATED    | LVCMOS25_OUT | PR3B  | R_GPLLC_IN/DQ0 |           |           |
 | 105/1    | Stepper_X_En          | LOCATED    | LVCMOS25_OUT | PR3A  | R_GPLLT_IN/DQ0 |           |           |
-| 106/1    | Stepper_X_nFault      | LOCATED    | LVCMOS25_IN  | PR2B  | R_GPLLC_FB/DQ0 |           |           |
+| 106/1    |     unused, PULL:DOWN |            |              | PR2B  | R_GPLLC_FB/DQ0 |           |           |
 | 107/1    | status_led[2]         | LOCATED    | LVCMOS25_OUT | PR2A  | R_GPLLT_FB/DQ0 |           |           |
 | 109/0    | status_led[1]         | LOCATED    | LVCMOS25_OUT | PT36D | DONE           |           |           |
 | 110/0    | status_led[0]         | LOCATED    | LVCMOS25_OUT | PT36C | INITN          |           |           |
@@ -459,28 +438,24 @@ LOCATE  COMP  "Stepper_A_M0"  SITE  "70";
 LOCATE  COMP  "Stepper_A_M1"  SITE  "71";
 LOCATE  COMP  "Stepper_A_M2"  SITE  "73";
 LOCATE  COMP  "Stepper_A_Step"  SITE  "74";
-LOCATE  COMP  "Stepper_A_nFault"  SITE  "76";
 LOCATE  COMP  "Stepper_X_Dir"  SITE  "98";
 LOCATE  COMP  "Stepper_X_En"  SITE  "105";
 LOCATE  COMP  "Stepper_X_M0"  SITE  "104";
 LOCATE  COMP  "Stepper_X_M1"  SITE  "103";
 LOCATE  COMP  "Stepper_X_M2"  SITE  "100";
 LOCATE  COMP  "Stepper_X_Step"  SITE  "99";
-LOCATE  COMP  "Stepper_X_nFault"  SITE  "106";
 LOCATE  COMP  "Stepper_Y_Dir"  SITE  "86";
 LOCATE  COMP  "Stepper_Y_En"  SITE  "96";
 LOCATE  COMP  "Stepper_Y_M0"  SITE  "95";
 LOCATE  COMP  "Stepper_Y_M1"  SITE  "94";
 LOCATE  COMP  "Stepper_Y_M2"  SITE  "93";
 LOCATE  COMP  "Stepper_Y_Step"  SITE  "87";
-LOCATE  COMP  "Stepper_Y_nFault"  SITE  "97";
 LOCATE  COMP  "Stepper_Z_Dir"  SITE  "84";
 LOCATE  COMP  "Stepper_Z_En"  SITE  "77";
 LOCATE  COMP  "Stepper_Z_M0"  SITE  "78";
 LOCATE  COMP  "Stepper_Z_M1"  SITE  "81";
 LOCATE  COMP  "Stepper_Z_M2"  SITE  "82";
 LOCATE  COMP  "Stepper_Z_Step"  SITE  "83";
-LOCATE  COMP  "Stepper_Z_nFault"  SITE  "85";
 LOCATE  COMP  "clk_12MHz"  SITE  "128";
 LOCATE  COMP  "debug[0]"  SITE  "111";
 LOCATE  COMP  "debug[1]"  SITE  "112";
@@ -491,30 +466,13 @@ LOCATE  COMP  "debug[5]"  SITE  "117";
 LOCATE  COMP  "debug[6]"  SITE  "119";
 LOCATE  COMP  "debug[7]"  SITE  "121";
 LOCATE  COMP  "debug[8]"  SITE  "122";
-LOCATE  COMP  "encoder_la"  SITE  "50";
-LOCATE  COMP  "encoder_lb"  SITE  "49";
-LOCATE  COMP  "encoder_li"  SITE  "48";
-LOCATE  COMP  "encoder_ra"  SITE  "56";
-LOCATE  COMP  "encoder_rb"  SITE  "55";
-LOCATE  COMP  "encoder_ri"  SITE  "54";
 LOCATE  COMP  "expansion1"  SITE  "58";
 LOCATE  COMP  "expansion2"  SITE  "59";
 LOCATE  COMP  "expansion3"  SITE  "60";
 LOCATE  COMP  "expansion4"  SITE  "61";
 LOCATE  COMP  "expansion5"  SITE  "62";
-LOCATE  COMP  "limit[0]"  SITE  "68";
-LOCATE  COMP  "limit[1]"  SITE  "65";
-LOCATE  COMP  "limit[2]"  SITE  "67";
-LOCATE  COMP  "limit[3]"  SITE  "63";
 LOCATE  COMP  "motor_pwm_l"  SITE  "5";
 LOCATE  COMP  "motor_pwm_r"  SITE  "6";
-LOCATE  COMP  "pause"  SITE  "4";
-LOCATE  COMP  "rc_ch1"  SITE  "47";
-LOCATE  COMP  "rc_ch2"  SITE  "45";
-LOCATE  COMP  "rc_ch3"  SITE  "44";
-LOCATE  COMP  "rc_ch4"  SITE  "43";
-LOCATE  COMP  "rc_ch7"  SITE  "42";
-LOCATE  COMP  "rc_ch8"  SITE  "41";
 LOCATE  COMP  "signal_light"  SITE  "57";
 LOCATE  COMP  "status_led[0]"  SITE  "110";
 LOCATE  COMP  "status_led[1]"  SITE  "109";
@@ -532,5 +490,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 20 06:44:01 2015
+Mon Dec 21 20:19:33 2015
 

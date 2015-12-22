@@ -1,5 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_Y_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_Z_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_A_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>limit[3:0](3)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>limit[3:0](2)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>limit[3:0](1)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>limit[3:0](0)</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_ra</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_rb</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_ri</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_la</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_lb</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>encoder_li</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch1</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch2</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch3</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch4</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch7</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rc_ch8</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pause</Dynamic>
+        </Message>
+    </Task>
     <Task name="Translate">
         <Message>
             <ID>1121028</ID>
@@ -14,21 +121,6 @@
         <Message>
             <ID>1121028</ID>
             <Severity>Warning</Severity>
-            <Dynamic>factor</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>baud_div</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>factor</Dynamic>
-        </Message>
-        <Message>
-            <ID>1121028</ID>
-            <Severity>Warning</Severity>
             <Dynamic>baud_div</Dynamic>
         </Message>
         <Message>
@@ -57,65 +149,32 @@
             <Dynamic>baud_div</Dynamic>
         </Message>
         <Message>
-            <ID>1121028</ID>
+            <ID>1166052</ID>
             <Severity>Warning</Severity>
-            <Dynamic>baud_div</Dynamic>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>uart_input/baud_gen/un129_count_s_31_0_COUT</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_s_31_0_COUT</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>uart_output/baud_gen/un129_count_s_31_0_COUT</Dynamic>
-            <Navigation>uart_output/baud_gen/un129_count_s_31_0_COUT</Navigation>
+            <Dynamic>uart_input/baud_gen/un129_count_s_31_0_S1</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_s_31_0_S1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>uart_output/baud_gen/un129_count_s_31_0_S1</Dynamic>
-            <Navigation>uart_output/baud_gen/un129_count_s_31_0_S1</Navigation>
+            <Dynamic>uart_input/baud_gen/un129_count_cry_0_0_S0</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_cry_0_0_S0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>uart_output/baud_gen/un129_count_cry_0_0_S0</Dynamic>
-            <Navigation>uart_output/baud_gen/un129_count_cry_0_0_S0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>uart_output/baud_gen/un129_count_cry_0_0_S1</Dynamic>
-            <Navigation>uart_output/baud_gen/un129_count_cry_0_0_S1</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>uart_input/baud_gen/un129_count_s_31_0_COUT_0</Dynamic>
-            <Navigation>uart_input/baud_gen/un129_count_s_31_0_COUT_0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>uart_input/baud_gen/un129_count_s_31_0_S1_0</Dynamic>
-            <Navigation>uart_input/baud_gen/un129_count_s_31_0_S1_0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>uart_input/baud_gen/un129_count_cry_0_0_S0_0</Dynamic>
-            <Navigation>uart_input/baud_gen/un129_count_cry_0_0_S0_0</Navigation>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>uart_input/baud_gen/un129_count_cry_0_0_S1_0</Dynamic>
-            <Navigation>uart_input/baud_gen/un129_count_cry_0_0_S1_0</Navigation>
+            <Dynamic>uart_input/baud_gen/un129_count_cry_0_0_S1</Dynamic>
+            <Navigation>uart_input/baud_gen/un129_count_cry_0_0_S1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -174,23 +233,170 @@
             <Navigation>DivB/un294_count_cry_0_0_S1</Navigation>
         </Message>
         <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_X_nFault</Dynamic>
+            <Navigation>Stepper_X_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_Y_nFault</Dynamic>
+            <Navigation>Stepper_Y_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_Z_nFault</Dynamic>
+            <Navigation>Stepper_Z_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_A_nFault</Dynamic>
+            <Navigation>Stepper_A_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[0]</Dynamic>
+            <Navigation>limit[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[1]</Dynamic>
+            <Navigation>limit[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[2]</Dynamic>
+            <Navigation>limit[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[3]</Dynamic>
+            <Navigation>limit[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_ra</Dynamic>
+            <Navigation>encoder_ra</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_rb</Dynamic>
+            <Navigation>encoder_rb</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_ri</Dynamic>
+            <Navigation>encoder_ri</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_la</Dynamic>
+            <Navigation>encoder_la</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_lb</Dynamic>
+            <Navigation>encoder_lb</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_li</Dynamic>
+            <Navigation>encoder_li</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch1</Dynamic>
+            <Navigation>rc_ch1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch2</Dynamic>
+            <Navigation>rc_ch2</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch3</Dynamic>
+            <Navigation>rc_ch3</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch4</Dynamic>
+            <Navigation>rc_ch4</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch7</Dynamic>
+            <Navigation>rc_ch7</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>rc_ch8</Dynamic>
+            <Navigation>rc_ch8</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>pause</Dynamic>
+            <Navigation>pause</Navigation>
+        </Message>
+        <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>16</Dynamic>
+            <Dynamic>33</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:8:14:8:23|No assignment to status_led_2_</Dynamic>
-            <Navigation>CG133</Navigation>
+            <Dynamic>CL168 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:161:23:161:33|Pruning instance uart_output -- not in use ...</Dynamic>
+            <Navigation>CL168</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>8</Navigation>
+            <Navigation>161</Navigation>
             <Navigation>23</Navigation>
-            <Navigation>No assignment to status_led_2_</Navigation>
+            <Navigation>161</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>Pruning instance uart_output -- not in use ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -207,14 +413,242 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 156 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>CL246 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:69:7:69:11|Input port bits 7 to 6 of debug[8:0] are unused</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>Input port bits 7 to 6 of debug[8:0] are unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:17:16:17:31|Input Stepper_X_nFault is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Input Stepper_X_nFault is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:25:16:25:31|Input Stepper_Y_nFault is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Input Stepper_Y_nFault is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:33:16:33:31|Input Stepper_Z_nFault is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Input Stepper_Z_nFault is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:41:16:41:31|Input Stepper_A_nFault is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>41</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Input Stepper_A_nFault is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:43:13:43:17|Input limit is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Input limit is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:51:13:51:22|Input encoder_ra is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_ra is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:52:13:52:22|Input encoder_rb is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>52</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>52</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_rb is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:53:13:53:22|Input encoder_ri is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>53</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>53</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_ri is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:54:13:54:22|Input encoder_la is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>54</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>54</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_la is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:55:13:55:22|Input encoder_lb is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_lb is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:56:13:56:22|Input encoder_li is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>56</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>56</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Input encoder_li is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:58:13:58:18|Input rc_ch1 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch1 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:59:13:59:18|Input rc_ch2 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>59</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>59</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch2 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:60:13:60:18|Input rc_ch3 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>60</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch3 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:61:13:61:18|Input rc_ch4 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>61</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch4 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:62:13:62:18|Input rc_ch7 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>62</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch7 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:63:13:63:18|Input rc_ch8 is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>63</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Input rc_ch8 is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:67:13:67:17|Input pause is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Input pause is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 115 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
             <Navigation>14</Navigation>
             <Navigation>1</Navigation>
             <Navigation>14</Navigation>
             <Navigation>6</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 156 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 115 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

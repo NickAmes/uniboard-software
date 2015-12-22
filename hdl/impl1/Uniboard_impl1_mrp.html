@@ -26,23 +26,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/20/15  06:43:49
+Mapped on:  12/21/15  20:19:28
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    168 out of  7209 (2%)
-      PFU registers:          166 out of  6864 (2%)
-      PIO registers:            2 out of   345 (1%)
-   Number of SLICEs:       128 out of  3432 (4%)
-      SLICEs as Logic/ROM:    128 out of  3432 (4%)
+   Number of registers:    114 out of  7209 (2%)
+      PFU registers:          109 out of  6864 (2%)
+      PIO registers:            5 out of   345 (1%)
+   Number of SLICEs:        91 out of  3432 (3%)
+      SLICEs as Logic/ROM:     91 out of  3432 (3%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         68 out of  3432 (2%)
-   Number of LUT4s:        254 out of  6864 (4%)
-      Number of logic LUTs:      118
+      SLICEs as Carry:         51 out of  3432 (1%)
+   Number of LUT4s:        179 out of  6864 (3%)
+      Number of logic LUTs:       77
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     68 (136 LUT4s)
+      Number of ripple logic:     51 (102 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 68 + 4(JTAG) out of 115 (63%)
+   Number of PIO sites used: 47 + 4(JTAG) out of 115 (44%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -69,44 +69,36 @@ Mapped on:  12/20/15  06:43:49
      ripple logic.
 
    Number of clocks:  1
-     Net clk_12MHz_c: 101 loads, 101 rising, 0 falling (Driver: PIO clk_12MHz )
-   Number of Clock Enables:  14
-     Net tdata_0_17_RNIQOECD: 1 loads, 0 LSLICEs
+     Net clk_12MHz_c: 70 loads, 70 rising, 0 falling (Driver: PIO clk_12MHz )
+   Number of Clock Enables:  7
+     Net uart_input.state[0]19: 4 loads, 0 LSLICEs
      Net un1_state[0]23_1_0_a3: 1 loads, 0 LSLICEs
-     Net uart_output/clk_o_RNI5P95D: 4 loads, 4 LSLICEs
-     Net uart_output/tdata_0_16_RNIJMNAD: 2 loads, 2 LSLICEs
-     Net uart_input/N_44: 1 loads, 1 LSLICEs
-     Net uart_input/N_33_i: 3 loads, 3 LSLICEs
-     Net uart_input/un1_state[0]23_2_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_3_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_8_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/un1_state[0]23_7_0_a3: 1 loads, 1 LSLICEs
+     Net uart_input/N_38: 1 loads, 1 LSLICEs
+     Net uart_input/N_12_i: 3 loads, 3 LSLICEs
      Net uart_input/un1_state[0]23_4_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/un1_state[0]23_5_0_a3: 1 loads, 1 LSLICEs
      Net uart_input/un1_state[0]23_6_0_a3: 1 loads, 1 LSLICEs
-     Net uart_input/state[0]19: 4 loads, 4 LSLICEs
-   Number of LSRs:  4
-     Net uart_output/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+   Number of LSRs:  3
      Net debug_c[8]: 19 loads, 19 LSLICEs
      Net DivC/count[0]2: 4 loads, 4 LSLICEs
      Net DivB/count[0]2: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net debug_c[8]: 23 loads
-     Net uart_input/state[1]: 15 loads
-     Net uart_input/state[2]: 14 loads
-     Net uart_input/state[3]: 14 loads
-     Net uart_rx_c: 14 loads
+     Net debug_c[8]: 21 loads
+     Net uart_tx_c: 13 loads
      Net Stepper_A_M2_c: 12 loads
      Net uart_input/state[0]: 12 loads
+     Net uart_input/state[1]: 11 loads
+     Net uart_input/state[2]: 10 loads
+     Net uart_input/state[3]: 10 loads
      Net uart_input/state[5]: 10 loads
-     Net uart_output/state[0]: 10 loads
-     Net uart_output/state[3]: 9 loads
+     Net Stepper_A_En_c: 6 loads
+     Net uart_input.state[0]19: 6 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  21
    Number of errors:    0
      
 
@@ -115,7 +107,49 @@ Mapped on:  12/20/15  06:43:49
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map: IO buffer missing for top level port Stepper_X_nFault...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Stepper_Y_nFault...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Stepper_Z_nFault...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Stepper_A_nFault...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port limit[3:0](3)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port limit[3:0](2)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port limit[3:0](1)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port limit[3:0](0)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port encoder_ra...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port encoder_rb...logic will be
+
+     discarded.
+WARNING - map: IO buffer missing for top level port encoder_ri...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port encoder_la...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port encoder_lb...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port encoder_li...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch7...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port rc_ch8...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port pause...logic will be
+     discarded.
 
 
 
@@ -125,9 +159,8 @@ Mapped on:  12/20/15  06:43:49
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| uart_tx             | OUTPUT    | LVCMOS25  | OUT        |
+| uart_tx             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
 | uart_rx             | INPUT     | LVCMOS25  | IN         |
 +---------------------+-----------+-----------+------------+
 | debug[8]            | OUTPUT    | LVCMOS25  |            |
@@ -140,43 +173,18 @@ Mapped on:  12/20/15  06:43:49
 +---------------------+-----------+-----------+------------+
 | debug[4]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| debug[3]            | OUTPUT    | LVCMOS25  |            |
+| debug[3]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| debug[2]            | OUTPUT    | LVCMOS25  |            |
+| debug[2]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| debug[1]            | OUTPUT    | LVCMOS25  |            |
+| debug[1]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| debug[0]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| pause               | INPUT     | LVCMOS25  |            |
+| debug[0]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | motor_pwm_r         | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | motor_pwm_l         | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch8              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch7              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch4              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch3              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch2              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rc_ch1              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_li          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_lb          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_la          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_ri          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_rb          | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| encoder_ra          | INPUT     | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | signal_light        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -184,22 +192,11 @@ Mapped on:  12/20/15  06:43:49
 +---------------------+-----------+-----------+------------+
 | expansion4          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
 | expansion3          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | expansion2          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | expansion1          | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[3]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[2]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[1]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| limit[0]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_A_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_A_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -213,8 +210,6 @@ Mapped on:  12/20/15  06:43:49
 +---------------------+-----------+-----------+------------+
 | Stepper_A_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| Stepper_Z_nFault    | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | Stepper_Z_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Z_M2        | OUTPUT    | LVCMOS25  |            |
@@ -226,8 +221,6 @@ Mapped on:  12/20/15  06:43:49
 | Stepper_Z_Dir       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Z_Step      | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| Stepper_Y_nFault    | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -241,9 +234,6 @@ Mapped on:  12/20/15  06:43:49
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
-| Stepper_X_nFault    | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 | Stepper_X_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_X_M2        | OUTPUT    | LVCMOS25  |            |
@@ -251,6 +241,7 @@ Mapped on:  12/20/15  06:43:49
 | Stepper_X_M1        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_X_M0        | OUTPUT    | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | Stepper_X_Dir       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -269,17 +260,12 @@ Mapped on:  12/20/15  06:43:49
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block VCC undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Block uart_input/VCC undriven or does not drive anything - clipped.
 Block uart_input/GND undriven or does not drive anything - clipped.
-Block uart_output/VCC undriven or does not drive anything - clipped.
-Block uart_output/GND undriven or does not drive anything - clipped.
 Signal DivB/GND undriven or does not drive anything - clipped.
 Signal DivC/GND undriven or does not drive anything - clipped.
 Signal uart_input/baud_gen/GND undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/GND undriven or does not drive anything - clipped.
-Signal VCC undriven or does not drive anything - clipped.
 Signal DivB/un294_count_s_31_0_S1 undriven or does not drive anything - clipped.
      
 Signal DivB/un294_count_s_31_0_COUT undriven or does not drive anything -
@@ -298,29 +284,21 @@ Signal DivC/un459_count_s_31_0_S1 undriven or does not drive anything - clipped.
      
 Signal DivC/un459_count_s_31_0_COUT undriven or does not drive anything -
      clipped.
-Signal uart_input/baud_gen/un129_count_cry_0_0_S1_0 undriven or does not drive
-
+Signal uart_input/baud_gen/un129_count_cry_0_0_S1 undriven or does not drive
      anything - clipped.
-Signal uart_input/baud_gen/un129_count_cry_0_0_S0_0 undriven or does not drive
+Signal uart_input/baud_gen/un129_count_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal uart_input/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_input/baud_gen/un129_count_s_31_0_S1_0 undriven or does not drive
+Signal uart_input/baud_gen/un129_count_s_31_0_S1 undriven or does not drive
      anything - clipped.
-Signal uart_input/baud_gen/un129_count_s_31_0_COUT_0 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/un129_count_cry_0_0_S1 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/un129_count_cry_0_0_S0 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/N_1 undriven or does not drive anything - clipped.
-Signal uart_output/baud_gen/un129_count_s_31_0_S1 undriven or does not drive
-     anything - clipped.
-Signal uart_output/baud_gen/un129_count_s_31_0_COUT undriven or does not drive
+Signal uart_input/baud_gen/un129_count_s_31_0_COUT undriven or does not drive
      anything - clipped.
 Block DivB/GND was optimized away.
 Block DivC/GND was optimized away.
 Block uart_input/baud_gen/GND was optimized away.
-Block uart_output/baud_gen/GND was optimized away.
+
+
+
 
 
 
@@ -336,8 +314,32 @@ Block uart_output/baud_gen/GND was optimized away.
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 183 MB
+   Peak Memory Usage: 182 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

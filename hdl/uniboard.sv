@@ -2,6 +2,15 @@
  * Core Electrical System "Uniboard" HDL
  * Written 2015 Nick Ames <nick@fetchmodus.org> */
 
+/* See the Uniboard manual for information on the command protocol
+   and peripheral mapping. */
+ 
+/* Decodes a stream from a uart into data bytes, start commands (0x01),
+   and end commands (0x17), taking care of escape characters (0x18). */
+   
+/* Transmits a character through a UART. If the escape signal is 1,
+   the character will be preceded by an escape character if necessary.
+ 
 module UniboardTop(
 	input logic uart_rx, /* UART input from control computer. */
 	output logic uart_tx, /* UART output to control computer. */
@@ -126,7 +135,7 @@ module UniboardTop(
 	assign Stepper_A_M2 = noise_100khz;
 	assign Stepper_A_En = noise_10khz;
 	
-	assign status_led[0] = (& limit)& pause  & encoder_ra & encoder_rb& encoder_ri& encoder_la& encoder_lb & encoder_li&rc_ch1&rc_ch2&rc_ch3&rc_ch4&rc_ch7&rc_ch8&Stepper_X_nFault&Stepper_Y_nFault&Stepper_Z_nFault&Stepper_A_nFault;
+	assign status_led[0] = 1 | ((& limit)& pause  & encoder_ra & encoder_rb& encoder_ri& encoder_la& encoder_lb & encoder_li&rc_ch1&rc_ch2&rc_ch3&rc_ch4&rc_ch7&rc_ch8&Stepper_X_nFault&Stepper_Y_nFault&Stepper_Z_nFault&Stepper_A_nFault);
 	
 	assign expansion1 = 0;
 	assign expansion2 = 0;
@@ -139,17 +148,28 @@ module UniboardTop(
 	
 	
 	logic drdy;
+	logic rs232_data[7:0];
+	
 	assign debug[8] = drdy;
+	assign debug[3:0] = rs232_data[3:0];
+	assign debug[4] = uart_rx;
+	assign debug[5] = uart_tx;
+	assign debug[6] = 1;
+	assign debug[7] = 1;
+	
 	assign status_led[1] = ~drdy;
+	assign status_led[2] = 1;
+	
+	assign uart_tx = uart_rx;
 	
 	UARTReceiver #(12) uart_input(.rx(uart_rx),
 	                                .clk(clk_12MHz),
-				                    .data(debug[7:0]),
+				                    .data(rs232_data),
 									.drdy(drdy),
 				                    .reset(0));
-	UARTTransmitter #(12) uart_output(.tx(uart_tx),
+	UARTTransmitter #(12) uart_output(/*.tx(uart_tx), */
 	                                    .clk(clk_12MHz),
-	                                    .data(debug[7:0]),
+	                                    .data(rs232_data),
 	                                    .send(drdy),
 	                                    .reset(0));
 endmodule

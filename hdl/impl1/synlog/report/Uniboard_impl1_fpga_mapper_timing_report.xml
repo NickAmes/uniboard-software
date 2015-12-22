@@ -15,12 +15,6 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>ClockDividerP_12s_1|clk_o_derived_clock</data>
-<data>1.0 MHz</data>
-<data>NA</data>
-<data>NA</data>
-</row>
-<row>
 <data>UniboardTop|clk_12MHz</data>
 <data>1.0 MHz</data>
 <data>126.9 MHz</data>
