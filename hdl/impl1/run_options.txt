@@ -1,13 +1,14 @@
 #--  Synopsys, Inc.
 #--  Version J-2014.09L
 #--  Project file /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/run_options.txt
-#--  Written on Tue Dec 22 05:03:36 2015
+#--  Written on Thu Dec 24 22:41:05 2015
 
 
 #project files
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
+add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
 
 
 

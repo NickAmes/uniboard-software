@@ -1,5 +1,5 @@
 /* OSU Robotics Club Rover 2016
- * Core Electrical System "Uniboard" HDL
+ * Core Electrical System Uniboard HDL
  * Written 2015 Nick Ames <nick@fetchmodus.org> */
 
 /* Parametric clock divider. */

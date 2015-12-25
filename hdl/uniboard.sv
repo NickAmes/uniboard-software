@@ -1,5 +1,5 @@
 /* OSU Robotics Club Rover 2016
- * Core Electrical System "Uniboard" HDL
+ * Core Electrical System Uniboard HDL
  * Written 2015 Nick Ames <nick@fetchmodus.org> */
 
 /* See the Uniboard manual for information on the command protocol
@@ -97,8 +97,30 @@ module CharacterDecoder(
 endmodule
 
 /* Transmits a character through a UART. If the escape signal is 1,
-   the character will be preceded by an escape character if necessary. */
- 
+ * the character will be preceded by an escape character if necessary. */
+module CharacterSender(
+	input logic send, /* A rising edge starts transmission. */
+	input logic escape, /* If 1, send an escape character first. */
+	input logic data[7:0], /* Character to be sent. */
+	input clk,
+	output busy, /* If high, a character is being sent. */
+	output tx, /* UART TX line. */
+	input reset);
+	
+	parameter baud_div=2083; /* Division factor to produce
+	                          * a clock at the baud rate from the
+							  * module clock. */
+	logic character[7:0];
+	logic do_transmit;
+	
+	UARTTransmitter #(baud_div) uart_output(.tx(tx),
+	                                    .clk(clk),
+	                                    .data(character),
+	                                    .send(do_transmit),
+	                                    .reset(reset));
+	                                    
+	                             
+	                                    
 module UniboardTop(
 	input logic uart_rx, /* UART input from control computer. */
 	output logic uart_tx, /* UART output to control computer. */

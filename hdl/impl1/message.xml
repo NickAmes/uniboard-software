@@ -435,282 +435,52 @@
     </Task>
     <Task name="Synplify_Synthesis">
         <Message>
+            <ID>2019990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>CS187 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:124:0:124:5|Expecting endmodule</Dynamic>
+            <Navigation>CS187</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>124</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>124</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Expecting endmodule</Navigation>
+        </Message>
+        <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG978 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:263:1:263:16|An instance name was not specified - using generated name II_4</Dynamic>
+            <Dynamic>CG978 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:285:1:285:16|An instance name was not specified - using generated name II_4</Dynamic>
             <Navigation>CG978</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>263</Navigation>
+            <Navigation>285</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>263</Navigation>
+            <Navigation>285</Navigation>
             <Navigation>16</Navigation>
             <Navigation>An instance name was not specified - using generated name II_4</Navigation>
         </Message>
         <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:197:21:197:24|Pruning instance DivA -- not in use ...</Dynamic>
-            <Navigation>CL168</Navigation>
+            <ID>2019990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>CG737 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:296:23:296:33|uart_output already exists in this scope - a variable by this name exists</Dynamic>
+            <Navigation>CG737</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>197</Navigation>
-            <Navigation>21</Navigation>
-            <Navigation>197</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>Pruning instance DivA -- not in use ...</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:114:16:114:31|Input Stepper_X_nFault is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>114</Navigation>
-            <Navigation>16</Navigation>
-            <Navigation>114</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>Input Stepper_X_nFault is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:122:16:122:31|Input Stepper_Y_nFault is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>16</Navigation>
-            <Navigation>122</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>Input Stepper_Y_nFault is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:130:16:130:31|Input Stepper_Z_nFault is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>130</Navigation>
-            <Navigation>16</Navigation>
-            <Navigation>130</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>Input Stepper_Z_nFault is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:138:16:138:31|Input Stepper_A_nFault is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>138</Navigation>
-            <Navigation>16</Navigation>
-            <Navigation>138</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>Input Stepper_A_nFault is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:140:13:140:17|Input limit is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>140</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>140</Navigation>
-            <Navigation>17</Navigation>
-            <Navigation>Input limit is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:148:13:148:22|Input encoder_ra is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>148</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>148</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_ra is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:149:13:149:22|Input encoder_rb is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_rb is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:150:13:150:22|Input encoder_ri is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_ri is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:151:13:151:22|Input encoder_la is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>151</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>151</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_la is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:152:13:152:22|Input encoder_lb is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>152</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>152</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_lb is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:153:13:153:22|Input encoder_li is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>153</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>153</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>Input encoder_li is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:155:13:155:18|Input rc_ch1 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>155</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>155</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch1 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:156:13:156:18|Input rc_ch2 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch2 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:157:13:157:18|Input rc_ch3 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>157</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>157</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch3 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:158:13:158:18|Input rc_ch4 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>158</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>158</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch4 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:159:13:159:18|Input rc_ch7 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>159</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>159</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch7 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:160:13:160:18|Input rc_ch8 is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>160</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>160</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Input rc_ch8 is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:164:13:164:17|Input pause is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>164</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>164</Navigation>
-            <Navigation>17</Navigation>
-            <Navigation>Input pause is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:23:1:23:6|Register bit state[2] is always 0, optimizing ...</Dynamic>
-            <Navigation>CL189</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>296</Navigation>
             <Navigation>23</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>23</Navigation>
-            <Navigation>6</Navigation>
-            <Navigation>Register bit state[2] is always 0, optimizing ...</Navigation>
+            <Navigation>296</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>uart_output already exists in this scope - a variable by this name exists</Navigation>
         </Message>
         <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
-            <Navigation>FX474</Navigation>
-            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 170 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
-            <Navigation>MT529</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>6</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 170 sequential elements including DivB.count\[6\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_12MHz&quot;</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_12MHz&quot;</Navigation>
+            <ID>2019990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>CS187 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:302:0:302:8|Expecting endmodule</Dynamic>
+            <Navigation>CS187</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>302</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>302</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Expecting endmodule</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

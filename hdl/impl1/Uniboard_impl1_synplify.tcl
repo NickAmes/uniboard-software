@@ -47,6 +47,7 @@ set_option -include_path {/home/nick/Desktop/nickfolder/documents/projects/in-pr
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv}
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv}
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv}
+add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv}
 
 
 #-- set result format/file last

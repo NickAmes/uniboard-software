@@ -1,22 +1,2 @@
-@W: CG978 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":263:1:263:16|An instance name was not specified - using generated name II_4
-@W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":197:21:197:24|Pruning instance DivA -- not in use ...
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":114:16:114:31|Input Stepper_X_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":122:16:122:31|Input Stepper_Y_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":130:16:130:31|Input Stepper_Z_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":138:16:138:31|Input Stepper_A_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":140:13:140:17|Input limit is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":148:13:148:22|Input encoder_ra is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":149:13:149:22|Input encoder_rb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":150:13:150:22|Input encoder_ri is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":151:13:151:22|Input encoder_la is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":152:13:152:22|Input encoder_lb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":153:13:153:22|Input encoder_li is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":155:13:155:18|Input rc_ch1 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":156:13:156:18|Input rc_ch2 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":157:13:157:18|Input rc_ch3 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":158:13:158:18|Input rc_ch4 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":159:13:159:18|Input rc_ch7 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":160:13:160:18|Input rc_ch8 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":164:13:164:17|Input pause is unused
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":23:1:23:6|Register bit state[2] is always 0, optimizing ...
+@W: CG978 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":285:1:285:16|An instance name was not specified - using generated name II_4
 
