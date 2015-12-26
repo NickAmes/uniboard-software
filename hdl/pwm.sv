@@ -33,3 +33,65 @@ module PWMGenerator (
 				end
 		end
 endmodule
+
+/* Motor PWM Peripheral. */
+module PWMPeripheral (
+	input logic clk_12Mhz,
+	inout databus[31:0],
+	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */
+	input logic register_addr[7:0],
+	input logic rw, /* 0 = write, 1 = read. */
+	input logic select, /* Rising edge writes or hold high to read. */
+	output logic pwm_left,
+	output logic pwm_right,
+	input logic reset);
+	
+	logic [7:0] register[2] = {8'd127, 8'd127};
+	
+	/* Bus read handling */
+	logic read_value[7:0];
+	
+	assign reg_size = select ? 3'd1 : 'z;
+	assign databus = (select & ~rw) ? {24'd0, read_value} : 'z;
+	
+	always_comb
+		begin
+			case(register_addr)
+				8'd0:
+					read_value = register[0];
+				8'd1:
+					read_value = register[1];
+				default:
+					read_value = '0;
+			endcase
+		end
+	
+	/* Bus write handling */
+	always @ (posedge select)			
+		begin
+			if(~rw)
+				begin
+					case(register_addr)
+						8'd0:
+							register[0] <= databus[7:0];
+						8'd1:
+							register[1] <= databus[7:0];
+					endcase
+				end
+		end
+		
+	/* Peripheral components */
+	logic pwmclk;
+	ClockDivider clkdiv(.factor(32'd47),
+	                    .clk_i(clk_12MHz),
+	                    .clk_o(pwmclk),
+	                    .reset(0));
+	PWMGenerator left(.width(register[0]),
+	                  .clk_255kHz(pwmclk),
+	                  .pwm(pwm_left),
+	                  .reset(0));
+	PWMGenerator right(.width(register[1]),
+	                  .clk_255kHz(pwmclk),
+	                  .pwm(pwm_right),
+	                  .reset(0));
+endmodule

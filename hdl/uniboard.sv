@@ -3,7 +3,20 @@
  * Written 2015 Nick Ames <nick@fetchmodus.org> */
 
 /* See the Uniboard manual for information on the command protocol
-   and peripheral mapping. */
+ * and peripheral mapping.
+ * Internally, peripherals are connected to the top module using a bus with several signals:
+ *  -clk_12Mhz (1-bit top->peripherals)
+ *  -databus (32-bit tri-state bidirectional) - conveys register contents to and from peripherals
+ *  -reg_size (3-bit tri-state peripheral->top) - gives number of bytes in register for command reply size
+ *  -reg_addr (8-bit top->peripherals) - select the register to read/write
+ *  -rw (1-bit top->peripherals) - selects read/write (0 = write, 1 = read)
+ * Each peripheral has an individual select signal:
+ *  -select (1-bit top->peripheral) - performs a read/write operation
+ *
+ * To access a peripheral, the bus is configured (asserting reg_size, rw, and databus if necessary)
+ * and the select line of the peripheral is raised. Bus configuration must occur before raising
+ * the select line. For a write operation, the write is performed on the rising edge of select.
+ * For a read operation, databus and reg_size will be set as long as select is high. */
  
 /* Decodes a stream from a uart into data bytes, start commands (0x01),
    and end commands (0x17), taking care of escape characters (0x18). */
@@ -119,6 +132,38 @@ module CharacterSender(
 	                                    .send(do_transmit),
 	                                    .reset(reset));
 	                                    
+	always @ (posedge clk)
+		begin
+		end
+endmodule
+
+/* Implements the Uniboard computer interface protocol. */
+module ProtocolInterface(
+	input logic rx,
+	output logic tx,
+	input logic clk_12Mhz,
+	inout databus[31:0],
+	input logic reg_size[2:0],
+	output logic register_addr[7:0],
+	output logic rw, 
+	output logic select[127:0],
+	input logic reset);
+	
+	
+endmodule
+
+/* Dummy peripheral. Used to capture invalid peripheral addresses and return 0
+ * for all reads. */
+module DummyPeripheral (
+	inout databus[31:0],
+	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */
+	input logic rw, /* 0 = write, 1 = read. */
+	input logic select);
+	
+	/* Bus read handling */
+	assign reg_size = select ? '0 : 'z;
+	assign databus = (select & ~rw) ? '0 : 'z;
+endmodule
 	                             
 	                                    
 module UniboardTop(

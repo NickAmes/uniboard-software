@@ -1,0 +1,46 @@
+#Build: Synplify Pro J-2014.09L, Build 047R, Nov  7 2014
+#install: /usr/local/diamond/3.4_x64/synpbase
+#OS: Linux 
+#Hostname: nick-laptop
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+/usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/c_ver: 200: [: !=: argument expected
+Synopsys Verilog Compiler, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Running on host :nick-laptop
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/lucent/machxo2.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/lucent/pmi_def.v"
+/usr/local/diamond/3.4_x64/synpbase/bin/s2o: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/s2o: 200: [: !=: argument expected
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/umr_capim.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_objects.v"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh"
+@I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
+@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":137:0:137:5|Expecting endmodule
+@W: CG978 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":298:1:298:16|An instance name was not specified - using generated name II_4
+@E: CG737 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":309:23:309:33|uart_output already exists in this scope - a variable by this name exists
+@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":315:0:315:8|Expecting endmodule
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
+3 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 25 14:31:20 2015
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 25 14:31:20 2015
+
+###########################################################]

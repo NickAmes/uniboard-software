@@ -435,52 +435,462 @@
     </Task>
     <Task name="Synplify_Synthesis">
         <Message>
-            <ID>2019990</ID>
-            <Severity>Error</Severity>
-            <Dynamic>CS187 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:124:0:124:5|Expecting endmodule</Dynamic>
-            <Navigation>CS187</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>124</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>124</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Expecting endmodule</Navigation>
-        </Message>
-        <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG978 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:285:1:285:16|An instance name was not specified - using generated name II_4</Dynamic>
+            <Dynamic>CG978 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:326:1:326:16|An instance name was not specified - using generated name II_4</Dynamic>
             <Navigation>CG978</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>285</Navigation>
+            <Navigation>326</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>285</Navigation>
+            <Navigation>326</Navigation>
             <Navigation>16</Navigation>
             <Navigation>An instance name was not specified - using generated name II_4</Navigation>
         </Message>
         <Message>
-            <ID>2019990</ID>
-            <Severity>Error</Severity>
-            <Dynamic>CG737 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:296:23:296:33|uart_output already exists in this scope - a variable by this name exists</Dynamic>
-            <Navigation>CG737</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>296</Navigation>
-            <Navigation>23</Navigation>
-            <Navigation>296</Navigation>
-            <Navigation>33</Navigation>
-            <Navigation>uart_output already exists in this scope - a variable by this name exists</Navigation>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:86:28:86:36|*Input clk_12MHz to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>*Input clk_12MHz to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.</Navigation>
         </Message>
         <Message>
-            <ID>2019990</ID>
-            <Severity>Error</Severity>
-            <Dynamic>CS187 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:302:0:302:8|Expecting endmodule</Dynamic>
-            <Navigation>CS187</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>302</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>302</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>Expecting endmodule</Navigation>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:39:13:39:21|Input clk_12Mhz is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Input clk_12Mhz is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:47:13:47:17|Input reset is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>47</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Input reset is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:70:1:70:6|Found inferred clock PWMPeripheral|select which controls 16 sequential elements including register_1_[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
+            <Navigation>70</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>70</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock PWMPeripheral|select which controls 16 sequential elements including register_1_[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:15:1:15:6|Found inferred clock ClockDivider|clk_o_inferred_clock which controls 28 sequential elements including left.pwm. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock ClockDivider|clk_o_inferred_clock which controls 28 sequential elements including left.pwm. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[31] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[31] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[30] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[30] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[29] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[29] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[28] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[28] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[27] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[27] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[26] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[26] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[25] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[25] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[24] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[24] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[23] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[23] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[22] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[22] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[21] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[21] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[20] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[20] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[19] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[19] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[18] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[18] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[17] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[17] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[16] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[16] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[15] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[15] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[14] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[14] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[13] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[13] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[12] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[12] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[11] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[11] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[10] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[10] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[9] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[9] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[8] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[8] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[7] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[7] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[6] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[6] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[5] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[5] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[4] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[4] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[3] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[3] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[2] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[2] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:45:1:45:6|Sequential instance clkdiv.count[1] reduced to a combinational gate by constant propagation</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>45</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Sequential instance clkdiv.count[1] reduced to a combinational gate by constant propagation</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock PWMPeripheral|select with period 1000.00ns. Please declare a user-defined clock on object &quot;p:select&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock PWMPeripheral|select with period 1000.00ns. Please declare a user-defined clock on object &quot;p:select&quot;</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>
