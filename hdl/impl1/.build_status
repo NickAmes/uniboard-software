@@ -19,8 +19,8 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1451088364">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1451088364"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1451400595">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1451400595"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1450012155"/>
@@ -34,7 +34,7 @@
         </Milestone>
         <Report name=".vdbs/Uniboard_impl1_map.vdb" last_build_time="1450789422" last_build_size="85513"/>
         <Report name="Uniboard_impl1.bgn" last_build_time="1450789432" last_build_size="3918"/>
-        <Report name="Uniboard_impl1.edi" last_build_time="1451088363" last_build_size="40841"/>
+        <Report name="Uniboard_impl1.edi" last_build_time="1451400594" last_build_size="40842"/>
         <Report name="Uniboard_impl1.jed" last_build_time="1450789432" last_build_size="1454738"/>
         <Report name="Uniboard_impl1.ncd" last_build_time="1450789428" last_build_size="284926"/>
         <Report name="Uniboard_impl1.ngd" last_build_time="1450789421" last_build_size="238579"/>

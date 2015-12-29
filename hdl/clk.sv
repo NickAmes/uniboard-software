@@ -35,7 +35,7 @@ endmodule
 
 /* Clock divider. */
 module ClockDivider(
-	input logic factor[31:0];
+	input logic factor[31:0],
 	input logic clk_i,
 	output logic clk_o, /* During reset, clk_o is low. */
 	input logic reset);
