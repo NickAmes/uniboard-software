@@ -1,10 +1,22 @@
 [ START MERGED ]
 [ END MERGED ]
 [ START CLIPPED ]
+protocol_interface/uart_input/baud_gen/GND
+protocol_interface/uart_output/baud_gen/GND
+protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0
+protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0
+protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0
+protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0
+protocol_interface/uart_input/baud_gen/N_1
+protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S1
+protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0
+protocol_interface/uart_output/baud_gen/N_1
+protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1
+protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Tue Dec 29 11:46:09 2015
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Tue Dec 29 12:03:17 2015
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;
@@ -50,6 +62,7 @@ LOCATE COMP "Stepper_X_M1" SITE "103" ;
 LOCATE COMP "Stepper_X_M0" SITE "104" ;
 LOCATE COMP "Stepper_X_Dir" SITE "98" ;
 LOCATE COMP "Stepper_X_Step" SITE "99" ;
+LOCATE COMP "clk_12MHz" SITE "128" ;
 LOCATE COMP "status_led[2]" SITE "107" ;
 LOCATE COMP "status_led[1]" SITE "109" ;
 LOCATE COMP "status_led[0]" SITE "110" ;

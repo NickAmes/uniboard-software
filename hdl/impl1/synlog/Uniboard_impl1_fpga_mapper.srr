@@ -27,98 +27,31 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
-
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[2\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[2\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[1\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[0\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[4\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[4\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[5\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[5\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance baud_reset in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register baud_reset packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[3\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[3\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance drdy in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
-@N: BN115 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":23:27:23:34|Removing instance baud_gen of view:work.ClockDividerP_12s_0(verilog) because there are no references to its outputs 
-@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[3] reduced to a combinational gate by constant propagation
-@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[2] reduced to a combinational gate by constant propagation
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance clk_o in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[0\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[1\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[4\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[5\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[6\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[7\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[8\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[9\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[10\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[11\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[12\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[13\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[14\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[15\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[16\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[17\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[18\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[19\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[20\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[21\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[22\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[23\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[24\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[25\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[26\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[27\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[28\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[29\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[30\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[31\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing sequential instance protocol_interface.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Boundary register protocol_interface.state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
-
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Removing sequential instance reset_count\[3\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Removing sequential instance reset in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Boundary register reset packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Removing sequential instance reset_count\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Removing sequential instance reset_count\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:1:270:6|Removing sequential instance reset_count\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[3\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.state\[3\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.state\[2\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.tx in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.tx packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -127,47 +60,56 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":61:1:61:6|Boundary register protocol_interface.state\[0\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":61:1:61:6|Boundary register protocol_interface.state\[1\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register protocol_interface.uart_input.drdy.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 101 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+5 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk_12MHz           port                   101        reset          
+=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 143MB)
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
 
 Writing EDIF Netlist and constraint files
+@W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
 J-2014.09L
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 @W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_12MHz"
 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Dec 29 11:46:03 2015
+# Timing Report written on Tue Dec 29 12:03:12 2015
 #
 
 
@@ -186,13 +128,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: NA
+Worst slack in design: 991.755
 
-                          Requested     Estimated     Requested     Estimated               Clock        Clock              
-Starting Clock            Frequency     Frequency     Period        Period        Slack     Type         Group              
-----------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz     1.0 MHz       NA            1000.000      NA            NA        inferred     Inferred_clkgroup_0
-============================================================================================================================
+                                            Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
+Starting Clock                              Frequency     Frequency     Period        Period        Slack       Type                                     Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ClockDividerP_12s_1|clk_o_derived_clock     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
+UniboardTop|clk_12MHz                       1.0 MHz       121.3 MHz     1000.000      8.245         991.755     inferred                                 Inferred_clkgroup_0
+============================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
@@ -202,11 +145,12 @@ UniboardTop|clk_12MHz     1.0 MHz       NA            1000.000      NA          
 Clock Relationships
 *******************
 
-Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------
-Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------
-========================================================================================================
+Clocks                                        |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------
+UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  1000.000    991.755  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -218,32 +162,141 @@ Interface Information
 No IO constraint found
 
 
+
+====================================
+Detailed Report for Clock: UniboardTop|clk_12MHz
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                        Starting                                                      Arrival            
+Instance                                                Reference                 Type        Pin     Net             Time        Slack  
+                                                        Clock                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------
+protocol_interface.uart_input.state\[3\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[3\]      1.256       991.755
+protocol_interface.uart_input.state\[0\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[0\]      1.232       991.779
+protocol_interface.uart_input.state\[4\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[4\]      1.228       991.783
+protocol_interface.uart_input.state\[5\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[5\]      1.228       991.783
+protocol_interface.uart_input.state\[1\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[1\]      1.252       992.568
+protocol_interface.uart_input.state\[2\]                UniboardTop|clk_12MHz     FD1S3AX     Q       state\[2\]      1.252       992.568
+protocol_interface.uart_output.baud_gen.count\[12\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[12\]     1.044       992.813
+protocol_interface.uart_output.baud_gen.count\[13\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       992.813
+protocol_interface.uart_output.baud_gen.count\[14\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[14\]     1.044       992.813
+protocol_interface.uart_output.baud_gen.count\[15\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[15\]     1.044       992.813
+=========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                       Starting                                                          Required            
+Instance                                               Reference                 Type        Pin     Net                 Time         Slack  
+                                                       Clock                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------------
+protocol_interface.uart_input.state\[1\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[1\]_RNO      1000.089     991.755
+protocol_interface.uart_input.state\[2\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[2\]_RNO      1000.089     991.755
+protocol_interface.uart_input.state\[3\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[3\]_RNO      1000.089     991.755
+protocol_interface.uart_input.state\[0\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[0\]_RNO      1000.089     992.772
+protocol_interface.uart_input.state\[4\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[4\]_RNO      1000.089     992.772
+protocol_interface.uart_input.state\[5\]               UniboardTop|clk_12MHz     FD1S3AX     D       state\[5\]_RNO      1000.089     992.772
+protocol_interface.uart_output.tx                      UniboardTop|clk_12MHz     FD1S3JX     PD      fb                  999.197      992.813
+protocol_interface.uart_output.baud_gen.count\[2\]     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.861
+protocol_interface.uart_output.baud_gen.count\[3\]     UniboardTop|clk_12MHz     FD1S3IX     CD      count\[0\]2         999.197      992.861
+protocol_interface.uart_input.baud_gen.count\[31\]     UniboardTop|clk_12MHz     FD1S3IX     D       un129_count[31]     999.894      993.551
+=============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      8.333
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     991.755
+
+    Number of logic level(s):                7
+    Starting point:                          protocol_interface.uart_input.state\[3\] / Q
+    Ending point:                            protocol_interface.uart_input.state\[1\] / D
+    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
+    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
+
+Instance / Net                                                         Pin      Pin               Arrival     No. of    
+Name                                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+protocol_interface.uart_input.state\[3\]                  FD1S3AX      Q        Out     1.256     1.256       -         
+state\[3\]                                                Net          -        -       -         -           14        
+protocol_interface.uart_input.state\[0\]17_1_0            ORCALUT4     B        In      0.000     1.256       -         
+protocol_interface.uart_input.state\[0\]17_1_0            ORCALUT4     Z        Out     1.017     2.273       -         
+state\[0\]17_1_0                                          Net          -        -       -         -           1         
+protocol_interface.uart_input.state\[0\]17                ORCALUT4     A        In      0.000     2.273       -         
+protocol_interface.uart_input.state\[0\]17                ORCALUT4     Z        Out     1.089     3.361       -         
+state\[0\]17                                              Net          -        -       -         -           2         
+protocol_interface.uart_input.state\[0\]17_RNIPJVA1       ORCALUT4     A        In      0.000     3.361       -         
+protocol_interface.uart_input.state\[0\]17_RNIPJVA1       ORCALUT4     Z        Out     1.089     4.450       -         
+un1_state\[0\]19_1                                        Net          -        -       -         -           2         
+protocol_interface.uart_input.un1_state\[0\]20_1_1        ORCALUT4     A        In      0.000     4.450       -         
+protocol_interface.uart_input.un1_state\[0\]20_1_1        ORCALUT4     Z        Out     1.017     5.467       -         
+un1_state\[0\]20_1_1                                      Net          -        -       -         -           1         
+protocol_interface.uart_input.un1_baud_reset_0_sqmuxa     ORCALUT4     C        In      0.000     5.467       -         
+protocol_interface.uart_input.un1_baud_reset_0_sqmuxa     ORCALUT4     Z        Out     1.233     6.700       -         
+un1_baud_reset_0_sqmuxa                                   Net          -        -       -         -           6         
+protocol_interface.uart_input.state\[1\]_RNO_0            ORCALUT4     A        In      0.000     6.700       -         
+protocol_interface.uart_input.state\[1\]_RNO_0            ORCALUT4     Z        Out     1.017     7.717       -         
+N_7                                                       Net          -        -       -         -           1         
+protocol_interface.uart_input.state\[1\]_RNO              ORCALUT4     B        In      0.000     7.717       -         
+protocol_interface.uart_input.state\[1\]_RNO              ORCALUT4     Z        Out     0.617     8.333       -         
+state\[1\]_RNO                                            Net          -        -       -         -           1         
+protocol_interface.uart_input.state\[1\]                  FD1S3AX      D        In      0.000     8.333       -         
+========================================================================================================================
+
+
+
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 0 of 6864 (0%)
+Register bits: 101 of 6864 (1%)
 PIC Latch:       0
-I/O cells:       46
+I/O cells:       47
 
 
 Details:
+CCU2D:          34
+FD1P3AX:        21
+FD1P3IX:        3
+FD1S3AX:        38
+FD1S3AY:        2
+FD1S3IX:        35
+FD1S3JX:        1
 GSR:            1
-IB:             1
+IB:             2
+IFS1P3DX:       1
+INV:            2
 OB:             45
+ORCALUT4:       90
 PUR:            1
-VHI:            1
-VLO:            1
+VHI:            6
+VLO:            6
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 143MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 145MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Dec 29 11:46:03 2015
+# Tue Dec 29 12:03:12 2015
 
 ###########################################################]

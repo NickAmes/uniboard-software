@@ -26,23 +26,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/29/15  11:46:09
+Mapped on:  12/29/15  12:03:16
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:      0 out of  7209 (0%)
-      PFU registers:            0 out of  6864 (0%)
-      PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:         2 out of  3432 (0%)
-      SLICEs as Logic/ROM:      2 out of  3432 (0%)
+   Number of registers:    101 out of  7209 (1%)
+      PFU registers:          100 out of  6864 (1%)
+      PIO registers:            1 out of   345 (0%)
+   Number of SLICEs:        82 out of  3432 (2%)
+      SLICEs as Logic/ROM:     82 out of  3432 (2%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:          2 out of  6864 (0%)
-      Number of logic LUTs:        2
+      SLICEs as Carry:         34 out of  3432 (1%)
+   Number of LUT4s:        162 out of  6864 (2%)
+      Number of logic LUTs:       94
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:      0 (0 LUT4s)
+      Number of ripple logic:     34 (68 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 46 + 4(JTAG) out of 115 (43%)
+   Number of PIO sites used: 47 + 4(JTAG) out of 115 (44%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -68,18 +68,44 @@ Mapped on:  12/29/15  11:46:09
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
 
-   Number of clocks:  0
-   Number of Clock Enables:  0
-   Number of LSRs:  0
+   Number of clocks:  1
+     Net clk_12MHz_c: 63 loads, 63 rising, 0 falling (Driver: PIO clk_12MHz )
+   Number of Clock Enables:  13
+     Net un1_state[0]23_RNI6BM11: 1 loads, 0 LSLICEs
+     Net reset4_i: 1 loads, 1 LSLICEs
+     Net protocol_interface/un1_state[0]16_1_i_0[0]: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_output/clk_o_RNI3MOPC: 2 loads, 2 LSLICEs
+     Net protocol_interface/uart_input/rdata_4__RNO: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_2: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_3: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_8: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_4: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_5: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/un1_state_2_i: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
+   Number of LSRs:  4
+     Net debug_c[6]: 2 loads, 2 LSLICEs
+     Net protocol_interface/uart_output/fb: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_output/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+     Net protocol_interface/uart_input/baud_reset: 19 loads, 19 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net VCC: 5 loads
-     Net uart_rx_c: 1 loads
+     Net protocol_interface/uart_input/baud_reset: 20 loads
+     Net debug_c[6]: 18 loads
+     Net uart_rx_c: 16 loads
+     Net protocol_interface/uart_input/state[1]: 14 loads
+     Net protocol_interface/uart_input/state[3]: 14 loads
+     Net protocol_interface/uart_input/state[2]: 13 loads
+     Net protocol_interface/uart_input/state[0]: 11 loads
+     Net protocol_interface/uart_input/state[4]: 9 loads
+     Net protocol_interface/uart_input/state[5]: 9 loads
+     Net protocol_interface/uart_output/state[2]: 8 loads
 
 
 
 
-   Number of warnings:  22
+   Number of warnings:  21
    Number of errors:    0
      
 
@@ -88,8 +114,6 @@ Mapped on:  12/29/15  11:46:09
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: IO buffer missing for top level port clk_12MHz...logic will be
-     discarded.
 WARNING - map: IO buffer missing for top level port Stepper_X_nFault...logic
      will be discarded.
 WARNING - map: IO buffer missing for top level port Stepper_Y_nFault...logic
@@ -102,6 +126,7 @@ WARNING - map: IO buffer missing for top level port limit[3:0](3)...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port limit[3:0](2)...logic will
      be discarded.
+
 WARNING - map: IO buffer missing for top level port limit[3:0](1)...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port limit[3:0](0)...logic will
@@ -126,7 +151,6 @@ WARNING - map: IO buffer missing for top level port rc_ch3...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port rc_ch4...logic will be
      discarded.
-
 WARNING - map: IO buffer missing for top level port rc_ch7...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port rc_ch8...logic will be
@@ -144,7 +168,7 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 +---------------------+-----------+-----------+------------+
 | uart_tx             | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| uart_rx             | INPUT     | LVCMOS25  |            |
+| uart_rx             | INPUT     | LVCMOS25  | IN         |
 +---------------------+-----------+-----------+------------+
 | debug[8]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -160,6 +184,7 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 +---------------------+-----------+-----------+------------+
 | debug[2]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+
 | debug[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | debug[0]            | OUTPUT    | LVCMOS25  |            |
@@ -184,7 +209,6 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 +---------------------+-----------+-----------+------------+
 | Stepper_A_M2        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
 | Stepper_A_M1        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_A_M0        | OUTPUT    | LVCMOS25  |            |
@@ -217,6 +241,7 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+
 | Stepper_X_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_X_M2        | OUTPUT    | LVCMOS25  |            |
@@ -228,6 +253,8 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 | Stepper_X_Dir       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_X_Step      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk_12MHz           | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | status_led[2]       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -241,7 +268,43 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
+Block protocol_interface/GND undriven or does not drive anything - clipped.
+Block protocol_interface/VCC undriven or does not drive anything - clipped.
+Block protocol_interface/uart_input/VCC undriven or does not drive anything -
+     clipped.
+Block protocol_interface/uart_input/GND undriven or does not drive anything -
+     clipped.
+Block protocol_interface/uart_output/GND undriven or does not drive anything -
+     clipped.
+Block protocol_interface/uart_output/VCC undriven or does not drive anything -
+     clipped.
+Signal protocol_interface/uart_input/baud_gen/GND undriven or does not drive
+     anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/GND undriven or does not drive
+     anything - clipped.
+Signal protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_input/baud_gen/N_1 undriven or does not drive
+     anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S1 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/N_1 undriven or does not drive
+     anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1 undriven or
 
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT undriven
+     or does not drive anything - clipped.
+Block protocol_interface/uart_input/baud_gen/GND was optimized away.
+Block protocol_interface/uart_output/baud_gen/GND was optimized away.
 
 
 
@@ -257,16 +320,8 @@ Block GSR_INST undriven or does not drive anything - clipped.
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 180 MB
+   Peak Memory Usage: 182 MB
         
-
-
-
-
-
-
-
-
 
 
 

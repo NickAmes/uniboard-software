@@ -1,2 +1,2 @@
-@E: CG410 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":285:32:285:38|Only one assignment is legal on databus[0]
+@E: CG906 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":61:11:61:21|Reference to unknown variable clk.
 

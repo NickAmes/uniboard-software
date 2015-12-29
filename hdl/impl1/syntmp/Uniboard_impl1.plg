@@ -1,14 +1,29 @@
-@P:  Worst Slack : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency : NA
+@P:  Worst Slack : 991.755
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency : NA
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency : 1.0 MHz
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Period : NA
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Period : 1000.000
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Slack : NA
+@P:  UniboardTop|clk_12MHz - Estimated Frequency : 121.3 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period : NA
+@P:  UniboardTop|clk_12MHz - Estimated Period : 8.245
 @P:  UniboardTop|clk_12MHz - Requested Period : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack : NA
-@P:  Worst Slack(min analysis) : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Slack : 991.755
+@P:  Worst Slack(min analysis) : 0.331
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Period(min analysis) : NA
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Period(min analysis) : 1000.000
+@P:  ClockDividerP_12s_1|clk_o_derived_clock - Slack(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : 121.3 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency(min analysis) : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : 8.245
 @P:  UniboardTop|clk_12MHz - Requested Period(min analysis) : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Slack(min analysis) : 991.755
+@P:  Total Area : 92.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  CPU Time : 0h:00m:01s

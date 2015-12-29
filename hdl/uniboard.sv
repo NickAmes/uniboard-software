@@ -22,7 +22,7 @@
 module ProtocolInterface(
 	input logic rx,
 	output logic tx,
-	input logic clk,
+	input logic clk_12MHz,
 	inout databus[31:0],
 	input logic reg_size[2:0],
 	output logic register_addr[7:0],
@@ -30,7 +30,8 @@ module ProtocolInterface(
 	output logic select[127:0],
 	input logic reset,
 	//TODO
-	output logic state[3:0]);
+	output logic state[3:0],
+	output logic drdy);
 	
 	parameter baud_div=2083; /* Division factor to produce
 	                          * a clock at the baud rate from the
@@ -41,7 +42,7 @@ module ProtocolInterface(
 	//logic state[3:0] = 0;
 	logic escape = 0;
 	
-	logic drdy;
+	//logic drdy;
 	logic rx_data[7:0];
 	logic tx_data[7:0];
 	logic send = 0;
@@ -57,7 +58,7 @@ module ProtocolInterface(
 	                                    .send(send),
 	                                    .reset(reset));
 	                                    
-	always @ (posedge clk)
+	always @ (posedge clk_12MHz)
 		begin
 			if(reset)
 				begin
@@ -71,14 +72,12 @@ module ProtocolInterface(
 						/* Waiting for start byte. */
 						4'd0:
 							if(drdy)
-								//TODO
-								state<=1;
-// 								begin
-// 									if(rx_data == 8'h01)
-// 										state <= 2;
-// 									else
-// 										state <= 1;
-// 								end
+								begin
+									if(rx_data == 8'h01)
+										state <= 2;
+									else
+										state <= 1;
+								end
 						/* Waiting for DRDY low, proceed back to wait for start byte. */
 						4'd1:
 							if(~drdy)
@@ -245,20 +244,21 @@ module UniboardTop(
 	
 	/* Debug and status LED assignments */
 	logic state[3:0];
+	logic drdy;
 	assign debug[0] = uart_rx;
 	assign debug[1] = uart_tx;
 	assign debug[2] = state[0];
 	assign debug[3] = state[1];
 	assign debug[4] = state[2];
 	assign debug[5] = state[3];
-	assign debug[6] = 0; 
-	assign debug[7] = 0;
+	assign debug[6] = reset; 
+	assign debug[7] = drdy;
 	assign debug[8] = 0;
 	
 	assign status_led[1] = 1;
 	assign status_led[2] = 1;
 	
-	/* Bus, and reset generator. */
+	/* Bus and reset generator. */
 	tri databus[31:0];
 	logic reg_size[2:0];
 	logic register_addr[7:0];
@@ -278,14 +278,15 @@ module UniboardTop(
 	/* Protocol interface and peripherals. */
 	ProtocolInterface #(12) protocol_interface(.tx(uart_tx),
 	                                           .rx(uart_rx),
-	                                           .clk(clk_12MHz),
+	                                           .clk_12MHz(clk_12MHz),
 	                                           .databus(databus),
 	                                           .reg_size(reg_size),
 	                                           .register_addr(register_addr),
 	                                           .rw(rw),
 	                                           .select(select),
 	                                           .reset(reset),
-	                                           .state(state));
+	                                           .state(state),
+	                                           .drdy(drdy));
 	logic dummy_select;
 	assign dummy_select = | select;
 	DummyPeripheral dummy(.databus(databus),

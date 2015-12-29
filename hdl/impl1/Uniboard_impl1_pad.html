@@ -14,7 +14,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Tue Dec 29 11:46:12 2015
+Tue Dec 29 12:03:20 2015
 
 Pinout by Port Name:
 +----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -44,6 +44,7 @@ Pinout by Port Name:
 | Stepper_Z_M1   | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_M2   | 82/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_Step | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| clk_12MHz      | 128/0    | LVCMOS25_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | debug[0]       | 111/0    | LVCMOS25_OUT | PT35B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | debug[1]       | 112/0    | LVCMOS25_OUT | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | debug[2]       | 113/0    | LVCMOS25_OUT | PT33B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -191,7 +192,7 @@ Vccio by Bank:
 | 125/0    |     unused, PULL:DOWN |            |              | PT22D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT22C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
-| 128/0    |     unused, PULL:DOWN |            |              | PT18A | PCLKT0_1       |           |           |
+| 128/0    | clk_12MHz             | LOCATED    | LVCMOS25_IN  | PT18A | PCLKT0_1       |           |           |
 | 130/0    | Reserved: sysCONFIG   |            |              | PT17D | TMS            |           |           |
 | 131/0    | Reserved: sysCONFIG   |            |              | PT17C | TCK            |           |           |
 | 132/0    | uart_tx               | LOCATED    | LVCMOS25_OUT | PT15B |                |           |           |
@@ -464,6 +465,7 @@ LOCATE  COMP  "Stepper_Z_M0"  SITE  "78";
 LOCATE  COMP  "Stepper_Z_M1"  SITE  "81";
 LOCATE  COMP  "Stepper_Z_M2"  SITE  "82";
 LOCATE  COMP  "Stepper_Z_Step"  SITE  "83";
+LOCATE  COMP  "clk_12MHz"  SITE  "128";
 LOCATE  COMP  "debug[0]"  SITE  "111";
 LOCATE  COMP  "debug[1]"  SITE  "112";
 LOCATE  COMP  "debug[2]"  SITE  "113";
@@ -497,7 +499,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 29 11:46:12 2015
+Tue Dec 29 12:03:20 2015
 
 
 

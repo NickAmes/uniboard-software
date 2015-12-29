@@ -1,16 +1,121 @@
 ----------------------------------------------------------------------
 Report for cell UniboardTop.verilog
 
-Register bits: 0 of 6864 (0%)
+Register bits: 101 of 6864 (1%)
 PIC Latch:       0
-I/O cells:       46
+I/O cells:       47
                                           Cell usage:
                                cell       count    Res Usage(%)
+                              CCU2D       34       100.0
+                            FD1P3AX       21       100.0
+                            FD1P3IX        3       100.0
+                            FD1S3AX       38       100.0
+                            FD1S3AY        2       100.0
+                            FD1S3IX       35       100.0
+                            FD1S3JX        1       100.0
                                 GSR        1       100.0
-                                 IB        1       100.0
+                                 IB        2       100.0
+                           IFS1P3DX        1       100.0
+                                INV        2       100.0
                                  OB       45       100.0
+                           ORCALUT4       90       100.0
                                 PUR        1       100.0
-                                VHI        1       100.0
-                                VLO        1       100.0
+                                VHI        6       100.0
+                                VLO        6       100.0
+SUB MODULES 
+                ClockDividerP_12s_0        1       100.0
+                ClockDividerP_12s_1        1       100.0
+              ProtocolInterface_12s        1       100.0
+                   UARTReceiver_12s        1       100.0
+                UARTTransmitter_12s        1       100.0
                             
-                         TOTAL            50           
+                         TOTAL           293           
+----------------------------------------------------------------------
+Report for cell ProtocolInterface_12s.netlist
+     Instance path:  protocol_interface
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       34       100.0
+                            FD1P3AX       19        90.5
+                            FD1P3IX        3       100.0
+                            FD1S3AX       37        97.4
+                            FD1S3AY        1        50.0
+                            FD1S3IX       35       100.0
+                            FD1S3JX        1       100.0
+                                INV        2       100.0
+                           ORCALUT4       85        94.4
+                                VHI        5        83.3
+                                VLO        5        83.3
+SUB MODULES 
+                ClockDividerP_12s_0        1       100.0
+                ClockDividerP_12s_1        1       100.0
+                   UARTReceiver_12s        1       100.0
+                UARTTransmitter_12s        1       100.0
+                            
+                         TOTAL           231           
+----------------------------------------------------------------------
+Report for cell UARTTransmitter_12s.netlist
+     Instance path:  protocol_interface.uart_output
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        50.0
+                            FD1P3AX        4        19.0
+                            FD1S3AX       31        81.6
+                            FD1S3IX        2         5.7
+                            FD1S3JX        1       100.0
+                                INV        1        50.0
+                           ORCALUT4       27        30.0
+                                VHI        2        33.3
+                                VLO        2        33.3
+SUB MODULES 
+                ClockDividerP_12s_1        1       100.0
+                            
+                         TOTAL            88           
+----------------------------------------------------------------------
+Report for cell ClockDividerP_12s_1.netlist
+  Original Cell name ClockDividerP_12s
+     Instance path:  protocol_interface.uart_output.baud_gen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        50.0
+                            FD1S3AX       31        81.6
+                            FD1S3IX        2         5.7
+                                INV        1        50.0
+                           ORCALUT4       14        15.6
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            67           
+----------------------------------------------------------------------
+Report for cell UARTReceiver_12s.netlist
+     Instance path:  protocol_interface.uart_input
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        50.0
+                            FD1P3AX       15        71.4
+                            FD1P3IX        1        33.3
+                            FD1S3AX        6        15.8
+                            FD1S3AY        1        50.0
+                            FD1S3IX       33        94.3
+                                INV        1        50.0
+                           ORCALUT4       53        58.9
+                                VHI        2        33.3
+                                VLO        2        33.3
+SUB MODULES 
+                ClockDividerP_12s_0        1       100.0
+                            
+                         TOTAL           132           
+----------------------------------------------------------------------
+Report for cell ClockDividerP_12s_0.netlist
+  Original Cell name ClockDividerP_12s
+     Instance path:  protocol_interface.uart_input.baud_gen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        50.0
+                            FD1S3IX       33        94.3
+                                INV        1        50.0
+                           ORCALUT4       13        14.4
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            66           

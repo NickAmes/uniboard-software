@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Tue Dec 29 11:46:19 2015 *
+NOTE DATE CREATED: Tue Dec 29 12:03:27 2015 *
 NOTE DESIGN NAME: UniboardTop *
 NOTE DEVICE NAME: LCMXO2-7000HC-6TQFP144 *
 NOTE PIN ASSIGNMENTS *
@@ -47,6 +47,7 @@ NOTE PINS Stepper_X_M1 : 103 : out *
 NOTE PINS Stepper_X_M0 : 104 : out *
 NOTE PINS Stepper_X_Dir : 98 : out *
 NOTE PINS Stepper_X_Step : 99 : out *
+NOTE PINS clk_12MHz : 128 : in *
 NOTE PINS status_led[2] : 107 : out *
 NOTE PINS status_led[1] : 109 : out *
 NOTE PINS status_led[0] : 110 : out *

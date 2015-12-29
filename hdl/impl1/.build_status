@@ -5,22 +5,22 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1451418379"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1451419407"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1451418370">
-            <Task name="Map" build_result="2" update_result="0" update_time="1451418370"/>
+        <Milestone name="Map" build_result="2" build_time="1451419398">
+            <Task name="Map" build_result="2" update_result="0" update_time="1451419398"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1451418376">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1451418376"/>
+        <Milestone name="PAR" build_result="2" build_time="1451419404">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1451419404"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1451418364">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1451418364"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1451419392">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1451419392"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1450012155"/>
@@ -29,15 +29,15 @@
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1451418369">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1451418369"/>
+        <Milestone name="Translate" build_result="2" build_time="1451419393">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1451419393"/>
         </Milestone>
-        <Report name=".vdbs/Uniboard_impl1_map.vdb" last_build_time="1451418370" last_build_size="37081"/>
-        <Report name="Uniboard_impl1.bgn" last_build_time="1451418379" last_build_size="3918"/>
-        <Report name="Uniboard_impl1.edi" last_build_time="1451418363" last_build_size="20295"/>
-        <Report name="Uniboard_impl1.jed" last_build_time="1451418379" last_build_size="1454706"/>
-        <Report name="Uniboard_impl1.ncd" last_build_time="1451418376" last_build_size="32080"/>
-        <Report name="Uniboard_impl1.ngd" last_build_time="1451418369" last_build_size="23235"/>
-        <Report name="Uniboard_impl1_map.ncd" last_build_time="1451418369" last_build_size="27742"/>
+        <Report name=".vdbs/Uniboard_impl1_map.vdb" last_build_time="1451419398" last_build_size="74202"/>
+        <Report name="Uniboard_impl1.bgn" last_build_time="1451419407" last_build_size="3918"/>
+        <Report name="Uniboard_impl1.edi" last_build_time="1451419392" last_build_size="156428"/>
+        <Report name="Uniboard_impl1.jed" last_build_time="1451419407" last_build_size="1454738"/>
+        <Report name="Uniboard_impl1.ncd" last_build_time="1451419404" last_build_size="193530"/>
+        <Report name="Uniboard_impl1.ngd" last_build_time="1451419393" last_build_size="151103"/>
+        <Report name="Uniboard_impl1_map.ncd" last_build_time="1451419397" last_build_size="144944"/>
     </Strategy>
 </BuildStatus>

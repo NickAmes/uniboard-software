@@ -1,8 +1,19 @@
 [ActiveSupport PAR]
+; Global primary clocks
+GLOBAL_PRIMARY_USED = 1;
+; Global primary clock #0
+GLOBAL_PRIMARY_0_SIGNALNAME = clk_12MHz_c;
+GLOBAL_PRIMARY_0_DRIVERTYPE = CLK_PIN;
+GLOBAL_PRIMARY_0_LOADNUM = 63;
 ; # of global secondary clocks
-GLOBAL_SECONDARY_USED = 0;
+GLOBAL_SECONDARY_USED = 1;
+; Global secondary clock #0
+GLOBAL_SECONDARY_0_SIGNALNAME = protocol_interface/uart_input/baud_reset;
+GLOBAL_SECONDARY_0_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_0_LOADNUM = 20;
+GLOBAL_SECONDARY_0_SIGTYPE = RST;
 ; I/O Bank 0 Usage
-BANK_0_USED = 13;
+BANK_0_USED = 14;
 BANK_0_AVAIL = 28;
 BANK_0_VCCIO = 2.5V;
 BANK_0_VREF1 = NA;
