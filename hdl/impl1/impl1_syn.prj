@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version J-2014.09L
 #--  Project file /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.prj
-#--  Written on Fri Dec 25 15:09:03 2015
+#--  Written on Tue Dec 29 11:29:06 2015
 
 
 #project files
@@ -30,6 +30,7 @@ set_option -speed_grade -6
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "UniboardTop"
 
 # mapper_options
 set_option -frequency auto

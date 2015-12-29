@@ -1,0 +1,131 @@
+# Synopsys Constraint Checker, version map201409latrcp1, Build 005R, built Feb 11 2015
+# Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Tue Dec 29 11:31:42 2015
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "UniboardTop"
+Constraint File(s):      "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                  Ending                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                    System                    |     2.617            |     No paths         |     No paths         |     No paths                         
+UniboardTop|clk_12MHz     System                    |     2.101            |     No paths         |     No paths         |     No paths                         
+UniboardTop|clk_12MHz     UniboardTop|clk_12MHz     |     2.101            |     No paths         |     No paths         |     No paths                         
+===============================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:Stepper_A_Dir
+p:Stepper_A_En
+p:Stepper_A_M0
+p:Stepper_A_M1
+p:Stepper_A_M2
+p:Stepper_A_Step
+p:Stepper_A_nFault
+p:Stepper_X_Dir
+p:Stepper_X_En
+p:Stepper_X_M0
+p:Stepper_X_M1
+p:Stepper_X_M2
+p:Stepper_X_Step
+p:Stepper_X_nFault
+p:Stepper_Y_Dir
+p:Stepper_Y_En
+p:Stepper_Y_M0
+p:Stepper_Y_M1
+p:Stepper_Y_M2
+p:Stepper_Y_Step
+p:Stepper_Y_nFault
+p:Stepper_Z_Dir
+p:Stepper_Z_En
+p:Stepper_Z_M0
+p:Stepper_Z_M1
+p:Stepper_Z_M2
+p:Stepper_Z_Step
+p:Stepper_Z_nFault
+p:debug[0]
+p:debug[1]
+p:debug[2]
+p:debug[3]
+p:debug[4]
+p:debug[5]
+p:debug[6]
+p:debug[7]
+p:debug[8]
+p:encoder_la
+p:encoder_lb
+p:encoder_li
+p:encoder_ra
+p:encoder_rb
+p:encoder_ri
+p:expansion1
+p:expansion2
+p:expansion3
+p:expansion4
+p:expansion5
+p:limit[0]
+p:limit[1]
+p:limit[2]
+p:limit[3]
+p:motor_pwm_l
+p:motor_pwm_r
+p:pause
+p:rc_ch1
+p:rc_ch2
+p:rc_ch3
+p:rc_ch4
+p:rc_ch7
+p:rc_ch8
+p:signal_light
+p:status_led[0]
+p:status_led[1]
+p:status_led[2]
+p:uart_rx
+p:uart_tx
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

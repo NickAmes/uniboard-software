@@ -1,0 +1,3 @@
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[2] reduced to a combinational gate by constant propagation
+@W: BW150 :|Cannot forward annotate set_clock_groups command because clock ClockDividerP_12s_1|clk_o_inferred_clock cannot be found

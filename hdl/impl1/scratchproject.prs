@@ -29,6 +29,7 @@ set_option -speed_grade -6
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "UniboardTop"
 
 # mapper_options
 set_option -frequency 1

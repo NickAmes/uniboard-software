@@ -27,20 +27,577 @@ Running on host :nick-laptop
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh"
 @I::"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
-@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":137:0:137:5|Expecting endmodule
-@W: CG978 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":298:1:298:16|An instance name was not specified - using generated name II_4
-@E: CG737 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":309:23:309:33|uart_output already exists in this scope - a variable by this name exists
-@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":315:0:315:8|Expecting endmodule
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
-3 syntax errors
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module UniboardTop
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
+
+	factor=32'b00000000000000000000000000001100
+   Generated name = ClockDividerP_12s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":7:7:7:18|Synthesizing module UARTReceiver
+
+	baud_div=32'b00000000000000000000000000001100
+   Generated name = UARTReceiver_12s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":87:7:87:21|Synthesizing module UARTTransmitter
+
+	baud_div=32'b00000000000000000000000000001100
+   Generated name = UARTTransmitter_12s
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":22:7:22:23|Synthesizing module ProtocolInterface
+
+	baud_div=32'b00000000000000000000000000001100
+   Generated name = ProtocolInterface_12s
+
+@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":29:14:29:15|No assignment to rw
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Register bit state[2] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Register bit state[3] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":127:7:127:21|Synthesizing module DummyPeripheral
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":139:7:139:17|Synthesizing module UniboardTop
+
+@W: CL246 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":203:7:203:11|Input port bits 8 to 6 of debug[8:0] are unused
+
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":151:16:151:31|Input Stepper_X_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":159:16:159:31|Input Stepper_Y_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":167:16:167:31|Input Stepper_Z_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":175:16:175:31|Input Stepper_A_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":177:13:177:17|Input limit is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":185:13:185:22|Input encoder_ra is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":186:13:186:22|Input encoder_rb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":187:13:187:22|Input encoder_ri is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":188:13:188:22|Input encoder_la is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":189:13:189:22|Input encoder_lb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":190:13:190:22|Input encoder_li is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":192:13:192:18|Input rc_ch1 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":193:13:193:18|Input rc_ch2 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":194:13:194:18|Input rc_ch3 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":195:13:195:18|Input rc_ch4 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":196:13:196:18|Input rc_ch7 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":197:13:197:18|Input rc_ch8 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":201:13:201:17|Input pause is unused
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[0]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[1]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[2]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[3]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[4]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[5]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[6]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[7]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[8]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[9]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[10]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[11]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[12]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[13]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[14]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[15]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[16]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[17]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[18]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[19]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[20]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[21]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[22]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[23]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[24]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[25]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[26]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[27]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[28]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[29]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[30]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[31]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[32]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[33]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[34]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[35]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[36]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[37]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[38]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[39]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[40]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[41]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[42]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[43]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[44]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[45]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[46]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[47]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[48]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[49]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[50]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[51]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[52]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[53]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[54]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[55]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[56]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[57]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[58]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[59]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[60]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[61]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[62]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[63]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[64]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[65]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[66]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[67]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[68]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[69]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[70]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[71]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[72]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[73]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[74]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[75]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[76]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[77]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[78]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[79]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[80]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[81]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[82]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[83]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[84]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[85]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[86]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[87]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[88]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[89]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[90]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[91]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[92]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[93]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[94]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[95]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[96]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[97]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[98]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[99]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[100]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[101]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[102]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[103]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[104]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[105]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[106]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[107]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[108]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[109]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[110]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[111]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[112]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[113]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[114]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[115]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[116]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[117]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[118]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[119]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[120]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[121]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[122]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[123]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[124]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[125]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[126]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'select[127]' because it is only assigned 0 or its original value.
+@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing register 'send' because it is only assigned 0 or its original value.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[1] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[2] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[3] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[4] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[5] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[6] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:14:28:26|*Unassigned bits of register_addr[7] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":29:14:29:15|*Unassigned bits of rw are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[1] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[2] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[3] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[4] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[5] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[6] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":46:7:46:13|*Unassigned bits of tx_data[7] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL156 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":50:38:50:46|*Input clk_12MHz to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":50:38:50:46|*Input clk_12MHz to expression [instance] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL158 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":26:7:26:13|Inout databus is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":27:13:27:20|Input reg_size is unused
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Dec 25 14:31:20 2015
+# Tue Dec 29 11:32:53 2015
+
+###########################################################]
+/usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
+/usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 200: [: !=: argument expected
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Dec 29 11:32:53 2015
 
 ###########################################################]
 @END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Dec 25 14:31:20 2015
+# Tue Dec 29 11:32:53 2015
+
+###########################################################]
+
+@A: multi_srs_gen output is up to date. No run necessary.
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
+Multi-srs Generator Report
+@R:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/impl1_multi_srs_gen.srr"
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+Reading constraint file: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
+@L: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt 
+Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN115 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":286:17:286:21|Removing instance dummy of view:work.DummyPeripheral(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_12s(verilog) because there are no references to its outputs 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist UniboardTop
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+
+@S |Clock Summary
+****************
+
+Start                                        Requested     Requested     Clock        Clock              
+Clock                                        Frequency     Period        Type         Group              
+---------------------------------------------------------------------------------------------------------
+ClockDividerP_12s_1|clk_o_inferred_clock     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+clk_12MHz                                    12.0 MHz      83.000        declared     default_clkgroup   
+=========================================================================================================
+
+@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Found inferred clock ClockDividerP_12s_1|clk_o_inferred_clock which controls 13 sequential elements including protocol_interface.uart_output.state\[0\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 140MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Dec 29 11:32:54 2015
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT204 |Auto Constrain mode is disabled because clocks are defined in the SDC file
+
+            clk_12MHz
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[2\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[2\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[1\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[0\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[4\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[4\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[5\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[5\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance baud_reset in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register baud_reset packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[3\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[3\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_0_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_0_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_1_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_1_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_2_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_2_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_3_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_3_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_4_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_4_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_5_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_5_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_6_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_6_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_7_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_7_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[0\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[1\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[2\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[3\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[4\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[5\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[6\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[7\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance drdy in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN115 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":23:27:23:34|Removing instance baud_gen of view:work.ClockDividerP_12s_0(verilog) because there are no references to its outputs 
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[2] reduced to a combinational gate by constant propagation
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance clk_o in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[0\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[1\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[4\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[5\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[6\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[7\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[8\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[9\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[10\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[11\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[12\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[13\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[14\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[15\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[16\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[17\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[18\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[19\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[20\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[21\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[22\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[23\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[24\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[25\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[26\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[27\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[28\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[29\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[30\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[31\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[3\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.tx in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.tx packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing sequential instance protocol_interface.state\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Boundary register protocol_interface.state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing sequential instance protocol_interface.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Boundary register protocol_interface.state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+Writing EDIF Netlist and constraint files
+J-2014.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@W: BW150 :|Cannot forward annotate set_clock_groups command because clock ClockDividerP_12s_1|clk_o_inferred_clock cannot be found
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+Found clock clk_12MHz with period 83.00ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Dec 29 11:32:55 2015
+#
+
+
+Top view:               UniboardTop
+Requested Frequency:    12.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+clk_12MHz          12.0 MHz      NA            83.000        NA            NA        declared     default_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000hc-6
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       46
+
+
+Details:
+GSR:            1
+IB:             1
+OB:             45
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Dec 29 11:32:55 2015
 
 ###########################################################]

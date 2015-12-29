@@ -1,11 +1,11 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Dec 29 06:49:54 2015
+# Timing Report written on Tue Dec 29 11:46:03 2015
 #
 
 
-Top view:               PWMPeripheral
+Top view:               UniboardTop
 Requested Frequency:    1.0 MHz
 Wire load mode:         top
 Paths requested:        5
@@ -22,11 +22,11 @@ Performance Summary
 
 Worst slack in design: NA
 
-                         Requested     Estimated     Requested     Estimated               Clock        Clock              
-Starting Clock           Frequency     Frequency     Period        Period        Slack     Type         Group              
----------------------------------------------------------------------------------------------------------------------------
-PWMPeripheral|select     1.0 MHz       NA            1000.000      NA            NA        inferred     Inferred_clkgroup_0
-===========================================================================================================================
+                          Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack     Type         Group              
+----------------------------------------------------------------------------------------------------------------------------
+UniboardTop|clk_12MHz     1.0 MHz       NA            1000.000      NA            NA        inferred     Inferred_clkgroup_0
+============================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 

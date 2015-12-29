@@ -1,0 +1,14 @@
+@P:  Worst Slack : NA
+@P:  clk_12MHz - Estimated Frequency : NA
+@P:  clk_12MHz - Requested Frequency : 12.0 MHz
+@P:  clk_12MHz - Estimated Period : NA
+@P:  clk_12MHz - Requested Period : 83.000
+@P:  clk_12MHz - Slack : NA
+@P:  Worst Slack(min analysis) : NA
+@P:  clk_12MHz - Estimated Frequency(min analysis) : NA
+@P:  clk_12MHz - Requested Frequency(min analysis) : 12.0 MHz
+@P:  clk_12MHz - Estimated Period(min analysis) : NA
+@P:  clk_12MHz - Requested Period(min analysis) : 83.000
+@P:  clk_12MHz - Slack(min analysis) : NA
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:01s

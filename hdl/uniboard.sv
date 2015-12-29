@@ -1,6 +1,6 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
- * Written 2015 Nick Ames <nick@fetchmodus.org> */
+ * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
 
 /* See the Uniboard manual for information on the command protocol
  * and peripheral mapping.
@@ -22,13 +22,15 @@
 module ProtocolInterface(
 	input logic rx,
 	output logic tx,
-	input logic clk_12MHz,
+	input logic clk,
 	inout databus[31:0],
 	input logic reg_size[2:0],
 	output logic register_addr[7:0],
 	output logic rw, 
 	output logic select[127:0],
-	input logic reset);
+	input logic reset,
+	//TODO
+	output logic state[3:0]);
 	
 	parameter baud_div=2083; /* Division factor to produce
 	                          * a clock at the baud rate from the
@@ -36,8 +38,7 @@ module ProtocolInterface(
 	
 	logic [7:0] buffer[6];
 	logic bufcount[3:0] = 0;
-	logic state[2:0] = 0;
-	logic character[7:0];
+	//logic state[3:0] = 0;
 	logic escape = 0;
 	
 	logic drdy;
@@ -55,7 +56,54 @@ module ProtocolInterface(
 	                                    .data(tx_data),
 	                                    .send(send),
 	                                    .reset(reset));
-	
+	                                    
+	always @ (posedge clk)
+		begin
+			if(reset)
+				begin
+					state <= 0;
+					send <= 0;
+					select <= 0;
+				end
+			else
+				begin
+					case(state)
+						/* Waiting for start byte. */
+						4'd0:
+							if(drdy)
+								//TODO
+								state<=1;
+// 								begin
+// 									if(rx_data == 8'h01)
+// 										state <= 2;
+// 									else
+// 										state <= 1;
+// 								end
+						/* Waiting for DRDY low, proceed back to wait for start byte. */
+						4'd1:
+							if(~drdy)
+								begin
+									state <= 0;
+								end
+						/* Waiting for DRDY low, proceed to wait for data. */
+						4'd2:
+							if(~drdy)
+								begin
+									state <= 3;
+								end
+					
+						/* Waiting for data. */
+						4'd3:
+							if(drdy)
+								begin
+									state <= 0;
+								end
+						
+						default:
+							state <= 0;
+					endcase	
+				end
+		end
 	/* States:
 	 * 0 - Waiting for start (others ignored, buffer empty)
 	 * 1 - Wait for DRDY low (start)
@@ -196,19 +244,22 @@ module UniboardTop(
 	
 	
 	/* Debug and status LED assignments */
-	assign debug[8] = drdy;
-	assign debug[2:0] = decoder_data[2:0];
-	assign debug[3] = decoder_drdy;
-	assign debug[4] = uart_rx;
-	assign debug[5] = uart_tx;
-	assign debug[6] = start_c;
-	assign debug[7] = end_c;
+	logic state[3:0];
+	assign debug[0] = uart_rx;
+	assign debug[1] = uart_tx;
+	assign debug[2] = state[0];
+	assign debug[3] = state[1];
+	assign debug[4] = state[2];
+	assign debug[5] = state[3];
+	assign debug[6] = 0; 
+	assign debug[7] = 0;
+	assign debug[8] = 0;
 	
-	assign status_led[1] = ~drdy;
+	assign status_led[1] = 1;
 	assign status_led[2] = 1;
 	
 	/* Bus, and reset generator. */
-	logic databus[31:0];
+	tri databus[31:0];
 	logic reg_size[2:0];
 	logic register_addr[7:0];
 	logic rw;
@@ -216,7 +267,7 @@ module UniboardTop(
 	logic reset = 1;
 	logic reset_count[3:0] = 0; /* Counter used to de-assert reset after a while. */
 	
-	always @ (posedge clk_i)			
+	always @ (posedge clk_12MHz)			
 		begin
 			if(reset_count > 5)
 				reset <= 0;
@@ -227,14 +278,16 @@ module UniboardTop(
 	/* Protocol interface and peripherals. */
 	ProtocolInterface #(12) protocol_interface(.tx(uart_tx),
 	                                           .rx(uart_rx),
-	                                           .clk_12MHz(clk_12MHz),
+	                                           .clk(clk_12MHz),
 	                                           .databus(databus),
 	                                           .reg_size(reg_size),
 	                                           .register_addr(register_addr),
 	                                           .rw(rw),
 	                                           .select(select),
-	                                           .reset(reset));
-	logic dummy_select = | select;
+	                                           .reset(reset),
+	                                           .state(state));
+	logic dummy_select;
+	assign dummy_select = | select;
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),

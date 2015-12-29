@@ -1,6 +1,6 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
- * Written 2015 Nick Ames <nick@fetchmodus.org> */
+ * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
  
 /* UART Receiver. Receives RS-232 signals with 8 data bits,
  * no parity, and one stop bit. */

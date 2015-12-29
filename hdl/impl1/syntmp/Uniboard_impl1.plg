@@ -1,14 +1,14 @@
 @P:  Worst Slack : NA
-@P:  PWMPeripheral|select - Estimated Frequency : NA
-@P:  PWMPeripheral|select - Requested Frequency : 1.0 MHz
-@P:  PWMPeripheral|select - Estimated Period : NA
-@P:  PWMPeripheral|select - Requested Period : 1000.000
-@P:  PWMPeripheral|select - Slack : NA
+@P:  UniboardTop|clk_12MHz - Estimated Frequency : NA
+@P:  UniboardTop|clk_12MHz - Requested Frequency : 1.0 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Period : NA
+@P:  UniboardTop|clk_12MHz - Requested Period : 1000.000
+@P:  UniboardTop|clk_12MHz - Slack : NA
 @P:  Worst Slack(min analysis) : NA
-@P:  PWMPeripheral|select - Estimated Frequency(min analysis) : NA
-@P:  PWMPeripheral|select - Requested Frequency(min analysis) : 1.0 MHz
-@P:  PWMPeripheral|select - Estimated Period(min analysis) : NA
-@P:  PWMPeripheral|select - Requested Period(min analysis) : 1000.000
-@P:  PWMPeripheral|select - Slack(min analysis) : NA
-@P:  Total Area : 17.0
+@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Requested Frequency(min analysis) : 1.0 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : NA
+@P:  UniboardTop|clk_12MHz - Requested Period(min analysis) : 1000.000
+@P:  UniboardTop|clk_12MHz - Slack(min analysis) : NA
+@P:  Total Area : 0.0
 @P:  CPU Time : 0h:00m:01s

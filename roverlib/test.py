@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #roverlib/uniboard test program
+#Written 2015-2016 by Nick Ames <nick@fetchmodus.org>
 
 import roverlib
 u = roverlib.Uniboard("/dev/ttyUSB1")

@@ -49,6 +49,8 @@ add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv}
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv}
 
+#-- top module name
+set_option -top_module UniboardTop
 
 #-- set result format/file last
 project -result_file {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.edi}

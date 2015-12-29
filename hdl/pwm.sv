@@ -1,6 +1,6 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
- * Written 2015 Nick Ames <nick@fetchmodus.org> */
+ * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
  
 /* PWM generator.
  * Outputs a 1ms (0) to 2ms (255) pulse every 20ms. */
@@ -36,7 +36,7 @@ endmodule
 
 /* Motor PWM Peripheral. */
 module PWMPeripheral (
-	input logic clk_12Mhz,
+	input logic clk_12MHz,
 	inout databus[31:0],
 	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */
 	input logic register_addr[7:0],
@@ -46,7 +46,7 @@ module PWMPeripheral (
 	output logic pwm_right,
 	input logic reset);
 	
-	logic [7:0] register[2] = {8'd127, 8'd127};
+	logic [7:0] register[2];
 	
 	/* Bus read handling */
 	logic read_value[7:0];
@@ -69,15 +69,21 @@ module PWMPeripheral (
 	/* Bus write handling */
 	always @ (posedge select)			
 		begin
-			if(~rw)
+			if(reset)
 				begin
-					case(register_addr)
-						8'd0:
-							register[0] <= databus[7:0];
-						8'd1:
-							register[1] <= databus[7:0];
-					endcase
+					register[0] <= 8'd127;
+					register[1] <= 8'd127;
 				end
+			else
+				if(~rw)
+					begin
+						case(register_addr)
+							8'd0:
+								register[0] <= databus[7:0];
+							8'd1:
+								register[1] <= databus[7:0];
+						endcase
+					end
 		end
 		
 	/* Peripheral components */
@@ -85,13 +91,13 @@ module PWMPeripheral (
 	ClockDivider clkdiv(.factor(32'd47),
 	                    .clk_i(clk_12MHz),
 	                    .clk_o(pwmclk),
-	                    .reset(0));
+	                    .reset(reset));
 	PWMGenerator left(.width(register[0]),
 	                  .clk_255kHz(pwmclk),
 	                  .pwm(pwm_left),
-	                  .reset(0));
+	                  .reset(reset));
 	PWMGenerator right(.width(register[1]),
 	                  .clk_255kHz(pwmclk),
 	                  .pwm(pwm_right),
-	                  .reset(0));
+	                  .reset(reset));
 endmodule

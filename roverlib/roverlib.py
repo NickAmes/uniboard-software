@@ -2,6 +2,8 @@
 The Uniboard performs a variety of functions in the rover's electrical system,
 such as controlling the drive wheels and moving the arm. 
 
+Written 2015-2016 by Nick Ames <nick@fetchmodus.org>
+
 Most functions in the Uniboard class send and receive data from the Uniboard,
 blocking until the transaction is complete. As a result, each function call takes
 at least 80 microseconds to complete.
@@ -22,13 +24,12 @@ class Uniboard:
 		#TODO: TTY Autodetection function
 		#TODO: Network port
 		self._tty_path = tty_path
-		#self._tty = serial.Serial(port=self._tty_path,
-		                          #baudrate=1000000,
-	                              #parity=serial.PARITY_NONE,
-	                              #stopbits=serial.STOPBITS_ONE,
-	                              #bytesize=serial.EIGHTBITS,
-	                              #timeout=0.05,
-	                              #write_timeout=0.05)
+		self._tty = serial.Serial(port=self._tty_path,
+		                          baudrate=1000000,
+	                              parity=serial.PARITY_NONE,
+	                              stopbits=serial.STOPBITS_ONE,
+	                              bytesize=serial.EIGHTBITS,
+	                              timeout=0.05)
 		
 		#To detect errors, the class keeps track of every register value written to the Uniboard.
 		#This is checked (using the register mask to remove read-only bits) against all reads and writes
@@ -62,12 +63,8 @@ class Uniboard:
 				else:
 					escaped_data += chr(0x1B) #Prefix special character with escape
 			escaped_data += c
-		
-		#TODO
-		for c in escaped_data:
-			print c.encode('hex'),
-			
-		#self._tty.write(escaped_data)
+		self._tty.write(escaped_data)
+
 	def _recv(self, num_bytes):
 		"""Receive num_bytes bytes from the Uniboard port. The bytes are returned as a string.
 		   Escape characters are removed transparently by this function, and do not count

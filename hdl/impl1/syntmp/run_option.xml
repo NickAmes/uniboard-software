@@ -3,14 +3,14 @@
   Synopsys, Inc.
   Version J-2014.09L
   Project file /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/syntmp/run_option.xml
-  Written on Tue Dec 29 06:49:51 2015
+  Written on Tue Dec 29 11:46:00 2015
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">proj_1</option>
      <option name="impl_name" display_name="Implementation Name">impl1</option>
-     <option name="top_module" display_name="Top Module"></option>
+     <option name="top_module" display_name="Top Module">UniboardTop</option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>

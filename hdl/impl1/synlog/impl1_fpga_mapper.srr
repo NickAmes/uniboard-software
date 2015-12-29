@@ -1,0 +1,274 @@
+Synopsys Lattice Technology Mapper, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
+Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2014.09L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT204 |Auto Constrain mode is disabled because clocks are defined in the SDC file
+
+            clk_12MHz
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[2\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[2\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[1\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[0\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[4\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[4\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[5\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[5\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance baud_reset in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register baud_reset packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance state\[3\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register state\[3\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_0_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_0_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_1_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_1_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_2_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_2_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_3_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_3_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_4_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_4_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_5_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_5_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_6_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_6_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Removing sequential instance rdata_7_ in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":24:43:24:46|Boundary register rdata_7_ packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[0\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[1\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[2\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[3\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[4\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[5\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[6\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance data\[7\] in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Removing sequential instance drdy in hierarchy view:work.UARTReceiver_12s(verilog) because there are no references to its outputs 
+@N: BN115 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":23:27:23:34|Removing instance baud_gen of view:work.ClockDividerP_12s_0(verilog) because there are no references to its outputs 
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[2] reduced to a combinational gate by constant propagation
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance clk_o in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[0\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[1\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[4\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[5\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[6\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[7\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[8\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[9\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[10\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[11\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[12\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[13\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[14\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[15\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[16\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[17\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[18\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[19\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[20\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[21\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[22\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[23\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[24\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[25\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[26\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[27\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[28\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[29\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[30\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Removing sequential instance count\[31\] in hierarchy view:work.ClockDividerP_12s_1(verilog) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[3\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.state\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance protocol_interface.uart_output.tx in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Boundary register protocol_interface.uart_output.tx packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing sequential instance protocol_interface.state\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Boundary register protocol_interface.state\[1\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[1\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset_count\[2\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":265:1:265:6|Removing sequential instance reset in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Removing sequential instance protocol_interface.state\[0\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":60:1:60:6|Boundary register protocol_interface.state\[0\] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+Writing EDIF Netlist and constraint files
+J-2014.09L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@W: BW150 :|Cannot forward annotate set_clock_groups command because clock ClockDividerP_12s_1|clk_o_inferred_clock cannot be found
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+Found clock clk_12MHz with period 83.00ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Dec 29 11:32:55 2015
+#
+
+
+Top view:               UniboardTop
+Requested Frequency:    12.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+clk_12MHz          12.0 MHz      NA            83.000        NA            NA        declared     default_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000hc-6
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       46
+
+
+Details:
+GSR:            1
+IB:             1
+OB:             45
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 54MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Dec 29 11:32:55 2015
+
+###########################################################]
