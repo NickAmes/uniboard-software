@@ -66,6 +66,25 @@ class Uniboard:
 		}
 		pass
 	
+	
+	#Public API Starts Here
+	#Global Control
+	#Drive Motors
+	def motor_left(self, speed_f):
+		"""Set the left drive motors' speed. speed_f is a float from -1 to 1, with -1 meaning reverse,
+		   0 meaning stop, and 1 meaning full forward."""
+		intvalue = int((speed_f + 1) * 127)
+		self._write_reg(2, 0, intvalue)
+	
+	def motor_right(self, speed_f):
+		"""Set the right drive motors' speed. speed_f is a float from -1 to 1, with -1 meaning reverse,
+		   0 meaning stop, and 1 meaning full forward."""
+		intvalue = int((speed_f + 1) * 127)
+		self._write_reg(2, 1, intvalue)
+	
+	#Public API Ends Here
+	
+	
 	def _message(self, string):
 		"""Print message to stderr, prepending librover and the time and appending a newline."""
 		sys.stderr.write("librover [" + time.asctime(time.localtime()) + "]: " + string + "\n")
