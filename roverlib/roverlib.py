@@ -144,7 +144,7 @@ class Uniboard:
 		if e_value != a_value:
 			#TODO: Create visualization function (read-only bits as Xs). 
 			self._error("Reply data different than expected. Peripheral/register: 0x%02X/0x%02X."%(peripheral, register))
-		
+			
 	def _btn(self, byte_data):
 		"""Convert a 1-4 byte string to a number."""
 		size = len(byte_data)
@@ -192,9 +192,36 @@ class Uniboard:
 		#TODO: Work correctly regardless of version
 		self._tty.flushInput()
 		
+	def _compose_command(self, peripheral, register, num_value, read = True):
+		"""Return a string containing a command. The proper register size
+		   is looked up from the database."""
+		cmd = ""
+		cmd += chr(0x01)
+		if read:
+			cmd += chr(peripheral) | 0x80
+		else:
+			cmd += chr(peripheral)
+		cmd += chr(register)
+		size  = self._rsize(peripheral, register)
+		if size > 0:
+			cmd += chr((num_value >> 0) & 0xFF)
+		if size > 1:
+			cmd += chr((num_value >> 8) & 0xFF)
+		if size > 2:
+			cmd += chr((num_value >> 16) & 0xFF)
+		if size > 3:
+			cmd += chr((num_value >> 24) & 0xFF)
+		cmd += chr(0x17)
+		return cmd
+	
 	def _write_reg(self, peripheral, register, value):
-		"""Write a Uniboard register, checking for a correct using the read-back."""
-		pass
+		"""Write a Uniboard register, checking for a correct using the read-back.
+		   Value is a number."""
+		self._clear_input()
+		self._shadow_memory[self._k(peripheral, register)] = value
+		self._send(self._compose_command(peripheral, register, value, read = False))
+		self._process_reply(peripheral, register)
+	
 	def _read_reg(self, peripheral, register):
 		"""Read a Uniboard register and return its contents. If the register's
 		   writeable bits (if any) differ from those in this class's database,
