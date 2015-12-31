@@ -1,4 +1,134 @@
 
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HC -path "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1" -path "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl"   "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.edi" "Uniboard_impl1.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.4.1.213
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="factor"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="baud_div"  />
+Writing the design to Uniboard_impl1.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HC  -p "/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data"  -p "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1" -p "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl"  "Uniboard_impl1.ngo" "Uniboard_impl1.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.4.1.213
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Uniboard_impl1.ngo' ...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT" arg2="protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1" arg2="protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0" arg2="protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S1" arg2="protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0" arg2="protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0" arg2="protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0" arg2="protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0" arg2="protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_12_0_COUT_0" arg2="motor_pwm/right/pwm_2_cry_12_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_12_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_12_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_11_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_11_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_11_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_11_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_9_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_9_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_9_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_9_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_7_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_7_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_7_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_7_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_5_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_5_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_5_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_5_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_3_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_3_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_3_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_3_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_1_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_1_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_1_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_1_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_0_0_S0_0" arg2="motor_pwm/right/pwm_2_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/pwm_2_cry_0_0_S1_0" arg2="motor_pwm/right/pwm_2_cry_0_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un1_width_cry_7_0_COUT" arg2="motor_pwm/right/un1_width_cry_7_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un1_width_cry_0_0_S0" arg2="motor_pwm/right/un1_width_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un1_width_cry_0_0_S1" arg2="motor_pwm/right/un1_width_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un53_count_cry_11_0_COUT" arg2="motor_pwm/right/un53_count_cry_11_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un53_count_cry_0_0_S0" arg2="motor_pwm/right/un53_count_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/right/un53_count_cry_0_0_S1" arg2="motor_pwm/right/un53_count_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_12_0_COUT" arg2="motor_pwm/left/pwm_2_cry_12_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_12_0_S1" arg2="motor_pwm/left/pwm_2_cry_12_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_11_0_S0" arg2="motor_pwm/left/pwm_2_cry_11_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_11_0_S1" arg2="motor_pwm/left/pwm_2_cry_11_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_9_0_S0" arg2="motor_pwm/left/pwm_2_cry_9_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_9_0_S1" arg2="motor_pwm/left/pwm_2_cry_9_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_7_0_S0" arg2="motor_pwm/left/pwm_2_cry_7_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_7_0_S1" arg2="motor_pwm/left/pwm_2_cry_7_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_5_0_S0" arg2="motor_pwm/left/pwm_2_cry_5_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_5_0_S1" arg2="motor_pwm/left/pwm_2_cry_5_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_3_0_S0" arg2="motor_pwm/left/pwm_2_cry_3_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_3_0_S1" arg2="motor_pwm/left/pwm_2_cry_3_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_1_0_S0" arg2="motor_pwm/left/pwm_2_cry_1_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_1_0_S1" arg2="motor_pwm/left/pwm_2_cry_1_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_0_0_S0" arg2="motor_pwm/left/pwm_2_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/pwm_2_cry_0_0_S1" arg2="motor_pwm/left/pwm_2_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un1_width_cry_7_0_COUT_0" arg2="motor_pwm/left/un1_width_cry_7_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un1_width_cry_0_0_S0_0" arg2="motor_pwm/left/un1_width_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un1_width_cry_0_0_S1_0" arg2="motor_pwm/left/un1_width_cry_0_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un53_count_cry_11_0_COUT_0" arg2="motor_pwm/left/un53_count_cry_11_0_COUT_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un53_count_cry_0_0_S0_0" arg2="motor_pwm/left/un53_count_cry_0_0_S0_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/left/un53_count_cry_0_0_S1_0" arg2="motor_pwm/left/un53_count_cry_0_0_S1_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/clkdiv/un129_count_1_s_31_0_COUT" arg2="motor_pwm/clkdiv/un129_count_1_s_31_0_COUT"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/clkdiv/un129_count_1_s_31_0_S1" arg2="motor_pwm/clkdiv/un129_count_1_s_31_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/clkdiv/un129_count_1_cry_0_0_S0" arg2="motor_pwm/clkdiv/un129_count_1_cry_0_0_S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="motor_pwm/clkdiv/un129_count_1_cry_0_0_S1" arg2="motor_pwm/clkdiv/un129_count_1_cry_0_0_S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_X_nFault" arg2="Stepper_X_nFault"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_Y_nFault" arg2="Stepper_Y_nFault"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_Z_nFault" arg2="Stepper_Z_nFault"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_A_nFault" arg2="Stepper_A_nFault"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[0]" arg2="limit[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[1]" arg2="limit[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[2]" arg2="limit[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[3]" arg2="limit[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_ra" arg2="encoder_ra"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_rb" arg2="encoder_rb"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_ri" arg2="encoder_ri"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_la" arg2="encoder_la"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_lb" arg2="encoder_lb"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_li" arg2="encoder_li"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch1" arg2="rc_ch1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch2" arg2="rc_ch2"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch3" arg2="rc_ch3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch4" arg2="rc_ch4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch7" arg2="rc_ch7"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="rc_ch8" arg2="rc_ch8"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="pause" arg2="pause"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="77"  />
+
+Design Results:
+    575 blocks expanded
+Complete the first expansion.
+Writing 'Uniboard_impl1.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
 map -a "MachXO2" -p LCMXO2-7000HC -t TQFP144 -s 6 -oc Commercial   "Uniboard_impl1.ngd" -o "Uniboard_impl1_map.ncd" -pr "Uniboard_impl1.prf" -mp "Uniboard_impl1.mrp" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1_synplify.lpf" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/Uniboard.lpf" -c 0            
 map:  version Diamond (64-bit) 3.4.1.213
 
@@ -29,7 +159,7 @@ Removing unused logic...
 
 Optimizing...
 
-2 CCU2 constant inputs absorbed.
+5 CCU2 constant inputs absorbed.
 
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_nFault"  />
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_Y_nFault"  />
@@ -56,17 +186,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    101 out of  7209 (1%)
-      PFU registers:          100 out of  6864 (1%)
-      PIO registers:            1 out of   345 (0%)
-   Number of SLICEs:        82 out of  3432 (2%)
-      SLICEs as Logic/ROM:     82 out of  3432 (2%)
+   Number of registers:    214 out of  7209 (3%)
+      PFU registers:          208 out of  6864 (3%)
+      PIO registers:            6 out of   345 (2%)
+   Number of SLICEs:       195 out of  3432 (6%)
+      SLICEs as Logic/ROM:    195 out of  3432 (6%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         34 out of  3432 (1%)
-   Number of LUT4s:        162 out of  6864 (2%)
-      Number of logic LUTs:       94
+      SLICEs as Carry:         91 out of  3432 (3%)
+   Number of LUT4s:        385 out of  6864 (6%)
+      Number of logic LUTs:      203
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:     34 (68 LUT4s)
+      Number of ripple logic:     91 (182 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 47 + 4(JTAG) out of 115 (44%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -92,11 +222,16 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  1
-     Net clk_12MHz_c: 63 loads, 63 rising, 0 falling (Driver: PIO clk_12MHz )
-   Number of Clock Enables:  13
+     Net clk_12MHz_c: 131 loads, 131 rising, 0 falling (Driver: PIO clk_12MHz )
+   Number of Clock Enables:  22
+     Net interface_reset: 1 loads, 1 LSLICEs
+     Net un1_state[0]_1_0: 3 loads, 0 LSLICEs
+     Net clk_o_RNIT04I: 16 loads, 14 LSLICEs
      Net un1_state[0]23_RNI6BM11: 1 loads, 0 LSLICEs
-     Net reset4_i: 1 loads, 1 LSLICEs
-     Net protocol_interface/un1_state[0]16_1_i_0[0]: 1 loads, 1 LSLICEs
+     Net reset4_i: 2 loads, 2 LSLICEs
+     Net motor_pwm/read_value[0]2_6_RNIM91Q: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[0]3_RNIA6AQ: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_bufcount[0]_0_sqmuxa_0: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNI3MOPC: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_input/rdata_4__RNO: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_2: 1 loads, 1 LSLICEs
@@ -107,23 +242,32 @@ Design Summary:
      Net protocol_interface/uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state_2_i: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
-   Number of LSRs:  4
-     Net debug_c[6]: 2 loads, 2 LSLICEs
+     Net protocol_interface/N_5_i: 2 loads, 2 LSLICEs
+     Net protocol_interface/databus_out[0]_1_sqmuxa: 7 loads, 7 LSLICEs
+     Net protocol_interface/un1_select271_7_0: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_select271_6_0: 4 loads, 4 LSLICEs
+   Number of LSRs:  9
+     Net interface_reset: 16 loads, 13 LSLICEs
+     Net select_0and_RNI8D2L[2]: 8 loads, 8 LSLICEs
+     Net motor_pwm/right/count[0]2_9_RNIQBKS: 4 loads, 4 LSLICEs
+     Net debug_c[6]: 1 loads, 1 LSLICEs
+     Net motor_pwm/left/count[0]2_9_RNIKRBE1: 4 loads, 4 LSLICEs
+     Net motor_pwm/clkdiv/N_227_1_i: 16 loads, 16 LSLICEs
      Net protocol_interface/uart_output/fb: 1 loads, 1 LSLICEs
-     Net protocol_interface/uart_output/baud_gen/count[0]2: 2 loads, 2 LSLICEs
+     Net protocol_interface/uart_output/baud_gen/count[0]2: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/baud_reset: 19 loads, 19 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net interface_reset: 36 loads
+     Net protocol_interface/state[2]: 26 loads
      Net protocol_interface/uart_input/baud_reset: 20 loads
-     Net debug_c[6]: 18 loads
+     Net clk_o_RNIT04I: 18 loads
+     Net motor_pwm/clkdiv/N_227_1_i: 16 loads
      Net uart_rx_c: 16 loads
      Net protocol_interface/uart_input/state[1]: 14 loads
      Net protocol_interface/uart_input/state[3]: 14 loads
      Net protocol_interface/uart_input/state[2]: 13 loads
-     Net protocol_interface/uart_input/state[0]: 11 loads
-     Net protocol_interface/uart_input/state[4]: 9 loads
-     Net protocol_interface/uart_input/state[5]: 9 loads
-     Net protocol_interface/uart_output/state[2]: 8 loads
+     Net protocol_interface/state[0]: 12 loads
  
 
    Number of warnings:  21
@@ -133,7 +277,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 182 MB
+Peak Memory Usage: 183 MB
 
 Dumping design to file Uniboard_impl1_map.ncd.
 
@@ -148,7 +292,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Uniboard_impl1_map.ncd"
-Tue Dec 29 12:03:18 2015
+Wed Dec 30 18:27:45 2015
 
 PAR: Place And Route Diamond (64-bit) 3.4.1.213.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Uniboard_impl1_map.ncd Uniboard_impl1.dir/5_1.ncd Uniboard_impl1.prf
@@ -174,39 +318,42 @@ Device utilization summary:
 
    PIO (prelim)   47+4(JTAG)/336     15% used
                   47+4(JTAG)/115     44% bonded
-   IOLOGIC            1/336          <1% used
+   IOLOGIC            6/336           1% used
 
-   SLICE             82/3432          2% used
+   SLICE            195/3432          5% used
 
 
 
-Number of Signals: 291
-Number of Connections: 676
+Number of Signals: 636
+Number of Connections: 1489
 
 Pin Constraint Summary:
    47 out of 47 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    clk_12MHz_c (driver: clk_12MHz, clk load #: 63)
+    clk_12MHz_c (driver: clk_12MHz, clk load #: 131)
 
 
-The following 1 signal is selected to use the secondary clock routing resources:
-    protocol_interface/uart_input/baud_reset (driver: protocol_interface/uart_input/SLICE_47, clk load #: 0, sr load #: 19, ce load #: 0)
+The following 4 signals are selected to use the secondary clock routing resources:
+    protocol_interface/uart_input/baud_reset (driver: protocol_interface/uart_input/SLICE_136, clk load #: 0, sr load #: 19, ce load #: 0)
+    interface_reset (driver: SLICE_93, clk load #: 0, sr load #: 16, ce load #: 1)
+    clk_o_RNIT04I (driver: motor_pwm/SLICE_174, clk load #: 0, sr load #: 0, ce load #: 16)
+    motor_pwm/clkdiv/N_227_1_i (driver: motor_pwm/clkdiv/SLICE_179, clk load #: 0, sr load #: 16, ce load #: 0)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-.......
+..........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-..................
-Placer score = 34736.
-Finished Placer Phase 1.  REAL time: 2 secs 
+....................
+Placer score = 67076.
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  34608
-Finished Placer Phase 2.  REAL time: 2 secs 
+Placer score =  66813
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 ------------------ Clock Report ------------------
@@ -218,11 +365,14 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "clk_12MHz_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 63
-  SECONDARY "protocol_interface/uart_input/baud_reset" from Q0 on comp "protocol_interface/uart_input/SLICE_47" on site "R14C20D", clk load = 0, ce load = 0, sr load = 19
+  PRIMARY "clk_12MHz_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 131
+  SECONDARY "protocol_interface/uart_input/baud_reset" from Q0 on comp "protocol_interface/uart_input/SLICE_136" on site "R14C20A", clk load = 0, ce load = 0, sr load = 19
+  SECONDARY "interface_reset" from Q0 on comp "SLICE_93" on site "R21C20A", clk load = 0, ce load = 1, sr load = 16
+  SECONDARY "clk_o_RNIT04I" from F1 on comp "motor_pwm/SLICE_174" on site "R14C18D", clk load = 0, ce load = 16, sr load = 0
+  SECONDARY "motor_pwm/clkdiv/N_227_1_i" from F0 on comp "motor_pwm/clkdiv/SLICE_179" on site "R14C20C", clk load = 0, ce load = 0, sr load = 16
 
   PRIMARY  : 1 out of 8 (12%)
-  SECONDARY: 1 out of 8 (12%)
+  SECONDARY: 4 out of 8 (50%)
 
 Edge Clocks:
   No edge clock selected.
@@ -248,7 +398,7 @@ I/O Bank Usage Summary:
 | 5        | 2 / 10 ( 20%)  | 2.5V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 2 secs 
+Total placer CPU time: 3 secs 
 
 Dumping design to file Uniboard_impl1.dir/5_1.ncd.
 
@@ -257,12 +407,12 @@ Dumping design to file Uniboard_impl1.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 676 unrouted.
+0 connections routed; 1489 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 5 secs 
 
-Start NBR router at Tue Dec 29 12:03:21 PST 2015
+Start NBR router at Wed Dec 30 18:27:50 PST 2015
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -277,28 +427,32 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Tue Dec 29 12:03:21 PST 2015
+Start NBR special constraint process at Wed Dec 30 18:27:50 PST 2015
 
-Start NBR section for initial routing at Tue Dec 29 12:03:22 PST 2015
+Start NBR section for initial routing at Wed Dec 30 18:27:50 PST 2015
 Level 4, iteration 1
-20(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+62(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Tue Dec 29 12:03:22 PST 2015
+Start NBR section for normal routing at Wed Dec 30 18:27:50 PST 2015
 Level 4, iteration 1
-10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+39(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 2
-7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+17(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 3
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for re-routing at Tue Dec 29 12:03:22 PST 2015
+Start NBR section for re-routing at Wed Dec 30 18:27:50 PST 2015
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for post-routing at Tue Dec 29 12:03:22 PST 2015
+Start NBR section for post-routing at Wed Dec 30 18:27:50 PST 2015
 
 End NBR router with 0 unrouted connection
 
@@ -313,10 +467,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 4 secs 
-Total REAL time: 4 secs 
+Total CPU time 5 secs 
+Total REAL time: 5 secs 
 Completely routed.
-End of route.  676 routed (100.00%); 0 unrouted.
+End of route.  1489 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -335,8 +489,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 4 secs 
-Total REAL time to completion: 4 secs 
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 6 secs 
 
 par done!
 

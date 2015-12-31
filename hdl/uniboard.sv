@@ -18,16 +18,17 @@
  * the select line. For a write operation, the write is performed on the rising edge of select.
  * For a read operation, databus and reg_size will be set as long as select is high. */
 
-/* Implements the Uniboard computer interface protocol. */
+/* Implements the Uniboard computer interface protocol. This module must be reset 
+ * before use in order to work properly. */
 module ProtocolInterface(
 	input logic rx,
 	output logic tx,
 	input logic clk_12MHz,
 	inout databus[31:0],
 	input logic reg_size[2:0],
-	output logic register_addr[7:0],
+	output logic reg_addr[7:0],
 	output logic rw, 
-	output logic select[127:0],
+	output logic [127:0] select,
 	input logic reset,
 	//TODO
 	output logic state[3:0],
@@ -38,14 +39,16 @@ module ProtocolInterface(
 	                          * module clock. */
 	
 	logic [7:0] buffer[6];
-	logic bufcount[3:0] = 0;
+	logic bufcount[3:0];
 	//logic state[3:0] = 0;
-	logic escape = 0;
-	
+	logic escape;
 	//logic drdy;
 	logic rx_data[7:0];
 	logic tx_data[7:0];
-	logic send = 0;
+	logic send;
+	logic databus_out[31:0];
+	
+	assign databus = rw ? 'z : databus_out;
 	
 	UARTReceiver #(baud_div) uart_input(.rx(rx),
 	                                .clk(clk_12MHz),
@@ -65,19 +68,26 @@ module ProtocolInterface(
 					state <= 0;
 					send <= 0;
 					select <= 0;
+					bufcount <= 0;
+					buffer <= {8'd0, 8'd0, 8'd0, 8'd0, 8'd0, 8'd0};
 				end
 			else
 				begin
 					case(state)
 						/* Waiting for start byte. */
 						4'd0:
-							if(drdy)
-								begin
-									if(rx_data == 8'h01)
-										state <= 2;
-									else
-										state <= 1;
-								end
+							begin
+								select <= 0;
+								bufcount <= 0;
+								buffer <= {8'd0, 8'd0, 8'd0, 8'd0, 8'd0, 8'd0};
+								if(drdy)
+									begin
+										if(rx_data == 8'h01)
+											state <= 2; /* If start received, proceed. */
+										else
+											state <= 1; /* If not start character, prepare to wait. */
+									end
+							end
 						/* Waiting for DRDY low, proceed back to wait for start byte. */
 						4'd1:
 							if(~drdy)
@@ -91,13 +101,95 @@ module ProtocolInterface(
 									state <= 3;
 								end
 					
-						/* Waiting for data. */
+						/* Waiting for data. (Here, data refers to any of the six
+						 * bytes between the start and end markers, not just the register data. */
 						4'd3:
 							if(drdy)
 								begin
-									state <= 0;
+									if(escape)
+										begin
+											escape <= 0;
+											state <= 4'd4; /* Deposit character in buffer. */
+										end
+									else
+										case(rx_data)
+											8'h1B: /* Escape character */
+												begin
+													escape <= 1;
+													state <= 4'd2; /* Wait for DRDY low, then wait for data. */
+												end
+											8'h01: /* Start character */
+												begin
+													bufcount <= 0;
+													buffer <= {8'd0, 8'd0, 8'd0, 8'd0, 8'd0, 8'd0};
+													state <= 4'd2; /* Wait for DRDY low, then wait for data. */
+												end
+											8'h17: /* End character */
+												begin
+													if(bufcount > 1)
+														if(buffer[0][7])
+															state <= 8; /* Read *///TODO: Real read state number
+														else 
+															state <= 5; /* Write */
+													else /* Incomplete address, invalid command. */
+														begin
+															state <= 4'd1; /* Wait for DRDY low, then wait start byte. */
+														end
+												end
+											default: /* Data (non-special) character. */
+												begin
+													state <= 4'd4; /* Deposit character in buffer. */
+												end
+										endcase
 								end
+						/* Deposit character in buffer. */
+						4'd4:
+							begin
+								state <= 4'd2; /* Next, wait for DRDY low then wait for data. */
+								if(bufcount < 6)
+									begin
+										/* NB: This is "non-blocking" assignment. The right-hand side of all
+										 * assignments is evaluated first, then stored. */
+										 buffer[bufcount] <= rx_data;
+										 bufcount <= bufcount + 1;
+									end
+							end
+						/* Write */
+						4'd5:
+							begin
+								databus_out <= {buffer[5], buffer[4], buffer[3], buffer[2]};
+								rw <= 0;
+								reg_addr <= buffer[1];
+								state <= 4'd6;
+							end
 						
+						/* Write 2 */
+						4'd6:
+							begin
+								select <= 0;
+								select[buffer[0][7:0]] <= 1;
+								state <= 4'd7;
+							end
+						/* Write 3 */
+						4'd7:
+							begin
+								/* Hold select high for an extra cycle, in case a peripheral requires it. */
+								state <= 4'd8;
+							end
+						/* Write 4 */
+						4'd8:
+							begin
+								select <= 0;
+								state <= 4'd9;
+							end
+						/* Write 5 */
+						4'd9:
+							begin
+								/* Wait an extra cycle with select low, in case a peripheral requires it. */
+								state <= 4'd10;
+							end
+							
+						//TODO: state 10: read
 						default:
 							state <= 0;
 					endcase	
@@ -238,8 +330,6 @@ module UniboardTop(
 	assign expansion4 = 0;
 	assign expansion5 = 0;
 	assign signal_light = 0;
-	assign motor_pwm_l = 0;
-	assign motor_pwm_r = 0;
 	
 	
 	/* Debug and status LED assignments */
@@ -247,29 +337,32 @@ module UniboardTop(
 	logic drdy;
 	assign debug[0] = uart_rx;
 	assign debug[1] = uart_tx;
-	assign debug[2] = state[0];
-	assign debug[3] = state[1];
-	assign debug[4] = state[2];
-	assign debug[5] = state[3];
+	assign debug[2] = select[0];
+	assign debug[3] = select[1];
+	assign debug[4] = select[2];
+	assign debug[5] = select[3];
 	assign debug[6] = reset; 
 	assign debug[7] = drdy;
-	assign debug[8] = 0;
+	assign debug[8] = 1;
 	
 	assign status_led[1] = 1;
 	assign status_led[2] = 1;
 	
 	/* Bus and reset generator. */
 	tri databus[31:0];
-	logic reg_size[2:0];
+	tri reg_size[2:0];
 	logic register_addr[7:0];
 	logic rw;
 	logic select[127:0];
 	logic reset = 1;
+	logic interface_reset = 1;
 	logic reset_count[3:0] = 0; /* Counter used to de-assert reset after a while. */
 	
 	always @ (posedge clk_12MHz)			
 		begin
 			if(reset_count > 5)
+				interface_reset <= 0;
+			if(reset_count > 10)
 				reset <= 0;
 			else
 				reset_count <= reset_count + 1;
@@ -281,16 +374,26 @@ module UniboardTop(
 	                                           .clk_12MHz(clk_12MHz),
 	                                           .databus(databus),
 	                                           .reg_size(reg_size),
-	                                           .register_addr(register_addr),
+	                                           .reg_addr(register_addr),
 	                                           .rw(rw),
 	                                           .select(select),
-	                                           .reset(reset),
+	                                           .reset(interface_reset),
 	                                           .state(state),
 	                                           .drdy(drdy));
+	/* Dummy peripheral */
 	logic dummy_select;
-	assign dummy_select = | select;
+	assign dummy_select = | select[127:3] | select[0] | select[1];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),
 	                      .select(dummy_select));
+	/* Motor PWM */
+	PWMPeripheral motor_pwm(.clk_12MHz(clk_12MHz),
+	                        .reg_size(reg_size),
+	                        .register_addr(register_addr),
+	                        .rw(rw),
+	                        .select(select[2]),
+	                        .pwm_left(motor_pwm_l),
+	                        .pwm_right(motor_pwm_r),
+	                        .reset(reset));
 endmodule

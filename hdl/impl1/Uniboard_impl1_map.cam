@@ -1,22 +1,81 @@
 [ START MERGED ]
+protocol_interface/interface_reset_i interface_reset
 [ END MERGED ]
 [ START CLIPPED ]
 protocol_interface/uart_input/baud_gen/GND
 protocol_interface/uart_output/baud_gen/GND
-protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0
-protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0
+motor_pwm/clkdiv/GND
+motor_pwm/left/GND
+motor_pwm/right/GND
 protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0
 protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0
 protocol_interface/uart_input/baud_gen/N_1
+protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0
+protocol_interface/uart_input/baud_gen/un129_count_s_31_0_COUT_0
 protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S1
 protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0
 protocol_interface/uart_output/baud_gen/N_1
 protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1
 protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT
+motor_pwm/clkdiv/un129_count_1_s_31_0_S1
+motor_pwm/clkdiv/un129_count_1_s_31_0_COUT
+motor_pwm/clkdiv/un129_count_1_cry_0_0_S1
+motor_pwm/clkdiv/un129_count_1_cry_0_0_S0
+motor_pwm/clkdiv/N_1
+motor_pwm/left/un53_count_cry_0_0_S1_0
+motor_pwm/left/un53_count_cry_0_0_S0_0
+motor_pwm/left/N_1
+motor_pwm/left/un53_count_cry_11_0_COUT_0
+motor_pwm/left/un1_width_cry_0_0_S1_0
+motor_pwm/left/un1_width_cry_0_0_S0_0
+motor_pwm/left/N_2
+motor_pwm/left/un1_width_cry_7_0_COUT_0
+motor_pwm/left/pwm_2_cry_0_0_S1
+motor_pwm/left/pwm_2_cry_0_0_S0
+motor_pwm/left/N_3
+motor_pwm/left/pwm_2_cry_1_0_S1
+motor_pwm/left/pwm_2_cry_1_0_S0
+motor_pwm/left/pwm_2_cry_3_0_S1
+motor_pwm/left/pwm_2_cry_3_0_S0
+motor_pwm/left/pwm_2_cry_5_0_S1
+motor_pwm/left/pwm_2_cry_5_0_S0
+motor_pwm/left/pwm_2_cry_7_0_S1
+motor_pwm/left/pwm_2_cry_7_0_S0
+motor_pwm/left/pwm_2_cry_9_0_S1
+motor_pwm/left/pwm_2_cry_9_0_S0
+motor_pwm/left/pwm_2_cry_11_0_S1
+motor_pwm/left/pwm_2_cry_11_0_S0
+motor_pwm/left/pwm_2_cry_12_0_S1
+motor_pwm/left/pwm_2_cry_12_0_COUT
+motor_pwm/right/un53_count_cry_0_0_S1
+motor_pwm/right/un53_count_cry_0_0_S0
+motor_pwm/right/N_1
+motor_pwm/right/un53_count_cry_11_0_COUT
+motor_pwm/right/un1_width_cry_0_0_S1
+motor_pwm/right/un1_width_cry_0_0_S0
+motor_pwm/right/N_2
+motor_pwm/right/un1_width_cry_7_0_COUT
+motor_pwm/right/pwm_2_cry_0_0_S1_0
+motor_pwm/right/pwm_2_cry_0_0_S0_0
+motor_pwm/right/N_3
+motor_pwm/right/pwm_2_cry_1_0_S1_0
+motor_pwm/right/pwm_2_cry_1_0_S0_0
+motor_pwm/right/pwm_2_cry_3_0_S1_0
+motor_pwm/right/pwm_2_cry_3_0_S0_0
+motor_pwm/right/pwm_2_cry_5_0_S1_0
+motor_pwm/right/pwm_2_cry_5_0_S0_0
+motor_pwm/right/pwm_2_cry_7_0_S1_0
+motor_pwm/right/pwm_2_cry_7_0_S0_0
+motor_pwm/right/pwm_2_cry_9_0_S1_0
+motor_pwm/right/pwm_2_cry_9_0_S0_0
+motor_pwm/right/pwm_2_cry_11_0_S1_0
+motor_pwm/right/pwm_2_cry_11_0_S0_0
+motor_pwm/right/pwm_2_cry_12_0_S1_0
+motor_pwm/right/pwm_2_cry_12_0_COUT_0
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Tue Dec 29 12:03:17 2015
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Wed Dec 30 18:27:44 2015
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;

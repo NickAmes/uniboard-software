@@ -6,7 +6,7 @@
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_objects.v":1415639098
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh":1415639098
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v":1415639098
-#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":1451419385
+#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":1451528691
 #CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":1451414603
 #CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":1451414608
 #CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":1451415683
@@ -17,7 +17,7 @@
 2			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv" verilog
 3			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv" verilog
 #Dependency Lists(Uses List)
-0 1
+0 3 1
 1 2
 2 -1
 3 2
@@ -25,14 +25,14 @@
 0 -1
 1 0
 2 1 3
-3 -1
+3 0
 #Design Unit to File Association
 module work UARTReceiver 1
 module work UARTTransmitter 1
 module work ProtocolInterface 0
 module work DummyPeripheral 0
+module work PWMPeripheral 3
 module work UniboardTop 0
 module work ClockDividerP 2
 module work ClockDivider 2
 module work PWMGenerator 3
-module work PWMPeripheral 3
