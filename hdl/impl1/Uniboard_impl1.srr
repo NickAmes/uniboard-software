@@ -46,60 +46,49 @@ Selecting top level module UniboardTop
 	baud_div=32'b00000000000000000000000000001100
    Generated name = UARTTransmitter_12s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":23:7:23:23|Synthesizing module ProtocolInterface
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":25:7:25:23|Synthesizing module ProtocolInterface
 
 	baud_div=32'b00000000000000000000000000001100
    Generated name = ProtocolInterface_12s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":220:7:220:21|Synthesizing module DummyPeripheral
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":334:7:334:21|Synthesizing module DummyPeripheral
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":37:7:37:18|Synthesizing module ClockDivider
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":7:7:7:18|Synthesizing module PWMGenerator
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":38:7:38:19|Synthesizing module PWMPeripheral
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":41:7:41:19|Synthesizing module PWMPeripheral
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":232:7:232:17|Synthesizing module UniboardTop
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":62:1:62:6|Register bit read_size[1] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":62:1:62:6|Register bit read_size[2] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":346:7:346:17|Synthesizing module UniboardTop
 
-@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":296:7:296:11|Input port bit 8 of debug[8:0] is unused
+@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":410:7:410:11|Input port bit 6 of debug[8:0] is unused
 
-@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":296:7:296:11|Input port bit 6 of debug[8:0] is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":358:16:358:31|Input Stepper_X_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":366:16:366:31|Input Stepper_Y_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":374:16:374:31|Input Stepper_Z_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":382:16:382:31|Input Stepper_A_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":384:13:384:17|Input limit is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":392:13:392:22|Input encoder_ra is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":393:13:393:22|Input encoder_rb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":394:13:394:22|Input encoder_ri is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":395:13:395:22|Input encoder_la is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":396:13:396:22|Input encoder_lb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":397:13:397:22|Input encoder_li is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":399:13:399:18|Input rc_ch1 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":400:13:400:18|Input rc_ch2 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":401:13:401:18|Input rc_ch3 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":402:13:402:18|Input rc_ch4 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":403:13:403:18|Input rc_ch7 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":404:13:404:18|Input rc_ch8 is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":408:13:408:17|Input pause is unused
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register bit bufcount[3] is always 0, optimizing ...
 
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":244:16:244:31|Input Stepper_X_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":252:16:252:31|Input Stepper_Y_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":260:16:260:31|Input Stepper_Z_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":268:16:268:31|Input Stepper_A_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":270:13:270:17|Input limit is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":278:13:278:22|Input encoder_ra is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":279:13:279:22|Input encoder_rb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":280:13:280:22|Input encoder_ri is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":281:13:281:22|Input encoder_la is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":282:13:282:22|Input encoder_lb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":283:13:283:22|Input encoder_li is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":285:13:285:18|Input rc_ch1 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":286:13:286:18|Input rc_ch2 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":287:13:287:18|Input rc_ch3 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":288:13:288:18|Input rc_ch4 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":289:13:289:18|Input rc_ch7 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":290:13:290:18|Input rc_ch8 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":294:13:294:17|Input pause is unused
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'send' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'rw' because it is only assigned 0 or its original value.
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit bufcount[3] is always 0, optimizing ...
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[1] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[2] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[3] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[4] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[5] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[6] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[7] are referenced and tied to 0 -- simulation mismatch possible.
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:13:28:20|Input reg_size is unused
-
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 81MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 82MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:35:54 2015
+# Wed Dec 30 23:52:41 2015
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -111,7 +100,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:35:54 2015
+# Wed Dec 30 23:52:42 2015
 
 ###########################################################]
 @END
@@ -119,7 +108,7 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:35:54 2015
+# Wed Dec 30 23:52:42 2015
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
@@ -129,7 +118,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:35:55 2015
+# Wed Dec 30 23:52:43 2015
 
 ###########################################################]
 Pre-mapping Report
@@ -145,10 +134,10 @@ Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/proje
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
@@ -157,7 +146,6 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_12s(verilog) because there are no references to its outputs 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -179,14 +167,14 @@ ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       1000.000      de
 UniboardTop|clk_12MHz                             1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
 ==========================================================================================================================================
 
-@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 353 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 377 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:35:56 2015
+# Wed Dec 30 23:52:43 2015
 
 ###########################################################]
 Map & Optimize Report
@@ -213,248 +201,201 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":227:19:227:35|Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":227:19:227:35|Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":227:19:227:35|Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[10] on net databus\[10\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[11] on net databus\[11\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[12] on net databus\[12\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[13] on net databus\[13\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[14] on net databus\[14\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[15] on net databus\[15\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[16] on net databus\[16\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[17] on net databus\[17\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[18] on net databus\[18\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[19] on net databus\[19\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[20] on net databus\[20\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[21] on net databus\[21\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[22] on net databus\[22\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[23] on net databus\[23\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[24] on net databus\[24\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[25] on net databus\[25\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[26] on net databus\[26\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[27] on net databus\[27\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[28] on net databus\[28\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[29] on net databus\[29\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[30] on net databus\[30\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[31] on net databus\[31\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[0] on net databus\[0\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[1] on net databus\[1\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[2] on net databus\[2\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[3] on net databus\[3\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[4] on net databus\[4\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[5] on net databus\[5\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[6] on net databus\[6\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[7] on net databus\[7\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[8] on net databus\[8\] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:42|Tristate driver un5_databus[9] on net databus\[9\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":341:19:341:35|Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":341:19:341:35|Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":341:19:341:35|Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[10] on net databus\[10\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[11] on net databus\[11\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[12] on net databus\[12\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[13] on net databus\[13\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[14] on net databus\[14\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[15] on net databus\[15\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[16] on net databus\[16\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[17] on net databus\[17\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[18] on net databus\[18\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[19] on net databus\[19\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[20] on net databus\[20\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[21] on net databus\[21\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[22] on net databus\[22\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[23] on net databus\[23\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[24] on net databus\[24\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[25] on net databus\[25\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[26] on net databus\[26\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[27] on net databus\[27\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[28] on net databus\[28\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[29] on net databus\[29\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[30] on net databus\[30\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[31] on net databus\[31\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[0] on net databus\[0\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[1] on net databus\[1\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[2] on net databus\[2\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[3] on net databus\[3\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[4] on net databus\[4\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[5] on net databus\[5\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[6] on net databus\[6\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[7] on net databus\[7\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[8] on net databus\[8\] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":342:19:342:42|Tristate driver un5_databus[9] on net databus\[9\] has its enable tied to GND (module DummyPeripheral) 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[127] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[126] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[125] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[124] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[123] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[122] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[121] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[120] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[119] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[118] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[117] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[116] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[115] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[114] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[113] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[112] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[111] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[110] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[109] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[108] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[107] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[106] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[105] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[104] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[103] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[102] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[101] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[100] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[99] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[98] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[97] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[96] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[95] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[94] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[93] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[92] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[91] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[90] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[89] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[88] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[87] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[86] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[85] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[84] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[83] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[82] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[81] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[80] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[79] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[78] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[77] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[76] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[75] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[74] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[73] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[72] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[71] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[70] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[69] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[68] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[67] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[66] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[65] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[64] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[63] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[62] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[61] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[60] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[59] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[58] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[57] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[56] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[55] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[54] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[53] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[52] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[51] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[50] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[49] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[48] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[47] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[46] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[45] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[44] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[43] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[42] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[41] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[40] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[39] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[38] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[37] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[36] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[35] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[34] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[33] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[32] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[31] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[30] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[29] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[28] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[27] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[26] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[25] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[24] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[23] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[22] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[21] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[20] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[19] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[18] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[17] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[16] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[15] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[14] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[13] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[12] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[11] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[10] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[9] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[8] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[7] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[6] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[5] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[4] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[3] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[1] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[0] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][7] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][6] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][5] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][4] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][3] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][2] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][1] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[3\][0] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][7] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][6] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][5] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][4] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][3] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][2] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][1] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[4\][0] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][7] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][6] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][5] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][4] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][3] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][2] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][1] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.buffer\[5\][0] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[8\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[9\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[10\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[11\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[12\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[13\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[14\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[15\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[16\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[17\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[18\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[19\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[20\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[21\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[22\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[23\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[24\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[25\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[26\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[27\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[28\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[29\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[30\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance protocol_interface.databus_out\[31\] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[127] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[126] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[125] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[124] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[123] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[122] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[121] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[120] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[119] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[118] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[117] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[116] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[115] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[114] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[113] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[112] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[111] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[110] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[109] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[108] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[107] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[106] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[105] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[104] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[103] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[102] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[101] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[100] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[99] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[98] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[97] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[96] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[95] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[94] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[93] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[92] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[91] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[90] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[89] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[88] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[87] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[86] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[85] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[84] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[83] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[82] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[81] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[80] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[79] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[78] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[77] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[76] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[75] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[74] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[73] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[72] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[71] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[70] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[69] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[68] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[67] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[66] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[65] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[64] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[63] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[62] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[61] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[60] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[59] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[58] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[57] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[56] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[55] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[54] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[53] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[52] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[51] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[50] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[49] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[48] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[47] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[46] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[45] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[44] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[43] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[42] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[41] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[40] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[39] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[38] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[37] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[36] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[35] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[34] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[33] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[32] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[31] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[30] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[29] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[28] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[27] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[26] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[25] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[24] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[23] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[22] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[21] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[20] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[19] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[18] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[17] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[16] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[15] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[14] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[13] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[12] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[11] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[10] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[9] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[8] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[7] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[6] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[5] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[4] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[3] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[1] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[0] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
+@N: MF179 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":251:11:251:38|Found 5 bit by 5 bit '==' comparator, 'sendcount\[0\]2'
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 149MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 149MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 150MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 164MB peak: 166MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -463,25 +404,29 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 150MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 166MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[3\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[0\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[2\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[1\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register protocol_interface.uart_input.drdy.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 150MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 166MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 227 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 333 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-49 instances converted, 0 sequential instances remain driven by gated/generated clocks
+83 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0001       clk_12MHz           port                   227        interface_reset
+@K:CKID0001       clk_12MHz           port                   333        interface_reset
 =======================================================================================
 
 
@@ -489,11 +434,11 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 150MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 166MB)
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 150MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 166MB)
 
 Writing EDIF Netlist and constraint files
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
@@ -502,17 +447,17 @@ Writing EDIF Netlist and constraint files
 J-2014.09L
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 150MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 166MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 150MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 166MB)
 
 @W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_12MHz"
 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 30 19:35:58 2015
+# Timing Report written on Wed Dec 30 23:52:47 2015
 #
 
 
@@ -531,7 +476,7 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 991.755
+Worst slack in design: 991.293
 
                                                   Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack       Type                                     Group              
@@ -539,7 +484,7 @@ Starting Clock                                    Frequency     Frequency     Pe
 ClockDividerP_12s_1|clk_o_derived_clock           1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ClockDivider|clk_o_derived_clock                  1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-UniboardTop|clk_12MHz                             1.0 MHz       121.3 MHz     1000.000      8.245         991.755     inferred                                 Inferred_clkgroup_0
+UniboardTop|clk_12MHz                             1.0 MHz       114.9 MHz     1000.000      8.707         991.293     inferred                                 Inferred_clkgroup_0
 ==================================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -554,7 +499,7 @@ Clocks                                        |    rise  to  rise     |    fall 
 --------------------------------------------------------------------------------------------------------------------------------------
 Starting               Ending                 |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
 --------------------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  1000.000    991.755  |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  1000.000    991.293  |  No paths    -      |  No paths    -      |  No paths    -    
 ======================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -577,41 +522,41 @@ Detailed Report for Clock: UniboardTop|clk_12MHz
 Starting Points with Worst Slack
 ********************************
 
-                                             Starting                                                         Arrival            
-Instance                                     Reference                 Type        Pin     Net                Time        Slack  
-                                             Clock                                                                               
----------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_input.state\[3\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[3\]         1.256       991.755
-protocol_interface.uart_input.state\[0\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[0\]         1.232       991.779
-protocol_interface.uart_input.state\[4\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[4\]         1.228       991.783
-protocol_interface.uart_input.state\[5\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[5\]         1.228       991.783
-motor_pwm.register_0_[0]                     UniboardTop|clk_12MHz     FD1P3JX     Q       register_0_[0]     1.108       992.454
-motor_pwm.register_1_[0]                     UniboardTop|clk_12MHz     FD1P3JX     Q       register_1_[0]     1.108       992.454
-protocol_interface.uart_input.state\[1\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[1\]         1.252       992.568
-protocol_interface.uart_input.state\[2\]     UniboardTop|clk_12MHz     FD1S3AX     Q       state\[2\]         1.252       992.568
-motor_pwm.register_0_[1]                     UniboardTop|clk_12MHz     FD1P3JX     Q       register_0_[1]     0.972       992.732
-motor_pwm.register_0_[2]                     UniboardTop|clk_12MHz     FD1P3JX     Q       register_0_[2]     0.972       992.732
-=================================================================================================================================
+                                                        Starting                                                      Arrival            
+Instance                                                Reference                 Type        Pin     Net             Time        Slack  
+                                                        Clock                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------
+protocol_interface.state\[1\]                           UniboardTop|clk_12MHz     FD1P3IX     Q       debug_c[3]      1.302       991.293
+protocol_interface.state\[0\]                           UniboardTop|clk_12MHz     FD1P3IX     Q       debug_c[2]      1.299       991.296
+protocol_interface.uart_input.data\[6\]                 UniboardTop|clk_12MHz     FD1P3AX     Q       data\[6\]_Q     1.188       991.695
+protocol_interface.uart_input.data\[7\]                 UniboardTop|clk_12MHz     FD1P3AX     Q       data\[7\]_Q     1.188       991.695
+protocol_interface.uart_output.baud_gen.count\[12\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[12\]     1.044       991.732
+protocol_interface.uart_output.baud_gen.count\[13\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       991.732
+protocol_interface.uart_output.baud_gen.count\[14\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[14\]     1.044       991.732
+protocol_interface.uart_output.baud_gen.count\[15\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[15\]     1.044       991.732
+protocol_interface.uart_output.baud_gen.count\[16\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[16\]     1.044       991.732
+protocol_interface.uart_output.baud_gen.count\[17\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[17\]     1.044       991.732
+=========================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                       Starting                                                                 Required            
-Instance                                               Reference                 Type         Pin     Net                       Time         Slack  
-                                                       Clock                                                                                        
-----------------------------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_input.state\[1\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[1\]_RNO            1000.089     991.755
-protocol_interface.uart_input.state\[2\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[2\]_RNO            1000.089     991.755
-protocol_interface.uart_input.state\[3\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[3\]_RNO            1000.089     991.755
-motor_pwm_left_pwmio                                   UniboardTop|clk_12MHz     OFS1P3DX     D       motor_pwm.left.pwm_2      999.894      992.454
-motor_pwm_right_pwmio                                  UniboardTop|clk_12MHz     OFS1P3DX     D       motor_pwm.right.pwm_2     999.894      992.454
-protocol_interface.uart_input.state\[0\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[0\]_RNO            1000.089     992.772
-protocol_interface.uart_input.state\[4\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[4\]_RNO            1000.089     992.772
-protocol_interface.uart_input.state\[5\]               UniboardTop|clk_12MHz     FD1S3AX      D       state\[5\]_RNO            1000.089     992.772
-protocol_interface.uart_output.tx                      UniboardTop|clk_12MHz     FD1S3JX      PD      fb                        999.197      992.813
-protocol_interface.uart_output.baud_gen.count\[2\]     UniboardTop|clk_12MHz     FD1S3IX      CD      count\[0\]2               999.197      992.861
-====================================================================================================================================================
+                                      Starting                                                                   Required            
+Instance                              Reference                 Type        Pin     Net                          Time         Slack  
+                                      Clock                                                                                          
+-------------------------------------------------------------------------------------------------------------------------------------
+protocol_interface.state\[2\]         UniboardTop|clk_12MHz     FD1P3IX     D       N_1610_i                     1000.089     991.293
+protocol_interface.state\[1\]         UniboardTop|clk_12MHz     FD1P3IX     D       state\[1\]_RNO_2             1000.089     991.695
+protocol_interface.uart_output.tx     UniboardTop|clk_12MHz     FD1S3JX     PD      fb                           999.197      991.732
+protocol_interface.buffer\[2\][0]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][1]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][2]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][3]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][4]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][5]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+protocol_interface.buffer\[2\][6]     UniboardTop|clk_12MHz     FD1P3IX     CD      un1_state\[0\]_5_RNIE5BO     999.197      992.085
+=====================================================================================================================================
 
 
 
@@ -625,67 +570,67 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         1000.089
 
-    - Propagation time:                      8.333
+    - Propagation time:                      8.796
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     991.755
+    = Slack (critical) :                     991.293
 
     Number of logic level(s):                7
-    Starting point:                          protocol_interface.uart_input.state\[3\] / Q
-    Ending point:                            protocol_interface.uart_input.state\[1\] / D
+    Starting point:                          protocol_interface.state\[1\] / Q
+    Ending point:                            protocol_interface.state\[2\] / D
     The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
     The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
 
-Instance / Net                                                         Pin      Pin               Arrival     No. of    
-Name                                                      Type         Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_input.state\[3\]                  FD1S3AX      Q        Out     1.256     1.256       -         
-state\[3\]                                                Net          -        -       -         -           14        
-protocol_interface.uart_input.state\[0\]17_1_0            ORCALUT4     B        In      0.000     1.256       -         
-protocol_interface.uart_input.state\[0\]17_1_0            ORCALUT4     Z        Out     1.017     2.273       -         
-state\[0\]17_1_0                                          Net          -        -       -         -           1         
-protocol_interface.uart_input.state\[0\]17                ORCALUT4     A        In      0.000     2.273       -         
-protocol_interface.uart_input.state\[0\]17                ORCALUT4     Z        Out     1.089     3.361       -         
-state\[0\]17                                              Net          -        -       -         -           2         
-protocol_interface.uart_input.state\[0\]17_RNIPJVA1       ORCALUT4     A        In      0.000     3.361       -         
-protocol_interface.uart_input.state\[0\]17_RNIPJVA1       ORCALUT4     Z        Out     1.089     4.450       -         
-un1_state\[0\]19_1                                        Net          -        -       -         -           2         
-protocol_interface.uart_input.un1_state\[0\]20_1_1        ORCALUT4     A        In      0.000     4.450       -         
-protocol_interface.uart_input.un1_state\[0\]20_1_1        ORCALUT4     Z        Out     1.017     5.467       -         
-un1_state\[0\]20_1_1                                      Net          -        -       -         -           1         
-protocol_interface.uart_input.un1_baud_reset_0_sqmuxa     ORCALUT4     C        In      0.000     5.467       -         
-protocol_interface.uart_input.un1_baud_reset_0_sqmuxa     ORCALUT4     Z        Out     1.233     6.700       -         
-un1_baud_reset_0_sqmuxa                                   Net          -        -       -         -           6         
-protocol_interface.uart_input.state\[1\]_RNO_0            ORCALUT4     A        In      0.000     6.700       -         
-protocol_interface.uart_input.state\[1\]_RNO_0            ORCALUT4     Z        Out     1.017     7.717       -         
-N_7                                                       Net          -        -       -         -           1         
-protocol_interface.uart_input.state\[1\]_RNO              ORCALUT4     B        In      0.000     7.717       -         
-protocol_interface.uart_input.state\[1\]_RNO              ORCALUT4     Z        Out     0.617     8.333       -         
-state\[1\]_RNO                                            Net          -        -       -         -           1         
-protocol_interface.uart_input.state\[1\]                  FD1S3AX      D        In      0.000     8.333       -         
-========================================================================================================================
+Instance / Net                                                  Pin      Pin               Arrival     No. of    
+Name                                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+protocol_interface.state\[1\]                      FD1P3IX      Q        Out     1.302     1.302       -         
+debug_c[3]                                         Net          -        -       -         -           26        
+protocol_interface.select538_1                     ORCALUT4     B        In      0.000     1.302       -         
+protocol_interface.select538_1                     ORCALUT4     Z        Out     1.193     2.495       -         
+select550_1                                        Net          -        -       -         -           4         
+protocol_interface.select538                       ORCALUT4     D        In      0.000     2.495       -         
+protocol_interface.select538                       ORCALUT4     Z        Out     1.233     3.728       -         
+select538                                          Net          -        -       -         -           6         
+protocol_interface.escape_1_sqmuxa_1_2             ORCALUT4     B        In      0.000     3.728       -         
+protocol_interface.escape_1_sqmuxa_1_2             ORCALUT4     Z        Out     1.089     4.817       -         
+state\[0\]_1_m_2[7]                                Net          -        -       -         -           2         
+protocol_interface.escape_1_sqmuxa_1_2_RNI1CAT     ORCALUT4     D        In      0.000     4.817       -         
+protocol_interface.escape_1_sqmuxa_1_2_RNI1CAT     ORCALUT4     Z        Out     1.193     6.009       -         
+state\[0\]_1_m[7]                                  Net          -        -       -         -           4         
+protocol_interface.state\[2\]_15_iv_i_a2           ORCALUT4     A        In      0.000     6.009       -         
+protocol_interface.state\[2\]_15_iv_i_a2           ORCALUT4     Z        Out     1.153     7.162       -         
+N_1618                                             Net          -        -       -         -           3         
+protocol_interface.state\[2\]_15_iv_i_1            ORCALUT4     B        In      0.000     7.162       -         
+protocol_interface.state\[2\]_15_iv_i_1            ORCALUT4     Z        Out     1.017     8.179       -         
+state\[2\]_15_iv_i_1                               Net          -        -       -         -           1         
+protocol_interface.state\[2\]_RNO                  ORCALUT4     C        In      0.000     8.179       -         
+protocol_interface.state\[2\]_RNO                  ORCALUT4     Z        Out     0.617     8.796       -         
+N_1610_i                                           Net          -        -       -         -           1         
+protocol_interface.state\[2\]                      FD1P3IX      D        In      0.000     8.796       -         
+=================================================================================================================
 
 
 
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 150MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 166MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 227 of 6864 (3%)
+Register bits: 333 of 6864 (5%)
 PIC Latch:       0
 I/O cells:       47
 
 
 Details:
 CCU2D:          91
-FD1P3AX:        47
-FD1P3IX:        49
+FD1P3AX:        118
+FD1P3IX:        85
 FD1P3JX:        14
-FD1S3AX:        43
+FD1S3AX:        42
 FD1S3AY:        3
 FD1S3IX:        67
 FD1S3JX:        1
@@ -693,18 +638,19 @@ GSR:            1
 IB:             2
 IFS1P3DX:       1
 INV:            5
+L6MUX21:        1
 OB:             45
 OFS1P3DX:       2
-ORCALUT4:       184
+ORCALUT4:       390
+PFUMX:          13
 PUR:            1
 VHI:            10
-VLO:            9
-false:          1
+VLO:            10
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 55MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 57MB peak: 166MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Wed Dec 30 19:35:58 2015
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Dec 30 23:52:47 2015
 
 ###########################################################]

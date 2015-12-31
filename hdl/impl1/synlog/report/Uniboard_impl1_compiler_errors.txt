@@ -1,2 +1,2 @@
-@E: CG1261 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:12:70:12|Cannot assign a packed type to an unpacked type
+@E: CS101 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":136:24:136:24|Index 7 is out of range for variable buffer
 

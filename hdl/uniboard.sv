@@ -16,7 +16,9 @@
  * To access a peripheral, the bus is configured (asserting reg_size, rw, and databus if necessary)
  * and the select line of the peripheral is raised. Bus configuration must occur before raising
  * the select line. For a write operation, the write is performed on the rising edge of select.
- * For a read operation, databus and reg_size will be set as long as select is high. */
+ * For a read operation, databus and reg_size will be set as long as select is high. The databus should
+ * be set to the read value within one cycle of raising select. Once set, it must not change until select
+ * goes low. */
 
 /* Implements the Uniboard computer interface protocol. This module must be reset 
  * before use in order to work properly. */
@@ -31,7 +33,7 @@ module ProtocolInterface(
 	output logic [127:0] select,
 	input logic reset,
 	//TODO
-	output logic state[3:0],
+	output logic state[4:0],
 	output logic drdy);
 	
 	parameter baud_div=2083; /* Division factor to produce
@@ -40,13 +42,16 @@ module ProtocolInterface(
 	
 	logic [7:0] buffer[6];
 	logic bufcount[3:0];
-	//logic state[3:0] = 0;
+	//logic state[4:0] = 0;
 	logic escape;
 	//logic drdy;
 	logic rx_data[7:0];
+	logic esc_data[7:0];
 	logic tx_data[7:0];
 	logic send;
+	logic sendcount[4:0];
 	logic databus_out[31:0];
+	logic busy;
 	
 	assign databus = rw ? 'z : databus_out;
 	
@@ -59,6 +64,7 @@ module ProtocolInterface(
 	                                    .clk(clk_12MHz),
 	                                    .data(tx_data),
 	                                    .send(send),
+	                                    .busy(busy),
 	                                    .reset(reset));
 	                                    
 	always @ (posedge clk_12MHz)
@@ -75,7 +81,7 @@ module ProtocolInterface(
 				begin
 					case(state)
 						/* Waiting for start byte. */
-						4'd0:
+						5'd0:
 							begin
 								select <= 0;
 								bufcount <= 0;
@@ -89,13 +95,13 @@ module ProtocolInterface(
 									end
 							end
 						/* Waiting for DRDY low, proceed back to wait for start byte. */
-						4'd1:
+						5'd1:
 							if(~drdy)
 								begin
 									state <= 0;
 								end
 						/* Waiting for DRDY low, proceed to wait for data. */
-						4'd2:
+						5'd2:
 							if(~drdy)
 								begin
 									state <= 3;
@@ -103,49 +109,49 @@ module ProtocolInterface(
 					
 						/* Waiting for data. (Here, data refers to any of the six
 						 * bytes between the start and end markers, not just the register data. */
-						4'd3:
+						5'd3:
 							if(drdy)
 								begin
 									if(escape)
 										begin
 											escape <= 0;
-											state <= 4'd4; /* Deposit character in buffer. */
+											state <= 5'd4; /* Deposit character in buffer. */
 										end
 									else
 										case(rx_data)
 											8'h1B: /* Escape character */
 												begin
 													escape <= 1;
-													state <= 4'd2; /* Wait for DRDY low, then wait for data. */
+													state <= 5'd2; /* Wait for DRDY low, then wait for data. */
 												end
 											8'h01: /* Start character */
 												begin
 													bufcount <= 0;
 													buffer <= {8'd0, 8'd0, 8'd0, 8'd0, 8'd0, 8'd0};
-													state <= 4'd2; /* Wait for DRDY low, then wait for data. */
+													state <= 5'd2; /* Wait for DRDY low, then wait for data. */
 												end
 											8'h17: /* End character */
 												begin
 													if(bufcount > 1)
 														if(buffer[0][7])
-															state <= 8; /* Read *///TODO: Real read state number
+															state <= 5'd10; /* Read */
 														else 
-															state <= 5; /* Write */
+															state <= 5'd5; /* Write */
 													else /* Incomplete address, invalid command. */
 														begin
-															state <= 4'd1; /* Wait for DRDY low, then wait start byte. */
+															state <= 5'd1; /* Wait for DRDY low, then wait start byte. */
 														end
 												end
 											default: /* Data (non-special) character. */
 												begin
-													state <= 4'd4; /* Deposit character in buffer. */
+													state <= 5'd4; /* Deposit character in buffer. */
 												end
 										endcase
 								end
 						/* Deposit character in buffer. */
-						4'd4:
+						5'd4:
 							begin
-								state <= 4'd2; /* Next, wait for DRDY low then wait for data. */
+								state <= 5'd2; /* Next, wait for DRDY low then wait for data. */
 								if(bufcount < 6)
 									begin
 										/* NB: This is "non-blocking" assignment. The right-hand side of all
@@ -155,41 +161,149 @@ module ProtocolInterface(
 									end
 							end
 						/* Write */
-						4'd5:
+						5'd5:
 							begin
 								databus_out <= {buffer[5], buffer[4], buffer[3], buffer[2]};
 								rw <= 0;
 								reg_addr <= buffer[1];
-								state <= 4'd6;
+								state <= 5'd6;
 							end
 						
 						/* Write 2 */
-						4'd6:
+						5'd6:
 							begin
 								select <= 0;
-								select[buffer[0][7:0]] <= 1;
-								state <= 4'd7;
+								select[buffer[0][6:0]] <= 1;
+								state <= 5'd7;
 							end
 						/* Write 3 */
-						4'd7:
+						5'd7:
 							begin
 								/* Hold select high for an extra cycle, in case a peripheral requires it. */
-								state <= 4'd8;
+								state <= 5'd8;
 							end
 						/* Write 4 */
-						4'd8:
+						5'd8:
 							begin
 								select <= 0;
-								state <= 4'd9;
+								state <= 5'd9;
 							end
 						/* Write 5 */
-						4'd9:
+						5'd9:
 							begin
 								/* Wait an extra cycle with select low, in case a peripheral requires it. */
-								state <= 4'd10;
+								state <= 5'd10; /* Read back the stored value. */
+							end
+						/* Read */
+						5'd10:
+							begin
+								state <= 5'd11;
+								rw <= 1;
+								reg_addr <= buffer[1];
 							end
 							
-						//TODO: state 10: read
+						/* Read 2 */
+						5'd11:
+							begin
+								state <= 5'd12;
+								select <= 0;
+								select[buffer[0][6:0]] <= 1;
+							end
+							
+						/* Read 3 */
+						5'd12:
+							begin
+								/* Wait an extra cycle before reading. */
+								state <= 5'd13;
+							end
+						/* Prepare to send read data */
+						5'd13:
+							begin
+								sendcount <= 0;
+								buffer[2] <= databus[7:0];
+								buffer[3] <= databus[15:8];
+								buffer[4] <= databus[23:16];
+								buffer[5] <= databus[31:24];
+								state <= 5'd14;
+							end
+						/* Send read data */
+						5'd14:
+							begin
+								case(sendcount)
+									4'd0: /* Start byte */
+										begin
+											esc_data <= 8'h01;
+											state <= 5'd18; /* Send without escaping */
+										end
+									4'd7: /* End byte */
+										begin
+											esc_data <= 8'h17;
+											state <= 5'd18; /* Send without escaping */
+										end
+									4'd8: /* Done */
+										state <= 0;
+									default:
+										begin
+											esc_data <= buffer[sendcount - 1]; 
+											state <= 5'd15; /* Send data, escaping if necessary. */
+										end
+								endcase
+								if(sendcount == (reg_size + 2))
+									sendcount <= 4'd7;
+								else
+									sendcount <= sendcount + 1;
+									
+							end
+							
+						/* Transmit escape character if necessary */
+						5'd15:
+							begin
+								if(esc_data == 8'h01 | esc_data == 8'h17 | esc_data == 8'h1B)
+									begin
+										tx_data <= 8'h1B;
+										state <= 5'd16;
+									end
+								else
+									begin
+										state <= 5'd18;
+									end
+							end
+						/* Transmit escape 2 */
+						5'd16:
+							begin
+								send <= 1;
+								if(busy)
+									state <= 5'd17;
+							end
+						/* Transmit escape 3 */
+						5'd17:
+							begin
+								send <= 0;
+								if(~busy)
+									state <= 5'd18;
+							end
+							
+						/* Transmit without escape */
+						5'd18:
+							begin
+								tx_data <= esc_data;
+								state <= 5'd19;
+							end
+						/* Transmit without escape 2 */
+						5'd19:
+							begin
+								send <= 1;
+								if(busy)
+									state <= 5'd20;
+							end
+						/* Transmit without escape 3 */
+						5'd20:
+							begin
+								send <= 0;
+								if(~busy)
+									state <= 5'd14;
+							end
+
 						default:
 							state <= 0;
 					endcase	
@@ -333,17 +447,17 @@ module UniboardTop(
 	
 	
 	/* Debug and status LED assignments */
-	logic state[3:0];
+	logic state[4:0];
 	logic drdy;
 	assign debug[0] = uart_rx;
 	assign debug[1] = uart_tx;
-	assign debug[2] = databus[0];
-	assign debug[3] = databus[1];
-	assign debug[4] = databus[2];
-	assign debug[5] = databus[3];
+	assign debug[2] = state[0];
+	assign debug[3] = state[1];
+	assign debug[4] = state[2];
+	assign debug[5] = state[3];
 	assign debug[6] = reset; 
 	assign debug[7] = drdy;
-	assign debug[8] = 1;
+	assign debug[8] = rw;
 	
 	assign status_led[1] = 1;
 	assign status_led[2] = 1;

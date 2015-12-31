@@ -11,7 +11,8 @@ module PWMGenerator (
 	input logic reset);
 	
 	logic count[12:0];					
-								
+	logic latched_width[7:0];
+	
 	always @ (posedge clk_255kHz)			
 		begin
 			if(reset)
@@ -20,8 +21,10 @@ module PWMGenerator (
 					pwm <= 0;
 				end
 			else
-				begin	
-					if(count >= (width + 10'd255))
+				begin
+					if(count == 0)
+						latched_width <= width;
+					if(count >= (latched_width + 10'd255))
 						pwm <= 0;
 					else
 						pwm <= 1;
@@ -50,21 +53,10 @@ module PWMPeripheral (
 	
 	/* Bus read handling */
 	logic read_value[7:0];
+	logic read_size[2:0];
 	
-	assign reg_size = select ? 3'd1 : 'z;
-	//assign databus = (select & rw) ? {24'd0, read_value} : 'z;
-	
-	always_comb
-		begin
-			case(register_addr)
-				8'd0:
-					read_value = register[0];
-				8'd1:
-					read_value = register[1];
-				default:
-					read_value = '0;
-			endcase
-		end
+	assign reg_size = select ? read_size : 'z;
+	assign databus = (select & rw) ? {24'd0, read_value} : 'z;
 	
 	/* Bus write handling */
 	always @ (posedge select)			
@@ -75,6 +67,23 @@ module PWMPeripheral (
 					register[1] <= 8'd127;
 				end
 			else
+				case(register_addr)
+					8'd0:
+						begin
+							read_value <= register[0];
+							read_size <= 3'd1;
+						end
+					8'd1:
+						begin
+							read_value <= register[1];
+							read_size <= 3'd1;
+						end
+					default:
+						begin
+							read_value <= '0;
+							read_size <= '0;
+						end
+				endcase
 				if(~rw)
 					begin
 						case(register_addr)

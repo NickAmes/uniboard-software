@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>3</data>
+<data>2</data>
 <report_link name="more">
 <data>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/report/Uniboard_impl1_premap_notes.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>141MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1451532956</data>
+<data type="timestamp">1451548363</data>
 </info>
 </job_info>
 </job_run_status>
