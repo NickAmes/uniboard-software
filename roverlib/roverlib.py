@@ -194,15 +194,17 @@ class Uniboard:
 		
 	def _compose_command(self, peripheral, register, num_value, read = True):
 		"""Return a string containing a command. The proper register size
-		   is looked up from the database."""
+		   is looked up from the database. Use num_value = None when reading."""
 		cmd = ""
 		cmd += chr(0x01)
 		if read:
-			cmd += chr(peripheral) | 0x80
+			cmd += chr(peripheral | 0x80)
 		else:
 			cmd += chr(peripheral)
 		cmd += chr(register)
 		size  = self._rsize(peripheral, register)
+		if None == num_value:
+			size = 0
 		if size > 0:
 			cmd += chr((num_value >> 0) & 0xFF)
 		if size > 1:
@@ -226,5 +228,7 @@ class Uniboard:
 		"""Read a Uniboard register and return its contents. If the register's
 		   writeable bits (if any) differ from those in this class's database,
 		   an error will be reported."""
-		pass
+		self._clear_input()
+		self._send(self._compose_command(peripheral, register, None, read = True))
+		return self._process_reply(peripheral | 0x80, register)
 	

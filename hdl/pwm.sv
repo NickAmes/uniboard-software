@@ -112,3 +112,5 @@ module PWMPeripheral (
 	                  .pwm(pwm_right),
 	                  .reset(reset));
 endmodule
+
+/* PWM Receiver */
