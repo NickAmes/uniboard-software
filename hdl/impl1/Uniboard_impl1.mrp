@@ -18,20 +18,20 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/30/15  18:27:43
+Mapped on:  12/30/15  19:36:36
 
 Design Summary
 --------------
 
-   Number of registers:    214 out of  7209 (3%)
-      PFU registers:          208 out of  6864 (3%)
-      PIO registers:            6 out of   345 (2%)
-   Number of SLICEs:       195 out of  3432 (6%)
-      SLICEs as Logic/ROM:    195 out of  3432 (6%)
+   Number of registers:    227 out of  7209 (3%)
+      PFU registers:          224 out of  6864 (3%)
+      PIO registers:            3 out of   345 (1%)
+   Number of SLICEs:       188 out of  3432 (5%)
+      SLICEs as Logic/ROM:    188 out of  3432 (5%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:         91 out of  3432 (3%)
-   Number of LUT4s:        385 out of  6864 (6%)
-      Number of logic LUTs:      203
+   Number of LUT4s:        372 out of  6864 (5%)
+      Number of logic LUTs:      190
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:     91 (182 LUT4s)
       Number of shift registers:   0
@@ -66,20 +66,19 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 Design Summary (cont)
 ---------------------
    Number of clocks:  1
-     Net clk_12MHz_c: 131 loads, 131 rising, 0 falling (Driver: PIO clk_12MHz )
+     Net clk_12MHz_c: 134 loads, 134 rising, 0 falling (Driver: PIO clk_12MHz )
    Number of Clock Enables:  22
      Net interface_reset: 1 loads, 1 LSLICEs
-     Net un1_state[0]_1_0: 3 loads, 0 LSLICEs
      Net clk_o_RNIT04I: 16 loads, 14 LSLICEs
      Net un1_state[0]23_RNI6BM11: 1 loads, 0 LSLICEs
      Net reset4_i: 2 loads, 2 LSLICEs
-     Net motor_pwm/read_value[0]2_6_RNIM91Q: 4 loads, 4 LSLICEs
-     Net motor_pwm/read_value[0]3_RNIA6AQ: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[0]2_6_RNI4IDS1: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[0]2_6_RNI4IDS1_0: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_bufcount[0]_0_sqmuxa_0: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNI3MOPC: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_input/rdata_4__RNO: 1 loads, 1 LSLICEs
@@ -91,13 +90,14 @@ Design Summary (cont)
      Net protocol_interface/uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state_2_i: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
-     Net protocol_interface/N_5_i: 2 loads, 2 LSLICEs
-     Net protocol_interface/databus_out[0]_1_sqmuxa: 7 loads, 7 LSLICEs
+     Net protocol_interface/un1_state[1]_1_sqmuxa_2_i: 2 loads, 2 LSLICEs
+     Net protocol_interface/databus_out[0]_1_sqmuxa: 8 loads, 8 LSLICEs
+     Net protocol_interface/un1_select271_4_0: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_select271_7_0: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_select271_6_0: 4 loads, 4 LSLICEs
    Number of LSRs:  9
-     Net interface_reset: 16 loads, 13 LSLICEs
-     Net select_0and_RNI8D2L[2]: 8 loads, 8 LSLICEs
+     Net interface_reset: 17 loads, 17 LSLICEs
+     Net motor_pwm/G_29: 8 loads, 8 LSLICEs
      Net motor_pwm/right/count[0]2_9_RNIQBKS: 4 loads, 4 LSLICEs
      Net debug_c[6]: 1 loads, 1 LSLICEs
      Net motor_pwm/left/count[0]2_9_RNIKRBE1: 4 loads, 4 LSLICEs
@@ -107,16 +107,16 @@ Design Summary (cont)
      Net protocol_interface/uart_input/baud_reset: 19 loads, 19 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net interface_reset: 36 loads
-     Net protocol_interface/state[2]: 26 loads
+     Net interface_reset: 37 loads
+     Net protocol_interface/state[2]: 25 loads
      Net protocol_interface/uart_input/baud_reset: 20 loads
      Net clk_o_RNIT04I: 18 loads
      Net motor_pwm/clkdiv/N_227_1_i: 16 loads
+     Net protocol_interface/state[0]: 16 loads
+     Net protocol_interface/state[1]: 16 loads
      Net uart_rx_c: 16 loads
      Net protocol_interface/uart_input/state[1]: 14 loads
      Net protocol_interface/uart_input/state[3]: 14 loads
-     Net protocol_interface/uart_input/state[2]: 13 loads
-     Net protocol_interface/state[0]: 12 loads
 
 
 
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 Design Errors/Warnings
 ----------------------
@@ -198,7 +198,7 @@ IO (PIO) Attributes
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -207,13 +207,13 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | debug[6]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| debug[5]            | OUTPUT    | LVCMOS25  | OUT        |
+| debug[5]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | debug[4]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| debug[3]            | OUTPUT    | LVCMOS25  | OUT        |
+| debug[3]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| debug[2]            | OUTPUT    | LVCMOS25  | OUT        |
+| debug[2]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | debug[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -264,7 +264,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -306,8 +306,8 @@ Removed logic
 -------------
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Block protocol_interface/VCC undriven or does not drive anything - clipped.
 Block protocol_interface/GND undriven or does not drive anything - clipped.
+Block protocol_interface/VCC undriven or does not drive anything - clipped.
 Block protocol_interface/uart_input/VCC undriven or does not drive anything -
      clipped.
 Block protocol_interface/uart_input/GND undriven or does not drive anything -
@@ -316,7 +316,6 @@ Block protocol_interface/uart_output/GND undriven or does not drive anything -
      clipped.
 Block protocol_interface/uart_output/VCC undriven or does not drive anything -
      clipped.
-Block motor_pwm/GND undriven or does not drive anything - clipped.
 Block motor_pwm/VCC undriven or does not drive anything - clipped.
 Signal protocol_interface/interface_reset_i was merged into signal
      interface_reset
@@ -324,17 +323,17 @@ Signal protocol_interface/uart_input/baud_gen/GND undriven or does not drive
      anything - clipped.
 Signal protocol_interface/uart_output/baud_gen/GND undriven or does not drive
      anything - clipped.
+Signal motor_pwm/clkdiv/GND undriven or does not drive anything - clipped.
 
                                     Page 5
 
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 Removed logic (cont)
 --------------------
-Signal motor_pwm/clkdiv/GND undriven or does not drive anything - clipped.
 Signal motor_pwm/left/GND undriven or does not drive anything - clipped.
 Signal motor_pwm/right/GND undriven or does not drive anything - clipped.
 Signal protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0 undriven
@@ -390,17 +389,17 @@ Signal motor_pwm/left/pwm_2_cry_1_0_S1 undriven or does not drive anything -
 Signal motor_pwm/left/pwm_2_cry_1_0_S0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
 
                                     Page 6
 
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 Removed logic (cont)
 --------------------
-     clipped.
 Signal motor_pwm/left/pwm_2_cry_3_0_S0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_5_0_S1 undriven or does not drive anything -
@@ -456,17 +455,17 @@ Signal motor_pwm/right/pwm_2_cry_5_0_S0_0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/pwm_2_cry_7_0_S1_0 undriven or does not drive anything -
      clipped.
+Signal motor_pwm/right/pwm_2_cry_7_0_S0_0 undriven or does not drive anything -
 
                                     Page 7
 
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  18:27:43
+Design:  UniboardTop                                   Date:  12/30/15  19:36:36
 
 Removed logic (cont)
 --------------------
-Signal motor_pwm/right/pwm_2_cry_7_0_S0_0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/pwm_2_cry_9_0_S1_0 undriven or does not drive anything -
      clipped.
@@ -500,6 +499,7 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 183 MB
         
+
 
 
 

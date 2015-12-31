@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 30 18:27:24 2015
+# Timing Report written on Wed Dec 30 19:35:58 2015
 #
 
 
@@ -70,8 +70,8 @@ Instance                                     Reference                 Type     
 --------------------------------------------------------------------------------------------------------------------------------
 reset                                        UniboardTop|clk_12MHz     FD1S3AY     Q       debug_c[6]          0.854       0.292
 protocol_interface.uart_input.baud_reset     UniboardTop|clk_12MHz     FD1S3AY     Q       baud_reset          0.927       0.365
-interface_reset                              UniboardTop|clk_12MHz     FD1S3AY     Q       interface_reset     0.943       0.381
-protocol_interface.select_0[2]               UniboardTop|clk_12MHz     FD1S3AX     Q       debug_c[4]          0.826       0.578
+interface_reset                              UniboardTop|clk_12MHz     FD1S3AY     Q       interface_reset     0.949       0.387
+protocol_interface.select_0[2]               UniboardTop|clk_12MHz     FD1S3AX     Q       select[2]           0.803       0.556
 protocol_interface.buffer\[1\][0]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][0]      0.680       0.606
 protocol_interface.buffer\[1\][1]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][1]      0.680       0.606
 protocol_interface.buffer\[1\][2]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][2]      0.680       0.606

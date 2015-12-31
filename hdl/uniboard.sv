@@ -337,10 +337,10 @@ module UniboardTop(
 	logic drdy;
 	assign debug[0] = uart_rx;
 	assign debug[1] = uart_tx;
-	assign debug[2] = select[0];
-	assign debug[3] = select[1];
-	assign debug[4] = select[2];
-	assign debug[5] = select[3];
+	assign debug[2] = databus[0];
+	assign debug[3] = databus[1];
+	assign debug[4] = databus[2];
+	assign debug[5] = databus[3];
 	assign debug[6] = reset; 
 	assign debug[7] = drdy;
 	assign debug[8] = 1;
@@ -382,13 +382,14 @@ module UniboardTop(
 	                                           .drdy(drdy));
 	/* Dummy peripheral */
 	logic dummy_select;
-	assign dummy_select = | select[127:3] | select[0] | select[1];
+	assign dummy_select = 0; //| select[127:3] | select[0] | select[1];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),
 	                      .select(dummy_select));
 	/* Motor PWM */
 	PWMPeripheral motor_pwm(.clk_12MHz(clk_12MHz),
+	                        .databus(databus),
 	                        .reg_size(reg_size),
 	                        .register_addr(register_addr),
 	                        .rw(rw),

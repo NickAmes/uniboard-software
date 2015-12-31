@@ -1,16 +1,15 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Dec 29 11:32:55 2015
+# Timing Report written on Wed Dec 30 19:31:01 2015
 #
 
 
 Top view:               UniboardTop
-Requested Frequency:    12.0 MHz
+Requested Frequency:    147.6 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
-                       
+Constraint File(s):    
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
@@ -21,13 +20,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: NA
+Worst slack in design: 0.326
 
-                   Requested     Estimated     Requested     Estimated               Clock        Clock           
-Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
-------------------------------------------------------------------------------------------------------------------
-clk_12MHz          12.0 MHz      NA            83.000        NA            NA        declared     default_clkgroup
-==================================================================================================================
+                                                  Requested     Estimated     Requested     Estimated                Clock                                    Clock                
+Starting Clock                                    Frequency     Frequency     Period        Period        Slack      Type                                     Group                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ClockDividerP_12s_1|clk_o_derived_clock           147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
+ClockDivider|clk_o_derived_clock                  147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
+ProtocolInterface_12s|select_derived_clock[2]     147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
+UniboardTop|clk_12MHz                             147.6 MHz     139.0 MHz     6.776         7.195         -0.420     inferred                                 Autoconstr_clkgroup_0
+===================================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
@@ -35,11 +37,12 @@ clk_12MHz          12.0 MHz      NA            83.000        NA            NA   
 Clock Relationships
 *******************
 
-Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------
-Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------
-========================================================================================================
+Clocks                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------
+UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  0.000       0.326  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -49,6 +52,82 @@ Interface Information
 *********************
 
 No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: UniboardTop|clk_12MHz
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                             Starting                                                              Arrival          
+Instance                                     Reference                 Type        Pin     Net                     Time        Slack
+                                             Clock                                                                                  
+------------------------------------------------------------------------------------------------------------------------------------
+reset                                        UniboardTop|clk_12MHz     FD1S3AY     Q       debug_c[6]              0.887       0.326
+interface_reset_iso                          UniboardTop|clk_12MHz     FD1S3AY     Q       interface_reset_iso     0.914       0.352
+protocol_interface.uart_input.baud_reset     UniboardTop|clk_12MHz     FD1S3AY     Q       baud_reset              0.928       0.366
+protocol_interface.select_0[2]               UniboardTop|clk_12MHz     FD1S3AX     Q       select_i[2]             0.803       0.556
+interface_reset                              UniboardTop|clk_12MHz     FD1S3AY     Q       interface_reset         0.923       0.593
+protocol_interface.buffer\[1\][0]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][0]          0.680       0.606
+protocol_interface.buffer\[1\][1]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][1]          0.680       0.606
+protocol_interface.buffer\[1\][2]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][2]          0.680       0.606
+protocol_interface.buffer\[1\][3]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][3]          0.680       0.606
+protocol_interface.buffer\[1\][4]            UniboardTop|clk_12MHz     FD1P3IX     Q       buffer\[1\][4]          0.680       0.606
+====================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                              Required          
+Instance                              Reference                 Type        Pin     Net                     Time         Slack
+                                      Clock                                                                                   
+------------------------------------------------------------------------------------------------------------------------------
+motor_pwm.clkdiv.count\[0\]           UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[6]              0.562        0.326
+motor_pwm.clkdiv.count\[0\]_fast      UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[6]              0.562        0.326
+protocol_interface.bufcount\[0\]      UniboardTop|clk_12MHz     FD1S3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.bufcount\[1\]      UniboardTop|clk_12MHz     FD1S3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.bufcount\[2\]      UniboardTop|clk_12MHz     FD1S3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.buffer\[0\][0]     UniboardTop|clk_12MHz     FD1P3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.buffer\[0\][1]     UniboardTop|clk_12MHz     FD1P3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.buffer\[0\][2]     UniboardTop|clk_12MHz     FD1P3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.buffer\[0\][3]     UniboardTop|clk_12MHz     FD1P3IX     CD      interface_reset_iso     0.562        0.352
+protocol_interface.buffer\[0\][4]     UniboardTop|clk_12MHz     FD1P3IX     CD      interface_reset_iso     0.562        0.352
+==============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.887
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.562
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     0.325
+
+    Number of logic level(s):                0
+    Starting point:                          reset / Q
+    Ending point:                            motor_pwm.clkdiv.count\[0\] / CD
+    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
+    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+reset                           FD1S3AY     Q        Out     0.887     0.887       -         
+debug_c[6]                      Net         -        -       -         -           16        
+motor_pwm.clkdiv.count\[0\]     FD1S3IX     CD       In      0.000     0.887       -         
+=============================================================================================
+
 
 
 ##### END OF TIMING REPORT #####]

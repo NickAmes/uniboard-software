@@ -1002,14 +1002,434 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 289 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 353 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
             <Navigation>14</Navigation>
             <Navigation>1</Navigation>
             <Navigation>14</Navigation>
             <Navigation>6</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 289 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 353 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:227:19:227:35|Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:227:19:227:35|Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:227:19:227:35|Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>227</Navigation>
+            <Navigation>35</Navigation>
+            <Navigation>Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[10] on net databus\[10\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[10] on net databus\[10\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[11] on net databus\[11\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[11] on net databus\[11\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[12] on net databus\[12\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[12] on net databus\[12\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[13] on net databus\[13\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[13] on net databus\[13\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[14] on net databus\[14\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[14] on net databus\[14\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[15] on net databus\[15\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[15] on net databus\[15\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[16] on net databus\[16\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[16] on net databus\[16\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[17] on net databus\[17\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[17] on net databus\[17\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[18] on net databus\[18\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[18] on net databus\[18\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[19] on net databus\[19\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[19] on net databus\[19\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[20] on net databus\[20\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[20] on net databus\[20\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[21] on net databus\[21\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[21] on net databus\[21\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[22] on net databus\[22\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[22] on net databus\[22\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[23] on net databus\[23\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[23] on net databus\[23\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[24] on net databus\[24\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[24] on net databus\[24\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[25] on net databus\[25\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[25] on net databus\[25\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[26] on net databus\[26\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[26] on net databus\[26\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[27] on net databus\[27\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[27] on net databus\[27\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[28] on net databus\[28\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[28] on net databus\[28\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[29] on net databus\[29\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[29] on net databus\[29\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[30] on net databus\[30\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[30] on net databus\[30\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[31] on net databus\[31\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[31] on net databus\[31\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[0] on net databus\[0\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[0] on net databus\[0\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[1] on net databus\[1\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[1] on net databus\[1\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[2] on net databus\[2\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[2] on net databus\[2\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[3] on net databus\[3\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[3] on net databus\[3\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[4] on net databus\[4\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[4] on net databus\[4\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[5] on net databus\[5\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[5] on net databus\[5\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[6] on net databus\[6\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[6] on net databus\[6\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[7] on net databus\[7\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[7] on net databus\[7\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[8] on net databus\[8\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[8] on net databus\[8\] has its enable tied to GND (module DummyPeripheral) </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO111 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:228:19:228:42|Tristate driver un5_databus[9] on net databus\[9\] has its enable tied to GND (module DummyPeripheral)</Dynamic>
+            <Navigation>MO111</Navigation>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>228</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Tristate driver un5_databus[9] on net databus\[9\] has its enable tied to GND (module DummyPeripheral) </Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

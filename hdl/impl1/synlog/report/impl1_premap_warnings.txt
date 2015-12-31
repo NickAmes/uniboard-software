@@ -1,2 +1,34 @@
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Found inferred clock ClockDividerP_12s_1|clk_o_inferred_clock which controls 13 sequential elements including protocol_interface.uart_output.state\[0\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: FX469 :|Found undriven nets un1[31] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[30] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[29] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[28] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[27] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[26] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[25] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[24] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[23] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[22] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[21] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[20] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[19] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[18] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[17] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[16] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[15] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[14] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[13] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[12] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[11] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[10] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[9] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[8] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[7] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[6] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[5] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[4] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[3] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[2] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[1] to be optimized by the mapper. 
+@W: FX469 :|Found undriven nets un1[0] to be optimized by the mapper. 
+@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 289 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
 #-- Synplify OEM project file /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/launch_synplify.tcl
-#-- Written on Tue Dec 29 11:29:05 2015
+#-- Written on Wed Dec 30 19:30:52 2015
 
 project -close
 set filename "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.prj"

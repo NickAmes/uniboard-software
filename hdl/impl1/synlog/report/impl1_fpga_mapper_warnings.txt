@@ -1,3 +1,53 @@
-@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[3] reduced to a combinational gate by constant propagation
-@W: MO129 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Sequential instance protocol_interface.uart_output.baud_gen.count[2] reduced to a combinational gate by constant propagation
-@W: BW150 :|Cannot forward annotate set_clock_groups command because clock ClockDividerP_12s_1|clk_o_inferred_clock cannot be found
+@W: MO111 :|Tristate driver tri0_inst on net un1[31] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri1_inst on net un1[30] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri2_inst on net un1[29] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri3_inst on net un1[28] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri4_inst on net un1[27] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri5_inst on net un1[26] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri6_inst on net un1[25] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri7_inst on net un1[24] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri8_inst on net un1[23] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri9_inst on net un1[22] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri10_inst on net un1[21] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri11_inst on net un1[20] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri12_inst on net un1[19] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri13_inst on net un1[18] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri14_inst on net un1[17] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri15_inst on net un1[16] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri16_inst on net un1[15] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri17_inst on net un1[14] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri18_inst on net un1[13] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri19_inst on net un1[12] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri20_inst on net un1[11] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri21_inst on net un1[10] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri22_inst on net un1[9] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri23_inst on net un1[8] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri24_inst on net un1[7] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri25_inst on net un1[6] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri26_inst on net un1[5] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri27_inst on net un1[4] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri28_inst on net un1[3] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri29_inst on net un1[2] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri30_inst on net un1[1] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :|Tristate driver tri31_inst on net un1[0] has its enable tied to GND (module UniboardTop) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral) 
+@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral) 
+@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[0] on net VCC_tri deleted because its enable is always false 
+@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[1] on net VCC_tri deleted because its enable is always false 
+@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[2] on net VCC_tri deleted because its enable is always false 
+@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[3] on net VCC_tri deleted because its enable is always false 
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[6],  because it is equivalent to instance motor_pwm.register_0_[5]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[5],  because it is equivalent to instance motor_pwm.register_0_[4]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[4],  because it is equivalent to instance motor_pwm.register_0_[3]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[3],  because it is equivalent to instance motor_pwm.register_0_[2]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[2],  because it is equivalent to instance motor_pwm.register_0_[1]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[1],  because it is equivalent to instance motor_pwm.register_0_[0]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[6],  because it is equivalent to instance motor_pwm.register_1_[5]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[5],  because it is equivalent to instance motor_pwm.register_1_[4]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[4],  because it is equivalent to instance motor_pwm.register_1_[3]
+@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[3],  because it is equivalent to instance motor_pwm.register_1_[2]
+@W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock ClockDivider|clk_o_derived_clock. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
+@W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 6.78ns. Please declare a user-defined clock on object "p:clk_12MHz"

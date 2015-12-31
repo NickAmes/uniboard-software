@@ -52,7 +52,7 @@ module PWMPeripheral (
 	logic read_value[7:0];
 	
 	assign reg_size = select ? 3'd1 : 'z;
-	assign databus = (select & ~rw) ? {24'd0, read_value} : 'z;
+	//assign databus = (select & rw) ? {24'd0, read_value} : 'z;
 	
 	always_comb
 		begin
