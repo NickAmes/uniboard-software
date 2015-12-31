@@ -1,4 +1,4 @@
-@P:  Worst Slack : 991.293
+@P:  Worst Slack : 991.395
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency : 1.0 MHz
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Period : NA
@@ -14,11 +14,11 @@
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Period : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Requested Period : 1000.000
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Slack : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency : 114.9 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Frequency : 116.2 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period : 8.707
+@P:  UniboardTop|clk_12MHz - Estimated Period : 8.605
 @P:  UniboardTop|clk_12MHz - Requested Period : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack : 991.293
+@P:  UniboardTop|clk_12MHz - Slack : 991.395
 @P:  Worst Slack(min analysis) : 0.317
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
@@ -35,12 +35,12 @@
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Period(min analysis) : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Requested Period(min analysis) : 1000.000
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Slack(min analysis) : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : 114.9 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : 116.2 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency(min analysis) : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : 8.707
+@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : 8.605
 @P:  UniboardTop|clk_12MHz - Requested Period(min analysis) : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack(min analysis) : 991.293
-@P:  Total Area : 395.0
+@P:  UniboardTop|clk_12MHz - Slack(min analysis) : 991.395
+@P:  Total Area : 404.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -50,4 +50,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  CPU Time : 0h:00m:04s

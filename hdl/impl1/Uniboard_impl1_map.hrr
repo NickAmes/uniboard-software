@@ -3,38 +3,38 @@ Report for cell UniboardTop
    Instance path: UniboardTop
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     291.00        100.0
+                                  SLIC	     295.00        100.0
                                  IOLGC	       3.00        100.0
-                                  LUT4	     396.00        100.0
+                                  LUT4	     405.00        100.0
                                  IOREG	          3        100.0
                                  IOBUF	         47        100.0
                                 PFUREG	        330        100.0
                                 RIPPLE	         91        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 ProtocolInterface_12s	          1        66.4
-                         PWMPeripheral	          1        31.8
+                 ProtocolInterface_12s	          1        67.2
+                         PWMPeripheral	          1        31.2
 ---------------------------------------------------
 Report for cell PWMPeripheral
    Instance path: UniboardTop/motor_pwm
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      92.67        31.8
-                                  LUT4	      72.00        18.2
+                                  SLIC	      91.92        31.2
+                                  LUT4	      65.00        16.0
                                 PFUREG	        100        30.3
                                 RIPPLE	         57        62.6
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          PWMGenerator	          1         9.4
-                        PWMGenerator_0	          1         8.6
-                          ClockDivider	          1         8.8
+                          PWMGenerator	          1         9.3
+                        PWMGenerator_0	          1         8.5
+                          ClockDivider	          1         8.9
 ---------------------------------------------------
 Report for cell PWMGenerator_0
    Instance path: UniboardTop/motor_pwm/right
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      25.08         8.6
-                                  LUT4	      13.00         3.3
+                                  SLIC	      25.08         8.5
+                                  LUT4	      13.00         3.2
                                 PFUREG	         21         6.4
                                 RIPPLE	         20        22.0
 ---------------------------------------------------
@@ -42,8 +42,8 @@ Report for cell PWMGenerator
    Instance path: UniboardTop/motor_pwm/left
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      27.33         9.4
-                                  LUT4	      15.00         3.8
+                                  SLIC	      27.33         9.3
+                                  LUT4	      15.00         3.7
                                 PFUREG	         21         6.4
                                 RIPPLE	         20        22.0
 ---------------------------------------------------
@@ -51,8 +51,8 @@ Report for cell ClockDivider
    Instance path: UniboardTop/motor_pwm/clkdiv
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      25.50         8.8
-                                  LUT4	      18.00         4.5
+                                  SLIC	      26.25         8.9
+                                  LUT4	      18.00         4.4
                                 PFUREG	         33        10.0
                                 RIPPLE	         17        18.7
 ---------------------------------------------------
@@ -60,32 +60,32 @@ Report for cell ProtocolInterface_12s
    Instance path: UniboardTop/protocol_interface
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     193.08        66.4
-                                  LUT4	     314.00        79.3
+                                  SLIC	     198.25        67.2
+                                  LUT4	     330.00        81.5
                                 PFUREG	        224        67.9
                                 RIPPLE	         34        37.4
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   UARTTransmitter_12s	          1        12.9
-                      UARTReceiver_12s	          1        15.0
+                   UARTTransmitter_12s	          1        39.9
+                      UARTReceiver_12s	          1        13.1
 ---------------------------------------------------
 Report for cell UARTTransmitter_12s
    Instance path: UniboardTop/protocol_interface/uart_output
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      37.58        12.9
-                                  LUT4	      39.00         9.8
+                                  SLIC	     117.67        39.9
+                                  LUT4	     245.00        60.5
                                 PFUREG	         47        14.2
                                 RIPPLE	         17        18.7
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ClockDividerP_12s_1	          1         8.5
+                   ClockDividerP_12s_1	          1         7.5
 ---------------------------------------------------
 Report for cell ClockDividerP_12s_1
    Instance path: UniboardTop/protocol_interface/uart_output/baud_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      24.67         8.5
+                                  SLIC	      22.25         7.5
                                   LUT4	      16.00         4.0
                                 PFUREG	         33        10.0
                                 RIPPLE	         17        18.7
@@ -94,19 +94,19 @@ Report for cell UARTReceiver_12s
    Instance path: UniboardTop/protocol_interface/uart_input
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.58        15.0
-                                  LUT4	      54.00        13.6
+                                  SLIC	      38.52        13.1
+                                  LUT4	      54.00        13.3
                                 PFUREG	         56        17.0
                                 RIPPLE	         17        18.7
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ClockDividerP_12s_0	          1         8.1
+                   ClockDividerP_12s_0	          1         7.3
 ---------------------------------------------------
 Report for cell ClockDividerP_12s_0
    Instance path: UniboardTop/protocol_interface/uart_input/baud_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.58         8.1
+                                  SLIC	      21.42         7.3
                                   LUT4	      14.00         3.5
                                 PFUREG	         33        10.0
                                 RIPPLE	         17        18.7

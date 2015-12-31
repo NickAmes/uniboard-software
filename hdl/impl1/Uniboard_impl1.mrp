@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  12/30/15  23:52:51
+Mapped on:  12/31/15  02:44:13
 
 Design Summary
 --------------
@@ -26,12 +26,12 @@ Design Summary
    Number of registers:    333 out of  7209 (5%)
       PFU registers:          330 out of  6864 (5%)
       PIO registers:            3 out of   345 (1%)
-   Number of SLICEs:       291 out of  3432 (8%)
-      SLICEs as Logic/ROM:    291 out of  3432 (8%)
+   Number of SLICEs:       295 out of  3432 (9%)
+      SLICEs as Logic/ROM:    295 out of  3432 (9%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:         91 out of  3432 (3%)
-   Number of LUT4s:        578 out of  6864 (8%)
-      Number of logic LUTs:      396
+   Number of LUT4s:        587 out of  6864 (9%)
+      Number of logic LUTs:      405
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:     91 (182 LUT4s)
       Number of shift registers:   0
@@ -66,27 +66,37 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Design Summary (cont)
 ---------------------
    Number of clocks:  1
-     Net clk_12MHz_c: 194 loads, 194 rising, 0 falling (Driver: PIO clk_12MHz )
+     Net clk_12MHz_c: 195 loads, 195 rising, 0 falling (Driver: PIO clk_12MHz )
    Number of Clock Enables:  33
-     Net interface_reset: 12 loads, 12 LSLICEs
-     Net clk_o_RNIT04I: 16 loads, 14 LSLICEs
-     Net un1_state[0]23_RNI6BM11: 1 loads, 0 LSLICEs
+     Net interface_reset: 13 loads, 13 LSLICEs
+     Net G_299: 16 loads, 14 LSLICEs
+     Net un1_state[0]23_1_2_RNII24N: 1 loads, 0 LSLICEs
      Net reset4_i: 2 loads, 2 LSLICEs
-     Net motor_pwm/read_value[0]2_RNIT2664_0: 4 loads, 4 LSLICEs
+     Net motor_pwm/register_0__0_sqmuxa_RNICR7D4: 4 loads, 4 LSLICEs
      Net motor_pwm/right/count[11]_RNI681D3: 4 loads, 4 LSLICEs
      Net motor_pwm/left/count[0]_RNIF6V34: 4 loads, 4 LSLICEs
-     Net motor_pwm/read_value[0]3_RNIRFL54: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[0]3_RNILG0I4: 4 loads, 4 LSLICEs
      Net motor_pwm/read_size[0]_cnv: 5 loads, 5 LSLICEs
      Net protocol_interface/un1_bufcount[0]_0_sqmuxa: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNI3MOPC: 2 loads, 2 LSLICEs
-     Net protocol_interface/uart_output/tdata_0_5_RNIBCJGD: 5 loads, 5 LSLICEs
+     Net protocol_interface/databus_out[0]_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net protocol_interface/select549_RNIPQFN: 3 loads, 3 LSLICEs
      Net protocol_interface/uart_output/busy_RNO: 1 loads, 1 LSLICEs
-     Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_output/tdata_0_5_RNIBCJGD: 5 loads, 5 LSLICEs
+     Net protocol_interface/un1_state[4]_1_sqmuxa_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_6_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_select535_3: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_select535_2: 4 loads, 4 LSLICEs
+     Net protocol_interface/reg_addr[0]_1_sqmuxa: 5 loads, 5 LSLICEs
+     Net protocol_interface/un1_state[4]: 1 loads, 1 LSLICEs
+     Net protocol_interface/un1_state[0]_4_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_5_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_7_i: 4 loads, 4 LSLICEs
      Net protocol_interface/uart_input/rdata_4__RNO: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_2: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_3: 1 loads, 1 LSLICEs
@@ -95,56 +105,46 @@ Design Summary (cont)
      Net protocol_interface/uart_input/un1_state[0]23_5: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state_2_i: 1 loads, 1 LSLICEs
-     Net protocol_interface/databus_out[0]_1_sqmuxa: 16 loads, 16 LSLICEs
-     Net protocol_interface/buffer[0]_0_sqmuxa_0_0_RNIK20B1: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[4]_1_sqmuxa_i: 3 loads, 3 LSLICEs
-     Net protocol_interface/un1_state[4]: 1 loads, 1 LSLICEs
-     Net protocol_interface/reg_addr[0]_1_sqmuxa: 5 loads, 5 LSLICEs
-     Net protocol_interface/esc_data[0]4_RNI5FB31: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_7_i: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_4_i: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_6_i: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_5_i: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_select535_3: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
    Number of LSRs:  16
-     Net interface_reset: 15 loads, 15 LSLICEs
-     Net motor_pwm/read_value[0]2_RNIT2664: 4 loads, 4 LSLICEs
+     Net interface_reset: 16 loads, 16 LSLICEs
+     Net motor_pwm/register_0__0_sqmuxa_RNICR7D4_0: 4 loads, 4 LSLICEs
      Net motor_pwm/right/count[0]2_9_RNIQBKS: 4 loads, 4 LSLICEs
      Net debug_c[6]: 1 loads, 1 LSLICEs
      Net motor_pwm/left/count[0]2_9_RNIKRBE1: 4 loads, 4 LSLICEs
-     Net motor_pwm/G_31: 4 loads, 4 LSLICEs
+     Net motor_pwm/G_290: 4 loads, 4 LSLICEs
      Net motor_pwm/clkdiv/N_227_1_i: 16 loads, 16 LSLICEs
-     Net motor_pwm/read_value[0]2_RNI9OFA4: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_size[0]_2_RNIR3FL4: 4 loads, 4 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNIM4J9D: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_output/fb: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_output/baud_gen/count[0]2: 1 loads, 1 LSLICEs
+     Net protocol_interface/un1_state[0]_7_RNIA6M41: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_4_RNI76M41: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_6_0_RNIDT311: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_5_RNI86M41: 4 loads, 4 LSLICEs
      Net protocol_interface/uart_input/baud_reset: 19 loads, 19 LSLICEs
-     Net protocol_interface/un1_state[0]_7_RNIG5BO: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_4_RNID5BO: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_6_RNIF5BO: 4 loads, 4 LSLICEs
-     Net protocol_interface/un1_state[0]_5_RNIE5BO: 4 loads, 4 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net debug_c[5]: 55 loads
+     Net interface_reset: 56 loads
 
                                     Page 2
 
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Design Summary (cont)
 ---------------------
-     Net interface_reset: 53 loads
-     Net debug_c[4]: 44 loads
-     Net debug_c[8]: 38 loads
-     Net debug_c[3]: 27 loads
-     Net protocol_interface/sendcount[2]: 26 loads
-     Net protocol_interface/state[4]: 26 loads
-     Net debug_c[2]: 25 loads
-     Net protocol_interface/sendcount[1]: 25 loads
-     Net clk_o_RNIT04I: 20 loads
+     Net debug_c[5]: 55 loads
+     Net debug_c[4]: 43 loads
+     Net debug_c[8]: 37 loads
+     Net debug_c[2]: 28 loads
+     Net debug_c[3]: 28 loads
+     Net protocol_interface/sendcount[2]: 25 loads
+     Net protocol_interface/sendcount[1]: 23 loads
+     Net G_299: 20 loads
+     Net protocol_interface/uart_input/baud_reset: 20 loads
 
 
 
@@ -198,7 +198,7 @@ WARNING - map: IO buffer missing for top level port rc_ch4...logic will be
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,14 +330,14 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Removed logic
 -------------
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Block protocol_interface/VCC undriven or does not drive anything - clipped.
 Block protocol_interface/GND undriven or does not drive anything - clipped.
+Block protocol_interface/VCC undriven or does not drive anything - clipped.
 Block protocol_interface/uart_input/VCC undriven or does not drive anything -
      clipped.
 Block protocol_interface/uart_input/GND undriven or does not drive anything -
@@ -396,7 +396,7 @@ Signal motor_pwm/left/N_1 undriven or does not drive anything - clipped.
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal motor_pwm/right/un1_latched_width[0]_cry_7_0_COUT undriven or does not
 
 
 
-Design:  UniboardTop                                   Date:  12/30/15  23:52:51
+Design:  UniboardTop                                   Date:  12/31/15  02:44:13
 
 Removed logic (cont)
 --------------------

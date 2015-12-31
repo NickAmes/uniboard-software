@@ -58,6 +58,8 @@ module PWMPeripheral (
 	assign reg_size = select ? read_size : 'z;
 	assign databus = (select & rw) ? {24'd0, read_value} : 'z;
 	
+	//TODO: Go to 127 on pause
+	
 	/* Bus write handling */
 	always @ (posedge select)			
 		begin

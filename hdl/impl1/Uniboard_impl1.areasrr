@@ -21,8 +21,8 @@ I/O cells:       47
                             L6MUX21        1       100.0
                                  OB       45       100.0
                            OFS1P3DX        2       100.0
-                           ORCALUT4      390       100.0
-                              PFUMX       13       100.0
+                           ORCALUT4      399       100.0
+                              PFUMX       19       100.0
                                 PUR        1       100.0
                                 VHI       10       100.0
                                 VLO       10       100.0
@@ -37,7 +37,7 @@ SUB MODULES
                    UARTReceiver_12s        1       100.0
                 UARTTransmitter_12s        1       100.0
                             
-                         TOTAL           911           
+                         TOTAL           926           
 ----------------------------------------------------------------------
 Report for cell PWMPeripheral.netlist
      Instance path:  motor_pwm
@@ -50,7 +50,7 @@ Report for cell PWMPeripheral.netlist
                             FD1S3AX        3         7.1
                             FD1S3IX       32        47.8
                                 INV        2        40.0
-                           ORCALUT4       70        17.9
+                           ORCALUT4       63        15.8
                                 VHI        4        40.0
                                 VLO        4        40.0
 SUB MODULES 
@@ -58,7 +58,7 @@ SUB MODULES
                        PWMGenerator        1       100.0
                      PWMGenerator_0        1       100.0
                             
-                         TOTAL           240           
+                         TOTAL           233           
 ----------------------------------------------------------------------
 Report for cell PWMGenerator_0.netlist
   Original Cell name PWMGenerator
@@ -70,7 +70,7 @@ Report for cell PWMGenerator_0.netlist
                             FD1P3IX        8         9.4
                             FD1S3AX        1         2.4
                                 INV        1        20.0
-                           ORCALUT4       12         3.1
+                           ORCALUT4       12         3.0
                                 VHI        1        10.0
                                 VLO        1        10.0
                             
@@ -86,7 +86,7 @@ Report for cell PWMGenerator.netlist
                             FD1P3IX        8         9.4
                             FD1S3AX        1         2.4
                                 INV        1        20.0
-                           ORCALUT4       14         3.6
+                           ORCALUT4       14         3.5
                                 VHI        1        10.0
                                 VLO        1        10.0
                             
@@ -99,7 +99,7 @@ Report for cell ClockDivider.netlist
                               CCU2D       17        18.7
                             FD1S3AX        1         2.4
                             FD1S3IX       32        47.8
-                           ORCALUT4       18         4.6
+                           ORCALUT4       18         4.5
                                 VHI        1        10.0
                                 VLO        1        10.0
                             
@@ -118,8 +118,8 @@ Report for cell ProtocolInterface_12s.netlist
                             FD1S3JX        1       100.0
                                 INV        2        40.0
                             L6MUX21        1       100.0
-                           ORCALUT4      312        80.0
-                              PFUMX       13       100.0
+                           ORCALUT4      328        82.2
+                              PFUMX       19       100.0
                                 VHI        5        50.0
                                 VLO        5        50.0
 SUB MODULES 
@@ -128,7 +128,7 @@ SUB MODULES
                    UARTReceiver_12s        1       100.0
                 UARTTransmitter_12s        1       100.0
                             
-                         TOTAL           600           
+                         TOTAL           622           
 ----------------------------------------------------------------------
 Report for cell UARTTransmitter_12s.netlist
      Instance path:  protocol_interface.uart_output
@@ -142,14 +142,14 @@ Report for cell UARTTransmitter_12s.netlist
                             FD1S3JX        1       100.0
                                 INV        1        20.0
                             L6MUX21        1       100.0
-                           ORCALUT4       38         9.7
-                              PFUMX        2        15.4
+                           ORCALUT4      244        61.2
+                              PFUMX       11        57.9
                                 VHI        2        20.0
                                 VLO        2        20.0
 SUB MODULES 
                 ClockDividerP_12s_1        1       100.0
                             
-                         TOTAL           111           
+                         TOTAL           326           
 ----------------------------------------------------------------------
 Report for cell ClockDividerP_12s_1.netlist
   Original Cell name ClockDividerP_12s
@@ -177,7 +177,7 @@ Report for cell UARTReceiver_12s.netlist
                             FD1S3AY        1        33.3
                             FD1S3IX       33        49.3
                                 INV        1        20.0
-                           ORCALUT4       53        13.6
+                           ORCALUT4       53        13.3
                                 VHI        2        20.0
                                 VLO        2        20.0
 SUB MODULES 

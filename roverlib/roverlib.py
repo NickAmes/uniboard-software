@@ -11,6 +11,9 @@ at least 80 microseconds to complete.
 TODO: Measure average execution time.
 TODO: Error handling. """
 import serial
+import sys
+import time
+import struct
 
 class Uniboard:
 	"""OSURC 2016 Rover Uniboard interface class. Create an object of this class
@@ -30,27 +33,46 @@ class Uniboard:
 	                              stopbits=serial.STOPBITS_ONE,
 	                              bytesize=serial.EIGHTBITS,
 	                              timeout=0.05)
+		self._message("Start. Uniboard connected on %s"%self._tty_path)
 		
 		#To detect errors, the class keeps track of every register value written to the Uniboard.
 		#This is checked (using the register mask to remove read-only bits) against all reads and writes
 		#performed (each write results in a reply from the Uniboard with the contents of the register.
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
 		#as the most significant byte. For example, register 3 on peripheral 7 would have the key 0x0703.
-		self._shadow_memory = {}
+		self._shadow_memory = {
+			#Motor PWM
+			0x0200:127,
+			0x0201:127
+		}
 		
 		#Dictionary of peripheral masks. For each peripheral register, 1s in the value in this dictionary
 		#indicate writable bits.
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
 		#as the most significant byte. For example, register 3 on peripheral 7 would have the key 0x0703.
-		self._periph_mask = {}
+		self._periph_mask = {
+			#Motor PWM
+			0x0200:0xFF,
+			0x0201:0xFF
+			}
 		
 		#Dictionary of register sizes, in bytes.
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
 		#as the most significant byte. For example, register 3 on peripheral 7 would have the key 0x0703.
-		self._periph_size = {}
+		self._periph_size = {
+			#Motor PWM
+			0x0200:1,
+			0x0201:1
+		}
 		pass
 	
-	
+	def _message(self, string):
+		"""Print message to stderr, prepending librover and the time and appending a newline."""
+		sys.stderr.write("librover [" + time.asctime(time.localtime()) + "]: " + string + "\n")
+	def _error(self, string):
+		"""Print error to stderr, prepending librover and the time and appending a newline."""
+		sys.stderr.write("librover [" + time.asctime(time.localtime()) + "]: error: " + string + "\n")
+		
 	def _send(self, data, dont_escape_firstlast=True):
 		"""Send a string of bytes to the Uniboard port. Escaping of special characters is performed
 		   by this function."""
@@ -69,8 +91,107 @@ class Uniboard:
 		"""Receive num_bytes bytes from the Uniboard port. The bytes are returned as a string.
 		   Escape characters are removed transparently by this function, and do not count
 		   toward the number of received bytes."""
-		pass
+		#TODO: Timeout/error handling
+		count = 0;
+		escaped = False;
+		received = ""
+		while count < num_bytes:
+			count += 1
+			c = self._tty.read(size=1)
+			if escaped:
+				received += c
+				escaped = False
+			else:
+				if c == 0x1B:
+					escaped = True
+				else:
+					received += c
+		return received
 	
+	def _recv_reply(self):
+		"""Receive a complete reply (signaled by an end character) from the Uniboard port. 
+		   The bytes are returned as a string.
+		   Escape characters are removed transparently by this function, and do not count
+		   toward the number of received bytes."""
+		#TODO: Timeout/error handling
+		escaped = False;
+		received = ""
+		while True:
+			c = self._tty.read(size=1)
+			if escaped:
+				received += c
+				escaped = False
+			else:
+				if c == chr(0x1B):
+					escaped = True
+				else:
+					received += c
+					if c == chr(0x17):
+						break
+		return received
+	
+	def _check_reply(self, peripheral, register, value):
+		"""Check a reply from the Uniboard against the shadow memory and for the correct
+		   number of bytes. Value is a list or string containing the data bytes from the packet.
+		   On error, a message will be printed to stderr."""
+		if self._rsize(peripheral, register) != len(value):
+			self._error("Reply data wrong size small. Peripheral/register: 0x%02X/0x%02X. Expected size: %d. Received size: %d."%(peripheral, register, self._rsize(peripheral, register), len(value)))
+			return
+		if self._rsize(peripheral, register) == 0:
+			return
+		e_value = self._shadow_memory.get(self._k(peripheral, register), 0) & self._periph_mask.get(self._k(peripheral, register), 0)
+		a_value = self._btn(value) & self._periph_mask.get(self._k(peripheral, register), 0)
+		if e_value != a_value:
+			#TODO: Create visualization function (read-only bits as Xs). 
+			self._error("Reply data different than expected. Peripheral/register: 0x%02X/0x%02X."%(peripheral, register))
+		
+	def _btn(self, byte_data):
+		"""Convert a 1-4 byte string to a number."""
+		size = len(byte_data)
+		n = ord(byte_data[0]);
+		if(size > 1):
+			n |= (ord(byte_data[1]) << 8)
+		if(size > 2):
+			n |= (ord(byte_data[2]) << 16)
+		if(size > 3):
+			n |= (ord(byte_data[3]) << 24)
+		return n
+	
+	def _k(self, peripheral, register):
+		"""Return a key value that can be used to look up registers in the database.
+		   peripheral and register must be numbers."""
+		return ((peripheral & 127) << 8 | register)
+	
+	def _rsize(self, peripheral, register):
+		"""Return the size of a register. Unknown registers return 0."""
+		return self._periph_size.get(self._k(peripheral, register), 0)
+		
+	def _process_reply(self, expected_peripheral, expected_register):
+		"""Receive and check a reply, returning the data as a number based on the size of register.
+		   If no data is returned, or if the register is 0 bytes in size, None is returned."""
+		r = self._recv_reply()
+		if len(r) < 4:
+			self._error("Reply too small. Expected peripheral/register: 0x%02X/0x%02X. Reply: %s"%(expected_peripheral, expected_register, " ".join("{:02x}".format(ord(c)) for c in r)))
+		if r[0] != chr(0x01):
+			self._error("Incorrect start character in reply. Expected peripheral/register: 0x%02X/0x%02X. Reply: %s"%(expected_peripheral, expected_register, " ".join("{:02x}".format(ord(c)) for c in r)))
+		if r[1] != chr(expected_peripheral):
+			self._error("Incorrect peripheral in reply. Expected peripheral/register: 0x%02X/0x%02X. Reply: %s"%(expected_peripheral, expected_register, " ".join("{:02x}".format(ord(c)) for c in r)))
+		if r[2] != chr(expected_register):
+			self._error("Incorrect register in reply. Expected peripheral/register: 0x%02X/0x%02X. Reply: %s"%(expected_peripheral, expected_register, " ".join("{:02x}".format(ord(c)) for c in r)))
+		size = self._rsize(expected_peripheral, expected_register)
+		if len(r) > 4:
+			data = r[3:-1]
+			self._check_reply(expected_peripheral, expected_register, data)
+			return self._btn(data)
+		else:
+			return None
+	
+	def _clear_input(self):
+		"""Clear the serial input buffer. This is a wrapper around pySerial's command,
+		   whose name varies with version."""
+		#TODO: Work correctly regardless of version
+		self._tty.flushInput()
+		
 	def _write_reg(self, peripheral, register, value):
 		"""Write a Uniboard register, checking for a correct using the read-back."""
 		pass
@@ -79,3 +200,4 @@ class Uniboard:
 		   writeable bits (if any) differ from those in this class's database,
 		   an error will be reported."""
 		pass
+	

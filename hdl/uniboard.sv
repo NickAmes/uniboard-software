@@ -496,7 +496,7 @@ module UniboardTop(
 	                                           .drdy(drdy));
 	/* Dummy peripheral */
 	logic dummy_select;
-	assign dummy_select = 0; //| select[127:3] | select[0] | select[1];
+	assign dummy_select = | select[127:3] | select[0] | select[1];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),

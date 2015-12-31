@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Dec 30 23:52:53 2015
+Thu Dec 31 02:44:14 2015
 
 /usr/local/diamond/3.4_x64/ispfpga/bin/lin64/par -f Uniboard_impl1.p2t
 Uniboard_impl1_map.ncd Uniboard_impl1.dir Uniboard_impl1.prf -gui
@@ -15,11 +15,11 @@ Preference file: Uniboard_impl1.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           -           -           -           -           06          Complete        
+5_1   *     0           -           -           -           -           08          Complete        
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 8 secs 
 
 par done!
