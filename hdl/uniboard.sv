@@ -496,13 +496,19 @@ module UniboardTop(
 	                                           .drdy(drdy));
 	/* Dummy peripheral */
 	logic dummy_select;
-	assign dummy_select = | select[127:3] | select[0] | select[1];
+	assign dummy_select = | select[127:8] | select[0] | select[1] | select[3] | select[4] | select[5] | select[6];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),
 	                      .select(dummy_select));
 	/* Motor PWM */
+	logic clk_255kHz;
+	ClockDivider pwm_clk_div(.factor(32'd47),
+						     .clk_i(clk_12MHz),
+	                         .clk_o(clk_255kHz),
+	                         .reset(reset));
 	PWMPeripheral motor_pwm(.clk_12MHz(clk_12MHz),
+	                        .clk_255kHz(clk_255kHz),
 	                        .databus(databus),
 	                        .reg_size(reg_size),
 	                        .register_addr(register_addr),
@@ -511,4 +517,20 @@ module UniboardTop(
 	                        .pwm_left(motor_pwm_l),
 	                        .pwm_right(motor_pwm_r),
 	                        .reset(reset));
+	/* RC Receiver */
+	RCPeripheral rc_receiver(.clk_12MHz(clk_12MHz),
+	                         .clk_255kHz(clk_255kHz),
+	                         .databus(databus),
+	                         .reg_size(reg_size),
+	                         .register_addr(register_addr),
+	                         .rw(rw),
+	                         .select(select[7]),
+	                         .rc1(rc_ch1),
+	                         .rc2(rc_ch2),
+	                         .rc3(rc_ch3),
+	                         .rc4(rc_ch4),
+	                         .rc7(rc_ch7),
+	                         .rc8(rc_ch8),
+	                         .reset(reset));
+	
 endmodule

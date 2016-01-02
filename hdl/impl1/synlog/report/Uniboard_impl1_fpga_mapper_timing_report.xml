@@ -33,9 +33,15 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>NA</data>
 </row>
 <row>
+<data>ProtocolInterface_12s|select_derived_clock[7]</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
 <data>UniboardTop|clk_12MHz</data>
 <data>1.0 MHz</data>
-<data>116.2 MHz</data>
-<data>991.395</data>
+<data>99.3 MHz</data>
+<data>989.934</data>
 </row>
 </report_table>

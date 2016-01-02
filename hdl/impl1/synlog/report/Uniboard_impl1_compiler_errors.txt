@@ -1,2 +1,2 @@
-@E: CS101 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":136:24:136:24|Index 7 is out of range for variable buffer
+@E: CG389 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":223:15:223:22|Reference to undefined module RCReceiver
 

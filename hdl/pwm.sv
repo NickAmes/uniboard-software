@@ -40,6 +40,7 @@ endmodule
 /* Motor PWM Peripheral. */
 module PWMPeripheral (
 	input logic clk_12MHz,
+	input logic clk_255kHz,
 	inout databus[31:0],
 	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */
 	input logic register_addr[7:0],
@@ -98,19 +99,156 @@ module PWMPeripheral (
 		end
 		
 	/* Peripheral components */
-	logic pwmclk;
-	ClockDivider clkdiv(.factor(32'd47),
-	                    .clk_i(clk_12MHz),
-	                    .clk_o(pwmclk),
-	                    .reset(reset));
 	PWMGenerator left(.width(register[0]),
-	                  .clk_255kHz(pwmclk),
+	                  .clk_255kHz(clk_255kHz),
 	                  .pwm(pwm_left),
 	                  .reset(reset));
 	PWMGenerator right(.width(register[1]),
-	                  .clk_255kHz(pwmclk),
+	                  .clk_255kHz(clk_255kHz),
 	                  .pwm(pwm_right),
 	                  .reset(reset));
 endmodule
 
-/* PWM Receiver */
+/* PWM Receiver. If a valid 1-2ms PWM signal is detected on pwm_in, valid is set high
+ * and period is set (period is valid whenever present is high). This module must be reset before use. */
+module PWMReceiver(
+	input logic pwm_in,
+    input logic clk_255kHz,
+    output logic valid,
+    output logic period[7:0],
+    input reset);
+    
+    parameter timeout_ms = 50;
+    
+    logic count[15:0];
+	logic prev_in;
+	logic latched_in;
+	
+	always @ (posedge clk_255kHz)			
+		begin
+			latched_in <= pwm_in;
+			prev_in <= latched_in;
+			if(reset)
+				begin
+					count <= (255 * timeout_ms);
+					valid <= 0;
+				end
+			else
+				begin
+					/* Reset the counter on every rising edge of the input signal. When a falling edge
+					 * is detected, check the current counted value. If the value is within the correct range,
+					 * set valid to 1 and set period based on the current value. If the counted reaches a too-high
+					 * value (no pulse received for a while), set valid to 0. */
+					 if(~prev_in & latched_in) /* Rising edge on pwm_in. */
+						begin
+							count <= 0;
+						end
+					else
+						begin
+							if(prev_in & ~latched_in) /* Falling edge on pwm_in. */
+								begin
+									if(count > 229 && count < 255) /* .9ms-1ms; valid, but saturate at 0. */
+										begin
+											valid <= 1;
+											period <= 0;
+										end
+									if(count > 255 && count < 510) /* 1ms-2ms */
+										begin
+											valid <= 1;
+											period <= count - 255; 
+										end
+									if(count > 510 && count < 561) /* 2ms-2.2ms; valid, but saturate at 255. */
+										begin
+											valid <= 1;
+											period <= 255;
+										end
+									if(count <= 229 || count >= 561) /* Invalid. */
+										begin
+											valid <= 0;
+										end
+								end
+							if(count >= (255 * timeout_ms)) /* Timeout */
+								valid <= 0;
+							else
+								count <= count+1;
+						end
+				end
+		end
+endmodule
+
+/* RC Receiver peripheral. Must be reset before use. */
+module RCPeripheral(
+	input logic clk_12MHz,
+	input logic clk_255kHz,
+	inout databus[31:0],
+	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */
+	input logic register_addr[7:0],
+	input logic rw, /* 0 = write, 1 = read. */
+	input logic select, /* Rising edge writes or hold high to read. */
+	input logic rc1,
+	input logic rc2,
+	input logic rc3,
+	input logic rc4, 
+	input logic rc7,
+	input logic rc8,
+	input logic reset);
+	
+	parameter num_regs = 7;
+	
+	logic [7:0] register[num_regs];
+	
+	/* Bus read handling */
+	logic read_value[7:0];
+	logic read_size[2:0];
+	
+	assign reg_size = select ? read_size : 'z;
+	assign databus = (select & rw) ? {24'd0, read_value} : 'z;
+	
+	/* Bus handling */
+	always @ (posedge select)			
+		begin
+			if(register_addr < num_regs)
+				begin
+					read_value <= register[register_addr];
+					read_size <= 3'd1;
+				end
+			else
+				begin
+					read_value <= '0;
+					read_size <= '0;
+				end
+		end
+		
+    
+    PWMReceiver recv_ch1(.pwm_in(rc1),
+	                    .valid(register[0][0]),
+	                    .period(register[1]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+	PWMReceiver recv_ch2(.pwm_in(rc2),
+	                    .valid(register[0][1]),
+	                    .period(register[2]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+	PWMReceiver recv_ch3(.pwm_in(rc3),
+	                    .valid(register[0][2]),
+	                    .period(register[3]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+	PWMReceiver recv_ch4(.pwm_in(rc4),
+	                    .valid(register[0][3]),
+	                    .period(register[4]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+	PWMReceiver recv_ch7(.pwm_in(rc7),
+	                    .valid(register[0][6]),
+	                    .period(register[5]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+	PWMReceiver recv_ch8(.pwm_in(rc8),
+	                    .valid(register[0][7]),
+	                    .period(register[6]),
+	                    .clk_255kHz(clk_255kHz),
+	                    .reset(reset));
+endmodule
+	

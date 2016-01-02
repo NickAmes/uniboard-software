@@ -22,8 +22,6 @@ Running on host :nick-laptop
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
 Verilog syntax check successful!
-File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv changed - recompiling
-File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv changed - recompiling
 Selecting top level module UniboardTop
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
 
@@ -53,8 +51,14 @@ Selecting top level module UniboardTop
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":41:7:41:19|Synthesizing module PWMPeripheral
 
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register bit read_size[1] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register bit read_size[2] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":65:1:65:6|Register bit read_size[1] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":65:1:65:6|Register bit read_size[2] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":114:7:114:17|Synthesizing module PWMReceiver
+
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":180:7:180:18|Synthesizing module RCPeripheral
+
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":208:1:208:6|Register bit read_size[1] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":208:1:208:6|Register bit read_size[2] is always 0, optimizing ...
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":346:7:346:17|Synthesizing module UniboardTop
 
 @W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":410:7:410:11|Input port bit 6 of debug[8:0] is unused
@@ -70,19 +74,17 @@ Selecting top level module UniboardTop
 @W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":395:13:395:22|Input encoder_la is unused
 @W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":396:13:396:22|Input encoder_lb is unused
 @W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":397:13:397:22|Input encoder_li is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":399:13:399:18|Input rc_ch1 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":400:13:400:18|Input rc_ch2 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":401:13:401:18|Input rc_ch3 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":402:13:402:18|Input rc_ch4 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":403:13:403:18|Input rc_ch7 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":404:13:404:18|Input rc_ch8 is unused
 @W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":408:13:408:17|Input pause is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":181:13:181:21|Input clk_12MHz is unused
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":127:1:127:6|Register bit count[14] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":127:1:127:6|Register bit count[15] is always 0, optimizing ...
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":42:13:42:21|Input clk_12MHz is unused
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register bit bufcount[3] is always 0, optimizing ...
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 82MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 31 02:44:04 2015
+# Sat Jan  2 15:32:38 2016
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -94,7 +96,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 31 02:44:04 2015
+# Sat Jan  2 15:32:39 2016
 
 ###########################################################]
 @END
@@ -102,6 +104,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Dec 31 02:44:04 2015
+# Sat Jan  2 15:32:39 2016
 
 ###########################################################]

@@ -1,8 +1,8 @@
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter  -link  -top  UniboardTop  -multisrs  "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs"  -osyn  "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_mult.srs"  -log  "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/Uniboard_impl1_multi_srs_gen.srr" 
 rc:0 success:1
-/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs|i|1451558644|38080
-/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_mult.srs|o|1451558645|9205
-/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/Uniboard_impl1_multi_srs_gen.srr|o|1451558645|554
+/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_comp.srs|i|1451777559|45376
+/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_mult.srs|o|1451777560|10999
+/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/Uniboard_impl1_multi_srs_gen.srr|o|1451777560|554
 /usr/local/diamond/3.4_x64/synpbase/linux_a_64/syn_nfilter|i|1415639439|10641848
 /usr/local/diamond/3.4_x64/synpbase/linux/syn_nfilter|i|1415639493|10111832
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter|i|1415639218|366

@@ -6,7 +6,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Thu Dec 31 02:44:18 2015
+Sat Jan  2 15:32:59 2016
 
 Pinout by Port Name:
 +----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -53,6 +53,12 @@ Pinout by Port Name:
 | expansion5     | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | motor_pwm_l    | 5/5      | LVCMOS25_OUT | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | motor_pwm_r    | 6/5      | LVCMOS25_OUT | PL6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| rc_ch1         | 47/2     | LVCMOS25_IN  | PB13A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| rc_ch2         | 45/2     | LVCMOS25_IN  | PB12B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| rc_ch3         | 44/2     | LVCMOS25_IN  | PB12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| rc_ch4         | 43/2     | LVCMOS25_IN  | PB9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| rc_ch7         | 42/2     | LVCMOS25_IN  | PB9A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| rc_ch8         | 41/2     | LVCMOS25_IN  | PB6B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | signal_light   | 57/2     | LVCMOS25_OUT | PB26A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | status_led[0]  | 110/0    | LVCMOS25_OUT | PT36C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | status_led[1]  | 109/0    | LVCMOS25_OUT | PT36D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -113,12 +119,12 @@ Pinout by Pin Number:
 | 38/2     |     unused, PULL:DOWN |            |              | PB4A  |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |              | PB4B  |                |           |           |
 | 40/2     |     unused, PULL:DOWN |            |              | PB6A  | CSSPIN         |           |           |
-| 41/2     |     unused, PULL:DOWN |            |              | PB6B  |                |           |           |
-| 42/2     |     unused, PULL:DOWN |            |              | PB9A  |                |           |           |
-| 43/2     |     unused, PULL:DOWN |            |              | PB9B  |                |           |           |
-| 44/2     |     unused, PULL:DOWN |            |              | PB12A | MCLK/CCLK      |           |           |
-| 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
-| 47/2     |     unused, PULL:DOWN |            |              | PB13A |                |           |           |
+| 41/2     | rc_ch8                | LOCATED    | LVCMOS25_IN  | PB6B  |                |           |           |
+| 42/2     | rc_ch7                | LOCATED    | LVCMOS25_IN  | PB9A  |                |           |           |
+| 43/2     | rc_ch4                | LOCATED    | LVCMOS25_IN  | PB9B  |                |           |           |
+| 44/2     | rc_ch3                | LOCATED    | LVCMOS25_IN  | PB12A | MCLK/CCLK      |           |           |
+| 45/2     | rc_ch2                | LOCATED    | LVCMOS25_IN  | PB12B | SO/SPISO       |           |           |
+| 47/2     | rc_ch1                | LOCATED    | LVCMOS25_IN  | PB13A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
 | 49/2     |     unused, PULL:DOWN |            |              | PB16A | PCLKT2_0       |           |           |
 | 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
@@ -473,6 +479,12 @@ LOCATE  COMP  "expansion4"  SITE  "61";
 LOCATE  COMP  "expansion5"  SITE  "62";
 LOCATE  COMP  "motor_pwm_l"  SITE  "5";
 LOCATE  COMP  "motor_pwm_r"  SITE  "6";
+LOCATE  COMP  "rc_ch1"  SITE  "47";
+LOCATE  COMP  "rc_ch2"  SITE  "45";
+LOCATE  COMP  "rc_ch3"  SITE  "44";
+LOCATE  COMP  "rc_ch4"  SITE  "43";
+LOCATE  COMP  "rc_ch7"  SITE  "42";
+LOCATE  COMP  "rc_ch8"  SITE  "41";
 LOCATE  COMP  "signal_light"  SITE  "57";
 LOCATE  COMP  "status_led[0]"  SITE  "110";
 LOCATE  COMP  "status_led[1]"  SITE  "109";
@@ -490,5 +502,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 31 02:44:18 2015
+Sat Jan  2 15:32:59 2016
 
