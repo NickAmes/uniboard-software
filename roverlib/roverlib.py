@@ -33,7 +33,7 @@ class Uniboard:
 	                              stopbits=serial.STOPBITS_ONE,
 	                              bytesize=serial.EIGHTBITS,
 	                              timeout=0.05)
-		self._message("Start. Uniboard connected on %s"%self._tty_path)
+		#self._message("Start. Uniboard connected on %s"%self._tty_path)
 		
 		#To detect errors, the class keeps track of every register value written to the Uniboard.
 		#This is checked (using the register mask to remove read-only bits) against all reads and writes
@@ -53,7 +53,10 @@ class Uniboard:
 		self._periph_mask = {
 			#Motor PWM
 			0x0200:0xFF,
-			0x0201:0xFF
+			0x0201:0xFF,
+			
+			#RC Receiver
+			#No writeable bits in this peripheral.
 			}
 		
 		#Dictionary of register sizes, in bytes.
@@ -62,7 +65,16 @@ class Uniboard:
 		self._periph_size = {
 			#Motor PWM
 			0x0200:1,
-			0x0201:1
+			0x0201:1,
+			
+			#RC Receiver
+			0x0700:1,
+			0x0701:1,
+			0x0702:1,
+			0x0703:1,
+			0x0704:1,
+			0x0705:1,
+			0x0706:1
 		}
 		pass
 	
@@ -82,6 +94,38 @@ class Uniboard:
 		intvalue = int((speed_f + 1) * 127)
 		self._write_reg(2, 1, intvalue)
 	
+	#RC Receiver
+	def rc_valid(self):
+		"""Returns a dictionary (with keys 1, 2, 3, 4, 7, and 8) containing
+		   True/False values indicating if the RC channel with the corresponding
+		   key is receiving a valid PWM signal."""
+		reg = self._read_reg(7, 0)
+		valid = {}
+		valid[1] = ((reg & 0x01) != 0)
+		valid[2] = ((reg & 0x02) != 0)
+		valid[3] = ((reg & 0x04) != 0)
+		valid[4] = ((reg & 0x08) != 0)
+		valid[7] = ((reg & 0x40) != 0)
+		valid[8] = ((reg & 0x80) != 0)
+		return valid
+	
+	def rc_value(self, channel):
+		"""Returns the value (from -1 to 1, corresponding to 1ms to 2ms pulse width) on the
+		   requested RC channel (1, 2, 3, 4, 7, or 8). If the RC channel is not receiving a valid
+		   signal, None is returned."""
+		if channel not in [1, 2, 3, 4, 7, 8]:
+			raise ValueError("Invalid RC channel; expected 1, 2, 3, 4, 7, or 8.");
+		
+		valid = self.rc_valid()
+		if(channel <= 4):
+			value = self._read_reg(7, channel);
+		else:
+			value = self._read_reg(7, channel - 2);
+		if valid[channel]:
+			return (float(value) / 127.5) - 1.0
+		else:	
+			return None
+						
 	#Public API Ends Here
 	
 	
