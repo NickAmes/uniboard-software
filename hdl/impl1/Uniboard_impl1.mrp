@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  01/05/16  22:18:27
+Mapped on:  01/05/16  22:38:43
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ WARNING - map: IO buffer missing for top level port encoder_ra...logic will be
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -396,7 +396,7 @@ Signal protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0 undriven
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal motor_pwm/left/pwm_2_cry_7_0_S0 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal motor_pwm/right/pwm_2_cry_11_0_S0_0 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal rc_receiver/recv_ch8/un66_count_1_s_13_0_S1 undriven or does not drive
 
 
 
-Design:  UniboardTop                                   Date:  01/05/16  22:18:27
+Design:  UniboardTop                                   Date:  01/05/16  22:38:43
 
 Removed logic (cont)
 --------------------

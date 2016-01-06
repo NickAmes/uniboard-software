@@ -26,11 +26,16 @@ u = roverlib.Uniboard("/dev/ttyUSB1")
 		#print u.rc_value(ch)
 	#time.sleep(.1)
 
-#print u._read_reg(4,0)
-
 i = 0
 while True:
-	print u._read_reg(2,0)
+	print u._read_reg(2,0),
+	print " ",
+	print u._read_reg(2,1),
+	print " ",
+	for ch in [1, 2, 3, 4, 7, 8]:
+		print "Ch. %d "%ch,
+		print u.rc_value(ch),
+	print " ",
 	print "i = ",
 	print i
 	i+=1

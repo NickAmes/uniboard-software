@@ -105,7 +105,7 @@ Selecting top level module UniboardTop
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 82MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -117,7 +117,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
 @END
@@ -125,7 +125,7 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
@@ -135,7 +135,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:09 2016
+# Tue Jan  5 22:38:32 2016
 
 ###########################################################]
 Pre-mapping Report
@@ -192,7 +192,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:10 2016
+# Tue Jan  5 22:38:33 2016
 
 ###########################################################]
 Map & Optimize Report
@@ -231,7 +231,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance select[4] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
 @N: MF179 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":251:11:251:38|Found 5 bit by 5 bit '==' comparator, 'sendcount\[0\]2'
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 152MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 151MB peak: 152MB)
 
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 152MB)
@@ -521,7 +521,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:0
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Jan  5 22:18:15 2016
+# Timing Report written on Tue Jan  5 22:38:39 2016
 #
 
 
@@ -710,9 +710,9 @@ VHI:            17
 VLO:            17
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 59MB peak: 197MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:06s; Memory used current: 59MB peak: 197MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Tue Jan  5 22:18:16 2016
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Tue Jan  5 22:38:39 2016
 
 ###########################################################]

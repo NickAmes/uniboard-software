@@ -98,7 +98,7 @@ Selecting top level module UniboardTop
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 82MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
@@ -110,7 +110,7 @@ File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - O
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
 @END
@@ -118,6 +118,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jan  5 22:18:08 2016
+# Tue Jan  5 22:38:31 2016
 
 ###########################################################]
