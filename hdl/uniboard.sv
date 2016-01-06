@@ -405,18 +405,12 @@ module UniboardTop(
 	
 	output logic motor_pwm_l,
 	output logic motor_pwm_r,
-	input logic pause,
+	input logic xbee_pause,
 	
 	inout debug[8:0]
 	);
 	
 	/* Placeholder assignments */
-	assign Stepper_X_Step = 0;
-	assign Stepper_X_Dir = 0;
-	assign Stepper_X_M0 = 0;
-	assign Stepper_X_M1 = 0;
-	assign Stepper_X_M2 = 0;
-	assign Stepper_X_En = 0;
 	assign Stepper_Y_Step = 0;
 	assign Stepper_Y_Dir = 0;
 	assign Stepper_Y_M0 = 0;
@@ -436,7 +430,7 @@ module UniboardTop(
 	assign Stepper_A_M2 = 0;
 	assign Stepper_A_En = 0;
 	
-	assign status_led[0] = 1 | ((& limit)& pause  & encoder_ra & encoder_rb& encoder_ri& encoder_la& encoder_lb & encoder_li&rc_ch1&rc_ch2&rc_ch3&rc_ch4&rc_ch7&rc_ch8&Stepper_X_nFault&Stepper_Y_nFault&Stepper_Z_nFault&Stepper_A_nFault);
+	assign status_led[0] = 1 | ((& limit)& xbee_pause  & encoder_ra & encoder_rb& encoder_ri& encoder_la& encoder_lb & encoder_li&rc_ch1&rc_ch2&rc_ch3&rc_ch4&rc_ch7&rc_ch8&Stepper_X_nFault&Stepper_Y_nFault&Stepper_Z_nFault&Stepper_A_nFault);
 	
 	assign expansion1 = 0;
 	assign expansion2 = 0;
@@ -496,11 +490,15 @@ module UniboardTop(
 	                                           .drdy(drdy));
 	/* Dummy peripheral */
 	logic dummy_select;
-	assign dummy_select = | select[127:8] | select[0] | select[1] | select[3] | select[4] | select[5] | select[6];
+	assign dummy_select = | select[127:8] | select[0] | select[1] | select[3] | select[5] | select[6];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),
 	                      .select(dummy_select));
+	/* Global Control */
+	logic global_pause;
+	assign global_pause = 0;
+	
 	/* Motor PWM */
 	logic clk_255kHz;
 	ClockDivider pwm_clk_div(.factor(32'd47),
@@ -517,6 +515,39 @@ module UniboardTop(
 	                        .pwm_left(motor_pwm_l),
 	                        .pwm_right(motor_pwm_r),
 	                        .reset(reset));
+	/* Arm */
+	logic arm_select[4:0]; /* 0 = X ... 3 = A, 4 = analog. */
+	always_comb
+		begin
+			casex(register_addr)
+				8'b000000xx:
+					arm_select[0] = select;
+				8'b000100xx:
+					arm_select[1] = select;
+				8'b001000xx:
+					arm_select[2] = select;
+				8'b001100xx:
+					arm_select[3] = select;
+				default:
+					arm_select[4] = select;
+			endcase
+		end
+		
+	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
+	                             .databus(databus),
+	                             .reg_size(reg_size),
+	                             .register_addr(register_addr),
+	                             .rw(rw),
+	                             .select(arm_select[0]),
+	                             .pause(global_pause),
+	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
+	                             .step_line(Stepper_X_Step),
+	                             .dir(Stepper_X_Dir),
+	                             .en(Stepper_X_En),
+	                             .fault(Stepper_X_nFault),
+	                             .limitn(limit[0]),
+	                             .reset(reset));
+	
 	/* RC Receiver */
 	RCPeripheral rc_receiver(.clk_12MHz(clk_12MHz),
 	                         .clk_255kHz(clk_255kHz),

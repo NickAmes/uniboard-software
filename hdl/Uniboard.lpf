@@ -51,7 +51,7 @@ LOCATE COMP "encoder_lb" SITE "49" ;
 LOCATE COMP "encoder_li" SITE "48" ;
 LOCATE COMP "motor_pwm_r" SITE "6" ;
 LOCATE COMP "motor_pwm_l" SITE "5" ;
-LOCATE COMP "pause" SITE "4" ;
+LOCATE COMP "xbee_pause" SITE "4" ;
 LOCATE COMP "rc_ch1" SITE "47" ;
 LOCATE COMP "rc_ch2" SITE "45" ;
 LOCATE COMP "rc_ch3" SITE "44" ;

@@ -1,28 +1,30 @@
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 634 of 6864 (9%)
+Register bits: 660 of 6864 (10%)
+Latch bits:      1
 PIC Latch:       0
-I/O cells:       53
+I/O cells:       55
 
 Details:
-CCU2D:          139
-FD1P3AX:        241
-FD1P3IX:        208
-FD1P3JX:        62
-FD1S3AX:        43
+CCU2D:          212
+FD1P3AX:        218
+FD1P3IX:        178
+FD1P3JX:        72
+FD1S1AY:        1
+FD1S3AX:        45
 FD1S3AY:        3
-FD1S3IX:        67
-FD1S3JX:        1
+FD1S3IX:        132
+FD1S3JX:        3
 GSR:            1
-IB:             8
+IB:             10
 IFS1P3DX:       7
-INV:            5
-L6MUX21:        6
+INV:            8
+L6MUX21:        1
 OB:             45
 OFS1P3DX:       2
-ORCALUT4:       883
-PFUMX:          30
+ORCALUT4:       920
+PFUMX:          39
 PUR:            1
-VHI:            17
-VLO:            17
+VHI:            19
+VLO:            19

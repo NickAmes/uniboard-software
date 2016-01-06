@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker(syntax only), version map201409latrcp1, Build 005R, built Feb 11 2015
 # Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Sat Jan  2 15:32:40 2016
+# Written on Tue Jan  5 18:38:27 2016
 
 
 ##### DESIGN INFO #######################################################
@@ -25,8 +25,10 @@ Start                                             Requested     Requested     Cl
 Clock                                             Frequency     Period        Type                                     Group              
 ------------------------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-ClockDivider|clk_o_derived_clock                  1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
+ClockDivider_1|clk_o_derived_clock                1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ProtocolInterface_12s|select_derived_clock[7]     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
+System                                            1.0 MHz       1000.000      system                                   system_clkgroup    
+UniboardTop|arm_select_0__inferred_clock          1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_1
 UniboardTop|clk_12MHz                             1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
 ==========================================================================================================================================

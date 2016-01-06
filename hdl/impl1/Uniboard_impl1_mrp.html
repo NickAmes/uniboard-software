@@ -26,23 +26,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  01/02/16  15:32:53
+Mapped on:  01/05/16  20:31:05
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    634 out of  7209 (9%)
-      PFU registers:          625 out of  6864 (9%)
+   Number of registers:    661 out of  7209 (9%)
+      PFU registers:          652 out of  6864 (9%)
       PIO registers:            9 out of   345 (3%)
-   Number of SLICEs:       643 out of  3432 (19%)
-      SLICEs as Logic/ROM:    643 out of  3432 (19%)
+   Number of SLICEs:       678 out of  3432 (20%)
+      SLICEs as Logic/ROM:    678 out of  3432 (20%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        139 out of  3432 (4%)
-   Number of LUT4s:        1167 out of  6864 (17%)
-      Number of logic LUTs:      889
+      SLICEs as Carry:        212 out of  3432 (6%)
+   Number of LUT4s:        1352 out of  6864 (20%)
+      Number of logic LUTs:      928
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:    139 (278 LUT4s)
+      Number of ripple logic:    212 (424 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 53 + 4(JTAG) out of 115 (50%)
+   Number of PIO sites used: 55 + 4(JTAG) out of 115 (51%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -68,43 +68,49 @@ Mapped on:  01/02/16  15:32:53
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
 
-   Number of clocks:  1
-     Net clk_255kHzgen: 421 loads, 421 rising, 0 falling (Driver: PIO clk_12MHz
+   Number of clocks:  3
+     Net clk_255kHzgen: 373 loads, 373 rising, 0 falling (Driver: PIO clk_12MHz
      )
-   Number of Clock Enables:  46
-     Net interface_reset: 17 loads, 17 LSLICEs
-     Net clk_o_RNITESH: 136 loads, 128 LSLICEs
+     Net arm_select_0_2[0]: 1 loads, 1 rising, 0 falling (Driver:
+     motor_pwm/arm_select_0_2[0] )
+     Net arm_select_0_: 19 loads, 19 rising, 0 falling (Driver: arm_select_0_ )
+   Number of Clock Enables:  51
+     Net interface_reset: 13 loads, 13 LSLICEs
+     Net G_489: 64 loads, 56 LSLICEs
      Net un1_state[0]23_1_2_RNII24N: 1 loads, 0 LSLICEs
      Net reset4_i: 2 loads, 2 LSLICEs
-     Net rc_receiver/recv_ch8/valid_RNO_2: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch8/count[0]_0_sqmuxa_i_o3_RNI1JFD1: 8 loads, 8
+     Net rc_receiver/recv_ch8/un1_count[0]_3lto13_RNI3K8C1: 7 loads, 7 LSLICEs
+     Net rc_receiver/recv_ch8/valid_RNO_0_2: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch7/count[0]_0_sqmuxa_i_o3_RNIU6711: 7 loads, 7
      LSLICEs
      Net rc_receiver/recv_ch7/valid_RNO_1: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch7/count[0]_0_sqmuxa_i_o3_RNIU6711: 8 loads, 8
-     LSLICEs
+     Net debug_c[6]: 1 loads, 1 LSLICEs
+     Net un1_state[0]_1: 1 loads, 1 LSLICEs
+     Net rc_receiver/G_478: 6 loads, 6 LSLICEs
      Net rc_receiver/recv_ch4/valid_RNO_0_1: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch4/count[0]4_RNIHN6C1: 8 loads, 8 LSLICEs
+     Net rc_receiver/recv_ch4/un1_count[0]_3lto13_RNINF3F1: 7 loads, 7 LSLICEs
      Net rc_receiver/recv_ch3/valid_RNO_0_0: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch3/un1_count[0]_3lto13_RNIK6QB1: 7 loads, 7 LSLICEs
+     Net rc_receiver/recv_ch3/un1_count[0]_3lto13_RNIK6QB1: 8 loads, 8 LSLICEs
+     Net rc_receiver/recv_ch2/un1_count[0]_3lto13_RNIHTG81: 7 loads, 7 LSLICEs
      Net rc_receiver/recv_ch2/valid_RNO_0: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch2/count[0]_0_sqmuxa_i_o3_RNIFAT31: 7 loads, 7
-     LSLICEs
-     Net rc_receiver/recv_ch1/valid_RNO: 1 loads, 1 LSLICEs
      Net rc_receiver/recv_ch1/count[0]_0_sqmuxa_i_o3_RNICUK71: 7 loads, 7
      LSLICEs
-     Net G_663: 30 loads, 30 LSLICEs
-     Net motor_pwm/read_value[0]2_RNILCH23_0: 4 loads, 4 LSLICEs
-     Net motor_pwm/right/count[12]_RNI6MPC3: 4 loads, 4 LSLICEs
-     Net motor_pwm/left/count[1]_RNIFKN34: 4 loads, 4 LSLICEs
-     Net motor_pwm/read_value[0]3_RNIJP023: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch1/valid_RNO: 1 loads, 1 LSLICEs
+     Net arm_x/register[3]e: 17 loads, 17 LSLICEs
+     Net arm_x/register[2]_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net arm_x/register[0]_0_sqmuxa: 18 loads, 18 LSLICEs
+     Net motor_pwm/register_0__cnv[0]: 4 loads, 4 LSLICEs
+     Net motor_pwm/right/count[11]_RNI6MPC3: 4 loads, 4 LSLICEs
+     Net motor_pwm/left/count[0]_RNIFKN34: 4 loads, 4 LSLICEs
      Net motor_pwm/read_size[0]_cnv: 5 loads, 5 LSLICEs
+     Net motor_pwm/register_1__cnv[0]: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_bufcount[0]_0_sqmuxa: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNI3MOPC: 2 loads, 2 LSLICEs
      Net protocol_interface/uart_output/tdata_0_5_RNIBCJGD: 5 loads, 5 LSLICEs
      Net protocol_interface/uart_output/busy_RNO: 1 loads, 1 LSLICEs
-     Net protocol_interface/databus_out[0]_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net protocol_interface/esc_data[0]4_RNINB0S: 3 loads, 3 LSLICEs
      Net protocol_interface/uart_input/rdata_4__RNO: 1 loads, 1 LSLICEs
-     Net protocol_interface/un1_state[4]_1_sqmuxa_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[4]_1_sqmuxa_i: 3 loads, 3 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_2: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_3: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state[0]23_8: 1 loads, 1 LSLICEs
@@ -113,55 +119,57 @@ Mapped on:  01/02/16  15:32:53
      Net protocol_interface/uart_input/un1_state[0]23_6: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/un1_state_2_i: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/drdy_2_sqmuxa: 4 loads, 4 LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_7_i: 9 loads, 9 LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_4_i: 9 loads, 9 LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_6_i: 9 loads, 9 LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_5_i: 9 loads, 9 LSLICEs
-     Net protocol_interface/un1_select535_3: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_select535_2: 4 loads, 4 LSLICEs
-     Net protocol_interface/esc_data[0]4_RNIM30K1: 3 loads, 3 LSLICEs
-     Net protocol_interface/reg_addr[0]_1_sqmuxa: 5 loads, 5 LSLICEs
+     Net protocol_interface/un1_select535_3: 4 loads, 4 LSLICEs
+     Net protocol_interface/reg_addr[0]_1_sqmuxa: 8 loads, 8 LSLICEs
+     Net protocol_interface/databus_out[0]_1_sqmuxa: 16 loads, 16 LSLICEs
      Net protocol_interface/un1_state[4]: 1 loads, 1 LSLICEs
-   Number of LSRs:  17
-     Net interface_reset: 16 loads, 16 LSLICEs
 
-     Net debug_c[6]: 1 loads, 1 LSLICEs
-     Net G_665: 29 loads, 29 LSLICEs
-     Net G_703: 4 loads, 4 LSLICEs
-     Net motor_pwm/read_value[0]2_RNILCH23: 4 loads, 4 LSLICEs
-     Net motor_pwm/right/count[11]_RNI6MPC3: 5 loads, 5 LSLICEs
-     Net motor_pwm/left/count[7]_RNIFKN34: 5 loads, 5 LSLICEs
-     Net motor_pwm/read_value[0]2_RNI12R63: 4 loads, 4 LSLICEs
-     Net pwm_clk_div/N_16: 16 loads, 16 LSLICEs
+     Net protocol_interface/un1_state[0]_4_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_5_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_6_i: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_7_i: 4 loads, 4 LSLICEs
+   Number of LSRs:  23
+     Net interface_reset: 15 loads, 15 LSLICEs
+     Net debug_c[6]: 37 loads, 37 LSLICEs
+     Net G_518: 4 loads, 4 LSLICEs
+     Net rc_receiver/G_480: 5 loads, 5 LSLICEs
+     Net arm_x.read_value[0]2: 1 loads, 1 LSLICEs
+     Net arm_x/step_clock_div/N_163_1_i: 16 loads, 16 LSLICEs
+     Net arm_x/read_value[0]2_i: 15 loads, 15 LSLICEs
+     Net arm_select_0_2_i[0]: 2 loads, 2 LSLICEs
+     Net arm_x/read_value[0]4: 1 loads, 1 LSLICEs
+     Net motor_pwm/register_0__581: 4 loads, 4 LSLICEs
+     Net motor_pwm/right/count[0]2_9_RNIQPCS: 4 loads, 4 LSLICEs
+     Net motor_pwm/left/count[0]2_9_RNIK94E1: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[7]_579: 4 loads, 4 LSLICEs
+     Net pwm_clk_div/N_227_1_i: 16 loads, 16 LSLICEs
+     Net protocol_interface/uart_output/baud_gen/count[0]2: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNIM4J9D: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_output/fb: 1 loads, 1 LSLICEs
-     Net protocol_interface/uart_output/baud_gen/count[0]2: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_input/baud_reset: 19 loads, 19 LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_7_RNI9R0S: 9 loads, 9
-     LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_4_RNI6R0S: 9 loads, 9
-     LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_6_RNI8R0S: 9 loads, 9
-     LSLICEs
-     Net protocol_interface/uart_input/un1_state[0]_5_RNI7R0S: 9 loads, 9
-     LSLICEs
+     Net protocol_interface/un1_state[0]_7_RNI9R0S: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_4_RNI6R0S: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_6_RNI8R0S: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_state[0]_5_RNI7R0S: 4 loads, 4 LSLICEs
+     Net protocol_interface/select_RNO[0]: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net clk_o_RNITESH: 144 loads
-     Net interface_reset: 62 loads
-     Net debug_c[8]: 46 loads
-     Net debug_c[4]: 44 loads
-     Net debug_c[3]: 30 loads
-     Net G_663: 30 loads
+     Net debug_c[6]: 93 loads
+     Net G_489: 77 loads
+     Net interface_reset: 58 loads
+     Net debug_c[8]: 57 loads
+     Net debug_c[5]: 54 loads
+     Net debug_c[4]: 43 loads
+     Net arm_x/un1_register[0]9: 32 loads
      Net debug_c[2]: 29 loads
-     Net G_665: 29 loads
-     Net debug_c[5]: 26 loads
-     Net protocol_interface/state[4]: 26 loads
+     Net debug_c[3]: 28 loads
+     Net rc_receiver.recv_ch3.latched_in: 28 loads
 
 
 
 
-   Number of warnings:  15
+   Number of warnings:  13
    Number of errors:    0
      
 
@@ -170,22 +178,18 @@ Mapped on:  01/02/16  15:32:53
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: IO buffer missing for top level port Stepper_X_nFault...logic
-     will be discarded.
 WARNING - map: IO buffer missing for top level port Stepper_Y_nFault...logic
      will be discarded.
 WARNING - map: IO buffer missing for top level port Stepper_Z_nFault...logic
      will be discarded.
 WARNING - map: IO buffer missing for top level port Stepper_A_nFault...logic
+
      will be discarded.
 WARNING - map: IO buffer missing for top level port limit[3:0](3)...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port limit[3:0](2)...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port limit[3:0](1)...logic will
-
-     be discarded.
-WARNING - map: IO buffer missing for top level port limit[3:0](0)...logic will
      be discarded.
 WARNING - map: IO buffer missing for top level port encoder_ra...logic will be
      discarded.
@@ -199,7 +203,7 @@ WARNING - map: IO buffer missing for top level port encoder_lb...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port encoder_li...logic will be
      discarded.
-WARNING - map: IO buffer missing for top level port pause...logic will be
+WARNING - map: IO buffer missing for top level port xbee_pause...logic will be
      discarded.
 
 
@@ -237,11 +241,11 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 | motor_pwm_l         | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | rc_ch8              | INPUT     | LVCMOS25  | IN         |
+
 +---------------------+-----------+-----------+------------+
 | rc_ch7              | INPUT     | LVCMOS25  | IN         |
 +---------------------+-----------+-----------+------------+
 | rc_ch4              | INPUT     | LVCMOS25  | IN         |
-
 +---------------------+-----------+-----------+------------+
 | rc_ch3              | INPUT     | LVCMOS25  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -260,6 +264,8 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 | expansion2          | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | expansion1          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| limit[0]            | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_A_En        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -292,13 +298,15 @@ WARNING - map: IO buffer missing for top level port pause...logic will be
 | Stepper_Y_M1        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_M0        | OUTPUT    | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_Dir       | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | Stepper_Y_Step      | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| Stepper_X_nFault    | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | Stepper_X_En        | OUTPUT    | LVCMOS25  |            |
-
 +---------------------+-----------+-----------+------------+
 | Stepper_X_M2        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -334,11 +342,13 @@ Block protocol_interface/uart_output/VCC undriven or does not drive anything -
      clipped.
 Block protocol_interface/uart_output/GND undriven or does not drive anything -
      clipped.
-Block motor_pwm/GND undriven or does not drive anything - clipped.
 Block motor_pwm/VCC undriven or does not drive anything - clipped.
+Block motor_pwm/GND undriven or does not drive anything - clipped.
+Block arm_x/VCC undriven or does not drive anything - clipped.
 Block rc_receiver/GND undriven or does not drive anything - clipped.
 Block rc_receiver/VCC undriven or does not drive anything - clipped.
 Signal interface_reset_i was merged into signal interface_reset
+Signal arm_x/debug_c_i[6] was merged into signal debug_c[6]
 Signal protocol_interface/uart_input/baud_gen/GND undriven or does not drive
      anything - clipped.
 Signal protocol_interface/uart_output/baud_gen/GND undriven or does not drive
@@ -346,6 +356,9 @@ Signal protocol_interface/uart_output/baud_gen/GND undriven or does not drive
 Signal pwm_clk_div/GND undriven or does not drive anything - clipped.
 Signal motor_pwm/left/GND undriven or does not drive anything - clipped.
 Signal motor_pwm/right/GND undriven or does not drive anything - clipped.
+
+Signal arm_x/GND undriven or does not drive anything - clipped.
+Signal arm_x/step_clock_div/GND undriven or does not drive anything - clipped.
 Signal rc_receiver/recv_ch1/GND undriven or does not drive anything - clipped.
 Signal rc_receiver/recv_ch2/GND undriven or does not drive anything - clipped.
 Signal rc_receiver/recv_ch3/GND undriven or does not drive anything - clipped.
@@ -356,7 +369,6 @@ Signal protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S1_0 undriven
      or does not drive anything - clipped.
 Signal protocol_interface/uart_input/baud_gen/un129_count_cry_0_0_S0_0 undriven
      or does not drive anything - clipped.
-
 Signal protocol_interface/uart_input/baud_gen/N_1 undriven or does not drive
      anything - clipped.
 Signal protocol_interface/uart_input/baud_gen/un129_count_s_31_0_S1_0 undriven
@@ -373,34 +385,35 @@ Signal protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1 undriven or
      does not drive anything - clipped.
 Signal protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT undriven
      or does not drive anything - clipped.
-Signal pwm_clk_div/un129_count_1_s_31_0_S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/un129_count_1_s_31_0_COUT undriven or does not drive anything
+Signal pwm_clk_div/un129_count_1_s_31_0_S1_0 undriven or does not drive anything
      - clipped.
-Signal pwm_clk_div/un129_count_1_cry_0_0_S1 undriven or does not drive anything
-     - clipped.
-Signal pwm_clk_div/un129_count_1_cry_0_0_S0 undriven or does not drive anything
-     - clipped.
+Signal pwm_clk_div/un129_count_1_s_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal pwm_clk_div/un129_count_1_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal pwm_clk_div/un129_count_1_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
 Signal pwm_clk_div/N_1 undriven or does not drive anything - clipped.
-Signal motor_pwm/left/un53_count_cry_0_0_S1_0 undriven or does not drive
-     anything - clipped.
-Signal motor_pwm/left/un53_count_cry_0_0_S0_0 undriven or does not drive
-     anything - clipped.
-Signal motor_pwm/left/N_1 undriven or does not drive anything - clipped.
-Signal motor_pwm/left/un53_count_cry_11_0_COUT_0 undriven or does not drive
-     anything - clipped.
 Signal motor_pwm/left/un1_latched_width[0]_cry_0_0_S1_0 undriven or does not
      drive anything - clipped.
 Signal motor_pwm/left/un1_latched_width[0]_cry_0_0_S0_0 undriven or does not
      drive anything - clipped.
-Signal motor_pwm/left/N_2 undriven or does not drive anything - clipped.
+Signal motor_pwm/left/N_1 undriven or does not drive anything - clipped.
 Signal motor_pwm/left/un1_latched_width[0]_cry_7_0_COUT_0 undriven or does not
      drive anything - clipped.
+Signal motor_pwm/left/un53_count_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal motor_pwm/left/un53_count_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal motor_pwm/left/N_2 undriven or does not drive anything - clipped.
+Signal motor_pwm/left/un53_count_cry_11_0_COUT_0 undriven or does not drive
+     anything - clipped.
 Signal motor_pwm/left/pwm_2_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/N_3 undriven or does not drive anything - clipped.
+
 Signal motor_pwm/left/pwm_2_cry_1_0_S1 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_1_0_S0 undriven or does not drive anything -
@@ -413,7 +426,6 @@ Signal motor_pwm/left/pwm_2_cry_5_0_S1 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_5_0_S0 undriven or does not drive anything -
      clipped.
-
 Signal motor_pwm/left/pwm_2_cry_7_0_S1 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/pwm_2_cry_7_0_S0 undriven or does not drive anything -
@@ -458,6 +470,7 @@ Signal motor_pwm/right/pwm_2_cry_3_0_S1_0 undriven or does not drive anything -
 Signal motor_pwm/right/pwm_2_cry_3_0_S0_0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/pwm_2_cry_5_0_S1_0 undriven or does not drive anything -
+
      clipped.
 Signal motor_pwm/right/pwm_2_cry_5_0_S0_0 undriven or does not drive anything -
      clipped.
@@ -470,7 +483,6 @@ Signal motor_pwm/right/pwm_2_cry_9_0_S1_0 undriven or does not drive anything -
 Signal motor_pwm/right/pwm_2_cry_9_0_S0_0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/pwm_2_cry_11_0_S1_0 undriven or does not drive anything -
-
      clipped.
 Signal motor_pwm/right/pwm_2_cry_11_0_S0_0 undriven or does not drive anything -
      clipped.
@@ -478,32 +490,149 @@ Signal motor_pwm/right/pwm_2_cry_12_0_S1_0 undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/pwm_2_cry_12_0_COUT_0 undriven or does not drive anything
      - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_4 undriven or does not drive
+Signal arm_x/register[3]_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal arm_x/N_1 undriven or does not drive anything - clipped.
+Signal arm_x/register[3]_s_0_S1[31] undriven or does not drive anything -
+     clipped.
+Signal arm_x/register[3]_s_0_COUT[31] undriven or does not drive anything -
+     clipped.
+Signal arm_x/step_clock_div/register[2]_i[0] undriven or does not drive anything
+     - clipped.
+Signal arm_x/step_clock_div/count[0]2_a_4_cry_0_0_S0 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4 undriven or does not drive
+Signal arm_x/step_clock_div/N_1 undriven or does not drive anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_a_4_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_a_4_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/un129_count_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/un129_count_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/N_2 undriven or does not drive anything - clipped.
+Signal arm_x/step_clock_div/un129_count_1_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/un129_count_1_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[0] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/N_3 undriven or does not drive anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[1] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[1] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[3] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[3] undriven or does not drive
+
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[5] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[5] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[7] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[7] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[9] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[9] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[11] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[11] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[13] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[13] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[15] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[18] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[18] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[22] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[22] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S1[26] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[26] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_S0[30] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/clk_o8_cry_0_COUT[30] undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_N_77 undriven or does not drive anything
+     - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/N_4 undriven or does not drive anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_51_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal arm_x/step_clock_div/count[0]2_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clock_div/count[0]2_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_3 undriven or does not drive
+     anything - clipped.
+Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_3 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch1/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4 undriven or does not drive
+Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_3 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4 undriven or does not
+Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_3 undriven or does not
      drive anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_3 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_2 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_3 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_2 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch2/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_3 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_2 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_3 undriven or does not
+Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_2 undriven or does not
      drive anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_2 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_4 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_4 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch3/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_2 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_4 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_2 undriven or does not
+Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_4 undriven or does not
      drive anything - clipped.
 Signal rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_1 undriven or does not drive
      anything - clipped.
@@ -512,6 +641,7 @@ Signal rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_1 undriven or does not drive
 Signal rc_receiver/recv_ch4/N_1 undriven or does not drive anything - clipped.
 Signal rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_1 undriven or does not drive
      anything - clipped.
+
 Signal rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_1 undriven or does not
      drive anything - clipped.
 Signal rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0 undriven or does not drive
@@ -527,18 +657,20 @@ Signal rc_receiver/recv_ch8/un66_count_1_cry_0_0_S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch8/un66_count_1_cry_0_0_S0 undriven or does not drive
      anything - clipped.
-
 Signal rc_receiver/recv_ch8/N_1 undriven or does not drive anything - clipped.
 Signal rc_receiver/recv_ch8/un66_count_1_s_13_0_S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch8/un66_count_1_s_13_0_COUT undriven or does not drive
      anything - clipped.
 Block interface_reset_RNIJEQF was optimized away.
+Block arm_x/int_step_RNO was optimized away.
 Block protocol_interface/uart_input/baud_gen/GND was optimized away.
 Block protocol_interface/uart_output/baud_gen/GND was optimized away.
 Block pwm_clk_div/GND was optimized away.
 Block motor_pwm/left/GND was optimized away.
 Block motor_pwm/right/GND was optimized away.
+Block arm_x/GND was optimized away.
+Block arm_x/step_clock_div/GND was optimized away.
 Block rc_receiver/recv_ch1/GND was optimized away.
 Block rc_receiver/recv_ch2/GND was optimized away.
 Block rc_receiver/recv_ch3/GND was optimized away.
@@ -562,24 +694,6 @@ Block rc_receiver/recv_ch8/GND was optimized away.
    Total REAL Time: 0 secs  
    Peak Memory Usage: 190 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

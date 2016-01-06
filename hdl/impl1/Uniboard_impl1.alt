@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sat Jan  2 15:33:10 2016 *
+NOTE DATE CREATED: Tue Jan  5 20:31:23 2016 *
 NOTE DESIGN NAME: UniboardTop *
 NOTE DEVICE NAME: LCMXO2-7000HC-6TQFP144 *
 NOTE PIN ASSIGNMENTS *
@@ -29,6 +29,7 @@ NOTE PINS expansion4 : 61 : out *
 NOTE PINS expansion3 : 60 : out *
 NOTE PINS expansion2 : 59 : out *
 NOTE PINS expansion1 : 58 : out *
+NOTE PINS limit[0] : 68 : in *
 NOTE PINS Stepper_A_En : 69 : out *
 NOTE PINS Stepper_A_M2 : 73 : out *
 NOTE PINS Stepper_A_M1 : 71 : out *
@@ -47,6 +48,7 @@ NOTE PINS Stepper_Y_M1 : 94 : out *
 NOTE PINS Stepper_Y_M0 : 95 : out *
 NOTE PINS Stepper_Y_Dir : 86 : out *
 NOTE PINS Stepper_Y_Step : 87 : out *
+NOTE PINS Stepper_X_nFault : 106 : in *
 NOTE PINS Stepper_X_En : 105 : out *
 NOTE PINS Stepper_X_M2 : 100 : out *
 NOTE PINS Stepper_X_M1 : 103 : out *

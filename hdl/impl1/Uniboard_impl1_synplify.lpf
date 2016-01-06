@@ -4,6 +4,7 @@
 
 # Period Constraints 
 #FREQUENCY PORT "clk_12MHz" 1.0 MHz;
+#FREQUENCY NET "arm_select_0_" 1.0 MHz;
 
 
 # Output Constraints 
@@ -15,6 +16,8 @@
 
 
 # Block Path Constraints 
+#BLOCK PATH FROM CLKNET "arm_select_0_" TO CLKNET "clk_12MHz_c";
+#BLOCK PATH FROM CLKNET "clk_12MHz_c" TO CLKNET "arm_select_0_";
 
 BLOCK ASYNCPATHS;
 

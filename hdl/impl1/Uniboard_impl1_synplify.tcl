@@ -48,6 +48,7 @@ add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv}
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv}
 add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv}
+add_file -verilog {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv}
 
 #-- top module name
 set_option -top_module UniboardTop

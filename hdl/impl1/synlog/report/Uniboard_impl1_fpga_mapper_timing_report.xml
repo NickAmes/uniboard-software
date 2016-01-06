@@ -21,7 +21,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>NA</data>
 </row>
 <row>
-<data>ClockDivider|clk_o_derived_clock</data>
+<data>ClockDivider_1|clk_o_derived_clock</data>
 <data>1.0 MHz</data>
 <data>NA</data>
 <data>NA</data>
@@ -39,9 +39,21 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>NA</data>
 </row>
 <row>
+<data>UniboardTop|arm_select_0__inferred_clock</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
 <data>UniboardTop|clk_12MHz</data>
 <data>1.0 MHz</data>
-<data>99.3 MHz</data>
-<data>989.934</data>
+<data>86.7 MHz</data>
+<data>988.462</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>107.7 MHz</data>
+<data>990.713</data>
 </row>
 </report_table>

@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jan  2 15:32:46 2016
+# Timing Report written on Tue Jan  5 18:38:34 2016
 #
 
 
@@ -20,16 +20,18 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.326
+Worst slack in design: 0.365
 
                                                   Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack       Type                                     Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-ClockDivider|clk_o_derived_clock                  1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
+ClockDivider_1|clk_o_derived_clock                1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
 ProtocolInterface_12s|select_derived_clock[7]     1.0 MHz       NA            1000.000      NA            NA          derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-UniboardTop|clk_12MHz                             1.0 MHz       99.3 MHz      1000.000      10.066        989.934     inferred                                 Inferred_clkgroup_0
+UniboardTop|arm_select_0__inferred_clock          1.0 MHz       NA            1000.000      NA            NA          inferred                                 Inferred_clkgroup_1
+UniboardTop|clk_12MHz                             1.0 MHz       86.7 MHz      1000.000      11.538        988.462     inferred                                 Inferred_clkgroup_0
+System                                            1.0 MHz       1.0 MHz       1000.000      999.102       0.898       system                                   system_clkgroup    
 ==================================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -38,12 +40,16 @@ UniboardTop|clk_12MHz                             1.0 MHz       99.3 MHz      10
 Clock Relationships
 *******************
 
-Clocks                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-------------------------------------------------------------------------------------------------------------------------------------
-Starting               Ending                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
-------------------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  0.000       0.326  |  No paths    -      |  No paths    -      |  No paths    -    
-====================================================================================================================================
+Clocks                                                                              |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                  Ending                                    |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                    UniboardTop|clk_12MHz                     |  0.000       0.898  |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|clk_12MHz                     System                                    |  0.000       0.606  |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|clk_12MHz                     UniboardTop|clk_12MHz                     |  0.000       0.365  |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|clk_12MHz                     UniboardTop|arm_select_0__inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+UniboardTop|arm_select_0__inferred_clock  UniboardTop|clk_12MHz                     |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -69,9 +75,9 @@ Starting Points with Worst Slack
 Instance                                          Reference                 Type         Pin     Net                                        Time        Slack
                                                   Clock                                                                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-reset                                             UniboardTop|clk_12MHz     FD1S3AY      Q       debug_c[6]                                 0.887       0.326
 protocol_interface.uart_input.baud_reset          UniboardTop|clk_12MHz     FD1S3AY      Q       baud_reset                                 0.927       0.365
-interface_reset                                   UniboardTop|clk_12MHz     FD1S3AY      Q       interface_reset                            0.954       0.392
+interface_reset                                   UniboardTop|clk_12MHz     FD1S3AY      Q       interface_reset                            0.955       0.393
+reset                                             UniboardTop|clk_12MHz     FD1S3AY      Q       debug_c[6]                                 1.029       0.467
 protocol_interface.uart_output.baud_gen.clk_o     UniboardTop|clk_12MHz     FD1S3AX      Q       bclk                                       0.775       0.528
 protocol_interface_uart_input_rdata_0_io          UniboardTop|clk_12MHz     IFS1P3DX     Q       protocol_interface.uart_input.rdata_0_     0.680       0.606
 protocol_interface.uart_input.rdata_1_            UniboardTop|clk_12MHz     FD1P3AX      Q       rdata_1_                                   0.680       0.606
@@ -89,7 +95,6 @@ Ending Points with Worst Slack
 Instance                                              Reference                 Type        Pin     Net            Time         Slack
                                                       Clock                                                                          
 -------------------------------------------------------------------------------------------------------------------------------------
-pwm_clk_div.count\[0\]                                UniboardTop|clk_12MHz     FD1S3IX     CD      debug_c[6]     0.562        0.326
 protocol_interface.uart_input.baud_gen.clk_o          UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[0\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[1\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
@@ -99,6 +104,7 @@ protocol_interface.uart_input.baud_gen.count\[4\]     UniboardTop|clk_12MHz     
 protocol_interface.uart_input.baud_gen.count\[5\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[6\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[7\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
+protocol_interface.uart_input.baud_gen.count\[8\]     UniboardTop|clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 =====================================================================================================================================
 
 
@@ -108,26 +114,94 @@ Worst Path Information
 
 
 Path information for path number 1: 
-    Propagation time:                        0.887
+    Propagation time:                        0.927
     + Clock delay at starting point:         0.000 (ideal)
     - Requested Period:                      0.000
     - Hold time:                             0.562
     - Clock delay at ending point:           0.000 (ideal)
-    = Slack (critical) :                     0.325
+    = Slack (critical) :                     0.365
 
     Number of logic level(s):                0
-    Starting point:                          reset / Q
-    Ending point:                            pwm_clk_div.count\[0\] / CD
+    Starting point:                          protocol_interface.uart_input.baud_reset / Q
+    Ending point:                            protocol_interface.uart_input.baud_gen.clk_o / CD
     The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
     The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
 
-Instance / Net                         Pin      Pin               Arrival     No. of    
-Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------
-reset                      FD1S3AY     Q        Out     0.887     0.887       -         
-debug_c[6]                 Net         -        -       -         -           16        
-pwm_clk_div.count\[0\]     FD1S3IX     CD       In      0.000     0.887       -         
-========================================================================================
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                             Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+protocol_interface.uart_input.baud_reset         FD1S3AY     Q        Out     0.927     0.927       -         
+baud_reset                                       Net         -        -       -         -           34        
+protocol_interface.uart_input.baud_gen.clk_o     FD1S3IX     CD       In      0.000     0.927       -         
+==============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                              Arrival          
+Instance          Reference     Type        Pin     Net                 Time        Slack
+                  Clock                                                                  
+-----------------------------------------------------------------------------------------
+arm_select_0_     System        FD1S1AY     Q       arm_select_0__i     0.972       0.898
+=========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                 Required          
+Instance                              Reference     Type        Pin     Net                    Time         Slack
+                                      Clock                                                                      
+-----------------------------------------------------------------------------------------------------------------
+protocol_interface.sendcount\[0\]     System        FD1P3AX     D       sendcount\[0\]_4       -0.062       2.094
+arm_x.register\[3\][0]                System        FD1P3AX     D       register\[3\]_s[0]     0.074        2.771
+arm_x.register\[3\][1]                System        FD1P3AX     D       register\[3\]_s[1]     0.074        2.771
+arm_x.register\[3\][2]                System        FD1P3AX     D       register\[3\]_s[2]     0.074        2.771
+arm_x.register\[3\][3]                System        FD1P3AX     D       register\[3\]_s[3]     0.074        2.771
+arm_x.register\[3\][4]                System        FD1P3AX     D       register\[3\]_s[4]     0.074        2.771
+arm_x.register\[3\][5]                System        FD1P3AX     D       register\[3\]_s[5]     0.074        2.771
+arm_x.register\[3\][6]                System        FD1P3AX     D       register\[3\]_s[6]     0.074        2.771
+arm_x.register\[3\][7]                System        FD1P3AX     D       register\[3\]_s[7]     0.074        2.771
+arm_x.register\[3\][8]                System        FD1P3AX     D       register\[3\]_s[8]     0.074        2.771
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.972
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.898
+
+    Number of logic level(s):                0
+    Starting point:                          arm_select_0_ / Q
+    Ending point:                            arm_x.prev_select / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                  Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+arm_select_0_         FD1S1AY     Q        Out     0.972     0.972       -         
+arm_select_0__i       Net         -        -       -         -           72        
+arm_x.prev_select     FD1S3AX     D        In      0.000     0.972       -         
+===================================================================================
 
 
 
