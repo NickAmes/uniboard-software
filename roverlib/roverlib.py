@@ -57,6 +57,11 @@ class Uniboard:
 			
 			#RC Receiver
 			#No writeable bits in this peripheral.
+			
+			#Arm
+			0x0400:0xEF,
+			0x0402:0xFFFFFFFF,
+			0x0403:0xFFFFFFFF
 			}
 		
 		#Dictionary of register sizes, in bytes.
@@ -74,7 +79,12 @@ class Uniboard:
 			0x0703:1,
 			0x0704:1,
 			0x0705:1,
-			0x0706:1
+			0x0706:1,
+			
+			#Arm
+			0x0400:1,
+			0x0402:4,
+			0x0403:4
 		}
 		pass
 	

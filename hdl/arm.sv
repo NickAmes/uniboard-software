@@ -101,7 +101,7 @@ module ArmPeripheral(
 			if(reset)
 				begin
 					register[0] <= 32'b00101010; /* Config register */
-					register[2] <= 32'd12000; /* Div. factor register */
+					register[2] <= 32'd5; //32'd12000; /* Div. factor register */
 					register[3] <= '0; /* Steps register */
 				end
 			else

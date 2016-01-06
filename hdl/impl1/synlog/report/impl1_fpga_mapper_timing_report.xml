@@ -16,26 +16,32 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>ClockDividerP_12s_1|clk_o_derived_clock</data>
-<data>147.6 MHz</data>
+<data>11.9 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>
 <row>
-<data>ClockDivider|clk_o_derived_clock</data>
-<data>147.6 MHz</data>
+<data>ClockDivider_1|clk_o_derived_clock</data>
+<data>11.9 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>
 <row>
 <data>ProtocolInterface_12s|select_derived_clock[2]</data>
-<data>147.6 MHz</data>
+<data>11.9 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>
 <row>
-<data>UniboardTop|clk_12MHz</data>
-<data>147.6 MHz</data>
-<data>139.0 MHz</data>
-<data>-0.420</data>
+<data>ProtocolInterface_12s|select_derived_clock[7]</data>
+<data>11.9 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>clk_12MHz</data>
+<data>11.9 MHz</data>
+<data>84.0 MHz</data>
+<data>72.093</data>
 </row>
 </report_table>

@@ -6,18 +6,18 @@
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_objects.v":1415639098
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/scemi_pipes.svh":1415639098
 #CUR:"/usr/local/diamond/3.4_x64/synpbase/lib/vlog/hypermods.v":1415639098
-#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":1452047895
-#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":1451414603
+#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":1452061080
+#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":1452058185
 #CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":1451793155
 #CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":1451777555
-#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":1452020884
+#CUR:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":1452057623
 0			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv" verilog
 1			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv" verilog
 2			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv" verilog
 3			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv" verilog
 4			"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv" verilog
 #Dependency Lists(Uses List)
-0 1 4 3 2
+0 1 3 2
 1 2
 2 -1
 3 -1
@@ -27,14 +27,14 @@
 1 0
 2 4 1 0
 3 0
-4 0
+4 -1
 #Design Unit to File Association
+module work ArmPeripheral 4
 module work PWMReceiver 3
 module work PWMGenerator 3
 module work ClockDividerP 2
 module work UniboardTop 0
 module work RCPeripheral 3
-module work ArmPeripheral 4
 module work PWMPeripheral 3
 module work ClockDivider 2
 module work DummyPeripheral 0

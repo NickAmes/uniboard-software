@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>3</data>
+<data>2</data>
 <report_link name="more">
 <data>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/report/impl1_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>34</data>
+<data>3</data>
 <report_link name="more">
 <data>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/report/impl1_premap_warnings.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
-<data>141MB</data>
+<data>143MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1451532658</data>
+<data type="timestamp">1452059064</data>
 </info>
 </job_info>
 </job_run_status>

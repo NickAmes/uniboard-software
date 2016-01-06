@@ -1,14 +1,14 @@
-@P:  Worst Slack : 988.462
+@P:  Worst Slack : 990.884
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency : 1.0 MHz
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Period : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Period : 1000.000
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Slack : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Estimated Frequency : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Requested Frequency : 1.0 MHz
-@P:  ClockDivider_1|clk_o_derived_clock - Estimated Period : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Requested Period : 1000.000
-@P:  ClockDivider_1|clk_o_derived_clock - Slack : NA
+@P:  ClockDivider|clk_o_derived_clock - Estimated Frequency : NA
+@P:  ClockDivider|clk_o_derived_clock - Requested Frequency : 1.0 MHz
+@P:  ClockDivider|clk_o_derived_clock - Estimated Period : NA
+@P:  ClockDivider|clk_o_derived_clock - Requested Period : 1000.000
+@P:  ClockDivider|clk_o_derived_clock - Slack : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Frequency : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Requested Frequency : 1.0 MHz
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Period : NA
@@ -19,32 +19,22 @@
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Estimated Period : NA
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Requested Period : 1000.000
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Slack : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Estimated Frequency : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Requested Frequency : 1.0 MHz
-@P:  UniboardTop|arm_select_0__inferred_clock - Estimated Period : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Requested Period : 1000.000
-@P:  UniboardTop|arm_select_0__inferred_clock - Slack : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency : 86.7 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Frequency : 109.7 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period : 11.538
+@P:  UniboardTop|clk_12MHz - Estimated Period : 9.116
 @P:  UniboardTop|clk_12MHz - Requested Period : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack : 988.462
-@P:  System - Estimated Frequency : 107.7 MHz
-@P:  System - Requested Frequency : 1.0 MHz
-@P:  System - Estimated Period : 9.287
-@P:  System - Requested Period : 1000.000
-@P:  System - Slack : 990.713
-@P:  Worst Slack(min analysis) : 0.365
+@P:  UniboardTop|clk_12MHz - Slack : 990.884
+@P:  Worst Slack(min analysis) : 0.326
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Estimated Period(min analysis) : NA
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Requested Period(min analysis) : 1000.000
 @P:  ClockDividerP_12s_1|clk_o_derived_clock - Slack(min analysis) : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
-@P:  ClockDivider_1|clk_o_derived_clock - Estimated Period(min analysis) : NA
-@P:  ClockDivider_1|clk_o_derived_clock - Requested Period(min analysis) : 1000.000
-@P:  ClockDivider_1|clk_o_derived_clock - Slack(min analysis) : NA
+@P:  ClockDivider|clk_o_derived_clock - Estimated Frequency(min analysis) : NA
+@P:  ClockDivider|clk_o_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  ClockDivider|clk_o_derived_clock - Estimated Period(min analysis) : NA
+@P:  ClockDivider|clk_o_derived_clock - Requested Period(min analysis) : 1000.000
+@P:  ClockDivider|clk_o_derived_clock - Slack(min analysis) : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Frequency(min analysis) : NA
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Requested Frequency(min analysis) : 1.0 MHz
 @P:  ProtocolInterface_12s|select_derived_clock[2] - Estimated Period(min analysis) : NA
@@ -55,22 +45,12 @@
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Estimated Period(min analysis) : NA
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Requested Period(min analysis) : 1000.000
 @P:  ProtocolInterface_12s|select_derived_clock[7] - Slack(min analysis) : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Estimated Frequency(min analysis) : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Requested Frequency(min analysis) : 1.0 MHz
-@P:  UniboardTop|arm_select_0__inferred_clock - Estimated Period(min analysis) : NA
-@P:  UniboardTop|arm_select_0__inferred_clock - Requested Period(min analysis) : 1000.000
-@P:  UniboardTop|arm_select_0__inferred_clock - Slack(min analysis) : NA
-@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : 86.7 MHz
+@P:  UniboardTop|clk_12MHz - Estimated Frequency(min analysis) : 109.7 MHz
 @P:  UniboardTop|clk_12MHz - Requested Frequency(min analysis) : 1.0 MHz
-@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : 11.538
+@P:  UniboardTop|clk_12MHz - Estimated Period(min analysis) : 9.116
 @P:  UniboardTop|clk_12MHz - Requested Period(min analysis) : 1000.000
-@P:  UniboardTop|clk_12MHz - Slack(min analysis) : 988.462
-@P:  System - Estimated Frequency(min analysis) : 1.0 MHz
-@P:  System - Requested Frequency(min analysis) : 1.0 MHz
-@P:  System - Estimated Period(min analysis) : 999.102
-@P:  System - Requested Period(min analysis) : 1000.000
-@P:  System - Slack(min analysis) : 0.898
-@P:  Total Area : 928.0
+@P:  UniboardTop|clk_12MHz - Slack(min analysis) : 990.884
+@P:  Total Area : 885.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -87,6 +67,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  Total Area : 0.0
-@P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:06s
+@P:  CPU Time : 0h:00m:05s

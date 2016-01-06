@@ -30,8 +30,11 @@ Running on host :nick-laptop
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
+@I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv"
 Verilog syntax check successful!
-Options changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module UniboardTop
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
 
@@ -48,112 +51,73 @@ Selecting top level module UniboardTop
 	baud_div=32'b00000000000000000000000000001100
    Generated name = UARTTransmitter_12s
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":23:7:23:23|Synthesizing module ProtocolInterface
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":25:7:25:23|Synthesizing module ProtocolInterface
 
 	baud_div=32'b00000000000000000000000000001100
    Generated name = ProtocolInterface_12s
 
-@W: CL169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Pruning register buffer[5][7:0] 
-
-@W: CL169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Pruning register buffer[4][7:0] 
-
-@W: CL169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Pruning register buffer[3][7:0] 
-
-@W: CL169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Pruning register buffer[2][7:0] 
-
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":221:7:221:21|Synthesizing module DummyPeripheral
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":334:7:334:21|Synthesizing module DummyPeripheral
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":37:7:37:18|Synthesizing module ClockDivider
 
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":7:7:7:18|Synthesizing module PWMGenerator
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":38:7:38:19|Synthesizing module PWMPeripheral
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":41:7:41:19|Synthesizing module PWMPeripheral
 
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":233:7:233:17|Synthesizing module UniboardTop
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":65:1:65:6|Register bit read_size[1] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":65:1:65:6|Register bit read_size[2] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":7:7:7:19|Synthesizing module ArmPeripheral
 
-@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":297:7:297:11|Input port bit 8 of debug[8:0] is unused
+	axis_haddr=8'b00000000
+   Generated name = ArmPeripheral_0
 
-@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":297:7:297:11|Input port bit 6 of debug[8:0] is unused
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":56:1:56:6|Register bit read_size[1] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":114:7:114:17|Synthesizing module PWMReceiver
 
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":245:16:245:31|Input Stepper_X_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":253:16:253:31|Input Stepper_Y_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":261:16:261:31|Input Stepper_Z_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":269:16:269:31|Input Stepper_A_nFault is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":271:13:271:17|Input limit is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":279:13:279:22|Input encoder_ra is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":280:13:280:22|Input encoder_rb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":281:13:281:22|Input encoder_ri is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":282:13:282:22|Input encoder_la is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":283:13:283:22|Input encoder_lb is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":284:13:284:22|Input encoder_li is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":286:13:286:18|Input rc_ch1 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":287:13:287:18|Input rc_ch2 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":288:13:288:18|Input rc_ch3 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":289:13:289:18|Input rc_ch4 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":290:13:290:18|Input rc_ch7 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":291:13:291:18|Input rc_ch8 is unused
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":295:13:295:17|Input pause is unused
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'send' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[4]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[5]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[6]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[7]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[8]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[9]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[10]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[11]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[12]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[13]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[14]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[15]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[16]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[17]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[18]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[19]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[20]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[21]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[22]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[23]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[24]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[25]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[26]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[27]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[28]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[29]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[30]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'databus_out[31]' because it is only assigned 0 or its original value.
-@W: CL138 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing register 'rw' because it is only assigned 0 or its original value.
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit databus_out[0] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit databus_out[1] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit databus_out[2] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit databus_out[3] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Register bit bufcount[3] is always 0, optimizing ...
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[1] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[2] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[3] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[4] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[5] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[6] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":47:7:47:13|*Unassigned bits of tx_data[7] are referenced and tied to 0 -- simulation mismatch possible.
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":28:13:28:20|Input reg_size is unused
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":180:7:180:18|Synthesizing module RCPeripheral
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 80MB)
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":208:1:208:6|Register bit read_size[1] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":208:1:208:6|Register bit read_size[2] is always 0, optimizing ...
+@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":346:7:346:17|Synthesizing module UniboardTop
+
+@W: CL246 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":384:13:384:17|Input port bits 3 to 1 of limit[3:0] are unused
+
+@W: CL247 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":410:7:410:11|Input port bit 6 of debug[8:0] is unused
+
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":366:16:366:31|Input Stepper_Y_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":374:16:374:31|Input Stepper_Z_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":382:16:382:31|Input Stepper_A_nFault is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":392:13:392:22|Input encoder_ra is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":393:13:393:22|Input encoder_rb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":394:13:394:22|Input encoder_ri is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":395:13:395:22|Input encoder_la is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":396:13:396:22|Input encoder_lb is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":397:13:397:22|Input encoder_li is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":408:13:408:22|Input xbee_pause is unused
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":181:13:181:21|Input clk_12MHz is unused
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":127:1:127:6|Register bit count[14] is always 0, optimizing ...
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":127:1:127:6|Register bit count[15] is always 0, optimizing ...
+@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":42:13:42:21|Input clk_12MHz is unused
+@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register bit bufcount[3] is always 0, optimizing ...
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:30:55 2015
+# Tue Jan  5 21:45:30 2016
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 200: [: !=: argument expected
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 @N|Running in 64-bit mode
-File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/layer0.srs changed - recompiling
+
+Linker output is up to date. No re-linking necessary
+
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:30:55 2015
+# Tue Jan  5 21:45:30 2016
 
 ###########################################################]
 @END
@@ -161,793 +125,24 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:30:55 2015
+# Tue Jan  5 21:45:30 2016
 
 ###########################################################]
-Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
-@N|Running in 64-bit mode
-File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+@A: multi_srs_gen output is up to date. No run necessary.
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
+Multi-srs Generator Report
+@R:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/impl1_multi_srs_gen.srr"
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:30:57 2015
-
-###########################################################]
+@A: premap output is up to date. No run necessary.
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
 Pre-mapping Report
+@R:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/impl1_premap.srr"
 
-Synopsys Lattice Technology Pre-mapping, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
-Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
-Product Version J-2014.09L
-
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
-
-@L: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt 
-Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt" file 
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled 
-
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
-
-
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
-
-
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
-
-
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
-
-@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@W: FX469 :|Found undriven nets un1[31] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[30] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[29] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[28] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[27] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[26] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[25] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[24] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[23] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[22] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[21] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[20] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[19] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[18] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[17] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[16] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[15] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[14] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[13] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[12] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[11] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[10] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[9] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[8] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[7] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[6] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[5] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[4] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[3] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[2] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[1] to be optimized by the mapper. 
-@W: FX469 :|Found undriven nets un1[0] to be optimized by the mapper. 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":105:1:105:6|Removing sequential instance busy of view:PrimLib.sdffrse(prim) in hierarchy view:work.UARTTransmitter_12s(verilog) because there are no references to its outputs 
-ICG Latch Removal Summary:
-Number of ICG latches removed:	0
-Number of ICG latches not removed:	0
-syn_allowed_resources : blockrams=26  set on top level netlist UniboardTop
-
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-
-
-@S |Clock Summary
-****************
-
-Start                                             Requested     Requested     Clock                                    Clock                
-Clock                                             Frequency     Period        Type                                     Group                
---------------------------------------------------------------------------------------------------------------------------------------------
-ClockDividerP_12s_1|clk_o_derived_clock           1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-ClockDivider|clk_o_derived_clock                  1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-UniboardTop|clk_12MHz                             1.0 MHz       1000.000      inferred                                 Autoconstr_clkgroup_0
-============================================================================================================================================
-
-@W: MT529 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 289 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-
-Pre-mapping successful!
-
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 141MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Dec 30 19:30:58 2015
-
-###########################################################]
+@A: fpga_mapper output is up to date. No run necessary.
+To force a re-synthesis, select [Resynthesize All] in menu [Run].
+Click link to view previous log file.
 Map & Optimize Report
-
-Synopsys Lattice Technology Mapper, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
-Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
-Product Version J-2014.09L
-
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
-
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled 
-
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
-
-
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
-
-
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
-
-
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
-
-
-
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
-
-@W: MO111 :|Tristate driver tri0_inst on net un1[31] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri1_inst on net un1[30] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri2_inst on net un1[29] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri3_inst on net un1[28] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri4_inst on net un1[27] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri5_inst on net un1[26] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri6_inst on net un1[25] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri7_inst on net un1[24] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri8_inst on net un1[23] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri9_inst on net un1[22] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri10_inst on net un1[21] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri11_inst on net un1[20] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri12_inst on net un1[19] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri13_inst on net un1[18] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri14_inst on net un1[17] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri15_inst on net un1[16] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri16_inst on net un1[15] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri17_inst on net un1[14] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri18_inst on net un1[13] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri19_inst on net un1[12] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri20_inst on net un1[11] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri21_inst on net un1[10] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri22_inst on net un1[9] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri23_inst on net un1[8] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri24_inst on net un1[7] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri25_inst on net un1[6] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri26_inst on net un1[5] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri27_inst on net un1[4] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri28_inst on net un1[3] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri29_inst on net un1[2] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri30_inst on net un1[1] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :|Tristate driver tri31_inst on net un1[0] has its enable tied to GND (module UniboardTop) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[0] on net reg_size_1[0] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[1] on net reg_size_1[1] has its enable tied to GND (module DummyPeripheral) 
-@W: MO111 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":228:19:228:35|Tristate driver un3_reg_size[2] on net reg_size_1[2] has its enable tied to GND (module DummyPeripheral) 
-@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[0] on net VCC_tri deleted because its enable is always false 
-@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[1] on net VCC_tri deleted because its enable is always false 
-@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[2] on net VCC_tri deleted because its enable is always false 
-@W: MO112 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":229:19:229:42|Tristate driver un5_databus[3] on net VCC_tri deleted because its enable is always false 
-
-Available hyper_sources - for debug and ip models
-	None Found
-
-@N: MT206 |Auto Constrain mode is enabled
-
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[127] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[126] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[125] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[124] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[123] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[122] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[121] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[120] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[119] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[118] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[117] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[116] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[115] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[114] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[113] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[112] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[111] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[110] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[109] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[108] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[107] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[106] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[105] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[104] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[103] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[102] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[101] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[100] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[99] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[98] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[97] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[96] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[95] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[94] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[93] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[92] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[91] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[90] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[89] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[88] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[87] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[86] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[85] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[84] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[83] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[82] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[81] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[80] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[79] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[78] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[77] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[76] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[75] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[74] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[73] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[72] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[71] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[70] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[69] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[68] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[67] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[66] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[65] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[64] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[63] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[62] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[61] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[60] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[59] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[58] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[57] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[56] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[55] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[54] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[53] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[52] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[51] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[50] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[49] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[48] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[47] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[46] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[45] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[44] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[43] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[42] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[41] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[40] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[39] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[38] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[37] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[36] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[35] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[34] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[33] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[32] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[31] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[30] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[29] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[28] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[27] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[26] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[25] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[24] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[23] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[22] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[21] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[20] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[19] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[18] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[17] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[16] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[15] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[14] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[13] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[12] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[11] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[10] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[9] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[8] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[7] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[6] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[5] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[4] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[3] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[1] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Removing sequential instance select[0] in hierarchy view:work.ProtocolInterface_12s(verilog) because there are no references to its outputs 
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[6],  because it is equivalent to instance motor_pwm.register_0_[5]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[5],  because it is equivalent to instance motor_pwm.register_0_[4]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[4],  because it is equivalent to instance motor_pwm.register_0_[3]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[3],  because it is equivalent to instance motor_pwm.register_0_[2]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[2],  because it is equivalent to instance motor_pwm.register_0_[1]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_0_[1],  because it is equivalent to instance motor_pwm.register_0_[0]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[6],  because it is equivalent to instance motor_pwm.register_1_[5]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[5],  because it is equivalent to instance motor_pwm.register_1_[4]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[4],  because it is equivalent to instance motor_pwm.register_1_[3]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing instance motor_pwm.register_1_[3],  because it is equivalent to instance motor_pwm.register_1_[2]
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing sequential instance motor_pwm.register_0_[7] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-@N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":70:1:70:6|Removing sequential instance motor_pwm.register_1_[7] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
-
-
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
-
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
-
-
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
-
-
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
-
-
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 151MB)
-
-Pass		 CPU time		Worst Slack		Luts / Registers
-------------------------------------------------------------
-Pass		 CPU time		Worst Slack		Luts / Registers
-------------------------------------------------------------
-   1		0h:00m:01s		    -2.62ns		 214 /       197
-   2		0h:00m:01s		    -1.99ns		 210 /       197
-------------------------------------------------------------
-
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":45:1:45:6|Instance "motor_pwm.clkdiv.N_227_1_i" with 31 loads replicated 1 times to improve timing 
-Timing driven replication report
-Added 0 Registers via timing driven replication
-Added 1 LUTs via timing driven replication
-
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":362:1:362:6|Instance "interface_reset" with 37 loads replicated 1 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":45:1:45:6|Instance "motor_pwm.clkdiv.count\[0\]" with 4 loads replicated 1 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Instance "protocol_interface.uart_output.baud_gen.count\[2\]" with 5 loads replicated 1 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Instance "protocol_interface.uart_input.baud_gen.count\[2\]" with 4 loads replicated 1 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":14:1:14:6|Instance "protocol_interface.uart_output.baud_gen.count\[1\]" with 5 loads replicated 1 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Instance "protocol_interface.uart_input.state\[1\]" with 18 loads replicated 2 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Instance "protocol_interface.uart_input.state\[2\]" with 17 loads replicated 2 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Instance "protocol_interface.state\[2\]" with 25 loads replicated 2 times to improve timing 
-@N: FX271 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":64:1:64:6|Instance "protocol_interface.state\[0\]" with 15 loads replicated 1 times to improve timing 
-Added 12 Registers via timing driven replication
-Added 10 LUTs via timing driven replication
-
-
-Pass		 CPU time		Worst Slack		Luts / Registers
-------------------------------------------------------------
-   1		0h:00m:01s		    -1.58ns		 239 /       209
-   2		0h:00m:01s		    -1.58ns		 240 /       209
-------------------------------------------------------------
-
-
-
-Pass		 CPU time		Worst Slack		Luts / Registers
-------------------------------------------------------------
-   1		0h:00m:01s		    -1.58ns		 240 /       209
-------------------------------------------------------------
-
-
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 151MB)
-
-@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register protocol_interface.uart_input.drdy.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
-
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 151MB)
-
-
-
-#### START OF CLOCK OPTIMIZATION REPORT #####[
-
-1 non-gated/non-generated clock tree(s) driving 209 clock pin(s) of sequential element(s)
-0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-35 instances converted, 0 sequential instances remain driven by gated/generated clocks
-
-=========================== Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
----------------------------------------------------------------------------------------
-@K:CKID0001       clk_12MHz           port                   209        interface_reset
-=======================================================================================
-
-
-##### END OF CLOCK OPTIMIZATION REPORT ######]
-
-Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1.srm
-
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 151MB)
-
-Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_m.srm
-
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 151MB)
-
-Writing EDIF Netlist and constraint files
-@W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
-@W: MT558 :|Unable to locate source for clock ClockDivider|clk_o_derived_clock. Clock will not be forward annotated
-@W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
-J-2014.09L
-@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
-
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 151MB)
-
-
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 151MB)
-
-@W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 6.78ns. Please declare a user-defined clock on object "p:clk_12MHz"
-
-
-
-@S |##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 30 19:31:01 2015
-#
-
-
-Top view:               UniboardTop
-Requested Frequency:    147.6 MHz
-Wire load mode:         top
-Paths requested:        5
-Constraint File(s):    
-@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
-
-@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
-
-
-
-Performance Summary 
-*******************
-
-
-Worst slack in design: -0.420
-
-                                                  Requested     Estimated     Requested     Estimated                Clock                                    Clock                
-Starting Clock                                    Frequency     Frequency     Period        Period        Slack      Type                                     Group                
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ClockDividerP_12s_1|clk_o_derived_clock           147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-ClockDivider|clk_o_derived_clock                  147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-ProtocolInterface_12s|select_derived_clock[2]     147.6 MHz     NA            6.776         NA            NA         derived (from UniboardTop|clk_12MHz)     Autoconstr_clkgroup_0
-UniboardTop|clk_12MHz                             147.6 MHz     139.0 MHz     6.776         7.195         -0.420     inferred                                 Autoconstr_clkgroup_0
-===================================================================================================================================================================================
-@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
-
-
-
-
-
-Clock Relationships
-*******************
-
-Clocks                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------------------------
-Starting               Ending                 |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
--------------------------------------------------------------------------------------------------------------------------------------
-UniboardTop|clk_12MHz  UniboardTop|clk_12MHz  |  6.776       -0.420  |  No paths    -      |  No paths    -      |  No paths    -    
-=====================================================================================================================================
- Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
-       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
-
-
-
-Interface Information 
-*********************
-
-No IO constraint found
-
-
-
-====================================
-Detailed Report for Clock: UniboardTop|clk_12MHz
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                                                        Starting                                                      Arrival           
-Instance                                                Reference                 Type        Pin     Net             Time        Slack 
-                                                        Clock                                                                           
-----------------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[12\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[12\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[13\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[13\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[14\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[14\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[15\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[15\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[16\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[16\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[17\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[17\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[18\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[18\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[19\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[19\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[20\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[20\]     1.044       -0.420
-protocol_interface.uart_output.baud_gen.count\[21\]     UniboardTop|clk_12MHz     FD1S3AX     Q       count\[21\]     1.044       -0.420
-========================================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                                                        Starting                                                                 Required           
-Instance                                                Reference                 Type        Pin     Net                        Time         Slack 
-                                                        Clock                                                                                       
-----------------------------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.tx                       UniboardTop|clk_12MHz     FD1S3JX     PD      fb                         5.973        -0.420
-protocol_interface.uart_input.baud_gen.count\[31\]      UniboardTop|clk_12MHz     FD1S3IX     D       un129_count[31]            6.670        0.327 
-protocol_interface.uart_output.baud_gen.count\[31\]     UniboardTop|clk_12MHz     FD1S3AX     D       un129_count[31]            6.670        0.327 
-motor_pwm.left.count\[2\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[3\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[5\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[6\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[7\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[8\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-motor_pwm.left.count\[9\]                               UniboardTop|clk_12MHz     FD1P3IX     CD      count\[0\]2_7_RNIGBD86     5.973        0.334 
-====================================================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      6.776
-    - Setup time:                            0.803
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.973
-
-    - Propagation time:                      6.393
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.420
-
-    Number of logic level(s):                6
-    Starting point:                          protocol_interface.uart_output.baud_gen.count\[12\] / Q
-    Ending point:                            protocol_interface.uart_output.tx / PD
-    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-
-Instance / Net                                                                Pin      Pin               Arrival     No. of    
-Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[12\]              FD1S3AX      Q        Out     1.044     1.044       -         
-count\[12\]                                                      Net          -        -       -         -           2         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     A        In      0.000     1.044       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     Z        Out     1.017     2.061       -         
-m13_e_16                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     A        In      0.000     2.061       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     Z        Out     1.017     3.077       -         
-m13_e_25                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     D        In      0.000     3.077       -         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     Z        Out     1.233     4.310       -         
-N_33_mux                                                         Net          -        -       -         -           6         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     A        In      0.000     4.310       -         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     Z        Out     0.449     4.759       -         
-clk_o8_0_0                                                       Net          -        -       -         -           5         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     A        In      0.000     4.759       -         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     Z        Out     1.017     5.776       -         
-un1_tdata_0_15_RNIK4O9D                                          Net          -        -       -         -           1         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     C        In      0.000     5.776       -         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     Z        Out     0.617     6.393       -         
-fb                                                               Net          -        -       -         -           1         
-protocol_interface.uart_output.tx                                FD1S3JX      PD       In      0.000     6.393       -         
-===============================================================================================================================
-
-
-Path information for path number 2: 
-      Requested Period:                      6.776
-    - Setup time:                            0.803
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.973
-
-    - Propagation time:                      6.393
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.420
-
-    Number of logic level(s):                6
-    Starting point:                          protocol_interface.uart_output.baud_gen.count\[13\] / Q
-    Ending point:                            protocol_interface.uart_output.tx / PD
-    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-
-Instance / Net                                                                Pin      Pin               Arrival     No. of    
-Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[13\]              FD1S3AX      Q        Out     1.044     1.044       -         
-count\[13\]                                                      Net          -        -       -         -           2         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     B        In      0.000     1.044       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     Z        Out     1.017     2.061       -         
-m13_e_16                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     A        In      0.000     2.061       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     Z        Out     1.017     3.077       -         
-m13_e_25                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     D        In      0.000     3.077       -         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     Z        Out     1.233     4.310       -         
-N_33_mux                                                         Net          -        -       -         -           6         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     A        In      0.000     4.310       -         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     Z        Out     0.449     4.759       -         
-clk_o8_0_0                                                       Net          -        -       -         -           5         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     A        In      0.000     4.759       -         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     Z        Out     1.017     5.776       -         
-un1_tdata_0_15_RNIK4O9D                                          Net          -        -       -         -           1         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     C        In      0.000     5.776       -         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     Z        Out     0.617     6.393       -         
-fb                                                               Net          -        -       -         -           1         
-protocol_interface.uart_output.tx                                FD1S3JX      PD       In      0.000     6.393       -         
-===============================================================================================================================
-
-
-Path information for path number 3: 
-      Requested Period:                      6.776
-    - Setup time:                            0.803
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.973
-
-    - Propagation time:                      6.393
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.420
-
-    Number of logic level(s):                6
-    Starting point:                          protocol_interface.uart_output.baud_gen.count\[14\] / Q
-    Ending point:                            protocol_interface.uart_output.tx / PD
-    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-
-Instance / Net                                                                Pin      Pin               Arrival     No. of    
-Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[14\]              FD1S3AX      Q        Out     1.044     1.044       -         
-count\[14\]                                                      Net          -        -       -         -           2         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     C        In      0.000     1.044       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     Z        Out     1.017     2.061       -         
-m13_e_16                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     A        In      0.000     2.061       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     Z        Out     1.017     3.077       -         
-m13_e_25                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     D        In      0.000     3.077       -         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     Z        Out     1.233     4.310       -         
-N_33_mux                                                         Net          -        -       -         -           6         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     A        In      0.000     4.310       -         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     Z        Out     0.449     4.759       -         
-clk_o8_0_0                                                       Net          -        -       -         -           5         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     A        In      0.000     4.759       -         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     Z        Out     1.017     5.776       -         
-un1_tdata_0_15_RNIK4O9D                                          Net          -        -       -         -           1         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     C        In      0.000     5.776       -         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     Z        Out     0.617     6.393       -         
-fb                                                               Net          -        -       -         -           1         
-protocol_interface.uart_output.tx                                FD1S3JX      PD       In      0.000     6.393       -         
-===============================================================================================================================
-
-
-Path information for path number 4: 
-      Requested Period:                      6.776
-    - Setup time:                            0.803
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.973
-
-    - Propagation time:                      6.393
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.420
-
-    Number of logic level(s):                6
-    Starting point:                          protocol_interface.uart_output.baud_gen.count\[15\] / Q
-    Ending point:                            protocol_interface.uart_output.tx / PD
-    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-
-Instance / Net                                                                Pin      Pin               Arrival     No. of    
-Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[15\]              FD1S3AX      Q        Out     1.044     1.044       -         
-count\[15\]                                                      Net          -        -       -         -           2         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     D        In      0.000     1.044       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNIAGRR1     ORCALUT4     Z        Out     1.017     2.061       -         
-m13_e_16                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     A        In      0.000     2.061       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     Z        Out     1.017     3.077       -         
-m13_e_25                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     D        In      0.000     3.077       -         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     Z        Out     1.233     4.310       -         
-N_33_mux                                                         Net          -        -       -         -           6         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     A        In      0.000     4.310       -         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     Z        Out     0.449     4.759       -         
-clk_o8_0_0                                                       Net          -        -       -         -           5         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     A        In      0.000     4.759       -         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     Z        Out     1.017     5.776       -         
-un1_tdata_0_15_RNIK4O9D                                          Net          -        -       -         -           1         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     C        In      0.000     5.776       -         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     Z        Out     0.617     6.393       -         
-fb                                                               Net          -        -       -         -           1         
-protocol_interface.uart_output.tx                                FD1S3JX      PD       In      0.000     6.393       -         
-===============================================================================================================================
-
-
-Path information for path number 5: 
-      Requested Period:                      6.776
-    - Setup time:                            0.803
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.973
-
-    - Propagation time:                      6.393
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.420
-
-    Number of logic level(s):                6
-    Starting point:                          protocol_interface.uart_output.baud_gen.count\[16\] / Q
-    Ending point:                            protocol_interface.uart_output.tx / PD
-    The start point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-    The end   point is clocked by            UniboardTop|clk_12MHz [rising] on pin CK
-
-Instance / Net                                                                Pin      Pin               Arrival     No. of    
-Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------
-protocol_interface.uart_output.baud_gen.count\[16\]              FD1S3AX      Q        Out     1.044     1.044       -         
-count\[16\]                                                      Net          -        -       -         -           2         
-protocol_interface.uart_output.baud_gen.count\[16\]_RNIQ0SR1     ORCALUT4     A        In      0.000     1.044       -         
-protocol_interface.uart_output.baud_gen.count\[16\]_RNIQ0SR1     ORCALUT4     Z        Out     1.017     2.061       -         
-m13_e_17                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     B        In      0.000     2.061       -         
-protocol_interface.uart_output.baud_gen.count\[12\]_RNI02NF7     ORCALUT4     Z        Out     1.017     3.077       -         
-m13_e_25                                                         Net          -        -       -         -           1         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     D        In      0.000     3.077       -         
-protocol_interface.uart_output.baud_gen.count\[4\]_RNIEK2OB      ORCALUT4     Z        Out     1.233     4.310       -         
-N_33_mux                                                         Net          -        -       -         -           6         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     A        In      0.000     4.310       -         
-protocol_interface.uart_output.baud_gen.count\[1\]_RNIE68FC      ORCALUT4     Z        Out     0.449     4.759       -         
-clk_o8_0_0                                                       Net          -        -       -         -           5         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     A        In      0.000     4.759       -         
-protocol_interface.uart_output.un1_tdata_0_15_RNIK4O9D           ORCALUT4     Z        Out     1.017     5.776       -         
-un1_tdata_0_15_RNIK4O9D                                          Net          -        -       -         -           1         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     C        In      0.000     5.776       -         
-protocol_interface.uart_output.tx.fb                             ORCALUT4     Z        Out     0.617     6.393       -         
-fb                                                               Net          -        -       -         -           1         
-protocol_interface.uart_output.tx                                FD1S3JX      PD       In      0.000     6.393       -         
-===============================================================================================================================
-
-
-
-##### END OF TIMING REPORT #####]
-
-
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 151MB)
-
----------------------------------------
-Resource Usage Report
-Part: lcmxo2_7000hc-6
-
-Register bits: 209 of 6864 (3%)
-PIC Latch:       0
-I/O cells:       47
-
-
-Details:
-CCU2D:          81
-FD1P3AX:        35
-FD1P3IX:        39
-FD1S3AX:        60
-FD1S3AY:        4
-FD1S3IX:        65
-FD1S3JX:        3
-GSR:            1
-IB:             2
-IFS1P3DX:       1
-INV:            5
-OB:             45
-OFS1P3DX:       2
-ORCALUT4:       238
-PUR:            1
-VHI:            10
-VLO:            10
-Mapper successful!
-
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 56MB peak: 151MB)
-
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Wed Dec 30 19:31:01 2015
-
-###########################################################]
+@R:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/impl1_fpga_mapper.srr"

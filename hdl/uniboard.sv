@@ -464,13 +464,13 @@ module UniboardTop(
 	logic select[127:0];
 	logic reset = 1;
 	logic interface_reset = 1;
-	logic reset_count[3:0] = 0; /* Counter used to de-assert reset after a while. */
+	logic reset_count[15:0] = 0; /* Counter used to de-assert reset after a while. */
 	
 	always @ (posedge clk_12MHz)			
 		begin
-			if(reset_count > 5)
+			if(reset_count > 16'd12000) /* 1 ms */
 				interface_reset <= 0;
-			if(reset_count > 10)
+			if(reset_count > 16'd18000) /* 1.5 ms */
 				reset <= 0;
 			else
 				reset_count <= reset_count + 1;
@@ -521,32 +521,50 @@ module UniboardTop(
 		begin
 			casex(register_addr)
 				8'b000000xx:
-					arm_select[0] = select;
+					begin
+						arm_select[0] = select[4];
+						arm_select[4:1] = '0;
+					end
 				8'b000100xx:
-					arm_select[1] = select;
+					begin
+						arm_select[0] = 0;
+						arm_select[1] = select[4];
+						arm_select[4:2] = '0;
+					end
 				8'b001000xx:
-					arm_select[2] = select;
+					begin
+						arm_select[1:0] = '0;
+						arm_select[2] = select[4];
+						arm_select[4:3] = '0;
+					end
 				8'b001100xx:
-					arm_select[3] = select;
+					begin
+						arm_select[2:0] = '0;
+						arm_select[3] = select[4];
+						arm_select[4] = '0;
+					end
 				default:
-					arm_select[4] = select;
+					begin
+						arm_select[3:0] = '0;
+						arm_select[4] = select[4];
+					end
 			endcase
 		end
 		
-	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
-	                             .databus(databus),
-	                             .reg_size(reg_size),
-	                             .register_addr(register_addr),
-	                             .rw(rw),
-	                             .select(arm_select[0]),
-	                             .pause(global_pause),
-	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
-	                             .step_line(Stepper_X_Step),
-	                             .dir(Stepper_X_Dir),
-	                             .en(Stepper_X_En),
-	                             .fault(Stepper_X_nFault),
-	                             .limitn(limit[0]),
-	                             .reset(reset));
+// 	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
+// 	                             .databus(databus),
+// 	                             .reg_size(reg_size),
+// 	                             .register_addr(register_addr),
+// 	                             .rw(rw),
+// 	                             .select(arm_select[0]),
+// 	                             .pause(global_pause),
+// 	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
+// 	                             .step_line(Stepper_X_Step),
+// 	                             .dir(Stepper_X_Dir),
+// 	                             .en(Stepper_X_En),
+// 	                             .fault(Stepper_X_nFault),
+// 	                             .limitn(limit[0]),
+// 	                             .reset(reset));
 	
 	/* RC Receiver */
 	RCPeripheral rc_receiver(.clk_12MHz(clk_12MHz),

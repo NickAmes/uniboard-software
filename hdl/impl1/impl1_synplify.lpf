@@ -3,7 +3,7 @@
 #
 
 # Period Constraints 
-#FREQUENCY PORT "clk_12MHz" 147.6 MHz;
+FREQUENCY PORT "clk_12MHz" 11.9 MHz;
 
 
 # Output Constraints 

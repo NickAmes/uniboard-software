@@ -1,189 +1,354 @@
 ----------------------------------------------------------------------
 Report for cell UniboardTop.verilog
 
-Register bits: 209 of 6864 (3%)
+Register bits: 795 of 6864 (12%)
 PIC Latch:       0
-I/O cells:       47
+I/O cells:       55
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       81       100.0
-                            FD1P3AX       35       100.0
-                            FD1P3IX       39       100.0
-                            FD1S3AX       60       100.0
-                            FD1S3AY        4       100.0
-                            FD1S3IX       65       100.0
-                            FD1S3JX        3       100.0
+                              CCU2D      212       100.0
+                            FD1P3AX      291       100.0
+                            FD1P3IX      282       100.0
+                            FD1P3JX       60       100.0
+                            FD1S3AX       49       100.0
+                            FD1S3AY        3       100.0
+                            FD1S3IX      100       100.0
+                            FD1S3JX        1       100.0
                                 GSR        1       100.0
-                                 IB        2       100.0
-                           IFS1P3DX        1       100.0
-                                INV        5       100.0
+                                 IB       10       100.0
+                           IFS1P3DX        7       100.0
+                                INV        8       100.0
+                            L6MUX21        1       100.0
                                  OB       45       100.0
                            OFS1P3DX        2       100.0
-                           ORCALUT4      238       100.0
+                           ORCALUT4      973       100.0
+                              PFUMX       33       100.0
                                 PUR        1       100.0
-                                VHI       10       100.0
-                                VLO       10       100.0
+                                VHI       19       100.0
+                                VLO       19       100.0
 SUB MODULES 
-                       ClockDivider        1       100.0
+                    ArmPeripheral_0        1       100.0
                 ClockDividerP_12s_0        1       100.0
                 ClockDividerP_12s_1        1       100.0
+                     ClockDivider_0        1       100.0
+                     ClockDivider_1        1       100.0
                        PWMGenerator        1       100.0
                      PWMGenerator_0        1       100.0
                       PWMPeripheral        1       100.0
+                        PWMReceiver        1       100.0
+                      PWMReceiver_0        1       100.0
+                      PWMReceiver_1        1       100.0
+                      PWMReceiver_2        1       100.0
+                      PWMReceiver_3        1       100.0
+                      PWMReceiver_4        1       100.0
               ProtocolInterface_12s        1       100.0
+                       RCPeripheral        1       100.0
                    UARTReceiver_12s        1       100.0
                 UARTTransmitter_12s        1       100.0
                             
-                         TOTAL           611           
+                         TOTAL          2135           
+----------------------------------------------------------------------
+Report for cell RCPeripheral.netlist
+     Instance path:  rc_receiver
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       48        22.6
+                            FD1P3AX      120        41.2
+                            FD1P3IX       82        29.1
+                            FD1P3JX       48        80.0
+                           ORCALUT4      453        46.6
+                              PFUMX       10        30.3
+                                VHI        7        36.8
+                                VLO        7        36.8
+SUB MODULES 
+                        PWMReceiver        1       100.0
+                      PWMReceiver_0        1       100.0
+                      PWMReceiver_1        1       100.0
+                      PWMReceiver_2        1       100.0
+                      PWMReceiver_3        1       100.0
+                      PWMReceiver_4        1       100.0
+                            
+                         TOTAL           781           
+----------------------------------------------------------------------
+Report for cell PWMReceiver_4.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch8
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       20         6.9
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       68         7.0
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           111           
+----------------------------------------------------------------------
+Report for cell PWMReceiver_3.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch7
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       20         6.9
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       68         7.0
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           111           
+----------------------------------------------------------------------
+Report for cell PWMReceiver_2.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       18         6.2
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       66         6.8
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           107           
+----------------------------------------------------------------------
+Report for cell PWMReceiver_1.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       20         6.9
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       66         6.8
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           109           
+----------------------------------------------------------------------
+Report for cell PWMReceiver_0.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       20         6.9
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       70         7.2
+                              PFUMX        1         3.0
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           114           
+----------------------------------------------------------------------
+Report for cell PWMReceiver.netlist
+  Original Cell name PWMReceiver
+     Instance path:  rc_receiver.recv_ch1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        8         3.8
+                            FD1P3AX       20         6.9
+                            FD1P3IX        5         1.8
+                            FD1P3JX        8        13.3
+                           ORCALUT4       68         7.0
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           111           
+----------------------------------------------------------------------
+Report for cell ArmPeripheral_0.netlist
+     Instance path:  arm_x
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       73        34.4
+                            FD1P3AX       38        13.1
+                            FD1P3IX       88        31.2
+                            FD1P3JX        5         8.3
+                            FD1S3AX        4         8.2
+                            FD1S3IX       33        33.0
+                                INV        3        37.5
+                           ORCALUT4       82         8.4
+                                VHI        2        10.5
+                                VLO        2        10.5
+SUB MODULES 
+                     ClockDivider_0        1       100.0
+                            
+                         TOTAL           331           
+----------------------------------------------------------------------
+Report for cell ClockDivider_0.netlist
+  Original Cell name ClockDivider
+     Instance path:  arm_x.step_clock_div
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       56        26.4
+                            FD1S3IX       33        33.0
+                                INV        1        12.5
+                           ORCALUT4       18         1.8
+                                VHI        1         5.3
+                                VLO        1         5.3
+                            
+                         TOTAL           110           
 ----------------------------------------------------------------------
 Report for cell PWMPeripheral.netlist
      Instance path:  motor_pwm
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       47        58.0
-                            FD1P3AX        8        22.9
-                            FD1P3IX       16        41.0
-                            FD1S3AX        8        13.3
-                            FD1S3IX       28        43.1
-                            FD1S3JX        2        66.7
-                                INV        2        40.0
-                           ORCALUT4       51        21.4
-                                VHI        4        40.0
-                                VLO        4        40.0
+                              CCU2D       40        18.9
+                            FD1P3AX       41        14.1
+                            FD1P3IX       17         6.0
+                            FD1P3JX        7        11.7
+                            FD1S3AX        3         6.1
+                                INV        2        25.0
+                           ORCALUT4       45         4.6
+                                VHI        3        15.8
+                                VLO        3        15.8
 SUB MODULES 
-                       ClockDivider        1       100.0
                        PWMGenerator        1       100.0
                      PWMGenerator_0        1       100.0
                             
-                         TOTAL           173           
+                         TOTAL           163           
 ----------------------------------------------------------------------
 Report for cell PWMGenerator_0.netlist
   Original Cell name PWMGenerator
      Instance path:  motor_pwm.right
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       15        18.5
-                            FD1P3AX        4        11.4
-                            FD1P3IX        8        20.5
-                            FD1S3AX        1         1.7
-                                INV        1        20.0
-                           ORCALUT4        8         3.4
-                                VHI        1        10.0
-                                VLO        1        10.0
+                              CCU2D       20         9.4
+                            FD1P3AX       12         4.1
+                            FD1P3IX        8         2.8
+                            FD1S3AX        1         2.0
+                                INV        1        12.5
+                           ORCALUT4       11         1.1
+                                VHI        1         5.3
+                                VLO        1         5.3
                             
-                         TOTAL            39           
+                         TOTAL            55           
 ----------------------------------------------------------------------
 Report for cell PWMGenerator.netlist
   Original Cell name PWMGenerator
      Instance path:  motor_pwm.left
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       15        18.5
-                            FD1P3AX        4        11.4
-                            FD1P3IX        8        20.5
-                            FD1S3AX        1         1.7
-                                INV        1        20.0
-                           ORCALUT4        7         2.9
-                                VHI        1        10.0
-                                VLO        1        10.0
+                              CCU2D       20         9.4
+                            FD1P3AX       12         4.1
+                            FD1P3IX        8         2.8
+                            FD1S3AX        1         2.0
+                                INV        1        12.5
+                           ORCALUT4       11         1.1
+                                VHI        1         5.3
+                                VLO        1         5.3
                             
-                         TOTAL            38           
+                         TOTAL            55           
 ----------------------------------------------------------------------
-Report for cell ClockDivider.netlist
-     Instance path:  motor_pwm.clkdiv
+Report for cell ClockDivider_1.netlist
+  Original Cell name ClockDivider
+     Instance path:  pwm_clk_div
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        21.0
-                            FD1S3AX        6        10.0
-                            FD1S3IX       28        43.1
-                           ORCALUT4       28        11.8
-                                VHI        1        10.0
-                                VLO        1        10.0
+                              CCU2D       17         8.0
+                            FD1S3AX        1         2.0
+                            FD1S3IX       32        32.0
+                           ORCALUT4       17         1.7
+                                VHI        1         5.3
+                                VLO        1         5.3
                             
-                         TOTAL            81           
+                         TOTAL            69           
 ----------------------------------------------------------------------
 Report for cell ProtocolInterface_12s.netlist
      Instance path:  protocol_interface
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       34        42.0
-                            FD1P3AX       24        68.6
-                            FD1P3IX       23        59.0
-                            FD1S3AX       51        85.0
-                            FD1S3AY        1        25.0
-                            FD1S3IX       37        56.9
-                            FD1S3JX        1        33.3
-                                INV        3        60.0
-                           ORCALUT4      178        74.8
-                                VHI        5        50.0
-                                VLO        5        50.0
+                              CCU2D       34        16.0
+                            FD1P3AX       89        30.6
+                            FD1P3IX       95        33.7
+                            FD1S3AX       40        81.6
+                            FD1S3AY        1        33.3
+                            FD1S3IX       35        35.0
+                            FD1S3JX        1       100.0
+                                INV        2        25.0
+                            L6MUX21        1       100.0
+                           ORCALUT4      368        37.8
+                              PFUMX       23        69.7
+                                VHI        5        26.3
+                                VLO        5        26.3
 SUB MODULES 
                 ClockDividerP_12s_0        1       100.0
                 ClockDividerP_12s_1        1       100.0
                    UARTReceiver_12s        1       100.0
                 UARTTransmitter_12s        1       100.0
                             
-                         TOTAL           366           
+                         TOTAL           703           
 ----------------------------------------------------------------------
 Report for cell UARTTransmitter_12s.netlist
      Instance path:  protocol_interface.uart_output
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        21.0
-                            FD1S3AX       39        65.0
-                            FD1S3JX        1        33.3
-                                INV        1        20.0
-                           ORCALUT4       34        14.3
-                                VHI        2        20.0
-                                VLO        2        20.0
+                              CCU2D       17         8.0
+                            FD1P3AX       12         4.1
+                            FD1P3IX       69        24.5
+                            FD1S3AX       31        63.3
+                            FD1S3IX        2         2.0
+                            FD1S3JX        1       100.0
+                                INV        1        12.5
+                            L6MUX21        1       100.0
+                           ORCALUT4      248        25.5
+                              PFUMX       18        54.5
+                                VHI        2        10.5
+                                VLO        2        10.5
 SUB MODULES 
                 ClockDividerP_12s_1        1       100.0
                             
-                         TOTAL            97           
+                         TOTAL           405           
 ----------------------------------------------------------------------
 Report for cell ClockDividerP_12s_1.netlist
   Original Cell name ClockDividerP_12s
      Instance path:  protocol_interface.uart_output.baud_gen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        21.0
-                            FD1S3AX       35        58.3
-                                INV        1        20.0
-                           ORCALUT4       15         6.3
-                                VHI        1        10.0
-                                VLO        1        10.0
+                              CCU2D       17         8.0
+                            FD1S3AX       31        63.3
+                            FD1S3IX        2         2.0
+                                INV        1        12.5
+                           ORCALUT4       15         1.5
+                                VHI        1         5.3
+                                VLO        1         5.3
                             
-                         TOTAL            70           
+                         TOTAL            68           
 ----------------------------------------------------------------------
 Report for cell UARTReceiver_12s.netlist
      Instance path:  protocol_interface.uart_input
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        21.0
-                            FD1P3AX       15        42.9
-                            FD1P3IX        1         2.6
-                            FD1S3AX       10        16.7
-                            FD1S3AY        1        25.0
-                            FD1S3IX       34        52.3
-                                INV        1        20.0
-                           ORCALUT4       88        37.0
-                                VHI        2        20.0
-                                VLO        2        20.0
+                              CCU2D       17         8.0
+                            FD1P3AX       15         5.2
+                            FD1P3IX        1         0.4
+                            FD1S3AX        6        12.2
+                            FD1S3AY        1        33.3
+                            FD1S3IX       33        33.0
+                                INV        1        12.5
+                           ORCALUT4       53         5.4
+                                VHI        2        10.5
+                                VLO        2        10.5
 SUB MODULES 
                 ClockDividerP_12s_0        1       100.0
                             
-                         TOTAL           172           
+                         TOTAL           132           
 ----------------------------------------------------------------------
 Report for cell ClockDividerP_12s_0.netlist
   Original Cell name ClockDividerP_12s
      Instance path:  protocol_interface.uart_input.baud_gen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D       17        21.0
-                            FD1S3IX       34        52.3
-                                INV        1        20.0
-                           ORCALUT4       23         9.7
-                                VHI        1        10.0
-                                VLO        1        10.0
+                              CCU2D       17         8.0
+                            FD1S3IX       33        33.0
+                                INV        1        12.5
+                           ORCALUT4       13         1.3
+                                VHI        1         5.3
+                                VLO        1         5.3
                             
-                         TOTAL            77           
+                         TOTAL            66           

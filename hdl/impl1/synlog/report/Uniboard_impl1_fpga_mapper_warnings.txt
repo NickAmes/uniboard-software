@@ -1,10 +1,5 @@
-@W: MT462 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":522:9:522:21|Net arm_select_0_2[0] appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":522:9:522:21|Net motor_pwm.arm_select_0_2[0] appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":522:9:522:21|Net motor_pwm.arm_select_0_2[0] appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":522:9:522:21|Net motor_pwm.arm_select_0_2[0] appears to be an unidentified clock source. Assuming default frequency. 
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[7]. Clock will not be forward annotated
-@W: MT558 :|Unable to locate source for clock ClockDivider_1|clk_o_derived_clock. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock ClockDivider|clk_o_derived_clock. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
 @W: MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object "p:clk_12MHz"
-@W: MT420 |Found inferred clock UniboardTop|arm_select_0__inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:arm_select_0_"

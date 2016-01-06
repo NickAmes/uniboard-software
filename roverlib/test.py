@@ -19,12 +19,21 @@ u = roverlib.Uniboard("/dev/ttyUSB1")
 #print u.rc_valid()
 #print u.rc_value(8)
 
+#while True:
+	#print "\x1B[2J\x1B[H",
+	#for ch in [1, 2, 3, 4, 7, 8]:
+		#print "Ch. %d "%ch,
+		#print u.rc_value(ch)
+	#time.sleep(.1)
+
+#print u._read_reg(4,0)
+
+i = 0
 while True:
-	print "\x1B[2J\x1B[H",
-	for ch in [1, 2, 3, 4, 7, 8]:
-		print "Ch. %d "%ch,
-		print u.rc_value(ch)
-	time.sleep(.1)
+	print u._read_reg(2,0)
+	print "i = ",
+	print i
+	i+=1
 
 #from Tkinter import *
 #class App:
