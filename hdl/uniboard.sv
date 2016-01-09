@@ -505,8 +505,7 @@ module UniboardTop(
 						     .clk_i(clk_12MHz),
 	                         .clk_o(clk_255kHz),
 	                         .reset(reset));
-	PWMPeripheral motor_pwm(.clk_12MHz(clk_12MHz),
-	                        .clk_255kHz(clk_255kHz),
+	PWMPeripheral motor_pwm(.clk_255kHz(clk_255kHz),
 	                        .databus(databus),
 	                        .reg_size(reg_size),
 	                        .register_addr(register_addr),
@@ -516,47 +515,47 @@ module UniboardTop(
 	                        .pwm_right(motor_pwm_r),
 	                        .reset(reset));
 	/* Arm */
-	logic arm_select[4:0]; /* 0 = X ... 3 = A, 4 = analog. */
-	always_comb
-		begin
-			casex(register_addr)
-				8'b000000xx:
-					begin
-						arm_select[0] = select[4];
-						arm_select[4:1] = '0;
-					end
-				8'b000100xx:
-					begin
-						arm_select[0] = 0;
-						arm_select[1] = select[4];
-						arm_select[4:2] = '0;
-					end
-				8'b001000xx:
-					begin
-						arm_select[1:0] = '0;
-						arm_select[2] = select[4];
-						arm_select[4:3] = '0;
-					end
-				8'b001100xx:
-					begin
-						arm_select[2:0] = '0;
-						arm_select[3] = select[4];
-						arm_select[4] = '0;
-					end
-				default:
-					begin
-						arm_select[3:0] = '0;
-						arm_select[4] = select[4];
-					end
-			endcase
-		end
+// 	logic arm_select[4:0]; /* 0 = X ... 3 = A, 4 = analog. */
+// 	always_comb
+// 		begin
+// 			casex(register_addr)
+// 				8'b000000xx:
+// 					begin
+// 						arm_select[0] = select[4];
+// 						arm_select[4:1] = '0;
+// 					end
+// 				8'b000100xx:
+// 					begin
+// 						arm_select[0] = 0;
+// 						arm_select[1] = select[4];
+// 						arm_select[4:2] = '0;
+// 					end
+// 				8'b001000xx:
+// 					begin
+// 						arm_select[1:0] = '0;
+// 						arm_select[2] = select[4];
+// 						arm_select[4:3] = '0;
+// 					end
+// 				8'b001100xx:
+// 					begin
+// 						arm_select[2:0] = '0;
+// 						arm_select[3] = select[4];
+// 						arm_select[4] = '0;
+// 					end
+// 				default:
+// 					begin
+// 						arm_select[3:0] = '0;
+// 						arm_select[4] = select[4];
+// 					end
+// 			endcase
+// 		end
 		
 	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
 	                             .databus(databus),
 	                             .reg_size(reg_size),
 	                             .register_addr(register_addr),
 	                             .rw(rw),
-	                             .select(arm_select[0]),
+	                             .select(/*arm_select[0]*/ select[4]),
 	                             .pause(global_pause),
 	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
 	                             .step_line(Stepper_X_Step),

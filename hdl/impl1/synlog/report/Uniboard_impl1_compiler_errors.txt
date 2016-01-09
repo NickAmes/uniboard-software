@@ -1,3 +1,2 @@
-@E: CG285 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":136:2:136:4|Expecting statement
-@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":138:0:138:8|Expecting endmodule
+@E: CG410 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":78:14:78:14|Only one assignment is legal on int_step
 

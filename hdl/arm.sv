@@ -28,9 +28,9 @@ module ArmPeripheral(
 	 * Bit 0: LIMIT (high if limit pressed)
 	 * Bit 1: FAULT (value of fault line)
 	 * Bit 2: STEPPING (if high, axis is in motion) */
-// 	assign register[1][0] = ~limitn;
-// 	assign register[1][1] = fault;
-// 	assign register[1][2] = ~pause & (register[3] != 0) & register[0][7]; /*<-(GO in config register.)*/
+	assign register[1][0] = ~limitn;
+	assign register[1][1] = fault;
+	assign register[1][2] = ~pause & (register[3] != 0) & register[0][7]; /*<-(GO in config register.)*/
 	
 	/* Config register
 	 * Bit 0: MS0
@@ -41,15 +41,10 @@ module ArmPeripheral(
 	 * Bit 5: DIR
 	 * Bit 6: EN
 	 * Bit 7: GO */
-// 	assign microstep[2:0] = register[0][2:0];
-// 	assign en = ~register[0][6];
-// 	assign step_line = int_step ^ ~register[0][3];
-// 	assign dir = register[0][5];
-	
-	assign microstep = '0;
-	assign step_line = 0;
-	assign dir = 0;
-	assign en = 0;
+	assign microstep[2:0] = register[0][2:0];
+	assign en = ~register[0][6];
+	assign step_line = int_step ^ ~register[0][3];
+	assign dir = register[0][5];
 	
 	/* Bus read handling */
 	logic read_value[31:0];
@@ -58,46 +53,15 @@ module ArmPeripheral(
 	assign reg_size = select ? read_size : 'z;
 	assign databus = (select & rw) ? read_value : 'z;
 	
-	always @ (posedge select)			
-		begin
-			case(register_addr)
-				axis_haddr + 8'd0: /* Config register */
-					begin
-						read_value <= register[0];
-						read_size <= 3'd1;
-					end
-				axis_haddr + 8'd1: /* Status register */
-					begin
-						read_value <= register[1];
-						read_size <= 3'd1;
-					end
-				axis_haddr + 8'd2: /* Div. factor register */
-					begin
-						read_value <= register[2];
-						read_size <= 3'd4;
-					end
-				axis_haddr + 8'd3: /* Steps register */
-					begin
-						read_value <= register[3];
-						read_size <= 3'd4;
-					end
-				default:
-					begin
-						read_value <= '0;
-						read_size <= '0;
-					end
-			endcase
-		end
-	
 	/* Step generation and bus write handling. */
 	logic stepclk;
 	logic int_step; /* internal step: on rising edge */
 	logic prev_select;
-	//logic prev_stepclk;
-// 	ClockDivider step_clock_div(.clk_i(clk_12MHz),
-// 	                            .clk_o(stepclk),
-// 	                            .factor(register[2]),
-// 	                            .reset(reset));
+	logic prev_stepclk;
+	ClockDivider step_clock_div(.clk_i(clk_12MHz),
+	                            .clk_o(stepclk),
+	                            .factor(register[2]),
+	                            .reset(reset));
 	
 	always @ (posedge clk_12MHz)
 		begin
@@ -110,8 +74,41 @@ module ArmPeripheral(
 					register[3] <= '0; /* Steps register */
 					int_step <= 0;
 				end
-//			else
-// 				begin
+			else
+ 				begin
+					if(~prev_select & select)
+						begin
+							case(register_addr)
+								axis_haddr + 8'd0: /* Config register */
+									begin
+										read_value <= register[0];
+										read_size <= 3'd1;
+									end
+								axis_haddr + 8'd1: /* Status register */
+									begin
+										read_value <= register[1];
+										read_size <= 3'd1;
+									end
+								axis_haddr + 8'd2: /* Div. factor register */
+									begin
+										read_value <= register[2];
+										read_size <= 3'd4;
+									end
+								axis_haddr + 8'd3: /* Steps register */
+									begin
+										read_value <= register[3];
+										read_size <= 3'd4;
+									end
+								default:
+									begin
+										read_value <= '0;
+										read_size <= '0;
+									end
+							endcase
+						end
+						
+					
+					
 // 					/* Bus write handling. */
 // 					if(~rw & ~prev_select & select) /* Rising edge on select with rw low: write register. */
 // 						begin
@@ -132,7 +129,7 @@ module ArmPeripheral(
 // 							int_step <= 1;
 // 							register[3] <= register[3] - 1;
 // 						end
-// 				end
+ 				end
 		end
 		
 endmodule
