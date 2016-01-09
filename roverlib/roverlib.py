@@ -43,7 +43,15 @@ class Uniboard:
 		self._shadow_memory = {
 			#Motor PWM
 			0x0200:127,
-			0x0201:127
+			0x0201:127,
+			
+			#RC Receiver
+			#No writeable bits in this peripheral.
+			
+			#Arm
+			0x0400:0x2A,
+			0x0402:12000,
+			0x0403:0
 		}
 		
 		#Dictionary of peripheral masks. For each peripheral register, 1s in the value in this dictionary
@@ -83,6 +91,7 @@ class Uniboard:
 			
 			#Arm
 			0x0400:1,
+			0x0401:1,
 			0x0402:4,
 			0x0403:4
 		}

@@ -28,9 +28,9 @@ module ArmPeripheral(
 	 * Bit 0: LIMIT (high if limit pressed)
 	 * Bit 1: FAULT (value of fault line)
 	 * Bit 2: STEPPING (if high, axis is in motion) */
-	assign register[1][0] = ~limitn;
-	assign register[1][1] = fault;
-	assign register[1][2] = ~pause & (register[3] != 0) & register[0][7]; /*<-(GO in config register.)*/
+// 	assign register[1][0] = ~limitn;
+// 	assign register[1][1] = fault;
+// 	assign register[1][2] = ~pause & (register[3] != 0) & register[0][7]; /*<-(GO in config register.)*/
 	
 	/* Config register
 	 * Bit 0: MS0
@@ -41,10 +41,15 @@ module ArmPeripheral(
 	 * Bit 5: DIR
 	 * Bit 6: EN
 	 * Bit 7: GO */
-	assign microstep[2:0] = register[0][2:0];
-	assign en = ~register[0][6];
-	assign step_line = int_step ^ ~register[0][3];
-	assign dir = register[0][5];
+// 	assign microstep[2:0] = register[0][2:0];
+// 	assign en = ~register[0][6];
+// 	assign step_line = int_step ^ ~register[0][3];
+// 	assign dir = register[0][5];
+	
+	assign microstep = '0;
+	assign step_line = 0;
+	assign dir = 0;
+	assign en = 0;
 	
 	/* Bus read handling */
 	logic read_value[31:0];
@@ -88,16 +93,16 @@ module ArmPeripheral(
 	logic stepclk;
 	logic int_step; /* internal step: on rising edge */
 	logic prev_select;
-	logic prev_stepclk;
-	ClockDivider step_clock_div(.clk_i(clk_12MHz),
-	                            .clk_o(stepclk),
-	                            .factor(register[2]),
-	                            .reset(reset));
+	//logic prev_stepclk;
+// 	ClockDivider step_clock_div(.clk_i(clk_12MHz),
+// 	                            .clk_o(stepclk),
+// 	                            .factor(register[2]),
+// 	                            .reset(reset));
 	
 	always @ (posedge clk_12MHz)
 		begin
 			prev_select <= select;
-			prev_stepclk <= stepclk;
+			//prev_stepclk <= stepclk;
 			if(reset)
 				begin
 					register[0] <= 32'b00101010; /* Config register */
@@ -105,29 +110,29 @@ module ArmPeripheral(
 					register[3] <= '0; /* Steps register */
 					int_step <= 0;
 				end
-			else
-				begin
-					/* Bus write handling. */
-					if(~rw & ~prev_select & select) /* Rising edge on select with rw low: write register. */
-						begin
-							case(register_addr)
-								axis_haddr + 8'd0:
-									register[0] <= databus;
-								axis_haddr + 8'd2:
-									register[2] <= databus;
-								axis_haddr +8'd3:
-									register[3] <= databus;
-							endcase
-						end
-					if(~stepclk)
-						int_step <= 0;
-					if(~prev_stepclk & stepclk & register[1][2] 
-					   & ~(~rw & ~prev_select & select & register_addr == (axis_haddr + 8'd3))) /* on rising edge, STEPPING = 1, and no write to steps register. */
-						begin
-							int_step <= 1;
-							register[3] <= register[3] - 1;
-						end
-				end
+//			else
+// 				begin
+// 					/* Bus write handling. */
+// 					if(~rw & ~prev_select & select) /* Rising edge on select with rw low: write register. */
+// 						begin
+// 							case(register_addr)
+// 								axis_haddr + 8'd0:
+// 									register[0] <= databus;
+// 								axis_haddr + 8'd2:
+// 									register[2] <= databus;
+// 								axis_haddr +8'd3:
+// 									register[3] <= databus;
+// 							endcase
+// 						end
+// 					if(~stepclk)
+// 						int_step <= 0;
+// 					if(~prev_stepclk & stepclk & register[1][2] 
+// 					   & ~(~rw & ~prev_select & select & register_addr == (axis_haddr + 8'd3))) /* on rising edge, STEPPING = 1, and no write to steps register. */
+// 						begin
+// 							int_step <= 1;
+// 							register[3] <= register[3] - 1;
+// 						end
+// 				end
 		end
 		
 endmodule
