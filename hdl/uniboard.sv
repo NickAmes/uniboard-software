@@ -551,20 +551,20 @@ module UniboardTop(
 			endcase
 		end
 		
-// 	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
-// 	                             .databus(databus),
-// 	                             .reg_size(reg_size),
-// 	                             .register_addr(register_addr),
-// 	                             .rw(rw),
-// 	                             .select(arm_select[0]),
-// 	                             .pause(global_pause),
-// 	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
-// 	                             .step_line(Stepper_X_Step),
-// 	                             .dir(Stepper_X_Dir),
-// 	                             .en(Stepper_X_En),
-// 	                             .fault(Stepper_X_nFault),
-// 	                             .limitn(limit[0]),
-// 	                             .reset(reset));
+	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
+	                             .databus(databus),
+	                             .reg_size(reg_size),
+	                             .register_addr(register_addr),
+	                             .rw(rw),
+	                             .select(arm_select[0]),
+	                             .pause(global_pause),
+	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
+	                             .step_line(Stepper_X_Step),
+	                             .dir(Stepper_X_Dir),
+	                             .en(Stepper_X_En),
+	                             .fault(Stepper_X_nFault),
+	                             .limitn(limit[0]),
+	                             .reset(reset));
 	
 	/* RC Receiver */
 	RCPeripheral rc_receiver(.clk_12MHz(clk_12MHz),

@@ -7,6 +7,8 @@ protocol_interface/uart_output/baud_gen/GND
 pwm_clk_div/GND
 motor_pwm/left/GND
 motor_pwm/right/GND
+arm_x/GND
+arm_x/step_clock_div/GND
 rc_receiver/recv_ch1/GND
 rc_receiver/recv_ch2/GND
 rc_receiver/recv_ch3/GND
@@ -24,11 +26,11 @@ protocol_interface/uart_output/baud_gen/un129_count_cry_0_0_S0
 protocol_interface/uart_output/baud_gen/N_1
 protocol_interface/uart_output/baud_gen/un129_count_s_31_0_S1
 protocol_interface/uart_output/baud_gen/un129_count_s_31_0_COUT
-pwm_clk_div/un129_count_1_cry_0_0_S1
-pwm_clk_div/un129_count_1_cry_0_0_S0
+pwm_clk_div/un129_count_1_cry_0_0_S1_0
+pwm_clk_div/un129_count_1_cry_0_0_S0_0
 pwm_clk_div/N_1
-pwm_clk_div/un129_count_1_s_31_0_S1
-pwm_clk_div/un129_count_1_s_31_0_COUT
+pwm_clk_div/un129_count_1_s_31_0_S1_0
+pwm_clk_div/un129_count_1_s_31_0_COUT_0
 motor_pwm/left/un53_count_cry_0_0_S1_0
 motor_pwm/left/un53_count_cry_0_0_S0_0
 motor_pwm/left/N_1
@@ -79,16 +81,76 @@ motor_pwm/right/pwm_2_cry_11_0_S1_0
 motor_pwm/right/pwm_2_cry_11_0_S0_0
 motor_pwm/right/pwm_2_cry_12_0_S1_0
 motor_pwm/right/pwm_2_cry_12_0_COUT_0
-rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_3
-rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_3
+arm_x/register[3]_cry_0_S0[0]
+arm_x/N_1
+arm_x/register[3]_s_0_S1[31]
+arm_x/register[3]_s_0_COUT[31]
+arm_x/step_clock_div/un129_count_1_cry_0_0_S1
+arm_x/step_clock_div/un129_count_1_cry_0_0_S0
+arm_x/step_clock_div/N_1
+arm_x/step_clock_div/un129_count_1_s_31_0_S1
+arm_x/step_clock_div/un129_count_1_s_31_0_COUT
+arm_x/step_clock_div/register[2]_i[0]
+arm_x/step_clock_div/count[0]2_a_4_cry_0_0_S0
+arm_x/step_clock_div/N_2
+arm_x/step_clock_div/count[0]2_a_4_s_31_0_S1
+arm_x/step_clock_div/count[0]2_a_4_s_31_0_COUT
+arm_x/step_clock_div/clk_o8_cry_0_S1[0]
+arm_x/step_clock_div/clk_o8_cry_0_S0[0]
+arm_x/step_clock_div/N_3
+arm_x/step_clock_div/clk_o8_cry_0_S1[1]
+arm_x/step_clock_div/clk_o8_cry_0_S0[1]
+arm_x/step_clock_div/clk_o8_cry_0_S1[3]
+arm_x/step_clock_div/clk_o8_cry_0_S0[3]
+arm_x/step_clock_div/clk_o8_cry_0_S1[5]
+arm_x/step_clock_div/clk_o8_cry_0_S0[5]
+arm_x/step_clock_div/clk_o8_cry_0_S1[7]
+arm_x/step_clock_div/clk_o8_cry_0_S0[7]
+arm_x/step_clock_div/clk_o8_cry_0_S1[9]
+arm_x/step_clock_div/clk_o8_cry_0_S0[9]
+arm_x/step_clock_div/clk_o8_cry_0_S1[11]
+arm_x/step_clock_div/clk_o8_cry_0_S0[11]
+arm_x/step_clock_div/clk_o8_cry_0_S1[13]
+arm_x/step_clock_div/clk_o8_cry_0_S0[13]
+arm_x/step_clock_div/clk_o8_cry_0_S1[15]
+arm_x/step_clock_div/clk_o8_cry_0_S0[15]
+arm_x/step_clock_div/clk_o8_cry_0_S1[18]
+arm_x/step_clock_div/clk_o8_cry_0_S0[18]
+arm_x/step_clock_div/clk_o8_cry_0_S1[22]
+arm_x/step_clock_div/clk_o8_cry_0_S0[22]
+arm_x/step_clock_div/clk_o8_cry_0_S1[26]
+arm_x/step_clock_div/clk_o8_cry_0_S0[26]
+arm_x/step_clock_div/clk_o8_cry_0_S0[30]
+arm_x/step_clock_div/clk_o8_cry_0_COUT[30]
+arm_x/step_clock_div/count[0]2_0_N_77
+arm_x/step_clock_div/count[0]2_0_I_1_0_S0
+arm_x/step_clock_div/N_4
+arm_x/step_clock_div/count[0]2_0_I_9_0_S1
+arm_x/step_clock_div/count[0]2_0_I_9_0_S0
+arm_x/step_clock_div/count[0]2_0_I_51_0_S1
+arm_x/step_clock_div/count[0]2_0_I_51_0_S0
+arm_x/step_clock_div/count[0]2_0_I_33_0_S1
+arm_x/step_clock_div/count[0]2_0_I_33_0_S0
+arm_x/step_clock_div/count[0]2_0_I_27_0_S1
+arm_x/step_clock_div/count[0]2_0_I_27_0_S0
+arm_x/step_clock_div/count[0]2_0_I_57_0_S1
+arm_x/step_clock_div/count[0]2_0_I_57_0_S0
+arm_x/step_clock_div/count[0]2_0_I_21_0_S1
+arm_x/step_clock_div/count[0]2_0_I_21_0_S0
+arm_x/step_clock_div/count[0]2_0_I_81_0_S1
+arm_x/step_clock_div/count[0]2_0_I_81_0_S0
+arm_x/step_clock_div/count[0]2_0_I_45_0_S0
+arm_x/step_clock_div/count[0]2_0_I_45_0_COUT
+rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_4
+rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4
 rc_receiver/recv_ch1/N_1
-rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_3
-rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_3
-rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_4
-rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_4
+rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4
+rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4
+rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_3
+rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_3
 rc_receiver/recv_ch2/N_1
-rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_4
-rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_4
+rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_3
+rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_3
 rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_2
 rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2
 rc_receiver/recv_ch3/N_1
@@ -115,7 +177,7 @@ N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Tue Jan  5 22:38:43 2016
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sat Jan  9 14:10:44 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;
@@ -143,6 +205,7 @@ LOCATE COMP "expansion4" SITE "61" ;
 LOCATE COMP "expansion3" SITE "60" ;
 LOCATE COMP "expansion2" SITE "59" ;
 LOCATE COMP "expansion1" SITE "58" ;
+LOCATE COMP "limit[0]" SITE "68" ;
 LOCATE COMP "Stepper_A_En" SITE "69" ;
 LOCATE COMP "Stepper_A_M2" SITE "73" ;
 LOCATE COMP "Stepper_A_M1" SITE "71" ;
@@ -161,6 +224,7 @@ LOCATE COMP "Stepper_Y_M1" SITE "94" ;
 LOCATE COMP "Stepper_Y_M0" SITE "95" ;
 LOCATE COMP "Stepper_Y_Dir" SITE "86" ;
 LOCATE COMP "Stepper_Y_Step" SITE "87" ;
+LOCATE COMP "Stepper_X_nFault" SITE "106" ;
 LOCATE COMP "Stepper_X_En" SITE "105" ;
 LOCATE COMP "Stepper_X_M2" SITE "100" ;
 LOCATE COMP "Stepper_X_M1" SITE "103" ;

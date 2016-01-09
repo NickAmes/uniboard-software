@@ -26,19 +26,23 @@ u = roverlib.Uniboard("/dev/ttyUSB1")
 		#print u.rc_value(ch)
 	#time.sleep(.1)
 
-i = 0
-while True:
-	print u._read_reg(2,0),
-	print " ",
-	print u._read_reg(2,1),
-	print " ",
-	for ch in [1, 2, 3, 4, 7, 8]:
-		print "Ch. %d "%ch,
-		print u.rc_value(ch),
-	print " ",
-	print "i = ",
-	print i
-	i+=1
+print u._read_reg(4,2)
+
+#i = 0
+#while True:
+	#u.motor_right(float(i % 256)/255.0 - 127.5)
+	#u.motor_left(float((i + 50) % 256)/255.0 - 127.5)
+	#print u._read_reg(2,0),
+	#print " ",
+	#print u._read_reg(2,1),
+	#print " ",
+	#for ch in [1, 2, 3, 4, 7, 8]:
+		#print "Ch. %d "%ch,
+		#print u.rc_value(ch),
+	#print " ",
+	#print "i = ",
+	#print i
+	#i+=1
 
 #from Tkinter import *
 #class App:

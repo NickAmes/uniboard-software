@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jan  5 22:38:44 2016
+Sat Jan  9 14:10:44 2016
 
 /usr/local/diamond/3.4_x64/ispfpga/bin/lin64/par -f Uniboard_impl1.p2t
 Uniboard_impl1_map.ncd Uniboard_impl1.dir Uniboard_impl1.prf -gui
@@ -24,17 +24,17 @@ Preference file: Uniboard_impl1.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           -           -           -           -           09          Complete        
+5_1   *     0           -           -           -           -           11          Complete        
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 9 secs 
+Total (real) run time for 1-seed: 11 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;Uniboard_impl1_map.ncd&quot;
-Tue Jan  5 22:38:44 2016
+Sat Jan  9 14:10:44 2016
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -61,46 +61,47 @@ Ignore Preference Error(s):  True
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   PIO (prelim)   53+4(JTAG)/336     17% used
-                  53+4(JTAG)/115     50% bonded
+   PIO (prelim)   55+4(JTAG)/336     18% used
+                  55+4(JTAG)/115     51% bonded
    IOLOGIC            9/336           2% used
 
-   SLICE            647/3432         18% used
+   SLICE            781/3432         22% used
 
 
 
-Number of Signals: 1872
-Number of Connections: 4971
+Number of Signals: 2354
+Number of Connections: 6240
 
 Pin Constraint Summary:
-   53 out of 53 pins locked (100% locked).
+   55 out of 55 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    clk_12MHz_c (driver: clk_12MHz, clk load #: 422)
+    clk_12MHz_c (driver: clk_12MHz, clk load #: 512)
 
 
-The following 7 signals are selected to use the secondary clock routing resources:
-    G_680 (driver: rc_receiver/SLICE_572, clk load #: 0, sr load #: 0, ce load #: 133)
-    interface_reset (driver: SLICE_153, clk load #: 0, sr load #: 16, ce load #: 16)
-    rc_receiver/G_669 (driver: SLICE_598, clk load #: 0, sr load #: 0, ce load #: 30)
-    rc_receiver/G_671 (driver: rc_receiver/SLICE_325, clk load #: 0, sr load #: 29, ce load #: 0)
-    protocol_interface/uart_input/baud_reset (driver: protocol_interface/uart_input/SLICE_278, clk load #: 0, sr load #: 19, ce load #: 0)
-    pwm_clk_div/N_643 (driver: pwm_clk_div/SLICE_633, clk load #: 0, sr load #: 16, ce load #: 0)
-    protocol_interface/databus_out[0]_1_sqmuxa (driver: protocol_interface/uart_input/SLICE_645, clk load #: 0, sr load #: 0, ce load #: 16)
+The following 8 signals are selected to use the secondary clock routing resources:
+    clk_o_RNITESH (driver: SLICE_719, clk load #: 0, sr load #: 0, ce load #: 133)
+    debug_c[6] (driver: SLICE_284, clk load #: 0, sr load #: 38, ce load #: 0)
+    interface_reset (driver: SLICE_287, clk load #: 0, sr load #: 16, ce load #: 16)
+    un1_state[0]_1_RNI4GQH2 (driver: SLICE_751, clk load #: 0, sr load #: 0, ce load #: 29)
+    rc_receiver/read_value[0]2lto7_i_a2_RNIKA8N3 (driver: SLICE_751, clk load #: 0, sr load #: 28, ce load #: 0)
+    protocol_interface/uart_input/baud_reset (driver: protocol_interface/SLICE_374, clk load #: 0, sr load #: 19, ce load #: 0)
+    arm_x/register[0]_0_sqmuxa (driver: arm_x/SLICE_766, clk load #: 0, sr load #: 0, ce load #: 18)
+    arm_x/register[3]e (driver: arm_x/SLICE_243, clk load #: 0, sr load #: 0, ce load #: 17)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-............
+...........
 Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
-.......................
-Placer score = 210920.
+.....................
+Placer score = 332983.
 Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  207879
+Placer score =  325794
 Finished Placer Phase 2.  REAL time: 5 secs 
 
 
@@ -114,17 +115,18 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY &quot;clk_12MHz_c&quot; from comp &quot;clk_12MHz&quot; on CLK_PIN site &quot;128 (PT18A)&quot;, clk load = 422
-  SECONDARY &quot;G_680&quot; from F1 on comp &quot;rc_receiver/SLICE_572&quot; on site &quot;R14C18B&quot;, clk load = 0, ce load = 133, sr load = 0
-  SECONDARY &quot;interface_reset&quot; from Q0 on comp &quot;SLICE_153&quot; on site &quot;R21C18A&quot;, clk load = 0, ce load = 16, sr load = 16
-  SECONDARY &quot;rc_receiver/G_669&quot; from F0 on comp &quot;SLICE_598&quot; on site &quot;R14C20C&quot;, clk load = 0, ce load = 30, sr load = 0
-  SECONDARY &quot;rc_receiver/G_671&quot; from F1 on comp &quot;rc_receiver/SLICE_325&quot; on site &quot;R14C20D&quot;, clk load = 0, ce load = 0, sr load = 29
-  SECONDARY &quot;protocol_interface/uart_input/baud_reset&quot; from Q0 on comp &quot;protocol_interface/uart_input/SLICE_278&quot; on site &quot;R14C20A&quot;, clk load = 0, ce load = 0, sr load = 19
-  SECONDARY &quot;pwm_clk_div/N_643&quot; from F1 on comp &quot;pwm_clk_div/SLICE_633&quot; on site &quot;R14C18D&quot;, clk load = 0, ce load = 0, sr load = 16
-  SECONDARY &quot;protocol_interface/databus_out[0]_1_sqmuxa&quot; from F0 on comp &quot;protocol_interface/uart_input/SLICE_645&quot; on site &quot;R14C20B&quot;, clk load = 0, ce load = 16, sr load = 0
+  PRIMARY &quot;clk_12MHz_c&quot; from comp &quot;clk_12MHz&quot; on CLK_PIN site &quot;128 (PT18A)&quot;, clk load = 512
+  SECONDARY &quot;clk_o_RNITESH&quot; from F1 on comp &quot;SLICE_719&quot; on site &quot;R14C18C&quot;, clk load = 0, ce load = 133, sr load = 0
+  SECONDARY &quot;debug_c[6]&quot; from Q0 on comp &quot;SLICE_284&quot; on site &quot;R21C20A&quot;, clk load = 0, ce load = 0, sr load = 38
+  SECONDARY &quot;interface_reset&quot; from Q0 on comp &quot;SLICE_287&quot; on site &quot;R21C18A&quot;, clk load = 0, ce load = 16, sr load = 16
+  SECONDARY &quot;un1_state[0]_1_RNI4GQH2&quot; from F1 on comp &quot;SLICE_751&quot; on site &quot;R14C20B&quot;, clk load = 0, ce load = 29, sr load = 0
+  SECONDARY &quot;rc_receiver/read_value[0]2lto7_i_a2_RNIKA8N3&quot; from F0 on comp &quot;SLICE_751&quot; on site &quot;R14C20B&quot;, clk load = 0, ce load = 0, sr load = 28
+  SECONDARY &quot;protocol_interface/uart_input/baud_reset&quot; from Q0 on comp &quot;protocol_interface/SLICE_374&quot; on site &quot;R14C20D&quot;, clk load = 0, ce load = 0, sr load = 19
+  SECONDARY &quot;arm_x/register[0]_0_sqmuxa&quot; from F0 on comp &quot;arm_x/SLICE_766&quot; on site &quot;R14C20C&quot;, clk load = 0, ce load = 18, sr load = 0
+  SECONDARY &quot;arm_x/register[3]e&quot; from F1 on comp &quot;arm_x/SLICE_243&quot; on site &quot;R14C20A&quot;, clk load = 0, ce load = 17, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
-  SECONDARY: 7 out of 8 (87%)
+  SECONDARY: 8 out of 8 (100%)
 
 Edge Clocks:
   No edge clock selected.
@@ -133,9 +135,9 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   53 + 4(JTAG) out of 336 (17.0%) PIO sites used.
-   53 + 4(JTAG) out of 115 (49.6%) bonded PIO sites used.
-   Number of PIO comps: 53; differential: 0.
+   55 + 4(JTAG) out of 336 (17.6%) PIO sites used.
+   55 + 4(JTAG) out of 115 (51.3%) bonded PIO sites used.
+   Number of PIO comps: 55; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
@@ -143,8 +145,8 @@ I/O Bank Usage Summary:
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
 | 0        | 14 / 28 ( 50%) | 2.5V       | -         |
-| 1        | 22 / 29 ( 75%) | 2.5V       | -         |
-| 2        | 15 / 29 ( 51%) | 2.5V       | -         |
+| 1        | 23 / 29 ( 79%) | 2.5V       | -         |
+| 2        | 16 / 29 ( 55%) | 2.5V       | -         |
 | 3        | 0 / 9 (  0%)   | -          | -         |
 | 4        | 0 / 10 (  0%)  | -          | -         |
 | 5        | 2 / 10 ( 20%)  | 2.5V       | -         |
@@ -159,12 +161,12 @@ Dumping design to file Uniboard_impl1.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 4971 unrouted.
+0 connections routed; 6240 unrouted.
 Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 7 secs 
 
-Start NBR router at Tue Jan 05 22:38:51 PST 2016
+Start NBR router at Sat Jan 09 14:10:51 PST 2016
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -179,36 +181,36 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Tue Jan 05 22:38:51 PST 2016
+Start NBR special constraint process at Sat Jan 09 14:10:51 PST 2016
 
-Start NBR section for initial routing at Tue Jan 05 22:38:51 PST 2016
+Start NBR section for initial routing at Sat Jan 09 14:10:51 PST 2016
 Level 4, iteration 1
-155(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+339(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Tue Jan 05 22:38:52 PST 2016
+Start NBR section for normal routing at Sat Jan 09 14:10:53 PST 2016
 Level 4, iteration 1
-81(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+177(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
 Level 4, iteration 2
-33(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+89(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 9 secs 
 Level 4, iteration 3
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 Level 4, iteration 4
-6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 Level 4, iteration 5
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 Level 4, iteration 7
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 
-Start NBR section for re-routing at Tue Jan 05 22:38:52 PST 2016
+Start NBR section for re-routing at Sat Jan 09 14:10:54 PST 2016
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 8 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 10 secs 
 
-Start NBR section for post-routing at Tue Jan 05 22:38:52 PST 2016
+Start NBR section for post-routing at Sat Jan 09 14:10:54 PST 2016
 
 End NBR router with 0 unrouted connection
 
@@ -223,10 +225,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 8 secs 
-Total REAL time: 9 secs 
+Total CPU time 9 secs 
+Total REAL time: 10 secs 
 Completely routed.
-End of route.  4971 routed (100.00%); 0 unrouted.
+End of route.  6240 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -248,8 +250,8 @@ PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 8 secs 
-Total REAL time to completion: 9 secs 
+Total CPU  time to completion: 10 secs 
+Total REAL time to completion: 11 secs 
 
 par done!
 

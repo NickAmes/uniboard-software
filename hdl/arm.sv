@@ -68,12 +68,12 @@ module ArmPeripheral(
 					end
 				axis_haddr + 8'd2: /* Div. factor register */
 					begin
-						read_value <= register[1];
+						read_value <= register[2];
 						read_size <= 3'd4;
 					end
 				axis_haddr + 8'd3: /* Steps register */
 					begin
-						read_value <= register[1];
+						read_value <= register[3];
 						read_size <= 3'd4;
 					end
 				default:
@@ -101,8 +101,9 @@ module ArmPeripheral(
 			if(reset)
 				begin
 					register[0] <= 32'b00101010; /* Config register */
-					register[2] <= 32'd5; //32'd12000; /* Div. factor register */
+					register[2] <= 32'd12000; //32'd12000; /* Div. factor register */
 					register[3] <= '0; /* Steps register */
+					int_step <= 0;
 				end
 			else
 				begin

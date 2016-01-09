@@ -38,7 +38,7 @@ module PWMGenerator (
 endmodule
 
 /* Motor PWM Peripheral. */
-module PWMPeripheral (
+module PWMPeripheral(
 	input logic clk_12MHz,
 	input logic clk_255kHz,
 	inout databus[31:0],
