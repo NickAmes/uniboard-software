@@ -21,7 +21,7 @@
         <Source name="constraints.ldc" type="LSE Design Constraints File" type_short="LDC">
             <Options/>
         </Source>
-        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming" excluded="TRUE">
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>
