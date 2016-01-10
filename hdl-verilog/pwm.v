@@ -1,7 +1,7 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
  * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
-//`default_nettype none
+`default_nettype none
 
 /* PWM generator.
  * Outputs a 1ms (0) to 2ms (255) pulse every 20ms. */
@@ -67,7 +67,7 @@ module PWMPeripheral(
 	always @ (posedge clk_12MHz)			
 		begin
 			prev_select <= select;
-			if(reset)
+			if(reset == 1)
 				begin
 					register[0] <= 8'd127;
 					register[1] <= 8'd127;

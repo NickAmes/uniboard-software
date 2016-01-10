@@ -40,7 +40,7 @@ WARNING - synthesis: input pad net 'xbee_pause' has no legal load.
 WARNING - synthesis: DRC complete with 30 warnings.
 
 Design Results:
-   1556 blocks expanded
+   1706 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.

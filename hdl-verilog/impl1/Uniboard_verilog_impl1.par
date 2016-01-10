@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 00:19:16 2016
+Sun Jan 10 00:39:29 2016
 
 /usr/local/diamond/3.4_x64/ispfpga/bin/lin64/par -f Uniboard_verilog_impl1.p2t
 Uniboard_verilog_impl1_map.ncd Uniboard_verilog_impl1.dir
@@ -16,17 +16,17 @@ Preference file: Uniboard_verilog_impl1.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           67.515      0           0.023       0           22          Complete        
+5_1   *     0           64.512      0           0.109       0           24          Complete        
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 22 secs 
+Total (real) run time for 1-seed: 24 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "Uniboard_verilog_impl1_map.ncd"
-Sun Jan 10 00:19:16 2016
+Sun Jan 10 00:39:29 2016
 
 PAR: Place And Route Diamond (64-bit) 3.4.1.213.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Uniboard_verilog_impl1_map.ncd Uniboard_verilog_impl1.dir/5_1.ncd Uniboard_verilog_impl1.prf
@@ -54,30 +54,29 @@ Device utilization summary:
                   53+4(JTAG)/115     50% bonded
    IOLOGIC            8/336           2% used
 
-   SLICE            563/3432         16% used
+   SLICE            647/3432         18% used
 
 
 
-Number of Signals: 1633
-Number of Connections: 4177
+Number of Signals: 1864
+Number of Connections: 4865
 
 Pin Constraint Summary:
    53 out of 53 pins locked (100% locked).
 
-The following 2 signals are selected to use the primary clock routing resources:
-    debug_c_c (driver: clk_12MHz, clk load #: 159)
-    clk_255kHz (driver: pwm_clk_div/SLICE_176, clk load #: 123)
+The following 1 signal is selected to use the primary clock routing resources:
+    debug_c_c (driver: clk_12MHz, clk load #: 296)
 
 
 The following 8 signals are selected to use the secondary clock routing resources:
-    select[7] (driver: protocol_interface/SLICE_364, clk load #: 9, sr load #: 0, ce load #: 0)
-    \protocol_interface/uart_output/bclk (driver: protocol_interface/uart_output/baud_gen/SLICE_137, clk load #: 9, sr load #: 0, ce load #: 0)
-    protocol_interface/n1099 (driver: protocol_interface/SLICE_270, clk load #: 0, sr load #: 0, ce load #: 17)
-    protocol_interface/uart_output/baud_gen/n6901 (driver: protocol_interface/uart_output/baud_gen/SLICE_528, clk load #: 0, sr load #: 17, ce load #: 0)
-    protocol_interface/uart_input/baud_gen/n2086 (driver: protocol_interface/SLICE_542, clk load #: 0, sr load #: 17, ce load #: 0)
-    rc_receiver/recv_ch7/n13558 (driver: SLICE_359, clk load #: 0, sr load #: 10, ce load #: 0)
-    rc_receiver/recv_ch3/n13567 (driver: rc_receiver/recv_ch3/SLICE_568, clk load #: 0, sr load #: 10, ce load #: 0)
-    rc_receiver/recv_ch2/n13523 (driver: rc_receiver/recv_ch2/SLICE_570, clk load #: 0, sr load #: 10, ce load #: 0)
+    n18236 (driver: SLICE_420, clk load #: 0, sr load #: 0, ce load #: 82)
+    n19456 (driver: SLICE_452, clk load #: 0, sr load #: 31, ce load #: 0)
+    protocol_interface/n7949 (driver: protocol_interface/SLICE_547, clk load #: 0, sr load #: 0, ce load #: 29)
+    n18273 (driver: SLICE_676, clk load #: 0, sr load #: 26, ce load #: 0)
+    select[7] (driver: protocol_interface/SLICE_395, clk load #: 9, sr load #: 0, ce load #: 0)
+    \protocol_interface/uart_output/bclk (driver: protocol_interface/uart_output/baud_gen/SLICE_125, clk load #: 9, sr load #: 0, ce load #: 0)
+    n2403 (driver: SLICE_540, clk load #: 0, sr load #: 17, ce load #: 0)
+    protocol_interface/uart_output/baud_gen/n8589 (driver: protocol_interface/uart_output/baud_gen/SLICE_566, clk load #: 0, sr load #: 17, ce load #: 0)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
@@ -85,14 +84,14 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
-....................
-Placer score = 194483.
-Finished Placer Phase 1.  REAL time: 10 secs 
+.......................
+Placer score = 219887.
+Finished Placer Phase 1.  REAL time: 11 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  192589
-Finished Placer Phase 2.  REAL time: 10 secs 
+Placer score =  217718
+Finished Placer Phase 2.  REAL time: 12 secs 
 
 
 ------------------ Clock Report ------------------
@@ -104,18 +103,17 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "debug_c_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 159
-  PRIMARY "clk_255kHz" from Q0 on comp "pwm_clk_div/SLICE_176" on site "R2C19D", clk load = 123
-  SECONDARY "select[7]" from Q0 on comp "protocol_interface/SLICE_364" on site "R21C20B", clk load = 9, ce load = 0, sr load = 0
-  SECONDARY "\protocol_interface/uart_output/bclk" from Q0 on comp "protocol_interface/uart_output/baud_gen/SLICE_137" on site "R25C13A", clk load = 9, ce load = 0, sr load = 0
-  SECONDARY "protocol_interface/n1099" from Q0 on comp "protocol_interface/SLICE_270" on site "R14C20D", clk load = 0, ce load = 17, sr load = 0
-  SECONDARY "protocol_interface/uart_output/baud_gen/n6901" from F0 on comp "protocol_interface/uart_output/baud_gen/SLICE_528" on site "R21C18A", clk load = 0, ce load = 0, sr load = 17
-  SECONDARY "protocol_interface/uart_input/baud_gen/n2086" from F0 on comp "protocol_interface/SLICE_542" on site "R21C18C", clk load = 0, ce load = 0, sr load = 17
-  SECONDARY "rc_receiver/recv_ch7/n13558" from F0 on comp "SLICE_359" on site "R14C18B", clk load = 0, ce load = 0, sr load = 10
-  SECONDARY "rc_receiver/recv_ch3/n13567" from F0 on comp "rc_receiver/recv_ch3/SLICE_568" on site "R14C20B", clk load = 0, ce load = 0, sr load = 10
-  SECONDARY "rc_receiver/recv_ch2/n13523" from F1 on comp "rc_receiver/recv_ch2/SLICE_570" on site "R14C18C", clk load = 0, ce load = 0, sr load = 10
+  PRIMARY "debug_c_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 296
+  SECONDARY "n18236" from F1 on comp "SLICE_420" on site "R14C20D", clk load = 0, ce load = 82, sr load = 0
+  SECONDARY "n19456" from F0 on comp "SLICE_452" on site "R14C20B", clk load = 0, ce load = 0, sr load = 31
+  SECONDARY "protocol_interface/n7949" from F0 on comp "protocol_interface/SLICE_547" on site "R14C20C", clk load = 0, ce load = 29, sr load = 0
+  SECONDARY "n18273" from F1 on comp "SLICE_676" on site "R14C20A", clk load = 0, ce load = 0, sr load = 26
+  SECONDARY "select[7]" from Q0 on comp "protocol_interface/SLICE_395" on site "R21C20C", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "\protocol_interface/uart_output/bclk" from Q0 on comp "protocol_interface/uart_output/baud_gen/SLICE_125" on site "R14C18A", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "n2403" from F0 on comp "SLICE_540" on site "R21C20D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "protocol_interface/uart_output/baud_gen/n8589" from F0 on comp "protocol_interface/uart_output/baud_gen/SLICE_566" on site "R14C18C", clk load = 0, ce load = 0, sr load = 17
 
-  PRIMARY  : 2 out of 8 (25%)
+  PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 8 out of 8 (100%)
 
 Edge Clocks:
@@ -142,16 +140,16 @@ I/O Bank Usage Summary:
 | 5        | 2 / 10 ( 20%)  | 2.5V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 9 secs 
+Total placer CPU time: 11 secs 
 
 Dumping design to file Uniboard_verilog_impl1.dir/5_1.ncd.
 
-0 connections routed; 4177 unrouted.
+0 connections routed; 4865 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 12 secs 
+Completed router resource preassignment. Real time: 14 secs 
 
-Start NBR router at Sun Jan 10 00:19:28 PST 2016
+Start NBR router at Sun Jan 10 00:39:43 PST 2016
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -166,77 +164,102 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Sun Jan 10 00:19:28 PST 2016
+Start NBR special constraint process at Sun Jan 10 00:39:43 PST 2016
 
-Start NBR section for initial routing at Sun Jan 10 00:19:29 PST 2016
+Start NBR section for initial routing at Sun Jan 10 00:39:43 PST 2016
 Level 4, iteration 1
-109(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 68.026ns/0.000ns; real time: 13 secs 
+139(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.200ns/0.000ns; real time: 15 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Sun Jan 10 00:19:29 PST 2016
+Start NBR section for normal routing at Sun Jan 10 00:39:44 PST 2016
 Level 4, iteration 1
-54(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 13 secs 
+61(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.519ns/0.000ns; real time: 15 secs 
 Level 4, iteration 2
-21(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 14 secs 
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.519ns/0.000ns; real time: 15 secs 
 Level 4, iteration 3
-11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 14 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.519ns/0.000ns; real time: 15 secs 
 Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 14 secs 
-Level 4, iteration 5
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 14 secs 
-Level 4, iteration 6
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 14 secs 
-
-Start NBR section for setup/hold timing optimization with effort level 3 at Sun Jan 10 00:19:30 PST 2016
-WARNING - par: Cannot fix hold timing violation(-0.475ns with flag 0/1/1) at conn (SLICE_309:F0 -> SLICE_309:DI0) in signal rc_receiver/n176.
-WARNING - par: Cannot fix hold timing violation(-0.093ns with flag 0/1/1) at conn (rc_receiver/i10548/SLICE_367:OFX0 -> rc_receiver/SLICE_317:FXA) in signal rc_receiver/n12632.
-WARNING - par: Cannot fix hold timing violation(-0.056ns with flag 0/1/1) at conn (rc_receiver/i10545/SLICE_368:OFX0 -> rc_receiver/SLICE_313:FXA) in signal rc_receiver/n12629.
-WARNING - par: Cannot fix hold timing violation(-0.168ns with flag 0/1/1) at conn (rc_receiver/i10539/SLICE_370:OFX0 -> rc_receiver/SLICE_310:FXA) in signal rc_receiver/n12623.
-WARNING - par: Cannot fix hold timing violation(-0.306ns with flag 0/1/1) at conn (rc_receiver/SLICE_316:OFX1 -> rc_receiver/SLICE_316:DI1) in signal rc_receiver/n12604.
-WARNING - par: Cannot fix hold timing violation(-0.200ns with flag 0/1/1) at conn (rc_receiver/SLICE_315:OFX1 -> rc_receiver/SLICE_315:DI1) in signal rc_receiver/n12607.
-WARNING - par: Cannot fix hold timing violation(-0.200ns with flag 0/1/1) at conn (rc_receiver/SLICE_314:OFX1 -> rc_receiver/SLICE_314:DI1) in signal rc_receiver/n12628.
-WARNING - par: Cannot fix hold timing violation(-0.419ns with flag 0/1/1) at conn (rc_receiver/SLICE_313:OFX1 -> rc_receiver/SLICE_313:DI1) in signal rc_receiver/n12631.
-WARNING - par: Cannot fix hold timing violation(-0.419ns with flag 0/1/1) at conn (rc_receiver/SLICE_312:OFX1 -> rc_receiver/SLICE_312:DI1) in signal rc_receiver/n12637.
-WARNING - par: Cannot fix hold timing violation(-0.423ns with flag 0/1/1) at conn (rc_receiver/SLICE_317:OFX1 -> rc_receiver/SLICE_317:DI1) in signal rc_receiver/n12634.
-WARNING - par: Cannot fix hold timing violation(-0.306ns with flag 0/1/1) at conn (rc_receiver/SLICE_311:OFX1 -> rc_receiver/SLICE_311:DI1) in signal rc_receiver/n12640.
-WARNING - par: Cannot fix hold timing violation(-0.168ns with flag 0/1/1) at conn (rc_receiver/SLICE_310:OFX0 -> rc_receiver/SLICE_310:FXB) in signal rc_receiver/n12624.
-WARNING - par: Cannot fix hold timing violation(-0.419ns with flag 0/1/1) at conn (rc_receiver/SLICE_310:OFX1 -> rc_receiver/SLICE_310:DI1) in signal rc_receiver/n12625.
-WARNING - par: Cannot fix hold timing violation(-0.175ns with flag 0/1/1) at conn (rc_receiver/SLICE_317:OFX0 -> rc_receiver/SLICE_317:FXB) in signal rc_receiver/n12633.
-WARNING - par: Cannot fix hold timing violation(-0.056ns with flag 0/1/1) at conn (rc_receiver/i10551/SLICE_374:OFX0 -> rc_receiver/SLICE_312:FXA) in signal rc_receiver/n12635.
-WARNING - par: Cannot fix hold timing violation(-0.622ns with flag 0/1/1) at conn (protocol_interface/uart_output/SLICE_299:OFX0 -> protocol_interface/uart_output/SLICE_299:DI0) in signal protocol_interface/uart_output/n13633.
-WARNING - par: Cannot fix hold timing violation(-0.645ns with flag 0/1/1) at conn (protocol_interface/uart_output/SLICE_243:F0 -> protocol_interface/uart_output/SLICE_243:DI0) in signal protocol_interface/uart_output/n13481.
-----------------------------------
-Info: Total 17 connections where the hold timing errors associated cannot be fixed.
-
-Level 4, iteration 0
-Level 4, iteration 1
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<hold >: 0.018ns/0.000ns; real time: 20 secs 
-Level 4, iteration 2
-0(0.00%) conflict; 1(0.02%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<hold >: 0.018ns/0.000ns; real time: 20 secs 
+Estimated worst slack/total negative slack<setup>: 64.519ns/0.000ns; real time: 15 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.519ns/0.000ns; real time: 16 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at Sun Jan 10 00:39:45 PST 2016
+WARNING - par: Cannot fix hold timing violation(-0.274ns with flag 0/1/0) at conn (SLICE_452:F0 -> protocol_interface/uart_output/SLICE_397:LSR) in signal n19456.
+WARNING - par: Cannot fix hold timing violation(-0.213ns with flag 0/1/0) at conn (SLICE_676:F1 -> protocol_interface/uart_output/SLICE_246:LSR) in signal n18273.
+WARNING - par: Cannot fix hold timing violation(-0.213ns with flag 0/1/0) at conn (SLICE_676:F1 -> protocol_interface/uart_output/SLICE_281:LSR) in signal n18273.
+WARNING - par: Cannot fix hold timing violation(-0.213ns with flag 0/1/0) at conn (SLICE_676:F1 -> protocol_interface/uart_output/SLICE_339:LSR) in signal n18273.
+WARNING - par: Cannot fix hold timing violation(-0.438ns with flag 0/1/1) at conn (rc_receiver/SLICE_353:OFX1 -> rc_receiver/SLICE_353:DI1) in signal rc_receiver/n17110.
+WARNING - par: Cannot fix hold timing violation(-0.476ns with flag 0/1/1) at conn (SLICE_352:F0 -> SLICE_352:DI0) in signal rc_receiver/n176.
+WARNING - par: Cannot fix hold timing violation(-0.332ns with flag 0/1/1) at conn (rc_receiver/SLICE_353:OFX0 -> rc_receiver/SLICE_353:FXB) in signal rc_receiver/n17109.
+WARNING - par: Cannot fix hold timing violation(-0.351ns with flag 0/1/1) at conn (rc_receiver/SLICE_354:OFX0 -> rc_receiver/SLICE_354:FXB) in signal rc_receiver/n17112.
+WARNING - par: Cannot fix hold timing violation(-0.216ns with flag 0/1/1) at conn (rc_receiver/SLICE_355:OFX0 -> rc_receiver/SLICE_355:FXB) in signal rc_receiver/n17115.
+WARNING - par: Cannot fix hold timing violation(-0.297ns with flag 0/1/1) at conn (rc_receiver/SLICE_356:OFX0 -> rc_receiver/SLICE_356:FXB) in signal rc_receiver/n17118.
+WARNING - par: Cannot fix hold timing violation(-0.329ns with flag 0/1/1) at conn (rc_receiver/SLICE_357:OFX0 -> rc_receiver/SLICE_357:FXB) in signal rc_receiver/n17121.
+WARNING - par: Cannot fix hold timing violation(-0.332ns with flag 0/1/1) at conn (rc_receiver/SLICE_358:OFX0 -> rc_receiver/SLICE_358:FXB) in signal rc_receiver/n17124.
+WARNING - par: Cannot fix hold timing violation(-0.438ns with flag 0/1/1) at conn (rc_receiver/i13833/SLICE_404:OFX0 -> rc_receiver/SLICE_353:FXA) in signal rc_receiver/n17108.
+WARNING - par: Cannot fix hold timing violation(-0.354ns with flag 0/1/1) at conn (rc_receiver/SLICE_359:OFX0 -> rc_receiver/SLICE_359:FXB) in signal rc_receiver/n17127.
+WARNING - par: Cannot fix hold timing violation(-0.437ns with flag 0/1/1) at conn (rc_receiver/SLICE_360:OFX0 -> rc_receiver/SLICE_360:FXB) in signal rc_receiver/n17130.
+WARNING - par: Cannot fix hold timing violation(-0.361ns with flag 0/1/1) at conn (rc_receiver/i13839/SLICE_406:OFX0 -> rc_receiver/SLICE_355:FXA) in signal rc_receiver/n17114.
+WARNING - par: Cannot fix hold timing violation(-0.361ns with flag 0/1/1) at conn (rc_receiver/SLICE_355:OFX1 -> rc_receiver/SLICE_355:DI1) in signal rc_receiver/n17116.
+WARNING - par: Cannot fix hold timing violation(-0.297ns with flag 0/1/1) at conn (rc_receiver/i13842/SLICE_405:OFX0 -> rc_receiver/SLICE_356:FXA) in signal rc_receiver/n17117.
+WARNING - par: Cannot fix hold timing violation(-0.297ns with flag 0/1/1) at conn (rc_receiver/SLICE_356:OFX1 -> rc_receiver/SLICE_356:DI1) in signal rc_receiver/n17119.
+WARNING - par: Cannot fix hold timing violation(-0.265ns with flag 0/1/1) at conn (rc_receiver/i13845/SLICE_403:OFX0 -> rc_receiver/SLICE_357:FXA) in signal rc_receiver/n17120.
+WARNING - par: Cannot fix hold timing violation(-0.329ns with flag 0/1/1) at conn (rc_receiver/SLICE_357:OFX1 -> rc_receiver/SLICE_357:DI1) in signal rc_receiver/n17122.
+WARNING - par: Cannot fix hold timing violation(-0.437ns with flag 0/1/1) at conn (rc_receiver/SLICE_360:OFX1 -> rc_receiver/SLICE_360:DI1) in signal rc_receiver/n17131.
+WARNING - par: Cannot fix hold timing violation(-0.361ns with flag 0/1/1) at conn (rc_receiver/SLICE_359:OFX1 -> rc_receiver/SLICE_359:DI1) in signal rc_receiver/n17128.
+WARNING - par: Cannot fix hold timing violation(-0.493ns with flag 0/1/1) at conn (protocol_interface/uart_output/SLICE_339:OFX0 -> protocol_interface/uart_output/SLICE_339:DI0) in signal protocol_interface/uart_output/n17799.
+. . .
+----------------------------------
+Info: Total 31 connections where the hold timing errors associated cannot be fixed.
+
 Level 4, iteration 0
-0(0.00%) conflict; 1(0.02%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.495ns/0.000ns; real time: 20 secs 
+Level 4, iteration 1
+9(0.00%) conflicts; 5(0.10%) untouched conns; 78 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: -0.013ns/-0.079ns; real time: 20 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 8(0.16%) untouched conns; 78 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: -0.013ns/-0.079ns; real time: 20 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 8(0.16%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.499ns/0.000ns; real time: 20 secs 
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.495ns/0.000ns; real time: 20 secs 
+Estimated worst slack/total negative slack<setup>: 64.492ns/0.000ns; real time: 20 secs 
+WARNING - par: Cannot fix hold timing violation(-0.008ns with flag 0/1/1) at conn (rc_receiver/SLICE_355:OFX0 -> rc_receiver/SLICE_355:FXB) in signal rc_receiver/n17115.
+WARNING - par: Cannot fix hold timing violation(-0.008ns with flag 0/1/1) at conn (rc_receiver/SLICE_356:OFX0 -> rc_receiver/SLICE_356:FXB) in signal rc_receiver/n17118.
+WARNING - par: Cannot fix hold timing violation(-0.013ns with flag 0/1/1) at conn (rc_receiver/i13839/SLICE_406:OFX0 -> rc_receiver/SLICE_355:FXA) in signal rc_receiver/n17114.
+WARNING - par: Cannot fix hold timing violation(-0.013ns with flag 0/1/1) at conn (rc_receiver/SLICE_355:OFX1 -> rc_receiver/SLICE_355:DI1) in signal rc_receiver/n17116.
+WARNING - par: Cannot fix hold timing violation(-0.008ns with flag 0/1/1) at conn (rc_receiver/SLICE_356:OFX1 -> rc_receiver/SLICE_356:DI1) in signal rc_receiver/n17119.
+----------------------------------
+Info: Total 5 connections where the hold timing errors associated cannot be fixed.
 
-Start NBR section for re-routing at Sun Jan 10 00:19:36 PST 2016
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 78 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: -0.013ns/-0.079ns; real time: 20 secs 
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 67.515ns/0.000ns; real time: 20 secs 
+Estimated worst slack/total negative slack<hold >: 0.104ns/0.000ns; real time: 20 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.492ns/0.000ns; real time: 21 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.492ns/0.000ns; real time: 21 secs 
 
-Start NBR section for post-routing at Sun Jan 10 00:19:36 PST 2016
+Start NBR section for re-routing at Sun Jan 10 00:39:50 PST 2016
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 64.512ns/0.000ns; real time: 21 secs 
+
+Start NBR section for post-routing at Sun Jan 10 00:39:50 PST 2016
 
 End NBR router with 0 unrouted connection
 
@@ -244,17 +267,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 67.515ns
+  Estimated worst slack<setup> : 64.512ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 21 secs 
-Total REAL time: 22 secs 
+Total CPU time 22 secs 
+Total REAL time: 23 secs 
 Completely routed.
-End of route.  4177 routed (100.00%); 0 unrouted.
+End of route.  4865 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -270,14 +293,14 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 67.515
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 64.512
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.023
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.109
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 21 secs 
-Total REAL time to completion: 22 secs 
+Total CPU  time to completion: 23 secs 
+Total REAL time to completion: 24 secs 
 
 par done!
 
