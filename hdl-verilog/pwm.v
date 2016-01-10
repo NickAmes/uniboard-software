@@ -49,9 +49,15 @@ module PWMPeripheral(
 	input wire select, /* Rising edge writes or hold high to read. */
 	output wire pwm_left,
 	output wire pwm_right,
+	input wire pause,
 	input wire reset);
 	
 	reg [7:0] register[1:0];
+	wire [7:0] left_value;
+	wire [7:0] right_value;
+	
+	assign left_value = pause ? 8'd127 : register[0];
+	assign right_value = pause ? 8'd127 : register[1];
 	
 	/* Bus read handling */
 	reg [7:0] read_value;
@@ -105,11 +111,11 @@ module PWMPeripheral(
 		end
 		
 	/* Peripheral components */
-	PWMGenerator left(.width(register[0]),
+	PWMGenerator left(.width(left_value),
 	                  .clk_255kHz(clk_255kHz),
 	                  .pwm(pwm_left),
 	                  .reset(reset));
-	PWMGenerator right(.width(register[1]),
+	PWMGenerator right(.width(right_value),
 	                  .clk_255kHz(clk_255kHz),
 	                  .pwm(pwm_right),
 	                  .reset(reset));

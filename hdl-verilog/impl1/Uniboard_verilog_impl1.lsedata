@@ -97,7 +97,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 699
+        Instances in netlist: 701
     -->
 
     <instance  name = "reduce_and_3"  library = "work"  arch = ""  type = "comb">
@@ -30197,7 +30197,7 @@
 
         <nets>
         <nitem  name = "xbee_pause"  />
-        <nitem  name = "\global_control/n201"  />
+        <nitem  name = "\global_control/n177"  />
         </nets>
     </instance>
 
@@ -30274,7 +30274,7 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
         <nitem  name = "debug[6]"  />
-        <nitem  name = "\global_control/n202"  />
+        <nitem  name = "\global_control/n178"  />
         </nets>
     </instance>
 
@@ -30286,7 +30286,7 @@
 
         <nets>
         <nitem  name = "\global_control/prev_select"  />
-        <nitem  name = "\global_control/n203"  />
+        <nitem  name = "\global_control/n179"  />
         </nets>
     </instance>
 
@@ -30299,8 +30299,8 @@
 
         <nets>
         <nitem  name = "select[1]"  />
-        <nitem  name = "\global_control/n203"  />
-        <nitem  name = "\global_control/n204"  />
+        <nitem  name = "\global_control/n179"  />
+        <nitem  name = "\global_control/n180"  />
         </nets>
     </instance>
 
@@ -30336,7 +30336,7 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n206"  />
+        <nitem  name = "\global_control/n182"  />
         </nets>
     </instance>
 
@@ -30372,7 +30372,7 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n207"  />
+        <nitem  name = "\global_control/n183"  />
         </nets>
     </instance>
 
@@ -30408,7 +30408,7 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n208"  />
+        <nitem  name = "\global_control/n184"  />
         </nets>
     </instance>
 
@@ -30444,7 +30444,7 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n209"  />
+        <nitem  name = "\global_control/n185"  />
         </nets>
     </instance>
 
@@ -30459,12 +30459,12 @@
         </pins>
 
         <nets>
-        <nitem  name = "\global_control/n205"  />
-        <nitem  name = "\global_control/n206"  />
-        <nitem  name = "\global_control/n207"  />
-        <nitem  name = "\global_control/n208"  />
-        <nitem  name = "\global_control/n209"  />
-        <nitem  name = "\global_control/n210"  />
+        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n182"  />
+        <nitem  name = "\global_control/n183"  />
+        <nitem  name = "\global_control/n184"  />
+        <nitem  name = "\global_control/n185"  />
+        <nitem  name = "\global_control/n186"  />
         </nets>
     </instance>
 
@@ -30742,12 +30742,36 @@
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
         <nitem  name = "\global_control/register[0][2]"  />
+        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n182"  />
+        <nitem  name = "\global_control/n183"  />
+        <nitem  name = "\global_control/n184"  />
+        <nitem  name = "\global_control/n185"  />
+        <nitem  name = "\global_control/n186"  />
+        <nitem  name = "\global_control/n188"  />
+        <nitem  name = "\global_control/n189"  />
+        <nitem  name = "\global_control/n190"  />
+        <nitem  name = "\global_control/n191"  />
+        <nitem  name = "\global_control/n192"  />
+        <nitem  name = "\global_control/n193"  />
+        <nitem  name = "\global_control/n194"  />
+        <nitem  name = "\global_control/n195"  />
+        <nitem  name = "\global_control/n196"  />
+        <nitem  name = "\global_control/n197"  />
+        <nitem  name = "\global_control/n198"  />
+        <nitem  name = "\global_control/n199"  />
+        <nitem  name = "\global_control/n200"  />
+        <nitem  name = "\global_control/n201"  />
+        <nitem  name = "\global_control/n202"  />
+        <nitem  name = "\global_control/n203"  />
+        <nitem  name = "\global_control/n204"  />
         <nitem  name = "\global_control/n205"  />
         <nitem  name = "\global_control/n206"  />
         <nitem  name = "\global_control/n207"  />
         <nitem  name = "\global_control/n208"  />
         <nitem  name = "\global_control/n209"  />
         <nitem  name = "\global_control/n210"  />
+        <nitem  name = "\global_control/n211"  />
         <nitem  name = "\global_control/n212"  />
         <nitem  name = "\global_control/n213"  />
         <nitem  name = "\global_control/n214"  />
@@ -30756,30 +30780,6 @@
         <nitem  name = "\global_control/n217"  />
         <nitem  name = "\global_control/n218"  />
         <nitem  name = "\global_control/n219"  />
-        <nitem  name = "\global_control/n220"  />
-        <nitem  name = "\global_control/n221"  />
-        <nitem  name = "\global_control/n222"  />
-        <nitem  name = "\global_control/n223"  />
-        <nitem  name = "\global_control/n224"  />
-        <nitem  name = "\global_control/n225"  />
-        <nitem  name = "\global_control/n226"  />
-        <nitem  name = "\global_control/n227"  />
-        <nitem  name = "\global_control/n228"  />
-        <nitem  name = "\global_control/n229"  />
-        <nitem  name = "\global_control/n230"  />
-        <nitem  name = "\global_control/n231"  />
-        <nitem  name = "\global_control/n232"  />
-        <nitem  name = "\global_control/n233"  />
-        <nitem  name = "\global_control/n234"  />
-        <nitem  name = "\global_control/n235"  />
-        <nitem  name = "\global_control/n236"  />
-        <nitem  name = "\global_control/n237"  />
-        <nitem  name = "\global_control/n238"  />
-        <nitem  name = "\global_control/n239"  />
-        <nitem  name = "\global_control/n240"  />
-        <nitem  name = "\global_control/n241"  />
-        <nitem  name = "\global_control/n242"  />
-        <nitem  name = "\global_control/n243"  />
         </nets>
     </instance>
 
@@ -30817,15 +30817,15 @@
         <nets>
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
-        <nitem  name = "\global_control/n205"  />
-        <nitem  name = "\global_control/n206"  />
-        <nitem  name = "\global_control/n207"  />
-        <nitem  name = "\global_control/n208"  />
-        <nitem  name = "\global_control/n209"  />
-        <nitem  name = "\global_control/n210"  />
-        <nitem  name = "\global_control/n245"  />
-        <nitem  name = "\global_control/n246"  />
-        <nitem  name = "\global_control/n247"  />
+        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n182"  />
+        <nitem  name = "\global_control/n183"  />
+        <nitem  name = "\global_control/n184"  />
+        <nitem  name = "\global_control/n185"  />
+        <nitem  name = "\global_control/n186"  />
+        <nitem  name = "\global_control/n221"  />
+        <nitem  name = "\global_control/n222"  />
+        <nitem  name = "\global_control/n223"  />
         </nets>
     </instance>
 
@@ -30860,7 +30860,7 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n205"  />
+        <nitem  name = "\global_control/n181"  />
         </nets>
     </instance>
 
@@ -30875,8 +30875,8 @@
         <nets>
         <nitem  name = "databus[1]"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n205"  />
-        <nitem  name = "\global_control/n250"  />
+        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n226"  />
         </nets>
     </instance>
 
@@ -30891,8 +30891,8 @@
         <nets>
         <nitem  name = "rw"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n250"  />
-        <nitem  name = "\global_control/n251"  />
+        <nitem  name = "\global_control/n226"  />
+        <nitem  name = "\global_control/n227"  />
         </nets>
     </instance>
 
@@ -31030,7 +31030,31 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
+        <nitem  name = "\global_control/n180"  />
+        <nitem  name = "\global_control/n188"  />
+        <nitem  name = "\global_control/n189"  />
+        <nitem  name = "\global_control/n190"  />
+        <nitem  name = "\global_control/n191"  />
+        <nitem  name = "\global_control/n192"  />
+        <nitem  name = "\global_control/n193"  />
+        <nitem  name = "\global_control/n194"  />
+        <nitem  name = "\global_control/n195"  />
+        <nitem  name = "\global_control/n196"  />
+        <nitem  name = "\global_control/n197"  />
+        <nitem  name = "\global_control/n198"  />
+        <nitem  name = "\global_control/n199"  />
+        <nitem  name = "\global_control/n200"  />
+        <nitem  name = "\global_control/n201"  />
+        <nitem  name = "\global_control/n202"  />
+        <nitem  name = "\global_control/n203"  />
         <nitem  name = "\global_control/n204"  />
+        <nitem  name = "\global_control/n205"  />
+        <nitem  name = "\global_control/n206"  />
+        <nitem  name = "\global_control/n207"  />
+        <nitem  name = "\global_control/n208"  />
+        <nitem  name = "\global_control/n209"  />
+        <nitem  name = "\global_control/n210"  />
+        <nitem  name = "\global_control/n211"  />
         <nitem  name = "\global_control/n212"  />
         <nitem  name = "\global_control/n213"  />
         <nitem  name = "\global_control/n214"  />
@@ -31039,15 +31063,6 @@
         <nitem  name = "\global_control/n217"  />
         <nitem  name = "\global_control/n218"  />
         <nitem  name = "\global_control/n219"  />
-        <nitem  name = "\global_control/n220"  />
-        <nitem  name = "\global_control/n221"  />
-        <nitem  name = "\global_control/n222"  />
-        <nitem  name = "\global_control/n223"  />
-        <nitem  name = "\global_control/n224"  />
-        <nitem  name = "\global_control/n225"  />
-        <nitem  name = "\global_control/n226"  />
-        <nitem  name = "\global_control/n227"  />
-        <nitem  name = "\global_control/n228"  />
         <nitem  name = "\global_control/n229"  />
         <nitem  name = "\global_control/n230"  />
         <nitem  name = "\global_control/n231"  />
@@ -31063,6 +31078,15 @@
         <nitem  name = "\global_control/n241"  />
         <nitem  name = "\global_control/n242"  />
         <nitem  name = "\global_control/n243"  />
+        <nitem  name = "\global_control/n244"  />
+        <nitem  name = "\global_control/n245"  />
+        <nitem  name = "\global_control/n246"  />
+        <nitem  name = "\global_control/n247"  />
+        <nitem  name = "\global_control/n248"  />
+        <nitem  name = "\global_control/n249"  />
+        <nitem  name = "\global_control/n250"  />
+        <nitem  name = "\global_control/n251"  />
+        <nitem  name = "\global_control/n252"  />
         <nitem  name = "\global_control/n253"  />
         <nitem  name = "\global_control/n254"  />
         <nitem  name = "\global_control/n255"  />
@@ -31071,30 +31095,6 @@
         <nitem  name = "\global_control/n258"  />
         <nitem  name = "\global_control/n259"  />
         <nitem  name = "\global_control/n260"  />
-        <nitem  name = "\global_control/n261"  />
-        <nitem  name = "\global_control/n262"  />
-        <nitem  name = "\global_control/n263"  />
-        <nitem  name = "\global_control/n264"  />
-        <nitem  name = "\global_control/n265"  />
-        <nitem  name = "\global_control/n266"  />
-        <nitem  name = "\global_control/n267"  />
-        <nitem  name = "\global_control/n268"  />
-        <nitem  name = "\global_control/n269"  />
-        <nitem  name = "\global_control/n270"  />
-        <nitem  name = "\global_control/n271"  />
-        <nitem  name = "\global_control/n272"  />
-        <nitem  name = "\global_control/n273"  />
-        <nitem  name = "\global_control/n274"  />
-        <nitem  name = "\global_control/n275"  />
-        <nitem  name = "\global_control/n276"  />
-        <nitem  name = "\global_control/n277"  />
-        <nitem  name = "\global_control/n278"  />
-        <nitem  name = "\global_control/n279"  />
-        <nitem  name = "\global_control/n280"  />
-        <nitem  name = "\global_control/n281"  />
-        <nitem  name = "\global_control/n282"  />
-        <nitem  name = "\global_control/n283"  />
-        <nitem  name = "\global_control/n284"  />
         </nets>
     </instance>
 
@@ -31116,13 +31116,13 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n204"  />
-        <nitem  name = "\global_control/n245"  />
-        <nitem  name = "\global_control/n246"  />
-        <nitem  name = "\global_control/n247"  />
-        <nitem  name = "\global_control/n286"  />
-        <nitem  name = "\global_control/n287"  />
-        <nitem  name = "\global_control/n288"  />
+        <nitem  name = "\global_control/n180"  />
+        <nitem  name = "\global_control/n221"  />
+        <nitem  name = "\global_control/n222"  />
+        <nitem  name = "\global_control/n223"  />
+        <nitem  name = "\global_control/n262"  />
+        <nitem  name = "\global_control/n263"  />
+        <nitem  name = "\global_control/n264"  />
         </nets>
     </instance>
 
@@ -31136,9 +31136,9 @@
 
         <nets>
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n204"  />
-        <nitem  name = "\global_control/n251"  />
-        <nitem  name = "\global_control/n289"  />
+        <nitem  name = "\global_control/n180"  />
+        <nitem  name = "\global_control/n227"  />
+        <nitem  name = "\global_control/n265"  />
         </nets>
     </instance>
 
@@ -31150,7 +31150,7 @@
 
         <nets>
         <nitem  name = "\global_control/prev_clk_1Hz"  />
-        <nitem  name = "\global_control/n290"  />
+        <nitem  name = "\global_control/n266"  />
         </nets>
     </instance>
 
@@ -31163,8 +31163,8 @@
 
         <nets>
         <nitem  name = "\global_control/clk_1Hz"  />
-        <nitem  name = "\global_control/n290"  />
-        <nitem  name = "\global_control/n291"  />
+        <nitem  name = "\global_control/n266"  />
+        <nitem  name = "\global_control/n267"  />
         </nets>
     </instance>
 
@@ -31304,6 +31304,30 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
+        <nitem  name = "\global_control/n270"  />
+        <nitem  name = "\global_control/n271"  />
+        <nitem  name = "\global_control/n272"  />
+        <nitem  name = "\global_control/n273"  />
+        <nitem  name = "\global_control/n274"  />
+        <nitem  name = "\global_control/n275"  />
+        <nitem  name = "\global_control/n276"  />
+        <nitem  name = "\global_control/n277"  />
+        <nitem  name = "\global_control/n278"  />
+        <nitem  name = "\global_control/n279"  />
+        <nitem  name = "\global_control/n280"  />
+        <nitem  name = "\global_control/n281"  />
+        <nitem  name = "\global_control/n282"  />
+        <nitem  name = "\global_control/n283"  />
+        <nitem  name = "\global_control/n284"  />
+        <nitem  name = "\global_control/n285"  />
+        <nitem  name = "\global_control/n286"  />
+        <nitem  name = "\global_control/n287"  />
+        <nitem  name = "\global_control/n288"  />
+        <nitem  name = "\global_control/n289"  />
+        <nitem  name = "\global_control/n290"  />
+        <nitem  name = "\global_control/n291"  />
+        <nitem  name = "\global_control/n292"  />
+        <nitem  name = "\global_control/n293"  />
         <nitem  name = "\global_control/n294"  />
         <nitem  name = "\global_control/n295"  />
         <nitem  name = "\global_control/n296"  />
@@ -31312,30 +31336,6 @@
         <nitem  name = "\global_control/n299"  />
         <nitem  name = "\global_control/n300"  />
         <nitem  name = "\global_control/n301"  />
-        <nitem  name = "\global_control/n302"  />
-        <nitem  name = "\global_control/n303"  />
-        <nitem  name = "\global_control/n304"  />
-        <nitem  name = "\global_control/n305"  />
-        <nitem  name = "\global_control/n306"  />
-        <nitem  name = "\global_control/n307"  />
-        <nitem  name = "\global_control/n308"  />
-        <nitem  name = "\global_control/n309"  />
-        <nitem  name = "\global_control/n310"  />
-        <nitem  name = "\global_control/n311"  />
-        <nitem  name = "\global_control/n312"  />
-        <nitem  name = "\global_control/n313"  />
-        <nitem  name = "\global_control/n314"  />
-        <nitem  name = "\global_control/n315"  />
-        <nitem  name = "\global_control/n316"  />
-        <nitem  name = "\global_control/n317"  />
-        <nitem  name = "\global_control/n318"  />
-        <nitem  name = "\global_control/n319"  />
-        <nitem  name = "\global_control/n320"  />
-        <nitem  name = "\global_control/n321"  />
-        <nitem  name = "\global_control/n322"  />
-        <nitem  name = "\global_control/n323"  />
-        <nitem  name = "\global_control/n324"  />
-        <nitem  name = "\global_control/n325"  />
         </nets>
     </instance>
 
@@ -31473,7 +31473,31 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
+        <nitem  name = "\global_control/n267"  />
+        <nitem  name = "\global_control/n270"  />
+        <nitem  name = "\global_control/n271"  />
+        <nitem  name = "\global_control/n272"  />
+        <nitem  name = "\global_control/n273"  />
+        <nitem  name = "\global_control/n274"  />
+        <nitem  name = "\global_control/n275"  />
+        <nitem  name = "\global_control/n276"  />
+        <nitem  name = "\global_control/n277"  />
+        <nitem  name = "\global_control/n278"  />
+        <nitem  name = "\global_control/n279"  />
+        <nitem  name = "\global_control/n280"  />
+        <nitem  name = "\global_control/n281"  />
+        <nitem  name = "\global_control/n282"  />
+        <nitem  name = "\global_control/n283"  />
+        <nitem  name = "\global_control/n284"  />
+        <nitem  name = "\global_control/n285"  />
+        <nitem  name = "\global_control/n286"  />
+        <nitem  name = "\global_control/n287"  />
+        <nitem  name = "\global_control/n288"  />
+        <nitem  name = "\global_control/n289"  />
+        <nitem  name = "\global_control/n290"  />
         <nitem  name = "\global_control/n291"  />
+        <nitem  name = "\global_control/n292"  />
+        <nitem  name = "\global_control/n293"  />
         <nitem  name = "\global_control/n294"  />
         <nitem  name = "\global_control/n295"  />
         <nitem  name = "\global_control/n296"  />
@@ -31482,7 +31506,6 @@
         <nitem  name = "\global_control/n299"  />
         <nitem  name = "\global_control/n300"  />
         <nitem  name = "\global_control/n301"  />
-        <nitem  name = "\global_control/n302"  />
         <nitem  name = "\global_control/n303"  />
         <nitem  name = "\global_control/n304"  />
         <nitem  name = "\global_control/n305"  />
@@ -31506,6 +31529,7 @@
         <nitem  name = "\global_control/n323"  />
         <nitem  name = "\global_control/n324"  />
         <nitem  name = "\global_control/n325"  />
+        <nitem  name = "\global_control/n326"  />
         <nitem  name = "\global_control/n327"  />
         <nitem  name = "\global_control/n328"  />
         <nitem  name = "\global_control/n329"  />
@@ -31514,30 +31538,6 @@
         <nitem  name = "\global_control/n332"  />
         <nitem  name = "\global_control/n333"  />
         <nitem  name = "\global_control/n334"  />
-        <nitem  name = "\global_control/n335"  />
-        <nitem  name = "\global_control/n336"  />
-        <nitem  name = "\global_control/n337"  />
-        <nitem  name = "\global_control/n338"  />
-        <nitem  name = "\global_control/n339"  />
-        <nitem  name = "\global_control/n340"  />
-        <nitem  name = "\global_control/n341"  />
-        <nitem  name = "\global_control/n342"  />
-        <nitem  name = "\global_control/n343"  />
-        <nitem  name = "\global_control/n344"  />
-        <nitem  name = "\global_control/n345"  />
-        <nitem  name = "\global_control/n346"  />
-        <nitem  name = "\global_control/n347"  />
-        <nitem  name = "\global_control/n348"  />
-        <nitem  name = "\global_control/n349"  />
-        <nitem  name = "\global_control/n350"  />
-        <nitem  name = "\global_control/n351"  />
-        <nitem  name = "\global_control/n352"  />
-        <nitem  name = "\global_control/n353"  />
-        <nitem  name = "\global_control/n354"  />
-        <nitem  name = "\global_control/n355"  />
-        <nitem  name = "\global_control/n356"  />
-        <nitem  name = "\global_control/n357"  />
-        <nitem  name = "\global_control/n358"  />
         </nets>
     </instance>
 
@@ -31551,9 +31551,9 @@
 
         <nets>
         <nitem  name = "\global_control/n1"  />
-        <nitem  name = "\global_control/n202"  />
-        <nitem  name = "\global_control/n289"  />
-        <nitem  name = "\global_control/n359"  />
+        <nitem  name = "\global_control/n178"  />
+        <nitem  name = "\global_control/n265"  />
+        <nitem  name = "\global_control/n335"  />
         </nets>
     </instance>
 
@@ -31660,7 +31660,31 @@
 
         <nets>
         <nitem  name = "\global_control/n1"  />
-        <nitem  name = "\global_control/n202"  />
+        <nitem  name = "\global_control/n178"  />
+        <nitem  name = "\global_control/n303"  />
+        <nitem  name = "\global_control/n304"  />
+        <nitem  name = "\global_control/n305"  />
+        <nitem  name = "\global_control/n306"  />
+        <nitem  name = "\global_control/n307"  />
+        <nitem  name = "\global_control/n308"  />
+        <nitem  name = "\global_control/n309"  />
+        <nitem  name = "\global_control/n310"  />
+        <nitem  name = "\global_control/n311"  />
+        <nitem  name = "\global_control/n312"  />
+        <nitem  name = "\global_control/n313"  />
+        <nitem  name = "\global_control/n314"  />
+        <nitem  name = "\global_control/n315"  />
+        <nitem  name = "\global_control/n316"  />
+        <nitem  name = "\global_control/n317"  />
+        <nitem  name = "\global_control/n318"  />
+        <nitem  name = "\global_control/n319"  />
+        <nitem  name = "\global_control/n320"  />
+        <nitem  name = "\global_control/n321"  />
+        <nitem  name = "\global_control/n322"  />
+        <nitem  name = "\global_control/n323"  />
+        <nitem  name = "\global_control/n324"  />
+        <nitem  name = "\global_control/n325"  />
+        <nitem  name = "\global_control/n326"  />
         <nitem  name = "\global_control/n327"  />
         <nitem  name = "\global_control/n328"  />
         <nitem  name = "\global_control/n329"  />
@@ -31669,8 +31693,6 @@
         <nitem  name = "\global_control/n332"  />
         <nitem  name = "\global_control/n333"  />
         <nitem  name = "\global_control/n334"  />
-        <nitem  name = "\global_control/n335"  />
-        <nitem  name = "\global_control/n336"  />
         <nitem  name = "\global_control/n337"  />
         <nitem  name = "\global_control/n338"  />
         <nitem  name = "\global_control/n339"  />
@@ -31693,6 +31715,8 @@
         <nitem  name = "\global_control/n356"  />
         <nitem  name = "\global_control/n357"  />
         <nitem  name = "\global_control/n358"  />
+        <nitem  name = "\global_control/n359"  />
+        <nitem  name = "\global_control/n360"  />
         <nitem  name = "\global_control/n361"  />
         <nitem  name = "\global_control/n362"  />
         <nitem  name = "\global_control/n363"  />
@@ -31701,30 +31725,6 @@
         <nitem  name = "\global_control/n366"  />
         <nitem  name = "\global_control/n367"  />
         <nitem  name = "\global_control/n368"  />
-        <nitem  name = "\global_control/n369"  />
-        <nitem  name = "\global_control/n370"  />
-        <nitem  name = "\global_control/n371"  />
-        <nitem  name = "\global_control/n372"  />
-        <nitem  name = "\global_control/n373"  />
-        <nitem  name = "\global_control/n374"  />
-        <nitem  name = "\global_control/n375"  />
-        <nitem  name = "\global_control/n376"  />
-        <nitem  name = "\global_control/n377"  />
-        <nitem  name = "\global_control/n378"  />
-        <nitem  name = "\global_control/n379"  />
-        <nitem  name = "\global_control/n380"  />
-        <nitem  name = "\global_control/n381"  />
-        <nitem  name = "\global_control/n382"  />
-        <nitem  name = "\global_control/n383"  />
-        <nitem  name = "\global_control/n384"  />
-        <nitem  name = "\global_control/n385"  />
-        <nitem  name = "\global_control/n386"  />
-        <nitem  name = "\global_control/n387"  />
-        <nitem  name = "\global_control/n388"  />
-        <nitem  name = "\global_control/n389"  />
-        <nitem  name = "\global_control/n390"  />
-        <nitem  name = "\global_control/n391"  />
-        <nitem  name = "\global_control/n392"  />
         </nets>
     </instance>
 
@@ -31862,7 +31862,31 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
-        <nitem  name = "\global_control/n202"  />
+        <nitem  name = "\global_control/n178"  />
+        <nitem  name = "\global_control/n229"  />
+        <nitem  name = "\global_control/n230"  />
+        <nitem  name = "\global_control/n231"  />
+        <nitem  name = "\global_control/n232"  />
+        <nitem  name = "\global_control/n233"  />
+        <nitem  name = "\global_control/n234"  />
+        <nitem  name = "\global_control/n235"  />
+        <nitem  name = "\global_control/n236"  />
+        <nitem  name = "\global_control/n237"  />
+        <nitem  name = "\global_control/n238"  />
+        <nitem  name = "\global_control/n239"  />
+        <nitem  name = "\global_control/n240"  />
+        <nitem  name = "\global_control/n241"  />
+        <nitem  name = "\global_control/n242"  />
+        <nitem  name = "\global_control/n243"  />
+        <nitem  name = "\global_control/n244"  />
+        <nitem  name = "\global_control/n245"  />
+        <nitem  name = "\global_control/n246"  />
+        <nitem  name = "\global_control/n247"  />
+        <nitem  name = "\global_control/n248"  />
+        <nitem  name = "\global_control/n249"  />
+        <nitem  name = "\global_control/n250"  />
+        <nitem  name = "\global_control/n251"  />
+        <nitem  name = "\global_control/n252"  />
         <nitem  name = "\global_control/n253"  />
         <nitem  name = "\global_control/n254"  />
         <nitem  name = "\global_control/n255"  />
@@ -31871,30 +31895,30 @@
         <nitem  name = "\global_control/n258"  />
         <nitem  name = "\global_control/n259"  />
         <nitem  name = "\global_control/n260"  />
-        <nitem  name = "\global_control/n261"  />
-        <nitem  name = "\global_control/n262"  />
-        <nitem  name = "\global_control/n263"  />
-        <nitem  name = "\global_control/n264"  />
-        <nitem  name = "\global_control/n265"  />
-        <nitem  name = "\global_control/n266"  />
-        <nitem  name = "\global_control/n267"  />
-        <nitem  name = "\global_control/n268"  />
-        <nitem  name = "\global_control/n269"  />
-        <nitem  name = "\global_control/n270"  />
-        <nitem  name = "\global_control/n271"  />
-        <nitem  name = "\global_control/n272"  />
-        <nitem  name = "\global_control/n273"  />
-        <nitem  name = "\global_control/n274"  />
-        <nitem  name = "\global_control/n275"  />
-        <nitem  name = "\global_control/n276"  />
-        <nitem  name = "\global_control/n277"  />
-        <nitem  name = "\global_control/n278"  />
-        <nitem  name = "\global_control/n279"  />
-        <nitem  name = "\global_control/n280"  />
-        <nitem  name = "\global_control/n281"  />
-        <nitem  name = "\global_control/n282"  />
-        <nitem  name = "\global_control/n283"  />
-        <nitem  name = "\global_control/n284"  />
+        <nitem  name = "\global_control/n370"  />
+        <nitem  name = "\global_control/n371"  />
+        <nitem  name = "\global_control/n372"  />
+        <nitem  name = "\global_control/n373"  />
+        <nitem  name = "\global_control/n374"  />
+        <nitem  name = "\global_control/n375"  />
+        <nitem  name = "\global_control/n376"  />
+        <nitem  name = "\global_control/n377"  />
+        <nitem  name = "\global_control/n378"  />
+        <nitem  name = "\global_control/n379"  />
+        <nitem  name = "\global_control/n380"  />
+        <nitem  name = "\global_control/n381"  />
+        <nitem  name = "\global_control/n382"  />
+        <nitem  name = "\global_control/n383"  />
+        <nitem  name = "\global_control/n384"  />
+        <nitem  name = "\global_control/n385"  />
+        <nitem  name = "\global_control/n386"  />
+        <nitem  name = "\global_control/n387"  />
+        <nitem  name = "\global_control/n388"  />
+        <nitem  name = "\global_control/n389"  />
+        <nitem  name = "\global_control/n390"  />
+        <nitem  name = "\global_control/n391"  />
+        <nitem  name = "\global_control/n392"  />
+        <nitem  name = "\global_control/n393"  />
         <nitem  name = "\global_control/n394"  />
         <nitem  name = "\global_control/n395"  />
         <nitem  name = "\global_control/n396"  />
@@ -31903,30 +31927,6 @@
         <nitem  name = "\global_control/n399"  />
         <nitem  name = "\global_control/n400"  />
         <nitem  name = "\global_control/n401"  />
-        <nitem  name = "\global_control/n402"  />
-        <nitem  name = "\global_control/n403"  />
-        <nitem  name = "\global_control/n404"  />
-        <nitem  name = "\global_control/n405"  />
-        <nitem  name = "\global_control/n406"  />
-        <nitem  name = "\global_control/n407"  />
-        <nitem  name = "\global_control/n408"  />
-        <nitem  name = "\global_control/n409"  />
-        <nitem  name = "\global_control/n410"  />
-        <nitem  name = "\global_control/n411"  />
-        <nitem  name = "\global_control/n412"  />
-        <nitem  name = "\global_control/n413"  />
-        <nitem  name = "\global_control/n414"  />
-        <nitem  name = "\global_control/n415"  />
-        <nitem  name = "\global_control/n416"  />
-        <nitem  name = "\global_control/n417"  />
-        <nitem  name = "\global_control/n418"  />
-        <nitem  name = "\global_control/n419"  />
-        <nitem  name = "\global_control/n420"  />
-        <nitem  name = "\global_control/n421"  />
-        <nitem  name = "\global_control/n422"  />
-        <nitem  name = "\global_control/n423"  />
-        <nitem  name = "\global_control/n424"  />
-        <nitem  name = "\global_control/n425"  />
         </nets>
     </instance>
 
@@ -31948,13 +31948,13 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n202"  />
-        <nitem  name = "\global_control/n286"  />
-        <nitem  name = "\global_control/n287"  />
-        <nitem  name = "\global_control/n288"  />
-        <nitem  name = "\global_control/n427"  />
-        <nitem  name = "\global_control/n428"  />
-        <nitem  name = "\global_control/n429"  />
+        <nitem  name = "\global_control/n178"  />
+        <nitem  name = "\global_control/n262"  />
+        <nitem  name = "\global_control/n263"  />
+        <nitem  name = "\global_control/n264"  />
+        <nitem  name = "\global_control/n403"  />
+        <nitem  name = "\global_control/n404"  />
+        <nitem  name = "\global_control/n405"  />
         </nets>
     </instance>
 
@@ -31988,7 +31988,7 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "clk_12MHz"  />
         <nitem  name = "\global_control/register[0][2]"  />
-        <nitem  name = "\global_control/n201"  />
+        <nitem  name = "\global_control/n177"  />
         </nets>
     </instance>
 
@@ -32005,7 +32005,7 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "clk_12MHz"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n359"  />
+        <nitem  name = "\global_control/n335"  />
         </nets>
     </instance>
 
@@ -32177,6 +32177,30 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
+        <nitem  name = "\global_control/n337"  />
+        <nitem  name = "\global_control/n338"  />
+        <nitem  name = "\global_control/n339"  />
+        <nitem  name = "\global_control/n340"  />
+        <nitem  name = "\global_control/n341"  />
+        <nitem  name = "\global_control/n342"  />
+        <nitem  name = "\global_control/n343"  />
+        <nitem  name = "\global_control/n344"  />
+        <nitem  name = "\global_control/n345"  />
+        <nitem  name = "\global_control/n346"  />
+        <nitem  name = "\global_control/n347"  />
+        <nitem  name = "\global_control/n348"  />
+        <nitem  name = "\global_control/n349"  />
+        <nitem  name = "\global_control/n350"  />
+        <nitem  name = "\global_control/n351"  />
+        <nitem  name = "\global_control/n352"  />
+        <nitem  name = "\global_control/n353"  />
+        <nitem  name = "\global_control/n354"  />
+        <nitem  name = "\global_control/n355"  />
+        <nitem  name = "\global_control/n356"  />
+        <nitem  name = "\global_control/n357"  />
+        <nitem  name = "\global_control/n358"  />
+        <nitem  name = "\global_control/n359"  />
+        <nitem  name = "\global_control/n360"  />
         <nitem  name = "\global_control/n361"  />
         <nitem  name = "\global_control/n362"  />
         <nitem  name = "\global_control/n363"  />
@@ -32185,30 +32209,6 @@
         <nitem  name = "\global_control/n366"  />
         <nitem  name = "\global_control/n367"  />
         <nitem  name = "\global_control/n368"  />
-        <nitem  name = "\global_control/n369"  />
-        <nitem  name = "\global_control/n370"  />
-        <nitem  name = "\global_control/n371"  />
-        <nitem  name = "\global_control/n372"  />
-        <nitem  name = "\global_control/n373"  />
-        <nitem  name = "\global_control/n374"  />
-        <nitem  name = "\global_control/n375"  />
-        <nitem  name = "\global_control/n376"  />
-        <nitem  name = "\global_control/n377"  />
-        <nitem  name = "\global_control/n378"  />
-        <nitem  name = "\global_control/n379"  />
-        <nitem  name = "\global_control/n380"  />
-        <nitem  name = "\global_control/n381"  />
-        <nitem  name = "\global_control/n382"  />
-        <nitem  name = "\global_control/n383"  />
-        <nitem  name = "\global_control/n384"  />
-        <nitem  name = "\global_control/n385"  />
-        <nitem  name = "\global_control/n386"  />
-        <nitem  name = "\global_control/n387"  />
-        <nitem  name = "\global_control/n388"  />
-        <nitem  name = "\global_control/n389"  />
-        <nitem  name = "\global_control/n390"  />
-        <nitem  name = "\global_control/n391"  />
-        <nitem  name = "\global_control/n392"  />
         </nets>
     </instance>
 
@@ -32380,6 +32380,30 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
+        <nitem  name = "\global_control/n370"  />
+        <nitem  name = "\global_control/n371"  />
+        <nitem  name = "\global_control/n372"  />
+        <nitem  name = "\global_control/n373"  />
+        <nitem  name = "\global_control/n374"  />
+        <nitem  name = "\global_control/n375"  />
+        <nitem  name = "\global_control/n376"  />
+        <nitem  name = "\global_control/n377"  />
+        <nitem  name = "\global_control/n378"  />
+        <nitem  name = "\global_control/n379"  />
+        <nitem  name = "\global_control/n380"  />
+        <nitem  name = "\global_control/n381"  />
+        <nitem  name = "\global_control/n382"  />
+        <nitem  name = "\global_control/n383"  />
+        <nitem  name = "\global_control/n384"  />
+        <nitem  name = "\global_control/n385"  />
+        <nitem  name = "\global_control/n386"  />
+        <nitem  name = "\global_control/n387"  />
+        <nitem  name = "\global_control/n388"  />
+        <nitem  name = "\global_control/n389"  />
+        <nitem  name = "\global_control/n390"  />
+        <nitem  name = "\global_control/n391"  />
+        <nitem  name = "\global_control/n392"  />
+        <nitem  name = "\global_control/n393"  />
         <nitem  name = "\global_control/n394"  />
         <nitem  name = "\global_control/n395"  />
         <nitem  name = "\global_control/n396"  />
@@ -32388,30 +32412,6 @@
         <nitem  name = "\global_control/n399"  />
         <nitem  name = "\global_control/n400"  />
         <nitem  name = "\global_control/n401"  />
-        <nitem  name = "\global_control/n402"  />
-        <nitem  name = "\global_control/n403"  />
-        <nitem  name = "\global_control/n404"  />
-        <nitem  name = "\global_control/n405"  />
-        <nitem  name = "\global_control/n406"  />
-        <nitem  name = "\global_control/n407"  />
-        <nitem  name = "\global_control/n408"  />
-        <nitem  name = "\global_control/n409"  />
-        <nitem  name = "\global_control/n410"  />
-        <nitem  name = "\global_control/n411"  />
-        <nitem  name = "\global_control/n412"  />
-        <nitem  name = "\global_control/n413"  />
-        <nitem  name = "\global_control/n414"  />
-        <nitem  name = "\global_control/n415"  />
-        <nitem  name = "\global_control/n416"  />
-        <nitem  name = "\global_control/n417"  />
-        <nitem  name = "\global_control/n418"  />
-        <nitem  name = "\global_control/n419"  />
-        <nitem  name = "\global_control/n420"  />
-        <nitem  name = "\global_control/n421"  />
-        <nitem  name = "\global_control/n422"  />
-        <nitem  name = "\global_control/n423"  />
-        <nitem  name = "\global_control/n424"  />
-        <nitem  name = "\global_control/n425"  />
         </nets>
     </instance>
 
@@ -32438,9 +32438,9 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n427"  />
-        <nitem  name = "\global_control/n428"  />
-        <nitem  name = "\global_control/n429"  />
+        <nitem  name = "\global_control/n403"  />
+        <nitem  name = "\global_control/n404"  />
+        <nitem  name = "\global_control/n405"  />
         </nets>
     </instance>
 
@@ -33770,7 +33770,111 @@
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/i14"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\motor_pwm/n1"  />
+        <nitem  name = "\motor_pwm/n2"  />
+        <nitem  name = "signal_light"  />
+        <nitem  name = "\motor_pwm/register[0][7]"  />
+        <nitem  name = "\motor_pwm/register[0][6]"  />
+        <nitem  name = "\motor_pwm/register[0][5]"  />
+        <nitem  name = "\motor_pwm/register[0][4]"  />
+        <nitem  name = "\motor_pwm/register[0][3]"  />
+        <nitem  name = "\motor_pwm/register[0][2]"  />
+        <nitem  name = "\motor_pwm/register[0][1]"  />
+        <nitem  name = "\motor_pwm/register[0][0]"  />
+        <nitem  name = "\motor_pwm/left_value[7]"  />
+        <nitem  name = "\motor_pwm/left_value[6]"  />
+        <nitem  name = "\motor_pwm/left_value[5]"  />
+        <nitem  name = "\motor_pwm/left_value[4]"  />
+        <nitem  name = "\motor_pwm/left_value[3]"  />
+        <nitem  name = "\motor_pwm/left_value[2]"  />
+        <nitem  name = "\motor_pwm/left_value[1]"  />
+        <nitem  name = "\motor_pwm/left_value[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\motor_pwm/mux_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\motor_pwm/n1"  />
+        <nitem  name = "\motor_pwm/n2"  />
+        <nitem  name = "signal_light"  />
+        <nitem  name = "\motor_pwm/register[1][7]"  />
+        <nitem  name = "\motor_pwm/register[1][6]"  />
+        <nitem  name = "\motor_pwm/register[1][5]"  />
+        <nitem  name = "\motor_pwm/register[1][4]"  />
+        <nitem  name = "\motor_pwm/register[1][3]"  />
+        <nitem  name = "\motor_pwm/register[1][2]"  />
+        <nitem  name = "\motor_pwm/register[1][1]"  />
+        <nitem  name = "\motor_pwm/register[1][0]"  />
+        <nitem  name = "\motor_pwm/right_value[7]"  />
+        <nitem  name = "\motor_pwm/right_value[6]"  />
+        <nitem  name = "\motor_pwm/right_value[5]"  />
+        <nitem  name = "\motor_pwm/right_value[4]"  />
+        <nitem  name = "\motor_pwm/right_value[3]"  />
+        <nitem  name = "\motor_pwm/right_value[2]"  />
+        <nitem  name = "\motor_pwm/right_value[1]"  />
+        <nitem  name = "\motor_pwm/right_value[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\motor_pwm/i16"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -33780,11 +33884,11 @@
         <nets>
         <nitem  name = "rw"  />
         <nitem  name = "select[2]"  />
-        <nitem  name = "\motor_pwm/n46"  />
+        <nitem  name = "\motor_pwm/n64"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/equal_111"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/equal_113"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -33857,11 +33961,11 @@
         <nitem  name = "\motor_pwm/n1"  />
         <nitem  name = "\motor_pwm/n2"  />
         <nitem  name = "debug[6]"  />
-        <nitem  name = "\motor_pwm/n176"  />
+        <nitem  name = "\motor_pwm/n194"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/i113"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/i115"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -33869,11 +33973,11 @@
 
         <nets>
         <nitem  name = "\motor_pwm/prev_select"  />
-        <nitem  name = "\motor_pwm/n177"  />
+        <nitem  name = "\motor_pwm/n195"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/i114"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/i116"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -33882,12 +33986,12 @@
 
         <nets>
         <nitem  name = "select[2]"  />
-        <nitem  name = "\motor_pwm/n177"  />
-        <nitem  name = "\motor_pwm/n178"  />
+        <nitem  name = "\motor_pwm/n195"  />
+        <nitem  name = "\motor_pwm/n196"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/select_117"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/select_119"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "data[6]"  direction = "in"  />
@@ -33944,21 +34048,21 @@
         <nitem  name = "\motor_pwm/register[0][2]"  />
         <nitem  name = "\motor_pwm/register[0][1]"  />
         <nitem  name = "\motor_pwm/register[0][0]"  />
-        <nitem  name = "\motor_pwm/n183"  />
-        <nitem  name = "\motor_pwm/n184"  />
-        <nitem  name = "\motor_pwm/n185"  />
-        <nitem  name = "\motor_pwm/n186"  />
-        <nitem  name = "\motor_pwm/n187"  />
-        <nitem  name = "\motor_pwm/n188"  />
-        <nitem  name = "\motor_pwm/n189"  />
-        <nitem  name = "\motor_pwm/n190"  />
-        <nitem  name = "\motor_pwm/n196"  />
-        <nitem  name = "\motor_pwm/n197"  />
-        <nitem  name = "\motor_pwm/n198"  />
+        <nitem  name = "\motor_pwm/n201"  />
+        <nitem  name = "\motor_pwm/n202"  />
+        <nitem  name = "\motor_pwm/n203"  />
+        <nitem  name = "\motor_pwm/n204"  />
+        <nitem  name = "\motor_pwm/n205"  />
+        <nitem  name = "\motor_pwm/n206"  />
+        <nitem  name = "\motor_pwm/n207"  />
+        <nitem  name = "\motor_pwm/n208"  />
+        <nitem  name = "\motor_pwm/n214"  />
+        <nitem  name = "\motor_pwm/n215"  />
+        <nitem  name = "\motor_pwm/n216"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/select_118"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/select_120"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[8]"  direction = "in"  />
         <pitem  name = "data[7]"  direction = "in"  />
@@ -33980,16 +34084,16 @@
         <nets>
         <nitem  name = "\motor_pwm/n1"  />
         <nitem  name = "\motor_pwm/n2"  />
-        <nitem  name = "\motor_pwm/n192"  />
-        <nitem  name = "\motor_pwm/n193"  />
-        <nitem  name = "\motor_pwm/n194"  />
-        <nitem  name = "\motor_pwm/n196"  />
-        <nitem  name = "\motor_pwm/n197"  />
-        <nitem  name = "\motor_pwm/n198"  />
+        <nitem  name = "\motor_pwm/n210"  />
+        <nitem  name = "\motor_pwm/n211"  />
+        <nitem  name = "\motor_pwm/n212"  />
+        <nitem  name = "\motor_pwm/n214"  />
+        <nitem  name = "\motor_pwm/n215"  />
+        <nitem  name = "\motor_pwm/n216"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/i120"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/i122"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -33997,11 +34101,11 @@
 
         <nets>
         <nitem  name = "rw"  />
-        <nitem  name = "\motor_pwm/n195"  />
+        <nitem  name = "\motor_pwm/n213"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/equal_120"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/equal_122"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
@@ -34032,11 +34136,11 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\motor_pwm/n196"  />
+        <nitem  name = "\motor_pwm/n214"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/equal_121"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/equal_123"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
@@ -34068,11 +34172,11 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\motor_pwm/n197"  />
+        <nitem  name = "\motor_pwm/n215"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/reduce_nor_122"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/reduce_nor_124"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
@@ -34080,13 +34184,13 @@
         </pins>
 
         <nets>
-        <nitem  name = "\motor_pwm/n196"  />
-        <nitem  name = "\motor_pwm/n197"  />
-        <nitem  name = "\motor_pwm/n198"  />
+        <nitem  name = "\motor_pwm/n214"  />
+        <nitem  name = "\motor_pwm/n215"  />
+        <nitem  name = "\motor_pwm/n216"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/select_123"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/select_125"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[39]"  direction = "in"  />
         <pitem  name = "data[31]"  direction = "in"  />
@@ -34182,29 +34286,29 @@
         <nitem  name = "\motor_pwm/register[0][2]"  />
         <nitem  name = "\motor_pwm/register[0][1]"  />
         <nitem  name = "\motor_pwm/register[0][0]"  />
-        <nitem  name = "\motor_pwm/n196"  />
-        <nitem  name = "\motor_pwm/n197"  />
-        <nitem  name = "\motor_pwm/n198"  />
-        <nitem  name = "\motor_pwm/n200"  />
-        <nitem  name = "\motor_pwm/n201"  />
-        <nitem  name = "\motor_pwm/n202"  />
-        <nitem  name = "\motor_pwm/n203"  />
-        <nitem  name = "\motor_pwm/n204"  />
-        <nitem  name = "\motor_pwm/n205"  />
-        <nitem  name = "\motor_pwm/n206"  />
-        <nitem  name = "\motor_pwm/n207"  />
-        <nitem  name = "\motor_pwm/n208"  />
-        <nitem  name = "\motor_pwm/n209"  />
-        <nitem  name = "\motor_pwm/n210"  />
-        <nitem  name = "\motor_pwm/n211"  />
-        <nitem  name = "\motor_pwm/n212"  />
-        <nitem  name = "\motor_pwm/n213"  />
         <nitem  name = "\motor_pwm/n214"  />
         <nitem  name = "\motor_pwm/n215"  />
+        <nitem  name = "\motor_pwm/n216"  />
+        <nitem  name = "\motor_pwm/n218"  />
+        <nitem  name = "\motor_pwm/n219"  />
+        <nitem  name = "\motor_pwm/n220"  />
+        <nitem  name = "\motor_pwm/n221"  />
+        <nitem  name = "\motor_pwm/n222"  />
+        <nitem  name = "\motor_pwm/n223"  />
+        <nitem  name = "\motor_pwm/n224"  />
+        <nitem  name = "\motor_pwm/n225"  />
+        <nitem  name = "\motor_pwm/n226"  />
+        <nitem  name = "\motor_pwm/n227"  />
+        <nitem  name = "\motor_pwm/n228"  />
+        <nitem  name = "\motor_pwm/n229"  />
+        <nitem  name = "\motor_pwm/n230"  />
+        <nitem  name = "\motor_pwm/n231"  />
+        <nitem  name = "\motor_pwm/n232"  />
+        <nitem  name = "\motor_pwm/n233"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_124"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_126"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[15]"  direction = "in"  />
         <pitem  name = "d0[14]"  direction = "in"  />
@@ -34274,24 +34378,7 @@
         <nitem  name = "\motor_pwm/register[0][2]"  />
         <nitem  name = "\motor_pwm/register[0][1]"  />
         <nitem  name = "\motor_pwm/register[0][0]"  />
-        <nitem  name = "\motor_pwm/n195"  />
-        <nitem  name = "\motor_pwm/n200"  />
-        <nitem  name = "\motor_pwm/n201"  />
-        <nitem  name = "\motor_pwm/n202"  />
-        <nitem  name = "\motor_pwm/n203"  />
-        <nitem  name = "\motor_pwm/n204"  />
-        <nitem  name = "\motor_pwm/n205"  />
-        <nitem  name = "\motor_pwm/n206"  />
-        <nitem  name = "\motor_pwm/n207"  />
-        <nitem  name = "\motor_pwm/n208"  />
-        <nitem  name = "\motor_pwm/n209"  />
-        <nitem  name = "\motor_pwm/n210"  />
-        <nitem  name = "\motor_pwm/n211"  />
-        <nitem  name = "\motor_pwm/n212"  />
         <nitem  name = "\motor_pwm/n213"  />
-        <nitem  name = "\motor_pwm/n214"  />
-        <nitem  name = "\motor_pwm/n215"  />
-        <nitem  name = "\motor_pwm/n217"  />
         <nitem  name = "\motor_pwm/n218"  />
         <nitem  name = "\motor_pwm/n219"  />
         <nitem  name = "\motor_pwm/n220"  />
@@ -34307,10 +34394,27 @@
         <nitem  name = "\motor_pwm/n230"  />
         <nitem  name = "\motor_pwm/n231"  />
         <nitem  name = "\motor_pwm/n232"  />
+        <nitem  name = "\motor_pwm/n233"  />
+        <nitem  name = "\motor_pwm/n235"  />
+        <nitem  name = "\motor_pwm/n236"  />
+        <nitem  name = "\motor_pwm/n237"  />
+        <nitem  name = "\motor_pwm/n238"  />
+        <nitem  name = "\motor_pwm/n239"  />
+        <nitem  name = "\motor_pwm/n240"  />
+        <nitem  name = "\motor_pwm/n241"  />
+        <nitem  name = "\motor_pwm/n242"  />
+        <nitem  name = "\motor_pwm/n243"  />
+        <nitem  name = "\motor_pwm/n244"  />
+        <nitem  name = "\motor_pwm/n245"  />
+        <nitem  name = "\motor_pwm/n246"  />
+        <nitem  name = "\motor_pwm/n247"  />
+        <nitem  name = "\motor_pwm/n248"  />
+        <nitem  name = "\motor_pwm/n249"  />
+        <nitem  name = "\motor_pwm/n250"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_125"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_127"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
@@ -34348,27 +34452,27 @@
         <nitem  name = "\motor_pwm/read_value[2]"  />
         <nitem  name = "\motor_pwm/read_value[1]"  />
         <nitem  name = "\motor_pwm/read_value[0]"  />
-        <nitem  name = "\motor_pwm/n178"  />
-        <nitem  name = "\motor_pwm/n183"  />
-        <nitem  name = "\motor_pwm/n184"  />
-        <nitem  name = "\motor_pwm/n185"  />
-        <nitem  name = "\motor_pwm/n186"  />
-        <nitem  name = "\motor_pwm/n187"  />
-        <nitem  name = "\motor_pwm/n188"  />
-        <nitem  name = "\motor_pwm/n189"  />
-        <nitem  name = "\motor_pwm/n190"  />
-        <nitem  name = "\motor_pwm/n234"  />
-        <nitem  name = "\motor_pwm/n235"  />
-        <nitem  name = "\motor_pwm/n236"  />
-        <nitem  name = "\motor_pwm/n237"  />
-        <nitem  name = "\motor_pwm/n238"  />
-        <nitem  name = "\motor_pwm/n239"  />
-        <nitem  name = "\motor_pwm/n240"  />
-        <nitem  name = "\motor_pwm/n241"  />
+        <nitem  name = "\motor_pwm/n196"  />
+        <nitem  name = "\motor_pwm/n201"  />
+        <nitem  name = "\motor_pwm/n202"  />
+        <nitem  name = "\motor_pwm/n203"  />
+        <nitem  name = "\motor_pwm/n204"  />
+        <nitem  name = "\motor_pwm/n205"  />
+        <nitem  name = "\motor_pwm/n206"  />
+        <nitem  name = "\motor_pwm/n207"  />
+        <nitem  name = "\motor_pwm/n208"  />
+        <nitem  name = "\motor_pwm/n252"  />
+        <nitem  name = "\motor_pwm/n253"  />
+        <nitem  name = "\motor_pwm/n254"  />
+        <nitem  name = "\motor_pwm/n255"  />
+        <nitem  name = "\motor_pwm/n256"  />
+        <nitem  name = "\motor_pwm/n257"  />
+        <nitem  name = "\motor_pwm/n258"  />
+        <nitem  name = "\motor_pwm/n259"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_126"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_128"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -34386,17 +34490,17 @@
         <nitem  name = "\motor_pwm/read_size[2]"  />
         <nitem  name = "\motor_pwm/read_size[1]"  />
         <nitem  name = "\motor_pwm/read_size[0]"  />
-        <nitem  name = "\motor_pwm/n178"  />
-        <nitem  name = "\motor_pwm/n192"  />
-        <nitem  name = "\motor_pwm/n193"  />
-        <nitem  name = "\motor_pwm/n194"  />
-        <nitem  name = "\motor_pwm/n243"  />
-        <nitem  name = "\motor_pwm/n244"  />
-        <nitem  name = "\motor_pwm/n245"  />
+        <nitem  name = "\motor_pwm/n196"  />
+        <nitem  name = "\motor_pwm/n210"  />
+        <nitem  name = "\motor_pwm/n211"  />
+        <nitem  name = "\motor_pwm/n212"  />
+        <nitem  name = "\motor_pwm/n261"  />
+        <nitem  name = "\motor_pwm/n262"  />
+        <nitem  name = "\motor_pwm/n263"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_127"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_129"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[15]"  direction = "in"  />
         <pitem  name = "d0[14]"  direction = "in"  />
@@ -34466,43 +34570,43 @@
         <nitem  name = "\motor_pwm/register[0][2]"  />
         <nitem  name = "\motor_pwm/register[0][1]"  />
         <nitem  name = "\motor_pwm/register[0][0]"  />
-        <nitem  name = "\motor_pwm/n178"  />
-        <nitem  name = "\motor_pwm/n217"  />
-        <nitem  name = "\motor_pwm/n218"  />
-        <nitem  name = "\motor_pwm/n219"  />
-        <nitem  name = "\motor_pwm/n220"  />
-        <nitem  name = "\motor_pwm/n221"  />
-        <nitem  name = "\motor_pwm/n222"  />
-        <nitem  name = "\motor_pwm/n223"  />
-        <nitem  name = "\motor_pwm/n224"  />
-        <nitem  name = "\motor_pwm/n225"  />
-        <nitem  name = "\motor_pwm/n226"  />
-        <nitem  name = "\motor_pwm/n227"  />
-        <nitem  name = "\motor_pwm/n228"  />
-        <nitem  name = "\motor_pwm/n229"  />
-        <nitem  name = "\motor_pwm/n230"  />
-        <nitem  name = "\motor_pwm/n231"  />
-        <nitem  name = "\motor_pwm/n232"  />
+        <nitem  name = "\motor_pwm/n196"  />
+        <nitem  name = "\motor_pwm/n235"  />
+        <nitem  name = "\motor_pwm/n236"  />
+        <nitem  name = "\motor_pwm/n237"  />
+        <nitem  name = "\motor_pwm/n238"  />
+        <nitem  name = "\motor_pwm/n239"  />
+        <nitem  name = "\motor_pwm/n240"  />
+        <nitem  name = "\motor_pwm/n241"  />
+        <nitem  name = "\motor_pwm/n242"  />
+        <nitem  name = "\motor_pwm/n243"  />
+        <nitem  name = "\motor_pwm/n244"  />
+        <nitem  name = "\motor_pwm/n245"  />
+        <nitem  name = "\motor_pwm/n246"  />
         <nitem  name = "\motor_pwm/n247"  />
         <nitem  name = "\motor_pwm/n248"  />
         <nitem  name = "\motor_pwm/n249"  />
         <nitem  name = "\motor_pwm/n250"  />
-        <nitem  name = "\motor_pwm/n251"  />
-        <nitem  name = "\motor_pwm/n252"  />
-        <nitem  name = "\motor_pwm/n253"  />
-        <nitem  name = "\motor_pwm/n254"  />
-        <nitem  name = "\motor_pwm/n255"  />
-        <nitem  name = "\motor_pwm/n256"  />
-        <nitem  name = "\motor_pwm/n257"  />
-        <nitem  name = "\motor_pwm/n258"  />
-        <nitem  name = "\motor_pwm/n259"  />
-        <nitem  name = "\motor_pwm/n260"  />
-        <nitem  name = "\motor_pwm/n261"  />
-        <nitem  name = "\motor_pwm/n262"  />
+        <nitem  name = "\motor_pwm/n265"  />
+        <nitem  name = "\motor_pwm/n266"  />
+        <nitem  name = "\motor_pwm/n267"  />
+        <nitem  name = "\motor_pwm/n268"  />
+        <nitem  name = "\motor_pwm/n269"  />
+        <nitem  name = "\motor_pwm/n270"  />
+        <nitem  name = "\motor_pwm/n271"  />
+        <nitem  name = "\motor_pwm/n272"  />
+        <nitem  name = "\motor_pwm/n273"  />
+        <nitem  name = "\motor_pwm/n274"  />
+        <nitem  name = "\motor_pwm/n275"  />
+        <nitem  name = "\motor_pwm/n276"  />
+        <nitem  name = "\motor_pwm/n277"  />
+        <nitem  name = "\motor_pwm/n278"  />
+        <nitem  name = "\motor_pwm/n279"  />
+        <nitem  name = "\motor_pwm/n280"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_128"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_130"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[15]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
@@ -34558,24 +34662,7 @@
         <nets>
         <nitem  name = "\motor_pwm/n1"  />
         <nitem  name = "\motor_pwm/n2"  />
-        <nitem  name = "\motor_pwm/n176"  />
-        <nitem  name = "\motor_pwm/n247"  />
-        <nitem  name = "\motor_pwm/n248"  />
-        <nitem  name = "\motor_pwm/n249"  />
-        <nitem  name = "\motor_pwm/n250"  />
-        <nitem  name = "\motor_pwm/n251"  />
-        <nitem  name = "\motor_pwm/n252"  />
-        <nitem  name = "\motor_pwm/n253"  />
-        <nitem  name = "\motor_pwm/n254"  />
-        <nitem  name = "\motor_pwm/n255"  />
-        <nitem  name = "\motor_pwm/n256"  />
-        <nitem  name = "\motor_pwm/n257"  />
-        <nitem  name = "\motor_pwm/n258"  />
-        <nitem  name = "\motor_pwm/n259"  />
-        <nitem  name = "\motor_pwm/n260"  />
-        <nitem  name = "\motor_pwm/n261"  />
-        <nitem  name = "\motor_pwm/n262"  />
-        <nitem  name = "\motor_pwm/n264"  />
+        <nitem  name = "\motor_pwm/n194"  />
         <nitem  name = "\motor_pwm/n265"  />
         <nitem  name = "\motor_pwm/n266"  />
         <nitem  name = "\motor_pwm/n267"  />
@@ -34591,10 +34678,27 @@
         <nitem  name = "\motor_pwm/n277"  />
         <nitem  name = "\motor_pwm/n278"  />
         <nitem  name = "\motor_pwm/n279"  />
+        <nitem  name = "\motor_pwm/n280"  />
+        <nitem  name = "\motor_pwm/n282"  />
+        <nitem  name = "\motor_pwm/n283"  />
+        <nitem  name = "\motor_pwm/n284"  />
+        <nitem  name = "\motor_pwm/n285"  />
+        <nitem  name = "\motor_pwm/n286"  />
+        <nitem  name = "\motor_pwm/n287"  />
+        <nitem  name = "\motor_pwm/n288"  />
+        <nitem  name = "\motor_pwm/n289"  />
+        <nitem  name = "\motor_pwm/n290"  />
+        <nitem  name = "\motor_pwm/n291"  />
+        <nitem  name = "\motor_pwm/n292"  />
+        <nitem  name = "\motor_pwm/n293"  />
+        <nitem  name = "\motor_pwm/n294"  />
+        <nitem  name = "\motor_pwm/n295"  />
+        <nitem  name = "\motor_pwm/n296"  />
+        <nitem  name = "\motor_pwm/n297"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_129"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_131"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
@@ -34632,27 +34736,27 @@
         <nitem  name = "\motor_pwm/read_value[2]"  />
         <nitem  name = "\motor_pwm/read_value[1]"  />
         <nitem  name = "\motor_pwm/read_value[0]"  />
-        <nitem  name = "\motor_pwm/n176"  />
-        <nitem  name = "\motor_pwm/n234"  />
-        <nitem  name = "\motor_pwm/n235"  />
-        <nitem  name = "\motor_pwm/n236"  />
-        <nitem  name = "\motor_pwm/n237"  />
-        <nitem  name = "\motor_pwm/n238"  />
-        <nitem  name = "\motor_pwm/n239"  />
-        <nitem  name = "\motor_pwm/n240"  />
-        <nitem  name = "\motor_pwm/n241"  />
-        <nitem  name = "\motor_pwm/n281"  />
-        <nitem  name = "\motor_pwm/n282"  />
-        <nitem  name = "\motor_pwm/n283"  />
-        <nitem  name = "\motor_pwm/n284"  />
-        <nitem  name = "\motor_pwm/n285"  />
-        <nitem  name = "\motor_pwm/n286"  />
-        <nitem  name = "\motor_pwm/n287"  />
-        <nitem  name = "\motor_pwm/n288"  />
+        <nitem  name = "\motor_pwm/n194"  />
+        <nitem  name = "\motor_pwm/n252"  />
+        <nitem  name = "\motor_pwm/n253"  />
+        <nitem  name = "\motor_pwm/n254"  />
+        <nitem  name = "\motor_pwm/n255"  />
+        <nitem  name = "\motor_pwm/n256"  />
+        <nitem  name = "\motor_pwm/n257"  />
+        <nitem  name = "\motor_pwm/n258"  />
+        <nitem  name = "\motor_pwm/n259"  />
+        <nitem  name = "\motor_pwm/n299"  />
+        <nitem  name = "\motor_pwm/n300"  />
+        <nitem  name = "\motor_pwm/n301"  />
+        <nitem  name = "\motor_pwm/n302"  />
+        <nitem  name = "\motor_pwm/n303"  />
+        <nitem  name = "\motor_pwm/n304"  />
+        <nitem  name = "\motor_pwm/n305"  />
+        <nitem  name = "\motor_pwm/n306"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/mux_130"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/mux_132"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -34670,13 +34774,13 @@
         <nitem  name = "\motor_pwm/read_size[2]"  />
         <nitem  name = "\motor_pwm/read_size[1]"  />
         <nitem  name = "\motor_pwm/read_size[0]"  />
-        <nitem  name = "\motor_pwm/n176"  />
-        <nitem  name = "\motor_pwm/n243"  />
-        <nitem  name = "\motor_pwm/n244"  />
-        <nitem  name = "\motor_pwm/n245"  />
-        <nitem  name = "\motor_pwm/n290"  />
-        <nitem  name = "\motor_pwm/n291"  />
-        <nitem  name = "\motor_pwm/n292"  />
+        <nitem  name = "\motor_pwm/n194"  />
+        <nitem  name = "\motor_pwm/n261"  />
+        <nitem  name = "\motor_pwm/n262"  />
+        <nitem  name = "\motor_pwm/n263"  />
+        <nitem  name = "\motor_pwm/n308"  />
+        <nitem  name = "\motor_pwm/n309"  />
+        <nitem  name = "\motor_pwm/n310"  />
         </nets>
     </instance>
 
@@ -34768,22 +34872,22 @@
         <nitem  name = "\motor_pwm/register[0][2]"  />
         <nitem  name = "\motor_pwm/register[0][1]"  />
         <nitem  name = "\motor_pwm/register[0][0]"  />
-        <nitem  name = "\motor_pwm/n264"  />
-        <nitem  name = "\motor_pwm/n265"  />
-        <nitem  name = "\motor_pwm/n266"  />
-        <nitem  name = "\motor_pwm/n267"  />
-        <nitem  name = "\motor_pwm/n268"  />
-        <nitem  name = "\motor_pwm/n269"  />
-        <nitem  name = "\motor_pwm/n270"  />
-        <nitem  name = "\motor_pwm/n271"  />
-        <nitem  name = "\motor_pwm/n272"  />
-        <nitem  name = "\motor_pwm/n273"  />
-        <nitem  name = "\motor_pwm/n274"  />
-        <nitem  name = "\motor_pwm/n275"  />
-        <nitem  name = "\motor_pwm/n276"  />
-        <nitem  name = "\motor_pwm/n277"  />
-        <nitem  name = "\motor_pwm/n278"  />
-        <nitem  name = "\motor_pwm/n279"  />
+        <nitem  name = "\motor_pwm/n282"  />
+        <nitem  name = "\motor_pwm/n283"  />
+        <nitem  name = "\motor_pwm/n284"  />
+        <nitem  name = "\motor_pwm/n285"  />
+        <nitem  name = "\motor_pwm/n286"  />
+        <nitem  name = "\motor_pwm/n287"  />
+        <nitem  name = "\motor_pwm/n288"  />
+        <nitem  name = "\motor_pwm/n289"  />
+        <nitem  name = "\motor_pwm/n290"  />
+        <nitem  name = "\motor_pwm/n291"  />
+        <nitem  name = "\motor_pwm/n292"  />
+        <nitem  name = "\motor_pwm/n293"  />
+        <nitem  name = "\motor_pwm/n294"  />
+        <nitem  name = "\motor_pwm/n295"  />
+        <nitem  name = "\motor_pwm/n296"  />
+        <nitem  name = "\motor_pwm/n297"  />
         </nets>
     </instance>
 
@@ -34835,14 +34939,14 @@
         <nitem  name = "\motor_pwm/read_value[2]"  />
         <nitem  name = "\motor_pwm/read_value[1]"  />
         <nitem  name = "\motor_pwm/read_value[0]"  />
-        <nitem  name = "\motor_pwm/n281"  />
-        <nitem  name = "\motor_pwm/n282"  />
-        <nitem  name = "\motor_pwm/n283"  />
-        <nitem  name = "\motor_pwm/n284"  />
-        <nitem  name = "\motor_pwm/n285"  />
-        <nitem  name = "\motor_pwm/n286"  />
-        <nitem  name = "\motor_pwm/n287"  />
-        <nitem  name = "\motor_pwm/n288"  />
+        <nitem  name = "\motor_pwm/n299"  />
+        <nitem  name = "\motor_pwm/n300"  />
+        <nitem  name = "\motor_pwm/n301"  />
+        <nitem  name = "\motor_pwm/n302"  />
+        <nitem  name = "\motor_pwm/n303"  />
+        <nitem  name = "\motor_pwm/n304"  />
+        <nitem  name = "\motor_pwm/n305"  />
+        <nitem  name = "\motor_pwm/n306"  />
         </nets>
     </instance>
 
@@ -34869,13 +34973,13 @@
         <nitem  name = "\motor_pwm/read_size[2]"  />
         <nitem  name = "\motor_pwm/read_size[1]"  />
         <nitem  name = "\motor_pwm/read_size[0]"  />
-        <nitem  name = "\motor_pwm/n290"  />
-        <nitem  name = "\motor_pwm/n291"  />
-        <nitem  name = "\motor_pwm/n292"  />
+        <nitem  name = "\motor_pwm/n308"  />
+        <nitem  name = "\motor_pwm/n309"  />
+        <nitem  name = "\motor_pwm/n310"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/tri_139"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/tri_141"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i[27]"  direction = "in"  />
         <pitem  name = "i[28]"  direction = "in"  />
@@ -34986,11 +35090,11 @@
         <nitem  name = "\motor_pwm/read_value[2]"  />
         <nitem  name = "\motor_pwm/read_value[1]"  />
         <nitem  name = "\motor_pwm/read_value[0]"  />
-        <nitem  name = "\motor_pwm/n46"  />
+        <nitem  name = "\motor_pwm/n64"  />
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/prev_select_136"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\motor_pwm/prev_select_138"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -35007,7 +35111,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\motor_pwm/tri_140"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\motor_pwm/tri_142"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
@@ -38788,14 +38892,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "\motor_pwm/register[0][7]"  />
-        <nitem  name = "\motor_pwm/register[0][6]"  />
-        <nitem  name = "\motor_pwm/register[0][5]"  />
-        <nitem  name = "\motor_pwm/register[0][4]"  />
-        <nitem  name = "\motor_pwm/register[0][3]"  />
-        <nitem  name = "\motor_pwm/register[0][2]"  />
-        <nitem  name = "\motor_pwm/register[0][1]"  />
-        <nitem  name = "\motor_pwm/register[0][0]"  />
+        <nitem  name = "\motor_pwm/left_value[7]"  />
+        <nitem  name = "\motor_pwm/left_value[6]"  />
+        <nitem  name = "\motor_pwm/left_value[5]"  />
+        <nitem  name = "\motor_pwm/left_value[4]"  />
+        <nitem  name = "\motor_pwm/left_value[3]"  />
+        <nitem  name = "\motor_pwm/left_value[2]"  />
+        <nitem  name = "\motor_pwm/left_value[1]"  />
+        <nitem  name = "\motor_pwm/left_value[0]"  />
         <nitem  name = "\motor_pwm/left/latched_width[7]"  />
         <nitem  name = "\motor_pwm/left/latched_width[6]"  />
         <nitem  name = "\motor_pwm/left/latched_width[5]"  />
@@ -39616,14 +39720,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "\motor_pwm/register[1][7]"  />
-        <nitem  name = "\motor_pwm/register[1][6]"  />
-        <nitem  name = "\motor_pwm/register[1][5]"  />
-        <nitem  name = "\motor_pwm/register[1][4]"  />
-        <nitem  name = "\motor_pwm/register[1][3]"  />
-        <nitem  name = "\motor_pwm/register[1][2]"  />
-        <nitem  name = "\motor_pwm/register[1][1]"  />
-        <nitem  name = "\motor_pwm/register[1][0]"  />
+        <nitem  name = "\motor_pwm/right_value[7]"  />
+        <nitem  name = "\motor_pwm/right_value[6]"  />
+        <nitem  name = "\motor_pwm/right_value[5]"  />
+        <nitem  name = "\motor_pwm/right_value[4]"  />
+        <nitem  name = "\motor_pwm/right_value[3]"  />
+        <nitem  name = "\motor_pwm/right_value[2]"  />
+        <nitem  name = "\motor_pwm/right_value[1]"  />
+        <nitem  name = "\motor_pwm/right_value[0]"  />
         <nitem  name = "\motor_pwm/right/latched_width[7]"  />
         <nitem  name = "\motor_pwm/right/latched_width[6]"  />
         <nitem  name = "\motor_pwm/right/latched_width[5]"  />
@@ -53064,7 +53168,7 @@
         <reg  name = "\motor_pwm/register[0]"  />
         <reg  name = "\motor_pwm/read_value"  />
         <reg  name = "\motor_pwm/read_size"  />
-        <reg  name = "\motor_pwm/prev_select_136"  />
+        <reg  name = "\motor_pwm/prev_select_138"  />
         <reg  name = "\rc_receiver/read_size"  />
         <reg  name = "\rc_receiver/read_value"  />
         <reg  name = "\protocol_interface/uart_input/drdy_51"  />

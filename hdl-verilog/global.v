@@ -31,7 +31,7 @@ module GlobalControlPeripheral(
 	reg prev_select;
 	
 	assign reg_size = select ? read_size : 'bz;
-	assign databus = (select & rw) ? {24'd0, read_value} : 'bz;
+	assign databus = (select & rw) ? read_value : 'bz;
 	
 	/* Register assignments */
 	assign global_pause = xbee_pause_latched | force_pause;

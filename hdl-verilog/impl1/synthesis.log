@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 01:55:58 2016
+Sun Jan 10 03:30:09 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -108,19 +108,18 @@ INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/p
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(358): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/global.v(7): compiling module GlobalControlPeripheral. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/global.v(33): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/global.v(34): expression size 56 truncated to fit in target size 32. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(7): compiling module ClockDividerP(factor=12000000). VERI-1018
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(38): compiling module ClockDivider. VERI-1018
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(42): compiling module PWMPeripheral. VERI-1018
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(61): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(67): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(8): compiling module PWMGenerator. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(36): expression size 14 truncated to fit in target size 13. VERI-1209
-INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(186): compiling module RCPeripheral. VERI-1018
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(209): expression size 32 truncated to fit in target size 3. VERI-1209
-INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(120): compiling module PWMReceiver. VERI-1018
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(164): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(179): expression size 17 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(203): net register[0][5] does not have a driver. VDB-1002
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(192): compiling module RCPeripheral. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(215): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(126): compiling module PWMReceiver. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(170): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(185): expression size 17 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(209): net register[0][5] does not have a driver. VDB-1002
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -329,21 +328,21 @@ Writing NGD file Uniboard_verilog_impl1.ngd.
 ################### Begin Area Report (UniboardTop)######################
 Number of register bits => 637 of 7209 (8 % )
 CCU2D => 264
-FD1P3AX => 151
-FD1P3IX => 189
-FD1P3JX => 111
+FD1P3AX => 131
+FD1P3IX => 190
+FD1P3JX => 125
 FD1S3AX => 8
-FD1S3IX => 168
+FD1S3IX => 173
 FD1S3JX => 2
 GSR => 1
 IB => 9
 IFS1P3DX => 6
 L6MUX21 => 8
-LUT4 => 943
+LUT4 => 951
 OB => 39
 OBZ => 6
 OFS1P3IX => 2
-PFUMX => 38
+PFUMX => 44
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -351,21 +350,21 @@ Clock Nets
 Number of Clocks: 3
   Net : debug_c_c, loads : 610
   Net : bclk, loads : 14
-  Net : select_7, loads : 10
+  Net : select_7, loads : 12
 Clock Enable Nets
-Number of Clock Enables: 39
+Number of Clock Enables: 37
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n21488, loads : 146
-  Net : register_addr_0, loads : 83
-  Net : n1264, loads : 61
-  Net : n22990, loads : 50
-  Net : n21537, loads : 48
-  Net : n8737, loads : 48
-  Net : rw, loads : 43
-  Net : n1265, loads : 43
-  Net : n1255, loads : 41
-  Net : register_addr_1, loads : 38
+  Net : n19667, loads : 146
+  Net : register_addr_0, loads : 67
+  Net : n1264, loads : 56
+  Net : n21195, loads : 49
+  Net : n8748, loads : 48
+  Net : n19715, loads : 46
+  Net : rw, loads : 45
+  Net : register_addr_1, loads : 41
+  Net : n1265, loads : 41
+  Net : n1255, loads : 40
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -384,8 +383,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 221.070  MB
+Peak Memory Usage: 220.402  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 7.908  secs
+Elapsed CPU time for LSE flow : 5.986  secs
 --------------------------------------------------------------

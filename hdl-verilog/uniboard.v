@@ -536,6 +536,7 @@ module UniboardTop(
 	                        .select(select[2]),
 	                        .pwm_left(motor_pwm_l),
 	                        .pwm_right(motor_pwm_r),
+	                        .pause(global_pause),
 	                        .reset(reset));
 	/* Arm */
 // 	logic arm_select[4:0]; /* 0 = X ... 3 = A, 4 = analog. */
