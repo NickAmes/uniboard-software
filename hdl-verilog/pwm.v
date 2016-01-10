@@ -63,7 +63,7 @@ module PWMPeripheral(
 	
 	//TODO: Go to 127 on pause
 	
-	/* Bus write handling */
+	/* Bus handling */
 	always @ (posedge clk_12MHz)			
 		begin
 			prev_select <= select;
