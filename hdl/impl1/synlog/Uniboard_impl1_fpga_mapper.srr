@@ -20,7 +20,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -30,14 +30,15 @@ Available hyper_sources - for debug and ip models
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 @N: MF179 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":251:11:251:38|Found 5 bit by 5 bit '==' comparator, 'sendcount\[0\]2'
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'count\[0\]2'
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 155MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 155MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 153MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 149MB peak: 155MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 153MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 157MB)
 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[31] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[30] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
@@ -164,20 +165,97 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[34] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[33] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[32] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: FA113 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":254:22:254:35|Pipelining module un20_sendcount_1[4:0]
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[11\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[15\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[8\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[9\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[13\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[14\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[10\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[12\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[19\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[27\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[31\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[23\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[24\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[16\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[25\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[29\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[30\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[17\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[22\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[21\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[26\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[28\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[20\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[18\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register valid pushed in.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 155MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 151MB peak: 157MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 155MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 157MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 155MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 157MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 155MB)
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 157MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 194MB peak: 197MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 185MB peak: 187MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -186,7 +264,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 159MB peak: 197MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 187MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_31_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
@@ -227,20 +305,20 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[1\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register protocol_interface.uart_input.drdy.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 159MB peak: 197MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 157MB peak: 187MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 636 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 811 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-242 instances converted, 0 sequential instances remain driven by gated/generated clocks
+188 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================== Non-Gated/Non-Generated Clocks ===============================
 Clock Tree ID     Driving Element     Drive Element Type           Fanout     Sample Instance
 ---------------------------------------------------------------------------------------------
-@K:CKID0001       clk_12MHz           clock definition on port     636        interface_reset
+@K:CKID0001       clk_12MHz           clock definition on port     811        interface_reset
 =============================================================================================
 
 
@@ -248,30 +326,30 @@ Clock Tree ID     Driving Element     Drive Element Type           Fanout     Sa
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/Uniboard_impl1.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 158MB peak: 197MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 156MB peak: 187MB)
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/Uniboard_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 158MB peak: 197MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 156MB peak: 187MB)
 
 Writing EDIF Netlist and constraint files
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[7]. Clock will not be forward annotated
-@W: MT558 :|Unable to locate source for clock ClockDivider|clk_o_derived_clock. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock ClockDivider_1|clk_o_derived_clock. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
 J-2014.09L
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 162MB peak: 197MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 161MB peak: 187MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 161MB peak: 197MB)
+Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 159MB peak: 187MB)
 
 Found clock clk_12MHz with period 84.00ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jan  9 17:09:09 2016
+# Timing Report written on Sat Jan  9 17:41:33 2016
 #
 
 
@@ -291,16 +369,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 74.903
+Worst slack in design: 72.470
 
                                                   Requested     Estimated     Requested     Estimated                Clock                        Clock           
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack      Type                         Group           
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
-ClockDivider|clk_o_derived_clock                  11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
+ClockDivider_1|clk_o_derived_clock                11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
-clk_12MHz                                         11.9 MHz      109.9 MHz     84.000        9.097         74.903     declared                     default_clkgroup
+clk_12MHz                                         11.9 MHz      86.7 MHz      84.000        11.530        72.470     declared                     default_clkgroup
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -315,7 +393,7 @@ Clocks                |    rise  to  rise    |    fall  to  fall   |    rise  to
 -------------------------------------------------------------------------------------------------------------
 Starting   Ending     |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -------------------------------------------------------------------------------------------------------------
-clk_12MHz  clk_12MHz  |  84.000      74.903  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_12MHz  clk_12MHz  |  84.000      72.470  |  No paths    -      |  No paths    -      |  No paths    -    
 =============================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -338,41 +416,41 @@ Detailed Report for Clock: clk_12MHz
 Starting Points with Worst Slack
 ********************************
 
-                                    Starting                                         Arrival           
-Instance                            Reference     Type        Pin     Net            Time        Slack 
-                                    Clock                                                              
--------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.count\[3\]     clk_12MHz     FD1P3JX     Q       count\[3\]     1.180       74.903
-rc_receiver.recv_ch4.count\[4\]     clk_12MHz     FD1P3IX     Q       count\[4\]     1.180       74.903
-rc_receiver.recv_ch4.count\[5\]     clk_12MHz     FD1P3IX     Q       count\[5\]     1.180       74.903
-rc_receiver.recv_ch4.count\[6\]     clk_12MHz     FD1P3JX     Q       count\[6\]     1.180       74.903
-rc_receiver.recv_ch4.count\[1\]     clk_12MHz     FD1P3JX     Q       un8lto1        1.148       74.935
-rc_receiver.recv_ch4.count\[2\]     clk_12MHz     FD1P3JX     Q       un8lto2        1.148       74.935
-rc_receiver.recv_ch4.count\[0\]     clk_12MHz     FD1P3AX     Q       un7lto0        1.180       75.047
-rc_receiver.recv_ch8.count\[0\]     clk_12MHz     FD1P3AX     Q       un7lto0        1.180       75.223
-rc_receiver.recv_ch8.count\[1\]     clk_12MHz     FD1P3JX     Q       un8lto1        1.180       75.223
-rc_receiver.recv_ch8.count\[2\]     clk_12MHz     FD1P3JX     Q       un8lto2        1.180       75.223
-=======================================================================================================
+                           Starting                                               Arrival           
+Instance                   Reference     Type        Pin     Net                  Time        Slack 
+                           Clock                                                                    
+----------------------------------------------------------------------------------------------------
+arm_x.register\[2\][0]     clk_12MHz     FD1P3IX     Q       register\[2\][0]     1.108       72.470
+arm_x.register\[2\][1]     clk_12MHz     FD1P3IX     Q       register\[2\][1]     1.108       72.612
+arm_x.register\[2\][2]     clk_12MHz     FD1P3IX     Q       register\[2\][2]     1.108       72.612
+arm_x.register\[2\][3]     clk_12MHz     FD1P3IX     Q       register\[2\][3]     1.108       72.755
+arm_x.register\[2\][4]     clk_12MHz     FD1P3IX     Q       register\[2\][4]     1.108       72.755
+arm_x.register\[2\][5]     clk_12MHz     FD1P3JX     Q       register\[2\][5]     1.108       72.898
+arm_x.register\[2\][6]     clk_12MHz     FD1P3JX     Q       register\[2\][6]     1.108       72.898
+arm_x.register\[2\][7]     clk_12MHz     FD1P3JX     Q       register\[2\][7]     1.108       73.041
+arm_x.register\[2\][8]     clk_12MHz     FD1P3IX     Q       register\[2\][8]     1.108       73.041
+arm_x.register\[2\][9]     clk_12MHz     FD1P3JX     Q       register\[2\][9]     1.108       73.184
+====================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                     Starting                                            Required           
-Instance                             Reference     Type        Pin     Net               Time         Slack 
-                                     Clock                                                                  
-------------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.valid           clk_12MHz     FD1P3AX     SP      valid_RNO_0_0     83.528       74.903
-rc_receiver.recv_ch8.valid           clk_12MHz     FD1P3AX     SP      valid_RNO_0_1     83.528       75.223
-rc_receiver.recv_ch4.period\[0\]     clk_12MHz     FD1P3AX     D       period\[0\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[1\]     clk_12MHz     FD1P3AX     D       period\[1\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[2\]     clk_12MHz     FD1P3AX     D       period\[2\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[3\]     clk_12MHz     FD1P3AX     D       period\[3\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[4\]     clk_12MHz     FD1P3AX     D       period\[4\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[5\]     clk_12MHz     FD1P3AX     D       period\[5\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[6\]     clk_12MHz     FD1P3AX     D       period\[6\]_7     84.462       75.293
-rc_receiver.recv_ch4.period\[7\]     clk_12MHz     FD1P3AX     D       period\[7\]_7     84.462       75.293
-============================================================================================================
+                                     Starting                                        Required           
+Instance                             Reference     Type        Pin     Net           Time         Slack 
+                                     Clock                                                              
+--------------------------------------------------------------------------------------------------------
+arm_x.step_clock_div.count\[1\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[2\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[3\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[4\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[5\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[6\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[7\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[8\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[9\]      clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+arm_x.step_clock_div.count\[10\]     clk_12MHz     FD1S3IX     CD      N_195_1_i     83.197       72.470
+========================================================================================================
 
 
 
@@ -382,73 +460,109 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      84.000
-    - Setup time:                            0.472
+    - Setup time:                            0.803
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         83.528
+    = Required time:                         83.197
 
-    - Propagation time:                      8.625
+    - Propagation time:                      10.728
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     74.903
+    = Slack (critical) :                     72.470
 
-    Number of logic level(s):                7
-    Starting point:                          rc_receiver.recv_ch4.count\[3\] / Q
-    Ending point:                            rc_receiver.recv_ch4.valid / SP
+    Number of logic level(s):                19
+    Starting point:                          arm_x.register\[2\][0] / Q
+    Ending point:                            arm_x.step_clock_div.count\[1\] / CD
     The start point is clocked by            clk_12MHz [rising] on pin CK
     The end   point is clocked by            clk_12MHz [rising] on pin CK
 
-Instance / Net                                                       Pin      Pin               Arrival     No. of    
-Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.count\[3\]                         FD1P3JX      Q        Out     1.180     1.180       -         
-count\[3\]                                              Net          -        -       -         -           5         
-rc_receiver.recv_ch4.un1_count\[0\]lto7_5               ORCALUT4     B        In      0.000     1.180       -         
-rc_receiver.recv_ch4.un1_count\[0\]lto7_5               ORCALUT4     Z        Out     1.089     2.269       -         
-un1_count\[0\]lt13_5                                    Net          -        -       -         -           2         
-rc_receiver.recv_ch4.un1_count\[0\]lto7                 ORCALUT4     C        In      0.000     2.269       -         
-rc_receiver.recv_ch4.un1_count\[0\]lto7                 ORCALUT4     Z        Out     1.089     3.357       -         
-un1_count\[0\]lt13                                      Net          -        -       -         -           2         
-rc_receiver.recv_ch4.un7lto13_1                         ORCALUT4     C        In      0.000     3.357       -         
-rc_receiver.recv_ch4.un7lto13_1                         ORCALUT4     Z        Out     1.089     4.446       -         
-un7_1                                                   Net          -        -       -         -           2         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto13_RNI79NA1     ORCALUT4     B        In      0.000     4.446       -         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto13_RNI79NA1     ORCALUT4     Z        Out     1.265     5.711       -         
-valid_1_sqmuxa_1_0                                      Net          -        -       -         -           8         
-rc_receiver.recv_ch4.valid12_2_RNIJ9CG2                 ORCALUT4     D        In      0.000     5.711       -         
-rc_receiver.recv_ch4.valid12_2_RNIJ9CG2                 ORCALUT4     Z        Out     1.281     6.992       -         
-valid_1_sqmuxa                                          Net          -        -       -         -           11        
-rc_receiver.recv_ch4.un1_valid29_1                      ORCALUT4     D        In      0.000     6.992       -         
-rc_receiver.recv_ch4.un1_valid29_1                      ORCALUT4     Z        Out     1.017     8.009       -         
-un1_valid29_1                                           Net          -        -       -         -           1         
-rc_receiver.recv_ch4.valid_RNO_0                        ORCALUT4     D        In      0.000     8.009       -         
-rc_receiver.recv_ch4.valid_RNO_0                        ORCALUT4     Z        Out     0.617     8.625       -         
-valid_RNO_0_0                                           Net          -        -       -         -           1         
-rc_receiver.recv_ch4.valid                              FD1P3AX      SP       In      0.000     8.625       -         
-======================================================================================================================
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+arm_x.register\[2\][0]                                FD1P3IX      Q        Out     1.108     1.108       -         
+register\[2\][0]                                      Net          -        -       -         -           3         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_0_0          CCU2D        A1       In      0.000     1.108       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_0_0          CCU2D        COUT     Out     1.544     2.652       -         
+count\[0\]2_a_4_cry_0                                 Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_1_0          CCU2D        CIN      In      0.000     2.652       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_1_0          CCU2D        COUT     Out     0.143     2.795       -         
+count\[0\]2_a_4_cry_2                                 Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_3_0          CCU2D        CIN      In      0.000     2.795       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_3_0          CCU2D        COUT     Out     0.143     2.938       -         
+count\[0\]2_a_4_cry_4                                 Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_5_0          CCU2D        CIN      In      0.000     2.938       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_5_0          CCU2D        COUT     Out     0.143     3.081       -         
+count\[0\]2_a_4_cry_6                                 Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_7_0          CCU2D        CIN      In      0.000     3.081       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_7_0          CCU2D        COUT     Out     0.143     3.224       -         
+count\[0\]2_a_4_cry_8                                 Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_9_0          CCU2D        CIN      In      0.000     3.224       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_9_0          CCU2D        COUT     Out     0.143     3.366       -         
+count\[0\]2_a_4_cry_10                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_11_0         CCU2D        CIN      In      0.000     3.366       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_11_0         CCU2D        COUT     Out     0.143     3.509       -         
+count\[0\]2_a_4_cry_12                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_13_0         CCU2D        CIN      In      0.000     3.509       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_13_0         CCU2D        COUT     Out     0.143     3.652       -         
+count\[0\]2_a_4_cry_14                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_15_0         CCU2D        CIN      In      0.000     3.652       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_15_0         CCU2D        COUT     Out     0.143     3.795       -         
+count\[0\]2_a_4_cry_16                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_17_0         CCU2D        CIN      In      0.000     3.795       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_17_0         CCU2D        COUT     Out     0.143     3.938       -         
+count\[0\]2_a_4_cry_18                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_19_0         CCU2D        CIN      In      0.000     3.938       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_19_0         CCU2D        COUT     Out     0.143     4.080       -         
+count\[0\]2_a_4_cry_20                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_21_0         CCU2D        CIN      In      0.000     4.080       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_21_0         CCU2D        COUT     Out     0.143     4.223       -         
+count\[0\]2_a_4_cry_22                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_23_0         CCU2D        CIN      In      0.000     4.223       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_23_0         CCU2D        COUT     Out     0.143     4.366       -         
+count\[0\]2_a_4_cry_24                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_25_0         CCU2D        CIN      In      0.000     4.366       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_25_0         CCU2D        COUT     Out     0.143     4.509       -         
+count\[0\]2_a_4_cry_26                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_27_0         CCU2D        CIN      In      0.000     4.509       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_27_0         CCU2D        COUT     Out     0.143     4.652       -         
+count\[0\]2_a_4_cry_28                                Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_29_0         CCU2D        CIN      In      0.000     4.652       -         
+arm_x.step_clock_div.count\[0\]2_a_4_cry_29_0         CCU2D        S0       Out     1.549     6.200       -         
+count\[0\]2_a_4[29]                                   Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_0_I_81_0             CCU2D        B1       In      0.000     6.200       -         
+arm_x.step_clock_div.count\[0\]2_0_I_81_0             CCU2D        COUT     Out     1.544     7.745       -         
+count\[0\]2_0_data_tmp[14]                            Net          -        -       -         -           1         
+arm_x.step_clock_div.count\[0\]2_0_I_45_0             CCU2D        CIN      In      0.000     7.745       -         
+arm_x.step_clock_div.count\[0\]2_0_I_45_0             CCU2D        S1       Out     1.621     9.366       -         
+count\[0\]2_0_data_tmp[15]                            Net          -        -       -         -           2         
+arm_x.step_clock_div.count\[0\]2_0_I_45_0_RNIG3P9     ORCALUT4     B        In      0.000     9.366       -         
+arm_x.step_clock_div.count\[0\]2_0_I_45_0_RNIG3P9     ORCALUT4     Z        Out     1.362     10.728      -         
+N_195_1_i                                             Net          -        -       -         -           31        
+arm_x.step_clock_div.count\[1\]                       FD1S3IX      CD       In      0.000     10.728      -         
+====================================================================================================================
 
 
 
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 161MB peak: 197MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 159MB peak: 187MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 636 of 6864 (9%)
+Register bits: 811 of 6864 (12%)
 PIC Latch:       0
 I/O cells:       55
 
 
 Details:
-CCU2D:          147
-FD1P3AX:        230
-FD1P3IX:        210
+CCU2D:          203
+FD1P3AX:        286
+FD1P3IX:        295
 FD1P3JX:        72
 FD1S3AX:        44
 FD1S3AY:        3
-FD1S3IX:        67
+FD1S3IX:        101
 FD1S3JX:        1
 GSR:            1
 IB:             10
@@ -457,16 +571,16 @@ INV:            8
 L6MUX21:        1
 OB:             45
 OFS1P3DX:       2
-ORCALUT4:       956
-PFUMX:          61
+ORCALUT4:       1040
+PFUMX:          36
 PUR:            1
-VHI:            18
-VLO:            18
+VHI:            19
+VLO:            19
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 59MB peak: 197MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 60MB peak: 187MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Sat Jan  9 17:09:09 2016
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Sat Jan  9 17:41:33 2016
 
 ###########################################################]

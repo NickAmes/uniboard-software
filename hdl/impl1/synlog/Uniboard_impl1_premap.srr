@@ -38,7 +38,7 @@ Start                                             Requested     Requested     Cl
 Clock                                             Frequency     Period        Type                         Group           
 ---------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
-ClockDivider|clk_o_derived_clock                  11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ClockDivider_1|clk_o_derived_clock                11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 clk_12MHz                                         11.9 MHz      84.000        declared                     default_clkgroup
@@ -49,6 +49,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 17:09:02 2016
+# Sat Jan  9 17:41:25 2016
 
 ###########################################################]
