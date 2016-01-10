@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(180): </Dynamic>
+            <Dynamic>RCPeripheral</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(203): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>203</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(114): </Dynamic>
+            <Dynamic>PWMReceiver</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>114</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(158): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>158</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(173): </Dynamic>
+            <Dynamic>17</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>173</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(197): </Dynamic>
+            <Dynamic>register[0][5]</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>197</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>read_size</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>read_size</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch2/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch3/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch4/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch7/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch8/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\recv_ch1/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

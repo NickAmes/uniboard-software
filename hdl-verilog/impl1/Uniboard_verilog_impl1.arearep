@@ -1,0 +1,109 @@
+----------------------------------------------------------------------
+Report for cell RCPeripheral.TECH
+Register bits:  171 of 7209 (2.372%)
+I/O cells:      53
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        84          100.0
+                            FD1P3AX         6          100.0
+                            FD1P3IX        48          100.0
+                            FD1P3JX        89          100.0
+                            FD1S3AX         6          100.0
+                            FD1S3JX         7          100.0
+                                GSR         1          100.0
+                                 IB        18          100.0
+                           IFS1P3DX         6          100.0
+                            L6MUX21         8          100.0
+                               LUT4       364          100.0
+                                OBZ        35          100.0
+                           OFS1P3DX         1          100.0
+                           OFS1P3IX         8          100.0
+                              PFUMX        16          100.0
+SUB MODULES
+                        PWMReceiver         1
+                     PWMReceiver_U0         1
+                     PWMReceiver_U1         1
+                     PWMReceiver_U2         1
+                     PWMReceiver_U3         1
+                     PWMReceiver_U4         1
+                              TOTAL       703
+----------------------------------------------------------------------
+Report for cell PWMReceiver.v1
+Instance Path : recv_ch8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        16           18.0
+                            FD1S3AX         1           16.7
+                           IFS1P3DX         1           16.7
+                               LUT4        54           14.8
+                              TOTAL        95
+----------------------------------------------------------------------
+Report for cell PWMReceiver_U3.v1
+Instance Path : recv_ch2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        16           18.0
+                            FD1S3AX         1           16.7
+                           IFS1P3DX         1           16.7
+                               LUT4        53           14.6
+                              TOTAL        94
+----------------------------------------------------------------------
+Report for cell PWMReceiver_U4.v1
+Instance Path : recv_ch1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        14           15.7
+                            FD1S3AX         1           16.7
+                            FD1S3JX         2           28.6
+                           IFS1P3DX         1           16.7
+                               LUT4        53           14.6
+                              TOTAL        94
+----------------------------------------------------------------------
+Report for cell PWMReceiver_U2.v1
+Instance Path : recv_ch3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        11           12.4
+                            FD1S3AX         1           16.7
+                            FD1S3JX         5           71.4
+                           IFS1P3DX         1           16.7
+                               LUT4        52           14.3
+                              TOTAL        93
+----------------------------------------------------------------------
+Report for cell PWMReceiver_U1.v1
+Instance Path : recv_ch4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        16           18.0
+                            FD1S3AX         1           16.7
+                           IFS1P3DX         1           16.7
+                               LUT4        55           15.1
+                              TOTAL        96
+----------------------------------------------------------------------
+Report for cell PWMReceiver_U0.v1
+Instance Path : recv_ch7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           16.7
+                            FD1P3AX         1           16.7
+                            FD1P3IX         8           16.7
+                            FD1P3JX        16           18.0
+                            FD1S3AX         1           16.7
+                           IFS1P3DX         1           16.7
+                               LUT4        58           15.9
+                              TOTAL        99
