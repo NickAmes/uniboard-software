@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 04:47:08 2016
+Sun Jan 10 05:07:41 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -306,9 +306,9 @@ WARNING - synthesis: Bit 1 of Register \arm_x/read_size is stuck at Zero
 GSR instance connected to net expansion5_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \arm_x/fault_latched_165 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_x/fault_latched_174 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
@@ -347,43 +347,44 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.
 
 ################### Begin Area Report (UniboardTop)######################
-Number of register bits => 813 of 7209 (11 % )
-CCU2D => 366
-FD1P3AX => 170
-FD1P3IX => 281
+Number of register bits => 814 of 7209 (11 % )
+CCU2D => 383
+FD1P3AX => 171
+FD1P3IX => 250
 FD1P3JX => 136
-FD1S3AX => 10
-FD1S3IX => 207
+FD1S3AX => 11
+FD1S3IX => 235
 FD1S3JX => 2
 GSR => 1
 IB => 11
 IFS1P3DX => 7
 L6MUX21 => 8
-LUT4 => 1037
+LUT4 => 1072
 OB => 45
-PFUMX => 54
+OFS1P3IX => 2
+PFUMX => 49
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
-  Net : debug_c_c, loads : 786
+  Net : debug_c_c, loads : 787
   Net : bclk, loads : 14
   Net : select_7, loads : 11
 Clock Enable Nets
 Number of Clock Enables: 47
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n26386, loads : 146
-  Net : register_addr_0, loads : 128
-  Net : register_addr_1, loads : 78
-  Net : rw, loads : 66
-  Net : n26385, loads : 64
-  Net : n1267, loads : 60
-  Net : n27606, loads : 50
-  Net : n27605, loads : 50
-  Net : n27608, loads : 49
-  Net : n5990, loads : 47
+  Net : n24683, loads : 145
+  Net : register_addr_0, loads : 99
+  Net : n24679, loads : 64
+  Net : rw, loads : 63
+  Net : n1267, loads : 59
+  Net : register_addr_1, loads : 51
+  Net : n25961, loads : 50
+  Net : n25959, loads : 48
+  Net : n25958, loads : 48
+  Net : n9736, loads : 46
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -402,8 +403,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 223.418  MB
+Peak Memory Usage: 223.070  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 8.362  secs
+Elapsed CPU time for LSE flow : 7.757  secs
 --------------------------------------------------------------

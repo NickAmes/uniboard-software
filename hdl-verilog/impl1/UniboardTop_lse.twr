@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Sun Jan 10 04:47:15 2016
+Sun Jan 10 05:07:48 2016
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,56 +27,114 @@ Passed:  The following path meets requirements by 76.040ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \protocol_interface/uart_output/baud_gen/count_1701__i1  (from clk_12MHz +)
+   Source:         FD1S3IX    CK             \protocol_interface/uart_input/baud_gen/count_1681__i1  (from clk_12MHz +)
+   Destination:    FD1S3IX    D              \protocol_interface/uart_input/baud_gen/clk_o_14  (to clk_12MHz +)
+
+   Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
+
+ Constraint Details:
+
+      6.800ns data_path \protocol_interface/uart_input/baud_gen/count_1681__i1 to \protocol_interface/uart_input/baud_gen/clk_o_14 meets
+     83.000ns delay constraint less
+      0.160ns L_S requirement (totaling 82.840ns) by 76.040ns
+
+ Path Details: \protocol_interface/uart_input/baud_gen/count_1681__i1 to \protocol_interface/uart_input/baud_gen/clk_o_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_input/baud_gen/count_1681__i1 (from clk_12MHz)
+Route         2   e 1.315                                  \protocol_interface/uart_input/baud_gen/count[1]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_2
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21019
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_4
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21020
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_6
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21021
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_8
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21022
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_10
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21023
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_12
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21024
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_14
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21025
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_16
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21026
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_18
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21027
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_20
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21028
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_22
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21029
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_24
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21030
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_26
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21031
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_28
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21032
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_30
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21033
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_32
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n21034
+FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_input/baud_gen/sub_1353_add_2_cout
+Route         1   e 0.941                                  \protocol_interface/uart_input/baud_gen/n5316
+                  --------
+                    6.800  (62.1% logic, 37.9% route), 18 logic levels.
+
+
+Passed:  The following path meets requirements by 76.040ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \protocol_interface/uart_output/baud_gen/count_1682__i1  (from clk_12MHz +)
    Destination:    FD1S3AX    D              \protocol_interface/uart_output/baud_gen/clk_o_14  (to clk_12MHz +)
 
    Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
 
  Constraint Details:
 
-      6.800ns data_path \protocol_interface/uart_output/baud_gen/count_1701__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14 meets
+      6.800ns data_path \protocol_interface/uart_output/baud_gen/count_1682__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14 meets
      83.000ns delay constraint less
       0.160ns L_S requirement (totaling 82.840ns) by 76.040ns
 
- Path Details: \protocol_interface/uart_output/baud_gen/count_1701__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14
+ Path Details: \protocol_interface/uart_output/baud_gen/count_1682__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/baud_gen/count_1701__i1 (from clk_12MHz)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/baud_gen/count_1682__i1 (from clk_12MHz)
 Route         2   e 1.315                                  \protocol_interface/uart_output/baud_gen/count[1]
-A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_2
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22736
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_4
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22737
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_6
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22738
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_8
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22739
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_10
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22740
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_12
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22741
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_14
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22742
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_16
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22743
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_18
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22744
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_20
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22745
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_22
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22746
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_24
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22747
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_26
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22748
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_28
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22749
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_30
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22750
-FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_32
-Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n22751
-FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_output/baud_gen/sub_1370_add_2_cout
-Route         1   e 0.941                                  \protocol_interface/uart_output/baud_gen/n5406
+A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_2
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20987
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_4
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20988
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_6
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20989
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_8
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20990
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_10
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20991
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_12
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20992
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_14
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20993
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_16
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20994
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_18
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20995
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_20
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20996
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_22
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20997
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_24
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20998
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_26
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n20999
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_28
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n21000
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_30
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n21001
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_32
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n21002
+FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_output/baud_gen/sub_1355_add_2_cout
+Route         1   e 0.941                                  \protocol_interface/uart_output/baud_gen/n5351
                   --------
                     6.800  (62.1% logic, 37.9% route), 18 logic levels.
 
@@ -85,113 +143,55 @@ Passed:  The following path meets requirements by 76.040ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \arm_x/step_clk_gen/count_1699__i0  (from clk_12MHz +)
-   Destination:    FD1S3IX    D              \arm_x/step_clk_gen/clk_o_22  (to clk_12MHz +)
+   Source:         FD1S3IX    CK             \arm_x/step_clk_gen/count_1680__i0  (from clk_12MHz +)
+   Destination:    FD1S3IX    D              \arm_x/step_clk_gen/count_1680__i31  (to clk_12MHz +)
 
    Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
 
  Constraint Details:
 
-      6.800ns data_path \arm_x/step_clk_gen/count_1699__i0 to \arm_x/step_clk_gen/clk_o_22 meets
+      6.800ns data_path \arm_x/step_clk_gen/count_1680__i0 to \arm_x/step_clk_gen/count_1680__i31 meets
      83.000ns delay constraint less
       0.160ns L_S requirement (totaling 82.840ns) by 76.040ns
 
- Path Details: \arm_x/step_clk_gen/count_1699__i0 to \arm_x/step_clk_gen/clk_o_22
+ Path Details: \arm_x/step_clk_gen/count_1680__i0 to \arm_x/step_clk_gen/count_1680__i31
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \arm_x/step_clk_gen/count_1699__i0 (from clk_12MHz)
+L_CO        ---     0.444             CK to Q              \arm_x/step_clk_gen/count_1680__i0 (from clk_12MHz)
 Route         3   e 1.315                                  \arm_x/step_clk_gen/count[0]
-A1_TO_FCO   ---     0.827           A[2] to COUT           \arm_x/step_clk_gen/sub_1363_add_2_1
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22716
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_3
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22717
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_5
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22718
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_7
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22719
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_9
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22720
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_11
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22721
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_13
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22722
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_15
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22723
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_17
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22724
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_19
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22725
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_21
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22726
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_23
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22727
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_25
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22728
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_27
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22729
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_29
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22730
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/sub_1363_add_2_31
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22731
-FCI_TO_F    ---     0.598            CIN to S[2]           \arm_x/step_clk_gen/sub_1363_add_2_33
-Route         1   e 0.941                                  \arm_x/step_clk_gen/n5267
-                  --------
-                    6.800  (62.1% logic, 37.9% route), 18 logic levels.
-
-
-Passed:  The following path meets requirements by 76.040ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \arm_x/step_clk_gen/count_1699__i0  (from clk_12MHz +)
-   Destination:    FD1S3IX    D              \arm_x/step_clk_gen/count_1699__i31  (to clk_12MHz +)
-
-   Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
-
- Constraint Details:
-
-      6.800ns data_path \arm_x/step_clk_gen/count_1699__i0 to \arm_x/step_clk_gen/count_1699__i31 meets
-     83.000ns delay constraint less
-      0.160ns L_S requirement (totaling 82.840ns) by 76.040ns
-
- Path Details: \arm_x/step_clk_gen/count_1699__i0 to \arm_x/step_clk_gen/count_1699__i31
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \arm_x/step_clk_gen/count_1699__i0 (from clk_12MHz)
-Route         3   e 1.315                                  \arm_x/step_clk_gen/count[0]
-A1_TO_FCO   ---     0.827           A[2] to COUT           \arm_x/step_clk_gen/count_1699_add_4_1
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22848
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_3
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22849
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_5
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22850
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_7
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22851
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_9
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22852
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_11
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22853
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_13
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22854
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_15
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22855
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_17
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22856
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_19
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22857
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_21
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22858
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_23
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22859
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_25
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22860
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_27
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22861
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_29
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22862
-FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1699_add_4_31
-Route         1   e 0.020                                  \arm_x/step_clk_gen/n22863
-FCI_TO_F    ---     0.598            CIN to S[2]           \arm_x/step_clk_gen/count_1699_add_4_33
+A1_TO_FCO   ---     0.827           A[2] to COUT           \arm_x/step_clk_gen/count_1680_add_4_1
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21163
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_3
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21164
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_5
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21165
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_7
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21166
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_9
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21167
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_11
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21168
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_13
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21169
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_15
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21170
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_17
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21171
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_19
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21172
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_21
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21173
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_23
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21174
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_25
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21175
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_27
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21176
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_29
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21177
+FCI_TO_FCO  ---     0.157            CIN to COUT           \arm_x/step_clk_gen/count_1680_add_4_31
+Route         1   e 0.020                                  \arm_x/step_clk_gen/n21178
+FCI_TO_F    ---     0.598            CIN to S[2]           \arm_x/step_clk_gen/count_1680_add_4_33
 Route         1   e 0.941                                  \arm_x/step_clk_gen/n135
                   --------
                     6.800  (62.1% logic, 37.9% route), 18 logic levels.
@@ -221,8 +221,8 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover  4924 paths, 1093 nets, and 2062 connections (83.7% coverage)
+Constraints cover  4923 paths, 1092 nets, and 2061 connections (82.1% coverage)
 
 
-Peak memory: 232169472 bytes, TRCE: 8192 bytes, DLYMAN: 0 bytes
+Peak memory: 231809024 bytes, TRCE: 8192 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

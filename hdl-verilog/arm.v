@@ -37,12 +37,12 @@ module ArmPeripheral(
 	reg prev_step_clk;
 	
 	assign go = control_reg[7];
-	assign stepping = ~pause & en & (steps_reg > 0);
+	assign stepping = ~pause & go & (steps_reg > 0);
 	
 	/* Outputs */
 	assign en = ~control_reg[6];
 	assign dir = control_reg[5];
-	assign step_line = int_step ^ ~control_reg[4];
+	assign step_line = int_step ^ ~control_reg[3];
 	assign microstep = control_reg[2:0];
 	
 	/* Bus read handling */
@@ -69,6 +69,14 @@ module ArmPeripheral(
 				end
 			else
 				begin
+					if(prev_step_clk & ~step_clk)
+						int_step <= 'b0;
+					if(~prev_step_clk & step_clk & stepping)
+						begin
+							int_step <= 'b1;
+							steps_reg <= steps_reg - 1;
+						end
+						
 					if(~prev_select & select)
 						begin
 							case(register_addr)
@@ -109,13 +117,7 @@ module ArmPeripheral(
 											steps_reg <= databus;
 									endcase
 								end
-						end
-					//other logic here
-					//TODO
-					int_step <= step_clk;
-						
-						
-						
+						end		
 					end
 		end
 	ClockDivider step_clk_gen(.clk_i(clk_12MHz),

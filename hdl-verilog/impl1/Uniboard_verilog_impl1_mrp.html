@@ -27,21 +27,21 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  01/10/16  04:47:17
+Mapped on:  01/10/16  05:07:52
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    813 out of  7209 (11%)
-      PFU registers:          806 out of  6864 (12%)
-      PIO registers:            7 out of   345 (2%)
-   Number of SLICEs:       888 out of  3432 (26%)
-      SLICEs as Logic/ROM:    888 out of  3432 (26%)
+   Number of registers:    814 out of  7209 (11%)
+      PFU registers:          805 out of  6864 (12%)
+      PIO registers:            9 out of   345 (3%)
+   Number of SLICEs:       923 out of  3432 (27%)
+      SLICEs as Logic/ROM:    923 out of  3432 (27%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        366 out of  3432 (11%)
-   Number of LUT4s:        1772 out of  6864 (26%)
-      Number of logic LUTs:      1040
+      SLICEs as Carry:        383 out of  3432 (11%)
+   Number of LUT4s:        1840 out of  6864 (27%)
+      Number of logic LUTs:      1074
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:    366 (732 LUT4s)
+      Number of ripple logic:    383 (766 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 56 + 4(JTAG) out of 115 (52%)
    Number of block RAMs:  0 out of 26 (0%)
@@ -70,104 +70,104 @@ Mapped on:  01/10/16  04:47:17
 
      ripple logic.
    Number of clocks:  3
-     Net debug_c_c: 459 loads, 459 rising, 0 falling (Driver: PIO clk_12MHz )
+     Net debug_c_c: 458 loads, 458 rising, 0 falling (Driver: PIO clk_12MHz )
      Net select[7]: 9 loads, 9 rising, 0 falling (Driver:
      protocol_interface/select__i7 )
      Net \protocol_interface/uart_output/bclk: 10 loads, 10 rising, 0 falling
      (Driver: protocol_interface/uart_output/baud_gen/clk_o_14 )
    Number of Clock Enables:  46
-     Net n26446: 1 loads, 1 LSLICEs
-     Net motor_pwm/n2455: 6 loads, 6 LSLICEs
-     Net motor_pwm/n26394: 4 loads, 4 LSLICEs
-     Net n10305: 1 loads, 1 LSLICEs
-     Net motor_pwm/n26393: 4 loads, 4 LSLICEs
-     Net motor_pwm/n18508: 1 loads, 1 LSLICEs
-     Net n26386: 82 loads, 76 LSLICEs
-     Net n7573: 4 loads, 4 LSLICEs
-     Net n7601: 4 loads, 4 LSLICEs
+     Net n24721: 6 loads, 6 LSLICEs
+     Net n24708: 5 loads, 5 LSLICEs
+     Net n9639: 1 loads, 1 LSLICEs
+     Net n24712: 4 loads, 4 LSLICEs
+     Net n10136: 1 loads, 1 LSLICEs
+     Net n24680: 4 loads, 4 LSLICEs
+     Net n24683: 82 loads, 74 LSLICEs
+     Net n7526: 4 loads, 4 LSLICEs
      Net n30: 8 loads, 8 LSLICEs
-     Net n9715: 4 loads, 4 LSLICEs
-     Net n10143: 21 loads, 21 LSLICEs
-     Net n9903: 18 loads, 18 LSLICEs
-     Net n23039: 1 loads, 1 LSLICEs
-     Net n26449: 8 loads, 8 LSLICEs
-     Net n9722: 6 loads, 6 LSLICEs
-     Net n10339: 1 loads, 1 LSLICEs
-     Net n10231: 2 loads, 2 LSLICEs
-     Net n26385: 16 loads, 16 LSLICEs
-     Net n9967: 5 loads, 5 LSLICEs
-     Net arm_x/n26415: 15 loads, 15 LSLICEs
-     Net arm_x/n10329: 23 loads, 23 LSLICEs
-     Net arm_x/n9731: 5 loads, 5 LSLICEs
-     Net arm_x/n26411: 14 loads, 14 LSLICEs
-     Net arm_x/n26412: 3 loads, 3 LSLICEs
+     Net n9628: 4 loads, 4 LSLICEs
+     Net n7556: 4 loads, 4 LSLICEs
+     Net arm_x/n17136: 1 loads, 1 LSLICEs
+     Net n9588: 22 loads, 22 LSLICEs
+     Net n9644: 4 loads, 4 LSLICEs
+     Net n9882: 7 loads, 7 LSLICEs
+     Net n24705: 11 loads, 11 LSLICEs
+     Net n24685: 3 loads, 3 LSLICEs
+     Net arm_x/step_clk_gen/n24679: 16 loads, 16 LSLICEs
+     Net n24740: 8 loads, 8 LSLICEs
+     Net n9666: 3 loads, 3 LSLICEs
+     Net n10176: 1 loads, 1 LSLICEs
+     Net n9844: 3 loads, 3 LSLICEs
+     Net n9635: 6 loads, 6 LSLICEs
+     Net protocol_interface/n2438: 5 loads, 5 LSLICEs
+     Net protocol_interface/n24726: 4 loads, 4 LSLICEs
+     Net protocol_interface/n2440: 16 loads, 16 LSLICEs
+     Net protocol_interface/n9736: 25 loads, 25 LSLICEs
+     Net protocol_interface/n24719: 3 loads, 3 LSLICEs
+     Net n21936: 1 loads, 1 LSLICEs
+     Net protocol_interface/n8957: 2 loads, 2 LSLICEs
      Net protocol_interface/n1990: 1 loads, 1 LSLICEs
-     Net protocol_interface/n2439: 16 loads, 16 LSLICEs
-     Net protocol_interface/n2437: 5 loads, 5 LSLICEs
-     Net protocol_interface/n26423: 4 loads, 4 LSLICEs
-     Net protocol_interface/n9085: 1 loads, 1 LSLICEs
-     Net protocol_interface/n5990: 25 loads, 25 LSLICEs
-     Net protocol_interface/n26424: 3 loads, 3 LSLICEs
-     Net protocol_interface/uart_output/n5987: 4 loads, 4 LSLICEs
-     Net protocol_interface/uart_output/n17: 1 loads, 1 LSLICEs
-     Net protocol_interface/uart_output/n9929: 3 loads, 3 LSLICEs
-     Net n9712: 4 loads, 4 LSLICEs
-     Net n23135: 1 loads, 1 LSLICEs
-     Net rc_receiver/recv_ch7/n22985: 1 loads, 1 LSLICEs
-     Net n9716: 4 loads, 4 LSLICEs
-     Net n23149: 1 loads, 1 LSLICEs
-     Net n9741: 4 loads, 4 LSLICEs
-     Net n23160: 1 loads, 1 LSLICEs
-     Net n10307: 4 loads, 4 LSLICEs
-     Net n23132: 1 loads, 1 LSLICEs
-     Net n23175: 1 loads, 1 LSLICEs
-     Net n10320: 4 loads, 4 LSLICEs
+     Net n24702: 19 loads, 19 LSLICEs
+     Net protocol_interface/uart_output/n5928: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_output/n13614: 1 loads, 1 LSLICEs
+     Net n24681: 4 loads, 4 LSLICEs
+     Net n9654: 4 loads, 4 LSLICEs
+     Net n21462: 1 loads, 1 LSLICEs
+     Net n21553: 1 loads, 1 LSLICEs
+     Net n21516: 1 loads, 1 LSLICEs
+     Net n21499: 1 loads, 1 LSLICEs
+     Net n22875: 1 loads, 1 LSLICEs
+     Net n10157: 4 loads, 4 LSLICEs
+     Net n24682: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch7/n21354: 1 loads, 1 LSLICEs
+     Net global_control/n24777: 16 loads, 16 LSLICEs
+     Net global_control/n9818: 4 loads, 4 LSLICEs
    Number of LSRs:  32
-     Net motor_pwm/n6045: 4 loads, 4 LSLICEs
+     Net n25958: 28 loads, 28 LSLICEs
 
-     Net n27606: 31 loads, 31 LSLICEs
-     Net n26442: 9 loads, 9 LSLICEs
-     Net n6024: 7 loads, 7 LSLICEs
-     Net n11312: 4 loads, 4 LSLICEs
-     Net n11334: 4 loads, 4 LSLICEs
-     Net n6020: 7 loads, 7 LSLICEs
-     Net n27605: 28 loads, 28 LSLICEs
-     Net n6041: 3 loads, 3 LSLICEs
-     Net n11521: 1 loads, 1 LSLICEs
-     Net n11520: 1 loads, 1 LSLICEs
-     Net global_control/uptime_div/n2466: 17 loads, 17 LSLICEs
-     Net n23219: 1 loads, 1 LSLICEs
-     Net n11362: 16 loads, 16 LSLICEs
-     Net n26385: 17 loads, 17 LSLICEs
-     Net n2450: 17 loads, 17 LSLICEs
-     Net arm_x/n26438: 9 loads, 9 LSLICEs
-     Net protocol_interface/n26441: 25 loads, 25 LSLICEs
-     Net protocol_interface/n27608: 31 loads, 31 LSLICEs
-     Net protocol_interface/n26405: 2 loads, 2 LSLICEs
-     Net protocol_interface/n11329: 2 loads, 2 LSLICEs
-     Net protocol_interface/n11327: 3 loads, 3 LSLICEs
-     Net protocol_interface/uart_output/baud_gen/n11587: 17 loads, 17 LSLICEs
+     Net n13199: 5 loads, 5 LSLICEs
+     Net n25959: 31 loads, 31 LSLICEs
+     Net n24734: 10 loads, 10 LSLICEs
+     Net motor_pwm/right/n5963: 7 loads, 7 LSLICEs
+     Net n11038: 4 loads, 4 LSLICEs
+     Net n24686: 3 loads, 3 LSLICEs
+     Net n11010: 4 loads, 4 LSLICEs
+     Net motor_pwm/left/n5959: 7 loads, 7 LSLICEs
+     Net n11095: 4 loads, 4 LSLICEs
+     Net n25961: 32 loads, 32 LSLICEs
+     Net n24710: 8 loads, 8 LSLICEs
+     Net arm_x/step_clk_gen/n24679: 17 loads, 17 LSLICEs
+     Net arm_x/step_clk_gen/n11123: 16 loads, 16 LSLICEs
+     Net n21563: 1 loads, 1 LSLICEs
+     Net protocol_interface/n24701: 2 loads, 2 LSLICEs
+     Net n24732: 21 loads, 21 LSLICEs
+     Net n24737: 8 loads, 8 LSLICEs
+     Net protocol_interface/n11253: 3 loads, 3 LSLICEs
+     Net protocol_interface/n11257: 2 loads, 2 LSLICEs
+     Net n11091: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_output/baud_gen/n11278: 17 loads, 17 LSLICEs
      Net protocol_interface/uart_input/baud_reset: 1 loads, 1 LSLICEs
-     Net protocol_interface/uart_input/n2546: 17 loads, 17 LSLICEs
-     Net rc_receiver/n26455: 8 loads, 8 LSLICEs
-     Net rc_receiver/recv_ch8/n11306: 4 loads, 4 LSLICEs
-     Net rc_receiver/recv_ch7/n11315: 4 loads, 4 LSLICEs
-     Net rc_receiver/recv_ch4/n11317: 4 loads, 4 LSLICEs
-     Net rc_receiver/recv_ch3/n11355: 4 loads, 4 LSLICEs
-     Net rc_receiver/recv_ch2/n11593: 4 loads, 4 LSLICEs
-     Net rc_receiver/recv_ch1/n11599: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_input/baud_gen/n2547: 17 loads, 17 LSLICEs
+     Net pwm_clk_div/n2451: 17 loads, 17 LSLICEs
+     Net rc_receiver/recv_ch8/n18691: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch7/n11047: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch3/n11116: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch2/n11287: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch1/n11294: 4 loads, 4 LSLICEs
+     Net global_control/n23081: 1 loads, 1 LSLICEs
+     Net global_control/uptime_div/n2467: 17 loads, 17 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net register_addr_0: 129 loads
-     Net n26386: 93 loads
-     Net register_addr_1: 79 loads
-     Net rw: 67 loads
-     Net protocol_interface/n1267: 60 loads
-     Net protocol_interface/n1268: 45 loads
-     Net protocol_interface/n1258: 41 loads
-     Net protocol_interface/n5815: 37 loads
-     Net n26446: 36 loads
-     Net select_1: 35 loads
+     Net register_addr_0: 100 loads
+     Net n24683: 92 loads
+     Net rw: 64 loads
+     Net protocol_interface/n1267: 59 loads
+     Net register_addr_1: 52 loads
+     Net protocol_interface/n1268: 44 loads
+     Net protocol_interface/n1258: 40 loads
+     Net protocol_interface/n5766: 38 loads
+     Net n25957: 37 loads
+     Net protocol_interface/sendcount_0: 34 loads
 
 
 
@@ -268,9 +268,9 @@ WARNING - map: IO buffer missing for top level port encoder_li...logic will be
 +---------------------+-----------+-----------+------------+
 | debug[8]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| motor_pwm_r         | OUTPUT    | LVCMOS25  |            |
+| motor_pwm_r         | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| motor_pwm_l         | OUTPUT    | LVCMOS25  |            |
+| motor_pwm_l         | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | signal_light        | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -347,152 +347,81 @@ WARNING - map: IO buffer missing for top level port encoder_li...logic will be
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal pwm_clk_div/sub_1358_add_2_22/S1 undriven or does not drive anything -
+Signal global_control/uptime_div/add_16741_2/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_2/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_2/CI undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_4/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_4/S0 undriven or does not drive
+
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_6/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_6/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_8/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_8/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_10/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_10/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_12/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_12/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_14/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_14/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_16/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_16/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_18/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_18/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_20/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_20/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_22/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_22/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_24/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_24/S0 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_cout/S1 undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/add_16741_cout/CO undriven or does not drive
+     anything - clipped.
+Signal global_control/uptime_div/count_1679_add_4_1/S0 undriven or does not
+     drive anything - clipped.
+Signal global_control/uptime_div/count_1679_add_4_1/CI undriven or does not
+     drive anything - clipped.
+Signal global_control/uptime_div/count_1679_add_4_33/S1 undriven or does not
+     drive anything - clipped.
+Signal global_control/uptime_div/count_1679_add_4_33/CO undriven or does not
+     drive anything - clipped.
+Signal global_control/add_133_1/S0 undriven or does not drive anything -
      clipped.
-Signal pwm_clk_div/sub_1358_add_2_22/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_24/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_24/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_26/S1 undriven or does not drive anything -
+Signal global_control/add_133_1/CI undriven or does not drive anything -
 
      clipped.
-Signal pwm_clk_div/sub_1358_add_2_26/S0 undriven or does not drive anything -
+Signal global_control/add_133_33/S1 undriven or does not drive anything -
      clipped.
-Signal pwm_clk_div/sub_1358_add_2_28/S1 undriven or does not drive anything -
+Signal global_control/add_133_33/CO undriven or does not drive anything -
      clipped.
-Signal pwm_clk_div/sub_1358_add_2_28/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch1/add_1187_17/S1 undriven or does not drive anything -
      clipped.
-Signal pwm_clk_div/sub_1358_add_2_30/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_30/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_32/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_32/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_2/S1 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_2/S0 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_2/CI undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_4/S1 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_4/S0 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_6/S1 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_6/S0 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_8/S1 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_8/S0 undriven or does not drive anything - clipped.
-     
-Signal pwm_clk_div/add_18427_10/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_10/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_12/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_12/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_14/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_14/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_16/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_16/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_18/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_18/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_cout/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_cout/CO undriven or does not drive anything -
-
-     clipped.
-Signal pwm_clk_div/add_18427_20/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_20/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_22/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_22/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_24/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_24/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_26/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_26/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_28/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_28/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_30/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_30/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_32/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/add_18427_32/CO undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_2/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_2/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_2/CI undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_4/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_4/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/count_1697_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/count_1697_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_6/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_6/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_8/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_8/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/count_1697_add_4_33/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/count_1697_add_4_33/CO undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_10/S1 undriven or does not drive anything -
-
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_10/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_12/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_12/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_14/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_14/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_16/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_16/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_18/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_18/S0 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_20/S1 undriven or does not drive anything -
-     clipped.
-Signal pwm_clk_div/sub_1358_add_2_20/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch1/add_1187_17/CO undriven or does not drive anything -
      clipped.
 Signal rc_receiver/recv_ch1/sub_46_add_2_1/S0 undriven or does not drive
      anything - clipped.
@@ -502,13 +431,9 @@ Signal rc_receiver/recv_ch1/sub_46_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch1/sub_46_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/add_1184_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch1/add_1187_1/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch1/add_1184_1/CI undriven or does not drive anything -
-     clipped.
-Signal rc_receiver/recv_ch1/add_1184_17/S1 undriven or does not drive anything -
-     clipped.
-Signal rc_receiver/recv_ch1/add_1184_17/CO undriven or does not drive anything -
+Signal rc_receiver/recv_ch1/add_1187_1/CI undriven or does not drive anything -
      clipped.
 Signal rc_receiver/recv_ch2/sub_47_add_2_1/S0 undriven or does not drive
      anything - clipped.
@@ -518,16 +443,15 @@ Signal rc_receiver/recv_ch2/sub_47_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch2/sub_47_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch2/add_1188_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch2/add_1191_1/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch2/add_1188_1/CI undriven or does not drive anything -
+Signal rc_receiver/recv_ch2/add_1191_1/CI undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch2/add_1188_17/S1 undriven or does not drive anything -
+Signal rc_receiver/recv_ch2/add_1191_17/S1 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch2/add_1188_17/CO undriven or does not drive anything -
+Signal rc_receiver/recv_ch2/add_1191_17/CO undriven or does not drive anything -
      clipped.
 Signal rc_receiver/recv_ch3/sub_48_add_2_1/S0 undriven or does not drive
-
      anything - clipped.
 Signal rc_receiver/recv_ch3/sub_48_add_2_1/CI undriven or does not drive
      anything - clipped.
@@ -535,17 +459,18 @@ Signal rc_receiver/recv_ch3/sub_48_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch3/sub_48_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch3/add_1192_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch3/add_1195_1/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch3/add_1192_1/CI undriven or does not drive anything -
+Signal rc_receiver/recv_ch3/add_1195_1/CI undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch3/add_1192_17/S1 undriven or does not drive anything -
+Signal rc_receiver/recv_ch3/add_1195_17/S1 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch3/add_1192_17/CO undriven or does not drive anything -
+Signal rc_receiver/recv_ch3/add_1195_17/CO undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch4/add_1196_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch4/add_1199_1/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch4/add_1196_1/CI undriven or does not drive anything -
+Signal rc_receiver/recv_ch4/add_1199_1/CI undriven or does not drive anything -
+
      clipped.
 Signal rc_receiver/recv_ch4/sub_49_add_2_1/S0 undriven or does not drive
      anything - clipped.
@@ -555,13 +480,13 @@ Signal rc_receiver/recv_ch4/sub_49_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch4/sub_49_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch4/add_1196_17/S1 undriven or does not drive anything -
+Signal rc_receiver/recv_ch4/add_1199_17/S1 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch4/add_1196_17/CO undriven or does not drive anything -
+Signal rc_receiver/recv_ch4/add_1199_17/CO undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch7/add_1200_17/S1 undriven or does not drive anything -
+Signal rc_receiver/recv_ch7/add_1203_17/S1 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch7/add_1200_17/CO undriven or does not drive anything -
+Signal rc_receiver/recv_ch7/add_1203_17/CO undriven or does not drive anything -
      clipped.
 Signal rc_receiver/recv_ch7/sub_50_add_2_1/S0 undriven or does not drive
      anything - clipped.
@@ -571,9 +496,13 @@ Signal rc_receiver/recv_ch7/sub_50_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch7/sub_50_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch7/add_1200_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch7/add_1203_1/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch7/add_1200_1/CI undriven or does not drive anything -
+Signal rc_receiver/recv_ch7/add_1203_1/CI undriven or does not drive anything -
+     clipped.
+Signal rc_receiver/recv_ch8/add_1207_1/S0 undriven or does not drive anything -
+     clipped.
+Signal rc_receiver/recv_ch8/add_1207_1/CI undriven or does not drive anything -
      clipped.
 Signal rc_receiver/recv_ch8/sub_51_add_2_1/S0 undriven or does not drive
      anything - clipped.
@@ -583,503 +512,578 @@ Signal rc_receiver/recv_ch8/sub_51_add_2_9/S1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch8/sub_51_add_2_9/CO undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch8/add_1204_1/S0 undriven or does not drive anything -
+Signal rc_receiver/recv_ch8/add_1207_17/S1 undriven or does not drive anything -
+     clipped.
+Signal rc_receiver/recv_ch8/add_1207_17/CO undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_6/S1 undriven or does not drive anything -
 
      clipped.
-Signal rc_receiver/recv_ch8/add_1204_1/CI undriven or does not drive anything -
+Signal pwm_clk_div/sub_1343_add_2_6/S0 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch8/add_1204_17/S1 undriven or does not drive anything -
+Signal pwm_clk_div/sub_1343_add_2_8/S1 undriven or does not drive anything -
      clipped.
-Signal rc_receiver/recv_ch8/add_1204_17/CO undriven or does not drive anything -
+Signal pwm_clk_div/sub_1343_add_2_8/S0 undriven or does not drive anything -
      clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_2/S1 undriven or
+Signal pwm_clk_div/sub_1343_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_2/S1 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_2/S0 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_2/CI undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_4/S1 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_4/S0 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_6/S1 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_6/S0 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_8/S1 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_8/S0 undriven or does not drive anything - clipped.
+     
+Signal pwm_clk_div/add_16740_10/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_10/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_12/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_12/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_14/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_14/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_16/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_16/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_18/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_18/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_20/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_20/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_22/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_22/S0 undriven or does not drive anything -
+
+     clipped.
+Signal pwm_clk_div/add_16740_24/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_24/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_26/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_26/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_28/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_28/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_30/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_30/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_32/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/add_16740_32/CO undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_20/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_24/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_24/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_26/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_26/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_28/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_28/S0 undriven or does not drive anything -
+
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_30/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_30/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_32/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_32/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/sub_1343_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/count_1678_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/count_1678_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/count_1678_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_clk_div/count_1678_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_12/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_2/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_12/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_2/CI undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_14/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_4/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_14/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_4/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_16/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_6/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_16/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_6/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_18/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_8/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_18/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_8/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_20/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_10/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_20/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_10/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_22/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_12/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_22/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_12/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_24/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_14/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_24/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_14/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_26/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_16/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_26/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_16/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_28/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_18/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_18/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_20/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_20/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_22/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_22/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_24/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_24/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_28/S0 undriven or
 
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_26/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/count_1681_add_4_1/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_26/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/count_1681_add_4_1/CI undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_28/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_30/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_28/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_30/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_30/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_32/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_30/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_32/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_32/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_cout/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_32/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_cout/CO undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_cout/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/count_1681_add_4_33/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/sub_1368_add_2_cout/CO undriven or
+Signal protocol_interface/uart_input/baud_gen/count_1681_add_4_33/CO undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/count_1700_add_4_1/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_2/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/count_1700_add_4_1/CI undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_2/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/count_1700_add_4_33/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_2/CI undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_input/baud_gen/count_1700_add_4_33/CO undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_4/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_14/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_4/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_14/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_6/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_16/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_6/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_16/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_8/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_18/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_8/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_18/S0 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_10/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_20/S1 undriven or
+Signal protocol_interface/uart_input/baud_gen/sub_1353_add_2_10/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_20/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/count_1682_add_4_1/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_22/S1 undriven or
+Signal protocol_interface/uart_output/baud_gen/count_1682_add_4_1/CI undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_22/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/count_1682_add_4_33/S1 undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/count_1682_add_4_33/CO undriven
+     or does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_2/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_24/S1 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_2/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_24/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_26/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_26/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_2/CI undriven or
 
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_28/S1 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_4/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_28/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_4/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_30/S1 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_6/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_30/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_6/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_32/S1 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_8/S1 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_32/S0 undriven or
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_8/S0 undriven or
      does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_cout/S1 undriven
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_10/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_10/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_12/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_12/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_14/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_14/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_16/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_16/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_18/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_18/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_20/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_20/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_22/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_22/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_24/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_24/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_26/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_26/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_28/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_28/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_30/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_30/S0 undriven or
+
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_32/S1 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_32/S0 undriven or
+     does not drive anything - clipped.
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_cout/S1 undriven
      or does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_cout/CO undriven
+Signal protocol_interface/uart_output/baud_gen/sub_1355_add_2_cout/CO undriven
      or does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/count_1701_add_4_1/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/count_1701_add_4_1/CI undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/count_1701_add_4_33/S1 undriven
-     or does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/count_1701_add_4_33/CO undriven
-     or does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_2/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_2/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_2/CI undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_4/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_4/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_6/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_6/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_8/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_8/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_10/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_10/S0 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_12/S1 undriven or
-     does not drive anything - clipped.
-Signal protocol_interface/uart_output/baud_gen/sub_1370_add_2_12/S0 undriven or
-     does not drive anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_27/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1350_add_2_1/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_27/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1350_add_2_1/S0 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_9/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1350_add_2_1/CI undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_3/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_3/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_5/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_5/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_7/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_7/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_1/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_1/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_1/CI undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_9/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_9/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_11/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_11/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_13/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_13/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_3/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_3/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_5/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_5/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_7/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_7/S0 undriven or does not drive
 
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_9/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1351_add_2_9/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_29/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1351_add_2_9/S0 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_29/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1350_add_2_15/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_15/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_17/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_17/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_11/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_11/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_13/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_13/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_19/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_19/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_15/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_15/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_17/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_17/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_21/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_21/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_23/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_23/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_25/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_25/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_27/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_27/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_29/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_29/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_19/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_19/S0 undriven or does not drive
+
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_9/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_9/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_21/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_21/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_23/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_23/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_11/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_11/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_25/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_25/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_31/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_31/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_33/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1350_add_2_33/CO undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_27/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_27/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_29/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_29/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_31/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_31/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_33/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1351_add_2_33/CO undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_13/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_13/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_15/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_15/S0 undriven or does not drive
      anything - clipped.
 Signal arm_x/step_clk_gen/sub_7_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal arm_x/step_clk_gen/sub_7_add_2_1/CI undriven or does not drive anything -
+
      clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_11/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_17/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_11/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_31/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_31/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_1/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_1/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_1/CI undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_3/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_3/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_33/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_33/CO undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_5/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_5/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_7/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_7/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_13/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_13/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_9/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_9/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_17/S0 undriven or does not drive
      anything - clipped.
 Signal arm_x/step_clk_gen/sub_7_add_2_33/S1 undriven or does not drive anything
      - clipped.
 Signal arm_x/step_clk_gen/sub_7_add_2_33/CO undriven or does not drive anything
      - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_15/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_19/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_15/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_19/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_21/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_21/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_23/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_23/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_5/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_5/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_25/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_25/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_27/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_27/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_29/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_29/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_31/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_31/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_7/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_7/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_33/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/sub_1348_add_2_33/CO undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/count_1680_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/count_1680_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/count_1680_add_4_33/S1 undriven or does not drive
+     anything - clipped.
+Signal arm_x/step_clk_gen/count_1680_add_4_33/CO undriven or does not drive
 
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_7/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_1/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_7/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_1/S0 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_17/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_1/CI undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_17/S0 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_3/S1 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_11/S1 undriven or does not drive
+Signal arm_x/step_clk_gen/sub_1348_add_2_3/S0 undriven or does not drive
      anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_11/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_13/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_13/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_15/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_15/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_17/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_17/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_19/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_19/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_21/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_21/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_19/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_19/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_23/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_23/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_25/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_25/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_27/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_27/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_29/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_29/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_21/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_21/S0 undriven or does not drive
-
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_31/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_31/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_1/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_1/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_1/CI undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_33/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1365_add_2_33/CO undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_3/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_3/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_5/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_5/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/count_1699_add_4_1/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/count_1699_add_4_1/CI undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_7/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_7/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_9/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_9/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_11/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_11/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_13/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_13/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_15/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_15/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_1/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_1/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_1/CI undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_17/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_17/S0 undriven or does not drive
-
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_19/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_19/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_21/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_21/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_23/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_23/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_23/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_23/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_25/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_25/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_25/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_25/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_27/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_27/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/count_1699_add_4_33/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/count_1699_add_4_33/CO undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_29/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_29/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_31/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_31/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_33/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1363_add_2_33/CO undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_3/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_3/S0 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_5/S1 undriven or does not drive
-     anything - clipped.
-Signal arm_x/step_clk_gen/sub_1366_add_2_5/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_2/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_2/S0 undriven or does not drive
-
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_2/CI undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_4/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_4/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_6/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_6/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_8/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_8/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_10/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_10/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_12/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_12/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_14/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_14/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_16/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_16/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_18/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_18/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_20/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_20/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_22/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_22/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_24/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_24/S0 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_cout/S1 undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/add_18426_cout/CO undriven or does not drive
-     anything - clipped.
-Signal global_control/uptime_div/count_1698_add_4_1/S0 undriven or does not
-     drive anything - clipped.
-Signal global_control/uptime_div/count_1698_add_4_1/CI undriven or does not
-     drive anything - clipped.
-Signal global_control/uptime_div/count_1698_add_4_33/S1 undriven or does not
-
-     drive anything - clipped.
-Signal global_control/uptime_div/count_1698_add_4_33/CO undriven or does not
-     drive anything - clipped.
-Signal global_control/add_133_1/S0 undriven or does not drive anything -
+Signal arm_x/sub_126_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal arm_x/sub_126_add_2_1/CI undriven or does not drive anything - clipped.
+Signal arm_x/sub_126_add_2_33/S1 undriven or does not drive anything - clipped.
+Signal arm_x/sub_126_add_2_33/CO undriven or does not drive anything - clipped.
+Signal reset_count_1676_1677_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal global_control/add_133_1/CI undriven or does not drive anything -
+Signal reset_count_1676_1677_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal global_control/add_133_33/S1 undriven or does not drive anything -
+Signal reset_count_1676_1677_add_4_15/CO undriven or does not drive anything -
      clipped.
-Signal global_control/add_133_33/CO undriven or does not drive anything -
+Signal motor_pwm/left/add_1672_1/S0 undriven or does not drive anything -
      clipped.
-Signal reset_count_1695_1696_add_4_1/S0 undriven or does not drive anything -
+Signal motor_pwm/left/add_1672_1/CI undriven or does not drive anything -
      clipped.
-Signal reset_count_1695_1696_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal reset_count_1695_1696_add_4_15/CO undriven or does not drive anything -
-     clipped.
-Signal motor_pwm/left/add_1691_1/S0 undriven or does not drive anything -
-     clipped.
-Signal motor_pwm/left/add_1691_1/CI undriven or does not drive anything -
-     clipped.
-Signal motor_pwm/left/add_1691_9/CO undriven or does not drive anything -
+Signal motor_pwm/left/add_1672_9/CO undriven or does not drive anything -
      clipped.
 Signal motor_pwm/left/add_9_1/S0 undriven or does not drive anything - clipped.
 Signal motor_pwm/left/add_9_1/CI undriven or does not drive anything - clipped.
 Signal motor_pwm/left/add_9_13/CO undriven or does not drive anything - clipped.
      
-Signal motor_pwm/right/add_1690_1/S0 undriven or does not drive anything -
+Signal motor_pwm/right/add_9_13/CO undriven or does not drive anything -
      clipped.
-Signal motor_pwm/right/add_1690_1/CI undriven or does not drive anything -
+Signal motor_pwm/right/add_1671_1/S0 undriven or does not drive anything -
+     clipped.
+Signal motor_pwm/right/add_1671_1/CI undriven or does not drive anything -
+     clipped.
+Signal motor_pwm/right/add_1671_9/CO undriven or does not drive anything -
      clipped.
 Signal motor_pwm/right/add_9_1/S0 undriven or does not drive anything - clipped.
      
 Signal motor_pwm/right/add_9_1/CI undriven or does not drive anything - clipped.
      
-Signal motor_pwm/right/add_1690_9/CO undriven or does not drive anything -
-     clipped.
-Signal motor_pwm/right/add_9_13/CO undriven or does not drive anything -
-     clipped.
 
 
 
@@ -1096,7 +1100,60 @@ Signal motor_pwm/right/add_9_13/CO undriven or does not drive anything -
    Total CPU Time: 1 secs  
    Total REAL Time: 2 secs  
    Peak Memory Usage: 194 MB
+
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1128,12 +1128,6 @@
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\arm_x/fault_latched_165</Dynamic>
-            <Dynamic>IFS1P3DX</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001699</ID>
-            <Severity>Info</Severity>
             <Dynamic>\rc_receiver/recv_ch8/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
@@ -1141,6 +1135,12 @@
             <ID>35001699</ID>
             <Severity>Info</Severity>
             <Dynamic>\rc_receiver/recv_ch1/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\arm_x/fault_latched_174</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
@@ -1328,129 +1328,155 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=select[7] loads=12 clock_loads=9</Dynamic>
+   Signal=select[7] loads=11 clock_loads=9</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.372</Dynamic>
+            <Dynamic>-0.257</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_863</Dynamic>
+            <Dynamic>SLICE_959</Dynamic>
+            <Dynamic>F0</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_492</Dynamic>
+            <Dynamic>LSR</Dynamic>
+            <Dynamic>n25961</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.257</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>SLICE_959</Dynamic>
+            <Dynamic>F0</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_526</Dynamic>
+            <Dynamic>LSR</Dynamic>
+            <Dynamic>n25961</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.257</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>SLICE_959</Dynamic>
+            <Dynamic>F0</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_579</Dynamic>
+            <Dynamic>LSR</Dynamic>
+            <Dynamic>n25961</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.257</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>SLICE_959</Dynamic>
+            <Dynamic>F0</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_672</Dynamic>
+            <Dynamic>LSR</Dynamic>
+            <Dynamic>n25961</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.001</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>SLICE_719</Dynamic>
             <Dynamic>F1</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_577</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_578</Dynamic>
             <Dynamic>LSR</Dynamic>
-            <Dynamic>protocol_interface/n26441</Dynamic>
+            <Dynamic>n24732</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.372</Dynamic>
+            <Dynamic>-0.304</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_863</Dynamic>
-            <Dynamic>F1</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_659</Dynamic>
-            <Dynamic>LSR</Dynamic>
-            <Dynamic>protocol_interface/n26441</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.254</Dynamic>
-            <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_863</Dynamic>
+            <Dynamic>SLICE_592</Dynamic>
             <Dynamic>F0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_503</Dynamic>
-            <Dynamic>LSR</Dynamic>
-            <Dynamic>protocol_interface/n27608</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.254</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_863</Dynamic>
-            <Dynamic>F0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_575</Dynamic>
-            <Dynamic>LSR</Dynamic>
-            <Dynamic>protocol_interface/n27608</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.567</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>SLICE_535</Dynamic>
-            <Dynamic>F0</Dynamic>
-            <Dynamic>SLICE_535</Dynamic>
+            <Dynamic>SLICE_592</Dynamic>
             <Dynamic>DI0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/n11198</Dynamic>
+            <Dynamic>n19257</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.966</Dynamic>
+            <Dynamic>-0.722</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_575</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_672</Dynamic>
             <Dynamic>OFX0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_575</Dynamic>
+            <Dynamic>protocol_interface/uart_output/SLICE_672</Dynamic>
             <Dynamic>DI0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/n25831</Dynamic>
+            <Dynamic>protocol_interface/uart_output/n24213</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.155</Dynamic>
+            <Dynamic>-0.284</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_576</Dynamic>
-            <Dynamic>F0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/SLICE_576</Dynamic>
-            <Dynamic>DI0</Dynamic>
-            <Dynamic>protocol_interface/uart_output/n24660</Dynamic>
+            <Dynamic>rc_receiver/i19043/SLICE_689</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_600</Dynamic>
+            <Dynamic>FXA</Dynamic>
+            <Dynamic>rc_receiver/n23570</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.312</Dynamic>
+            <Dynamic>-0.146</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_590</Dynamic>
-            <Dynamic>F0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_590</Dynamic>
-            <Dynamic>DI0</Dynamic>
-            <Dynamic>rc_receiver/n176</Dynamic>
+            <Dynamic>rc_receiver/SLICE_600</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_600</Dynamic>
+            <Dynamic>FXB</Dynamic>
+            <Dynamic>rc_receiver/n23571</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.064</Dynamic>
+            <Dynamic>-0.284</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/i20631/SLICE_678</Dynamic>
+            <Dynamic>rc_receiver/SLICE_600</Dynamic>
+            <Dynamic>OFX1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_600</Dynamic>
+            <Dynamic>DI1</Dynamic>
+            <Dynamic>rc_receiver/n23572</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.210</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/i19046/SLICE_688</Dynamic>
             <Dynamic>OFX0</Dynamic>
             <Dynamic>rc_receiver/SLICE_594</Dynamic>
             <Dynamic>FXA</Dynamic>
-            <Dynamic>rc_receiver/n25170</Dynamic>
+            <Dynamic>rc_receiver/n23573</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.203</Dynamic>
+            <Dynamic>-0.022</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1458,12 +1484,12 @@
             <Dynamic>OFX0</Dynamic>
             <Dynamic>rc_receiver/SLICE_594</Dynamic>
             <Dynamic>FXB</Dynamic>
-            <Dynamic>rc_receiver/n25171</Dynamic>
+            <Dynamic>rc_receiver/n23574</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.203</Dynamic>
+            <Dynamic>-0.210</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1471,12 +1497,103 @@
             <Dynamic>OFX1</Dynamic>
             <Dynamic>rc_receiver/SLICE_594</Dynamic>
             <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25172</Dynamic>
+            <Dynamic>rc_receiver/n23575</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.162</Dynamic>
+            <Dynamic>-0.192</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/i18989/SLICE_687</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_595</Dynamic>
+            <Dynamic>FXA</Dynamic>
+            <Dynamic>rc_receiver/n23516</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.173</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_595</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_595</Dynamic>
+            <Dynamic>FXB</Dynamic>
+            <Dynamic>rc_receiver/n23517</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.150</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_596</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_596</Dynamic>
+            <Dynamic>FXB</Dynamic>
+            <Dynamic>rc_receiver/n23520</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.179</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_597</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_597</Dynamic>
+            <Dynamic>FXB</Dynamic>
+            <Dynamic>rc_receiver/n23523</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.154</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>OFX0</Dynamic>
+            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>FXB</Dynamic>
+            <Dynamic>rc_receiver/n23526</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.195</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_599</Dynamic>
+            <Dynamic>OFX1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_599</Dynamic>
+            <Dynamic>DI1</Dynamic>
+            <Dynamic>rc_receiver/n23530</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.355</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>OFX1</Dynamic>
+            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>DI1</Dynamic>
+            <Dynamic>rc_receiver/n23527</Dynamic>
+        </Message>
+        <Message>
+            <ID>62001131</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>-0.210</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1484,12 +1601,12 @@
             <Dynamic>OFX1</Dynamic>
             <Dynamic>rc_receiver/SLICE_597</Dynamic>
             <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25181</Dynamic>
+            <Dynamic>rc_receiver/n23524</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.089</Dynamic>
+            <Dynamic>-0.173</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1497,12 +1614,12 @@
             <Dynamic>OFX1</Dynamic>
             <Dynamic>rc_receiver/SLICE_596</Dynamic>
             <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25178</Dynamic>
+            <Dynamic>rc_receiver/n23521</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.416</Dynamic>
+            <Dynamic>-0.192</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1510,12 +1627,12 @@
             <Dynamic>OFX1</Dynamic>
             <Dynamic>rc_receiver/SLICE_595</Dynamic>
             <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25175</Dynamic>
+            <Dynamic>rc_receiver/n23518</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.119</Dynamic>
+            <Dynamic>-0.006</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
@@ -1523,117 +1640,39 @@
             <Dynamic>OFX1</Dynamic>
             <Dynamic>rc_receiver/SLICE_593</Dynamic>
             <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n26126</Dynamic>
+            <Dynamic>rc_receiver/n23533</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.383</Dynamic>
+            <Dynamic>-0.006</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_592</Dynamic>
-            <Dynamic>OFX1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_592</Dynamic>
-            <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25943</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.097</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_598</Dynamic>
-            <Dynamic>OFX1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_598</Dynamic>
-            <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25838</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.097</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>rc_receiver/SLICE_593</Dynamic>
             <Dynamic>OFX0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_598</Dynamic>
+            <Dynamic>rc_receiver/SLICE_593</Dynamic>
             <Dynamic>FXB</Dynamic>
-            <Dynamic>rc_receiver/n25834</Dynamic>
+            <Dynamic>rc_receiver/n23532</Dynamic>
         </Message>
         <Message>
             <ID>62001131</ID>
             <Severity>Warning</Severity>
-            <Dynamic>-0.383</Dynamic>
+            <Dynamic>-0.006</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/i20634/SLICE_676</Dynamic>
+            <Dynamic>rc_receiver/i19004/SLICE_690</Dynamic>
             <Dynamic>OFX0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_595</Dynamic>
+            <Dynamic>rc_receiver/SLICE_593</Dynamic>
             <Dynamic>FXA</Dynamic>
-            <Dynamic>rc_receiver/n25173</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.416</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_595</Dynamic>
-            <Dynamic>OFX0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_595</Dynamic>
-            <Dynamic>FXB</Dynamic>
-            <Dynamic>rc_receiver/n25174</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.245</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_591</Dynamic>
-            <Dynamic>OFX1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_591</Dynamic>
-            <Dynamic>DI1</Dynamic>
-            <Dynamic>rc_receiver/n25184</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.055</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/SLICE_596</Dynamic>
-            <Dynamic>OFX0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_596</Dynamic>
-            <Dynamic>FXB</Dynamic>
-            <Dynamic>rc_receiver/n25177</Dynamic>
-        </Message>
-        <Message>
-            <ID>62001131</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>-0.089</Dynamic>
-            <Dynamic>0</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>rc_receiver/i20637/SLICE_682</Dynamic>
-            <Dynamic>OFX0</Dynamic>
-            <Dynamic>rc_receiver/SLICE_596</Dynamic>
-            <Dynamic>FXA</Dynamic>
-            <Dynamic>rc_receiver/n25176</Dynamic>
+            <Dynamic>rc_receiver/n23531</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=select[7] loads=12 clock_loads=9</Dynamic>
+   Signal=select[7] loads=11 clock_loads=9</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
