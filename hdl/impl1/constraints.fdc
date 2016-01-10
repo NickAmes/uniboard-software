@@ -2,8 +2,8 @@
 ###==== BEGIN Header
 
 # Synopsys, Inc. constraint file
-# /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.fdc
-# Written on Tue Jan  5 21:34:45 2016
+# /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
+# Written on Sat Jan  9 15:42:32 2016
 # by Synplify Pro, J-2014.09L FDC Constraint Editor
 
 # Custom constraint commands may be added outside of the SCOPE tab sections bounded with BEGIN/END.
@@ -16,6 +16,8 @@
 
 ###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
 create_clock  {p:clk_12MHz} -period {84}
+set_clock_latency  -source {0} {c:clk_12MHz}
+set_clock_uncertainty  {0} {c:clk_12MHz}
 
 ###==== END Clocks
 
@@ -39,5 +41,6 @@ create_clock  {p:clk_12MHz} -period {84}
 
 ###==== BEGIN "Compile Points" - (Populated from tab in SCOPE, do not edit)
 ###==== END "Compile Points"
+
 
 

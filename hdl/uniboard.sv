@@ -566,8 +566,7 @@ module UniboardTop(
 	                             .reset(reset));
 	
 	/* RC Receiver */
-	RCPeripheral rc_receiver(.clk_12MHz(clk_12MHz),
-	                         .clk_255kHz(clk_255kHz),
+	RCPeripheral rc_receiver(.clk_255kHz(clk_255kHz),
 	                         .databus(databus),
 	                         .reg_size(reg_size),
 	                         .register_addr(register_addr),

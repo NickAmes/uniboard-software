@@ -1,13 +1,13 @@
 # Synopsys Constraint Checker, version map201409latrcp1, Build 005R, built Feb 11 2015
 # Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Tue Dec 29 11:31:42 2015
+# Written on Sat Jan  9 15:40:15 2016
 
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "UniboardTop"
-Constraint File(s):      "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc"
+Constraint File(s):      "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.fdc"
 
 
 
@@ -26,9 +26,7 @@ Clock Relationships
 
 Starting                  Ending                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                    System                    |     2.617            |     No paths         |     No paths         |     No paths                         
-UniboardTop|clk_12MHz     System                    |     2.101            |     No paths         |     No paths         |     No paths                         
-UniboardTop|clk_12MHz     UniboardTop|clk_12MHz     |     2.101            |     No paths         |     No paths         |     No paths                         
+UniboardTop|clk_12MHz     UniboardTop|clk_12MHz     |     1000.000         |     No paths         |     No paths         |     No paths                         
 ===============================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -91,7 +89,6 @@ p:limit[2]
 p:limit[3]
 p:motor_pwm_l
 p:motor_pwm_r
-p:pause
 p:rc_ch1
 p:rc_ch2
 p:rc_ch3
@@ -104,6 +101,7 @@ p:status_led[1]
 p:status_led[2]
 p:uart_rx
 p:uart_tx
+p:xbee_pause
 
 
 Inapplicable constraints

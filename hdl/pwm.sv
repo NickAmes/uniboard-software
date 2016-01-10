@@ -177,7 +177,6 @@ endmodule
 
 /* RC Receiver peripheral. Must be reset before use. */
 module RCPeripheral(
-	input logic clk_12MHz,
 	input logic clk_255kHz,
 	inout databus[31:0],
 	output tri reg_size[2:0], /* Register size (in bytes), to set command reply size. */

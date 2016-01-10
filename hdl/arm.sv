@@ -58,9 +58,9 @@ module ArmPeripheral(
 	logic int_step; /* internal step: on rising edge */
 	logic prev_select;
 	logic prev_stepclk;
-	ClockDivider step_clock_div(.clk_i(clk_12MHz),
+	ClockDividerP step_clock_div(.clk_i(clk_12MHz),
 	                            .clk_o(stepclk),
-	                            .factor(register[2]),
+	                            //.factor(register[2]),
 	                            .reset(reset));
 	
 	always @ (posedge clk_12MHz)

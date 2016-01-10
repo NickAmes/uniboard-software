@@ -881,13 +881,13 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:61:14:61:27|Pruning instance step_clock_div -- not in use ...</Dynamic>
+            <Dynamic>CL168 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:61:15:61:28|Pruning instance step_clock_div -- not in use ...</Dynamic>
             <Navigation>CL168</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv</Navigation>
             <Navigation>61</Navigation>
-            <Navigation>14</Navigation>
+            <Navigation>15</Navigation>
             <Navigation>61</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>28</Navigation>
             <Navigation>Pruning instance step_clock_div -- not in use ...</Navigation>
         </Message>
         <Message>
@@ -2069,24 +2069,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:207:1:207:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:206:1:206:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>207</Navigation>
+            <Navigation>206</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>207</Navigation>
+            <Navigation>206</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[1] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:207:1:207:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:206:1:206:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>207</Navigation>
+            <Navigation>206</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>207</Navigation>
+            <Navigation>206</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[2] is always 0, optimizing ...</Navigation>
         </Message>
@@ -2233,18 +2233,6 @@
             <Navigation>408</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input xbee_pause is unused</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:180:13:180:21|Input clk_12MHz is unused</Dynamic>
-            <Navigation>CL159</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>180</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>180</Navigation>
-            <Navigation>21</Navigation>
-            <Navigation>Input clk_12MHz is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
