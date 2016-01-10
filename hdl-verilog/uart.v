@@ -103,7 +103,7 @@ module UARTTransmitter(
 	
 	ClockDividerP #(baud_div) baud_gen(.clk_i(clk),
 	                                   .clk_o(bclk),
-	                                   .reset(0));
+	                                   .reset(1'b0));
 	always @ (posedge bclk)
 		begin
 			if(reset)

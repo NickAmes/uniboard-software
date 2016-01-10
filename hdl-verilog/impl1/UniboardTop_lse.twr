@@ -1,0 +1,550 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Jan  9 22:31:42 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     UniboardTop
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk4 [get_nets select[7]]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk3 [get_nets \protocol_interface/uart_output/bclk]
+            3 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.091ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \protocol_interface/uart_output/state_i1  (from \protocol_interface/uart_output/bclk +)
+   Destination:    FD1P3AX    SP             \protocol_interface/uart_output/busy_34  (to \protocol_interface/uart_output/bclk +)
+
+   Delay:                   3.624ns  (22.7% logic, 77.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.624ns data_path \protocol_interface/uart_output/state_i1 to \protocol_interface/uart_output/busy_34 meets
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 1.091ns
+
+ Path Details: \protocol_interface/uart_output/state_i1 to \protocol_interface/uart_output/busy_34
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/state_i1 (from \protocol_interface/uart_output/bclk)
+Route         2   e 1.861                                  \protocol_interface/uart_output/state[1]
+MOFX0       ---     0.378             C0 to Z              \protocol_interface/uart_output/i11733
+Route         1   e 0.941                                  \protocol_interface/uart_output/n14411
+                  --------
+                    3.624  (22.7% logic, 77.3% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.388ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \protocol_interface/uart_output/state_i3  (from \protocol_interface/uart_output/bclk +)
+   Destination:    FD1S3AX    D              \protocol_interface/uart_output/state_i0  (to \protocol_interface/uart_output/bclk +)
+
+   Delay:                   3.452ns  (23.8% logic, 76.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.452ns data_path \protocol_interface/uart_output/state_i3 to \protocol_interface/uart_output/state_i0 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.388ns
+
+ Path Details: \protocol_interface/uart_output/state_i3 to \protocol_interface/uart_output/state_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/state_i3 (from \protocol_interface/uart_output/bclk)
+Route         2   e 1.689                                  \protocol_interface/uart_output/state[3]
+MOFX0       ---     0.378             C0 to Z              \protocol_interface/uart_output/i24
+Route         1   e 0.941                                  \protocol_interface/uart_output/n12690
+                  --------
+                    3.452  (23.8% logic, 76.2% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.388ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \protocol_interface/uart_output/state_i3  (from \protocol_interface/uart_output/bclk +)
+   Destination:    FD1P3AX    D              \protocol_interface/uart_output/tx_35  (to \protocol_interface/uart_output/bclk +)
+
+   Delay:                   3.452ns  (23.8% logic, 76.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.452ns data_path \protocol_interface/uart_output/state_i3 to \protocol_interface/uart_output/tx_35 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.388ns
+
+ Path Details: \protocol_interface/uart_output/state_i3 to \protocol_interface/uart_output/tx_35
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/state_i3 (from \protocol_interface/uart_output/bclk)
+Route         2   e 1.689                                  \protocol_interface/uart_output/state[3]
+MOFX0       ---     0.378             C0 to Z              \protocol_interface/uart_output/Mux_22_i15
+Route         1   e 0.941                                  \protocol_interface/uart_output/n104
+                  --------
+                    3.452  (23.8% logic, 76.2% route), 2 logic levels.
+
+Report: 3.909 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets select[2]]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets debug_c_c]
+            668 items scored, 573 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.960ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \protocol_interface/uart_input/baud_gen/count_1067__i1  (from debug_c_c +)
+   Destination:    FD1S3IX    D              \protocol_interface/uart_input/baud_gen/clk_o_14  (to debug_c_c +)
+
+   Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
+
+ Constraint Details:
+
+      6.800ns data_path \protocol_interface/uart_input/baud_gen/count_1067__i1 to \protocol_interface/uart_input/baud_gen/clk_o_14 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.960ns
+
+ Path Details: \protocol_interface/uart_input/baud_gen/count_1067__i1 to \protocol_interface/uart_input/baud_gen/clk_o_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_input/baud_gen/count_1067__i1 (from debug_c_c)
+Route         2   e 1.315                                  \protocol_interface/uart_input/baud_gen/count[1]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_2
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11841
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_4
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11842
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_6
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11843
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_8
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11844
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_10
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11845
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_12
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11846
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_14
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11847
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_16
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11848
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_18
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11849
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_20
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11850
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_22
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11851
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_24
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11852
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_26
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11853
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_28
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11854
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_30
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11855
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/sub_890_add_2_32
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11856
+FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_input/baud_gen/sub_890_add_2_cout
+Route         1   e 0.941                                  \protocol_interface/uart_input/baud_gen/n2865
+                  --------
+                    6.800  (62.1% logic, 37.9% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 1.960ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \protocol_interface/uart_output/baud_gen/count_1068__i1  (from debug_c_c +)
+   Destination:    FD1S3AX    D              \protocol_interface/uart_output/baud_gen/clk_o_14  (to debug_c_c +)
+
+   Delay:                   6.800ns  (62.1% logic, 37.9% route), 18 logic levels.
+
+ Constraint Details:
+
+      6.800ns data_path \protocol_interface/uart_output/baud_gen/count_1068__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.960ns
+
+ Path Details: \protocol_interface/uart_output/baud_gen/count_1068__i1 to \protocol_interface/uart_output/baud_gen/clk_o_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_output/baud_gen/count_1068__i1 (from debug_c_c)
+Route         2   e 1.315                                  \protocol_interface/uart_output/baud_gen/count[1]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_2
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11857
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_4
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11858
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_6
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11859
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_8
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11860
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_10
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11861
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_12
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11862
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_14
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11863
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_16
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11864
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_18
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11865
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_20
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11866
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_22
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11867
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_24
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11868
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_26
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11869
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_28
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11870
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_30
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11871
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_output/baud_gen/sub_892_add_2_32
+Route         1   e 0.020                                  \protocol_interface/uart_output/baud_gen/n11872
+FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_output/baud_gen/sub_892_add_2_cout
+Route         1   e 0.941                                  \protocol_interface/uart_output/baud_gen/n2900
+                  --------
+                    6.800  (62.1% logic, 37.9% route), 18 logic levels.
+
+
+Error:  The following path violates requirements by 1.843ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \protocol_interface/uart_input/baud_gen/count_1067__i0  (from debug_c_c +)
+   Destination:    FD1S3IX    D              \protocol_interface/uart_input/baud_gen/count_1067__i31  (to debug_c_c +)
+
+   Delay:                   6.683ns  (63.2% logic, 36.8% route), 18 logic levels.
+
+ Constraint Details:
+
+      6.683ns data_path \protocol_interface/uart_input/baud_gen/count_1067__i0 to \protocol_interface/uart_input/baud_gen/count_1067__i31 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 1.843ns
+
+ Path Details: \protocol_interface/uart_input/baud_gen/count_1067__i0 to \protocol_interface/uart_input/baud_gen/count_1067__i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \protocol_interface/uart_input/baud_gen/count_1067__i0 (from debug_c_c)
+Route         1   e 1.198                                  \protocol_interface/uart_input/baud_gen/count[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_1
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11893
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_3
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11894
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_5
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11895
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_7
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11896
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_9
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11897
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_11
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11898
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_13
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11899
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_15
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11900
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_17
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11901
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_19
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11902
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_21
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11903
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_23
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11904
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_25
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11905
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_27
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11906
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_29
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11907
+FCI_TO_FCO  ---     0.157            CIN to COUT           \protocol_interface/uart_input/baud_gen/count_1067_add_4_31
+Route         1   e 0.020                                  \protocol_interface/uart_input/baud_gen/n11908
+FCI_TO_F    ---     0.598            CIN to S[2]           \protocol_interface/uart_input/baud_gen/count_1067_add_4_33
+Route         1   e 0.941                                  \protocol_interface/uart_input/baud_gen/n135
+                  --------
+                    6.683  (63.2% logic, 36.8% route), 18 logic levels.
+
+Warning: 6.960 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_255kHz]
+            179 items scored, 179 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.744ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \rc_receiver/recv_ch8/count__i0  (from clk_255kHz +)
+   Destination:    FD1P3IX    D              \rc_receiver/recv_ch8/count__i15  (to clk_255kHz +)
+
+   Delay:                   5.584ns  (53.2% logic, 46.8% route), 10 logic levels.
+
+ Constraint Details:
+
+      5.584ns data_path \rc_receiver/recv_ch8/count__i0 to \rc_receiver/recv_ch8/count__i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.744ns
+
+ Path Details: \rc_receiver/recv_ch8/count__i0 to \rc_receiver/recv_ch8/count__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \rc_receiver/recv_ch8/count__i0 (from clk_255kHz)
+Route         2   e 1.515                                  \rc_receiver/recv_ch8/count[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \rc_receiver/recv_ch8/add_30_1
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11949
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_3
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11950
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_5
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11951
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_7
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11952
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_9
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11953
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_11
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11954
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_13
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11955
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch8/add_30_15
+Route         1   e 0.020                                  \rc_receiver/recv_ch8/n11956
+FCI_TO_F    ---     0.598            CIN to S[2]           \rc_receiver/recv_ch8/add_30_17
+Route         1   e 0.941                                  \rc_receiver/recv_ch8/n82
+                  --------
+                    5.584  (53.2% logic, 46.8% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 0.691ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \rc_receiver/recv_ch3/count__i0  (from clk_255kHz +)
+   Destination:    FD1P3IX    D              \rc_receiver/recv_ch3/count__i15  (to clk_255kHz +)
+
+   Delay:                   5.531ns  (53.7% logic, 46.3% route), 10 logic levels.
+
+ Constraint Details:
+
+      5.531ns data_path \rc_receiver/recv_ch3/count__i0 to \rc_receiver/recv_ch3/count__i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.691ns
+
+ Path Details: \rc_receiver/recv_ch3/count__i0 to \rc_receiver/recv_ch3/count__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \rc_receiver/recv_ch3/count__i0 (from clk_255kHz)
+Route         2   e 1.462                                  \rc_receiver/recv_ch3/count[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \rc_receiver/recv_ch3/add_30_1
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11909
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_3
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11910
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_5
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11911
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_7
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11912
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_9
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11913
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_11
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11914
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_13
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11915
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch3/add_30_15
+Route         1   e 0.020                                  \rc_receiver/recv_ch3/n11916
+FCI_TO_F    ---     0.598            CIN to S[2]           \rc_receiver/recv_ch3/add_30_17
+Route         1   e 0.941                                  \rc_receiver/recv_ch3/n82
+                  --------
+                    5.531  (53.7% logic, 46.3% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 0.691ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \rc_receiver/recv_ch7/count__i0  (from clk_255kHz +)
+   Destination:    FD1P3IX    D              \rc_receiver/recv_ch7/count__i15  (to clk_255kHz +)
+
+   Delay:                   5.531ns  (53.7% logic, 46.3% route), 10 logic levels.
+
+ Constraint Details:
+
+      5.531ns data_path \rc_receiver/recv_ch7/count__i0 to \rc_receiver/recv_ch7/count__i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.691ns
+
+ Path Details: \rc_receiver/recv_ch7/count__i0 to \rc_receiver/recv_ch7/count__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \rc_receiver/recv_ch7/count__i0 (from clk_255kHz)
+Route         2   e 1.462                                  \rc_receiver/recv_ch7/count[0]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \rc_receiver/recv_ch7/add_30_1
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11941
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_3
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11942
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_5
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11943
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_7
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11944
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_9
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11945
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_11
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11946
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_13
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11947
+FCI_TO_FCO  ---     0.157            CIN to COUT           \rc_receiver/recv_ch7/add_30_15
+Route         1   e 0.020                                  \rc_receiver/recv_ch7/n11948
+FCI_TO_F    ---     0.598            CIN to S[2]           \rc_receiver/recv_ch7/add_30_17
+Route         1   e 0.941                                  \rc_receiver/recv_ch7/n82
+                  --------
+                    5.531  (53.7% logic, 46.3% route), 10 logic levels.
+
+Warning: 5.744 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets select[7]]               |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets                          |             |             |
+\protocol_interface/uart_output/bclk]   |     5.000 ns|     3.909 ns|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets select[2]]               |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets debug_c_c]               |     5.000 ns|     6.960 ns|    18 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_255kHz]              |     5.000 ns|     5.744 ns|    10 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11900                                  |       1|     215|     28.59%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11901                                  |       1|     215|     28.59%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11924                                 |       1|     215|     28.59%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11925                                 |       1|     215|     28.59%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11899                                  |       1|     207|     27.53%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11902                                  |       1|     207|     27.53%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11923                                 |       1|     207|     27.53%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11926                                 |       1|     207|     27.53%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11898                                  |       1|     191|     25.40%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11903                                  |       1|     191|     25.40%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11922                                 |       1|     191|     25.40%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11927                                 |       1|     191|     25.40%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11904                                  |       1|     167|     22.21%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11928                                 |       1|     167|     22.21%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11897                                  |       1|     165|     21.94%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11921                                 |       1|     165|     21.94%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11905                                  |       1|     137|     18.22%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11929                                 |       1|     137|     18.22%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11896                                  |       1|     135|     17.95%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11920                                 |       1|     135|     17.95%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11906                                  |       1|     103|     13.70%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11930                                 |       1|     103|     13.70%
+                                        |        |        |
+\protocol_interface/uart_input/baud_gen/|        |        |
+n11895                                  |       1|     101|     13.43%
+                                        |        |        |
+\protocol_interface/uart_output/baud_gen|        |        |
+/n11919                                 |       1|     101|     13.43%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 752  Score: 418358
+
+Constraints cover  2296 paths, 578 nets, and 1168 connections (85.4% coverage)
+
+
+Peak memory: 222658560 bytes, TRCE: 8192 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

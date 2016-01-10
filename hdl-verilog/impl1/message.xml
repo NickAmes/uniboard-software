@@ -2,6 +2,294 @@
 <BaliMessageLog>
     <Task name="Lattice_Synthesis">
         <Message>
+            <ID>35901875</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(469): </Dynamic>
+            <Dynamic>reset</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>469</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(363): </Dynamic>
+            <Dynamic>UniboardTop</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>363</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(450): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>450</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(493): </Dynamic>
+            <Dynamic>17</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>493</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(27): </Dynamic>
+            <Dynamic>ProtocolInterface(baud_div=12)</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(8): </Dynamic>
+            <Dynamic>UARTReceiver(baud_div=12)</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(7): </Dynamic>
+            <Dynamic>ClockDividerP(factor=12)</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(54): </Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(60): </Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(66): </Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(89): </Dynamic>
+            <Dynamic>UARTTransmitter(baud_div=12)</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(106): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>reset</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>106</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(124): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(129): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(134): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>134</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(139): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>139</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(144): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>144</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(149): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>149</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(154): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>154</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(159): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(164): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(169): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>169</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(174): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>174</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(180): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v</Navigation>
+            <Navigation>180</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(177): </Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>177</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(271): </Dynamic>
+            <Dynamic>6</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>271</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(351): </Dynamic>
+            <Dynamic>DummyPeripheral</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>351</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(358): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>358</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(38): </Dynamic>
+            <Dynamic>ClockDivider</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(42): </Dynamic>
+            <Dynamic>PWMPeripheral</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>42</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(59): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(8): </Dynamic>
+            <Dynamic>PWMGenerator</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Status</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(36): </Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>13</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(180): </Dynamic>
@@ -53,56 +341,366 @@
             <Navigation>197</Navigation>
         </Message>
         <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(494): </Dynamic>
+            <Dynamic>reset_39</Dynamic>
+            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v</Navigation>
+            <Navigation>494</Navigation>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_Step</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_Dir</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_M0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_M1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_M2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001757</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Stepper_X_En</Dynamic>
+        </Message>
+        <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>0</Dynamic>
-            <Dynamic>read_size</Dynamic>
+            <Dynamic>\rc_receiver/read_size</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>1</Dynamic>
-            <Dynamic>read_size</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>10</Dynamic>
+            <Dynamic>\protocol_interface/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\motor_pwm/read_size</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\motor_pwm/read_size</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch2/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch2/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch3/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch3/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch4/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch4/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch7/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch7/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch8/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch8/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\recv_ch1/latched_in_45</Dynamic>
+            <Dynamic>\rc_receiver/recv_ch1/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_X_nFault</Dynamic>
+            <Navigation>Stepper_X_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>Stepper_X_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_Y_nFault</Dynamic>
+            <Navigation>Stepper_Y_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>Stepper_Y_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_Z_nFault</Dynamic>
+            <Navigation>Stepper_Z_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>Stepper_Z_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>Stepper_A_nFault</Dynamic>
+            <Navigation>Stepper_A_nFault</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>Stepper_A_nFault</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[3]</Dynamic>
+            <Navigation>limit[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>limit[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[2]</Dynamic>
+            <Navigation>limit[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>limit[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[1]</Dynamic>
+            <Navigation>limit[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>limit[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>limit[0]</Dynamic>
+            <Navigation>limit[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>limit[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_ra</Dynamic>
+            <Navigation>encoder_ra</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_ra</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_rb</Dynamic>
+            <Navigation>encoder_rb</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_rb</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_ri</Dynamic>
+            <Navigation>encoder_ri</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_ri</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_la</Dynamic>
+            <Navigation>encoder_la</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_la</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_lb</Dynamic>
+            <Navigation>encoder_lb</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_lb</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>encoder_li</Dynamic>
+            <Navigation>encoder_li</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>encoder_li</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>xbee_pause</Dynamic>
+            <Navigation>xbee_pause</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>xbee_pause</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>30</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

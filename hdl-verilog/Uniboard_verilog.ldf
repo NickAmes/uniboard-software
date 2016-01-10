@@ -2,15 +2,18 @@
 <BaliProject version="3.2" title="Uniboard_verilog" device="LCMXO2-7000HC-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="RCPeripheral"/>
+        <Options def_top="UniboardTop" top="UniboardTop"/>
         <Source name="uart.v" type="Verilog" type_short="Verilog">
-            <Options top_module="UARTTransmitter"/>
+            <Options/>
         </Source>
         <Source name="clk.v" type="Verilog" type_short="Verilog">
-            <Options top_module="ClockDivider"/>
+            <Options/>
         </Source>
         <Source name="pwm.v" type="Verilog" type_short="Verilog">
-            <Options top_module="RCPeripheral"/>
+            <Options/>
+        </Source>
+        <Source name="uniboard.v" type="Verilog" type_short="Verilog">
+            <Options top_module="UniboardTop"/>
         </Source>
         <Source name="Uniboard_verilog.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

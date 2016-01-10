@@ -19,18 +19,18 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1452405112">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1452405112"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1452405112"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1452407503">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1452407503"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1452407503"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1452405108"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1452407515"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452405110" last_build_size="503160"/>
-        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452405112" last_build_size="397055"/>
+        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452407497" last_build_size="2510610"/>
+        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452407503" last_build_size="864149"/>
     </Strategy>
 </BuildStatus>
