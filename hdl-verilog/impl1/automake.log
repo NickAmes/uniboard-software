@@ -1,381 +1,571 @@
 
-synthesis -f "Uniboard_verilog_impl1_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.4.1.213
+map -a "MachXO2" -p LCMXO2-7000HC -t TQFP144 -s 4 -oc Commercial   "Uniboard_verilog_impl1.ngd" -o "Uniboard_verilog_impl1_map.ncd" -pr "Uniboard_verilog_impl1.prf" -mp "Uniboard_verilog_impl1.mrp" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/Uniboard_verilog_impl1.lpf" -lpf "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/Uniboard_verilog.lpf" -c 0            
+map:  version Diamond (64-bit) 3.4.1.213
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jan  9 22:31:37 2016
+   Process the file: Uniboard_verilog_impl1.ngd
+   Picdevice="LCMXO2-7000HC"
 
+   Pictype="TQFP144"
 
-Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
+   Picspeed=4
 
-Synthesis options:
-The -a option is MachXO2.
-The -s option is 4.
-The -t option is TQFP144.
-The -d option is LCMXO2-7000HC.
-Using package TQFP144.
-Using performance grade 4.
-                                                          
+   Remove unused logic
 
-##########################################################
+   Do not produce over sized NCDs.
 
-### Lattice Family : MachXO2A
+Part used: LCMXO2-7000HCTQFP144, Performance used: 4.
 
-### Device  : LCMXO2-7000HC
-
-### Package : TQFP144
-
-### Speed   : 4
-
-##########################################################
-
-                                                          
-
-Optimization goal = Balanced
-Top-level module name = UniboardTop.
-Target frequency = 200.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-BRAM utilization = 100.000000 %
-DSP usage = true (default)
-DSP utilization = 100 % (default)
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-Mux style = Auto
-Use Carry Chain = true
-carry_chain_length = 0
-Loop Limit = 1950.
-Use IO Insertion = TRUE
-Use IO Reg = TRUE
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-force_gsr = auto
-ROM style = auto
-RAM style = auto
-The -comp option is FALSE.
-The -syn option is FALSE.
--p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog (searchpath added)
--p /usr/local/diamond/3.4_x64/ispfpga/xo2c00/data (searchpath added)
--p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1 (searchpath added)
--p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog (searchpath added)
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v
-NGD file = Uniboard_verilog_impl1.ngd
--sdc option: SDC file input not used.
--lpf option: Output file option is ON.
-Hardtimer checking is enabled (default). The -dt option is not used.
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Technology check ok...
-
-Analyzing Verilog file /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
-Compile design.
-Compile Design Begin
-    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(469): " arg1="reset" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg3="469"  />
-Top module name (Verilog): UniboardTop
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(363): " arg1="UniboardTop" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg3="363"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(450): " arg1="32" arg2="1" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg4="450"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(493): " arg1="17" arg2="16" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg4="493"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(27): " arg1="ProtocolInterface(baud_div=12)" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg3="27"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(8): " arg1="UARTReceiver(baud_div=12)" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg3="8"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(7): " arg1="ClockDividerP(factor=12)" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v" arg3="7"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(54): " arg1="7" arg2="6" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="54"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(60): " arg1="7" arg2="6" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="60"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(66): " arg1="7" arg2="6" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="66"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(89): " arg1="UARTTransmitter(baud_div=12)" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg3="89"  />
-    <postMsg mid="35901330" type="Warning" dynamic="4" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(106): " arg1="32" arg2="1" arg3="reset" arg4="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg5="106"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(124): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="124"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(129): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="129"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(134): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="134"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(139): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="139"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(144): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="144"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(149): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="149"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(154): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="154"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(159): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="159"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(164): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="164"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(169): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="169"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(174): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="174"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v(180): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v" arg4="180"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(177): " arg1="5" arg2="4" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg4="177"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(271): " arg1="6" arg2="5" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg4="271"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(351): " arg1="DummyPeripheral" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg3="351"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(358): " arg1="32" arg2="3" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg4="358"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v(38): " arg1="ClockDivider" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v" arg3="38"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(42): " arg1="PWMPeripheral" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg3="42"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(59): " arg1="32" arg2="3" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg4="59"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(8): " arg1="PWMGenerator" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg3="8"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(36): " arg1="14" arg2="13" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg4="36"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(180): " arg1="RCPeripheral" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg3="180"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(203): " arg1="32" arg2="3" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg4="203"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(114): " arg1="PWMReceiver" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg3="114"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(158): " arg1="32" arg2="8" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg4="158"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(173): " arg1="17" arg2="16" arg3="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg4="173"  />
-    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(197): " arg1="register[0][5]" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v" arg3="197"  />
-Last elaborated design is UniboardTop()
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
-Top-level module name = UniboardTop.
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(494): " arg1="reset_39" arg2="/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v" arg3="494"  />
-######## Converting I/O port expansion4 to output.
-######## Converting I/O port expansion5 to output.
-######## Converting I/O port debug[8] to output.
-######## Converting I/O port debug[7] to output.
-######## Converting I/O port debug[6] to output.
-######## Converting I/O port debug[5] to output.
-######## Converting I/O port debug[4] to output.
-######## Converting I/O port debug[3] to output.
-######## Converting I/O port debug[2] to output.
-######## Converting I/O port debug[1] to output.
-######## Converting I/O port debug[0] to output.
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_Step"  />
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_Dir"  />
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_M0"  />
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_M1"  />
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_M2"  />
-    <postMsg mid="35001757" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_En"  />
-######## Missing driver on net \rc_receiver/register[0][5]. Patching with GND.
-######## Missing driver on net \rc_receiver/register[0][4]. Patching with GND.
-######## Missing driver on net n845. Patching with GND.
-######## Missing driver on net n844. Patching with GND.
-######## Missing driver on net n843. Patching with GND.
-######## Missing driver on net n842. Patching with GND.
-######## Missing driver on net n841. Patching with GND.
-######## Missing driver on net n840. Patching with GND.
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\rc_receiver/read_size"  />
 
-Extracted state machine for register: \protocol_interface/state
+Running general design DRC...
 
-State machine has 32 states with original encoding
-
-original encoding -> new encoding (OneHot Encoding)
-
- 00000 -> 00000000000000000000000000000001
-
- 00001 -> 00000000000000000000000000000010
-
- 00010 -> 00000000000000000000000000000100
-
- 00011 -> 00000000000000000000000000001000
-
- 00100 -> 00000000000000000000000000010000
-
- 00101 -> 00000000000000000000000000100000
-
- 00110 -> 00000000000000000000000001000000
-
- 00111 -> 00000000000000000000000010000000
-
- 01000 -> 00000000000000000000000100000000
-
- 01001 -> 00000000000000000000001000000000
-
- 01010 -> 00000000000000000000010000000000
-
- 01011 -> 00000000000000000000100000000000
-
- 01100 -> 00000000000000000001000000000000
-
- 01101 -> 00000000000000000010000000000000
-
- 01110 -> 00000000000000000100000000000000
-
- 01111 -> 00000000000000001000000000000000
-
- 10000 -> 00000000000000010000000000000000
-
- 10001 -> 00000000000000100000000000000000
-
- 10010 -> 00000000000001000000000000000000
-
- 10011 -> 00000000000010000000000000000000
-
- 10100 -> 00000000000100000000000000000000
-
- 10101 -> 00000000001000000000000000000000
-
- 10110 -> 00000000010000000000000000000000
-
- 10111 -> 00000000100000000000000000000000
-
- 11000 -> 00000001000000000000000000000000
-
- 11001 -> 00000010000000000000000000000000
-
- 11010 -> 00000100000000000000000000000000
-
- 11011 -> 00001000000000000000000000000000
-
- 11100 -> 00010000000000000000000000000000
-
- 11101 -> 00100000000000000000000000000000
-
- 11110 -> 01000000000000000000000000000000
-
- 11111 -> 10000000000000000000000000000000
-
- Number of Reachable States for this State Machine are 21 
-
-
-
-
-
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="\protocol_interface/state_FSM"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\motor_pwm/read_size"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\motor_pwm/read_size"  />
-GSR instance connected to net n4454.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch2/latched_in_45" arg1="IFS1P3DX"  />
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch3/latched_in_45" arg1="IFS1P3DX"  />
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch4/latched_in_45" arg1="IFS1P3DX"  />
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch7/latched_in_45" arg1="IFS1P3DX"  />
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch8/latched_in_45" arg1="IFS1P3DX"  />
-    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="\rc_receiver/recv_ch1/latched_in_45" arg1="IFS1P3DX"  />
-Applying 200.000000 MHz constraint to all clocks
-
-    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
-Results of NGD DRC are available in UniboardTop_drc.log.
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-
-
-Running DRC...
-
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_X_nFault" arg2="Stepper_X_nFault"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="Stepper_X_nFault"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_Y_nFault" arg2="Stepper_Y_nFault"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="Stepper_Y_nFault"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_Z_nFault" arg2="Stepper_Z_nFault"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="Stepper_Z_nFault"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="Stepper_A_nFault" arg2="Stepper_A_nFault"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="Stepper_A_nFault"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[3]" arg2="limit[3]"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="limit[3]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[2]" arg2="limit[2]"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="limit[2]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[1]" arg2="limit[1]"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="limit[1]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="limit[0]" arg2="limit[0]"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="limit[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_ra" arg2="encoder_ra"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_ra"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_rb" arg2="encoder_rb"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_rb"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_ri" arg2="encoder_ri"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_ri"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_la" arg2="encoder_la"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_la"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_lb" arg2="encoder_lb"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_lb"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="encoder_li" arg2="encoder_li"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="encoder_li"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="xbee_pause" arg2="xbee_pause"  />
     <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="xbee_pause"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="30"  />
+Removing unused logic...
 
-Design Results:
-   1512 blocks expanded
-completed the first expansion
-All blocks are expanded and NGD expansion is successful.
-Writing NGD file Uniboard_verilog_impl1.ngd.
+Optimizing...
 
-################### Begin Area Report (UniboardTop)######################
-Number of register bits => 490 of 7209 (6 % )
-CCU2D => 176
-FD1P3AX => 146
-FD1P3IX => 99
-FD1P3JX => 49
-FD1S3AX => 67
-FD1S3IX => 115
-FD1S3JX => 6
-GSR => 1
-IB => 8
-IFS1P3DX => 6
-L6MUX21 => 8
-LUT4 => 733
-OB => 39
-OBZ => 6
-OFS1P3DX => 2
-PFUMX => 48
-################### End Area Report ##################
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 5
-  Net : debug_c_c, loads : 239
-  Net : clk_255kHz, loads : 206
-  Net : select_2, loads : 33
-  Net : select_7, loads : 18
-  Net : bclk, loads : 14
-Clock Enable Nets
-Number of Clock Enables: 45
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : n1149, loads : 51
-  Net : register_addr_0, loads : 43
-  Net : rw, loads : 41
-  Net : n1157, loads : 37
-  Net : sendcount_0, loads : 34
-  Net : n7085, loads : 32
-  Net : n2140, loads : 32
-  Net : sendcount_1, loads : 29
-  Net : n14318, loads : 20
-  Net : register_addr_1, loads : 19
-################### End Clock Report ##################
-
-Timing Report Summary
---------------
---------------------------------------------------------------------------------
-Constraint                              |   Constraint|       Actual|Levels
---------------------------------------------------------------------------------
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk4 [get_nets select[7]]               |            -|            -|     0  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk3 [get_nets                          |             |             |
-\protocol_interface/uart_output/bclk]   |  200.000 MHz|  255.820 MHz|     2  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets select[2]]               |            -|            -|     0  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets debug_c_c]               |  200.000 MHz|  143.678 MHz|    18 *
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_255kHz]              |  200.000 MHz|  174.095 MHz|    10 *
-                                        |             |             |
---------------------------------------------------------------------------------
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_X_nFault"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_Y_nFault"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_Z_nFault"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="Stepper_A_nFault"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="limit[3:0](3)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="limit[3:0](2)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="limit[3:0](1)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="limit[3:0](0)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_ra"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_rb"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_ri"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_la"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_lb"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="encoder_li"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="xbee_pause"  />
 
 
-2 constraints not met.
+
+Design Summary:
+   Number of registers:    490 out of  7209 (7%)
+      PFU registers:          482 out of  6864 (7%)
+      PIO registers:            8 out of   345 (2%)
+   Number of SLICEs:       544 out of  3432 (16%)
+      SLICEs as Logic/ROM:    544 out of  3432 (16%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:        176 out of  3432 (5%)
+   Number of LUT4s:        1086 out of  6864 (16%)
+      Number of logic LUTs:      734
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:    176 (352 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 53 + 4(JTAG) out of 115 (50%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  5
+     Net select[2]: 13 loads, 13 rising, 0 falling (Driver: protocol_interface/select_i2 )
+     Net clk_255kHz: 123 loads, 123 rising, 0 falling (Driver: pwm_clk_div/clk_o_15 )
+     Net debug_c_c: 140 loads, 140 rising, 0 falling (Driver: PIO clk_12MHz )
+     Net select[7]: 9 loads, 9 rising, 0 falling (Driver: protocol_interface/select_i7 )
+     Net \protocol_interface/uart_output/bclk: 9 loads, 9 rising, 0 falling (Driver: protocol_interface/uart_output/baud_gen/clk_o_14 )
+   Number of Clock Enables:  44
+     Net motor_pwm/n6324: 4 loads, 4 LSLICEs
+     Net motor_pwm/n4623: 4 loads, 4 LSLICEs
+     Net n6304: 4 loads, 4 LSLICEs
+     Net n6321: 4 loads, 4 LSLICEs
+     Net n6305: 4 loads, 4 LSLICEs
+     Net n6380: 4 loads, 4 LSLICEs
+     Net n6535: 4 loads, 4 LSLICEs
+     Net n6550: 4 loads, 4 LSLICEs
+     Net n6311: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch8/n10: 3 loads, 3 LSLICEs
+     Net rc_receiver/recv_ch8/n14253: 7 loads, 7 LSLICEs
+     Net rc_receiver/recv_ch8/n17: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch7/n14275: 6 loads, 6 LSLICEs
+     Net rc_receiver/recv_ch7/n17: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch7/n14259: 5 loads, 5 LSLICEs
+     Net rc_receiver/recv_ch7/n6480: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch4/n14251: 3 loads, 3 LSLICEs
+     Net rc_receiver/recv_ch4/n14260: 6 loads, 6 LSLICEs
+     Net rc_receiver/recv_ch4/n17: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch3/n14250: 9 loads, 9 LSLICEs
+     Net rc_receiver/recv_ch3/n17: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch2/n14261: 9 loads, 9 LSLICEs
+     Net rc_receiver/recv_ch2/n17: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch1/n14254: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch1/n14252: 8 loads, 8 LSLICEs
+     Net rc_receiver/recv_ch1/n17: 1 loads, 1 LSLICEs
+     Net protocol_interface/n6729: 2 loads, 2 LSLICEs
+     Net protocol_interface/n6725: 2 loads, 2 LSLICEs
+     Net protocol_interface/n6721: 2 loads, 2 LSLICEs
+     Net protocol_interface/n6398: 3 loads, 3 LSLICEs
+     Net protocol_interface/n6411: 3 loads, 3 LSLICEs
+     Net protocol_interface/n6306: 6 loads, 6 LSLICEs
+     Net protocol_interface/n12121: 1 loads, 1 LSLICEs
+     Net protocol_interface/n6393: 4 loads, 4 LSLICEs
+     Net protocol_interface/n1537: 4 loads, 4 LSLICEs
+     Net protocol_interface/n1157: 17 loads, 17 LSLICEs
+     Net protocol_interface/n1160: 1 loads, 1 LSLICEs
+     Net protocol_interface/n6422: 3 loads, 3 LSLICEs
+     Net protocol_interface/n6438: 4 loads, 4 LSLICEs
+     Net protocol_interface/n6447: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_output/n8: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_output/n5878: 4 loads, 4 LSLICEs
+     Net protocol_interface/uart_output/n6511: 2 loads, 2 LSLICEs
+     Net protocol_interface/uart_output/n14411: 1 loads, 1 LSLICEs
+   Number of LSRs:  31
+     Net n14295: 8 loads, 8 LSLICEs
+     Net motor_pwm/n14297: 4 loads, 4 LSLICEs
+     Net motor_pwm/right/n7090: 7 loads, 7 LSLICEs
+     Net motor_pwm/left/n7091: 7 loads, 7 LSLICEs
+     Net debug_c_7: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch8/n14352: 10 loads, 10 LSLICEs
+     Net rc_receiver/recv_ch8/n7108: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch7/n14355: 10 loads, 10 LSLICEs
+     Net rc_receiver/recv_ch7/n7130: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch4/n14372: 8 loads, 8 LSLICEs
+     Net rc_receiver/recv_ch4/n7080: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch3/n14348: 9 loads, 9 LSLICEs
+     Net rc_receiver/recv_ch3/n7095: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch2/n14370: 9 loads, 9 LSLICEs
+     Net rc_receiver/recv_ch2/n7149: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch1/n7156: 4 loads, 4 LSLICEs
+     Net rc_receiver/recv_ch1/n14334: 9 loads, 9 LSLICEs
+     Net protocol_interface/n1149: 1 loads, 1 LSLICEs
+     Net protocol_interface/n1152: 1 loads, 1 LSLICEs
+     Net protocol_interface/n2659: 1 loads, 1 LSLICEs
+     Net protocol_interface/n7088: 3 loads, 3 LSLICEs
+     Net protocol_interface/n1158: 1 loads, 1 LSLICEs
+     Net protocol_interface/n1153: 1 loads, 1 LSLICEs
+     Net protocol_interface/n1159: 1 loads, 1 LSLICEs
+     Net protocol_interface/n1144: 1 loads, 1 LSLICEs
+     Net protocol_interface/n2078: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_output/baud_gen/n7085: 17 loads, 17 LSLICEs
+     Net protocol_interface/uart_input/baud_reset: 1 loads, 1 LSLICEs
+     Net protocol_interface/uart_input/n2140: 17 loads, 17 LSLICEs
+     Net pwm_clk_div/count_5: 1 loads, 1 LSLICEs
+     Net pwm_clk_div/n7105: 3 loads, 3 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net protocol_interface/n1149: 51 loads
+     Net register_addr_0: 44 loads
+     Net rw: 42 loads
+     Net protocol_interface/sendcount_0: 34 loads
+     Net protocol_interface/sendcount_1: 29 loads
+     Net protocol_interface/n1157: 21 loads
+     Net protocol_interface/n14318: 20 loads
+     Net register_addr_1: 20 loads
+     Net protocol_interface/n1158: 19 loads
+     Net protocol_interface/uart_output/baud_gen/n7085: 17 loads
+ 
+
+   Number of warnings:  30
+   Number of errors:    0
 
 
-Peak Memory Usage: 214.344  MB
 
---------------------------------------------------------------
-Elapsed CPU time for LSE flow : 5.435  secs
---------------------------------------------------------------
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 189 MB
+
+Dumping design to file Uniboard_verilog_impl1_map.ncd.
+
+ncd2vdb "Uniboard_verilog_impl1_map.ncd" ".vdbs/Uniboard_verilog_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
+
+mpartrce -p "Uniboard_verilog_impl1.p2t" -f "Uniboard_verilog_impl1.p3t" -tf "Uniboard_verilog_impl1.pt" "Uniboard_verilog_impl1_map.ncd" "Uniboard_verilog_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Uniboard_verilog_impl1_map.ncd"
+Sat Jan  9 22:39:26 2016
+
+PAR: Place And Route Diamond (64-bit) 3.4.1.213.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Uniboard_verilog_impl1_map.ncd Uniboard_verilog_impl1.dir/5_1.ncd Uniboard_verilog_impl1.prf
+Preference file: Uniboard_verilog_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Uniboard_verilog_impl1_map.ncd.
+Design name: UniboardTop
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 30.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   53+4(JTAG)/336     17% used
+                  53+4(JTAG)/115     50% bonded
+   IOLOGIC            8/336           2% used
+
+   SLICE            544/3432         15% used
+
+
+
+Number of Signals: 1603
+Number of Connections: 4087
+
+Pin Constraint Summary:
+   53 out of 53 pins locked (100% locked).
+
+The following 3 signals are selected to use the primary clock routing resources:
+    debug_c_c (driver: clk_12MHz, clk load #: 140)
+    clk_255kHz (driver: pwm_clk_div/SLICE_176, clk load #: 123)
+    select[2] (driver: protocol_interface/SLICE_359, clk load #: 13)
+
+
+The following 7 signals are selected to use the secondary clock routing resources:
+    select[7] (driver: protocol_interface/SLICE_360, clk load #: 9, sr load #: 0, ce load #: 0)
+    \protocol_interface/uart_output/bclk (driver: protocol_interface/uart_output/baud_gen/SLICE_127, clk load #: 9, sr load #: 0, ce load #: 0)
+    protocol_interface/n1157 (driver: protocol_interface/SLICE_266, clk load #: 0, sr load #: 0, ce load #: 17)
+    protocol_interface/uart_output/baud_gen/n7085 (driver: protocol_interface/uart_output/baud_gen/SLICE_505, clk load #: 0, sr load #: 17, ce load #: 0)
+    protocol_interface/uart_input/n2140 (driver: protocol_interface/uart_input/SLICE_517, clk load #: 0, sr load #: 17, ce load #: 0)
+    rc_receiver/recv_ch8/n14352 (driver: rc_receiver/recv_ch8/SLICE_548, clk load #: 0, sr load #: 10, ce load #: 0)
+    rc_receiver/recv_ch7/n14355 (driver: rc_receiver/recv_ch7/SLICE_327, clk load #: 0, sr load #: 10, ce load #: 0)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 210910.
+Finished Placer Phase 1.  REAL time: 12 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  207766
+Finished Placer Phase 2.  REAL time: 12 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "debug_c_c" from comp "clk_12MHz" on CLK_PIN site "128 (PT18A)", clk load = 140
+  PRIMARY "clk_255kHz" from Q0 on comp "pwm_clk_div/SLICE_176" on site "R2C19C", clk load = 123
+  PRIMARY "select[2]" from Q0 on comp "protocol_interface/SLICE_359" on site "R21C2C", clk load = 13
+  SECONDARY "select[7]" from Q0 on comp "protocol_interface/SLICE_360" on site "R14C20B", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "\protocol_interface/uart_output/bclk" from Q0 on comp "protocol_interface/uart_output/baud_gen/SLICE_127" on site "R2C10A", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "protocol_interface/n1157" from Q0 on comp "protocol_interface/SLICE_266" on site "R14C20C", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "protocol_interface/uart_output/baud_gen/n7085" from F0 on comp "protocol_interface/uart_output/baud_gen/SLICE_505" on site "R14C18D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "protocol_interface/uart_input/n2140" from F0 on comp "protocol_interface/uart_input/SLICE_517" on site "R21C20C", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "rc_receiver/recv_ch8/n14352" from F0 on comp "rc_receiver/recv_ch8/SLICE_548" on site "R14C18B", clk load = 0, ce load = 0, sr load = 10
+  SECONDARY "rc_receiver/recv_ch7/n14355" from F1 on comp "rc_receiver/recv_ch7/SLICE_327" on site "R21C18C", clk load = 0, ce load = 0, sr load = 10
+
+  PRIMARY  : 3 out of 8 (37%)
+  SECONDARY: 7 out of 8 (87%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   53 + 4(JTAG) out of 336 (17.0%) PIO sites used.
+   53 + 4(JTAG) out of 115 (49.6%) bonded PIO sites used.
+   Number of PIO comps: 53; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 14 / 28 ( 50%) | 2.5V       | -         |
+| 1        | 22 / 29 ( 75%) | 2.5V       | -         |
+| 2        | 15 / 29 ( 51%) | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)   | -          | -         |
+| 4        | 0 / 10 (  0%)  | -          | -         |
+| 5        | 2 / 10 ( 20%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 12 secs 
+
+Dumping design to file Uniboard_verilog_impl1.dir/5_1.ncd.
+
+0 connections routed; 4087 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 14 secs 
+
+Start NBR router at Sat Jan 09 22:39:40 PST 2016
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design. Thanks.                                       
+*****************************************************************
+
+Start NBR special constraint process at Sat Jan 09 22:39:40 PST 2016
+
+Start NBR section for initial routing at Sat Jan 09 22:39:41 PST 2016
+Level 4, iteration 1
+135(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.061ns/0.000ns; real time: 15 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at Sat Jan 09 22:39:41 PST 2016
+Level 4, iteration 1
+57(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.061ns/0.000ns; real time: 16 secs 
+Level 4, iteration 2
+14(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.185ns/0.000ns; real time: 16 secs 
+Level 4, iteration 3
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.185ns/0.000ns; real time: 16 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.185ns/0.000ns; real time: 16 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.185ns/0.000ns; real time: 16 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at Sat Jan 09 22:39:42 PST 2016
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.876" arg1="0" arg2="1" arg3="0" arg4="SLICE_195" arg5="F0" arg6="SLICE_195" arg7="DI0" arg8="databus_0"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.781" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_353" arg5="F0" arg6="motor_pwm/SLICE_353" arg7="DI0" arg8="motor_pwm/n3088"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.500" arg1="0" arg2="1" arg3="1" arg4="SLICE_304" arg5="F0" arg6="SLICE_304" arg7="DI0" arg8="n176"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.491" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_194" arg5="F1" arg6="motor_pwm/SLICE_194" arg7="DI1" arg8="motor_pwm/n2699"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.491" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_194" arg5="F0" arg6="motor_pwm/SLICE_194" arg7="DI0" arg8="motor_pwm/n2700"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.722" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_193" arg5="F1" arg6="motor_pwm/SLICE_193" arg7="DI1" arg8="motor_pwm/n2701"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.722" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_193" arg5="F0" arg6="motor_pwm/SLICE_193" arg7="DI0" arg8="motor_pwm/n2702"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.685" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_192" arg5="F1" arg6="motor_pwm/SLICE_192" arg7="DI1" arg8="motor_pwm/n2703"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.685" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_192" arg5="F0" arg6="motor_pwm/SLICE_192" arg7="DI0" arg8="motor_pwm/n2704"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.798" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_191" arg5="F1" arg6="motor_pwm/SLICE_191" arg7="DI1" arg8="motor_pwm/n2705"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.798" arg1="0" arg2="1" arg3="1" arg4="motor_pwm/SLICE_191" arg5="F0" arg6="motor_pwm/SLICE_191" arg7="DI0" arg8="motor_pwm/n2706"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.812" arg1="0" arg2="1" arg3="0" arg4="SLICE_198" arg5="F1" arg6="SLICE_198" arg7="DI1" arg8="databus_7"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.812" arg1="0" arg2="1" arg3="0" arg4="SLICE_198" arg5="F0" arg6="SLICE_198" arg7="DI0" arg8="databus_6"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.785" arg1="0" arg2="1" arg3="0" arg4="SLICE_197" arg5="F1" arg6="SLICE_197" arg7="DI1" arg8="databus_5"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.785" arg1="0" arg2="1" arg3="0" arg4="SLICE_197" arg5="F0" arg6="SLICE_197" arg7="DI0" arg8="databus_4"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-1.012" arg1="0" arg2="1" arg3="0" arg4="SLICE_196" arg5="F1" arg6="SLICE_196" arg7="DI1" arg8="databus_3"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-1.012" arg1="0" arg2="1" arg3="0" arg4="SLICE_196" arg5="F0" arg6="SLICE_196" arg7="DI0" arg8="databus_2"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.876" arg1="0" arg2="1" arg3="0" arg4="SLICE_195" arg5="F1" arg6="SLICE_195" arg7="DI1" arg8="databus_1"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.270" arg1="0" arg2="1" arg3="1" arg4="rc_receiver/i11286/SLICE_368" arg5="OFX0" arg6="rc_receiver/SLICE_310" arg7="FXA" arg8="rc_receiver/n13409"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.270" arg1="0" arg2="1" arg3="1" arg4="rc_receiver/SLICE_310" arg5="OFX0" arg6="rc_receiver/SLICE_310" arg7="FXB" arg8="rc_receiver/n13410"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.270" arg1="0" arg2="1" arg3="1" arg4="rc_receiver/SLICE_310" arg5="OFX1" arg6="rc_receiver/SLICE_310" arg7="DI1" arg8="rc_receiver/n13411"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-0.379" arg1="0" arg2="1" arg3="1" arg4="rc_receiver/i11289/SLICE_369" arg5="OFX0" arg6="rc_receiver/SLICE_311" arg7="FXA" arg8="rc_receiver/n13412"  />
+    <postMsg mid="62001131" type="Warning" dynamic="9" navigation="0" arg0="-1.144" arg1="0" arg2="1" arg3="1" arg4="protocol_interface/uart_output/SLICE_239" arg5="F0" arg6="protocol_interface/uart_output/SLICE_239" arg7="DI0" arg8="protocol_interface/uart_output/n4711"  />
+. . .
+----------------------------------
+Info: Total 44 connections where the hold timing errors associated cannot be fixed.
+
+Level 4, iteration 0
+Level 4, iteration 1
+7(0.00%) conflicts; 11(0.27%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.109ns/0.000ns; real time: 22 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 16(0.39%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.074ns/0.000ns; real time: 22 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 16(0.39%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.165ns/0.000ns; real time: 22 secs 
+Level 4, iteration 1
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.165ns/0.000ns; real time: 22 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.165ns/0.000ns; real time: 23 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.165ns/0.000ns; real time: 23 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.165ns/0.000ns; real time: 23 secs 
+
+Start NBR section for re-routing at Sat Jan 09 22:39:49 PST 2016
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 67.185ns/0.000ns; real time: 23 secs 
+
+Start NBR section for post-routing at Sat Jan 09 22:39:49 PST 2016
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 67.185ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 24 secs 
+Total REAL time: 24 secs 
+Completely routed.
+End of route.  4087 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Uniboard_verilog_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 67.185
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.079
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 24 secs 
+Total REAL time to completion: 24 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Uniboard_verilog_impl1.t2b" -w "Uniboard_verilog_impl1.ncd" -jedec "Uniboard_verilog_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.4.1.213
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Uniboard_verilog_impl1.ncd.
+Design name: UniboardTop
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 30.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Uniboard_verilog_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.86.
+ 
+Saving bit stream in "Uniboard_verilog_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 

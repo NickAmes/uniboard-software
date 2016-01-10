@@ -2,6 +2,7 @@
 -d LCMXO2-7000HC
 -t TQFP144
 -s 4
+-sdc "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/constraints.ldc"
 -frequency 200
 -optimization_goal Balanced
 -bram_utilization 100
