@@ -161,15 +161,28 @@ class Uniboard:
 		self._write_reg(2, 1, intvalue)
 	
 	#Arm
-	#def _arm_reg(axis, base_register):
-		#"""Return the register value for a base register on the given axis.
-		   #Axis is either a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
+	def _arm_reg(axis, base_register):
+		"""Return the register value for a base register on the given axis.
+		   Axis is either a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
 		
-	#def limit(self, axis):
-		#"""Returns true if the limit switch of an arm axis is pressed. Axis is either a string
-		   #("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
+	def arm_limit(self, axis):
+		"""Returns true if the limit switch of an arm axis is pressed. Axis is either a string
+		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
 		#return (u._read_reg
 	
+	def arm_en(self, state):
+		"""Set the state of an arm axis driver. Axis is either a string
+		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively).
+		   State is 1 (or other things that evaluate as True) to enable the DRV8825
+		   driver, 0 to disable it. (The actual value of the pin is inverted from
+		   this; True pulls the pin low, False raises it high."""
+	
+	def arm_dir(self, dir_value):
+		"""Set the state of the arm dir line. Axis is either a string
+		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively).
+		   Dir_value is 1 (or other things that evaluate as True) 
+		   to bring the dir line high, 0 make it low."""
+		   
 	#RC Receiver
 	def rc_valid(self):
 		"""Returns a dictionary (with keys 1, 2, 3, 4, 7, and 8) containing

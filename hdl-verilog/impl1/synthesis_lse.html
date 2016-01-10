@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 04:10:10 2016
+Sun Jan 10 04:28:11 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -125,8 +125,7 @@ WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progres
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(8): compiling module PWMGenerator. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(36): expression size 14 truncated to fit in target size 13. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(8): compiling module ArmPeripheral(axis_haddr=8'b0). VERI-1018
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(51): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(34): net int_step does not have a driver. VDB-1002
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(53): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(192): compiling module RCPeripheral. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(215): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(126): compiling module PWMReceiver. VERI-1018
@@ -140,7 +139,6 @@ Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl
 Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = UniboardTop.
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(34): net int_step does not have a driver. VDB-1002
 ######## Converting I/O port expansion4 to output.
 ######## Converting I/O port expansion5 to output.
 ######## Converting I/O port debug[8] to output.
@@ -152,7 +150,6 @@ WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progres
 ######## Converting I/O port debug[2] to output.
 ######## Converting I/O port debug[1] to output.
 ######## Converting I/O port debug[0] to output.
-######## Missing driver on net \arm_x/int_step. Patching with GND.
 ######## Missing driver on net \rc_receiver/register[0][5]. Patching with GND.
 ######## Missing driver on net \rc_receiver/register[0][4]. Patching with GND.
 WARNING - synthesis: Bit 0 of Register \rc_receiver/read_size is stuck at Zero
@@ -280,6 +277,38 @@ WARNING - synthesis: Bit 7 of Register \protocol_interface/state_FSM is stuck at
 WARNING - synthesis: Bit 8 of Register \protocol_interface/state_FSM is stuck at Zero
 WARNING - synthesis: Bit 9 of Register \protocol_interface/state_FSM is stuck at Zero
 WARNING - synthesis: Bit 10 of Register \protocol_interface/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 27 of Register \pwm_clk_div/int_factor is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 29 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 30 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 31 of Register \pwm_clk_div/int_factor is stuck at One
 WARNING - synthesis: Bit 0 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \arm_x/read_size is stuck at Zero
@@ -287,7 +316,7 @@ GSR instance connected to net expansion5_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \arm_x/fault_latched_160 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_x/fault_latched_165 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
@@ -327,43 +356,43 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.
 
 ################### Begin Area Report (UniboardTop)######################
-Number of register bits => 747 of 7209 (10 % )
-CCU2D => 264
-FD1P3AX => 165
-FD1P3IX => 259
+Number of register bits => 813 of 7209 (11 % )
+CCU2D => 349
+FD1P3AX => 205
+FD1P3IX => 250
 FD1P3JX => 135
 FD1S3AX => 10
-FD1S3IX => 167
+FD1S3IX => 203
 FD1S3JX => 2
 GSR => 1
 IB => 11
 IFS1P3DX => 7
 L6MUX21 => 8
-LUT4 => 1060
+LUT4 => 1032
 OB => 45
-OFS1P3IX => 2
-PFUMX => 46
+OFS1P3DX => 1
+PFUMX => 50
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
-  Net : debug_c_c, loads : 720
+  Net : debug_c_c, loads : 786
   Net : bclk, loads : 14
   Net : select_7, loads : 11
 Clock Enable Nets
-Number of Clock Enables: 46
+Number of Clock Enables: 49
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n23203, loads : 145
-  Net : register_addr_0, loads : 92
-  Net : rw, loads : 62
+  Net : n25330, loads : 145
+  Net : register_addr_0, loads : 98
+  Net : rw, loads : 65
+  Net : n2497, loads : 64
   Net : n1267, loads : 61
-  Net : n24513, loads : 50
-  Net : n24514, loads : 50
-  Net : n24511, loads : 49
-  Net : n9801, loads : 47
-  Net : register_addr_1, loads : 45
+  Net : register_addr_1, loads : 51
+  Net : n26593, loads : 50
+  Net : n26595, loads : 50
+  Net : n26592, loads : 50
   Net : n1268, loads : 44
 ################### End Clock Report ##################
 
@@ -383,10 +412,10 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 221.961  MB
+Peak Memory Usage: 223.301  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 7.575  secs
+Elapsed CPU time for LSE flow : 8.911  secs
 --------------------------------------------------------------
 
 

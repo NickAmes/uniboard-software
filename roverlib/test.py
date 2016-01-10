@@ -13,7 +13,7 @@ while True:
 	print u._read_reg(4,0), " ", u._read_reg(4,1),  " ",  u._read_reg(4,2), " ", u._read_reg(4,3), 
 	#u._write_reg(4, 0, 0xAA)
 	#u._write_reg(4,3,500)
-	#u._write_reg(4,2,24000)
+	u._write_reg(4,2,5000 + i)
 	print "      ",
 	
 	u.motor_right(float(i % 256)/255.0 - 127.5)

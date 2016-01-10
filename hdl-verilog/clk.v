@@ -42,23 +42,28 @@ module ClockDivider(
 	input wire reset);
 	
 	reg [31:0] count;					
-								
+	reg [31:0] int_factor;
+	
 	always @ (posedge clk_i)			
 		begin
 			if(reset)
 				begin
 					count <= 0;
 					clk_o <= 0;
+					int_factor <= factor;
 				end
 			else
 				begin	
-					if(count < (factor >> 1))
+					if(count < (int_factor >> 1))
 						clk_o <= 0;
 					else
 						clk_o <= 1;
 
-					if(count == factor-1)			
-						count <= 0;					
+					if(count >= int_factor-1)
+						begin
+							count <= 0;
+							int_factor <= factor;
+						end
 					else
 						count <= count + 1;	
 				end

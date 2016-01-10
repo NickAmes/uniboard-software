@@ -33,12 +33,14 @@ module ArmPeripheral(
 	wire stepping;
 	reg int_step; /* Internal step signal; active on rising edge. */
 	wire go;
+	wire step_clk;
+	reg prev_step_clk;
 	
 	assign go = control_reg[7];
 	assign stepping = ~pause & en & (steps_reg > 0);
 	
 	/* Outputs */
-	assign en = control_reg[6];
+	assign en = ~control_reg[6];
 	assign dir = control_reg[5];
 	assign step_line = int_step ^ ~control_reg[4];
 	assign microstep = control_reg[2:0];
@@ -55,6 +57,7 @@ module ArmPeripheral(
 	always @ (posedge clk_12MHz)			
 		begin
 			prev_select <= select;
+			prev_step_clk <= step_clk;
 			limit_latched <= ~limitn;
 			fault_latched <= fault;
 			
@@ -107,12 +110,16 @@ module ArmPeripheral(
 									endcase
 								end
 						end
-							//non-reset logic goes here
-						
+					//other logic here
+					//TODO
+					int_step <= step_clk;
 						
 						
 						
 					end
 		end
-	
+	ClockDivider step_clk_gen(.clk_i(clk_12MHz),
+	                          .clk_o(step_clk),
+	                          .factor(div_factor_reg),
+	                          .reset(reset));
 endmodule
