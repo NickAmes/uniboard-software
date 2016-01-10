@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "Uniboard_impl1_map.ncd"
-Sat Jan  9 16:40:01 2016
+Sat Jan  9 16:49:38 2016
 
 PAR: Place And Route Diamond (64-bit) 3.4.1.213.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Uniboard_impl1_map.ncd Uniboard_impl1.dir/5_1.ncd Uniboard_impl1.prf
@@ -54,7 +54,7 @@ The following 7 signals are selected to use the secondary clock routing resource
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ...........
-Finished Placer Phase 0.  REAL time: 0 secs 
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 .....................
@@ -126,7 +126,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 6 secs 
 
-Start NBR router at Sat Jan 09 16:40:07 PST 2016
+Start NBR router at Sat Jan 09 16:49:44 PST 2016
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -141,16 +141,16 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Sat Jan 09 16:40:07 PST 2016
+Start NBR special constraint process at Sat Jan 09 16:49:44 PST 2016
 
-Start NBR section for initial routing at Sat Jan 09 16:40:07 PST 2016
+Start NBR section for initial routing at Sat Jan 09 16:49:44 PST 2016
 Level 4, iteration 1
 149(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Sat Jan 09 16:40:08 PST 2016
+Start NBR section for normal routing at Sat Jan 09 16:49:45 PST 2016
 Level 4, iteration 1
 79(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 Level 4, iteration 2
@@ -166,11 +166,11 @@ Level 4, iteration 6
 Level 4, iteration 7
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 
-Start NBR section for re-routing at Sat Jan 09 16:40:08 PST 2016
+Start NBR section for re-routing at Sat Jan 09 16:49:45 PST 2016
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 
-Start NBR section for post-routing at Sat Jan 09 16:40:08 PST 2016
+Start NBR section for post-routing at Sat Jan 09 16:49:45 PST 2016
 
 End NBR router with 0 unrouted connection
 

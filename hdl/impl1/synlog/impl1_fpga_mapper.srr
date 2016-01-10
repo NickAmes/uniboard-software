@@ -45,7 +45,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 @N: MF179 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":251:11:251:38|Found 5 bit by 5 bit '==' comparator, 'sendcount\[0\]2'
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 152MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 152MB)
 
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 153MB)
@@ -66,13 +66,13 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register register\\\[0\\\] pushed in.
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[0\\\] pushed in.
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":207:1:207:6|Register read_value\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[6\\\] pushed in.
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[1\\\] pushed in.
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[5\\\] pushed in.
 @N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[2\\\] pushed in.
@@ -268,7 +268,7 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 154MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 154MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 154MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 154MB)
@@ -277,7 +277,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 154MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 192MB peak: 193MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -320,7 +320,7 @@ Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elaps
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 156MB peak: 193MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 156MB peak: 193MB)
 
 Writing EDIF Netlist and constraint files
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
@@ -339,7 +339,7 @@ Found clock clk_12MHz with period 84.00ns
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jan  9 15:42:54 2016
+# Timing Report written on Sat Jan  9 16:47:18 2016
 #
 
 
@@ -347,8 +347,7 @@ Top view:               UniboardTop
 Requested Frequency:    11.9 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.fdc
-                       /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
+Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn_1.fdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -542,6 +541,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 59MB peak: 193MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Sat Jan  9 15:42:54 2016
+# Sat Jan  9 16:47:18 2016
 
 ###########################################################]

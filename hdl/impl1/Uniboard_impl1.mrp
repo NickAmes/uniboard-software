@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  01/09/16  16:39:59
+Mapped on:  01/09/16  16:49:35
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ WARNING - map: IO buffer missing for top level port encoder_ra...logic will be
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -396,7 +396,7 @@ Signal reset_count_1_cry_13_0_COUT undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal motor_pwm/left/pwm_2_cry_3_0_S0 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal motor_pwm/right/pwm_2_cry_7_0_S0_0 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_1 undriven or does not
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  16:39:59
+Design:  UniboardTop                                   Date:  01/09/16  16:49:35
 
 Removed logic (cont)
 --------------------
@@ -634,7 +634,7 @@ Memory Usage
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs  
+   Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
    Peak Memory Usage: 190 MB
         

@@ -1,13 +1,13 @@
 # Synopsys Constraint Checker(syntax only), version map201409latrcp1, Build 005R, built Feb 11 2015
 # Copyright (C) 1994-2014, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Sat Jan  9 16:39:25 2016
+# Written on Sat Jan  9 16:51:38 2016
 
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "UniboardTop"
-Constraint File(s):      (none)
+Constraint File(s):      "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -21,12 +21,12 @@ No issues found in constraint syntax.
 Clock Summary
 **************
 
-Start                                             Requested     Requested     Clock                                    Clock              
-Clock                                             Frequency     Period        Type                                     Group              
-------------------------------------------------------------------------------------------------------------------------------------------
-ClockDividerP_12s_1|clk_o_derived_clock           1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-ClockDivider|clk_o_derived_clock                  1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-ProtocolInterface_12s|select_derived_clock[2]     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-ProtocolInterface_12s|select_derived_clock[7]     1.0 MHz       1000.000      derived (from UniboardTop|clk_12MHz)     Inferred_clkgroup_0
-UniboardTop|clk_12MHz                             1.0 MHz       1000.000      inferred                                 Inferred_clkgroup_0
-==========================================================================================================================================
+Start                                             Requested     Requested     Clock                        Clock           
+Clock                                             Frequency     Period        Type                         Group           
+---------------------------------------------------------------------------------------------------------------------------
+ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ClockDivider|clk_o_derived_clock                  11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+clk_12MHz                                         11.9 MHz      84.000        declared                     default_clkgroup
+===========================================================================================================================

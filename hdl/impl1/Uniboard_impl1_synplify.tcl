@@ -24,6 +24,7 @@ set_option -force_gsr false
 set_option -compiler_compatible 0
 set_option -dup false
 set_option -frequency 1
+add_file -constraint {/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc}
 set_option -default_enum_encoding default
 
 #simulation options

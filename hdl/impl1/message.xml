@@ -2556,18 +2556,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv&quot;:14:1:14:6|Found inferred clock UniboardTop|clk_12MHz which controls 402 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
-            <Navigation>MT529</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>1</Navigation>
-            <Navigation>14</Navigation>
-            <Navigation>6</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz which controls 402 sequential elements including protocol_interface.uart_input.baud_gen.count\[3\]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:79:5:79:6|Removing user instance arm_x.read_value[13]_7,  because it is equivalent to instance arm_x.read_value[11]_7</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv</Navigation>
@@ -2684,13 +2672,6 @@
             <Navigation>66</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Removing sequential instance arm_x.read_value[7],  because it is equivalent to instance arm_x.read_value[6]</Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_12MHz&quot;</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock UniboardTop|clk_12MHz with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_12MHz&quot;</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>
