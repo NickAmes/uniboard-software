@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jan  9 22:39:12 2016
+Sun Jan 10 00:10:39 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -59,14 +59,22 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog (searchpath added)
 -p /usr/local/diamond/3.4_x64/ispfpga/xo2c00/data (searchpath added)
 -p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1 (searchpath added)
 -p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog (searchpath added)
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v
+-p /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/MotorPWM_reset (searchpath added)
+Key file = /usr/local/diamond/3.4_x64/module/reveal/document/reveal_test.dat
+File /usr/local/diamond/3.4_x64/module/reveal/src/ertl/ertl.v is encrypted
+
+File /usr/local/diamond/3.4_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v is encrypted
+
+Verilog design file = /usr/local/diamond/3.4_x64/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = /usr/local/diamond/3.4_x64/module/reveal/src/ertl/ertl.v
+Verilog design file = /usr/local/diamond/3.4_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v
+Verilog design file = /usr/local/diamond/3.4_x64/module/reveal/src/rvl_j2w_module/wb2sci.v
+Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_trig_gen.v
+Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_gen.v
+Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v
 NGD file = Uniboard_verilog_impl1.ngd
 -sdc option: SDC file input is /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/constraints.ldc.
 -lpf option: Output file option is ON.
@@ -75,6 +83,72 @@ The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
 Analyzing Verilog file /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(977): identifier reset is used before its declaration. VERI-1875
+Top module name (Verilog): UniboardTop
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(883): compiling module UniboardTop. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(961): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1001): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1115): compiling module ProtocolInterface_uniq_1. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1434): compiling module UARTReceiver_uniq_1. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1511): compiling module ClockDividerP_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1474): expression size 7 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1479): expression size 7 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1484): expression size 7 truncated to fit in target size 6. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1578): compiling module UARTTransmitter_uniq_1. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1546): compiling module ClockDividerP_uniq_2. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1611): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1616): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1621): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1626): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1631): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1636): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1641): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1646): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1651): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1656): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1661): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1667): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1260): expression size 5 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1354): expression size 6 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1684): compiling module DummyPeripheral_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1690): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1697): compiling module ClockDivider_uniq_1. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1728): compiling module PWMPeripheral_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1761): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1834): compiling module PWMGenerator_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1860): expression size 14 truncated to fit in target size 13. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1873): compiling module PWMGenerator_uniq_2. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1899): expression size 14 truncated to fit in target size 13. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1907): compiling module RCPeripheral_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1926): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1955): compiling module PWMReceiver_uniq_1. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2001): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2019): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2029): compiling module PWMReceiver_uniq_2. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2075): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2093): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2103): compiling module PWMReceiver_uniq_3. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2149): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2167): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2177): compiling module PWMReceiver_uniq_4. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2223): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2241): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2251): compiling module PWMReceiver_uniq_5. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2297): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2315): expression size 17 truncated to fit in target size 16. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2325): compiling module PWMReceiver_uniq_6. VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2371): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2389): expression size 17 truncated to fit in target size 16. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1922): net register[0][5] does not have a driver. VDB-1002
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(2): compiling module reveal_coretop. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_gen.v(12): compiling module uniboardtop_la0. VERI-1018
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_trig_gen.v(11): compiling module uniboardtop_la0_trig. VERI-1018
+INFO - synthesis: /usr/local/diamond/3.4_x64/cae_library/synthesis/verilog/pmi_def.v(295): compiling module pmi_ram_dp(pmi_wr_addr_depth=2,pmi_wr_addr_width=32'sb01,pmi_wr_data_width=1,pmi_rd_addr_depth=2,pmi_rd_addr_width=32'sb01,pmi_rd_data_width=1,pmi_resetmode="async",pmi_family="XO2"). VERI-1018
+INFO - synthesis: /usr/local/diamond/3.4_x64/cae_library/synthesis/verilog/pmi_def.v(295): compiling module pmi_ram_dp(pmi_wr_addr_depth=256,pmi_wr_addr_width=32'sb01000,pmi_wr_data_width=17,pmi_rd_addr_depth=256,pmi_rd_addr_width=32'sb01000,pmi_rd_data_width=17,pmi_resetmode="async",pmi_family="XO2"). VERI-1018
+INFO - synthesis: /usr/local/diamond/3.4_x64/cae_library/synthesis/verilog/pmi_def.v(1162): compiling module jtagconn16. VERI-1018
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -82,8 +156,8 @@ Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl
 Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = UniboardTop.
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(494): Register reset_39 is stuck at Zero. VDB-5013
-WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(197): net register[0][5] does not have a driver. VDB-1002
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1002): Register interface_reset_38 is stuck at Zero. VDB-5013
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1922): net register[0][5] does not have a driver. VDB-1002
 ######## Converting I/O port expansion4 to output.
 ######## Converting I/O port expansion5 to output.
 ######## Converting I/O port debug[8] to output.
@@ -103,13 +177,49 @@ WARNING - synthesis: Stepper_X_M2 is not assigned a value (floating) -- simulati
 WARNING - synthesis: Stepper_X_En is not assigned a value (floating) -- simulation mismatch possible.
 ######## Missing driver on net \rc_receiver/register[0][5]. Patching with GND.
 ######## Missing driver on net \rc_receiver/register[0][4]. Patching with GND.
-######## Missing driver on net n845. Patching with GND.
-######## Missing driver on net n844. Patching with GND.
-######## Missing driver on net n843. Patching with GND.
-######## Missing driver on net n842. Patching with GND.
-######## Missing driver on net n841. Patching with GND.
-######## Missing driver on net n840. Patching with GND.
+######## Missing driver on net n903. Patching with GND.
+######## Missing driver on net n902. Patching with GND.
+######## Missing driver on net n901. Patching with GND.
+######## Missing driver on net n900. Patching with GND.
+######## Missing driver on net n899. Patching with GND.
+######## Missing driver on net n898. Patching with GND.
 WARNING - synthesis: Bit 0 of Register \rc_receiver/read_size is stuck at Zero
+Converting Generated Clock on instance \motor_pwm/left/pwm_19.
+Converting Generated Clock on instance \motor_pwm/left/latched_width.
+Converting Generated Clock on instance \motor_pwm/left/count.
+Converting Generated Clock on instance \motor_pwm/right/pwm_19.
+Converting Generated Clock on instance \motor_pwm/right/latched_width.
+Converting Generated Clock on instance \motor_pwm/right/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch1/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch1/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch1/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch1/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch1/latched_in_45.
+Converting Generated Clock on instance \rc_receiver/recv_ch2/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch2/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch2/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch2/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch2/latched_in_45.
+Converting Generated Clock on instance \rc_receiver/recv_ch3/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch3/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch3/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch3/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch3/latched_in_45.
+Converting Generated Clock on instance \rc_receiver/recv_ch4/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch4/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch4/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch4/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch4/latched_in_45.
+Converting Generated Clock on instance \rc_receiver/recv_ch7/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch7/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch7/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch7/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch7/latched_in_45.
+Converting Generated Clock on instance \rc_receiver/recv_ch8/prev_in_46.
+Converting Generated Clock on instance \rc_receiver/recv_ch8/count.
+Converting Generated Clock on instance \rc_receiver/recv_ch8/valid_48.
+Converting Generated Clock on instance \rc_receiver/recv_ch8/period.
+Converting Generated Clock on instance \rc_receiver/recv_ch8/latched_in_45.
 
 Extracted state machine for register: \protocol_interface/state
 
@@ -200,20 +310,30 @@ WARNING - synthesis: Bit 9 of Register \protocol_interface/state_FSM is stuck at
 WARNING - synthesis: Bit 10 of Register \protocol_interface/state_FSM is stuck at Zero
 WARNING - synthesis: Bit 0 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \motor_pwm/read_size is stuck at Zero
-GSR instance connected to net n4454.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1001): Register reset_count_1939__i15 is stuck at One. VDB-5014
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v(1001): Register reset_count_1939__i14 is stuck at Zero. VDB-5013
+GSR instance connected to net signal_light_c.
+######## GSR will not be inferred because the gsr attribute is present in either the top or sub module or because an instantiated GSR is present.
+INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 Writing LPF file Uniboard_verilog_impl1.lpf.
+UniboardTop_prim.v file will not be written because encrypted design file is being used
+
 Results of NGD DRC are available in UniboardTop_drc.log.
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/data/neoprims.ngl'...
+Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/data/neomacro.ngl'...
+Loading NGO design 'lngotmp/pmi_ram_dpXbnonesadr11211211401afe.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dpXbnonesadr17825617825611aca37d.ngo'...
+Logic has been added to the IP to support JTAG capability.
+Loading NGO design '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2chub.ngl'...
 WARNING - synthesis: logical net 'Stepper_X_nFault' has no load.
 WARNING - synthesis: input pad net 'Stepper_X_nFault' has no legal load.
 WARNING - synthesis: logical net 'Stepper_Y_nFault' has no load.
@@ -244,52 +364,90 @@ WARNING - synthesis: logical net 'encoder_li' has no load.
 WARNING - synthesis: input pad net 'encoder_li' has no legal load.
 WARNING - synthesis: logical net 'xbee_pause' has no load.
 WARNING - synthesis: input pad net 'xbee_pause' has no legal load.
-WARNING - synthesis: DRC complete with 30 warnings.
+WARNING - synthesis: logical net 'UniboardTop_reveal_coretop_instance/jupdate[0]' has no load.
+WARNING - synthesis: logical net 'xo2chub/tdoa' has no load.
+WARNING - synthesis: logical net 'xo2chub/cdn' has no load.
+WARNING - synthesis: logical net 'xo2chub/ip_enable[15]' has no load.
+WARNING - synthesis: logical net 'xo2chub/genblk7.un1_jtagf_u' has no load.
+WARNING - synthesis: logical net 'xo2chub/genblk7.un1_jtagf_u_1' has no load.
+WARNING - synthesis: logical net 'xo2chub/bit_count_cry_0_S0[0]' has no load.
+WARNING - synthesis: logical net 'xo2chub/bit_count_cry_0_COUT[3]' has no load.
+WARNING - synthesis: logical net 'xo2chub/rom_rd_addr_cry_0_S0[0]' has no load.
+WARNING - synthesis: logical net 'xo2chub/rom_rd_addr_s_0_S1[7]' has no load.
+WARNING - synthesis: logical net 'xo2chub/rom_rd_addr_s_0_COUT[7]' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_16_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_16_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_15_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_15_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_13_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_13_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_11_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_11_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_9_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_9_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_7_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_7_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_5_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_5_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_3_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_3_0_0_S1' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_1_0_0_S0' has no load.
+WARNING - synthesis: logical net 'xo2chub/jtdo2_int_prm_1_0_0_COUT' has no load.
+WARNING - synthesis: DRC complete with 59 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.
 
 ################### Begin Area Report (UniboardTop)######################
-Number of register bits => 490 of 7209 (6 % )
-CCU2D => 176
-FD1P3AX => 146
-FD1P3IX => 99
-FD1P3JX => 49
-FD1S3AX => 67
-FD1S3IX => 115
-FD1S3JX => 6
+Number of register bits => 843 of 7209 (11 % )
+CCU2D => 242
+FD1P3AX => 154
+FD1P3BX => 34
+FD1P3DX => 219
+FD1P3IX => 88
+FD1P3JX => 97
+FD1S3AX => 61
+FD1S3DX => 55
+FD1S3IX => 109
+FD1S3JX => 18
 GSR => 1
 IB => 8
 IFS1P3DX => 6
-L6MUX21 => 8
-LUT4 => 733
+INV => 1
+L6MUX21 => 10
+LUT4 => 1219
 OB => 39
 OBZ => 6
-OFS1P3DX => 2
-PFUMX => 48
+OFS1P3IX => 2
+PFUMX => 79
+pmi_ram_dpXbnonesadr11211211401afe => 1
+pmi_ram_dpXbnonesadr17825617825611aca37d => 1
 ################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+jtagconn16 => 1
+################### End BlackBox Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 5
-  Net : debug_c_c, loads : 239
-  Net : clk_255kHz, loads : 206
-  Net : select_2, loads : 33
-  Net : select_7, loads : 18
+Number of Clocks: 4
+  Net : clk_12MHz_c, loads : 653
+  Net : n110, loads : 176
+  Net : select[7], loads : 18
   Net : bclk, loads : 14
 Clock Enable Nets
-Number of Clock Enables: 45
+Number of Clock Enables: 83
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n1149, loads : 51
-  Net : register_addr_0, loads : 43
-  Net : rw, loads : 41
-  Net : n1157, loads : 37
-  Net : sendcount_0, loads : 34
-  Net : n7085, loads : 32
-  Net : n2140, loads : 32
-  Net : sendcount_1, loads : 29
-  Net : n14318, loads : 20
-  Net : register_addr_1, loads : 19
+  Net : n112, loads : 171
+  Net : n24857, loads : 151
+  Net : n24929, loads : 134
+  Net : register_addr[0], loads : 57
+  Net : n1380, loads : 50
+  Net : n24922, loads : 48
+  Net : ip_enable[0], loads : 42
+  Net : rw, loads : 38
+  Net : addr[0], loads : 37
+  Net : n1388, loads : 36
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -308,8 +466,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 214.664  MB
+Peak Memory Usage: 221.715  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 5.748  secs
+Elapsed CPU time for LSE flow : 7.604  secs
 --------------------------------------------------------------

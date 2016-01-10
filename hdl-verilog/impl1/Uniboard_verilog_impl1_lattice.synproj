@@ -27,15 +27,18 @@
 
 
 -lpf 1
--p "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog"
--ver "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uart.v"
-"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/clk.v"
-"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v"
-"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v"
+-ver "/usr/local/diamond/3.4_x64/cae_library/synthesis/verilog/pmi_def.v"
+-ver "/usr/local/diamond/3.4_x64/module/reveal/src/ertl/ertl.v"
+-ver "/usr/local/diamond/3.4_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v"
+-ver "/usr/local/diamond/3.4_x64/module/reveal/src/rvl_j2w_module/wb2sci.v"
+-key "/usr/local/diamond/3.4_x64/module/reveal/document/reveal_test.dat"
+-ver "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_trig_gen.v"
+-ver "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/uniboardtop_la0_gen.v"
+-ver "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/tmpreveal/UniboardTop_rvl.v"
 -top UniboardTop
 
 
--p "/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data" "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1" "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog"
+-p "/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data" "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1" "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog" "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/impl1/reveal_workspace/MotorPWM_reset"
 
 -ngd "Uniboard_verilog_impl1.ngd"
 

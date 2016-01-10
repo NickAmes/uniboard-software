@@ -1,7 +1,7 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
  * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
-`default_nettype none
+//`default_nettype none
 
 /* Parametric clock divider. */
 module ClockDividerP(

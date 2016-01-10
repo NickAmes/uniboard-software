@@ -217,7 +217,7 @@ class Uniboard:
 		   number of bytes. Value is a list or string containing the data bytes from the packet.
 		   On error, a message will be printed to stderr."""
 		if self._rsize(peripheral, register) != len(value):
-			self._error("Reply data wrong size small. Peripheral/register: 0x%02X/0x%02X. Expected size: %d. Received size: %d."%(peripheral, register, self._rsize(peripheral, register), len(value)))
+			self._error("Reply data wrong size. Peripheral/register: 0x%02X/0x%02X. Expected size: %d. Received size: %d."%(peripheral, register, self._rsize(peripheral, register), len(value)))
 			return
 		if self._rsize(peripheral, register) == 0:
 			return
@@ -261,8 +261,10 @@ class Uniboard:
 		if r[2] != chr(expected_register):
 			self._error("Incorrect register in reply. Expected peripheral/register: 0x%02X/0x%02X. Reply: %s"%(expected_peripheral, expected_register, " ".join("{:02x}".format(ord(c)) for c in r)))
 		size = self._rsize(expected_peripheral, expected_register)
+		data = r[3:-1]
+		if size != len(data):
+			self._error("Reply data wrong size. Peripheral/register: 0x%02X/0x%02X. Expected size: %d. Received size: %d."%(expected_peripheral, expected_register, size, len(data)))
 		if len(r) > 4:
-			data = r[3:-1]
 			self._check_reply(expected_peripheral, expected_register, data)
 			return self._btn(data)
 		else:

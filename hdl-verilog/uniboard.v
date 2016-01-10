@@ -19,7 +19,7 @@
  * For a read operation, databus and reg_size will be set as long as select is high. The databus should
  * be set to the read value within one cycle of raising select. Once set, it must not change until select
  * goes low. */
-`default_nettype none
+//`default_nettype none
  
  
 /* Implements the Uniboard computer interface protocol. This module must be reset 
@@ -522,7 +522,8 @@ module UniboardTop(
 						     .clk_i(clk_12MHz),
 	                         .clk_o(clk_255kHz),
 	                         .reset(reset));
-	PWMPeripheral motor_pwm(.clk_255kHz(clk_255kHz),
+	PWMPeripheral motor_pwm(.clk_12MHz(clk_12MHz),
+                            .clk_255kHz(clk_255kHz),
 	                        .databus(databus),
 	                        .reg_size(reg_size),
 	                        .register_addr(register_addr),

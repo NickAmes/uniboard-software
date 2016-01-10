@@ -21,7 +21,13 @@
         <Source name="constraints.ldc" type="LSE Design Constraints File" type_short="LDC">
             <Options/>
         </Source>
-        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming" excluded="TRUE">
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="impl1/reveal projects/MotorPWM_reset.rvl" type="Reveal" type_short="Reveal">
+            <Options/>
+        </Source>
+        <Source name="impl1/reveal projects/untitled.rva" type="Reveal Analyzer Project File" type_short="RVA">
             <Options/>
         </Source>
     </Implementation>

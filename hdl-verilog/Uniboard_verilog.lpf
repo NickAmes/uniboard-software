@@ -1,3 +1,4 @@
+rvl_alias "clk_12MHz" "clk_12MHz";
 BLOCK RESETPATHS;
 BLOCK ASYNCPATHS;
 LOCATE COMP "Stepper_X_En" SITE "105" ;
@@ -68,3 +69,4 @@ LOCATE COMP "debug[5]" SITE "117" ;
 LOCATE COMP "debug[6]" SITE "119" ;
 LOCATE COMP "debug[7]" SITE "121" ;
 LOCATE COMP "debug[8]" SITE "122" ;
+BLOCK JTAGPATHS;

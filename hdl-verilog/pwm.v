@@ -1,7 +1,7 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
  * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
-`default_nettype none
+//`default_nettype none
 
 /* PWM generator.
  * Outputs a 1ms (0) to 2ms (255) pulse every 20ms. */
@@ -40,6 +40,7 @@ endmodule
 
 /* Motor PWM Peripheral. */
 module PWMPeripheral(
+	input wire clk_12MHz,
 	input wire clk_255kHz,
 	inout wire [31:0] databus,
 	output tri [2:0] reg_size, /* Register size (in bytes), to set command reply size. */
@@ -55,6 +56,7 @@ module PWMPeripheral(
 	/* Bus read handling */
 	reg [7:0] read_value;
 	reg [2:0] read_size;
+	reg prev_select;
 	
 	assign reg_size = select ? read_size : 'bz;
 	assign databus = (select & rw) ? {24'd0, read_value} : 'bz;
@@ -62,39 +64,43 @@ module PWMPeripheral(
 	//TODO: Go to 127 on pause
 	
 	/* Bus write handling */
-	always @ (posedge select)			
+	always @ (posedge clk_12MHz)			
 		begin
+			prev_select <= select;
 			if(reset)
 				begin
 					register[0] <= 8'd127;
 					register[1] <= 8'd127;
 				end
 			else
-				case(register_addr)
-					8'd0:
-						begin
-							read_value <= register[0];
-							read_size <= 3'd1;
-						end
-					8'd1:
-						begin
-							read_value <= register[1];
-							read_size <= 3'd1;
-						end
-					default:
-						begin
-							read_value <= 'b0;
-							read_size <= 'b0;
-						end
-				endcase
-				if(~rw)
+				if(~prev_select & select)
 					begin
 						case(register_addr)
 							8'd0:
-								register[0] <= databus[7:0];
+								begin
+									read_value <= register[0];
+									read_size <= 3'd1;
+								end
 							8'd1:
-								register[1] <= databus[7:0];
+								begin
+									read_value <= register[1];
+									read_size <= 3'd1;
+								end
+							default:
+								begin
+									read_value <= 'b0;
+									read_size <= 'b0;
+								end
 						endcase
+						if(~rw)
+							begin
+								case(register_addr)
+									8'd0:
+										register[0] <= databus[7:0];
+									8'd1:
+										register[1] <= databus[7:0];
+								endcase
+							end
 					end
 		end
 		
