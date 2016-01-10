@@ -95,16 +95,16 @@ rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2
 rc_receiver/recv_ch3/N_1
 rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_2
 rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_2
-rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_0
-rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_0
+rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_1
+rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_1
 rc_receiver/recv_ch4/N_1
-rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_0
-rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_0
-rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_1
-rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_1
+rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_1
+rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_1
+rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0
+rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0
 rc_receiver/recv_ch7/N_1
-rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_1
-rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_1
+rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0
+rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0
 rc_receiver/recv_ch8/un66_count_1_cry_0_0_S1
 rc_receiver/recv_ch8/un66_count_1_cry_0_0_S0
 rc_receiver/recv_ch8/N_1
@@ -116,7 +116,7 @@ N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sat Jan  9 16:49:36 2016
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sat Jan  9 17:11:10 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;
@@ -174,5 +174,6 @@ LOCATE COMP "clk_12MHz" SITE "128" ;
 LOCATE COMP "status_led[2]" SITE "107" ;
 LOCATE COMP "status_led[1]" SITE "109" ;
 LOCATE COMP "status_led[0]" SITE "110" ;
+FREQUENCY PORT "clk_12MHz" 11.900000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

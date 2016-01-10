@@ -4,7 +4,7 @@ Running in Lattice mode
 Starting:    /usr/local/diamond/3.4_x64/synpbase/linux_a_64/mbin/synbatch
 Install:     /usr/local/diamond/3.4_x64/synpbase
 Hostname:    nick-laptop
-Date:        Sat Jan  9 16:51:36 2016
+Date:        Sat Jan  9 17:09:00 2016
 Version:     J-2014.09L
 
 Arguments:   -product synplify_pro  -batch Uniboard_impl1_synplify.tcl
@@ -62,7 +62,7 @@ Copied /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l -
 
 premap Completed with warnings
 Return Code: 1
-Run Time:00h:00m:01s
+Run Time:00h:00m:00s
 
 Complete: Compile on proj_1|impl1
 

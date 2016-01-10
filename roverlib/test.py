@@ -34,6 +34,7 @@ while True:
 	print " ",
 	print u._read_reg(4,2),
 	print " ",
+	u._write_reg(4,3,i)
 	print u._read_reg(4,3),
 	print " ",
 	u.motor_right(float(i % 256)/255.0 - 127.5)

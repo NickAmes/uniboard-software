@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jan  9 16:51:46 2016
+# Timing Report written on Sat Jan  9 17:09:09 2016
 #
 
 
@@ -21,7 +21,7 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.326
+Worst slack in design: 0.365
 
                                                   Requested     Estimated     Requested     Estimated                Clock                        Clock           
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack      Type                         Group           
@@ -30,7 +30,7 @@ ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      NA            84
 ClockDivider|clk_o_derived_clock                  11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
-clk_12MHz                                         11.9 MHz      92.5 MHz      84.000        10.810        73.190     declared                     default_clkgroup
+clk_12MHz                                         11.9 MHz      109.9 MHz     84.000        9.097         74.903     declared                     default_clkgroup
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -43,7 +43,7 @@ Clocks                |    rise  to  rise   |    fall  to  fall   |    rise  to 
 ------------------------------------------------------------------------------------------------------------
 Starting   Ending     |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------
-clk_12MHz  clk_12MHz  |  0.000       0.326  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_12MHz  clk_12MHz  |  0.000       0.365  |  No paths    -      |  No paths    -      |  No paths    -    
 ============================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -70,16 +70,16 @@ Starting Points with Worst Slack
 Instance                                          Reference     Type         Pin     Net                                        Time        Slack
                                                   Clock                                                                                          
 -------------------------------------------------------------------------------------------------------------------------------------------------
-reset                                             clk_12MHz     FD1S3AY      Q       debug_c[6]                                 0.887       0.326
 protocol_interface.uart_input.baud_reset          clk_12MHz     FD1S3AY      Q       baud_reset                                 0.927       0.365
-interface_reset                                   clk_12MHz     FD1S3AY      Q       interface_reset                            0.954       0.392
+interface_reset                                   clk_12MHz     FD1S3AY      Q       interface_reset                            0.955       0.393
+reset                                             clk_12MHz     FD1S3AY      Q       debug_c[6]                                 1.018       0.456
 protocol_interface.uart_output.baud_gen.clk_o     clk_12MHz     FD1S3AX      Q       bclk                                       0.775       0.528
+protocol_interface.select_0[7]                    clk_12MHz     FD1S3AX      Q       select_0_Q[7]                              0.826       0.578
 protocol_interface_uart_input_rdata_0_io          clk_12MHz     IFS1P3DX     Q       protocol_interface.uart_input.rdata_0_     0.680       0.606
 protocol_interface.uart_input.rdata_1_            clk_12MHz     FD1P3AX      Q       rdata_1_                                   0.680       0.606
 protocol_interface.uart_input.rdata_2_            clk_12MHz     FD1P3AX      Q       rdata_2_                                   0.680       0.606
 protocol_interface.uart_input.rdata_3_            clk_12MHz     FD1P3AX      Q       rdata_3_                                   0.680       0.606
 protocol_interface.uart_input.rdata_4_            clk_12MHz     FD1P3AX      Q       rdata_4_                                   0.680       0.606
-protocol_interface.uart_input.rdata_5_            clk_12MHz     FD1P3AX      Q       rdata_5_                                   0.680       0.606
 =================================================================================================================================================
 
 
@@ -90,7 +90,6 @@ Ending Points with Worst Slack
 Instance                                              Reference     Type        Pin     Net            Time         Slack
                                                       Clock                                                              
 -------------------------------------------------------------------------------------------------------------------------
-pwm_clk_div.count\[0\]                                clk_12MHz     FD1S3IX     CD      debug_c[6]     0.562        0.326
 protocol_interface.uart_input.baud_gen.clk_o          clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[0\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[1\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
@@ -100,6 +99,7 @@ protocol_interface.uart_input.baud_gen.count\[4\]     clk_12MHz     FD1S3IX     
 protocol_interface.uart_input.baud_gen.count\[5\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[6\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 protocol_interface.uart_input.baud_gen.count\[7\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
+protocol_interface.uart_input.baud_gen.count\[8\]     clk_12MHz     FD1S3IX     CD      baud_reset     0.562        0.365
 =========================================================================================================================
 
 
@@ -109,26 +109,26 @@ Worst Path Information
 
 
 Path information for path number 1: 
-    Propagation time:                        0.887
+    Propagation time:                        0.927
     + Clock delay at starting point:         0.000 (ideal)
     - Requested Period:                      0.000
     - Hold time:                             0.562
     - Clock delay at ending point:           0.000 (ideal)
-    = Slack (critical) :                     0.325
+    = Slack (critical) :                     0.365
 
     Number of logic level(s):                0
-    Starting point:                          reset / Q
-    Ending point:                            pwm_clk_div.count\[0\] / CD
+    Starting point:                          protocol_interface.uart_input.baud_reset / Q
+    Ending point:                            protocol_interface.uart_input.baud_gen.clk_o / CD
     The start point is clocked by            clk_12MHz [rising] on pin CK
     The end   point is clocked by            clk_12MHz [rising] on pin CK
 
-Instance / Net                         Pin      Pin               Arrival     No. of    
-Name                       Type        Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------
-reset                      FD1S3AY     Q        Out     0.887     0.887       -         
-debug_c[6]                 Net         -        -       -         -           17        
-pwm_clk_div.count\[0\]     FD1S3IX     CD       In      0.000     0.887       -         
-========================================================================================
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                             Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+protocol_interface.uart_input.baud_reset         FD1S3AY     Q        Out     0.927     0.927       -         
+baud_reset                                       Net         -        -       -         -           34        
+protocol_interface.uart_input.baud_gen.clk_o     FD1S3IX     CD       In      0.000     0.927       -         
+==============================================================================================================
 
 
 

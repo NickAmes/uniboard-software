@@ -57,11 +57,11 @@ module ArmPeripheral(
 	logic stepclk;
 	logic int_step; /* internal step: on rising edge */
 	logic prev_select;
-	logic prev_stepclk;
-	ClockDividerP step_clock_div(.clk_i(clk_12MHz),
-	                            .clk_o(stepclk),
-	                            //.factor(register[2]),
-	                            .reset(reset));
+// 	logic prev_stepclk;
+// 	ClockDivider step_clock_div(.clk_i(clk_12MHz),
+// 	                            .clk_o(stepclk),
+// 	                            .factor(register[2]),
+// 	                            .reset(reset));
 	
 	always @ (posedge clk_12MHz)
 		begin
@@ -76,7 +76,7 @@ module ArmPeripheral(
 				end
 			else
  				begin
-					if(~prev_select & select)
+					if(rw & ~prev_select & select)
 						begin
 							case(register_addr)
 								axis_haddr + 8'd0: /* Config register */
@@ -109,18 +109,18 @@ module ArmPeripheral(
 						
 					
 					
-// 					/* Bus write handling. */
-// 					if(~rw & ~prev_select & select) /* Rising edge on select with rw low: write register. */
-// 						begin
-// 							case(register_addr)
-// 								axis_haddr + 8'd0:
-// 									register[0] <= databus;
-// 								axis_haddr + 8'd2:
-// 									register[2] <= databus;
-// 								axis_haddr +8'd3:
-// 									register[3] <= databus;
-// 							endcase
-// 						end
+					/* Bus write handling. */
+					if(~rw & ~prev_select & select) /* Rising edge on select with rw low: write register. */
+						begin
+							case(register_addr)
+								axis_haddr + 8'd0:
+									register[0] <= databus;
+								axis_haddr + 8'd2:
+									register[2] <= databus;
+								axis_haddr +8'd3:
+									register[3] <= databus;
+							endcase
+						end
 // 					if(~stepclk)
 // 						int_step <= 0;
 // 					if(~prev_stepclk & stepclk & register[1][2] 
