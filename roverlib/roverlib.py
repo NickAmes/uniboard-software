@@ -59,6 +59,9 @@ class Uniboard:
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
 		#as the most significant byte. For example, register 3 on peripheral 7 would have the key 0x0703.
 		self._periph_mask = {
+			#Global Control
+			0x0100:0x02,
+			
 			#Motor PWM
 			0x0200:0xFF,
 			0x0201:0xFF,
@@ -76,6 +79,13 @@ class Uniboard:
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
 		#as the most significant byte. For example, register 3 on peripheral 7 would have the key 0x0703.
 		self._periph_size = {
+			#Global Control
+			0x0100:1,
+			0x0101:2,
+			0x0102:4,
+			0x0103:4,
+			0x0104:2,
+			
 			#Motor PWM
 			0x0200:1,
 			0x0201:1,
@@ -100,6 +110,42 @@ class Uniboard:
 	
 	#Public API Starts Here
 	#Global Control
+	def paused(self):
+		"""Returns True if the rover is paused and False if it is not."""
+		if self._read_reg(1,0) != 0:
+			return True
+		else:
+			return False
+	def force_pause(self, pause_state):
+		"""Set the forced-pause state of the rover. If True, the rover will
+		   be paused regardless of the pause input from the remote. If False,
+		   the forced pause will be disabled. However, the rover will still be
+		   paused if commanded by the remote."""
+		if pause_state:
+			self._write_reg(1,0,2)
+		else:
+			self._write_reg(1,0,0)
+			
+	def battery_voltage(self):
+		"""Return the battery voltage in volts."""
+		return float(self._read_reg(1,1)) * .001
+	
+	def uptime(self):
+		"""Return the number of seconds that the Uniboard has been powered on."""
+		return self._read_reg(1,2)
+	
+	def hdl_version(self):
+		"""Return the Uniboard HDL version (a unique version number that increments with each
+		   build of the HDL code."""
+		return self._read_reg(1,3)
+	
+	def api_version(self):
+		"""Return the Uniboard API version, as a tuple (major, minor). The API is specified in the
+		   matching revision of the manual."""
+		raw = self._read_reg(1,4)
+		t = ((raw >> 8), raw & 0xFF)
+		return t
+	
 	#Drive Motors
 	def motor_left(self, speed_f):
 		"""Set the left drive motors' speed. speed_f is a float from -1 to 1, with -1 meaning reverse,

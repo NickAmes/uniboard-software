@@ -3771,18 +3771,6 @@
         </nets>
     </instance>
 
-    <instance  name = "i34"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "i"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "global_pause"  />
-        <nitem  name = "signal_light"  />
-        </nets>
-    </instance>
-
     <instance  name = "reset_count"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "d[15]"  direction = "in"  />
@@ -30190,14 +30178,14 @@
     <instance  name = "\global_control/i112"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
         </pins>
 
         <nets>
-        <nitem  name = "global_pause"  />
-        <nitem  name = "xbee_pause"  />
+        <nitem  name = "signal_light"  />
         <nitem  name = "\global_control/force_pause"  />
+        <nitem  name = "\global_control/register[0][2]"  />
         </nets>
     </instance>
 
@@ -30209,7 +30197,7 @@
 
         <nets>
         <nitem  name = "xbee_pause"  />
-        <nitem  name = "\global_control/register[0][2]"  />
+        <nitem  name = "\global_control/n201"  />
         </nets>
     </instance>
 
@@ -30717,7 +30705,7 @@
         <nets>
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
-        <nitem  name = "global_pause"  />
+        <nitem  name = "signal_light"  />
         <nitem  name = "n1"  />
         <nitem  name = "n2"  />
         <nitem  name = "\global_control/force_pause"  />
@@ -31970,7 +31958,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/prev_clk_1Hz_147"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/prev_clk_1Hz_148"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -31987,7 +31975,24 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/force_pause_148"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/xbee_pause_latched_149"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\global_control/n1"  />
+        <nitem  name = "clk_12MHz"  />
+        <nitem  name = "\global_control/register[0][2]"  />
+        <nitem  name = "\global_control/n201"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\global_control/force_pause_150"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -32439,7 +32444,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/tri_151"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/tri_153"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[31]"  direction = "out"  />
         <pitem  name = "o[30]"  direction = "out"  />
@@ -32577,7 +32582,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/prev_select_146"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/prev_select_147"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -32594,7 +32599,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/tri_152"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/tri_154"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
@@ -53030,7 +53035,7 @@
     </instance>
 
     <!--
-        REG instances in netlist: 78
+        REG instances in netlist: 79
     -->
 
     <regs>
@@ -53047,12 +53052,13 @@
         <reg  name = "\protocol_interface/databus_out"  />
         <reg  name = "\protocol_interface/escape_501"  />
         <reg  name = "\protocol_interface/state"  />
-        <reg  name = "\global_control/prev_clk_1Hz_147"  />
-        <reg  name = "\global_control/force_pause_148"  />
+        <reg  name = "\global_control/prev_clk_1Hz_148"  />
+        <reg  name = "\global_control/xbee_pause_latched_149"  />
+        <reg  name = "\global_control/force_pause_150"  />
         <reg  name = "\global_control/uptime_count"  />
         <reg  name = "\global_control/read_value"  />
         <reg  name = "\global_control/read_size"  />
-        <reg  name = "\global_control/prev_select_146"  />
+        <reg  name = "\global_control/prev_select_147"  />
         <reg  name = "\pwm_clk_div/clk_o_15"  />
         <reg  name = "\pwm_clk_div/count"  />
         <reg  name = "\motor_pwm/register[0]"  />

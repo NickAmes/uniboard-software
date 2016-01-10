@@ -23,6 +23,7 @@ module GlobalControlPeripheral(
 	reg [31:0] uptime_count;
 	wire clk_1Hz;
 	reg prev_clk_1Hz;
+	reg xbee_pause_latched;
 	
 	/* Bus read handling */
 	reg [31:0] read_value;
@@ -33,8 +34,8 @@ module GlobalControlPeripheral(
 	assign databus = (select & rw) ? {24'd0, read_value} : 'bz;
 	
 	/* Register assignments */
-	assign global_pause = xbee_pause_n | force_pause;
-	assign register[0] = {29'b0, ~xbee_pause_n, force_pause, global_pause};
+	assign global_pause = xbee_pause_latched | force_pause;
+	assign register[0] = {29'b0, xbee_pause_latched, force_pause, global_pause};
 	assign register[1] = {16'b0, battery_voltage};
 	assign register[2] = uptime_count;
 	assign register[3] = hdl_build;
@@ -45,7 +46,7 @@ module GlobalControlPeripheral(
 		begin
 			prev_select <= select;
 			prev_clk_1Hz <= clk_1Hz;
-			
+			xbee_pause_latched <= ~xbee_pause_n;
 			if(reset == 1)
 				begin
 					force_pause <= 0;
