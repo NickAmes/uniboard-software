@@ -1,9 +1,10 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sun Jan 10 00:39:59 2016 *
+NOTE DATE CREATED: Sun Jan 10 01:31:42 2016 *
 NOTE DESIGN NAME: UniboardTop *
 NOTE DEVICE NAME: LCMXO2-7000HC-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
+NOTE PINS xbee_pause : 4 : in *
 NOTE PINS rc_ch8 : 41 : in *
 NOTE PINS rc_ch7 : 42 : in *
 NOTE PINS rc_ch4 : 43 : in *

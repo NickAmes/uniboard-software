@@ -14,7 +14,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sun Jan 10 00:39:41 2016
+Sun Jan 10 01:31:24 2016
 
 Pinout by Port Name:
 +----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -73,6 +73,7 @@ Pinout by Port Name:
 | status_led[2]  | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | uart_rx        | 133/0    | LVCMOS25_IN  | PT15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | uart_tx        | 132/0    | LVCMOS25_OUT | PT15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| xbee_pause     | 4/5      | LVCMOS25_IN  | PL4B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 +----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -99,7 +100,7 @@ Vccio by Bank:
 | 1/5      |     unused, PULL:DOWN |            |              | PL3A  | L_GPLLT_FB     |           |           |
 | 2/5      |     unused, PULL:DOWN |            |              | PL3B  | L_GPLLC_FB     |           |           |
 | 3/5      |     unused, PULL:DOWN |            |              | PL4A  | L_GPLLT_IN     |           |           |
-| 4/5      |     unused, PULL:DOWN |            |              | PL4B  | L_GPLLC_IN     |           |           |
+| 4/5      | xbee_pause            | LOCATED    | LVCMOS25_IN  | PL4B  | L_GPLLC_IN     |           |           |
 | 5/5      | motor_pwm_l           | LOCATED    | LVCMOS25_OUT | PL6A  | PCLKT5_0       |           |           |
 | 6/5      | motor_pwm_r           | LOCATED    | LVCMOS25_OUT | PL6B  | PCLKC5_0       |           |           |
 | 9/5      |     unused, PULL:DOWN |            |              | PL8A  |                |           |           |
@@ -500,6 +501,7 @@ LOCATE  COMP  "status_led[1]"  SITE  "109";
 LOCATE  COMP  "status_led[2]"  SITE  "107";
 LOCATE  COMP  "uart_rx"  SITE  "133";
 LOCATE  COMP  "uart_tx"  SITE  "132";
+LOCATE  COMP  "xbee_pause"  SITE  "4";
 
 
 
@@ -511,7 +513,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 00:39:41 2016
+Sun Jan 10 01:31:24 2016
 
 
 

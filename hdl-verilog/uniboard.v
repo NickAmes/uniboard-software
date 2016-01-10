@@ -454,7 +454,6 @@ module UniboardTop(
 	assign expansion3 = 0;
 	assign expansion4 = 0;
 	assign expansion5 = 0;
-	assign signal_light = 0;
 	
 	
 	/* Debug and status LED assignments */
@@ -504,15 +503,24 @@ module UniboardTop(
 	                                           .drdy(drdy));
 	/* Dummy peripheral */
 	wire dummy_select;
-	assign dummy_select = | select[127:8] | select[0] | select[1] | select[3] | select[5] | select[6];
+	assign dummy_select = | select[127:8] | select[0] | select[3] | select[5] | select[6];
 	DummyPeripheral dummy(.databus(databus),
 	                      .reg_size(reg_size),
 	                      .rw(rw),
 	                      .select(dummy_select));
 	/* Global Control */
 	wire global_pause;
-	assign global_pause = 0;
-	
+	assign signal_light = ~global_pause;
+	GlobalControlPeripheral #(32'd0, 32'h0009) global_control(.clk_12MHz(clk_12MHz),
+	                                                          .databus(databus),
+	                                                          .reg_size(reg_size),
+	                                                          .register_addr(register_addr),
+	                                                          .rw(rw),
+	                                                          .select(select[1]),
+	                                                          .global_pause(global_pause),
+	                                                          .xbee_pause_n(xbee_pause),
+	                                                          .battery_voltage(16'd6),
+	                                                          .reset(reset));
 	/* Motor PWM */
 	wire clk_255kHz;
 	ClockDivider pwm_clk_div(.factor(32'd47),

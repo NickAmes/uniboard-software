@@ -12,7 +12,7 @@ module GlobalControlPeripheral(
 	input wire rw, /* 0 = write, 1 = read. */
 	input wire select, /* Rising edge writes or hold high to read. */
 	output wire global_pause,
-	input wire xbee_pause,
+	input wire xbee_pause_n,
 	input wire [15:0] battery_voltage,
 	input wire reset);
 	parameter hdl_build = 32'd0;
@@ -33,8 +33,8 @@ module GlobalControlPeripheral(
 	assign databus = (select & rw) ? {24'd0, read_value} : 'bz;
 	
 	/* Register assignments */
-	assign global_pause = xbee_pause | force_pause;
-	assign register[0] = {29'b0, xbee_pause, force_pause, global_pause};
+	assign global_pause = xbee_pause_n | force_pause;
+	assign register[0] = {29'b0, ~xbee_pause_n, force_pause, global_pause};
 	assign register[1] = {16'b0, battery_voltage};
 	assign register[2] = uptime_count;
 	assign register[3] = hdl_build;
@@ -98,7 +98,7 @@ module GlobalControlPeripheral(
 				end
 		end
 
-	ClockDividerP #(12000000) (.clk_i(clk_12MHz),
-	                           .clk_o(clk_1Hz),
-	                           .reset(reset));
+	ClockDividerP #(12000000) uptime_div(.clk_i(clk_12MHz),
+	                                     .clk_o(clk_1Hz),
+	                                     .reset(reset));
 endmodule

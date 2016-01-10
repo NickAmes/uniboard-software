@@ -5,53 +5,38 @@ import roverlib
 import time
 u = roverlib.Uniboard("/dev/ttyUSB1")
 
-#u._send(chr(0x01) + chr(0x1B) + chr(0x02) + chr(0x03) + chr(0x01) + chr(0x1B) + chr(0x01)) 
-#u._send(chr(0x01) + chr(0x02) + chr(0x01) + chr(0x01) + chr(0x17))
-#time.sleep(.1);
-#u._clear_input()
-#u._send(chr(0x01) + chr(0x82) + chr(0x01) + chr(0x34) + chr(0x17))
-#s = u._process_reply(0x82, 0x01)
+print u._read_reg(0,0)
+print u._read_reg(0,1)
+print u._read_reg(0,2)
+print u._read_reg(0,3)
+print u._read_reg(0,4)
 
-#u._write_reg(0x02, 0x00, 5)
-#s = u._read_reg(0x02, 0x00)
-#print s
-
-#print u.rc_valid()
-#print u.rc_value(8)
-
+#i = 0
 #while True:
-	#print "\x1B[2J\x1B[H",
+	##print u._read_reg(4,0),
+	##print " ",
+	##print u._read_reg(4,1),
+	##print " ",
+	##print u._read_reg(4,2),
+	##print " ",
+	##u._write_reg(4, 0, 0xAA)
+	##u._write_reg(4,3,500)
+	##u._write_reg(4,2,24000)
+	##print u._read_reg(4,3),
+	##print " ",
+	#u.motor_right(float(i % 256)/255.0 - 127.5)
+	#u.motor_left(float((i + 50) % 256)/255.0 - 127.5)
+	#print u._read_reg(2,0),
+	#print " ",
+	#print u._read_reg(2,1),
+	#print " ",
 	#for ch in [1, 2, 3, 4, 7, 8]:
 		#print "Ch. %d "%ch,
-		#print u.rc_value(ch)
-	#time.sleep(.1)
-
-i = 0
-while True:
-	#print u._read_reg(4,0),
+		#print u.rc_value(ch),
 	#print " ",
-	#print u._read_reg(4,1),
-	#print " ",
-	#print u._read_reg(4,2),
-	#print " ",
-	#u._write_reg(4, 0, 0xAA)
-	#u._write_reg(4,3,500)
-	#u._write_reg(4,2,24000)
-	#print u._read_reg(4,3),
-	#print " ",
-	u.motor_right(float(i % 256)/255.0 - 127.5)
-	u.motor_left(float((i + 50) % 256)/255.0 - 127.5)
-	print u._read_reg(2,0),
-	print " ",
-	print u._read_reg(2,1),
-	print " ",
-	for ch in [1, 2, 3, 4, 7, 8]:
-		print "Ch. %d "%ch,
-		print u.rc_value(ch),
-	print " ",
-	print "i = ",
-	print i
-	i+=1
+	#print "i = ",
+	#print i
+	#i+=1
 
 #from Tkinter import *
 #class App:
