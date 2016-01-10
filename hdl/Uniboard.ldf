@@ -21,6 +21,9 @@
         <Source name="Uniboard.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
+        <Source name="impl1/constraints.fdc" type="Synplify Design Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>

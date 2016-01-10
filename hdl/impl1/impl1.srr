@@ -32,9 +32,7 @@ Running on host :nick-laptop
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
 @I::"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv"
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+Options changed - recompiling
 Selecting top level module UniboardTop
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
 
@@ -66,113 +64,11 @@ Selecting top level module UniboardTop
 
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register bit read_size[1] is always 0, optimizing ...
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register bit read_size[2] is always 0, optimizing ...
-@N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv":6:7:6:19|Synthesizing module ClockDividerP
-
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":7:7:7:19|Synthesizing module ArmPeripheral
 
 	axis_haddr=8'b00000000
    Generated name = ArmPeripheral_0
 
-@W: CG133 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":60:7:60:18|No assignment to prev_stepclk
-@W: CL168 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":61:15:61:28|Pruning instance step_clock_div -- not in use ...
-
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit int_step is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][0] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][1] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][2] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][3] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][4] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][5] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][6] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][7] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][8] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][9] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][10] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][11] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][12] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][13] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][14] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][15] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][16] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][17] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][18] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][19] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][20] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][21] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][22] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][23] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][24] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][25] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][26] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][27] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][28] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][29] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][30] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[0][31] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][0] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][1] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][2] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][3] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][4] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][5] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][6] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][7] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][8] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][9] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][10] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][11] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][12] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][13] is always 1, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][14] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][15] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][16] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][17] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][18] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][19] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][20] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][21] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][22] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][23] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][24] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][25] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][26] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][27] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][28] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][29] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][30] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[2][31] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][0] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][1] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][2] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][3] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][4] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][5] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][6] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][7] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][8] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][9] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][10] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][11] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][12] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][13] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][14] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][15] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][16] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][17] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][18] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][19] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][20] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][21] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][22] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][23] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][24] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][25] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][26] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][27] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][28] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][29] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][30] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit register[3][31] is always 0, optimizing ...
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_size[1] is always 0, optimizing ...
 @N: CG364 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":113:7:113:17|Synthesizing module PWMReceiver
 
@@ -198,65 +94,44 @@ Selecting top level module UniboardTop
 @W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":408:13:408:22|Input xbee_pause is unused
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register bit count[14] is always 0, optimizing ...
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register bit count[15] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[2] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[4] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[8] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[12] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[14] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[15] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[16] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[17] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[18] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[19] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[20] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[21] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[22] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[23] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[24] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[25] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[26] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[27] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[28] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[29] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[30] is always 0, optimizing ...
-@W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Register bit read_value[31] is always 0, optimizing ...
-@W: CL159 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":14:13:14:17|Input pause is unused
 @W: CL189 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register bit bufcount[3] is always 0, optimizing ...
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 71MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 98MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 16:47:11 2016
+# Sat Jan  9 20:28:17 2016
 
 ###########################################################]
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 186: [: unexpected operator
 /usr/local/diamond/3.4_x64/synpbase/bin/syn_nfilter: 200: [: !=: argument expected
 Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
 @N|Running in 64-bit mode
+File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/layer0.srs changed - recompiling
 
-Linker output is up to date. No re-linking necessary
-
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 16:47:11 2016
+# Sat Jan  9 20:28:17 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 16:47:11 2016
+# Sat Jan  9 20:28:17 2016
 
 ###########################################################]
+Synopsys Netlist Linker, version comp201409rc, Build 144R, built Nov 10 2014
+@N|Running in 64-bit mode
+File /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_comp.srs changed - recompiling
 
-@A: multi_srs_gen output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Multi-srs Generator Report
-@R:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synlog/impl1_multi_srs_gen.srr"
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jan  9 20:28:18 2016
+
+###########################################################]
 Pre-mapping Report
 
 Synopsys Lattice Technology Pre-mapping, Version map201409latrcp1, Build 005R, Built Feb 11 2015 00:25:34
@@ -265,7 +140,7 @@ Product Version J-2014.09L
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
-Reading constraint file: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn_1.fdc
+Reading constraint file: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
 @L: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt 
 Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
@@ -300,7 +175,7 @@ Start                                             Requested     Requested     Cl
 Clock                                             Frequency     Period        Type                         Group           
 ---------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
-ClockDivider|clk_o_derived_clock                  11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ClockDivider_1|clk_o_derived_clock                11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 clk_12MHz                                         11.9 MHz      84.000        declared                     default_clkgroup
@@ -308,10 +183,10 @@ clk_12MHz                                         11.9 MHz      84.000        de
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 143MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 16:47:12 2016
+# Sat Jan  9 20:28:19 2016
 
 ###########################################################]
 Map & Optimize Report
@@ -338,7 +213,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -348,115 +223,21 @@ Available hyper_sources - for debug and ip models
 
             clk_12MHz
 
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":79:5:79:6|Removing user instance arm_x.read_value[13]_7,  because it is equivalent to instance arm_x.read_value[11]_7
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":79:5:79:6|Removing user instance arm_x.read_value[11]_7,  because it is equivalent to instance arm_x.read_value[9]_7
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":79:5:79:6|Removing user instance arm_x.read_value[10]_7,  because it is equivalent to instance arm_x.read_value[7]_7
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":79:5:79:6|Removing user instance arm_x.read_value[9]_7,  because it is equivalent to instance arm_x.read_value[6]_7
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Removing sequential instance arm_x.read_value[13],  because it is equivalent to instance arm_x.read_value[11]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Removing sequential instance arm_x.read_value[11],  because it is equivalent to instance arm_x.read_value[9]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Removing sequential instance arm_x.read_value[10],  because it is equivalent to instance arm_x.read_value[7]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Removing sequential instance arm_x.read_value[9],  because it is equivalent to instance arm_x.read_value[6]
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":79:5:79:6|Removing user instance arm_x.read_value[7]_7,  because it is equivalent to instance arm_x.read_value[6]_7
-@W: BN132 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Removing sequential instance arm_x.read_value[7],  because it is equivalent to instance arm_x.read_value[6]
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 @N: MF179 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":251:11:251:38|Found 5 bit by 5 bit '==' comparator, 'sendcount\[0\]2'
+@N:"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Found counter in view:work.ArmPeripheral_0(verilog) inst register\[3\][31:0]
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'count\[0\]2'
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 152MB peak: 152MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 158MB peak: 159MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 153MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 159MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 154MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 160MB)
 
-@N: FA113 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":27:18:27:41|Pipelining module un1_latched_width\[0\][8:0]
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":16:1:16:6|Register latched_width\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register register\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":64:1:64:6|Register register\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register valid pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[24\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[8\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[22\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[30\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[19\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[23\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[31\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[16\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[27\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[29\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[25\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[26\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[28\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[17\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[18\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[20\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[21\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[0\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[14\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[15\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[11\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[13\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[9\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[10\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[12\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[4\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[6\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[3\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[7\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[5\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[1\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[2\\\] pushed in.
-@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[4\\\] pushed in.
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[31] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[30] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[29] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
@@ -582,20 +363,97 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[34] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[33] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
 @N: BN362 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Removing sequential instance protocol_interface.select[32] in hierarchy view:work.UniboardTop(verilog) because there are no references to its outputs 
+@N: FA113 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":254:22:254:35|Pipelining module un20_sendcount_1[4:0]
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register sendcount\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register buffer\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[12\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[10\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[9\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[8\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[15\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[11\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[13\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[14\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[18\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[20\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[17\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[28\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[26\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[25\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[24\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[23\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[31\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[16\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[27\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[29\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register reg_addr\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[30\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[22\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[21\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Register databus_out\\\[19\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Register data\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register valid pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":126:1:126:6|Register period\\\[0\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[5\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[7\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[3\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[6\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[1\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[4\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[2\\\] pushed in.
+@N: MF169 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv":206:1:206:6|Register read_value\\\[0\\\] pushed in.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 154MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 160MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 154MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 153MB peak: 160MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 154MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 152MB peak: 160MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 154MB)
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 152MB peak: 160MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 192MB peak: 193MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 171MB peak: 199MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -604,29 +462,62 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 157MB peak: 193MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 171MB peak: 199MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_31_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_30_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_29_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_28_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_27_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_26_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_25_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_24_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_23_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_22_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_21_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_20_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_19_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_18_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_17_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_16_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_15_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_14_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_13_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_12_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_11_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_10_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_9_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_8_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_7_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_6_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_5_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_4_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_3_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_2_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_1_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.register\[0\]_0_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":66:1:66:6|Boundary register arm_x.int_step.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[3\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[0\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[2\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":70:1:70:6|Boundary register protocol_interface.state\[1\].fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 @A: BN291 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv":27:1:27:6|Boundary register protocol_interface.uart_input.drdy.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 157MB peak: 193MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 171MB peak: 199MB)
 
 
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 649 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 812 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-189 instances converted, 0 sequential instances remain driven by gated/generated clocks
+188 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================== Non-Gated/Non-Generated Clocks ===============================
 Clock Tree ID     Driving Element     Drive Element Type           Fanout     Sample Instance
 ---------------------------------------------------------------------------------------------
-@K:CKID0001       clk_12MHz           clock definition on port     649        interface_reset
+@K:CKID0001       clk_12MHz           clock definition on port     812        interface_reset
 =============================================================================================
 
 
@@ -634,30 +525,30 @@ Clock Tree ID     Driving Element     Drive Element Type           Fanout     Sa
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 155MB peak: 193MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:06s; Memory used current: 169MB peak: 199MB)
 
 Writing Analyst data base /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/synwork/impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 156MB peak: 193MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 170MB peak: 199MB)
 
 Writing EDIF Netlist and constraint files
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[2]. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ProtocolInterface_12s|select_derived_clock[7]. Clock will not be forward annotated
-@W: MT558 :|Unable to locate source for clock ClockDivider|clk_o_derived_clock. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock ClockDivider_1|clk_o_derived_clock. Clock will not be forward annotated
 @W: MT558 :|Unable to locate source for clock ClockDividerP_12s_1|clk_o_derived_clock. Clock will not be forward annotated
 J-2014.09L
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 193MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 174MB peak: 199MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 158MB peak: 193MB)
+Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 172MB peak: 199MB)
 
 Found clock clk_12MHz with period 84.00ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jan  9 16:47:18 2016
+# Timing Report written on Sat Jan  9 20:28:27 2016
 #
 
 
@@ -665,7 +556,7 @@ Top view:               UniboardTop
 Requested Frequency:    11.9 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn_1.fdc
+Constraint File(s):    /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -677,16 +568,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 73.190
+Worst slack in design: 72.449
 
                                                   Requested     Estimated     Requested     Estimated                Clock                        Clock           
 Starting Clock                                    Frequency     Frequency     Period        Period        Slack      Type                         Group           
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
-ClockDivider|clk_o_derived_clock                  11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
+ClockDivider_1|clk_o_derived_clock                11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      NA            84.000        NA            NA         derived (from clk_12MHz)     default_clkgroup
-clk_12MHz                                         11.9 MHz      92.5 MHz      84.000        10.810        73.190     declared                     default_clkgroup
+clk_12MHz                                         11.9 MHz      86.6 MHz      84.000        11.551        72.449     declared                     default_clkgroup
 ==================================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -701,7 +592,7 @@ Clocks                |    rise  to  rise    |    fall  to  fall   |    rise  to
 -------------------------------------------------------------------------------------------------------------
 Starting   Ending     |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -------------------------------------------------------------------------------------------------------------
-clk_12MHz  clk_12MHz  |  84.000      73.190  |  No paths    -      |  No paths    -      |  No paths    -    
+clk_12MHz  clk_12MHz  |  84.000      72.449  |  No paths    -      |  No paths    -      |  No paths    -    
 =============================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -724,41 +615,41 @@ Detailed Report for Clock: clk_12MHz
 Starting Points with Worst Slack
 ********************************
 
-                                    Starting                                         Arrival           
-Instance                            Reference     Type        Pin     Net            Time        Slack 
-                                    Clock                                                              
--------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.count\[0\]     clk_12MHz     FD1P3AX     Q       un7lto0        1.180       73.190
-rc_receiver.recv_ch4.count\[1\]     clk_12MHz     FD1P3JX     Q       un8lto1        1.180       73.190
-rc_receiver.recv_ch4.count\[2\]     clk_12MHz     FD1P3JX     Q       un8lto2        1.180       73.190
-rc_receiver.recv_ch4.count\[3\]     clk_12MHz     FD1P3JX     Q       count\[3\]     1.180       73.190
-rc_receiver.recv_ch4.count\[4\]     clk_12MHz     FD1P3IX     Q       count\[4\]     1.180       73.190
-rc_receiver.recv_ch2.count\[1\]     clk_12MHz     FD1P3JX     Q       un8lto1        1.180       73.830
-rc_receiver.recv_ch2.count\[2\]     clk_12MHz     FD1P3JX     Q       un8lto2        1.180       73.830
-rc_receiver.recv_ch2.count\[3\]     clk_12MHz     FD1P3JX     Q       count\[3\]     1.180       73.830
-rc_receiver.recv_ch2.count\[4\]     clk_12MHz     FD1P3IX     Q       count\[4\]     1.180       73.830
-rc_receiver.recv_ch2.count\[5\]     clk_12MHz     FD1P3IX     Q       count\[5\]     1.180       73.830
-=======================================================================================================
+                                     Starting                                                          Arrival           
+Instance                             Reference     Type        Pin     Net                             Time        Slack 
+                                     Clock                                                                               
+-------------------------------------------------------------------------------------------------------------------------
+protocol_interface.reg_addr\[2\]     clk_12MHz     FD1P3AX     Q       reg_addr\[2\]_Q                 1.180       72.449
+arm_x.register\[2\][0]               clk_12MHz     FD1P3IX     Q       register\[2\][0]                1.108       72.470
+protocol_interface.reg_addr\[3\]     clk_12MHz     FD1P3AX     Q       un1_protocol_interface_1[3]     1.044       72.585
+protocol_interface.reg_addr\[4\]     clk_12MHz     FD1P3AX     Q       un1_protocol_interface_1[4]     1.044       72.585
+protocol_interface.reg_addr\[5\]     clk_12MHz     FD1P3AX     Q       un1_protocol_interface_1[5]     1.044       72.585
+protocol_interface.reg_addr\[6\]     clk_12MHz     FD1P3AX     Q       un1_protocol_interface_1[6]     1.044       72.585
+protocol_interface.reg_addr\[7\]     clk_12MHz     FD1P3AX     Q       un1_protocol_interface_1[7]     1.044       72.585
+arm_x.register\[2\][1]               clk_12MHz     FD1P3IX     Q       register\[2\][1]                1.108       72.612
+arm_x.register\[2\][2]               clk_12MHz     FD1P3IX     Q       register\[2\][2]                1.108       72.612
+arm_x.register\[2\][3]               clk_12MHz     FD1P3IX     Q       register\[2\][3]                1.108       72.755
+=========================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                            Starting                                                Required           
-Instance                                    Reference     Type        Pin     Net                   Time         Slack 
-                                            Clock                                                                      
------------------------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.period\[1\]_pipe_1     clk_12MHz     FD1P3AX     D       period\[1\]_7_m1      84.089       73.190
-rc_receiver.recv_ch4.period\[3\]_pipe_1     clk_12MHz     FD1P3AX     D       period\[3\]_7_m1      84.089       73.190
-rc_receiver.recv_ch4.period\[4\]            clk_12MHz     FD1P3AX     D       period\[4\]_7         84.089       73.190
-rc_receiver.recv_ch4.period\[5\]            clk_12MHz     FD1P3AX     D       period\[5\]_7         84.089       73.190
-rc_receiver.recv_ch4.period\[7\]_pipe_1     clk_12MHz     FD1P3AX     D       period\[7\]_7_m1      84.089       73.190
-rc_receiver.recv_ch2.valid                  clk_12MHz     FD1P3AX     SP      valid_RNO_0           83.528       73.830
-rc_receiver.recv_ch4.period\[1\]_pipe       clk_12MHz     FD1P3AX     D       period\[1\]_7_m0      84.089       74.415
-rc_receiver.recv_ch4.period\[3\]_pipe       clk_12MHz     FD1P3AX     D       period\[3\]_7_m0      84.089       74.415
-rc_receiver.recv_ch4.period\[7\]_pipe       clk_12MHz     FD1P3AX     D       period\[7\]_7_m0      84.089       74.415
-rc_receiver.recv_ch4.period\[0\]_pipe_2     clk_12MHz     FD1P3AX     D       period\[2\]_7_sm0     83.894       74.837
-=======================================================================================================================
+                                    Starting                                                  Required           
+Instance                            Reference     Type        Pin     Net                     Time         Slack 
+                                    Clock                                                                        
+-----------------------------------------------------------------------------------------------------------------
+arm_x.register\[3\][31]             clk_12MHz     FD1P3AX     D       register\[3\]_s[31]     83.894       72.449
+arm_x.step_clock_div.count\[1\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[2\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[3\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[4\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[5\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[6\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[7\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[8\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+arm_x.step_clock_div.count\[9\]     clk_12MHz     FD1S3IX     CD      N_195_1_i               83.197       72.470
+=================================================================================================================
 
 
 
@@ -768,97 +659,133 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      84.000
-    - Setup time:                            -0.089
+    - Setup time:                            0.106
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         84.089
+    = Required time:                         83.894
 
-    - Propagation time:                      10.899
+    - Propagation time:                      11.446
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     73.190
+    = Slack (critical) :                     72.449
 
-    Number of logic level(s):                9
-    Starting point:                          rc_receiver.recv_ch4.count\[0\] / Q
-    Ending point:                            rc_receiver.recv_ch4.period\[1\]_pipe_1 / D
+    Number of logic level(s):                21
+    Starting point:                          protocol_interface.reg_addr\[2\] / Q
+    Ending point:                            arm_x.register\[3\][31] / D
     The start point is clocked by            clk_12MHz [rising] on pin CK
     The end   point is clocked by            clk_12MHz [rising] on pin CK
 
-Instance / Net                                              Pin      Pin               Arrival     No. of    
-Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------
-rc_receiver.recv_ch4.count\[0\]                FD1P3AX      Q        Out     1.180     1.180       -         
-un7lto0                                        Net          -        -       -         -           5         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto3      ORCALUT4     B        In      0.000     1.180       -         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto3      ORCALUT4     Z        Out     1.017     2.197       -         
-un1_count\[0\]_2lt5                            Net          -        -       -         -           1         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto5      ORCALUT4     C        In      0.000     2.197       -         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto5      ORCALUT4     Z        Out     1.017     3.213       -         
-un1_count\[0\]_2lt8                            Net          -        -       -         -           1         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto13     ORCALUT4     B        In      0.000     3.213       -         
-rc_receiver.recv_ch4.un1_count\[0\]_2lto13     ORCALUT4     Z        Out     1.089     4.302       -         
-un1_count\[0\]_2                               Net          -        -       -         -           2         
-rc_receiver.recv_ch4.valid18                   ORCALUT4     C        In      0.000     4.302       -         
-rc_receiver.recv_ch4.valid18                   ORCALUT4     Z        Out     1.089     5.391       -         
-valid18                                        Net          -        -       -         -           2         
-rc_receiver.recv_ch4.valid12_RNI8DDS           ORCALUT4     D        In      0.000     5.391       -         
-rc_receiver.recv_ch4.valid12_RNI8DDS           ORCALUT4     Z        Out     1.153     6.544       -         
-valid_1_sqmuxa                                 Net          -        -       -         -           3         
-rc_receiver.recv_ch4.un1_valid29               ORCALUT4     A        In      0.000     6.544       -         
-rc_receiver.recv_ch4.un1_valid29               ORCALUT4     Z        Out     1.265     7.809       -         
-un1_valid29_sn                                 Net          -        -       -         -           8         
-rc_receiver.recv_ch4.period\[0\]_7s2           ORCALUT4     D        In      0.000     7.809       -         
-rc_receiver.recv_ch4.period\[0\]_7s2           ORCALUT4     Z        Out     1.249     9.057       -         
-period\[2\]_7_sm0                              Net          -        -       -         -           7         
-rc_receiver.recv_ch4.period\[0\]_7_ss0         ORCALUT4     A        In      0.000     9.057       -         
-rc_receiver.recv_ch4.period\[0\]_7_ss0         ORCALUT4     Z        Out     1.225     10.282      -         
-period\[3\]_7_ss0                              Net          -        -       -         -           5         
-rc_receiver.recv_ch4.period\[1\]_7_m1          ORCALUT4     A        In      0.000     10.282      -         
-rc_receiver.recv_ch4.period\[1\]_7_m1          ORCALUT4     Z        Out     0.617     10.899      -         
-period\[1\]_7_m1                               Net          -        -       -         -           1         
-rc_receiver.recv_ch4.period\[1\]_pipe_1        FD1P3AX      D        In      0.000     10.899      -         
-=============================================================================================================
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+protocol_interface.reg_addr\[2\]     FD1P3AX      Q        Out     1.180     1.180       -         
+reg_addr\[2\]_Q                      Net          -        -       -         -           5         
+arm_x.read_value\[0\]2_2             ORCALUT4     A        In      0.000     1.180       -         
+arm_x.read_value\[0\]2_2             ORCALUT4     Z        Out     1.193     2.373       -         
+read_value\[0\]5_2                   Net          -        -       -         -           4         
+arm_x.read_value\[0\]5               ORCALUT4     A        In      0.000     2.373       -         
+arm_x.read_value\[0\]5               ORCALUT4     Z        Out     1.249     3.621       -         
+read_value\[0\]5                     Net          -        -       -         -           7         
+arm_x.register\[3\]_1_sqmuxa         ORCALUT4     B        In      0.000     3.621       -         
+arm_x.register\[3\]_1_sqmuxa         ORCALUT4     Z        Out     1.225     4.846       -         
+register\[3\]_1_sqmuxa               Net          -        -       -         -           5         
+arm_x.un1_register\[0\]9             ORCALUT4     A        In      0.000     4.846       -         
+arm_x.un1_register\[0\]9             ORCALUT4     Z        Out     1.364     6.210       -         
+un1_register\[0\]9                   Net          -        -       -         -           32        
+arm_x.register\[3\]_cry_0[0]         CCU2D        A1       In      0.000     6.210       -         
+arm_x.register\[3\]_cry_0[0]         CCU2D        COUT     Out     1.544     7.755       -         
+register\[3\]_cry[0]                 Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[1]         CCU2D        CIN      In      0.000     7.755       -         
+arm_x.register\[3\]_cry_0[1]         CCU2D        COUT     Out     0.143     7.897       -         
+register\[3\]_cry[2]                 Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[3]         CCU2D        CIN      In      0.000     7.897       -         
+arm_x.register\[3\]_cry_0[3]         CCU2D        COUT     Out     0.143     8.040       -         
+register\[3\]_cry[4]                 Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[5]         CCU2D        CIN      In      0.000     8.040       -         
+arm_x.register\[3\]_cry_0[5]         CCU2D        COUT     Out     0.143     8.183       -         
+register\[3\]_cry[6]                 Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[7]         CCU2D        CIN      In      0.000     8.183       -         
+arm_x.register\[3\]_cry_0[7]         CCU2D        COUT     Out     0.143     8.326       -         
+register\[3\]_cry[8]                 Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[9]         CCU2D        CIN      In      0.000     8.326       -         
+arm_x.register\[3\]_cry_0[9]         CCU2D        COUT     Out     0.143     8.469       -         
+register\[3\]_cry[10]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[11]        CCU2D        CIN      In      0.000     8.469       -         
+arm_x.register\[3\]_cry_0[11]        CCU2D        COUT     Out     0.143     8.611       -         
+register\[3\]_cry[12]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[13]        CCU2D        CIN      In      0.000     8.611       -         
+arm_x.register\[3\]_cry_0[13]        CCU2D        COUT     Out     0.143     8.754       -         
+register\[3\]_cry[14]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[15]        CCU2D        CIN      In      0.000     8.754       -         
+arm_x.register\[3\]_cry_0[15]        CCU2D        COUT     Out     0.143     8.897       -         
+register\[3\]_cry[16]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[17]        CCU2D        CIN      In      0.000     8.897       -         
+arm_x.register\[3\]_cry_0[17]        CCU2D        COUT     Out     0.143     9.040       -         
+register\[3\]_cry[18]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[19]        CCU2D        CIN      In      0.000     9.040       -         
+arm_x.register\[3\]_cry_0[19]        CCU2D        COUT     Out     0.143     9.183       -         
+register\[3\]_cry[20]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[21]        CCU2D        CIN      In      0.000     9.183       -         
+arm_x.register\[3\]_cry_0[21]        CCU2D        COUT     Out     0.143     9.325       -         
+register\[3\]_cry[22]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[23]        CCU2D        CIN      In      0.000     9.325       -         
+arm_x.register\[3\]_cry_0[23]        CCU2D        COUT     Out     0.143     9.468       -         
+register\[3\]_cry[24]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[25]        CCU2D        CIN      In      0.000     9.468       -         
+arm_x.register\[3\]_cry_0[25]        CCU2D        COUT     Out     0.143     9.611       -         
+register\[3\]_cry[26]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[27]        CCU2D        CIN      In      0.000     9.611       -         
+arm_x.register\[3\]_cry_0[27]        CCU2D        COUT     Out     0.143     9.754       -         
+register\[3\]_cry[28]                Net          -        -       -         -           1         
+arm_x.register\[3\]_cry_0[29]        CCU2D        CIN      In      0.000     9.754       -         
+arm_x.register\[3\]_cry_0[29]        CCU2D        COUT     Out     0.143     9.897       -         
+register\[3\]_cry[30]                Net          -        -       -         -           1         
+arm_x.register\[3\]_s_0[31]          CCU2D        CIN      In      0.000     9.897       -         
+arm_x.register\[3\]_s_0[31]          CCU2D        S0       Out     1.549     11.446      -         
+register\[3\]_s[31]                  Net          -        -       -         -           1         
+arm_x.register\[3\][31]              FD1P3AX      D        In      0.000     11.446      -         
+===================================================================================================
 
 
 
 ##### END OF TIMING REPORT #####]
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 158MB peak: 193MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 172MB peak: 199MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_7000hc-6
 
-Register bits: 649 of 6864 (9%)
+Register bits: 812 of 6864 (12%)
 PIC Latch:       0
 I/O cells:       55
 
 
 Details:
-CCU2D:          147
-FD1P3AX:        267
-FD1P3IX:        196
-FD1P3JX:        62
-FD1S3AX:        44
+CCU2D:          220
+FD1P3AX:        318
+FD1P3IX:        264
+FD1P3JX:        72
+FD1S3AX:        45
 FD1S3AY:        3
-FD1S3IX:        67
+FD1S3IX:        100
 FD1S3JX:        1
 GSR:            1
 IB:             10
 IFS1P3DX:       7
-INV:            6
-L6MUX21:        1
+INV:            8
+L6MUX21:        2
 OB:             45
 OFS1P3DX:       2
-ORCALUT4:       901
-PFUMX:          28
+ORCALUT4:       1077
+PFUMX:          35
 PUR:            1
-VHI:            18
-VLO:            18
+VHI:            19
+VLO:            19
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 59MB peak: 193MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 61MB peak: 199MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Sat Jan  9 16:47:18 2016
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Sat Jan  9 20:28:27 2016
 
 ###########################################################]

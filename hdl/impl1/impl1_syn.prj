@@ -1,14 +1,16 @@
 #--  Synopsys, Inc.
 #--  Version J-2014.09L
 #--  Project file /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn.prj
+#--  Written on Sat Jan  9 20:28:13 2016
+
 
 #project files
+add_file -fpga_constraint "constraints.fdc"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uart.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/clk.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv"
 add_file -verilog -vlog_std sysv "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv"
-add_file -fpga_constraint "impl1_syn_1.fdc"
 
 
 

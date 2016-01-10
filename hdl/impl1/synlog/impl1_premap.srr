@@ -4,7 +4,7 @@ Product Version J-2014.09L
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
-Reading constraint file: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_syn_1.fdc
+Reading constraint file: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/constraints.fdc
 @L: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt 
 Printing clock  summary report in "/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/impl1/impl1_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
@@ -39,7 +39,7 @@ Start                                             Requested     Requested     Cl
 Clock                                             Frequency     Period        Type                         Group           
 ---------------------------------------------------------------------------------------------------------------------------
 ClockDividerP_12s_1|clk_o_derived_clock           11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
-ClockDivider|clk_o_derived_clock                  11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
+ClockDivider_1|clk_o_derived_clock                11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[2]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 ProtocolInterface_12s|select_derived_clock[7]     11.9 MHz      84.000        derived (from clk_12MHz)     default_clkgroup
 clk_12MHz                                         11.9 MHz      84.000        declared                     default_clkgroup
@@ -47,9 +47,9 @@ clk_12MHz                                         11.9 MHz      84.000        de
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 143MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jan  9 16:47:12 2016
+# Sat Jan  9 20:28:19 2016
 
 ###########################################################]

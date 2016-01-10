@@ -258,29 +258,29 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -314,85 +314,85 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_4</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_4</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_4</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_4</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_4</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_4</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_4</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_4</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4</Dynamic>
-            <Navigation>rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4</Navigation>
+            <Dynamic>rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4</Dynamic>
-            <Navigation>rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4</Navigation>
+            <Dynamic>rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4</Dynamic>
-            <Navigation>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4</Navigation>
+            <Dynamic>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_4</Dynamic>
-            <Navigation>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_4</Navigation>
+            <Dynamic>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -1237,240 +1237,240 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:64:1:64:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:65:1:65:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[1] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:64:1:64:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:65:1:65:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[2] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:66:1:66:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:67:1:67:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv</Navigation>
-            <Navigation>66</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>66</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[1] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:206:1:206:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:207:1:207:6|Register bit read_size[1] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>206</Navigation>
+            <Navigation>207</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>206</Navigation>
+            <Navigation>207</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[1] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:206:1:206:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:207:1:207:6|Register bit read_size[2] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>206</Navigation>
+            <Navigation>207</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>206</Navigation>
+            <Navigation>207</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[2] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL246 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:384:13:384:17|Input port bits 3 to 1 of limit[3:0] are unused</Dynamic>
+            <Dynamic>CL246 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:386:13:386:17|Input port bits 3 to 1 of limit[3:0] are unused</Dynamic>
             <Navigation>CL246</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>384</Navigation>
+            <Navigation>386</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>384</Navigation>
+            <Navigation>386</Navigation>
             <Navigation>17</Navigation>
             <Navigation>Input port bits 3 to 1 of limit[3:0] are unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL247 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:410:7:410:11|Input port bit 6 of debug[8:0] is unused</Dynamic>
+            <Dynamic>CL247 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:412:7:412:11|Input port bit 6 of debug[8:0] is unused</Dynamic>
             <Navigation>CL247</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>410</Navigation>
+            <Navigation>412</Navigation>
             <Navigation>7</Navigation>
-            <Navigation>410</Navigation>
+            <Navigation>412</Navigation>
             <Navigation>11</Navigation>
             <Navigation>Input port bit 6 of debug[8:0] is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:366:16:366:31|Input Stepper_Y_nFault is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:368:16:368:31|Input Stepper_Y_nFault is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>366</Navigation>
+            <Navigation>368</Navigation>
             <Navigation>16</Navigation>
-            <Navigation>366</Navigation>
+            <Navigation>368</Navigation>
             <Navigation>31</Navigation>
             <Navigation>Input Stepper_Y_nFault is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:374:16:374:31|Input Stepper_Z_nFault is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:376:16:376:31|Input Stepper_Z_nFault is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>374</Navigation>
+            <Navigation>376</Navigation>
             <Navigation>16</Navigation>
-            <Navigation>374</Navigation>
+            <Navigation>376</Navigation>
             <Navigation>31</Navigation>
             <Navigation>Input Stepper_Z_nFault is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:382:16:382:31|Input Stepper_A_nFault is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:384:16:384:31|Input Stepper_A_nFault is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>382</Navigation>
+            <Navigation>384</Navigation>
             <Navigation>16</Navigation>
-            <Navigation>382</Navigation>
+            <Navigation>384</Navigation>
             <Navigation>31</Navigation>
             <Navigation>Input Stepper_A_nFault is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:392:13:392:22|Input encoder_ra is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:394:13:394:22|Input encoder_ra is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>392</Navigation>
+            <Navigation>394</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>392</Navigation>
+            <Navigation>394</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_ra is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:393:13:393:22|Input encoder_rb is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:395:13:395:22|Input encoder_rb is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>393</Navigation>
+            <Navigation>395</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>393</Navigation>
+            <Navigation>395</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_rb is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:394:13:394:22|Input encoder_ri is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:396:13:396:22|Input encoder_ri is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>394</Navigation>
+            <Navigation>396</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>394</Navigation>
+            <Navigation>396</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_ri is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:395:13:395:22|Input encoder_la is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:397:13:397:22|Input encoder_la is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>395</Navigation>
+            <Navigation>397</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>395</Navigation>
+            <Navigation>397</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_la is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:396:13:396:22|Input encoder_lb is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:398:13:398:22|Input encoder_lb is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>396</Navigation>
+            <Navigation>398</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>396</Navigation>
+            <Navigation>398</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_lb is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:397:13:397:22|Input encoder_li is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:399:13:399:22|Input encoder_li is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>397</Navigation>
+            <Navigation>399</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>397</Navigation>
+            <Navigation>399</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input encoder_li is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:408:13:408:22|Input xbee_pause is unused</Dynamic>
+            <Dynamic>CL159 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:410:13:410:22|Input xbee_pause is unused</Dynamic>
             <Navigation>CL159</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>408</Navigation>
+            <Navigation>410</Navigation>
             <Navigation>13</Navigation>
-            <Navigation>408</Navigation>
+            <Navigation>410</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Input xbee_pause is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:126:1:126:6|Register bit count[14] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:127:1:127:6|Register bit count[14] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>126</Navigation>
+            <Navigation>127</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>126</Navigation>
+            <Navigation>127</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit count[14] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:126:1:126:6|Register bit count[15] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv&quot;:127:1:127:6|Register bit count[15] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/pwm.sv</Navigation>
-            <Navigation>126</Navigation>
+            <Navigation>127</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>126</Navigation>
+            <Navigation>127</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit count[15] is always 0, optimizing ...</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:70:1:70:6|Register bit bufcount[3] is always 0, optimizing ...</Dynamic>
+            <Dynamic>CL189 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv&quot;:72:1:72:6|Register bit bufcount[3] is always 0, optimizing ...</Dynamic>
             <Navigation>CL189</Navigation>
             <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>72</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>70</Navigation>
+            <Navigation>72</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit bufcount[3] is always 0, optimizing ...</Navigation>
         </Message>

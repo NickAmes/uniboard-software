@@ -19,7 +19,9 @@
  * For a read operation, databus and reg_size will be set as long as select is high. The databus should
  * be set to the read value within one cycle of raising select. Once set, it must not change until select
  * goes low. */
-
+`default_nettype none
+ 
+ 
 /* Implements the Uniboard computer interface protocol. This module must be reset 
  * before use in order to work properly. */
 module ProtocolInterface(
@@ -451,7 +453,7 @@ module UniboardTop(
 	assign debug[5] = state[3];
 	assign debug[6] = reset; 
 	assign debug[7] = drdy;
-	assign debug[8] = rw;
+	assign debug[8] = clk_12MHz;
 	
 	assign status_led[1] = 1;
 	assign status_led[2] = 1;

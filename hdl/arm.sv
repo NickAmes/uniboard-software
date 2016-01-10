@@ -1,6 +1,7 @@
 /* OSU Robotics Club Rover 2016
  * Core Electrical System Uniboard HDL
  * Written 2015-2016 Nick Ames <nick@fetchmodus.org> */
+`default_nettype none
 
 /* Arm axis control peripheral (single-axis).
  * This module must be reset before use. */

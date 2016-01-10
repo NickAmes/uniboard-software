@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.4.1.213
-Mapped on:  01/09/16  17:54:08
+Mapped on:  01/09/16  20:18:35
 
 Design Summary
 --------------
@@ -26,12 +26,12 @@ Design Summary
    Number of registers:    812 out of  7209 (11%)
       PFU registers:          803 out of  6864 (12%)
       PIO registers:            9 out of   345 (3%)
-   Number of SLICEs:       802 out of  3432 (23%)
-      SLICEs as Logic/ROM:    802 out of  3432 (23%)
+   Number of SLICEs:       806 out of  3432 (23%)
+      SLICEs as Logic/ROM:    806 out of  3432 (23%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:        220 out of  3432 (6%)
-   Number of LUT4s:        1522 out of  6864 (22%)
-      Number of logic LUTs:      1082
+   Number of LUT4s:        1525 out of  6864 (22%)
+      Number of logic LUTs:      1085
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:    220 (440 LUT4s)
       Number of shift registers:   0
@@ -66,24 +66,26 @@ Design Summary
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Design Summary (cont)
 ---------------------
    Number of clocks:  1
-     Net clk_12MHz_c: 511 loads, 511 rising, 0 falling (Driver: PIO clk_12MHz )
+     Net debug_c[8]: 510 loads, 510 rising, 0 falling (Driver: PIO clk_12MHz )
    Number of Clock Enables:  53
      Net interface_reset: 17 loads, 17 LSLICEs
      Net clk_o_RNITESH: 134 loads, 126 LSLICEs
      Net un1_state[0]23_1_2_RNII24N: 1 loads, 0 LSLICEs
      Net reset4_i: 7 loads, 7 LSLICEs
-     Net rc_receiver/recv_ch8/valid_RNO_0_3: 1 loads, 1 LSLICEs
      Net rc_receiver/recv_ch8/un1_count[0]_3lto13_RNI3K8C1: 7 loads, 7 LSLICEs
-     Net debug_c[6]: 16 loads, 16 LSLICEs
-     Net rc_receiver/recv_ch7/un1_count[0]_3lto13_RNI0BV81: 8 loads, 8 LSLICEs
+     Net rc_receiver/recv_ch8/valid_RNO_0_3: 1 loads, 1 LSLICEs
      Net rc_receiver/recv_ch7/valid_RNO_0_2: 1 loads, 1 LSLICEs
+     Net rc_receiver/recv_ch7/un1_count[0]_3lto13_RNI0BV81: 7 loads, 7 LSLICEs
+     Net debug_c[6]: 16 loads, 16 LSLICEs
      Net rc_receiver/recv_ch4/valid_RNO_0_1: 1 loads, 1 LSLICEs
      Net rc_receiver/recv_ch4/un1_count[0]_3lto13_RNINF3F1: 7 loads, 7 LSLICEs
+     Net un1_state[0]_1: 1 loads, 1 LSLICEs
+     Net rc_receiver/G_417: 30 loads, 30 LSLICEs
      Net rc_receiver/recv_ch3/count[0]_0_sqmuxa_i_o3_RNIIM5G1: 7 loads, 7
      LSLICEs
      Net rc_receiver/recv_ch3/valid_RNO: 1 loads, 1 LSLICEs
@@ -91,11 +93,9 @@ Design Summary (cont)
      Net rc_receiver/recv_ch2/un1_count[0]_3lto13_RNIHTG81: 7 loads, 7 LSLICEs
      Net rc_receiver/recv_ch1/valid_RNO_0: 1 loads, 1 LSLICEs
      Net rc_receiver/recv_ch1/un1_count[0]_3lto13_RNIEK7L1: 7 loads, 7 LSLICEs
-     Net G_417: 30 loads, 30 LSLICEs
      Net arm_x/read_size[1]_0_sqmuxa: 1 loads, 1 LSLICEs
-     Net arm_x/int_step_RNO: 1 loads, 1 LSLICEs
      Net arm_x/register[3]e: 17 loads, 17 LSLICEs
-     Net un1_state[0]_1: 1 loads, 1 LSLICEs
+     Net arm_x/int_step_RNO: 1 loads, 1 LSLICEs
      Net arm_x/register[2]_1_sqmuxa: 16 loads, 16 LSLICEs
      Net arm_x/register[0]_0_sqmuxa: 18 loads, 18 LSLICEs
      Net motor_pwm/register_0__cnv[0]: 4 loads, 4 LSLICEs
@@ -113,8 +113,8 @@ Design Summary (cont)
      Net protocol_interface/uart_output/un1_state[0]_4_i: 9 loads, 9 LSLICEs
      Net protocol_interface/uart_output/un1_state[0]_6_i: 9 loads, 9 LSLICEs
      Net protocol_interface/uart_output/un1_state[0]_5_i: 9 loads, 9 LSLICEs
-     Net protocol_interface/un1_select535_2: 4 loads, 4 LSLICEs
      Net protocol_interface/un1_select535_3: 4 loads, 4 LSLICEs
+     Net protocol_interface/un1_select535_2: 4 loads, 4 LSLICEs
      Net protocol_interface/esc_data[0]4_RNINC2F1: 3 loads, 3 LSLICEs
      Net protocol_interface/reg_addr[0]_1_sqmuxa: 6 loads, 6 LSLICEs
      Net protocol_interface/un1_state[4]: 1 loads, 1 LSLICEs
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Design Summary (cont)
 ---------------------
@@ -140,13 +140,13 @@ Design Summary (cont)
    Number of LSRs:  19
      Net interface_reset: 16 loads, 16 LSLICEs
      Net debug_c[6]: 38 loads, 38 LSLICEs
-     Net G_419: 29 loads, 29 LSLICEs
+     Net rc_receiver/G_419: 29 loads, 29 LSLICEs
+     Net G_457: 4 loads, 4 LSLICEs
      Net arm_x/step_clock_div/N_195_1_i: 16 loads, 16 LSLICEs
-     Net read_value[0]2_2_RNI78HL4: 4 loads, 4 LSLICEs
-     Net motor_pwm/register_0__519: 4 loads, 4 LSLICEs
+     Net motor_pwm/register_0__522: 4 loads, 4 LSLICEs
      Net motor_pwm/right/count[0]2_9_RNIQPCS: 4 loads, 4 LSLICEs
      Net motor_pwm/left/count[0]2_9_RNIK94E1: 4 loads, 4 LSLICEs
-     Net motor_pwm/read_value[7]_517: 4 loads, 4 LSLICEs
+     Net motor_pwm/read_value[7]_520: 4 loads, 4 LSLICEs
      Net pwm_clk_div/N_227_1_i: 16 loads, 16 LSLICEs
      Net protocol_interface/uart_output/clk_o_RNIM4J9D: 1 loads, 1 LSLICEs
      Net protocol_interface/uart_output/fb: 1 loads, 1 LSLICEs
@@ -164,15 +164,15 @@ Design Summary (cont)
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net clk_o_RNITESH: 149 loads
-     Net debug_c[6]: 109 loads
+     Net debug_c[6]: 110 loads
      Net interface_reset: 63 loads
-     Net debug_c[8]: 49 loads
-     Net debug_c[4]: 43 loads
+     Net rw: 48 loads
+     Net debug_c[4]: 47 loads
      Net select_Q[4]: 37 loads
+     Net arm_x.read_value[0]2: 36 loads
      Net arm_x/prev_select: 36 loads
      Net arm_x.databus_1: 35 loads
      Net arm_x/read_value[0]4: 34 loads
-     Net arm_x/read_value[0]9: 33 loads
 
 
 
@@ -198,7 +198,7 @@ WARNING - map: IO buffer missing for top level port limit[3:0](3)...logic will
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -396,7 +396,7 @@ Signal rc_receiver/recv_ch1/GND undriven or does not drive anything - clipped.
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal motor_pwm/left/pwm_2_cry_1_0_S1 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal motor_pwm/right/pwm_2_cry_5_0_S1_0 undriven or does not drive anything -
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal arm_x/step_clock_div/clk_o8_cry_0_S0[3] undriven or does not drive
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Signal arm_x/step_clock_div/count[0]2_0_I_33_0_S0 undriven or does not drive
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
@@ -685,32 +685,32 @@ Signal arm_x/step_clock_div/count[0]2_0_I_45_0_S0 undriven or does not drive
      anything - clipped.
 Signal arm_x/step_clock_div/count[0]2_0_I_45_0_COUT undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_4 undriven or does not drive
+Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S1_1 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4 undriven or does not drive
+Signal rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_1 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch1/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4 undriven or does not drive
+Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_1 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4 undriven or does not
+Signal rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_1 undriven or does not
      drive anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_4 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_4 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch2/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1 undriven or does not drive
+Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_4 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1 undriven or does not
+Signal rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_4 undriven or does not
      drive anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_2 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_2 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch3/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0 undriven or does not drive
+Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_2 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0 undriven or does not
+Signal rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_2 undriven or does not
      drive anything - clipped.
 Signal rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_3 undriven or does not drive
      anything - clipped.
@@ -726,19 +726,19 @@ Signal rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_3 undriven or does not
 
 
 
-Design:  UniboardTop                                   Date:  01/09/16  17:54:08
+Design:  UniboardTop                                   Date:  01/09/16  20:18:35
 
 Removed logic (cont)
 --------------------
      drive anything - clipped.
-Signal rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2 undriven or does not drive
+Signal rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2 undriven or does not drive
+Signal rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0 undriven or does not drive
      anything - clipped.
 Signal rc_receiver/recv_ch7/N_1 undriven or does not drive anything - clipped.
-Signal rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2 undriven or does not drive
+Signal rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0 undriven or does not drive
      anything - clipped.
-Signal rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2 undriven or does not
+Signal rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0 undriven or does not
      drive anything - clipped.
 Signal rc_receiver/recv_ch8/un66_count_1_cry_0_0_S1 undriven or does not drive
      anything - clipped.

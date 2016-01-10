@@ -35,7 +35,7 @@ while True:
 	print u._read_reg(4,2),
 	print " ",
 	u._write_reg(4, 0, 0xAA)
-	u._write_reg(4,3,0)
+	u._write_reg(4,3,500)
 	u._write_reg(4,2,24000)
 	print u._read_reg(4,3),
 	print " ",
