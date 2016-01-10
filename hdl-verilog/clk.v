@@ -50,7 +50,10 @@ module ClockDivider(
 				begin
 					count <= 0;
 					clk_o <= 0;
-					int_factor <= factor;
+					if(factor > 32'd1)
+						int_factor <= factor;
+					else
+						int_factor <= 32'd2;
 				end
 			else
 				begin	
@@ -62,7 +65,10 @@ module ClockDivider(
 					if(count >= int_factor-1)
 						begin
 							count <= 0;
-							int_factor <= factor;
+							if(factor > 32'd1)
+								int_factor <= factor;
+							else
+								int_factor <= 32'd2;
 						end
 					else
 						count <= count + 1;	

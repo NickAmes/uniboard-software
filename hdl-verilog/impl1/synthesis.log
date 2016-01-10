@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 04:28:11 2016
+Sun Jan 10 04:47:08 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -294,20 +294,20 @@ WARNING - synthesis: Bit 22 of Register \pwm_clk_div/int_factor is stuck at Zero
 WARNING - synthesis: Bit 23 of Register \pwm_clk_div/int_factor is stuck at Zero
 WARNING - synthesis: Bit 24 of Register \pwm_clk_div/int_factor is stuck at Zero
 WARNING - synthesis: Bit 25 of Register \pwm_clk_div/int_factor is stuck at Zero
-WARNING - synthesis: Bit 26 of Register \pwm_clk_div/int_factor is stuck at One
 WARNING - synthesis: Bit 27 of Register \pwm_clk_div/int_factor is stuck at Zero
-WARNING - synthesis: Bit 28 of Register \pwm_clk_div/int_factor is stuck at One
-WARNING - synthesis: Bit 29 of Register \pwm_clk_div/int_factor is stuck at One
 WARNING - synthesis: Bit 30 of Register \pwm_clk_div/int_factor is stuck at One
-WARNING - synthesis: Bit 31 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 0 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 1 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 2 of Register \pwm_clk_div/int_factor is stuck at One
+WARNING - synthesis: Bit 3 of Register \pwm_clk_div/int_factor is stuck at One
 WARNING - synthesis: Bit 0 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \arm_x/read_size is stuck at Zero
 GSR instance connected to net expansion5_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_x/fault_latched_165 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
@@ -348,21 +348,20 @@ Writing NGD file Uniboard_verilog_impl1.ngd.
 
 ################### Begin Area Report (UniboardTop)######################
 Number of register bits => 813 of 7209 (11 % )
-CCU2D => 349
-FD1P3AX => 205
-FD1P3IX => 250
-FD1P3JX => 135
+CCU2D => 366
+FD1P3AX => 170
+FD1P3IX => 281
+FD1P3JX => 136
 FD1S3AX => 10
-FD1S3IX => 203
+FD1S3IX => 207
 FD1S3JX => 2
 GSR => 1
 IB => 11
 IFS1P3DX => 7
 L6MUX21 => 8
-LUT4 => 1032
+LUT4 => 1037
 OB => 45
-OFS1P3DX => 1
-PFUMX => 50
+PFUMX => 54
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -372,19 +371,19 @@ Number of Clocks: 3
   Net : bclk, loads : 14
   Net : select_7, loads : 11
 Clock Enable Nets
-Number of Clock Enables: 49
+Number of Clock Enables: 47
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n25330, loads : 145
-  Net : register_addr_0, loads : 98
-  Net : rw, loads : 65
-  Net : n2497, loads : 64
-  Net : n1267, loads : 61
-  Net : register_addr_1, loads : 51
-  Net : n26593, loads : 50
-  Net : n26595, loads : 50
-  Net : n26592, loads : 50
-  Net : n1268, loads : 44
+  Net : n26386, loads : 146
+  Net : register_addr_0, loads : 128
+  Net : register_addr_1, loads : 78
+  Net : rw, loads : 66
+  Net : n26385, loads : 64
+  Net : n1267, loads : 60
+  Net : n27606, loads : 50
+  Net : n27605, loads : 50
+  Net : n27608, loads : 49
+  Net : n5990, loads : 47
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -403,8 +402,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 223.301  MB
+Peak Memory Usage: 223.418  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 8.911  secs
+Elapsed CPU time for LSE flow : 8.362  secs
 --------------------------------------------------------------
