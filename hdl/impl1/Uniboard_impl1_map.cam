@@ -8,6 +8,7 @@ protocol_interface/uart_output/baud_gen/GND
 pwm_clk_div/GND
 motor_pwm/left/GND
 motor_pwm/right/GND
+arm_x/GND
 arm_x/step_clock_div/GND
 rc_receiver/recv_ch1/GND
 rc_receiver/recv_ch2/GND
@@ -81,6 +82,10 @@ motor_pwm/right/pwm_2_cry_11_0_S1_0
 motor_pwm/right/pwm_2_cry_11_0_S0_0
 motor_pwm/right/pwm_2_cry_12_0_S1_0
 motor_pwm/right/pwm_2_cry_12_0_COUT_0
+arm_x/register[3]_cry_0_S0[0]
+arm_x/N_1
+arm_x/register[3]_s_0_S1[31]
+arm_x/register[3]_s_0_COUT[31]
 arm_x/step_clock_div/un129_count_1_cry_0_0_S1
 arm_x/step_clock_div/un129_count_1_cry_0_0_S0
 arm_x/step_clock_div/N_1
@@ -142,26 +147,26 @@ rc_receiver/recv_ch1/un66_count_1_cry_0_0_S0_4
 rc_receiver/recv_ch1/N_1
 rc_receiver/recv_ch1/un66_count_1_s_13_0_S1_4
 rc_receiver/recv_ch1/un66_count_1_s_13_0_COUT_4
-rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_3
-rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_3
+rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1
+rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1
 rc_receiver/recv_ch2/N_1
-rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_3
-rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_3
-rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_1
-rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_1
+rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1
+rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1
+rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0
+rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0
 rc_receiver/recv_ch3/N_1
-rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_1
-rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_1
-rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_2
-rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_2
+rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0
+rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0
+rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_3
+rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_3
 rc_receiver/recv_ch4/N_1
-rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_2
-rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_2
-rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0
-rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0
+rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_3
+rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_3
+rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2
+rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2
 rc_receiver/recv_ch7/N_1
-rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0
-rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0
+rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2
+rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2
 rc_receiver/recv_ch8/un66_count_1_cry_0_0_S1
 rc_receiver/recv_ch8/un66_count_1_cry_0_0_S0
 rc_receiver/recv_ch8/N_1
@@ -173,7 +178,7 @@ N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sat Jan  9 17:42:02 2016
+# map:  version Diamond (64-bit) 3.4.1.213 -- WARNING: Map write only section -- Sat Jan  9 17:54:09 2016
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
 LOCATE COMP "uart_tx" SITE "132" ;

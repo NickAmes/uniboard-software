@@ -67,6 +67,13 @@
             <Dynamic>xbee_pause</Dynamic>
         </Message>
     </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
     <Task name="Translate">
         <Message>
             <ID>1121028</ID>
@@ -251,113 +258,113 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_COUT_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_s_13_0_S1_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S0_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0</Dynamic>
-            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_0</Navigation>
+            <Dynamic>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2</Dynamic>
+            <Navigation>rc_receiver/recv_ch7/un66_count_1_cry_0_0_S1_2</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_3</Dynamic>
+            <Navigation>rc_receiver/recv_ch4/un66_count_1_s_13_0_COUT_3</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_3</Dynamic>
+            <Navigation>rc_receiver/recv_ch4/un66_count_1_s_13_0_S1_3</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_3</Dynamic>
+            <Navigation>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S0_3</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_2</Dynamic>
-            <Navigation>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_2</Navigation>
+            <Dynamic>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_3</Dynamic>
+            <Navigation>rc_receiver/recv_ch4/un66_count_1_cry_0_0_S1_3</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_COUT_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_s_13_0_S1_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S0_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_1</Dynamic>
-            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_1</Navigation>
+            <Dynamic>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0</Dynamic>
+            <Navigation>rc_receiver/recv_ch3/un66_count_1_cry_0_0_S1_0</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_3</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_3</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_COUT_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_3</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_3</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_s_13_0_S1_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_3</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_3</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S0_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_3</Dynamic>
-            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_3</Navigation>
+            <Dynamic>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1</Dynamic>
+            <Navigation>rc_receiver/recv_ch2/un66_count_1_cry_0_0_S1_1</Navigation>
         </Message>
         <Message>
             <ID>1166052</ID>
@@ -1063,6 +1070,27 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
+            <Dynamic>arm_x/register[3]_s_0_COUT[31]</Dynamic>
+            <Navigation>arm_x/register[3]_s_0_COUT[31]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>arm_x/register[3]_s_0_S1[31]</Dynamic>
+            <Navigation>arm_x/register[3]_s_0_S1[31]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>arm_x/register[3]_cry_0_S0[0]</Dynamic>
+            <Navigation>arm_x/register[3]_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
             <Dynamic>pwm_clk_div/un129_count_1_s_31_0_COUT_0</Dynamic>
             <Navigation>pwm_clk_div/un129_count_1_s_31_0_COUT_0</Navigation>
         </Message>
@@ -1202,7 +1230,7 @@
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>148</Dynamic>
+            <Dynamic>151</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
@@ -1229,18 +1257,6 @@
             <Navigation>64</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Register bit read_size[2] is always 0, optimizing ...</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv&quot;:60:7:60:18|No assignment to prev_stepclk</Dynamic>
-            <Navigation>CG133</Navigation>
-            <Navigation>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv</Navigation>
-            <Navigation>60</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>60</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>No assignment to prev_stepclk</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

@@ -65,11 +65,11 @@ module ArmPeripheral(
 	
 	always @ (posedge clk_12MHz)
 		begin
-			//TODO
-			int_step <= stepclk;
+// 			//TODO
+// 			int_step <= stepclk;
 		
 			prev_select <= select;
-			//prev_stepclk <= stepclk;
+			prev_stepclk <= stepclk;
 			if(reset)
 				begin
 					register[0] <= 32'b00101010; /* Config register */
@@ -124,14 +124,15 @@ module ArmPeripheral(
 									register[3] <= databus;
 							endcase
 						end
-// 					if(~stepclk)
-// 						int_step <= 0;
-// 					if(~prev_stepclk & stepclk & register[1][2] 
-// 					   & ~(~rw & ~prev_select & select & register_addr == (axis_haddr + 8'd3))) /* on rising edge, STEPPING = 1, and no write to steps register. */
-// 						begin
-// 							int_step <= 1;
-// 							register[3] <= register[3] - 1;
-// 						end
+					if(~stepclk)
+						int_step <= 0;
+					if(~prev_stepclk & stepclk & register[1][2] 
+					   & ~(~rw & ~prev_select & select & register_addr == (axis_haddr + 8'd3))) /* on rising edge, STEPPING = 1, 
+					                                                                             * and no write to steps register. */
+						begin
+							int_step <= 1;
+							register[3] <= register[3] - 1;
+						end
  				end
 		end
 		
