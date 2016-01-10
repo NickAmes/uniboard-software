@@ -4,38 +4,24 @@
         <Milestone name="Export" build_result="0" build_time="0">
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
-            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1452418980"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1452425455"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1452425424">
-            <Task name="Map" build_result="2" update_result="0" update_time="1452425424"/>
+        <Milestone name="Map" build_result="0" build_time="0">
+            <Task name="Map" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1452425451">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1452425451"/>
+        <Milestone name="PAR" build_result="0" build_time="0">
+            <Task name="PAR" build_result="0" update_result="3" update_time="0"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1452425415">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1452425415"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1452425415"/>
+        <Milestone name="Synthesis" build_result="0" build_time="0">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="3" update_time="0"/>
+            <Task name="LSE_Compile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1452418238"/>
-            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
-        </Milestone>
-        <Report name=".vdbs/Uniboard_verilog_impl1_map.vdb" last_build_time="1452425424" last_build_size="605983"/>
-        <Report name="Uniboard_verilog_impl1.bgn" last_build_time="1452425455" last_build_size="3966"/>
-        <Report name="Uniboard_verilog_impl1.jed" last_build_time="1452425455" last_build_size="1454945"/>
-        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452425410" last_build_size="2705589"/>
-        <Report name="Uniboard_verilog_impl1.ncd" last_build_time="1452425451" last_build_size="1437924"/>
-        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452425415" last_build_size="1146329"/>
-        <Report name="Uniboard_verilog_impl1_map.ncd" last_build_time="1452425423" last_build_size="1022480"/>
-        <Report name="Uniboard_verilog_impl1_vho.sdf" last_build_time="0" last_build_size="0"/>
-        <Report name="Uniboard_verilog_impl1_vho.vho" last_build_time="0" last_build_size="0"/>
     </Strategy>
 </BuildStatus>

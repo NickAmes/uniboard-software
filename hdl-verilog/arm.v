@@ -21,7 +21,26 @@ module ArmPeripheral(
 	input wire limitn,
 	input wire reset);
 	
-	reg [7:0] register[1:0];
+	/* Peripheral Registers */
+	reg [7:0] control_reg;
+	reg [31:0] div_factor_reg;
+	reg [31:0] steps_reg;
+	
+	/* Internal signals */
+	reg fault_latched;
+	reg limit_latched;
+	wire stepping;
+	reg int_step; /* Internal step signal; active on rising edge. */
+	wire go;
+	
+	assign go = control_reg[7];
+	assign stepping = ~pause & en & (steps_reg > 0);
+	
+	/* Outputs */
+	assign en = control_reg[6];
+	assign dir = control_reg[5];
+	assign step_line = int_step ^ ~control_reg[4];
+	assign microstep = control_reg[2:0];
 	
 	/* Bus read handling */
 	reg [31:0] read_value;
@@ -31,43 +50,66 @@ module ArmPeripheral(
 	assign reg_size = select ? read_size : 'bz;
 	assign databus = (select & rw) ? read_value : 'bz;
 	
-	/* Bus handling */
+	/* Bus handling and step generation */
 	always @ (posedge clk_12MHz)			
 		begin
 			prev_select <= select;
+			limit_latched <= ~limitn;
+			fault_latched <= fault;
+			
 			if(reset == 1)
 				begin
-					register[0] <= 8'd127;
-					register[1] <= 8'd127;
+					control_reg <= 8'b00101010;
+					div_factor_reg <= 32'd12000;
+					steps_reg <= 'b0;
 				end
 			else
-				if(~prev_select & select)
-					begin
-						case(register_addr)
-							8'd0:
+				begin
+					if(~prev_select & select)
+						begin
+							case(register_addr)
+								8'd0: /* Control */
+										begin
+											read_value <= {24'b0, control_reg};
+											read_size <= 3'd1;
+										end
+									8'd1: /* Status */
+										begin
+											read_value <= {29'b0, limit_latched, fault_latched, stepping};
+											read_size <= 3'd1;
+										end
+									8'd2: /* Div. Factor */
+										begin
+											read_value <= div_factor_reg;
+											read_size <= 3'd4;
+										end
+									8'd3: /* Steps */
+										begin
+											read_value <= steps_reg;
+											read_size <= 3'd4;
+									end
+								default:
+									begin
+										read_value <= 'b0;
+										read_size <= 'b0;
+									end
+							endcase
+							if(~rw)
 								begin
-									read_value <= register[0];
-									read_size <= 3'd1;
+									case(register_addr)
+										8'd0:
+											control_reg <= databus[7:0];
+										8'd2:
+											div_factor_reg <= databus;
+										8'd3:
+											steps_reg <= databus;
+									endcase
 								end
-							8'd1:
-								begin
-									read_value <= register[1];
-									read_size <= 3'd1;
-								end
-							default:
-								begin
-									read_value <= 'b0;
-									read_size <= 'b0;
-								end
-						endcase
-						if(~rw)
-							begin
-								case(register_addr)
-									8'd0:
-										register[0] <= databus[7:0];
-									8'd1:
-										register[1] <= databus[7:0];
-								endcase
-							end
+						end
+							//non-reset logic goes here
+						
+						
+						
+						
 					end
 		end

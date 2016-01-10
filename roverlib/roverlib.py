@@ -72,7 +72,8 @@ class Uniboard:
 			#Arm
 			0x0400:0xEF,
 			0x0402:0xFFFFFFFF,
-			0x0403:0xFFFFFFFF
+			#0x0403:0xFFFFFFFF #The steps register is completely writeable, but it's modified
+			                   #by the Uniboard, so we pretend it's read-only to prevent mismatches.
 			}
 		
 		#Dictionary of register sizes, in bytes.

@@ -15,6 +15,12 @@
         <Source name="uniboard.v" type="Verilog" type_short="Verilog">
             <Options top_module="UniboardTop"/>
         </Source>
+        <Source name="global.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="arm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="Uniboard_verilog.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
