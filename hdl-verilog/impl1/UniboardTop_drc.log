@@ -7,8 +7,6 @@ Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl
 
 Running DRC...
 
-WARNING - synthesis: logical net 'Stepper_X_nFault' has no load.
-WARNING - synthesis: input pad net 'Stepper_X_nFault' has no legal load.
 WARNING - synthesis: logical net 'Stepper_Y_nFault' has no load.
 WARNING - synthesis: input pad net 'Stepper_Y_nFault' has no legal load.
 WARNING - synthesis: logical net 'Stepper_Z_nFault' has no load.
@@ -21,8 +19,6 @@ WARNING - synthesis: logical net 'limit[2]' has no load.
 WARNING - synthesis: input pad net 'limit[2]' has no legal load.
 WARNING - synthesis: logical net 'limit[1]' has no load.
 WARNING - synthesis: input pad net 'limit[1]' has no legal load.
-WARNING - synthesis: logical net 'limit[0]' has no load.
-WARNING - synthesis: input pad net 'limit[0]' has no legal load.
 WARNING - synthesis: logical net 'encoder_ra' has no load.
 WARNING - synthesis: input pad net 'encoder_ra' has no legal load.
 WARNING - synthesis: logical net 'encoder_rb' has no load.
@@ -35,10 +31,10 @@ WARNING - synthesis: logical net 'encoder_lb' has no load.
 WARNING - synthesis: input pad net 'encoder_lb' has no legal load.
 WARNING - synthesis: logical net 'encoder_li' has no load.
 WARNING - synthesis: input pad net 'encoder_li' has no legal load.
-WARNING - synthesis: DRC complete with 28 warnings.
+WARNING - synthesis: DRC complete with 24 warnings.
 
 Design Results:
-   1962 blocks expanded
+   2185 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.

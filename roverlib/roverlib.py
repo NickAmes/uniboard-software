@@ -160,6 +160,16 @@ class Uniboard:
 		intvalue = int((speed_f + 1) * 127)
 		self._write_reg(2, 1, intvalue)
 	
+	#Arm
+	#def _arm_reg(axis, base_register):
+		#"""Return the register value for a base register on the given axis.
+		   #Axis is either a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
+		
+	#def limit(self, axis):
+		#"""Returns true if the limit switch of an arm axis is pressed. Axis is either a string
+		   #("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
+		#return (u._read_reg
+	
 	#RC Receiver
 	def rc_valid(self):
 		"""Returns a dictionary (with keys 1, 2, 3, 4, 7, and 8) containing

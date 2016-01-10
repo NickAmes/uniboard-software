@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 03:30:09 2016
+Sun Jan 10 04:10:10 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -68,6 +68,7 @@ Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progre
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/global.v
+Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v
 NGD file = Uniboard_verilog_impl1.ngd
 -sdc option: SDC file input is /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/constraints.ldc.
 -lpf option: Output file option is ON.
@@ -114,6 +115,9 @@ INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/p
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(67): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(8): compiling module PWMGenerator. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(36): expression size 14 truncated to fit in target size 13. VERI-1209
+INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(8): compiling module ArmPeripheral(axis_haddr=8'b0). VERI-1018
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(51): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(34): net int_step does not have a driver. VDB-1002
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(192): compiling module RCPeripheral. VERI-1018
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(215): expression size 32 truncated to fit in target size 3. VERI-1209
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/pwm.v(126): compiling module PWMReceiver. VERI-1018
@@ -127,6 +131,7 @@ Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl
 Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.4_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = UniboardTop.
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/arm.v(34): net int_step does not have a driver. VDB-1002
 ######## Converting I/O port expansion4 to output.
 ######## Converting I/O port expansion5 to output.
 ######## Converting I/O port debug[8] to output.
@@ -138,20 +143,9 @@ Top-level module name = UniboardTop.
 ######## Converting I/O port debug[2] to output.
 ######## Converting I/O port debug[1] to output.
 ######## Converting I/O port debug[0] to output.
-WARNING - synthesis: Stepper_X_Step is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: Stepper_X_Dir is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: Stepper_X_M0 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: Stepper_X_M1 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: Stepper_X_M2 is not assigned a value (floating) -- simulation mismatch possible.
-WARNING - synthesis: Stepper_X_En is not assigned a value (floating) -- simulation mismatch possible.
+######## Missing driver on net \arm_x/int_step. Patching with GND.
 ######## Missing driver on net \rc_receiver/register[0][5]. Patching with GND.
 ######## Missing driver on net \rc_receiver/register[0][4]. Patching with GND.
-######## Missing driver on net n843. Patching with GND.
-######## Missing driver on net n842. Patching with GND.
-######## Missing driver on net n841. Patching with GND.
-######## Missing driver on net n840. Patching with GND.
-######## Missing driver on net n839. Patching with GND.
-######## Missing driver on net n838. Patching with GND.
 WARNING - synthesis: Bit 0 of Register \rc_receiver/read_size is stuck at Zero
 Converting Generated Clock on instance \motor_pwm/left/pwm_19.
 Converting Generated Clock on instance \motor_pwm/left/latched_width.
@@ -279,22 +273,22 @@ WARNING - synthesis: Bit 9 of Register \protocol_interface/state_FSM is stuck at
 WARNING - synthesis: Bit 10 of Register \protocol_interface/state_FSM is stuck at Zero
 WARNING - synthesis: Bit 0 of Register \motor_pwm/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \motor_pwm/read_size is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \arm_x/read_size is stuck at Zero
 GSR instance connected to net expansion5_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
+INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_x/fault_latched_160 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 Writing LPF file Uniboard_verilog_impl1.lpf.
 Results of NGD DRC are available in UniboardTop_drc.log.
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'Stepper_X_nFault' has no load.
-WARNING - synthesis: input pad net 'Stepper_X_nFault' has no legal load.
 WARNING - synthesis: logical net 'Stepper_Y_nFault' has no load.
 WARNING - synthesis: input pad net 'Stepper_Y_nFault' has no legal load.
 WARNING - synthesis: logical net 'Stepper_Z_nFault' has no load.
@@ -307,8 +301,6 @@ WARNING - synthesis: logical net 'limit[2]' has no load.
 WARNING - synthesis: input pad net 'limit[2]' has no legal load.
 WARNING - synthesis: logical net 'limit[1]' has no load.
 WARNING - synthesis: input pad net 'limit[1]' has no legal load.
-WARNING - synthesis: logical net 'limit[0]' has no load.
-WARNING - synthesis: input pad net 'limit[0]' has no legal load.
 WARNING - synthesis: logical net 'encoder_ra' has no load.
 WARNING - synthesis: input pad net 'encoder_ra' has no legal load.
 WARNING - synthesis: logical net 'encoder_rb' has no load.
@@ -321,50 +313,49 @@ WARNING - synthesis: logical net 'encoder_lb' has no load.
 WARNING - synthesis: input pad net 'encoder_lb' has no legal load.
 WARNING - synthesis: logical net 'encoder_li' has no load.
 WARNING - synthesis: input pad net 'encoder_li' has no legal load.
-WARNING - synthesis: DRC complete with 28 warnings.
+WARNING - synthesis: DRC complete with 24 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Uniboard_verilog_impl1.ngd.
 
 ################### Begin Area Report (UniboardTop)######################
-Number of register bits => 637 of 7209 (8 % )
+Number of register bits => 747 of 7209 (10 % )
 CCU2D => 264
-FD1P3AX => 131
-FD1P3IX => 190
-FD1P3JX => 125
-FD1S3AX => 8
-FD1S3IX => 173
+FD1P3AX => 165
+FD1P3IX => 259
+FD1P3JX => 135
+FD1S3AX => 10
+FD1S3IX => 167
 FD1S3JX => 2
 GSR => 1
-IB => 9
-IFS1P3DX => 6
+IB => 11
+IFS1P3DX => 7
 L6MUX21 => 8
-LUT4 => 951
-OB => 39
-OBZ => 6
+LUT4 => 1060
+OB => 45
 OFS1P3IX => 2
-PFUMX => 44
+PFUMX => 46
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
-  Net : debug_c_c, loads : 610
+  Net : debug_c_c, loads : 720
   Net : bclk, loads : 14
-  Net : select_7, loads : 12
+  Net : select_7, loads : 11
 Clock Enable Nets
-Number of Clock Enables: 37
+Number of Clock Enables: 46
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n19667, loads : 146
-  Net : register_addr_0, loads : 67
-  Net : n1264, loads : 56
-  Net : n21195, loads : 49
-  Net : n8748, loads : 48
-  Net : n19715, loads : 46
-  Net : rw, loads : 45
-  Net : register_addr_1, loads : 41
-  Net : n1265, loads : 41
-  Net : n1255, loads : 40
+  Net : n23203, loads : 145
+  Net : register_addr_0, loads : 92
+  Net : rw, loads : 62
+  Net : n1267, loads : 61
+  Net : n24513, loads : 50
+  Net : n24514, loads : 50
+  Net : n24511, loads : 49
+  Net : n9801, loads : 47
+  Net : register_addr_1, loads : 45
+  Net : n1268, loads : 44
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -383,8 +374,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 220.402  MB
+Peak Memory Usage: 221.961  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 5.986  secs
+Elapsed CPU time for LSE flow : 7.575  secs
 --------------------------------------------------------------

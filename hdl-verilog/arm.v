@@ -13,13 +13,14 @@ module ArmPeripheral(
 	input wire rw, /* 0 = write, 1 = read. */
 	input wire select, /* Rising edge writes or hold high to read. */
 	input wire pause,
-	output wire microstep[2:0],
+	output wire [2:0] microstep,
 	output wire step_line,
 	output wire dir,
 	output wire en,
 	input wire fault,
 	input wire limitn,
 	input wire reset);
+	parameter axis_haddr = 0; /* High nibble of the registers of this instance. */
 	
 	/* Peripheral Registers */
 	reg [7:0] control_reg;
@@ -68,25 +69,25 @@ module ArmPeripheral(
 					if(~prev_select & select)
 						begin
 							case(register_addr)
-								8'd0: /* Control */
-										begin
-											read_value <= {24'b0, control_reg};
-											read_size <= 3'd1;
-										end
-									8'd1: /* Status */
-										begin
-											read_value <= {29'b0, limit_latched, fault_latched, stepping};
-											read_size <= 3'd1;
-										end
-									8'd2: /* Div. Factor */
-										begin
-											read_value <= div_factor_reg;
-											read_size <= 3'd4;
-										end
-									8'd3: /* Steps */
-										begin
-											read_value <= steps_reg;
-											read_size <= 3'd4;
+								axis_haddr + 8'd0: /* Control */
+									begin
+										read_value <= {24'b0, control_reg};
+										read_size <= 3'd1;
+									end
+								axis_haddr + 8'd1: /* Status */
+									begin
+										read_value <= {29'b0, limit_latched, fault_latched, stepping};
+										read_size <= 3'd1;
+									end
+								axis_haddr + 8'd2: /* Div. Factor */
+									begin
+										read_value <= div_factor_reg;
+										read_size <= 3'd4;
+									end
+								axis_haddr + 8'd3: /* Steps */
+									begin
+										read_value <= steps_reg;
+										read_size <= 3'd4;
 									end
 								default:
 									begin
@@ -97,11 +98,11 @@ module ArmPeripheral(
 							if(~rw)
 								begin
 									case(register_addr)
-										8'd0:
+										axis_haddr + 8'd0:
 											control_reg <= databus[7:0];
-										8'd2:
+										axis_haddr + 8'd2:
 											div_factor_reg <= databus;
-										8'd3:
+										axis_haddr + 8'd3:
 											steps_reg <= databus;
 									endcase
 								end
@@ -113,3 +114,5 @@ module ArmPeripheral(
 						
 					end
 		end
+	
+endmodule
