@@ -97,7 +97,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 780
+        Instances in netlist: 785
     -->
 
     <instance  name = "reduce_and_3"  library = "work"  arch = ""  type = "comb">
@@ -30183,7 +30183,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "signal_light"  />
+        <nitem  name = "global_pause"  />
         <nitem  name = "\global_control/force_pause"  />
         <nitem  name = "\global_control/register[0][2]"  />
         </nets>
@@ -30191,17 +30191,33 @@
 
     <instance  name = "\global_control/i113"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\global_control/n2"  />
+        <nitem  name = "global_pause"  />
+        <nitem  name = "signal_light"  />
+        <nitem  name = "\global_control/clk_1Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\global_control/i114"  library = "work"  arch = ""  type = "comb">
+        <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "xbee_pause"  />
-        <nitem  name = "\global_control/n177"  />
+        <nitem  name = "\global_control/n178"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/equal_113"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/equal_114"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -30274,11 +30290,11 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
         <nitem  name = "debug[6]"  />
-        <nitem  name = "\global_control/n178"  />
+        <nitem  name = "\global_control/n179"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i115"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i116"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -30286,11 +30302,11 @@
 
         <nets>
         <nitem  name = "\global_control/prev_select"  />
-        <nitem  name = "\global_control/n179"  />
+        <nitem  name = "\global_control/n180"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i116"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i117"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -30299,44 +30315,8 @@
 
         <nets>
         <nitem  name = "select[1]"  />
-        <nitem  name = "\global_control/n179"  />
         <nitem  name = "\global_control/n180"  />
-        </nets>
-    </instance>
-
-    <instance  name = "\global_control/equal_117"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "\global_control/n1"  />
-        <nitem  name = "\global_control/n2"  />
-        <nitem  name = "register_addr[7]"  />
-        <nitem  name = "register_addr[6]"  />
-        <nitem  name = "register_addr[5]"  />
-        <nitem  name = "register_addr[4]"  />
-        <nitem  name = "register_addr[3]"  />
-        <nitem  name = "register_addr[2]"  />
-        <nitem  name = "register_addr[1]"  />
-        <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n182"  />
+        <nitem  name = "\global_control/n181"  />
         </nets>
     </instance>
 
@@ -30348,8 +30328,8 @@
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -30384,8 +30364,8 @@
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -30419,9 +30399,9 @@
         <pitem  name = "b[5]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -30448,7 +30428,43 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/reduce_nor_121"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/equal_121"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\global_control/n1"  />
+        <nitem  name = "\global_control/n2"  />
+        <nitem  name = "register_addr[7]"  />
+        <nitem  name = "register_addr[6]"  />
+        <nitem  name = "register_addr[5]"  />
+        <nitem  name = "register_addr[4]"  />
+        <nitem  name = "register_addr[3]"  />
+        <nitem  name = "register_addr[2]"  />
+        <nitem  name = "register_addr[1]"  />
+        <nitem  name = "register_addr[0]"  />
+        <nitem  name = "\global_control/n186"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\global_control/reduce_nor_122"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
@@ -30459,16 +30475,16 @@
         </pins>
 
         <nets>
-        <nitem  name = "\global_control/n181"  />
         <nitem  name = "\global_control/n182"  />
         <nitem  name = "\global_control/n183"  />
         <nitem  name = "\global_control/n184"  />
         <nitem  name = "\global_control/n185"  />
         <nitem  name = "\global_control/n186"  />
+        <nitem  name = "\global_control/n187"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/select_122"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/select_123"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[31]"  direction = "in"  />
         <pitem  name = "data[30]"  direction = "in"  />
@@ -30705,7 +30721,7 @@
         <nets>
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
-        <nitem  name = "signal_light"  />
+        <nitem  name = "global_pause"  />
         <nitem  name = "n1"  />
         <nitem  name = "n2"  />
         <nitem  name = "\global_control/force_pause"  />
@@ -30742,13 +30758,12 @@
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
         <nitem  name = "\global_control/register[0][2]"  />
-        <nitem  name = "\global_control/n181"  />
         <nitem  name = "\global_control/n182"  />
         <nitem  name = "\global_control/n183"  />
         <nitem  name = "\global_control/n184"  />
         <nitem  name = "\global_control/n185"  />
         <nitem  name = "\global_control/n186"  />
-        <nitem  name = "\global_control/n188"  />
+        <nitem  name = "\global_control/n187"  />
         <nitem  name = "\global_control/n189"  />
         <nitem  name = "\global_control/n190"  />
         <nitem  name = "\global_control/n191"  />
@@ -30780,10 +30795,11 @@
         <nitem  name = "\global_control/n217"  />
         <nitem  name = "\global_control/n218"  />
         <nitem  name = "\global_control/n219"  />
+        <nitem  name = "\global_control/n220"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/select_123"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/select_124"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "data[17]"  direction = "in"  />
         <pitem  name = "data[16]"  direction = "in"  />
@@ -30817,19 +30833,19 @@
         <nets>
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "\global_control/n2"  />
-        <nitem  name = "\global_control/n181"  />
         <nitem  name = "\global_control/n182"  />
         <nitem  name = "\global_control/n183"  />
         <nitem  name = "\global_control/n184"  />
         <nitem  name = "\global_control/n185"  />
         <nitem  name = "\global_control/n186"  />
-        <nitem  name = "\global_control/n221"  />
+        <nitem  name = "\global_control/n187"  />
         <nitem  name = "\global_control/n222"  />
         <nitem  name = "\global_control/n223"  />
+        <nitem  name = "\global_control/n224"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/equal_125"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/equal_126"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
@@ -30860,11 +30876,11 @@
         <nitem  name = "register_addr[2]"  />
         <nitem  name = "register_addr[1]"  />
         <nitem  name = "register_addr[0]"  />
-        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n182"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i127"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i128"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -30875,12 +30891,12 @@
         <nets>
         <nitem  name = "databus[1]"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n181"  />
-        <nitem  name = "\global_control/n226"  />
+        <nitem  name = "\global_control/n182"  />
+        <nitem  name = "\global_control/n227"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i128"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i129"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -30891,12 +30907,12 @@
         <nets>
         <nitem  name = "rw"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n226"  />
         <nitem  name = "\global_control/n227"  />
+        <nitem  name = "\global_control/n228"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_128"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_129"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[31]"  direction = "in"  />
         <pitem  name = "d0[30]"  direction = "in"  />
@@ -31030,8 +31046,7 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
-        <nitem  name = "\global_control/n180"  />
-        <nitem  name = "\global_control/n188"  />
+        <nitem  name = "\global_control/n181"  />
         <nitem  name = "\global_control/n189"  />
         <nitem  name = "\global_control/n190"  />
         <nitem  name = "\global_control/n191"  />
@@ -31063,7 +31078,7 @@
         <nitem  name = "\global_control/n217"  />
         <nitem  name = "\global_control/n218"  />
         <nitem  name = "\global_control/n219"  />
-        <nitem  name = "\global_control/n229"  />
+        <nitem  name = "\global_control/n220"  />
         <nitem  name = "\global_control/n230"  />
         <nitem  name = "\global_control/n231"  />
         <nitem  name = "\global_control/n232"  />
@@ -31095,10 +31110,11 @@
         <nitem  name = "\global_control/n258"  />
         <nitem  name = "\global_control/n259"  />
         <nitem  name = "\global_control/n260"  />
+        <nitem  name = "\global_control/n261"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_129"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_130"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -31116,17 +31132,17 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n180"  />
-        <nitem  name = "\global_control/n221"  />
+        <nitem  name = "\global_control/n181"  />
         <nitem  name = "\global_control/n222"  />
         <nitem  name = "\global_control/n223"  />
-        <nitem  name = "\global_control/n262"  />
+        <nitem  name = "\global_control/n224"  />
         <nitem  name = "\global_control/n263"  />
         <nitem  name = "\global_control/n264"  />
+        <nitem  name = "\global_control/n265"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i131"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i132"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -31136,13 +31152,13 @@
 
         <nets>
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n180"  />
-        <nitem  name = "\global_control/n227"  />
-        <nitem  name = "\global_control/n265"  />
+        <nitem  name = "\global_control/n181"  />
+        <nitem  name = "\global_control/n228"  />
+        <nitem  name = "\global_control/n266"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i132"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i133"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -31150,11 +31166,11 @@
 
         <nets>
         <nitem  name = "\global_control/prev_clk_1Hz"  />
-        <nitem  name = "\global_control/n266"  />
+        <nitem  name = "\global_control/n267"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i133"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i134"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -31163,12 +31179,12 @@
 
         <nets>
         <nitem  name = "\global_control/clk_1Hz"  />
-        <nitem  name = "\global_control/n266"  />
         <nitem  name = "\global_control/n267"  />
+        <nitem  name = "\global_control/n268"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/add_133"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/add_134"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
@@ -31304,7 +31320,6 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
-        <nitem  name = "\global_control/n270"  />
         <nitem  name = "\global_control/n271"  />
         <nitem  name = "\global_control/n272"  />
         <nitem  name = "\global_control/n273"  />
@@ -31336,10 +31351,11 @@
         <nitem  name = "\global_control/n299"  />
         <nitem  name = "\global_control/n300"  />
         <nitem  name = "\global_control/n301"  />
+        <nitem  name = "\global_control/n302"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_134"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_135"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[31]"  direction = "in"  />
         <pitem  name = "d0[30]"  direction = "in"  />
@@ -31473,8 +31489,7 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
-        <nitem  name = "\global_control/n267"  />
-        <nitem  name = "\global_control/n270"  />
+        <nitem  name = "\global_control/n268"  />
         <nitem  name = "\global_control/n271"  />
         <nitem  name = "\global_control/n272"  />
         <nitem  name = "\global_control/n273"  />
@@ -31506,7 +31521,7 @@
         <nitem  name = "\global_control/n299"  />
         <nitem  name = "\global_control/n300"  />
         <nitem  name = "\global_control/n301"  />
-        <nitem  name = "\global_control/n303"  />
+        <nitem  name = "\global_control/n302"  />
         <nitem  name = "\global_control/n304"  />
         <nitem  name = "\global_control/n305"  />
         <nitem  name = "\global_control/n306"  />
@@ -31538,10 +31553,11 @@
         <nitem  name = "\global_control/n332"  />
         <nitem  name = "\global_control/n333"  />
         <nitem  name = "\global_control/n334"  />
+        <nitem  name = "\global_control/n335"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/i136"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/i137"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -31551,13 +31567,13 @@
 
         <nets>
         <nitem  name = "\global_control/n1"  />
-        <nitem  name = "\global_control/n178"  />
-        <nitem  name = "\global_control/n265"  />
-        <nitem  name = "\global_control/n335"  />
+        <nitem  name = "\global_control/n179"  />
+        <nitem  name = "\global_control/n266"  />
+        <nitem  name = "\global_control/n336"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_136"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_137"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -31660,8 +31676,7 @@
 
         <nets>
         <nitem  name = "\global_control/n1"  />
-        <nitem  name = "\global_control/n178"  />
-        <nitem  name = "\global_control/n303"  />
+        <nitem  name = "\global_control/n179"  />
         <nitem  name = "\global_control/n304"  />
         <nitem  name = "\global_control/n305"  />
         <nitem  name = "\global_control/n306"  />
@@ -31693,7 +31708,7 @@
         <nitem  name = "\global_control/n332"  />
         <nitem  name = "\global_control/n333"  />
         <nitem  name = "\global_control/n334"  />
-        <nitem  name = "\global_control/n337"  />
+        <nitem  name = "\global_control/n335"  />
         <nitem  name = "\global_control/n338"  />
         <nitem  name = "\global_control/n339"  />
         <nitem  name = "\global_control/n340"  />
@@ -31725,10 +31740,11 @@
         <nitem  name = "\global_control/n366"  />
         <nitem  name = "\global_control/n367"  />
         <nitem  name = "\global_control/n368"  />
+        <nitem  name = "\global_control/n369"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_137"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_138"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -31862,8 +31878,7 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
-        <nitem  name = "\global_control/n178"  />
-        <nitem  name = "\global_control/n229"  />
+        <nitem  name = "\global_control/n179"  />
         <nitem  name = "\global_control/n230"  />
         <nitem  name = "\global_control/n231"  />
         <nitem  name = "\global_control/n232"  />
@@ -31895,7 +31910,7 @@
         <nitem  name = "\global_control/n258"  />
         <nitem  name = "\global_control/n259"  />
         <nitem  name = "\global_control/n260"  />
-        <nitem  name = "\global_control/n370"  />
+        <nitem  name = "\global_control/n261"  />
         <nitem  name = "\global_control/n371"  />
         <nitem  name = "\global_control/n372"  />
         <nitem  name = "\global_control/n373"  />
@@ -31927,10 +31942,11 @@
         <nitem  name = "\global_control/n399"  />
         <nitem  name = "\global_control/n400"  />
         <nitem  name = "\global_control/n401"  />
+        <nitem  name = "\global_control/n402"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/mux_138"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/mux_139"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -31948,17 +31964,17 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n178"  />
-        <nitem  name = "\global_control/n262"  />
+        <nitem  name = "\global_control/n179"  />
         <nitem  name = "\global_control/n263"  />
         <nitem  name = "\global_control/n264"  />
-        <nitem  name = "\global_control/n403"  />
+        <nitem  name = "\global_control/n265"  />
         <nitem  name = "\global_control/n404"  />
         <nitem  name = "\global_control/n405"  />
+        <nitem  name = "\global_control/n406"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/prev_clk_1Hz_148"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/prev_clk_1Hz_149"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -31975,7 +31991,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/xbee_pause_latched_149"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/xbee_pause_latched_150"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -31988,11 +32004,11 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "clk_12MHz"  />
         <nitem  name = "\global_control/register[0][2]"  />
-        <nitem  name = "\global_control/n177"  />
+        <nitem  name = "\global_control/n178"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/force_pause_150"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/force_pause_151"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -32005,7 +32021,7 @@
         <nitem  name = "\global_control/n1"  />
         <nitem  name = "clk_12MHz"  />
         <nitem  name = "\global_control/force_pause"  />
-        <nitem  name = "\global_control/n335"  />
+        <nitem  name = "\global_control/n336"  />
         </nets>
     </instance>
 
@@ -32177,7 +32193,6 @@
         <nitem  name = "\global_control/register[2][2]"  />
         <nitem  name = "\global_control/register[2][1]"  />
         <nitem  name = "\global_control/register[2][0]"  />
-        <nitem  name = "\global_control/n337"  />
         <nitem  name = "\global_control/n338"  />
         <nitem  name = "\global_control/n339"  />
         <nitem  name = "\global_control/n340"  />
@@ -32209,6 +32224,7 @@
         <nitem  name = "\global_control/n366"  />
         <nitem  name = "\global_control/n367"  />
         <nitem  name = "\global_control/n368"  />
+        <nitem  name = "\global_control/n369"  />
         </nets>
     </instance>
 
@@ -32380,7 +32396,6 @@
         <nitem  name = "\global_control/read_value[2]"  />
         <nitem  name = "\global_control/read_value[1]"  />
         <nitem  name = "\global_control/read_value[0]"  />
-        <nitem  name = "\global_control/n370"  />
         <nitem  name = "\global_control/n371"  />
         <nitem  name = "\global_control/n372"  />
         <nitem  name = "\global_control/n373"  />
@@ -32412,6 +32427,7 @@
         <nitem  name = "\global_control/n399"  />
         <nitem  name = "\global_control/n400"  />
         <nitem  name = "\global_control/n401"  />
+        <nitem  name = "\global_control/n402"  />
         </nets>
     </instance>
 
@@ -32438,13 +32454,13 @@
         <nitem  name = "\global_control/read_size[2]"  />
         <nitem  name = "\global_control/read_size[1]"  />
         <nitem  name = "\global_control/read_size[0]"  />
-        <nitem  name = "\global_control/n403"  />
         <nitem  name = "\global_control/n404"  />
         <nitem  name = "\global_control/n405"  />
+        <nitem  name = "\global_control/n406"  />
         </nets>
     </instance>
 
-    <instance  name = "\global_control/tri_153"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/tri_154"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[31]"  direction = "out"  />
         <pitem  name = "o[30]"  direction = "out"  />
@@ -32582,7 +32598,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/prev_select_147"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\global_control/prev_select_148"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -32599,7 +32615,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\global_control/tri_154"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\global_control/tri_155"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
@@ -34691,7 +34707,7 @@
         <nets>
         <nitem  name = "\motor_pwm/n1"  />
         <nitem  name = "\motor_pwm/n2"  />
-        <nitem  name = "signal_light"  />
+        <nitem  name = "global_pause"  />
         <nitem  name = "\motor_pwm/register[0][7]"  />
         <nitem  name = "\motor_pwm/register[0][6]"  />
         <nitem  name = "\motor_pwm/register[0][5]"  />
@@ -34743,7 +34759,7 @@
         <nets>
         <nitem  name = "\motor_pwm/n1"  />
         <nitem  name = "\motor_pwm/n2"  />
-        <nitem  name = "signal_light"  />
+        <nitem  name = "global_pause"  />
         <nitem  name = "\motor_pwm/register[1][7]"  />
         <nitem  name = "\motor_pwm/register[1][6]"  />
         <nitem  name = "\motor_pwm/register[1][5]"  />
@@ -36029,7 +36045,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "signal_light"  />
+        <nitem  name = "global_pause"  />
         <nitem  name = "\arm_x/n4"  />
         </nets>
     </instance>
@@ -39133,7 +39149,49 @@
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/mux_154"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/i155"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\arm_x/prev_limit_latched"  />
+        <nitem  name = "\arm_x/n569"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\arm_x/i156"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\arm_x/limit_latched"  />
+        <nitem  name = "\arm_x/n569"  />
+        <nitem  name = "\arm_x/n570"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\arm_x/i157"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\arm_x/n1"  />
+        <nitem  name = "\arm_x/n495"  />
+        <nitem  name = "\arm_x/n570"  />
+        <nitem  name = "\arm_x/n571"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\arm_x/mux_157"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
@@ -39144,7 +39202,6 @@
         <pitem  name = "d1[3]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
         <pitem  name = "d0[4]"  direction = "in"  />
@@ -39152,6 +39209,7 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -39166,7 +39224,6 @@
         <nitem  name = "\arm_x/n1"  />
         <nitem  name = "\arm_x/n2"  />
         <nitem  name = "\arm_x/n184"  />
-        <nitem  name = "\arm_x/n495"  />
         <nitem  name = "\arm_x/n496"  />
         <nitem  name = "\arm_x/n497"  />
         <nitem  name = "\arm_x/n498"  />
@@ -39174,18 +39231,19 @@
         <nitem  name = "\arm_x/n500"  />
         <nitem  name = "\arm_x/n501"  />
         <nitem  name = "\arm_x/n502"  />
-        <nitem  name = "\arm_x/n570"  />
         <nitem  name = "\arm_x/n571"  />
-        <nitem  name = "\arm_x/n572"  />
         <nitem  name = "\arm_x/n573"  />
         <nitem  name = "\arm_x/n574"  />
         <nitem  name = "\arm_x/n575"  />
         <nitem  name = "\arm_x/n576"  />
         <nitem  name = "\arm_x/n577"  />
+        <nitem  name = "\arm_x/n578"  />
+        <nitem  name = "\arm_x/n579"  />
+        <nitem  name = "\arm_x/n580"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/mux_155"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/mux_158"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -39322,9 +39380,6 @@
         <nitem  name = "\arm_x/n533"  />
         <nitem  name = "\arm_x/n534"  />
         <nitem  name = "\arm_x/n535"  />
-        <nitem  name = "\arm_x/n579"  />
-        <nitem  name = "\arm_x/n580"  />
-        <nitem  name = "\arm_x/n581"  />
         <nitem  name = "\arm_x/n582"  />
         <nitem  name = "\arm_x/n583"  />
         <nitem  name = "\arm_x/n584"  />
@@ -39354,10 +39409,13 @@
         <nitem  name = "\arm_x/n608"  />
         <nitem  name = "\arm_x/n609"  />
         <nitem  name = "\arm_x/n610"  />
+        <nitem  name = "\arm_x/n611"  />
+        <nitem  name = "\arm_x/n612"  />
+        <nitem  name = "\arm_x/n613"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/mux_156"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/mux_159"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -39493,9 +39551,6 @@
         <nitem  name = "\arm_x/n566"  />
         <nitem  name = "\arm_x/n567"  />
         <nitem  name = "\arm_x/n568"  />
-        <nitem  name = "\arm_x/n612"  />
-        <nitem  name = "\arm_x/n613"  />
-        <nitem  name = "\arm_x/n614"  />
         <nitem  name = "\arm_x/n615"  />
         <nitem  name = "\arm_x/n616"  />
         <nitem  name = "\arm_x/n617"  />
@@ -39525,10 +39580,13 @@
         <nitem  name = "\arm_x/n641"  />
         <nitem  name = "\arm_x/n642"  />
         <nitem  name = "\arm_x/n643"  />
+        <nitem  name = "\arm_x/n644"  />
+        <nitem  name = "\arm_x/n645"  />
+        <nitem  name = "\arm_x/n646"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/i158"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/i161"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -39540,11 +39598,11 @@
         <nitem  name = "\arm_x/int_step"  />
         <nitem  name = "\arm_x/n184"  />
         <nitem  name = "\arm_x/n224"  />
-        <nitem  name = "\arm_x/n644"  />
+        <nitem  name = "\arm_x/n647"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/mux_158"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/mux_161"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -39711,9 +39769,6 @@
         <nitem  name = "\arm_x/n487"  />
         <nitem  name = "\arm_x/n488"  />
         <nitem  name = "\arm_x/n489"  />
-        <nitem  name = "\arm_x/n646"  />
-        <nitem  name = "\arm_x/n647"  />
-        <nitem  name = "\arm_x/n648"  />
         <nitem  name = "\arm_x/n649"  />
         <nitem  name = "\arm_x/n650"  />
         <nitem  name = "\arm_x/n651"  />
@@ -39743,10 +39798,13 @@
         <nitem  name = "\arm_x/n675"  />
         <nitem  name = "\arm_x/n676"  />
         <nitem  name = "\arm_x/n677"  />
+        <nitem  name = "\arm_x/n678"  />
+        <nitem  name = "\arm_x/n679"  />
+        <nitem  name = "\arm_x/n680"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/mux_159"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/mux_162"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -39768,13 +39826,13 @@
         <nitem  name = "\arm_x/n491"  />
         <nitem  name = "\arm_x/n492"  />
         <nitem  name = "\arm_x/n493"  />
-        <nitem  name = "\arm_x/n679"  />
-        <nitem  name = "\arm_x/n680"  />
-        <nitem  name = "\arm_x/n681"  />
+        <nitem  name = "\arm_x/n682"  />
+        <nitem  name = "\arm_x/n683"  />
+        <nitem  name = "\arm_x/n684"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/prev_step_clk_172"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\arm_x/prev_step_clk_176"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -39791,7 +39849,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/limit_latched_173"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\arm_x/limit_latched_177"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -39808,7 +39866,24 @@
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/fault_latched_174"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\arm_x/prev_limit_latched_178"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\arm_x/n1"  />
+        <nitem  name = "clk_12MHz"  />
+        <nitem  name = "\arm_x/limit_latched"  />
+        <nitem  name = "\arm_x/prev_limit_latched"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\arm_x/fault_latched_179"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -39873,14 +39948,14 @@
         <nitem  name = "\arm_x/control_reg[6]"  />
         <nitem  name = "\arm_x/control_reg[4]"  />
         <nitem  name = "\arm_x/control_reg[3]"  />
-        <nitem  name = "\arm_x/n570"  />
-        <nitem  name = "\arm_x/n571"  />
-        <nitem  name = "\arm_x/n572"  />
         <nitem  name = "\arm_x/n573"  />
         <nitem  name = "\arm_x/n574"  />
         <nitem  name = "\arm_x/n575"  />
         <nitem  name = "\arm_x/n576"  />
         <nitem  name = "\arm_x/n577"  />
+        <nitem  name = "\arm_x/n578"  />
+        <nitem  name = "\arm_x/n579"  />
+        <nitem  name = "\arm_x/n580"  />
         </nets>
     </instance>
 
@@ -40052,9 +40127,6 @@
         <nitem  name = "\arm_x/div_factor_reg[2]"  />
         <nitem  name = "\arm_x/div_factor_reg[1]"  />
         <nitem  name = "\arm_x/div_factor_reg[0]"  />
-        <nitem  name = "\arm_x/n579"  />
-        <nitem  name = "\arm_x/n580"  />
-        <nitem  name = "\arm_x/n581"  />
         <nitem  name = "\arm_x/n582"  />
         <nitem  name = "\arm_x/n583"  />
         <nitem  name = "\arm_x/n584"  />
@@ -40084,6 +40156,9 @@
         <nitem  name = "\arm_x/n608"  />
         <nitem  name = "\arm_x/n609"  />
         <nitem  name = "\arm_x/n610"  />
+        <nitem  name = "\arm_x/n611"  />
+        <nitem  name = "\arm_x/n612"  />
+        <nitem  name = "\arm_x/n613"  />
         </nets>
     </instance>
 
@@ -40255,9 +40330,6 @@
         <nitem  name = "\arm_x/steps_reg[2]"  />
         <nitem  name = "\arm_x/steps_reg[1]"  />
         <nitem  name = "\arm_x/steps_reg[0]"  />
-        <nitem  name = "\arm_x/n612"  />
-        <nitem  name = "\arm_x/n613"  />
-        <nitem  name = "\arm_x/n614"  />
         <nitem  name = "\arm_x/n615"  />
         <nitem  name = "\arm_x/n616"  />
         <nitem  name = "\arm_x/n617"  />
@@ -40287,10 +40359,13 @@
         <nitem  name = "\arm_x/n641"  />
         <nitem  name = "\arm_x/n642"  />
         <nitem  name = "\arm_x/n643"  />
+        <nitem  name = "\arm_x/n644"  />
+        <nitem  name = "\arm_x/n645"  />
+        <nitem  name = "\arm_x/n646"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/int_step_178"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\arm_x/int_step_183"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -40303,7 +40378,7 @@
         <nitem  name = "\arm_x/n1"  />
         <nitem  name = "clk_12MHz"  />
         <nitem  name = "\arm_x/int_step"  />
-        <nitem  name = "\arm_x/n644"  />
+        <nitem  name = "\arm_x/n647"  />
         </nets>
     </instance>
 
@@ -40475,9 +40550,6 @@
         <nitem  name = "\arm_x/read_value[2]"  />
         <nitem  name = "\arm_x/read_value[1]"  />
         <nitem  name = "\arm_x/read_value[0]"  />
-        <nitem  name = "\arm_x/n646"  />
-        <nitem  name = "\arm_x/n647"  />
-        <nitem  name = "\arm_x/n648"  />
         <nitem  name = "\arm_x/n649"  />
         <nitem  name = "\arm_x/n650"  />
         <nitem  name = "\arm_x/n651"  />
@@ -40507,6 +40579,9 @@
         <nitem  name = "\arm_x/n675"  />
         <nitem  name = "\arm_x/n676"  />
         <nitem  name = "\arm_x/n677"  />
+        <nitem  name = "\arm_x/n678"  />
+        <nitem  name = "\arm_x/n679"  />
+        <nitem  name = "\arm_x/n680"  />
         </nets>
     </instance>
 
@@ -40533,13 +40608,13 @@
         <nitem  name = "\arm_x/read_size[2]"  />
         <nitem  name = "\arm_x/read_size[1]"  />
         <nitem  name = "\arm_x/read_size[0]"  />
-        <nitem  name = "\arm_x/n679"  />
-        <nitem  name = "\arm_x/n680"  />
-        <nitem  name = "\arm_x/n681"  />
+        <nitem  name = "\arm_x/n682"  />
+        <nitem  name = "\arm_x/n683"  />
+        <nitem  name = "\arm_x/n684"  />
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/tri_180"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/tri_185"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[31]"  direction = "out"  />
         <pitem  name = "o[30]"  direction = "out"  />
@@ -40677,7 +40752,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/prev_select_171"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "\arm_x/prev_select_175"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -40694,7 +40769,7 @@
         </nets>
     </instance>
 
-    <instance  name = "\arm_x/tri_181"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "\arm_x/tri_186"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
@@ -60820,7 +60895,7 @@
     </instance>
 
     <!--
-        REG instances in netlist: 93
+        REG instances in netlist: 94
     -->
 
     <regs>
@@ -60837,13 +60912,13 @@
         <reg  name = "\protocol_interface/databus_out"  />
         <reg  name = "\protocol_interface/escape_501"  />
         <reg  name = "\protocol_interface/state"  />
-        <reg  name = "\global_control/prev_clk_1Hz_148"  />
-        <reg  name = "\global_control/xbee_pause_latched_149"  />
-        <reg  name = "\global_control/force_pause_150"  />
+        <reg  name = "\global_control/prev_clk_1Hz_149"  />
+        <reg  name = "\global_control/xbee_pause_latched_150"  />
+        <reg  name = "\global_control/force_pause_151"  />
         <reg  name = "\global_control/uptime_count"  />
         <reg  name = "\global_control/read_value"  />
         <reg  name = "\global_control/read_size"  />
-        <reg  name = "\global_control/prev_select_147"  />
+        <reg  name = "\global_control/prev_select_148"  />
         <reg  name = "\pwm_clk_div/clk_o_22"  />
         <reg  name = "\pwm_clk_div/int_factor"  />
         <reg  name = "\pwm_clk_div/count"  />
@@ -60851,16 +60926,17 @@
         <reg  name = "\motor_pwm/read_value"  />
         <reg  name = "\motor_pwm/read_size"  />
         <reg  name = "\motor_pwm/prev_select_138"  />
-        <reg  name = "\arm_x/prev_step_clk_172"  />
-        <reg  name = "\arm_x/limit_latched_173"  />
-        <reg  name = "\arm_x/fault_latched_174"  />
+        <reg  name = "\arm_x/prev_step_clk_176"  />
+        <reg  name = "\arm_x/limit_latched_177"  />
+        <reg  name = "\arm_x/prev_limit_latched_178"  />
+        <reg  name = "\arm_x/fault_latched_179"  />
         <reg  name = "\arm_x/control_reg"  />
         <reg  name = "\arm_x/div_factor_reg"  />
         <reg  name = "\arm_x/steps_reg"  />
-        <reg  name = "\arm_x/int_step_178"  />
+        <reg  name = "\arm_x/int_step_183"  />
         <reg  name = "\arm_x/read_value"  />
         <reg  name = "\arm_x/read_size"  />
-        <reg  name = "\arm_x/prev_select_171"  />
+        <reg  name = "\arm_x/prev_select_175"  />
         <reg  name = "\rc_receiver/read_size"  />
         <reg  name = "\rc_receiver/read_value"  />
         <reg  name = "\protocol_interface/uart_input/drdy_51"  />

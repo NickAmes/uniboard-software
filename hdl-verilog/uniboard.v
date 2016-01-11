@@ -510,7 +510,6 @@ module UniboardTop(
 	                      .select(dummy_select));
 	/* Global Control */
 	wire global_pause;
-	assign signal_light = global_pause;
 	GlobalControlPeripheral #(32'd0, 32'h0009) global_control(.clk_12MHz(clk_12MHz),
 	                                                          .databus(databus),
 	                                                          .reg_size(reg_size),
@@ -518,6 +517,7 @@ module UniboardTop(
 	                                                          .rw(rw),
 	                                                          .select(select[1]),
 	                                                          .global_pause(global_pause),
+	                                                          .signal_light(signal_light),
 	                                                          .xbee_pause_n(xbee_pause),
 	                                                          .battery_voltage(16'd6),
 	                                                          .reset(reset));

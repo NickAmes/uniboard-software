@@ -12,6 +12,7 @@ module GlobalControlPeripheral(
 	input wire rw, /* 0 = write, 1 = read. */
 	input wire select, /* Rising edge writes or hold high to read. */
 	output wire global_pause,
+	output wire signal_light,
 	input wire xbee_pause_n,
 	input wire [15:0] battery_voltage,
 	input wire reset);
@@ -35,6 +36,7 @@ module GlobalControlPeripheral(
 	
 	/* Register assignments */
 	assign global_pause = xbee_pause_latched | force_pause;
+	assign signal_light = global_pause ? 1'b1 : clk_1Hz;
 	assign register[0] = {29'b0, xbee_pause_latched, force_pause, global_pause};
 	assign register[1] = {16'b0, battery_voltage};
 	assign register[2] = uptime_count;

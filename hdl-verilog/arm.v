@@ -54,8 +54,6 @@ module ArmPeripheral(
 	assign reg_size = select ? read_size : 'bz;
 	assign databus = (select & rw) ? read_value : 'bz;
 	
-	//TODO: set go to 0 when limit pressed
-	
 	/* Bus handling and step generation */
 	always @ (posedge clk_12MHz)			
 		begin

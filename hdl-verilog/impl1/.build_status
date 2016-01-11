@@ -5,33 +5,33 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1452431315"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1452479375"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1452431275">
-            <Task name="Map" build_result="2" update_result="0" update_time="1452431275"/>
+        <Milestone name="Map" build_result="2" build_time="1452479338">
+            <Task name="Map" build_result="2" update_result="0" update_time="1452479338"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1452431311">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1452431311"/>
+        <Milestone name="PAR" build_result="2" build_time="1452479371">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1452479371"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1452431268">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1452431268"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1452431268"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1452479328">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1452479328"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1452479328"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1452428873"/>
         </Milestone>
-        <Report name=".vdbs/Uniboard_verilog_impl1_map.vdb" last_build_time="1452431274" last_build_size="720120"/>
-        <Report name="Uniboard_verilog_impl1.bgn" last_build_time="1452431314" last_build_size="3966"/>
-        <Report name="Uniboard_verilog_impl1.jed" last_build_time="1452431314" last_build_size="1455014"/>
-        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452431261" last_build_size="3081847"/>
-        <Report name="Uniboard_verilog_impl1.ncd" last_build_time="1452431311" last_build_size="1768863"/>
-        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452431268" last_build_size="1440169"/>
-        <Report name="Uniboard_verilog_impl1_map.ncd" last_build_time="1452431274" last_build_size="1251984"/>
+        <Report name=".vdbs/Uniboard_verilog_impl1_map.vdb" last_build_time="1452479338" last_build_size="710763"/>
+        <Report name="Uniboard_verilog_impl1.bgn" last_build_time="1452479375" last_build_size="3966"/>
+        <Report name="Uniboard_verilog_impl1.jed" last_build_time="1452479375" last_build_size="1455014"/>
+        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452479321" last_build_size="3084388"/>
+        <Report name="Uniboard_verilog_impl1.ncd" last_build_time="1452479371" last_build_size="1768725"/>
+        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452479328" last_build_size="1437054"/>
+        <Report name="Uniboard_verilog_impl1_map.ncd" last_build_time="1452479337" last_build_size="1249190"/>
     </Strategy>
 </BuildStatus>
