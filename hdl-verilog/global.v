@@ -41,6 +41,9 @@ module GlobalControlPeripheral(
 	assign register[3] = hdl_build;
 	assign register[4] = api_version;
 	
+	//TODO: Make light blink as specified in the standard
+	
+	
 	/* Bus handling */
 	always @ (posedge clk_12MHz)			
 		begin

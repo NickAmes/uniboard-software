@@ -30,6 +30,7 @@ module ArmPeripheral(
 	/* Internal signals */
 	reg fault_latched;
 	reg limit_latched;
+	reg prev_limit_latched;
 	wire stepping;
 	reg int_step; /* Internal step signal; active on rising edge. */
 	wire go;
@@ -53,12 +54,15 @@ module ArmPeripheral(
 	assign reg_size = select ? read_size : 'bz;
 	assign databus = (select & rw) ? read_value : 'bz;
 	
+	//TODO: set go to 0 when limit pressed
+	
 	/* Bus handling and step generation */
 	always @ (posedge clk_12MHz)			
 		begin
 			prev_select <= select;
 			prev_step_clk <= step_clk;
 			limit_latched <= ~limitn;
+			prev_limit_latched <= limit_latched;
 			fault_latched <= fault;
 			
 			if(reset == 1)
@@ -117,8 +121,12 @@ module ArmPeripheral(
 											steps_reg <= databus;
 									endcase
 								end
-						end		
-					end
+						end	
+					if(~prev_limit_latched & limit_latched) /* Unpressed->Pressed */
+						begin
+							control_reg[7] <= 1'b0;
+						end
+				end
 		end
 	ClockDivider step_clk_gen(.clk_i(clk_12MHz),
 	                          .clk_o(step_clk),
