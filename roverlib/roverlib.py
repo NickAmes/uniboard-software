@@ -51,7 +51,16 @@ class Uniboard:
 			#Arm
 			0x0400:0x2A,
 			0x0402:12000,
-			0x0403:0
+			0x0403:0,
+			0x0410:0x2A,
+			0x0412:12000,
+			0x0413:0,
+			0x0420:0x2A,
+			0x0422:12000,
+			0x0423:0,
+			0x0430:0x2A,
+			0x0432:12000,
+			0x0433:0
 		}
 		
 		#Dictionary of peripheral masks. For each peripheral register, 1s in the value in this dictionary
@@ -70,11 +79,23 @@ class Uniboard:
 			#No writeable bits in this peripheral.
 			
 			#Arm
-			0x0400:0xEF,
+			0x0400:0x6F, #The go bit is modified by the Uniboard, so we pretend it is read-only
 			0x0402:0xFFFFFFFF,
 			#0x0403:0xFFFFFFFF #The steps register is completely writeable, but it's modified
 			                   #by the Uniboard, so we pretend it's read-only to prevent mismatches.
-			}
+			0x0410:0x6F, #The go bit is modified by the Uniboard, so we pretend it is read-only
+			0x0412:0xFFFFFFFF,
+			#0x0413:0xFFFFFFFF #The steps register is completely writeable, but it's modified
+			                   #by the Uniboard, so we pretend it's read-only to prevent mismatches.
+			0x0420:0x6F, #The go bit is modified by the Uniboard, so we pretend it is read-only
+			0x0422:0xFFFFFFFF,
+			#0x0423:0xFFFFFFFF #The steps register is completely writeable, but it's modified
+			                   #by the Uniboard, so we pretend it's read-only to prevent mismatches.
+			0x0430:0x6F, #The go bit is modified by the Uniboard, so we pretend it is read-only
+			0x0432:0xFFFFFFFF,
+			#0x0433:0xFFFFFFFF #The steps register is completely writeable, but it's modified
+			                   #by the Uniboard, so we pretend it's read-only to prevent mismatches.
+		}
 		
 		#Dictionary of register sizes, in bytes.
 		#This dictionary is indexed by the 15-bit peripheral-register address, with the peripheral
@@ -104,9 +125,25 @@ class Uniboard:
 			0x0400:1,
 			0x0401:1,
 			0x0402:4,
-			0x0403:4
+			0x0403:4,
+			0x0410:1,
+			0x0411:1,
+			0x0412:4,
+			0x0413:4,
+			0x0420:1,
+			0x0421:1,
+			0x0422:4,
+			0x0423:4,
+			0x0430:1,
+			0x0431:1,
+			0x0432:4,
+			0x0433:4,
+			0x040A:2,
+			0x040B:2,
+			0x040C:2,
+			0x040D:2,
 		}
-		pass
+		self._init_arm_data()
 	
 	
 	#Public API Starts Here
@@ -161,28 +198,44 @@ class Uniboard:
 		self._write_reg(2, 1, intvalue)
 	
 	#Arm
-	def _arm_reg(axis, base_register):
-		"""Return the register value for a base register on the given axis.
-		   Axis is either a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
-		
+	def arm_target(self, axis, target=None):
+		pass
+	def arm_current(self, axis, current=None):
+		pass
+	def arm_en(self, axis, state=None):
+		pass
+	def arm_go(self, axis, state=None):
+		pass
+	def arm_moving(self, axis):
+		pass
+	def arm_fault(self, axis):
+		pass
 	def arm_limit(self, axis):
-		"""Returns true if the limit switch of an arm axis is pressed. Axis is either a string
-		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively)."""
-		#return (u._read_reg
+		pass
+	def arm_home(self, axis="All"):
+		pass
 	
-	def arm_en(self, state):
-		"""Set the state of an arm axis driver. Axis is either a string
-		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively).
-		   State is 1 (or other things that evaluate as True) to enable the DRV8825
-		   driver, 0 to disable it. (The actual value of the pin is inverted from
-		   this; True pulls the pin low, False raises it high."""
-	
-	def arm_dir(self, dir_value):
-		"""Set the state of the arm dir line. Axis is either a string
-		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, 3, respectively).
-		   Dir_value is 1 (or other things that evaluate as True) 
-		   to bring the dir line high, 0 make it low."""
-		   
+	def _arm_reg(self, axis, reg):
+		pass
+	def _set_microsteps(self, axis):
+		pass
+	def _set_step_po(self, axis):
+		pass
+	def _init_arm_data(self):
+		"""Initialize the class data structure for the arm. This would normally go in the constructor,
+		   but it's in a separate function to group it with the rest of the arm functionality."""
+		self._arm_data = {
+			"X":{
+					"target":0,       #target and current are in steps away from the limit.
+					"current":0,
+					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"steppol":1,      #Value of STEPPOL bit
+					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 16, or 32
+					"regprefix":0x00, #Value to be ORed with the register lower nibble to get the registers of this axis
+			},
+			
+		  
 	#RC Receiver
 	def rc_valid(self):
 		"""Returns a dictionary (with keys 1, 2, 3, 4, 7, and 8) containing

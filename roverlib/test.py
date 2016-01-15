@@ -5,33 +5,31 @@ import roverlib
 import time
 u = roverlib.Uniboard("/dev/ttyUSB1")
 
-u.force_pause(False);
-
-#i = 0
-#while True:
-	#print u.paused(), " ", u.uptime(), " ", u.battery_voltage(), " ", u.hdl_version(), " ", u.api_version(),
-	#print "      ",
+i = 0
+while True:
+	print u.paused(), " ", u.uptime(), " ", u.battery_voltage(), " ", u.hdl_version(), " ", u.api_version(),
+	print "      ",
 	
-	#print u._read_reg(4,0), " ", u._read_reg(4,1),  " ",  u._read_reg(4,2), " ", u._read_reg(4,3), 
-	#u._write_reg(4, 0, 0xAA)
-	#u._write_reg(4,3,500)
-	#u._write_reg(4,2,5000 + i)
-	#print "      ",
+	print u._read_reg(4,0), " ", u._read_reg(4,1),  " ",  u._read_reg(4,2), " ", u._read_reg(4,3), 
+	u._write_reg(4, 0, 0xAA)
+	u._write_reg(4,3,500)
+	u._write_reg(4,2,5000 + i)
+	print "      ",
 	
-	#u.motor_right(float(i % 256)/255.0 - 127.5)
-	#u.motor_left(float((i + 50) % 256)/255.0 - 127.5)
-	#print u._read_reg(2,0),
-	#print " ",
-	#print u._read_reg(2,1),
-	#print "      ",
+	u.motor_right(float(i % 256)/255.0 - 127.5)
+	u.motor_left(float((i + 50) % 256)/255.0 - 127.5)
+	print u._read_reg(2,0),
+	print " ",
+	print u._read_reg(2,1),
+	print "      ",
 	
-	#for ch in [1, 2, 3, 4, 7, 8]:
-		#print "Ch. %d "%ch,
-		#print u.rc_value(ch),
-	#print " ",
-	#print "i = ",
-	#print i
-	#i+=1
+	for ch in [1, 2, 3, 4, 7, 8]:
+		print "Ch. %d "%ch,
+		print u.rc_value(ch),
+	print " ",
+	print "i = ",
+	print i
+	i+=1
 
 #from Tkinter import *
 #class App:
