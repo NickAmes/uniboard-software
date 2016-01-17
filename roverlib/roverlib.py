@@ -288,7 +288,6 @@ class Uniboard:
 		target_s = target / scale
 		target_ms = target_s * self._arm_data[self._arm_key(axis)]["microsteps"]
 		new_steps_ms = abs(target_ms - current_ms)
-		print new_steps_ms
 		fwd = target_ms > current_ms
 		
 		self._arm_data[self._arm_key(axis)]["target"] = target_s

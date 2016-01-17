@@ -5,13 +5,18 @@ import roverlib
 import time
 u = roverlib.Uniboard("/dev/ttyUSB1")
 
-u.arm_en("X", True)
-u.arm_go("X", True)
-u.arm_target("X", 1)
-time.sleep(3)
-u.arm_target("X", .5)
+def test_axis(axis):
+	global u
+	u.arm_en(axis, True)
+	u.arm_go(axis, True)
+	u.arm_target(axis, 1)
+	time.sleep(1.5)
+	u.arm_target(axis, .5)
 
-
+test_axis("X")
+test_axis("Y")
+test_axis("Z")
+test_axis("A")
 #i = 0
 #while True:
 	#print u.paused(), " ", u.uptime(), " ", u.battery_voltage(), " ", u.hdl_version(), " ", u.api_version(),
