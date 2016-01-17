@@ -143,7 +143,56 @@ class Uniboard:
 			0x040C:2,
 			0x040D:2,
 		}
-		self._init_arm_data()
+		
+		self._arm_data = {
+			"X":{
+					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
+					"current":0,
+					"max":0,
+					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"frequency":1000, #Step frequency, in Hz
+					"steppol":1,      #Value of STEPPOL bit
+					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
+					"regprefix":0x00, #Value to be ORed with the register lower nibble to get the registers of this axis
+			},
+			"Y":{
+					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
+					"current":0,
+					"max":0,
+					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps, meters = scale * steps)
+					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"frequency":1000, #Step frequency, in Hz
+					"steppol":1,      #Value of STEPPOL bit
+					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
+					"regprefix":0x10, #Value to be ORed with the register lower nibble to get the registers of this axis
+			},
+			"Z":{
+					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
+					"current":0,
+					"max":0,
+					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"frequency":1000, #Step frequency, in Hz
+					"steppol":1,      #Value of STEPPOL bit
+					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
+					"regprefix":0x20, #Value to be ORed with the register lower nibble to get the registers of this axis
+			},
+			"A":{
+					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
+					"current":0,
+					"max":0,
+					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"frequency":1000, #Step frequency, in Hz
+					"steppol":1,      #Value of STEPPOL bit
+					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
+					"regprefix":0x30, #Value to be ORed with the register lower nibble to get the registers of this axis
+			}
+		}
+		for axis in self._arm_data:
+			self._arm_set_microsteps(axis, self._arm_data[axis]["microsteps"])
+			self._set_step_pol(axis, self._arm_data[axis]["steppol"])
 	
 	
 	#Public API Starts Here
@@ -154,15 +203,21 @@ class Uniboard:
 			return True
 		else:
 			return False
-	def force_pause(self, pause_state):
+		
+	def force_pause(self, pause_state=None):
 		"""Set the forced-pause state of the rover. If True, the rover will
 		   be paused regardless of the pause input from the remote. If False,
 		   the forced pause will be disabled. However, the rover will still be
-		   paused if commanded by the remote."""
-		if pause_state:
-			self._write_reg(1,0,2)
+		   paused if commanded by the remote. If no argument is supplied, the
+		   current force_pause state will be returned (True or False)."""
+		if pause_state == None:
+			state = self._read_reg(1, )
+			return state & 0x02 != 0
 		else:
-			self._write_reg(1,0,0)
+			if pause_state:
+				self._write_reg(1,0,2)
+			else:
+				self._write_reg(1,0,0)
 			
 	def battery_voltage(self):
 		"""Return the battery voltage in volts."""
@@ -206,6 +261,12 @@ class Uniboard:
 		pass
 	def arm_go(self, axis, state=None):
 		pass
+	def arm_max(self, axis):
+		"""Return the maximum displacement of an axis, in meters. Axis can
+		   be a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), respectively."""
+		data = self._arm_data[self._arm_key(axis)]
+		return float(data["max"]) * data["scale"]
+	
 	def arm_moving(self, axis):
 		pass
 	def arm_fault(self, axis):
@@ -215,27 +276,59 @@ class Uniboard:
 	def arm_home(self, axis="All"):
 		pass
 	
+	def _arm_key(self, axis):
+		"""Return the key used in the _arm_data dictionary based on an axis name. Axis can
+		   be a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), respectively.
+		   If axis is invalid, ValueError is thrown."""
+		if axis == "X" or axis == 0:
+			return "X"
+		elif axis == "Y" or axis == 1:
+			return "Y"
+		elif axis == "Z" or axis == 2:
+			return "Z"
+		elif axis == "A" or axis == 3:
+			return "A"
+		else:
+			raise ValueError("Invalid arm axis name");
+	
 	def _arm_reg(self, axis, reg):
-		pass
-	def _set_microsteps(self, axis):
-		pass
-	def _set_step_po(self, axis):
-		pass
-	def _init_arm_data(self):
-		"""Initialize the class data structure for the arm. This would normally go in the constructor,
-		   but it's in a separate function to group it with the rest of the arm functionality."""
-		self._arm_data = {
-			"X":{
-					"target":0,       #target and current are in steps away from the limit.
-					"current":0,
-					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
-					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"steppol":1,      #Value of STEPPOL bit
-					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 16, or 32
-					"regprefix":0x00, #Value to be ORed with the register lower nibble to get the registers of this axis
-			},
-			
-		  
+		"""Return the complete arm register number for a given axis, given an axis and
+		   the lower nibble of the register. Axis can be a string ("X", "Y", "Z", or "A") 
+		   or an integer (0, 1, 2, or 3), respectively. This function does not work
+		   with the analog input registers."""
+		return self._arm_data[_arm_key(axis)]["regprefix"] | reg;
+	
+	def _set_microsteps(self, axis, microsteps):
+		"""Set the microsteps value in the Configuration register of the given arm axis.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), 
+		   respectively. Microsteps is 1, 2, 4, 8, 16, or 32."""
+		if microsteps not in (1, 2, 4, 8, 16, 32):
+			raise ValueError("Incorrect microsteps value")
+		reg_ms = (0, 1, 2, 3, 4, 5, 6)
+		reg = self._arm_reg(axis, 0)
+		prev_rvalue = self._read_reg(0x04, reg)
+		prev_rvalue &= 0x07
+		prev_rvalue |= reg_ms[microsteps]
+		self._write_reg(0x04, reg, prev_value)
+	
+	def _set_frequency(self, axis, freq):
+		"""Set the step frequency of an arm axis. Axis can be a string 
+		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), 
+		   respectively. Freq is in Hz."""
+		period = int(12e6/float(freq))
+		self._write_reg(4, self._arm_reg(axis, 2), period)
+	
+	def _set_step_pol(self, axis, value):
+		"""Set the step polarity bit to the given value (1 or 0). Axis can be a string 
+		   ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), respectively."""
+		reg = self._arm_reg(axis, 0)
+		prev_rvalue = self._read_reg(0x04, reg)
+		if value:
+			prev_rvalue |= 0x40
+		else:
+			prev_rvalue &= ~0x40
+		self._write_reg(0x04, reg, prev_value)
+	
 	#RC Receiver
 	def rc_valid(self):
 		"""Returns a dictionary (with keys 1, 2, 3, 4, 7, and 8) containing
