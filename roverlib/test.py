@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 #roverlib/uniboard test program
 #Written 2015-2016 by Nick Ames <nick@fetchmodus.org>
-import roverlib
+import uniboard
 import time
-u = roverlib.Uniboard("/dev/ttyUSB1")
+u = uniboard.Uniboard("/dev/ttyUSB1")
 
 def test_axis(axis):
 	global u
