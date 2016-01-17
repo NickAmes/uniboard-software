@@ -146,46 +146,50 @@ class Uniboard:
 		
 		self._arm_data = {
 			"X":{
-					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
-					"current":0,
-					"max":0,
-					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
+					"max":1000,
+					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Step frequency, in Hz
+					"frequency":1000, #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
+					"enpol":0,        #State of EN line when driver is enabled
+					"faultpol":0,     #State of fault line that indicated a problem
 					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
 					"regprefix":0x00, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"Y":{
-					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
-					"current":0,
-					"max":0,
-					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps, meters = scale * steps)
+					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
+					"max":1000,
+					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps, meters = scale * steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Step frequency, in Hz
+					"frequency":1000, #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
+					"enpol":0,        #State of EN line when driver is enabled
+					"faultpol":0,     #State of fault line that indicated a problem
 					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
 					"regprefix":0x10, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"Z":{
-					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
-					"current":0,
-					"max":0,
-					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
+					"max":1000,
+					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Step frequency, in Hz
+					"frequency":1000, #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
+					"enpol":0,        #State of EN line when driver is enabled
+					"faultpol":0,     #State of fault line that indicated a problem
 					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
 					"regprefix":0x20, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"A":{
-					"target":0,       #target, current, and max are in (full, non-microsteped) steps away from the limit.
-					"current":0,
-					"max":0,
-					"scale":0,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
+					"max":1000,
+					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Step frequency, in Hz
+					"frequency":1000, #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
+					"enpol":0,        #State of EN line when driver is enabled
+					"faultpol":0,     #State of fault line that indicated a problem
 					"microsteps":32,  #Number of microsteps. Should be 1, 2, 4, 8, 16, or 32
 					"regprefix":0x30, #Value to be ORed with the register lower nibble to get the registers of this axis
 			}
@@ -193,7 +197,7 @@ class Uniboard:
 		for axis in self._arm_data:
 			self._set_microsteps(axis, self._arm_data[axis]["microsteps"])
 			self._set_step_pol(axis, self._arm_data[axis]["steppol"])
-	
+			self._set_frequency(axis, self._arm_data[axis]["frequency"] * self._arm_data[axis]["microsteps"])
 	
 	#Public API Starts Here
 	#Global Control
@@ -205,7 +209,7 @@ class Uniboard:
 			return False
 		
 	def force_pause(self, pause_state=None):
-		"""Set the forced-pause state of the rover. If True, the rover will
+		"""Set/get the forced-pause state of the rover. If True, the rover will
 		   be paused regardless of the pause input from the remote. If False,
 		   the forced pause will be disabled. However, the rover will still be
 		   paused if commanded by the remote. If no argument is supplied, the
@@ -254,13 +258,99 @@ class Uniboard:
 	
 	#Arm
 	def arm_target(self, axis, target=None):
-		pass
-	def arm_current(self, axis, current=None):
-		pass
+		"""Set/get the target (position the arm should move toward) of an arm axis, in meters.
+		   If target is None, the current target is returned. Note that in order for the
+		   arm to move, the driver must be enabled (with arm_en()), go must be set (with arm_go()),
+		   and the rover must not be paused. Additionally, arm_home() should be run before
+		   using the arm. Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		scale = self._arm_data[self._arm_key(axis)]["scale"]
+		if target == None:
+			return self._arm_data[self._arm_key(axis)]["scale"] * self._arm_data[self._arm_key(axis)]["target"]
+		
+		if target > self.arm_max(axis):
+			raise ValueError("Requested axis %s target %fm larger than maximum of %fm."%(str(axis), target, self.arm_max(axis)))
+		
+		prev_go = self.arm_go(axis)
+		self.arm_go(axis, False) #Stop the arm, so that we can get a valid number if it's moving
+		
+		prev_target_ms = self._arm_data[self._arm_key(axis)]["target"] * self._arm_data[self._arm_key(axis)]["microsteps"]
+		prev_conf_reg = self._read_reg(4, self._arm_reg(axis, 0))
+		prev_dirstate = bool(prev_conf_reg & 0x20) 
+		add = self._arm_data[self._arm_key(axis)]["dirpol"] ^ prev_dirstate
+		prev_steps_ms = self._read_reg(4, self._arm_reg(axis, 3))
+		if add:
+			current_ms = prev_target_ms + prev_steps_ms
+		else:
+			current_ms = prev_target_ms - prev_steps_ms
+		
+		
+		target_s = target / scale
+		target_ms = target_s * self._arm_data[self._arm_key(axis)]["microsteps"]
+		new_steps_ms = abs(target_ms - current_ms)
+		print new_steps_ms
+		fwd = target_ms > current_ms
+		
+		self._arm_data[self._arm_key(axis)]["target"] = target_s
+		if not (fwd ^ self._arm_data[self._arm_key(axis)]["dirpol"]):
+			conf_reg = prev_conf_reg | 0x20
+		else:
+			conf_reg = prev_conf_reg & ~0x20
+		self._write_reg(4, self._arm_reg(axis, 0), conf_reg)
+		self._write_reg(4, self._arm_reg(axis, 3), int(new_steps_ms))
+		self.arm_go(axis, prev_go)
+		
+	def arm_current(self, axis, current):
+		"""Return the current position of the given axis, in meters.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		#The current position of the axis is the target position with the value in the steps
+		#register added or subtracted, as the steps register contains the difference between
+		#current and target values. Addition or subtraction is controlled by the DIR state.
+		#If it indicates that the axis is moving in a positive direction, then the current must
+		#be smaller than the target, so current = target - steps. The opposite is true for a
+		#negative DIR.
+		#The value in the steps register includes microsteps. To deal with this,
+		#the target value is converted to microsteps as well.
+		target_ms = self._arm_data[self._arm_key(axis)]["target"] * self._arm_data[self._arm_key(axis)]["microsteps"]
+		dirstate = bool(self._read_reg(4, self._arm_reg(axis, 0)) & 0x20) 
+		add = self._arm_data[self._arm_key(axis)]["dirpol"] ^ dirstate
+		steps_ms = self._read_reg(4, self._arm_reg(axis, 3))
+		if add:
+			current_ms = target_ms + steps_ms
+		else:
+			current_ms = target_ms - steps_ms
+		return float(current_ms)/self._arm_data[self._arm_key(axis)]["microsteps"] * self._arm_data[self._arm_key(axis)]["scale"]
+	
 	def arm_en(self, axis, state=None):
-		pass
+		"""Get or set the current on/off state of the given axis's stepper driver.
+		   If no state argument is returned, the state (True=on, False=off) is returned.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		enpol = bool(self._arm_data[self._arm_key(axis)]["enpol"])
+		conf_reg = self._read_reg(4, self._arm_reg(axis, 0))
+		if state == None: #Get current
+			return enpoln == bool(cont_reg & 0x40)
+		else:
+			if not (enpol ^ state):
+				self._write_reg(4, self._arm_reg(axis, 0), conf_reg | 0x40)
+			else:
+				self._write_reg(4, self._arm_reg(axis, 0), conf_reg & ~0x40)
+			
 	def arm_go(self, axis, state=None):
-		pass
+		"""Get or set the current stop/move state of the given axis.
+		   If no state argument is returned, the state (True=can move, False=stopped) is returned.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		conf_reg = self._read_reg(4, self._arm_reg(axis, 0))
+		if state == None: #Get current
+			return bool(conf_reg & 0x80)
+		else:
+			if state:
+				self._write_reg(4, self._arm_reg(axis, 0), conf_reg | 0x80)
+			else:
+				self._write_reg(4, self._arm_reg(axis, 0), conf_reg & ~0x80)
+				
 	def arm_max(self, axis):
 		"""Return the maximum displacement of an axis, in meters. Axis can
 		   be a string ("X", "Y", "Z", or "A") or an integer (0, 1, 2, or 3), respectively."""
@@ -268,11 +358,24 @@ class Uniboard:
 		return float(data["max"]) * data["scale"]
 	
 	def arm_moving(self, axis):
-		pass
+		"""Returns True is the given axis is currently in motion.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		return bool(self._read_reg(4, self._arm_reg(axis, 1)) & 0x04)
+	
 	def arm_fault(self, axis):
-		pass
+		"""Returns True is the given axis's driver is indicating a problem.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		faultpol = bool(self._arm_data[self._arm_key(axis)]["faultpol"]) 
+		return not (faultpol ^ bool(self._read_reg(4, self._arm_reg(axis, 1)) & 0x02))
+	
 	def arm_limit(self, axis):
-		pass
+		"""Returns True is the given axis is at is (negative) limit.
+		   Axis can be a string ("X", "Y", "Z", or "A") or an 
+		   integer (0, 1, 2, or 3), respectively."""
+		return bool(self._read_reg(4, self._arm_reg(axis, 1)) & 0x01)
+	
 	def arm_home(self, axis="All"):
 		pass
 	
