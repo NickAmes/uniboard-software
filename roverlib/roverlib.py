@@ -191,7 +191,7 @@ class Uniboard:
 			}
 		}
 		for axis in self._arm_data:
-			self._arm_set_microsteps(axis, self._arm_data[axis]["microsteps"])
+			self._set_microsteps(axis, self._arm_data[axis]["microsteps"])
 			self._set_step_pol(axis, self._arm_data[axis]["steppol"])
 	
 	
@@ -296,7 +296,7 @@ class Uniboard:
 		   the lower nibble of the register. Axis can be a string ("X", "Y", "Z", or "A") 
 		   or an integer (0, 1, 2, or 3), respectively. This function does not work
 		   with the analog input registers."""
-		return self._arm_data[_arm_key(axis)]["regprefix"] | reg;
+		return self._arm_data[self._arm_key(axis)]["regprefix"] | reg;
 	
 	def _set_microsteps(self, axis, microsteps):
 		"""Set the microsteps value in the Configuration register of the given arm axis.
@@ -304,12 +304,12 @@ class Uniboard:
 		   respectively. Microsteps is 1, 2, 4, 8, 16, or 32."""
 		if microsteps not in (1, 2, 4, 8, 16, 32):
 			raise ValueError("Incorrect microsteps value")
-		reg_ms = (0, 1, 2, 3, 4, 5, 6)
+		reg_ms = {1:0, 2:1, 4:2, 8:3, 16:4, 32:5}
 		reg = self._arm_reg(axis, 0)
 		prev_rvalue = self._read_reg(0x04, reg)
 		prev_rvalue &= 0x07
 		prev_rvalue |= reg_ms[microsteps]
-		self._write_reg(0x04, reg, prev_value)
+		self._write_reg(0x04, reg, prev_rvalue)
 	
 	def _set_frequency(self, axis, freq):
 		"""Set the step frequency of an arm axis. Axis can be a string 
@@ -327,7 +327,7 @@ class Uniboard:
 			prev_rvalue |= 0x40
 		else:
 			prev_rvalue &= ~0x40
-		self._write_reg(0x04, reg, prev_value)
+		self._write_reg(0x04, reg, prev_rvalue)
 	
 	#RC Receiver
 	def rc_valid(self):
@@ -360,10 +360,13 @@ class Uniboard:
 			return (float(value) / 127.5) - 1.0
 		else:	
 			return None
-						
+	
+	
+	def hex_str(self, value):
+		"""Convert a number to a string of hexadecimal digits, in the form "0x123ABD..."."""
+		return "0x" + format(value, '0X')
+	
 	#Public API Ends Here
-	
-	
 	def _message(self, string):
 		"""Print message to stderr, prepending librover and the time and appending a newline."""
 		sys.stderr.write("librover [" + time.asctime(time.localtime()) + "]: " + string + "\n")
@@ -441,7 +444,7 @@ class Uniboard:
 		a_value = self._btn(value) & self._periph_mask.get(self._k(peripheral, register), 0)
 		if e_value != a_value:
 			#TODO: Create visualization function (read-only bits as Xs). 
-			self._error("Reply data different than expected. Peripheral/register: 0x%02X/0x%02X."%(peripheral, register))
+			self._error("Reply data different than expected. Peripheral/register: 0x%02X/0x%02X. Expected %s, got %s."%(peripheral, register, self.hex_str(e_value), self.hex_str(a_value)))
 			
 	def _btn(self, byte_data):
 		"""Convert a 1-4 byte string to a number."""

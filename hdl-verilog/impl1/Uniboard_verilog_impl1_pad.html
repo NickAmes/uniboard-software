@@ -14,7 +14,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sun Jan 10 18:29:15 2016
+Sat Jan 16 19:19:36 2016
 
 Pinout by Port Name:
 +------------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -26,6 +26,7 @@ Pinout by Port Name:
 | Stepper_A_M1     | 71/2     | LVCMOS25_OUT | PB38B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_A_M2     | 73/1     | LVCMOS25_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_A_Step   | 74/1     | LVCMOS25_OUT | PR24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_A_nFault | 76/1     | LVCMOS25_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | Stepper_X_Dir    | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_X_En     | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_X_M0     | 104/1    | LVCMOS25_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -39,12 +40,14 @@ Pinout by Port Name:
 | Stepper_Y_M1     | 94/1     | LVCMOS25_OUT | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Y_M2     | 93/1     | LVCMOS25_OUT | PR11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Y_Step   | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Y_nFault | 97/1     | LVCMOS25_IN  | PR7B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | Stepper_Z_Dir    | 84/1     | LVCMOS25_OUT | PR17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_En     | 77/1     | LVCMOS25_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_M0     | 78/1     | LVCMOS25_OUT | PR21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_M1     | 81/1     | LVCMOS25_OUT | PR18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_M2     | 82/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | Stepper_Z_Step   | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Stepper_Z_nFault | 85/1     | LVCMOS25_IN  | PR16B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | clk_12MHz        | 128/0    | LVCMOS25_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | debug[0]         | 111/0    | LVCMOS25_OUT | PT35B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | debug[1]         | 112/0    | LVCMOS25_OUT | PT35A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -61,6 +64,9 @@ Pinout by Port Name:
 | expansion4       | 61/2     | LVCMOS25_OUT | PB31A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | expansion5       | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | limit[0]         | 68/2     | LVCMOS25_IN  | PB37A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| limit[1]         | 65/2     | LVCMOS25_IN  | PB35A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| limit[2]         | 67/2     | LVCMOS25_IN  | PB35B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| limit[3]         | 63/2     | LVCMOS25_IN  | PB31D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | motor_pwm_l      | 5/5      | LVCMOS25_OUT | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | motor_pwm_r      | 6/5      | LVCMOS25_OUT | PL6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | rc_ch1           | 47/2     | LVCMOS25_IN  | PB13A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
@@ -150,9 +156,9 @@ Vccio by Bank:
 | 60/2     | expansion3            | LOCATED    | LVCMOS25_OUT | PB29B |                |           |           |
 | 61/2     | expansion4            | LOCATED    | LVCMOS25_OUT | PB31A |                |           |           |
 | 62/2     | expansion5            | LOCATED    | LVCMOS25_OUT | PB31B |                |           |           |
-| 63/2     |     unused, PULL:DOWN |            |              | PB31D |                |           |           |
-| 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
-| 67/2     |     unused, PULL:DOWN |            |              | PB35B |                |           |           |
+| 63/2     | limit[3]              | LOCATED    | LVCMOS25_IN  | PB31D |                |           |           |
+| 65/2     | limit[1]              | LOCATED    | LVCMOS25_IN  | PB35A |                |           |           |
+| 67/2     | limit[2]              | LOCATED    | LVCMOS25_IN  | PB35B |                |           |           |
 | 68/2     | limit[0]              | LOCATED    | LVCMOS25_IN  | PB37A |                |           |           |
 | 69/2     | Stepper_A_En          | LOCATED    | LVCMOS25_OUT | PB37B |                |           |           |
 | 70/2     | Stepper_A_M0          | LOCATED    | LVCMOS25_OUT | PB38A | SN             |           |           |
@@ -160,14 +166,14 @@ Vccio by Bank:
 | 73/1     | Stepper_A_M2          | LOCATED    | LVCMOS25_OUT | PR24B | DQ1            |           |           |
 | 74/1     | Stepper_A_Step        | LOCATED    | LVCMOS25_OUT | PR24A | DQ1            |           |           |
 | 75/1     | Stepper_A_Dir         | LOCATED    | LVCMOS25_OUT | PR23B | DQ1            |           |           |
-| 76/1     |     unused, PULL:DOWN |            |              | PR23A | DQ1            |           |           |
+| 76/1     | Stepper_A_nFault      | LOCATED    | LVCMOS25_IN  | PR23A | DQ1            |           |           |
 | 77/1     | Stepper_Z_En          | LOCATED    | LVCMOS25_OUT | PR21B | DQ1            |           |           |
 | 78/1     | Stepper_Z_M0          | LOCATED    | LVCMOS25_OUT | PR21A | DQ1            |           |           |
 | 81/1     | Stepper_Z_M1          | LOCATED    | LVCMOS25_OUT | PR18B | DQ1            |           |           |
 | 82/1     | Stepper_Z_M2          | LOCATED    | LVCMOS25_OUT | PR18A | DQ1            |           |           |
 | 83/1     | Stepper_Z_Step        | LOCATED    | LVCMOS25_OUT | PR17B | DQ1            |           |           |
 | 84/1     | Stepper_Z_Dir         | LOCATED    | LVCMOS25_OUT | PR17A | DQ1            |           |           |
-| 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
+| 85/1     | Stepper_Z_nFault      | LOCATED    | LVCMOS25_IN  | PR16B | DQS1N          |           |           |
 | 86/1     | Stepper_Y_Dir         | LOCATED    | LVCMOS25_OUT | PR16A | DQS1           |           |           |
 | 87/1     | Stepper_Y_Step        | LOCATED    | LVCMOS25_OUT | PR15B |                |           |           |
 | 89/1     |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
@@ -177,7 +183,7 @@ Vccio by Bank:
 | 94/1     | Stepper_Y_M1          | LOCATED    | LVCMOS25_OUT | PR11A | DQS0           |           |           |
 | 95/1     | Stepper_Y_M0          | LOCATED    | LVCMOS25_OUT | PR9B  | DQ0            |           |           |
 | 96/1     | Stepper_Y_En          | LOCATED    | LVCMOS25_OUT | PR9A  | DQ0            |           |           |
-| 97/1     |     unused, PULL:DOWN |            |              | PR7B  | DQ0            |           |           |
+| 97/1     | Stepper_Y_nFault      | LOCATED    | LVCMOS25_IN  | PR7B  | DQ0            |           |           |
 | 98/1     | Stepper_X_Dir         | LOCATED    | LVCMOS25_OUT | PR7A  | DQ0            |           |           |
 | 99/1     | Stepper_X_Step        | LOCATED    | LVCMOS25_OUT | PR5B  | DQ0            |           |           |
 | 100/1    | Stepper_X_M2          | LOCATED    | LVCMOS25_OUT | PR5A  | DQ0            |           |           |
@@ -456,6 +462,7 @@ LOCATE  COMP  "Stepper_A_M0"  SITE  "70";
 LOCATE  COMP  "Stepper_A_M1"  SITE  "71";
 LOCATE  COMP  "Stepper_A_M2"  SITE  "73";
 LOCATE  COMP  "Stepper_A_Step"  SITE  "74";
+LOCATE  COMP  "Stepper_A_nFault"  SITE  "76";
 LOCATE  COMP  "Stepper_X_Dir"  SITE  "98";
 LOCATE  COMP  "Stepper_X_En"  SITE  "105";
 LOCATE  COMP  "Stepper_X_M0"  SITE  "104";
@@ -469,12 +476,14 @@ LOCATE  COMP  "Stepper_Y_M0"  SITE  "95";
 LOCATE  COMP  "Stepper_Y_M1"  SITE  "94";
 LOCATE  COMP  "Stepper_Y_M2"  SITE  "93";
 LOCATE  COMP  "Stepper_Y_Step"  SITE  "87";
+LOCATE  COMP  "Stepper_Y_nFault"  SITE  "97";
 LOCATE  COMP  "Stepper_Z_Dir"  SITE  "84";
 LOCATE  COMP  "Stepper_Z_En"  SITE  "77";
 LOCATE  COMP  "Stepper_Z_M0"  SITE  "78";
 LOCATE  COMP  "Stepper_Z_M1"  SITE  "81";
 LOCATE  COMP  "Stepper_Z_M2"  SITE  "82";
 LOCATE  COMP  "Stepper_Z_Step"  SITE  "83";
+LOCATE  COMP  "Stepper_Z_nFault"  SITE  "85";
 LOCATE  COMP  "clk_12MHz"  SITE  "128";
 LOCATE  COMP  "debug[0]"  SITE  "111";
 LOCATE  COMP  "debug[1]"  SITE  "112";
@@ -491,6 +500,9 @@ LOCATE  COMP  "expansion3"  SITE  "60";
 LOCATE  COMP  "expansion4"  SITE  "61";
 LOCATE  COMP  "expansion5"  SITE  "62";
 LOCATE  COMP  "limit[0]"  SITE  "68";
+LOCATE  COMP  "limit[1]"  SITE  "65";
+LOCATE  COMP  "limit[2]"  SITE  "67";
+LOCATE  COMP  "limit[3]"  SITE  "63";
 LOCATE  COMP  "motor_pwm_l"  SITE  "5";
 LOCATE  COMP  "motor_pwm_r"  SITE  "6";
 LOCATE  COMP  "rc_ch1"  SITE  "47";
@@ -517,7 +529,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 10 18:29:15 2016
+Sat Jan 16 19:19:36 2016
 
 
 

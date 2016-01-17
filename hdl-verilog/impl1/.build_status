@@ -5,33 +5,33 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1452479375"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1453000812"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1452479338">
-            <Task name="Map" build_result="2" update_result="0" update_time="1452479338"/>
+        <Milestone name="Map" build_result="2" build_time="1453000746">
+            <Task name="Map" build_result="2" update_result="0" update_time="1453000746"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1452479371">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1452479371"/>
+        <Milestone name="PAR" build_result="2" build_time="1453000806">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1453000806"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1452479328">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1452479328"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1452479328"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1453000743">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1453000743"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1453000746"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1452428873"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1453000427"/>
         </Milestone>
-        <Report name=".vdbs/Uniboard_verilog_impl1_map.vdb" last_build_time="1452479338" last_build_size="710763"/>
-        <Report name="Uniboard_verilog_impl1.bgn" last_build_time="1452479375" last_build_size="3966"/>
-        <Report name="Uniboard_verilog_impl1.jed" last_build_time="1452479375" last_build_size="1455014"/>
-        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1452479321" last_build_size="3084388"/>
-        <Report name="Uniboard_verilog_impl1.ncd" last_build_time="1452479371" last_build_size="1768725"/>
-        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1452479328" last_build_size="1437054"/>
-        <Report name="Uniboard_verilog_impl1_map.ncd" last_build_time="1452479337" last_build_size="1249190"/>
+        <Report name=".vdbs/Uniboard_verilog_impl1_map.vdb" last_build_time="1453000746" last_build_size="1084381"/>
+        <Report name="Uniboard_verilog_impl1.bgn" last_build_time="1453000812" last_build_size="3966"/>
+        <Report name="Uniboard_verilog_impl1.jed" last_build_time="1453000812" last_build_size="1455218"/>
+        <Report name="Uniboard_verilog_impl1.lsedata" last_build_time="1453000732" last_build_size="4090423"/>
+        <Report name="Uniboard_verilog_impl1.ncd" last_build_time="1453000806" last_build_size="2829879"/>
+        <Report name="Uniboard_verilog_impl1.ngd" last_build_time="1453000743" last_build_size="2259910"/>
+        <Report name="Uniboard_verilog_impl1_map.ncd" last_build_time="1453000745" last_build_size="1984859"/>
     </Strategy>
 </BuildStatus>

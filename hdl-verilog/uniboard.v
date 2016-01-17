@@ -428,24 +428,6 @@ module UniboardTop(
 	);
 	
 	/* Placeholder assignments */
-	assign Stepper_Y_Step = 0;
-	assign Stepper_Y_Dir = 0;
-	assign Stepper_Y_M0 = 0;
-	assign Stepper_Y_M1 = 0;
-	assign Stepper_Y_M2 = 0;
-	assign Stepper_Y_En = 0;
-	assign Stepper_Z_Step = 0;
-	assign Stepper_Z_Dir = 0;
-	assign Stepper_Z_M0 = 0;
-	assign Stepper_Z_M1 = 0;
-	assign Stepper_Z_M2 = 0;
-	assign Stepper_Z_En = 0;
-	assign Stepper_A_Step = 0;
-	assign Stepper_A_Dir = 0;
-	assign Stepper_A_M0 = 0;
-	assign Stepper_A_M1 = 0;
-	assign Stepper_A_M2 = 0;
-	assign Stepper_A_En = 0;
 	
 	assign status_led[0] = 1 | ((& limit)& xbee_pause  & encoder_ra & encoder_rb& encoder_ri& encoder_la& encoder_lb & encoder_li&rc_ch1&rc_ch2&rc_ch3&rc_ch4&rc_ch7&rc_ch8&Stepper_X_nFault&Stepper_Y_nFault&Stepper_Z_nFault&Stepper_A_nFault);
 	
@@ -539,47 +521,47 @@ module UniboardTop(
 	                        .pause(global_pause),
 	                        .reset(reset));
 	/* Arm */
-// 	logic arm_select[4:0]; /* 0 = X ... 3 = A, 4 = analog. */
-// 	always_comb
-// 		begin
-// 			casex(register_addr)
-// 				8'b000000xx:
-// 					begin
-// 						arm_select[0] = select[4];
-// 						arm_select[4:1] = '0;
-// 					end
-// 				8'b000100xx:
-// 					begin
-// 						arm_select[0] = 0;
-// 						arm_select[1] = select[4];
-// 						arm_select[4:2] = '0;
-// 					end
-// 				8'b001000xx:
-// 					begin
-// 						arm_select[1:0] = '0;
-// 						arm_select[2] = select[4];
-// 						arm_select[4:3] = '0;
-// 					end
-// 				8'b001100xx:
-// 					begin
-// 						arm_select[2:0] = '0;
-// 						arm_select[3] = select[4];
-// 						arm_select[4] = '0;
-// 					end
-// 				default:
-// 					begin
-// 						arm_select[3:0] = '0;
-// 						arm_select[4] = select[4];
-// 					end
-// 			endcase
-// 		end
-		
+	reg [4:0] arm_select; /* 0 = X ... 3 = A, 4 = analog. */
+	always @*
+		begin
+			casex(register_addr)
+				8'b000000xx:
+					begin
+						arm_select[0] = select[4];
+						arm_select[4:1] = 'b0;
+					end
+				8'b000100xx:
+					begin
+						arm_select[0] = 'b0;
+						arm_select[1] = select[4];
+						arm_select[4:2] = 'b0;
+					end
+				8'b001000xx:
+					begin
+						arm_select[1:0] = 'b0;
+						arm_select[2] = select[4];
+						arm_select[4:3] = 'b0;
+					end
+				8'b001100xx:
+					begin
+						arm_select[2:0] = 'b0;
+						arm_select[3] = select[4];
+						arm_select[4] = 'b0;
+					end
+				default:
+					begin
+						arm_select[3:0] = 'b0;
+						arm_select[4] = select[4];
+					end
+			endcase
+		end
+	
 	ArmPeripheral #(8'h00) arm_x(.clk_12MHz(clk_12MHz),
 	                             .databus(databus),
 	                             .reg_size(reg_size),
 	                             .register_addr(register_addr),
 	                             .rw(rw),
-	                             .select(/*arm_select[0]*/ select[4]),
+	                             .select(arm_select[0]),
 	                             .pause(global_pause),
 	                             .microstep({Stepper_X_M2, Stepper_X_M1, Stepper_X_M0}),
 	                             .step_line(Stepper_X_Step),
@@ -588,6 +570,53 @@ module UniboardTop(
 	                             .fault(Stepper_X_nFault),
 	                             .limitn(limit[0]),
 	                             .reset(reset));
+	                             
+	ArmPeripheral #(8'h10) arm_y(.clk_12MHz(clk_12MHz), 
+	                             .databus(databus),
+	                             .reg_size(reg_size),
+	                             .register_addr(register_addr),
+	                             .rw(rw),
+	                             .select(arm_select[1]),
+	                             .pause(global_pause),
+	                             .microstep({Stepper_Y_M2, Stepper_Y_M1, Stepper_Y_M0}),
+	                             .step_line(Stepper_Y_Step),
+	                             .dir(Stepper_Y_Dir),
+	                             .en(Stepper_Y_En),
+	                             .fault(Stepper_Y_nFault),
+	                             .limitn(limit[1]),
+	                             .reset(reset));
+	                             
+	ArmPeripheral #(8'h20) arm_z(.clk_12MHz(clk_12MHz), 
+	                             .databus(databus),
+	                             .reg_size(reg_size),
+	                             .register_addr(register_addr),
+	                             .rw(rw),
+	                             .select(arm_select[2]),
+	                             .pause(global_pause),
+	                             .microstep({Stepper_Z_M2, Stepper_Z_M1, Stepper_Z_M0}),
+	                             .step_line(Stepper_Z_Step),
+	                             .dir(Stepper_Z_Dir),
+	                             .en(Stepper_Z_En),
+	                             .fault(Stepper_Z_nFault),
+	                             .limitn(limit[2]),
+	                             .reset(reset));
+	                   
+	ArmPeripheral #(8'h30) arm_a(.clk_12MHz(clk_12MHz), 
+	                             .databus(databus),
+	                             .reg_size(reg_size),
+	                             .register_addr(register_addr),
+	                             .rw(rw),
+	                             .select(arm_select[3]),
+	                             .pause(global_pause),
+	                             .microstep({Stepper_A_M2, Stepper_A_M1, Stepper_A_M0}),
+	                             .step_line(Stepper_A_Step),
+	                             .dir(Stepper_A_Dir),
+	                             .en(Stepper_A_En),
+	                             .fault(Stepper_A_nFault),
+	                             .limitn(limit[3]),
+	                             .reset(reset));
+	//TODO: Arm analog peripheral.
+	//TODO: Don't forget to disconnect arm_select[4] from Dummy!
 	
 	/* RC Receiver */
 	RCPeripheral rc_receiver(.clk_255kHz(clk_255kHz),
