@@ -8,13 +8,21 @@ u = uniboard.Uniboard("/dev/ttyUSB1")
 def test_axis(axis):
 	global u
 	u.arm_en(axis, True)
-	#u.arm_go(axis, True)
-	#u.arm_target(axis, 1)
-	#time.sleep(1.5)
-	#u.arm_target(axis, .5)
+	u.arm_go(axis, True)
+	u.arm_target(axis, 1)
+	while True:
+		u.arm_target(axis, 1)
+		while u.arm_moving(axis):
+			pass
+		time.sleep(1)
+		u.arm_go(axis, True)
+		u.arm_target(axis, 0)
+		while u.arm_moving(axis):
+			pass
+		time.sleep(.5)
 
 
-test_axis("X")
+test_axis("A")
 
 #i = 0
 #while True:

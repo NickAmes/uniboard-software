@@ -147,10 +147,10 @@ class Uniboard:
 		self._arm_data = {
 			"X":{
 					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
-					"max":1000,
-					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"max":400,
+					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Full step frequency, in Hz
+					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
 					"faultpol":0,     #State of fault line that indicated a problem
@@ -158,11 +158,11 @@ class Uniboard:
 					"regprefix":0x00, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"Y":{
-					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
-					"max":1000,
-					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps, meters = scale * steps)
+					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
+					"max":400,
+					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Full step frequency, in Hz
+					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
 					"faultpol":0,     #State of fault line that indicated a problem
@@ -170,11 +170,11 @@ class Uniboard:
 					"regprefix":0x10, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"Z":{
-					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
-					"max":1000,
-					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
+					"max":400,
+					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Full step frequency, in Hz
+					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
 					"faultpol":0,     #State of fault line that indicated a problem
@@ -182,11 +182,11 @@ class Uniboard:
 					"regprefix":0x20, #Value to be ORed with the register lower nibble to get the registers of this axis
 			},
 			"A":{
-					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
-					"max":1000,
-					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
+					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
+					"max":400,
+					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
-					"frequency":1000, #Full step frequency, in Hz
+					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
 					"faultpol":0,     #State of fault line that indicated a problem
@@ -270,6 +270,8 @@ class Uniboard:
 		
 		if target > self.arm_max(axis):
 			raise ValueError("Requested axis %s target %fm larger than maximum of %fm."%(str(axis), target, self.arm_max(axis)))
+		if target< 0:
+			raise ValueError("Requested axis %s target %fm is less than 0."%(str(axis), target))
 		
 		prev_go = self.arm_go(axis)
 		self.arm_go(axis, False) #Stop the arm, so that we can get a valid number if it's moving

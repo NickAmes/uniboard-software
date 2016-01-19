@@ -89,7 +89,7 @@ module ArmPeripheral(
 									end
 								axis_haddr + 8'd1: /* Status */
 									begin
-										read_value <= {29'b0, limit_latched, fault_latched, stepping};
+										read_value <= {29'b0, stepping, fault_latched, limit_latched};
 										read_size <= 3'd1;
 									end
 								axis_haddr + 8'd2: /* Div. Factor */
