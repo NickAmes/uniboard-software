@@ -41,7 +41,7 @@ module ArmPeripheral(
 	assign stepping = ~pause & go & (steps_reg > 0);
 	
 	/* Outputs */
-	assign en = ~control_reg[6];
+	assign en = control_reg[6];
 	assign dir = control_reg[5];
 	assign step_line = int_step ^ ~control_reg[3];
 	assign microstep = control_reg[2:0];
@@ -65,7 +65,7 @@ module ArmPeripheral(
 			
 			if(reset == 1)
 				begin
-					control_reg <= 8'b00101010;
+					control_reg <= 8'b01101010;
 					div_factor_reg <= 32'd12000;
 					steps_reg <= 'b0;
 				end

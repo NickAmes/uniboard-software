@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jan 16 19:18:51 2016
+Mon Jan 18 16:24:36 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui 
@@ -323,16 +323,16 @@ WARNING - synthesis: Bit 1 of Register \arm_z/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \arm_a/read_size is stuck at Zero
 GSR instance connected to net expansion5_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-INFO - synthesis: Register \arm_y/fault_latched_179 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \arm_z/fault_latched_179 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \arm_a/fault_latched_179 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_y/fault_latched_178 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_z/fault_latched_178 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_a/fault_latched_178 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \arm_x/fault_latched_179 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \arm_x/fault_latched_178 of type IFS1P3DX will not be replicated.
 Writing LPF file Uniboard_verilog_impl1.lpf.
 Results of NGD DRC are available in UniboardTop_drc.log.
 Loading NGL library '/usr/local/diamond/3.4_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -358,9 +358,9 @@ Writing NGD file Uniboard_verilog_impl1.ngd.
 ################### Begin Area Report (UniboardTop)######################
 Number of register bits => 1347 of 7209 (18 % )
 CCU2D => 689
-FD1P3AX => 269
-FD1P3IX => 441
-FD1P3JX => 169
+FD1P3AX => 236
+FD1P3IX => 471
+FD1P3JX => 173
 FD1S3AX => 24
 FD1S3IX => 430
 FD1S3JX => 2
@@ -368,10 +368,10 @@ GSR => 1
 IB => 17
 IFS1P3DX => 10
 L6MUX21 => 8
-LUT4 => 1518
+LUT4 => 1526
 OB => 45
-OFS1P3IX => 2
-PFUMX => 71
+OFS1P3DX => 1
+PFUMX => 76
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -381,19 +381,19 @@ Number of Clocks: 3
   Net : select_7, loads : 18
   Net : bclk, loads : 14
 Clock Enable Nets
-Number of Clock Enables: 67
+Number of Clock Enables: 68
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : register_addr_0, loads : 211
-  Net : n28893, loads : 144
-  Net : register_addr_1, loads : 136
-  Net : rw, loads : 88
-  Net : n28889, loads : 64
-  Net : n28890, loads : 64
-  Net : n28891, loads : 64
-  Net : n28892, loads : 64
-  Net : n30647, loads : 63
-  Net : n1314, loads : 60
+  Net : register_addr_0, loads : 210
+  Net : n32341, loads : 146
+  Net : register_addr_1, loads : 128
+  Net : rw, loads : 93
+  Net : n32339, loads : 64
+  Net : n32340, loads : 64
+  Net : n32338, loads : 64
+  Net : n32337, loads : 64
+  Net : n32439, loads : 63
+  Net : n34320, loads : 63
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -412,10 +412,10 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  143.678 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 227.039  MB
+Peak Memory Usage: 228.027  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 11.362  secs
+Elapsed CPU time for LSE flow : 11.990  secs
 --------------------------------------------------------------
 
 

@@ -49,16 +49,16 @@ class Uniboard:
 			#No writeable bits in this peripheral.
 			
 			#Arm
-			0x0400:0x2A,
+			0x0400:0x6A,
 			0x0402:12000,
 			0x0403:0,
-			0x0410:0x2A,
+			0x0410:0x6A,
 			0x0412:12000,
 			0x0413:0,
-			0x0420:0x2A,
+			0x0420:0x6A,
 			0x0422:12000,
 			0x0423:0,
-			0x0430:0x2A,
+			0x0430:0x6A,
 			0x0432:12000,
 			0x0433:0
 		}
@@ -146,7 +146,7 @@ class Uniboard:
 		
 		self._arm_data = {
 			"X":{
-					"target":0,       #target and max are in (full, non-microsteped) steps away from the limit.
+					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
 					"max":1000,
 					"scale":.001,        #Multiplier to convert steps to meters (scale = meters/steps)
 					"dirpol":1,       #Value of DIR line when traveling away from limit
@@ -409,7 +409,7 @@ class Uniboard:
 		reg_ms = {1:0, 2:1, 4:2, 8:3, 16:4, 32:5}
 		reg = self._arm_reg(axis, 0)
 		prev_rvalue = self._read_reg(0x04, reg)
-		prev_rvalue &= 0x07
+		prev_rvalue &= ~0x07
 		prev_rvalue |= reg_ms[microsteps]
 		self._write_reg(0x04, reg, prev_rvalue)
 	
@@ -426,9 +426,9 @@ class Uniboard:
 		reg = self._arm_reg(axis, 0)
 		prev_rvalue = self._read_reg(0x04, reg)
 		if value:
-			prev_rvalue |= 0x40
+			prev_rvalue |= 0x08
 		else:
-			prev_rvalue &= ~0x40
+			prev_rvalue &= ~0x08
 		self._write_reg(0x04, reg, prev_rvalue)
 	
 	#RC Receiver
