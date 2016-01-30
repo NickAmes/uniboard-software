@@ -147,9 +147,9 @@ class Uniboard:
 		self._arm_data = {
 			"X":{
 					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
-					"max":400,
-					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
-					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"max":1050, #12.5 in/
+					"scale":0.00030238095,    #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":0,       #Value of DIR line when traveling away from limit
 					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
@@ -159,9 +159,9 @@ class Uniboard:
 			},
 			"Y":{
 					"target":0,       #target and max are in (full, non-microstepped) steps away from the limit.
-					"max":400,
-					"scale":.0025,    #Multiplier to convert steps to meters (scale = meters/steps)
-					"dirpol":1,       #Value of DIR line when traveling away from limit
+					"max":800,
+					"scale":0.0003095625,	 #Multiplier to convert steps to meters (scale = meters/steps)
+					"dirpol":0,       #Value of DIR line when traveling away from limit
 					"frequency":100,  #Full step frequency, in Hz
 					"steppol":1,      #Value of STEPPOL bit
 					"enpol":0,        #State of EN line when driver is enabled
@@ -247,12 +247,16 @@ class Uniboard:
 	def motor_left(self, speed_f):
 		"""Set the left drive motors' speed. speed_f is a float from -1 to 1, with -1 meaning reverse,
 		   0 meaning stop, and 1 meaning full forward."""
+		if not isinstance(speed_f, float):
+			speed_f = 0.0
 		intvalue = int((speed_f + 1) * 127)
 		self._write_reg(2, 0, intvalue)
 	
 	def motor_right(self, speed_f):
 		"""Set the right drive motors' speed. speed_f is a float from -1 to 1, with -1 meaning reverse,
 		   0 meaning stop, and 1 meaning full forward."""
+		if not isinstance(speed_f, float):
+			speed_f = 0.0
 		intvalue = int((speed_f + 1) * 127)
 		self._write_reg(2, 1, intvalue)
 	
