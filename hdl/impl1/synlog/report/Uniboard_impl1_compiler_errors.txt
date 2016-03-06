@@ -1,2 +1,0 @@
-@E: CG410 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/arm.sv":78:14:78:14|Only one assignment is legal on int_step
-

@@ -1,4 +1,0 @@
-@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":137:0:137:5|Expecting endmodule
-@E: CG737 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":309:23:309:33|uart_output already exists in this scope - a variable by this name exists
-@E: CS187 :"/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl/uniboard.sv":315:0:315:8|Expecting endmodule
-
