@@ -4,28 +4,28 @@
 import uniboard
 u = uniboard.Uniboard("/dev/ttyUSB1")
 
-while True:
-	left = u.rc_value(2)
-	right = u.rc_value(3)
-	print "%02f"%left + " " "%02f"%right
-	u.motor_left(left)
-	u.motor_right(right)
+#while True:
+	#left = u.rc_value(2)
+	#right = u.rc_value(3)
+	#print "%02f"%left + " " "%02f"%right
+	#u.motor_left(left)
+	#u.motor_right(right)
 
 
-#def test_axis(axis):
-	#global u
-	#u.arm_en(axis, True)
-	#u.arm_go(axis, True)
-	#while True:
-		#u.arm_target(axis, 1)
-		#while u.arm_moving(axis):
-			#pass
-		#time.sleep(1)
-		#u.arm_go(axis, True)
-		#u.arm_target(axis, 0)
-		#while u.arm_moving(axis):
-			#pass
-		#time.sleep(.5)
+def test_axis(axis):
+	global u
+	u.arm_en(axis, True)
+	u.arm_go(axis, True)
+	while True:
+		u.arm_target(axis, 1)
+		while u.arm_moving(axis):
+			pass
+		time.sleep(1)
+		u.arm_go(axis, True)
+		u.arm_target(axis, 0)
+		while u.arm_moving(axis):
+			pass
+		time.sleep(.5)
 
 
 #test_axis("Z")
