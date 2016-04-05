@@ -18,24 +18,8 @@ def test_axis(axis):
 	global u
 	u.arm_en(axis, True)
 	u.arm_go(axis, True)
-	#while True:
-		#u.arm_raw_move(axis, .05)
-		#while u.arm_moving(axis):
-			#pass
-		#time.sleep(1)
-		#u.arm_raw_move(axis, .05)
-		#while u.arm_moving(axis):
-			#pass
-		#time.sleep(1)
-	while True:
-		u.arm_target(axis, u.arm_max(axis) - .0001)
-		while u.arm_moving(axis):
-			pass
-		time.sleep(1)
-		u.arm_target(axis, 0)
-		while u.arm_moving(axis):
-			pass
-		time.sleep(1)
+	
+	u.arm_home()
 
 test_axis("X")
 

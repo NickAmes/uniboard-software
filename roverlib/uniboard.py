@@ -311,8 +311,10 @@ class Uniboard(object):
 		"""Set the current position of the arm, in meters. Calling this function stops all motion
 		   in the selected axis.
 		   This function is used during homing."""
+		prev_go = self.arm_go(axis)
 		self.arm_go(axis, False)
-		self._arm_data[self._arm_key(axis)]["target"] = new_current_pos * self._arm_data[self._arm_key(axis)]["scale"]
+		self._arm_data[self._arm_key(axis)]["target"] = new_current_pos / self._arm_data[self._arm_key(axis)]["scale"]
+		self.arm_go(axis, prev_go)
 		
 	def arm_raw_move(self, axis, distance):
 		"""Tell the Uniboard to move an axis a certain distance (in meters) without
@@ -323,8 +325,8 @@ class Uniboard(object):
 		   and the rover must not be paused. Additionally, arm_home() should be run before
 		   using the arm. Axis can be a string ("X", "Y", "Z", or "A") or an 
 		   integer (0, 1, 2, or 3), respectively."""
-		steps_ms = self._arm_data[self._arm_key(axis)]["scale"] * distance * self._arm_data[self._arm_key(axis)]["microsteps"]
-		
+		steps_ms = (distance / self._arm_data[self._arm_key(axis)]["scale"]) * self._arm_data[self._arm_key(axis)]["microsteps"]
+		print steps_ms
 		if distance < 0:
 			new_dir = self._arm_data[self._arm_key(axis)]["dirpol"] ^ 1
 		else: 
@@ -335,8 +337,11 @@ class Uniboard(object):
 			conf_reg |= 0x20
 		else:
 			conf_reg &= ~0x20
+		steps_int = int(steps_ms)
+		if steps_int < 0:
+			steps_int = -steps_int
 		self._write_reg(4, self._arm_reg(axis, 0), conf_reg)
-		self._write_reg(4, self._arm_reg(axis, 3), int(new_steps_ms))
+		self._write_reg(4, self._arm_reg(axis, 3), steps_int)
 		
 		
 	def arm_current(self, axis, current):
@@ -434,8 +439,8 @@ class Uniboard(object):
 		for axis in ["X", "Y"]:
 			self.arm_en(axis, True)
 			self.arm_go(axis, True)
-		self.arm_set("X", 0)
-		self.arm_set("Y", 0)
+			self.arm_set(axis, 0)
+			self.arm_raw_move(axis, 0)
 		
 		#Center X and Y
 		self.arm_target("X", self.arm_max("X")/2)
