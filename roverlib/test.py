@@ -6,7 +6,12 @@ import time
 
 u = uniboard.Uniboard("/dev/ttyUSB1")
 
-u.arm_home()
+u._write_reg(2, 1, 126)
+
+#u.arm_home()
+
+#u.arm_target("Z", 0)
+#u.arm_z_wait_until_done()
 
 #u.arm_en("Y", True)
 #u.arm_go("Y", True)
