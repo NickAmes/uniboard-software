@@ -6,7 +6,16 @@ import time
 
 u = uniboard.Uniboard("/dev/ttyUSB1")
 
-u._write_reg(2, 1, 126)
+#def try_speed(speed):
+	#print speed
+	#u._write_reg(2, 0, speed)
+	#time.sleep(2);
+	#u._write_reg(2, 0, 127)
+	#time.sleep(1);
+	
+#for i in range(0, 256):
+	#u._write_reg(2, 0, i)
+	#time.sleep(.3);
 
 #u.arm_home()
 
@@ -41,24 +50,34 @@ u._write_reg(2, 1, 126)
 		#print u.rc_value(ch),
 	#print "\r"
 
-#from Tkinter import *
-#class App:
-	#def __init__(self, master):
-		#frame = Frame(master)
-		#frame.pack()
-		#self.left = Scale(frame, from_=-1000, to=1000, command = self.left_update)
-		#self.left.pack(side=LEFT)
-		#self.right = Scale(frame, from_=-1000, to=1000, command = self.right_update)
-		#self.right.pack(side=LEFT)
+from Tkinter import *
+
+def print_speed(u, tkmain):
+	print u.encoder_left_speed(),
+	print "  ",
+	print u.encoder_right_speed()
+	tkmain.after(100, print_speed, u, tkmain)
+	
+class App:
+	def __init__(self, master):
+		frame = Frame(master)
+		frame.pack()
+		self.left = Scale(frame, from_=-1000, to=1000, command = self.left_update)
+		self.left.pack(side=LEFT)
+		self.right = Scale(frame, from_=-1000, to=1000, command = self.right_update)
+		self.right.pack(side=LEFT)
 		
-	#def left_update(self, blah):
-		#global u
-		#u.motor_left(float(self.left.get())/1000.0)
+	def left_update(self, blah):
+		global u
+		u.motor_left(float(self.left.get())/1000.0)
 		
-	#def right_update(self, blah):
-		#global u
-		#u.motor_right(float(self.right.get())/1000.0)
-    
-#root = Tk()
-#app = App(root)
-#root.mainloop()
+	def right_update(self, blah):
+		global u
+		u.motor_right(float(self.right.get())/1000.0)
+
+root = Tk()
+app = App(root)
+
+print_speed(u, root)
+
+root.mainloop()
