@@ -465,7 +465,7 @@ class Uniboard(object):
 		self.arm_target("A", .05)
 		while self.arm_should_be_moving("A"):
 			time.sleep(.1)
-			self.arm_go(axis, True)
+			self.arm_go("A", True)
 		self.arm_set("A", 0)
 			
 		#Move X and Y to their limit switches
