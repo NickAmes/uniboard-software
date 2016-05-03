@@ -435,7 +435,7 @@ module UniboardTop(
 	wire [4:0] state;
 	wire drdy;
 	//assign debug[0] = uart_rx;
-	assign debug[1] = uart_tx;
+	assign debug[1] = motor_serialdata;
 	assign debug[2] = state[0];
 	assign debug[3] = state[1];
 	assign debug[4] = state[2];
@@ -469,10 +469,10 @@ module UniboardTop(
 	reg [31:0] timeout_count;
 	reg prev_uart_rx;
 	parameter PAUSE_COUNT = 32'd60000000;
-	always @ (posedge clk_12MHz)			
+	always @ (posedge clk_12MHz)	
 		begin
 			prev_uart_rx <= uart_rx;
-			if(uart_rx ^ prev_uart_rx)
+			if(uart_rx & ~prev_uart_rx)
 				begin
 					timeout_count <= 32'd0;
 				end
@@ -524,14 +524,16 @@ module UniboardTop(
 	                                                          .battery_voltage(16'd6),
 	                                                          .reset(reset));
 	/* Motor Sabertooth Serial */
-	assign motor_pwm_r = 0;
+	wire motor_serialdata;
+	assign motor_pwm_r = motor_serialdata;
+	assign motor_pwm_l = motor_serialdata;
 	SabertoothSerialPeripheral motor_serial(.clk_12MHz(clk_12MHz),
 	                                        .databus(databus),
 	                                        .reg_size(reg_size), 
 	                                        .register_addr(register_addr),
 	                                        .rw(rw),
 	                                        .select(select[2]),
-	                                        .sabertooth_s1(motor_pwm_l),
+	                                        .sabertooth_s1(motor_serialdata),
 	                                        .pause(global_pause),
 	                                        .reset(reset));
 	wire clk_255kHz;

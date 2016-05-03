@@ -5,7 +5,7 @@ Report for cell UniboardTop
                                   cell	      count    Res Usage(%)
                                   SLIC	    1765.00        100.0
                                  IOLGC	      15.00        100.0
-                                  LUT4	    1767.00        100.0
+                                  LUT4	    1766.00        100.0
                                  IOREG	         15        100.0
                                  IOBUF	         68        100.0
                                 PFUREG	       1683        100.0
@@ -330,7 +330,7 @@ Report for cell EncoderPeripheral
    Instance path: UniboardTop/right_encoder
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      59.17         3.4
+                                  SLIC	      59.33         3.4
                                  IOLGC	       2.00        13.3
                                   LUT4	      33.00         1.9
                                  IOREG	          2        13.3
@@ -344,7 +344,7 @@ Report for cell QuadratureDecoder
    Instance path: UniboardTop/right_encoder/q
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      26.58         1.5
+                                  SLIC	      26.75         1.5
                                  IOLGC	       2.00        13.3
                                   LUT4	       1.00         0.1
                                  IOREG	          2        13.3

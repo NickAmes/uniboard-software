@@ -393,7 +393,7 @@ class Uniboard(object):
 		enpol = bool(self._arm_data[self._arm_key(axis)]["enpol"])
 		conf_reg = self._read_reg(4, self._arm_reg(axis, 0))
 		if state == None: #Get current
-			return enpoln == bool(cont_reg & 0x40)
+			return not (enpol ^ bool(cont_reg & 0x40))
 		else:
 			if not (enpol ^ state):
 				self._write_reg(4, self._arm_reg(axis, 0), conf_reg | 0x40)

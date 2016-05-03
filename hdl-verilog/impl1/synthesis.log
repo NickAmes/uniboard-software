@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 25 17:59:56 2016
+Mon May  2 19:28:42 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui -msgset /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/promote.xml 
@@ -72,6 +72,7 @@ Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progre
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/motor-serial.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/encoder.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/expansion.v
+Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/i2c.v
 NGD file = Uniboard_verilog_impl1.ngd
 -sdc option: SDC file input is /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/constraints.ldc.
 -lpf option: Output file option is ON.
@@ -82,6 +83,7 @@ Technology check ok...
 Analyzing Verilog file /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
+WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(438): identifier motor_serialdata is used before its declaration. VERI-1875
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(443): identifier reset is used before its declaration. VERI-1875
 Top module name (Verilog): UniboardTop
 INFO - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(362): compiling module UniboardTop. VERI-1018
@@ -340,9 +342,9 @@ WARNING - synthesis: Bit 1 of Register \arm_a/read_size is stuck at Zero
 WARNING - synthesis: Bit 0 of Register \gpio/read_size is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \gpio/read_size is stuck at Zero
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/motor-serial.v(61): Register \motor_serial/sserial/state__i3 is stuck at Zero. VDB-5013
-GSR instance connected to net motor_pwm_r_c_15.
+GSR instance connected to net n1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-INFO - synthesis: Register prev_uart_rx_57 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register prev_uart_rx_58 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_y/fault_latched_178 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_z/fault_latched_178 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_a/fault_latched_178 of type IFS1P3DX will not be replicated.
@@ -396,16 +398,16 @@ Clock Enable Nets
 Number of Clock Enables: 73
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n31511, loads : 389
+  Net : n31512, loads : 389
   Net : register_addr_0, loads : 279
   Net : register_addr_1, loads : 142
   Net : qreset, loads : 130
   Net : rw, loads : 81
-  Net : n31409, loads : 64
   Net : n31410, loads : 64
+  Net : n31411, loads : 64
+  Net : n31409, loads : 64
   Net : n31408, loads : 64
-  Net : n31407, loads : 64
-  Net : n31422, loads : 64
+  Net : n31423, loads : 64
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -424,8 +426,8 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  129.082 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 230.594  MB
+Peak Memory Usage: 230.668  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 13.116  secs
+Elapsed CPU time for LSE flow : 13.044  secs
 --------------------------------------------------------------
