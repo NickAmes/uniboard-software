@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="i2c" module="EFB" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2016 05 01 17:36:32.578" version="1.2" type="Module" synthesis="lse" source_format="Verilog">
-  <Package>
-		<File name="i2c.lpc" type="lpc" modified="2016 05 01 17:36:29.000"/>
-		<File name="i2c.v" type="top_level_verilog" modified="2016 05 01 17:36:29.000"/>
-		<File name="i2c_tmpl.v" type="template_verilog" modified="2016 05 01 17:36:29.000"/>
-  </Package>
-</DiamondModule>

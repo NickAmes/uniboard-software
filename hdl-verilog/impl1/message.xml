@@ -333,6 +333,1694 @@
     </Task>
     <Task name="Lattice_Synthesis">
         <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(24): </Dynamic>
+            <Dynamic>pmi_distributed_dpram</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(48): </Dynamic>
+            <Dynamic>pmi_distributed_rom</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(67): </Dynamic>
+            <Dynamic>pmi_distributed_spram</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(88): </Dynamic>
+            <Dynamic>pmi_distributed_shift_reg</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(111): </Dynamic>
+            <Dynamic>pmi_constant_mult</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>111</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(128): </Dynamic>
+            <Dynamic>pmi_mult</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>128</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(145): </Dynamic>
+            <Dynamic>pmi_mac</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>145</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(163): </Dynamic>
+            <Dynamic>pmi_multaddsub</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>163</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(183): </Dynamic>
+            <Dynamic>pmi_multaddsubsum</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(208): </Dynamic>
+            <Dynamic>pmi_complex_mult</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>208</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(229): </Dynamic>
+            <Dynamic>pmi_add</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>229</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(246): </Dynamic>
+            <Dynamic>pmi_sub</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>246</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(263): </Dynamic>
+            <Dynamic>pmi_counter</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>263</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(278): </Dynamic>
+            <Dynamic>pmi_addsub</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(295): </Dynamic>
+            <Dynamic>pmi_ram_dp</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>295</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(324): </Dynamic>
+            <Dynamic>pmi_ram_dp_be</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>324</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(355): </Dynamic>
+            <Dynamic>pmi_ram_dp_true</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>355</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(391): </Dynamic>
+            <Dynamic>pmi_ram_dp_true_be</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>391</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(430): </Dynamic>
+            <Dynamic>pmi_ram_dq</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>430</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(454): </Dynamic>
+            <Dynamic>pmi_ram_dq_be</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>454</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(480): </Dynamic>
+            <Dynamic>pmi_rom</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>480</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(501): </Dynamic>
+            <Dynamic>pmi_fifo_dc</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>501</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(532): </Dynamic>
+            <Dynamic>pmi_fifo</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>532</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(557): </Dynamic>
+            <Dynamic>pmi_dsp_mac</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>557</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(634): </Dynamic>
+            <Dynamic>pmi_dsp_mult</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>634</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(691): </Dynamic>
+            <Dynamic>pmi_dsp_multaddsub</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>691</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(774): </Dynamic>
+            <Dynamic>pmi_dsp_casmultaddsub</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>774</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(857): </Dynamic>
+            <Dynamic>pmi_dsp_multaddsubsum</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>857</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(973): </Dynamic>
+            <Dynamic>pmi_dsp_preadd_slice</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>973</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1077): </Dynamic>
+            <Dynamic>pmi_pll</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>1077</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1101): </Dynamic>
+            <Dynamic>pmi_pll_fp</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>1101</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1125): </Dynamic>
+            <Dynamic>jtaghub16</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>1125</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1162): </Dynamic>
+            <Dynamic>jtagconn16</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v</Navigation>
+            <Navigation>1162</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(25): </Dynamic>
+            <Dynamic>AGEB2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(34): </Dynamic>
+            <Dynamic>ALEB2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(49): </Dynamic>
+            <Dynamic>AND3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(56): </Dynamic>
+            <Dynamic>AND4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(64): </Dynamic>
+            <Dynamic>AND5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(73): </Dynamic>
+            <Dynamic>ANEB2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(82): </Dynamic>
+            <Dynamic>BB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(89): </Dynamic>
+            <Dynamic>BBPD</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(96): </Dynamic>
+            <Dynamic>BBPU</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>96</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(103): </Dynamic>
+            <Dynamic>BBW</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>103</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(110): </Dynamic>
+            <Dynamic>CB2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>110</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(120): </Dynamic>
+            <Dynamic>CD2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(129): </Dynamic>
+            <Dynamic>CU2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(144): </Dynamic>
+            <Dynamic>FADSU2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>144</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(156): </Dynamic>
+            <Dynamic>FD1P3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>156</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(166): </Dynamic>
+            <Dynamic>FD1P3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>166</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(176): </Dynamic>
+            <Dynamic>FD1P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>176</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(187): </Dynamic>
+            <Dynamic>FD1P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>187</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(198): </Dynamic>
+            <Dynamic>FD1P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>198</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(209): </Dynamic>
+            <Dynamic>FD1P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>209</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(220): </Dynamic>
+            <Dynamic>FD1S1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>220</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(229): </Dynamic>
+            <Dynamic>FD1S1AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>229</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(238): </Dynamic>
+            <Dynamic>FD1S1B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>238</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(248): </Dynamic>
+            <Dynamic>FD1S1D</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>248</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(258): </Dynamic>
+            <Dynamic>FD1S1I</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>258</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(268): </Dynamic>
+            <Dynamic>FD1S1J</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>268</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(278): </Dynamic>
+            <Dynamic>FD1S3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>278</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(287): </Dynamic>
+            <Dynamic>FD1S3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>287</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(296): </Dynamic>
+            <Dynamic>FD1S3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>296</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(306): </Dynamic>
+            <Dynamic>FD1S3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>306</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(316): </Dynamic>
+            <Dynamic>FD1S3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>316</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(326): </Dynamic>
+            <Dynamic>FD1S3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>326</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(336): </Dynamic>
+            <Dynamic>FL1P3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>336</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(348): </Dynamic>
+            <Dynamic>FL1P3AZ</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>348</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(360): </Dynamic>
+            <Dynamic>FL1P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>360</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(373): </Dynamic>
+            <Dynamic>FL1P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>373</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(386): </Dynamic>
+            <Dynamic>FL1P3IY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>386</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(399): </Dynamic>
+            <Dynamic>FL1P3JY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>399</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(412): </Dynamic>
+            <Dynamic>FL1S1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>412</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(421): </Dynamic>
+            <Dynamic>FL1S1AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>421</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(430): </Dynamic>
+            <Dynamic>FL1S1B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>430</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(440): </Dynamic>
+            <Dynamic>FL1S1D</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>440</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(450): </Dynamic>
+            <Dynamic>FL1S1I</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>450</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(460): </Dynamic>
+            <Dynamic>FL1S1J</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>460</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(470): </Dynamic>
+            <Dynamic>FL1S3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>470</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(479): </Dynamic>
+            <Dynamic>FL1S3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>479</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(488): </Dynamic>
+            <Dynamic>FSUB2B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>488</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(494): </Dynamic>
+            <Dynamic>GSR</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>494</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(498): </Dynamic>
+            <Dynamic>IB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>498</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(503): </Dynamic>
+            <Dynamic>IBPD</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>503</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(508): </Dynamic>
+            <Dynamic>IBPU</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>508</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(513): </Dynamic>
+            <Dynamic>IFS1P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>513</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(524): </Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>524</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(535): </Dynamic>
+            <Dynamic>IFS1P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>535</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(546): </Dynamic>
+            <Dynamic>IFS1P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>546</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(557): </Dynamic>
+            <Dynamic>ILVDS</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>557</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(563): </Dynamic>
+            <Dynamic>INV</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>563</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(568): </Dynamic>
+            <Dynamic>L6MUX21</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>568</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(576): </Dynamic>
+            <Dynamic>LB2P3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>576</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(582): </Dynamic>
+            <Dynamic>LB2P3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>582</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(588): </Dynamic>
+            <Dynamic>LB2P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>588</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(594): </Dynamic>
+            <Dynamic>LB2P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>594</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(600): </Dynamic>
+            <Dynamic>LB2P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>600</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(606): </Dynamic>
+            <Dynamic>LB2P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>606</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(612): </Dynamic>
+            <Dynamic>LD2P3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>612</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(618): </Dynamic>
+            <Dynamic>LD2P3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>618</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(624): </Dynamic>
+            <Dynamic>LD2P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>624</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(630): </Dynamic>
+            <Dynamic>LD2P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>630</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(636): </Dynamic>
+            <Dynamic>LD2P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>636</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(642): </Dynamic>
+            <Dynamic>LD2P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>642</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(648): </Dynamic>
+            <Dynamic>LU2P3AX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>648</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(654): </Dynamic>
+            <Dynamic>LU2P3AY</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>654</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(660): </Dynamic>
+            <Dynamic>LU2P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>660</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(666): </Dynamic>
+            <Dynamic>LU2P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>666</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(672): </Dynamic>
+            <Dynamic>LU2P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>672</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(678): </Dynamic>
+            <Dynamic>LU2P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>678</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(699): </Dynamic>
+            <Dynamic>MUX161</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>699</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(723): </Dynamic>
+            <Dynamic>MUX21</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>723</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(731): </Dynamic>
+            <Dynamic>MUX321</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>731</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(772): </Dynamic>
+            <Dynamic>MUX41</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>772</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(782): </Dynamic>
+            <Dynamic>MUX81</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>782</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(803): </Dynamic>
+            <Dynamic>ND3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>803</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(810): </Dynamic>
+            <Dynamic>ND4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>810</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(818): </Dynamic>
+            <Dynamic>ND5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>818</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(827): </Dynamic>
+            <Dynamic>NR2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>827</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(833): </Dynamic>
+            <Dynamic>NR3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>833</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(840): </Dynamic>
+            <Dynamic>NR4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>840</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(848): </Dynamic>
+            <Dynamic>NR5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>848</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(857): </Dynamic>
+            <Dynamic>OB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>857</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(862): </Dynamic>
+            <Dynamic>OBCO</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>862</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(868): </Dynamic>
+            <Dynamic>OBZ</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>868</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(874): </Dynamic>
+            <Dynamic>OBZPU</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>874</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(880): </Dynamic>
+            <Dynamic>OFS1P3BX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>880</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(891): </Dynamic>
+            <Dynamic>OFS1P3DX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>891</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(902): </Dynamic>
+            <Dynamic>OFS1P3IX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>902</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(913): </Dynamic>
+            <Dynamic>OFS1P3JX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>913</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(924): </Dynamic>
+            <Dynamic>OLVDS</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>924</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(930): </Dynamic>
+            <Dynamic>OR2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>930</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(936): </Dynamic>
+            <Dynamic>OR3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>936</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(943): </Dynamic>
+            <Dynamic>OR4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>943</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(951): </Dynamic>
+            <Dynamic>OR5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>951</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(960): </Dynamic>
+            <Dynamic>LUT4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>960</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(971): </Dynamic>
+            <Dynamic>LUT5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>971</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(983): </Dynamic>
+            <Dynamic>LUT6</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>983</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(996): </Dynamic>
+            <Dynamic>LUT7</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>996</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1010): </Dynamic>
+            <Dynamic>LUT8</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1010</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1025): </Dynamic>
+            <Dynamic>PFUMX</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1025</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1032): </Dynamic>
+            <Dynamic>PUR</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1032</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1037): </Dynamic>
+            <Dynamic>ROM128X1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1037</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1051): </Dynamic>
+            <Dynamic>ROM16X1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1051</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1062): </Dynamic>
+            <Dynamic>ROM256X1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1062</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1077): </Dynamic>
+            <Dynamic>ROM32X1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1077</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1102): </Dynamic>
+            <Dynamic>CCU2D</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1102</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1128): </Dynamic>
+            <Dynamic>XNOR2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1128</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1134): </Dynamic>
+            <Dynamic>XNOR3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1134</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1141): </Dynamic>
+            <Dynamic>XNOR4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1141</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1149): </Dynamic>
+            <Dynamic>XNOR5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1149</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1158): </Dynamic>
+            <Dynamic>XOR11</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1158</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1173): </Dynamic>
+            <Dynamic>XOR2</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1173</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1179): </Dynamic>
+            <Dynamic>XOR21</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1179</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1204): </Dynamic>
+            <Dynamic>XOR3</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1204</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1211): </Dynamic>
+            <Dynamic>XOR4</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1211</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1219): </Dynamic>
+            <Dynamic>XOR5</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1219</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1228): </Dynamic>
+            <Dynamic>IFS1S1B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1228</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1238): </Dynamic>
+            <Dynamic>IFS1S1D</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1238</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1248): </Dynamic>
+            <Dynamic>IFS1S1I</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1248</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1258): </Dynamic>
+            <Dynamic>IFS1S1J</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1258</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1268): </Dynamic>
+            <Dynamic>DPR16X4C</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1268</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1278): </Dynamic>
+            <Dynamic>SPR16X4C</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1278</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1287): </Dynamic>
+            <Dynamic>SGSR</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1287</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1360): </Dynamic>
+            <Dynamic>PDPW8KC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1360</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1426): </Dynamic>
+            <Dynamic>SP8KC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1426</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1482): </Dynamic>
+            <Dynamic>FIFO8KB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1482</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1512): </Dynamic>
+            <Dynamic>CLKDIVC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1512</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1520): </Dynamic>
+            <Dynamic>DCMA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1520</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1525): </Dynamic>
+            <Dynamic>ECLKSYNCA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1525</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1530): </Dynamic>
+            <Dynamic>ECLKBRIDGECS</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1530</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1535): </Dynamic>
+            <Dynamic>DCCA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1535</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1540): </Dynamic>
+            <Dynamic>JTAGF</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1540</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1549): </Dynamic>
+            <Dynamic>START</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1549</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1553): </Dynamic>
+            <Dynamic>SEDFA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1553</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1562): </Dynamic>
+            <Dynamic>SEDFB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1562</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1566): </Dynamic>
+            <Dynamic>IDDRXE</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1566</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1573): </Dynamic>
+            <Dynamic>IDDRX2E</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1573</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1580): </Dynamic>
+            <Dynamic>IDDRX4B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1580</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1587): </Dynamic>
+            <Dynamic>IDDRDQSX1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1587</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1594): </Dynamic>
+            <Dynamic>IDDRX71A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1594</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1601): </Dynamic>
+            <Dynamic>ODDRXE</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1601</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1608): </Dynamic>
+            <Dynamic>ODDRX2E</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1608</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1615): </Dynamic>
+            <Dynamic>ODDRX4B</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1615</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1622): </Dynamic>
+            <Dynamic>ODDRDQSX1A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1622</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1629): </Dynamic>
+            <Dynamic>ODDRX71A</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1629</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1636): </Dynamic>
+            <Dynamic>TDDRA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1636</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1644): </Dynamic>
+            <Dynamic>DQSBUFH</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1644</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1656): </Dynamic>
+            <Dynamic>DQSDLLC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1656</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1668): </Dynamic>
+            <Dynamic>DELAYE</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1668</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1676): </Dynamic>
+            <Dynamic>DELAYD</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1676</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1681): </Dynamic>
+            <Dynamic>DLLDELC</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1681</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1689): </Dynamic>
+            <Dynamic>CLKFBBUFA</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1689</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1694): </Dynamic>
+            <Dynamic>PCNTR</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1694</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1705): </Dynamic>
+            <Dynamic>BCINRD</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1705</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1711): </Dynamic>
+            <Dynamic>BCLVDSO</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1711</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1715): </Dynamic>
+            <Dynamic>INRDB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1715</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1720): </Dynamic>
+            <Dynamic>LVDSOB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1720</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1725): </Dynamic>
+            <Dynamic>PG</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1725</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1788): </Dynamic>
+            <Dynamic>PLLREFCS</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1788</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1800): </Dynamic>
+            <Dynamic>EFB</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1800</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1874): </Dynamic>
+            <Dynamic>TSALL</Dynamic>
+            <Navigation>/usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1874</Navigation>
+        </Message>
+        <Message>
             <ID>35901875</ID>
             <Severity>Status</Severity>
             <Dynamic>/home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(438): </Dynamic>
@@ -1330,30 +3018,6 @@
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
-            <Dynamic>\rc_receiver/recv_ch7/latched_in_45</Dynamic>
-            <Dynamic>IFS1P3DX</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001699</ID>
-            <Severity>Info</Severity>
-            <Dynamic>\rc_receiver/recv_ch8/latched_in_45</Dynamic>
-            <Dynamic>IFS1P3DX</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001699</ID>
-            <Severity>Info</Severity>
-            <Dynamic>\rc_receiver/recv_ch3/latched_in_45</Dynamic>
-            <Dynamic>IFS1P3DX</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001699</ID>
-            <Severity>Info</Severity>
-            <Dynamic>\rc_receiver/recv_ch4/latched_in_45</Dynamic>
-            <Dynamic>IFS1P3DX</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001699</ID>
-            <Severity>Info</Severity>
             <Dynamic>\rc_receiver/recv_ch2/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
@@ -1384,6 +3048,30 @@
         <Message>
             <ID>35001699</ID>
             <Severity>Info</Severity>
+            <Dynamic>\rc_receiver/recv_ch4/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\rc_receiver/recv_ch3/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\rc_receiver/recv_ch8/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\rc_receiver/recv_ch7/latched_in_45</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
             <Dynamic>\rc_receiver/recv_ch1/latched_in_45</Dynamic>
             <Dynamic>IFS1P3DX</Dynamic>
         </Message>
@@ -1398,8 +3086,7 @@
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=select[7] loads=12 clock_loads=9
+            <Dynamic>Signal=select[7] loads=12 clock_loads=9
    Signal=\motor_serial/sserial/sender/bclk loads=8 clock_loads=8
    Signal=\protocol_interface/uart_output/bclk loads=9 clock_loads=9</Dynamic>
         </Message>
@@ -1705,8 +3392,7 @@
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=select[7] loads=12 clock_loads=9
+            <Dynamic>Signal=select[7] loads=12 clock_loads=9
    Signal=\motor_serial/sserial/sender/bclk loads=8 clock_loads=8
    Signal=\protocol_interface/uart_output/bclk loads=9 clock_loads=9</Dynamic>
         </Message>

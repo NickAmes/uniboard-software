@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Mon May  2 19:28:42 2016
+Sat May 14 07:35:00 2016
 
 
 Command Line:  synthesis -f Uniboard_verilog_impl1_lattice.synproj -gui -msgset /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/promote.xml 
@@ -81,7 +81,6 @@ Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progre
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/motor-serial.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/encoder.v
 Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/expansion.v
-Verilog design file = /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/i2c.v
 NGD file = Uniboard_verilog_impl1.ngd
 -sdc option: SDC file input is /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/constraints.ldc.
 -lpf option: Output file option is ON.
@@ -90,7 +89,221 @@ The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
 Analyzing Verilog file /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
-Compile design.
+Recompile design.
+Technology check ok...
+
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(24): replacing existing cell pmi_distributed_dpram. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(48): replacing existing cell pmi_distributed_rom. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(67): replacing existing cell pmi_distributed_spram. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(88): replacing existing cell pmi_distributed_shift_reg. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(111): replacing existing cell pmi_constant_mult. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(128): replacing existing cell pmi_mult. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(145): replacing existing cell pmi_mac. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(163): replacing existing cell pmi_multaddsub. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(183): replacing existing cell pmi_multaddsubsum. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(208): replacing existing cell pmi_complex_mult. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(229): replacing existing cell pmi_add. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(246): replacing existing cell pmi_sub. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(263): replacing existing cell pmi_counter. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(278): replacing existing cell pmi_addsub. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(295): replacing existing cell pmi_ram_dp. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(324): replacing existing cell pmi_ram_dp_be. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(355): replacing existing cell pmi_ram_dp_true. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(391): replacing existing cell pmi_ram_dp_true_be. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(430): replacing existing cell pmi_ram_dq. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(454): replacing existing cell pmi_ram_dq_be. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(480): replacing existing cell pmi_rom. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(501): replacing existing cell pmi_fifo_dc. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(532): replacing existing cell pmi_fifo. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(557): replacing existing cell pmi_dsp_mac. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(634): replacing existing cell pmi_dsp_mult. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(691): replacing existing cell pmi_dsp_multaddsub. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(774): replacing existing cell pmi_dsp_casmultaddsub. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(857): replacing existing cell pmi_dsp_multaddsubsum. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(973): replacing existing cell pmi_dsp_preadd_slice. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1077): replacing existing cell pmi_pll. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1101): replacing existing cell pmi_pll_fp. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1125): replacing existing cell jtaghub16. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/pmi_def.v(1162): replacing existing cell jtagconn16. VERI-1108
+Analyzing Verilog file /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(25): replacing existing cell AGEB2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(34): replacing existing cell ALEB2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(43): replacing existing cell AND2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(49): replacing existing cell AND3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(56): replacing existing cell AND4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(64): replacing existing cell AND5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(73): replacing existing cell ANEB2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(82): replacing existing cell BB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(89): replacing existing cell BBPD. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(96): replacing existing cell BBPU. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(103): replacing existing cell BBW. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(110): replacing existing cell CB2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(120): replacing existing cell CD2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(129): replacing existing cell CU2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(138): replacing existing cell FADD2B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(144): replacing existing cell FADSU2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(156): replacing existing cell FD1P3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(166): replacing existing cell FD1P3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(176): replacing existing cell FD1P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(187): replacing existing cell FD1P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(198): replacing existing cell FD1P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(209): replacing existing cell FD1P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(220): replacing existing cell FD1S1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(229): replacing existing cell FD1S1AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(238): replacing existing cell FD1S1B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(248): replacing existing cell FD1S1D. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(258): replacing existing cell FD1S1I. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(268): replacing existing cell FD1S1J. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(278): replacing existing cell FD1S3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(287): replacing existing cell FD1S3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(296): replacing existing cell FD1S3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(306): replacing existing cell FD1S3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(316): replacing existing cell FD1S3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(326): replacing existing cell FD1S3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(336): replacing existing cell FL1P3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(348): replacing existing cell FL1P3AZ. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(360): replacing existing cell FL1P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(373): replacing existing cell FL1P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(386): replacing existing cell FL1P3IY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(399): replacing existing cell FL1P3JY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(412): replacing existing cell FL1S1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(421): replacing existing cell FL1S1AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(430): replacing existing cell FL1S1B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(440): replacing existing cell FL1S1D. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(450): replacing existing cell FL1S1I. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(460): replacing existing cell FL1S1J. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(470): replacing existing cell FL1S3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(479): replacing existing cell FL1S3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(488): replacing existing cell FSUB2B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(494): replacing existing cell GSR. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(498): replacing existing cell IB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(503): replacing existing cell IBPD. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(508): replacing existing cell IBPU. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(513): replacing existing cell IFS1P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(524): replacing existing cell IFS1P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(535): replacing existing cell IFS1P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(546): replacing existing cell IFS1P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(557): replacing existing cell ILVDS. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(563): replacing existing cell INV. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(568): replacing existing cell L6MUX21. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(576): replacing existing cell LB2P3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(582): replacing existing cell LB2P3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(588): replacing existing cell LB2P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(594): replacing existing cell LB2P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(600): replacing existing cell LB2P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(606): replacing existing cell LB2P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(612): replacing existing cell LD2P3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(618): replacing existing cell LD2P3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(624): replacing existing cell LD2P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(630): replacing existing cell LD2P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(636): replacing existing cell LD2P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(642): replacing existing cell LD2P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(648): replacing existing cell LU2P3AX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(654): replacing existing cell LU2P3AY. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(660): replacing existing cell LU2P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(666): replacing existing cell LU2P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(672): replacing existing cell LU2P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(678): replacing existing cell LU2P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(699): replacing existing cell MUX161. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(723): replacing existing cell MUX21. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(731): replacing existing cell MUX321. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(772): replacing existing cell MUX41. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(782): replacing existing cell MUX81. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(797): replacing existing cell ND2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(803): replacing existing cell ND3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(810): replacing existing cell ND4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(818): replacing existing cell ND5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(827): replacing existing cell NR2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(833): replacing existing cell NR3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(840): replacing existing cell NR4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(848): replacing existing cell NR5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(857): replacing existing cell OB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(862): replacing existing cell OBCO. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(868): replacing existing cell OBZ. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(874): replacing existing cell OBZPU. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(880): replacing existing cell OFS1P3BX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(891): replacing existing cell OFS1P3DX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(902): replacing existing cell OFS1P3IX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(913): replacing existing cell OFS1P3JX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(924): replacing existing cell OLVDS. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(930): replacing existing cell OR2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(936): replacing existing cell OR3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(943): replacing existing cell OR4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(951): replacing existing cell OR5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(960): replacing existing cell LUT4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(971): replacing existing cell LUT5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(983): replacing existing cell LUT6. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(996): replacing existing cell LUT7. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1010): replacing existing cell LUT8. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1025): replacing existing cell PFUMX. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1032): replacing existing cell PUR. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1037): replacing existing cell ROM128X1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1051): replacing existing cell ROM16X1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1062): replacing existing cell ROM256X1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1077): replacing existing cell ROM32X1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1089): replacing existing cell ROM64X1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1102): replacing existing cell CCU2D. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1128): replacing existing cell XNOR2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1134): replacing existing cell XNOR3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1141): replacing existing cell XNOR4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1149): replacing existing cell XNOR5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1158): replacing existing cell XOR11. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1173): replacing existing cell XOR2. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1179): replacing existing cell XOR21. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1204): replacing existing cell XOR3. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1211): replacing existing cell XOR4. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1219): replacing existing cell XOR5. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1228): replacing existing cell IFS1S1B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1238): replacing existing cell IFS1S1D. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1248): replacing existing cell IFS1S1I. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1258): replacing existing cell IFS1S1J. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1268): replacing existing cell DPR16X4C. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1278): replacing existing cell SPR16X4C. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1287): replacing existing cell SGSR. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1291): replacing existing cell DP8KC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1360): replacing existing cell PDPW8KC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1426): replacing existing cell SP8KC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1482): replacing existing cell FIFO8KB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1512): replacing existing cell CLKDIVC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1520): replacing existing cell DCMA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1525): replacing existing cell ECLKSYNCA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1530): replacing existing cell ECLKBRIDGECS. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1535): replacing existing cell DCCA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1540): replacing existing cell JTAGF. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1549): replacing existing cell START. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1553): replacing existing cell SEDFA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1562): replacing existing cell SEDFB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1566): replacing existing cell IDDRXE. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1573): replacing existing cell IDDRX2E. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1580): replacing existing cell IDDRX4B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1587): replacing existing cell IDDRDQSX1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1594): replacing existing cell IDDRX71A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1601): replacing existing cell ODDRXE. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1608): replacing existing cell ODDRX2E. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1615): replacing existing cell ODDRX4B. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1622): replacing existing cell ODDRDQSX1A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1629): replacing existing cell ODDRX71A. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1636): replacing existing cell TDDRA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1644): replacing existing cell DQSBUFH. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1656): replacing existing cell DQSDLLC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1668): replacing existing cell DELAYE. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1676): replacing existing cell DELAYD. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1681): replacing existing cell DLLDELC. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1689): replacing existing cell CLKFBBUFA. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1694): replacing existing cell PCNTR. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1705): replacing existing cell BCINRD. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1711): replacing existing cell BCLVDSO. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1715): replacing existing cell INRDB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1720): replacing existing cell LVDSOB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1725): replacing existing cell PG. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1730): replacing existing cell EHXPLLJ. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1788): replacing existing cell PLLREFCS. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): replacing existing cell OSCH. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1800): replacing existing cell EFB. VERI-1108
+INFO - synthesis: /usr/local/diamond/3.4_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1874): replacing existing cell TSALL. VERI-1108
 Compile Design Begin
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(438): identifier motor_serialdata is used before its declaration. VERI-1875
 WARNING - synthesis: /home/nick/Desktop/nickfolder/documents/projects/in-progress/project 5l - OSURC Rover 2016/electrical/uniboard/software/hdl-verilog/uniboard.v(443): identifier reset is used before its declaration. VERI-1875
@@ -357,15 +570,15 @@ INFO - synthesis: Register prev_uart_rx_58 of type IFS1P3DX will not be replicat
 INFO - synthesis: Register \arm_y/fault_latched_178 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_z/fault_latched_178 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_a/fault_latched_178 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
-INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch2/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \left_encoder/q/quadB_delayed_i0 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \left_encoder/q/quadA_delayed_i0 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \right_encoder/q/quadB_delayed_i0 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \right_encoder/q/quadA_delayed_i0 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \rc_receiver/recv_ch4/latched_in_45 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \rc_receiver/recv_ch3/latched_in_45 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \rc_receiver/recv_ch8/latched_in_45 of type IFS1P3DX will not be replicated.
+INFO - synthesis: Register \rc_receiver/recv_ch7/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \rc_receiver/recv_ch1/latched_in_45 of type IFS1P3DX will not be replicated.
 INFO - synthesis: Register \arm_x/fault_latched_178 of type IFS1P3DX will not be replicated.
 Writing LPF file Uniboard_verilog_impl1.lpf.
@@ -381,8 +594,8 @@ Writing NGD file Uniboard_verilog_impl1.ngd.
 Number of register bits => 1698 of 7209 (23 % )
 BB => 1
 CCU2D => 809
-FD1P3AX => 319
-FD1P3IX => 629
+FD1P3AX => 343
+FD1P3IX => 605
 FD1P3JX => 160
 FD1S3AX => 38
 FD1S3IX => 535
@@ -391,9 +604,9 @@ GSR => 1
 IB => 24
 IFS1P3DX => 15
 L6MUX21 => 8
-LUT4 => 1765
+LUT4 => 1783
 OB => 43
-PFUMX => 84
+PFUMX => 82
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -404,19 +617,19 @@ Number of Clocks: 4
   Net : bclk, loads : 13
   Net : select_7, loads : 11
 Clock Enable Nets
-Number of Clock Enables: 73
+Number of Clock Enables: 81
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n31512, loads : 389
-  Net : register_addr_0, loads : 279
-  Net : register_addr_1, loads : 142
-  Net : qreset, loads : 130
-  Net : rw, loads : 81
-  Net : n31410, loads : 64
-  Net : n31411, loads : 64
-  Net : n31409, loads : 64
-  Net : n31408, loads : 64
-  Net : n31423, loads : 64
+  Net : register_addr_0, loads : 286
+  Net : register_addr_1, loads : 146
+  Net : qreset, loads : 129
+  Net : n32135, loads : 113
+  Net : rw, loads : 86
+  Net : n34065, loads : 76
+  Net : n13118, loads : 66
+  Net : n32132, loads : 64
+  Net : n32130, loads : 64
+  Net : n32131, loads : 64
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -435,10 +648,10 @@ clk_12MHz [ get_ports { clk_12MHz } ]   |   12.048 MHz|  129.082 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 230.668  MB
+Peak Memory Usage: 230.191  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 13.044  secs
+Elapsed CPU time for LSE flow : 12.476  secs
 --------------------------------------------------------------
 
 
