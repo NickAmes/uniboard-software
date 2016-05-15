@@ -434,10 +434,10 @@ module UniboardTop(
 	/* Debug and status LED assignments */
 	wire [4:0] state;
 	wire drdy;
-	//assign debug[0] = uart_rx;
-	assign debug[1] = motor_serialdata;
-	assign debug[2] = state[0];
-	assign debug[3] = state[1];
+	assign debug[0] = uart_rx;
+	assign debug[1] = uart_tx;
+// 	assign debug[2] = timeout_pause;
+// 	assign debug[3] = global_pause;
 	assign debug[4] = state[2];
 	assign debug[5] = state[3];
 	assign debug[6] = reset; 
@@ -469,7 +469,7 @@ module UniboardTop(
 	reg [31:0] timeout_count;
 	reg prev_uart_rx;
 	parameter PAUSE_COUNT = 32'd60000000;
-	always @ (posedge clk_12MHz)	
+	always @ (posedge clk_12MHz)
 		begin
 			prev_uart_rx <= uart_rx;
 			if(uart_rx & ~prev_uart_rx)
@@ -511,6 +511,8 @@ module UniboardTop(
 	
 	/* Global Control */
 	wire global_pause;
+	assign debug[3] = global_pause;
+	assign debug[2] = timeout_pause;
 	GlobalControlPeripheral #(32'd0, 32'h0009) global_control(.clk_12MHz(clk_12MHz),
 	                                                          .databus(databus),
 	                                                          .reg_size(reg_size),
