@@ -64,6 +64,10 @@ class Uniboard(object):
 			
 			#Encoders
 			#No writeable bits in this peripheral.
+			
+			#Expansion
+			0x0500:0,
+			0x0501:0
 		}
 		
 		#Dictionary of peripheral masks. For each peripheral register, 1s in the value in this dictionary
@@ -101,6 +105,10 @@ class Uniboard(object):
 			                
 			#Encoders
 			#No writeable bits in this peripheral.
+			
+			#Expansion
+			0x0500:0x30,
+			0x0501:0x3E
 		}
 		
 		#Dictionary of register sizes, in bytes.
@@ -154,6 +162,11 @@ class Uniboard(object):
 			0x0301:4,
 			0x0310:1,
 			0x0311:4,
+			
+			#Expansion
+			0x0500:1,
+			0x0501:1,
+			0x0502:1,
 			
 		}
 		
@@ -653,6 +666,54 @@ class Uniboard(object):
 		else:	
 			return None
 	
+	#Expansion ports
+	def expansion(self, channel, value=None):
+		"""If value is not supplied, return the state (True=high, False=low) of an expansion channel (1-5).
+		   If value is supplied, set the state of the expansion channel, returning that state.
+		   Note that for channels 4 and 5, the channel must be set to an output for this function
+		   to have an effect."""
+		
+		if channel not in [1, 2, 3, 4, 5]:
+			raise ValueError("Invalid expansion channel; expected 1, 2, 3, 4, or 5.");
+		if value not in [True, False, None]:
+			raise ValueError("Invalid expansion value; expected True, False, or None.");
+		if value == None:
+			inreg = self._read_reg(5, 2)
+			return bool(inreg & (1 << channel))
+		else:
+			outreg = self._read_reg(5, 1)
+			if value == True:
+				outreg |= (1 << channel)
+			else:
+				outreg &= ~(1 << channel)
+			self._write_reg(5, 1, outreg)
+	
+	def expansion_dir(self, channel, value=None):
+		"""If value is not supplied, return the mode (True = output, False = input)
+		   of an expansion channel. If value is specified, set the mode. Note that
+		   channels 1, 2, and 3 are always outputs; their mode will always read as True,
+		   and setting their mode will have no effect."""
+		if channel not in [1, 2, 3, 4, 5]:
+			raise ValueError("Invalid expansion channel; expected 1, 2, 3, 4, or 5.");
+		if value not in [True, False, None]:
+			raise ValueError("Invalid expansion value; expected True, False, or None.");
+		if Value == None:
+			if channel in [1, 2, 3]:
+				return True
+			else:
+				modereg = self._read_reg(5, 0)
+				return bool(modereg & (1 << channel))
+		else:
+			if channel in [4, 5]:
+				modereg = self._read_reg(5, 0)
+				if value == True:
+					modereg |= (1 << channel)
+				else:
+					modereg &= ~(1 << channel)
+				self.write_reg(5, 0, modereg)
+				return Value
+			else:
+				return True
 	
 	def hex_str(self, value):
 		"""Convert a number to a string of hexadecimal digits, in the form "0x123ABD..."."""
